@@ -1,0 +1,16 @@
+### Autopilot-stack
+
+**스택은 당신이 책임지고, 착지는 책임지지 않는다. 완전한 자율로 큐를 빌드하고 검증한 뒤, 운영자에게 검토하고 착지시킬 선형 base-branch 스택 하나를 넘긴다.** Autopilot-full의 짝이 되는 playbook이다.
+
+1. **소유자 루프는 그대로 실행한다.** 프로그램 시작 시 forge를 한 번 결정한다. 기본은 GitHub CLI(`gh`)다. `command -v origin`이 성공하고 Origin이 저장소를 해석할 수 있으면, PR 생성, 수정, 조회, 감시, 병합 작업에 `origin pr ...`을 사용한다. 그렇지 않으면 `gh`를 유지하고 대체 사용을 기록한다. Graphite(`gt`)는 절대 요구하지 않는다. PR마다 하나의 Cursor 클라우드 에이전트가 변경의 전 과정을 맡는다. 빌드, 첫 push, 자체 증명 전에 열어 둔 ready 상태의 PR, 자체 증명(게이트, CI, 영수증), `../references/bugbot-triage.md`에 따른 회의적인 Bugbot 분류, slop 제거(`cursor-team-kit` 플러그인의 `deslop` 스킬(`/deslop`)), `/no-comments`(**no-comments** 스킬), 그리고 `playbooks/babysit.md`에 따라 녹색이 될 때까지의 babysit이다. 작업이 자기완결적이면 소유자들을 병렬로 둔다. 약 15분 안에 모든 소유자는 **show-me-your-work** 스킬에 따라 `decisions.tsv` 기록을 시작하고, 첫 브랜치 스냅샷을 push하며, PR을 draft가 아닌 ready 상태로 연다. 이후 소유자는 검증 가능한 단위마다 브랜치를 다시 push한다(hook 활성화, WIP 커밋도 괜찮다). 기록은 커밋하지 말고 보고와 함께 반환한다. 소유자는 Autopilot-full 2단계의 `children.tsv`도 유지한다.
+2. **실제 루프에서 감사한다.** 루트는 매시간 감사 틱을 실행한다. 운영자의 go가 있으면 루트가 Autopilot-full 6단계에 따라 이 틱을 실행하는 프롬프트와 함께 `/loop 1h`를 작동시킨다. 주기를 기억에 맡기거나 손실될 수 있는 완료 알림에 의존하지 않는다. 매 틱마다 `git show origin/main:pstack/skills/poteto-mode/playbooks/autopilot-stack.md`로 이 playbook을 trunk에서 다시 읽고, 운영을 이에 비추어 감사한다. 그 틱에서 드리프트를 고친다. 일반적인 생존 또는 상태 점검으로 각 소유자를 조사한다. 진전으로 세는 것은 부수 효과뿐이다. 커밋, push, PR이나 검사의 변화, 스토어 보고가 해당한다. 예상 실행 시간을 넘기고도 부수 효과가 없는 레인은 정체된 것으로 본다. 즉시 중단하고 대체자를 바로 보낸다. 정중한 복귀를 기다리지 않는다. 모든 subagent를 조사하고 Autopilot-full 6단계에 따라 틱을 끝낸다.
+3. **운영자 게이트를 지킨다.** state-then-wait를 적용한다. 계획을 진술해 달라는 요청은 실행 허락이 아니다. 운영자가 멈추라고 하면 모든 소유자는 즉시 쓰기 금지 보류에 들어간다.
+4. **라운드마다 검증한다.** 소유자는 결과물이 확정되면 code-ready head SHA를 보고하고, 루프가 녹색이 되면 정확한 head SHA와 함께 STACK-READY를 보고한다. 루트는 Autopilot-full 4단계에 따라 라운드마다 검증하며, merge-ready 대신 STACK-READY를 사용한다. 검증되지 않은 것은 스택에 들어가지 않는다.
+5. **깨끗한 판정이 나오면 추가하고, 절대 배포하지 않는다.** 어떤 소유자도 병합하거나, 자동 병합을 설정하거나, 닫지 않는다. 깨끗한 판정이 나오면 검증된 순서 또는 운영자가 지정한 순서대로 PR을 하나의 선형 base-branch 스택에 추가한다.
+6. **토폴로지는 쓰기 주체 하나가, 빌드는 병렬 쓰기 주체들이 맡는다.** 소유자는 자기 브랜치만 push하고, 브랜치의 tip, 현재 base, 의도한 부모를 보고한다. 루트만이 토폴로지를 쓴다. PR을 추가하려면, 의도한 부모를 fetch하고, 자식 브랜치를 정확히 그 부모의 tip 위로 rebase한 뒤, `ls-remote` 확인 후에만 `--force-with-lease`로 push하고, PR base를 부모 브랜치로 설정한다. forge에 따라 `origin pr create --status open --base <parent-branch>` 또는 `gh pr create --base <parent-branch>`로 생성한다. 기존 PR을 다시 대상 지정하려면 `origin pr edit <pr> --base <parent-branch>` 또는 `gh pr edit <pr> --base <parent-branch>`를 사용한다. 루트 PR만 trunk를 대상으로 한다. `gt`로 체인을 제출하거나 등록하지 않는다.
+7. **루트에서 드리프트를 흡수한 뒤, 움직인 것을 다시 검증한다.** 루트는 현재 trunk를 fetch하고, 체인을 아래에서 위로 rebase한다. rebase가 소유자의 파일에서 충돌을 드러내면, 그 소유자가 자기 슬라이스를 고치고 루트가 결과를 push한다. rebase는 그 위의 모든 SHA를 다시 쓰며, 이전 SHA의 판정을 무효로 만든다. 각 판정 SHA에서 `playbooks/shipping.md`의 patch-id 규칙을 적용한다. 더 이상 유효하지 않은 것은 배포 전에 이 playbook의 4단계로 되돌아간다. patch-id가 그대로여도 다시 쓴 push마다 병합 가능성과 CI를 다시 확인한다. 쓰기 금지 규칙은 Autopilot-full과 같다. 새로 고정된 값은 루트의 새 연서를 위한 정지 사유가 된다. 이미 착지한 값을 흡수하는 것은 상향 조정이 아니다.
+8. **체인을 전달한다.** 결과물은 검증된 PR들로 이루어진 하나의 선형 체인이다. 해석된 forge에서 아래에서 위로 검토할 수 있어야 하고, 모든 링크가 PR 본문이나 댓글에 검증자 판정을 담고 있어야 한다. 운영자가 검토하고 직접 클릭하거나 준비되면 병합하도록 설정해 착지시킨다.
+
+**Autopilot 중 선택하기.** PR들이 서로 독립적이고 착지 권한이 부여되었으면 Autopilot-full을 쓴다. 운영자가 착지 전에 검토하기를 원하거나, 작업이 순서가 있거나 결합되어 있거나, 병합 권한이 보류되었으면 Autopilot-stack을 쓴다.
+
+**응답:** 스택 루트와 tip 링크, 링크마다 한 줄짜리 판정 요약, 보류되었거나 제외된 항목과 그 이유.

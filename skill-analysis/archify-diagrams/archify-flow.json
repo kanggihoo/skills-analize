@@ -1,0 +1,328 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Archify 저작 · 검증 · 배달 흐름",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "happy-path",
+        "label": "성공 경로",
+        "focus": [
+          "setup",
+          "write",
+          "validate",
+          "deliver",
+          "artifact"
+        ],
+        "note": "타입 선택에서 확정 HTML까지의 단조 진행 경로."
+      },
+      {
+        "id": "repair-loop",
+        "label": "진단 수리 루프",
+        "focus": [
+          "validate",
+          "diag",
+          "fix",
+          "write",
+          "stop"
+        ],
+        "note": "실패 진단을 한 번에 하나씩 고치고, 2라운드 미개선이면 중단한다."
+      },
+      {
+        "id": "evidence",
+        "label": "증거 분리",
+        "focus": [
+          "artifact",
+          "vcheck",
+          "human"
+        ],
+        "note": "결정적 검사와 브라우저 증거와 지각적 검토는 서로를 대체하지 않는다."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "author",
+      "label": "LLM 저작"
+    },
+    {
+      "id": "verify",
+      "label": "결정적 검증"
+    },
+    {
+      "id": "repair",
+      "label": "진단 수리",
+      "variant": "exception"
+    },
+    {
+      "id": "evidence",
+      "label": "증거 수집"
+    }
+  ],
+  "phases": [
+    {
+      "id": "authoring",
+      "label": "저작",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "verification",
+      "label": "결정적 검증",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "proof",
+      "label": "증거",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "setup",
+    "write",
+    "validate",
+    "deliver",
+    "artifact"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "setup"
+    ],
+    "allowedTerminals": [
+      "stop",
+      "human"
+    ],
+    "requiredEdges": [
+      {
+        "from": "validate",
+        "to": "deliver"
+      },
+      {
+        "from": "deliver",
+        "to": "artifact"
+      }
+    ],
+    "requiredPaths": [
+      {
+        "from": "setup",
+        "to": "artifact"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "setup",
+      "lane": "author",
+      "col": 0,
+      "type": "external",
+      "label": "타입 선택",
+      "sublabel": "스키마 + 예제 1개",
+      "width": 128
+    },
+    {
+      "id": "write",
+      "lane": "author",
+      "col": 1,
+      "type": "backend",
+      "label": "후보 JSON",
+      "sublabel": "Artifact first",
+      "tag": "좌표 금지",
+      "width": 128
+    },
+    {
+      "id": "validate",
+      "lane": "verify",
+      "col": 2,
+      "type": "security",
+      "label": "validate",
+      "sublabel": "9개 검사",
+      "width": 128
+    },
+    {
+      "id": "deliver",
+      "lane": "verify",
+      "col": 3,
+      "type": "security",
+      "label": "deliver",
+      "sublabel": "동결 → 검사",
+      "tag": "SHA-256",
+      "width": 128
+    },
+    {
+      "id": "artifact",
+      "lane": "verify",
+      "col": 4,
+      "type": "database",
+      "label": "확정 HTML",
+      "sublabel": "이전본 보존",
+      "width": 128
+    },
+    {
+      "id": "fix",
+      "lane": "repair",
+      "col": 1,
+      "type": "backend",
+      "label": "제어 1개",
+      "sublabel": "수리 순서 1→5",
+      "width": 128
+    },
+    {
+      "id": "diag",
+      "lane": "repair",
+      "col": 2,
+      "type": "messagebus",
+      "label": "진단 소비",
+      "sublabel": "code · evidence",
+      "width": 128
+    },
+    {
+      "id": "stop",
+      "lane": "repair",
+      "col": 3,
+      "type": "security",
+      "label": "중단 · 보고",
+      "sublabel": "2R 미개선",
+      "width": 128
+    },
+    {
+      "id": "vcheck",
+      "lane": "evidence",
+      "col": 4,
+      "type": "backend",
+      "label": "visual-check",
+      "sublabel": "4뷰포트",
+      "width": 128
+    },
+    {
+      "id": "human",
+      "lane": "evidence",
+      "col": 5,
+      "type": "external",
+      "label": "지각적 검토",
+      "sublabel": "사람 판독",
+      "tag": "자기 진술",
+      "width": 128
+    }
+  ],
+  "edges": [
+    {
+      "id": "seed",
+      "from": "setup",
+      "to": "write",
+      "label": "형태만 참조",
+      "variant": "default",
+      "role": "main"
+    },
+    {
+      "id": "check-each-edit",
+      "from": "write",
+      "to": "validate",
+      "label": "편집마다",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "freeze",
+      "from": "validate",
+      "to": "deliver",
+      "label": "9/9 · 0E/0W",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "commit",
+      "from": "deliver",
+      "to": "artifact",
+      "label": "exit 0에서만",
+      "variant": "emphasis",
+      "role": "main"
+    },
+    {
+      "id": "validate-fail",
+      "from": "validate",
+      "to": "diag",
+      "label": "실패",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "id": "pick-fix",
+      "from": "diag",
+      "to": "fix",
+      "label": "fixes 택1",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "revalidate",
+      "from": "fix",
+      "to": "write",
+      "label": "재검증",
+      "variant": "dashed",
+      "role": "return"
+    },
+    {
+      "id": "give-up",
+      "from": "diag",
+      "to": "stop",
+      "label": "2R 미개선",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "id": "deliver-fail",
+      "from": "deliver",
+      "to": "stop",
+      "label": "non-zero",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "id": "measure",
+      "from": "artifact",
+      "to": "vcheck",
+      "label": "수정 없이",
+      "variant": "default",
+      "role": "branch"
+    },
+    {
+      "id": "not-polish",
+      "from": "vcheck",
+      "to": "human",
+      "label": "증거 ≠ 폴리시",
+      "variant": "default",
+      "role": "branch"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "저작 규율",
+      "items": [
+        "스키마 1개 + 예제 1개만 읽는다",
+        "후보 JSON을 먼저 쓴다"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "게이트",
+      "items": [
+        "validate: 9/9 + 0 errors + 0 warnings",
+        "deliver: 통과 시에만 rename 커밋"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "수렴 상한 · 부수 절차",
+      "items": [
+        "진단 수리: 2라운드 미개선이면 중단",
+        "첫 후보 뒤 update 체크 1회 — 고지만, 설치본 불변"
+      ]
+    }
+  ]
+}

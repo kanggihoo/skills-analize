@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "skills": {
+    "eli5": {
+      "source": "cloudflare/cloudflare-docs",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/eli5/SKILL.md",
+      "computedHash": "f8d619267b80e035c830ecc98228c77e00b29e0de31bf4402338efcb2f0fa1b6"
+    },
+    "internal-comms": {
+      "source": "anthropics/skills",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/internal-comms/SKILL.md",
+      "computedHash": "0bdc8867452b7ab9ef6167f6b0db2025ce5fb03773d3f85efcef2dfeb9d4976d"
+    },
+    "visual-explainer": {
+      "source": "nicobailon/visual-explainer",
+      "sourceType": "github",
+      "skillPath": "plugins/visual-explainer/SKILL.md",
+      "computedHash": "69c2e1144232b29e7ebc8152b4a645f98d0f6f474005671765287a49940e909d"
+    },
+    "writing-clearly-and-concisely": {
+      "source": "softaworks/agent-toolkit",
+      "ref": "main",
+      "sourceType": "github",
+      "skillPath": "skills/writing-clearly-and-concisely/SKILL.md",
+      "computedHash": "136a0413255aa82d800459c775eabf041620b2e9cbf2d713b739bf1b87a3db3a"
+    }
+  }
+}

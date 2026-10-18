@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Archify 내부 아키텍처",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "main-pipeline",
+        "label": "주 파이프라인",
+        "focus": [
+          "spec",
+          "cli",
+          "renderer",
+          "checker",
+          "artifact"
+        ],
+        "note": "저작된 JSON IR이 검사를 통과한 HTML 아티팩트가 되기까지의 주 경로."
+      },
+      {
+        "id": "shared-runtime",
+        "label": "공유 기하 런타임",
+        "focus": [
+          "shared",
+          "renderer",
+          "checker"
+        ],
+        "note": "렌더 계획과 산출물 재검사가 같은 기하 라이브러리를 쓴다."
+      },
+      {
+        "id": "browser-evidence",
+        "label": "브라우저 증거",
+        "focus": [
+          "artifact",
+          "visualcheck",
+          "chrome"
+        ],
+        "note": "확정된 아티팩트를 수정 없이 실제 브라우저로 재측정하는 경로."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "spec",
+      "type": "external",
+      "label": "저작된 JSON IR",
+      "sublabel": "LLM이 쓴 사양",
+      "pos": [
+        40,
+        310
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "template",
+      "type": "cloud",
+      "label": "assets/template.html",
+      "sublabel": "뷰어 셸",
+      "pos": [
+        40,
+        150
+      ],
+      "size": [
+        180,
+        64
+      ],
+      "tag": "678KB"
+    },
+    {
+      "id": "cli",
+      "type": "backend",
+      "label": "bin/archify.mjs",
+      "sublabel": "명령 라우터",
+      "pos": [
+        265,
+        310
+      ],
+      "size": [
+        170,
+        64
+      ],
+      "tag": "spawnSync"
+    },
+    {
+      "id": "validator",
+      "type": "security",
+      "label": "generated-validators.mjs",
+      "sublabel": "ajv 사전 컴파일 스키마",
+      "pos": [
+        547,
+        150
+      ],
+      "size": [
+        180,
+        64
+      ],
+      "tag": "의존성 0"
+    },
+    {
+      "id": "renderer",
+      "type": "backend",
+      "label": "render-<type>.mjs",
+      "sublabel": "5개 타입 렌더러",
+      "pos": [
+        547,
+        310
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "checker",
+      "type": "security",
+      "label": "check-render-output.mjs",
+      "sublabel": "아티팩트 검사 9종",
+      "pos": [
+        819,
+        310
+      ],
+      "size": [
+        190,
+        64
+      ]
+    },
+    {
+      "id": "artifact",
+      "type": "database",
+      "label": "<output>.html",
+      "sublabel": "단일 파일 아티팩트",
+      "pos": [
+        1124,
+        310
+      ],
+      "size": [
+        170,
+        64
+      ],
+      "tag": "SHA-256"
+    },
+    {
+      "id": "shared",
+      "type": "backend",
+      "label": "renderers/shared/*",
+      "sublabel": "geometry · legend · i18n",
+      "pos": [
+        547,
+        490
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "visualcheck",
+      "type": "backend",
+      "label": "bin/visual-check.mjs",
+      "sublabel": "브라우저 증거 수집",
+      "pos": [
+        1124,
+        490
+      ],
+      "size": [
+        170,
+        64
+      ]
+    },
+    {
+      "id": "chrome",
+      "type": "external",
+      "label": "Chrome / Chromium",
+      "sublabel": "없으면 exit 2",
+      "pos": [
+        1124,
+        650
+      ],
+      "size": [
+        170,
+        64
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "spec-in",
+      "from": "spec",
+      "to": "cli",
+      "label": "JSON IR",
+      "variant": "emphasis"
+    },
+    {
+      "id": "cli-render",
+      "from": "cli",
+      "to": "renderer",
+      "label": "품질 프로파일 주입",
+      "variant": "emphasis"
+    },
+    {
+      "id": "schema-gate",
+      "from": "validator",
+      "to": "renderer",
+      "label": "위반 시 non-zero",
+      "variant": "security",
+      "labelDy": 24
+    },
+    {
+      "id": "shell-inject",
+      "from": "template",
+      "to": "renderer",
+      "label": "뷰어 셸 주입",
+      "toSide": "top"
+    },
+    {
+      "id": "plan-geometry",
+      "from": "shared",
+      "to": "renderer",
+      "label": "라우팅 계획"
+    },
+    {
+      "id": "candidate-html",
+      "from": "renderer",
+      "to": "checker",
+      "label": "후보 HTML",
+      "variant": "emphasis"
+    },
+    {
+      "id": "reuse-geometry",
+      "from": "shared",
+      "to": "checker",
+      "label": "동일 기하 재사용",
+      "variant": "emphasis"
+    },
+    {
+      "id": "atomic-commit",
+      "from": "checker",
+      "to": "artifact",
+      "label": "통과 시 rename",
+      "variant": "emphasis"
+    },
+    {
+      "id": "bind-artifact",
+      "from": "artifact",
+      "to": "visualcheck",
+      "label": "해시 바인딩",
+      "labelDy": 24
+    },
+    {
+      "id": "devtools-pipe",
+      "from": "visualcheck",
+      "to": "chrome",
+      "label": "DevTools 파이프",
+      "variant": "dashed",
+      "labelDy": 24
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "입력 경계",
+      "items": [
+        "LLM은 JSON IR만 쓰고 좌표는 쓰지 않는다",
+        "스키마는 additionalProperties: false 로 미지 필드를 거부한다"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "이중 검사",
+      "items": [
+        "렌더러: IR과 계획된 기하를 SVG 생성 전에 검사",
+        "체커: 완성된 HTML을 다시 파싱해 픽셀로 재검사",
+        "두 층이 같은 renderers/shared/geometry.mjs 를 쓴다"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "증거 분리",
+      "items": [
+        "deliver: 결정적 해시와 원자 커밋",
+        "visual-check: 실제 브라우저 4뷰포트 측정",
+        "지각적 시각 검토: 사람 또는 이미지 판독"
+      ]
+    }
+  ]
+}
