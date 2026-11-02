@@ -1,0 +1,1404 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-10-30T12:56:22.547Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/candidate.archify.md",
+    "sha256": "a9ee706b717eaa344abb02fe7a5aba7d0adc29c8be8f669c9ef37f000faa9ea4",
+    "bytes": 16468
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+    "sha256": "abe3e62e87a339cabb66361c34b00344c545f89c61d1d6d7bed2fcd944657120",
+    "bytes": 1747212
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a9ee706b717eaa344abb02fe7a5aba7d0adc29c8be8f669c9ef37f000faa9ea4",
+          "bytes": 16468
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 679,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+        "--quality",
+        "showcase",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "02f7fcfa-3a97-4ca4-9b3a-aa314aa90b14",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+        "explainer": {
+          "preparedSha256": "ac2660e3686b31ddb1f746136e07ce7927db6db50024054d13b11406c433e145",
+          "dependencies": [
+            {
+              "kind": "diagram-spec",
+              "id": "skill-clusters",
+              "inline": true,
+              "sha256": "3c85433f31b2a8ee9fe1ccbb91ef9c80a278c541cb61c91242d2ce0938afd40b",
+              "bytes": 2858
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "feature-route",
+              "inline": true,
+              "sha256": "4c79f4b6540bb1a96e0602bbfde437a89f84a4b4b6948af4de14c94ba6a4e716",
+              "bytes": 2632
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "skill-calls",
+              "inline": true,
+              "sha256": "7e68cfb0bc804ee9a0d26094ea2ddcb44af58b9c89787f9b00bc701dc4bf5b71",
+              "bytes": 3206
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a9ee706b717eaa344abb02fe7a5aba7d0adc29c8be8f669c9ef37f000faa9ea4",
+          "bytes": 16468
+        },
+        "artifact": {
+          "sha256": "abe3e62e87a339cabb66361c34b00344c545f89c61d1d6d7bed2fcd944657120",
+          "bytes": 1747212
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 379,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "abe3e62e87a339cabb66361c34b00344c545f89c61d1d6d7bed2fcd944657120",
+          "bytes": 1747212
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "201 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "3 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "skill-clusters: pass",
+              "feature-route: pass",
+              "skill-calls: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "skill-clusters",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-wE1OrE/child.html",
+                "artifact": {
+                  "sha256": "62fdb5204f276b3678a24be32d49388917a4b313f0536f7c31726e3e9146070d",
+                  "bytes": 897827
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.499999999999999,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 1290.5769230769229,
+                    "actualBudgetPx": 1290.5769230769229,
+                    "actualReaderWidth": 1320.5769230769229,
+                    "desiredReaderWidth": 1320.5769230769229,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": false,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "entry"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 7.499999999999999,
+                    "semanticTextCount": 46
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "feature-route",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-HHPkm5/child.html",
+                "artifact": {
+                  "sha256": "67f9929ac141f2058b8c4c4ccf570b3346a869a11ff9db002e7ba68b25e3a62d",
+                  "bytes": 848546
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.848101265822785,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "architect-step-to-arena-step-1",
+                      "from": "architect-step",
+                      "to": "arena-step"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.848101265822785,
+                    "semanticTextCount": 21
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "skill-calls",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-2MNsu4/child.html",
+                "artifact": {
+                  "sha256": "bdefe8720f115dff64463d41e0d6937629b06955d3f7337dcf1ba2600bfc831b",
+                  "bytes": 870050
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 27,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.857142857142857,
+                    "maxBends": 4,
+                    "routesOverSuggestedBends": 10,
+                    "maxStretch": 1.195,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 24,
+                    "minInteriorSegmentPx": 28.3,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [
+                      {
+                        "left": {
+                          "id": "hub-to-architect-1",
+                          "from": "hub",
+                          "to": "architect",
+                          "label": "경계 넘는 코드",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "right": {
+                          "id": "hub-to-smyw-1",
+                          "from": "hub",
+                          "to": "smyw",
+                          "label": "긴 작업",
+                          "collectionIndex": 7,
+                          "artifactIndex": 8
+                        },
+                        "point": [
+                          278,
+                          188
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-architect-1",
+                          "from": "hub",
+                          "to": "architect",
+                          "label": "경계 넘는 코드",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "right": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "point": [
+                          598,
+                          350
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-architect-1",
+                          "from": "hub",
+                          "to": "architect",
+                          "label": "경계 넘는 코드",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "right": {
+                          "id": "figure-to-architect-1",
+                          "from": "figure",
+                          "to": "architect",
+                          "label": "되돌리기 어려운 설계",
+                          "collectionIndex": 13,
+                          "artifactIndex": 14
+                        },
+                        "point": [
+                          542.5,
+                          188
+                        ],
+                        "sharedNode": "architect"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-figure-1",
+                          "from": "hub",
+                          "to": "figure",
+                          "label": "큰 작업",
+                          "collectionIndex": 2,
+                          "artifactIndex": 3
+                        },
+                        "right": {
+                          "id": "hub-to-smyw-1",
+                          "from": "hub",
+                          "to": "smyw",
+                          "label": "긴 작업",
+                          "collectionIndex": 7,
+                          "artifactIndex": 8
+                        },
+                        "point": [
+                          278,
+                          164
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-swarm-1",
+                          "from": "hub",
+                          "to": "swarm",
+                          "label": "병렬 검증",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "right": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "point": [
+                          270,
+                          263
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-swarm-1",
+                          "from": "hub",
+                          "to": "swarm",
+                          "label": "병렬 검증",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "right": {
+                          "id": "hub-to-techw-1",
+                          "from": "hub",
+                          "to": "techw",
+                          "label": "문서·PR",
+                          "collectionIndex": 6,
+                          "artifactIndex": 7
+                        },
+                        "point": [
+                          65,
+                          164
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-interrogate-1",
+                          "from": "hub",
+                          "to": "interrogate",
+                          "label": "설계 논쟁",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "right": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "point": [
+                          270,
+                          238
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-interrogate-1",
+                          "from": "hub",
+                          "to": "interrogate",
+                          "label": "설계 논쟁",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "right": {
+                          "id": "hub-to-techw-1",
+                          "from": "hub",
+                          "to": "techw",
+                          "label": "문서·PR",
+                          "collectionIndex": 6,
+                          "artifactIndex": 7
+                        },
+                        "point": [
+                          79,
+                          164
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-interrogate-1",
+                          "from": "hub",
+                          "to": "interrogate",
+                          "label": "설계 논쟁",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "right": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "point": [
+                          303,
+                          350
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "right": {
+                          "id": "hub-to-techw-1",
+                          "from": "hub",
+                          "to": "techw",
+                          "label": "문서·PR",
+                          "collectionIndex": 6,
+                          "artifactIndex": 7
+                        },
+                        "point": [
+                          93,
+                          164
+                        ],
+                        "sharedNode": "hub"
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "right": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "point": [
+                          270,
+                          350
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "right": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "point": [
+                          270,
+                          536
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "right": {
+                          "id": "recall-to-why-1",
+                          "from": "recall",
+                          "to": "why",
+                          "label": "공유 기록",
+                          "collectionIndex": 10,
+                          "artifactIndex": 11
+                        },
+                        "point": [
+                          270,
+                          482
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "right": {
+                          "id": "blast-to-why-1",
+                          "from": "blast",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 11,
+                          "artifactIndex": 12
+                        },
+                        "point": [
+                          270,
+                          575
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-techw-1",
+                          "from": "hub",
+                          "to": "techw",
+                          "label": "문서·PR",
+                          "collectionIndex": 6,
+                          "artifactIndex": 7
+                        },
+                        "right": {
+                          "id": "automate-to-unslop-1",
+                          "from": "automate",
+                          "to": "unslop",
+                          "label": "",
+                          "collectionIndex": 20,
+                          "artifactIndex": 21
+                        },
+                        "point": [
+                          100,
+                          800
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "hub-to-smyw-1",
+                          "from": "hub",
+                          "to": "smyw",
+                          "label": "긴 작업",
+                          "collectionIndex": 7,
+                          "artifactIndex": 8
+                        },
+                        "right": {
+                          "id": "figure-to-architect-1",
+                          "from": "figure",
+                          "to": "architect",
+                          "label": "되돌리기 어려운 설계",
+                          "collectionIndex": 13,
+                          "artifactIndex": 14
+                        },
+                        "point": [
+                          542.5,
+                          230
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "right": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "point": [
+                          184,
+                          350
+                        ],
+                        "sharedNode": "teach"
+                      },
+                      {
+                        "left": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "right": {
+                          "id": "figure-to-architect-1",
+                          "from": "figure",
+                          "to": "architect",
+                          "label": "되돌리기 어려운 설계",
+                          "collectionIndex": 13,
+                          "artifactIndex": 14
+                        },
+                        "point": [
+                          542.5,
+                          350
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "right": {
+                          "id": "recall-to-why-1",
+                          "from": "recall",
+                          "to": "why",
+                          "label": "공유 기록",
+                          "collectionIndex": 10,
+                          "artifactIndex": 11
+                        },
+                        "point": [
+                          184,
+                          482
+                        ],
+                        "sharedNode": "why"
+                      },
+                      {
+                        "left": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "right": {
+                          "id": "architect-to-arena-1",
+                          "from": "architect",
+                          "to": "arena",
+                          "label": "설계 경쟁",
+                          "collectionIndex": 17,
+                          "artifactIndex": 18
+                        },
+                        "point": [
+                          837.4999999999997,
+                          536
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "right": {
+                          "id": "nocomm-to-architect-1",
+                          "from": "nocomm",
+                          "to": "architect",
+                          "label": "수정 설계",
+                          "collectionIndex": 18,
+                          "artifactIndex": 19
+                        },
+                        "point": [
+                          542.5,
+                          536
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "recall-to-why-1",
+                          "from": "recall",
+                          "to": "why",
+                          "label": "공유 기록",
+                          "collectionIndex": 10,
+                          "artifactIndex": 11
+                        },
+                        "right": {
+                          "id": "architect-to-arena-1",
+                          "from": "architect",
+                          "to": "arena",
+                          "label": "설계 경쟁",
+                          "collectionIndex": 17,
+                          "artifactIndex": 18
+                        },
+                        "point": [
+                          837.4999999999998,
+                          515
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "recall-to-why-1",
+                          "from": "recall",
+                          "to": "why",
+                          "label": "공유 기록",
+                          "collectionIndex": 10,
+                          "artifactIndex": 11
+                        },
+                        "right": {
+                          "id": "nocomm-to-architect-1",
+                          "from": "nocomm",
+                          "to": "architect",
+                          "label": "수정 설계",
+                          "collectionIndex": 18,
+                          "artifactIndex": 19
+                        },
+                        "point": [
+                          542.5,
+                          515
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "blast-to-why-1",
+                          "from": "blast",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 11,
+                          "artifactIndex": 12
+                        },
+                        "right": {
+                          "id": "architect-to-arena-1",
+                          "from": "architect",
+                          "to": "arena",
+                          "label": "설계 경쟁",
+                          "collectionIndex": 17,
+                          "artifactIndex": 18
+                        },
+                        "point": [
+                          837.4999999999997,
+                          575
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "blast-to-why-1",
+                          "from": "blast",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 11,
+                          "artifactIndex": 12
+                        },
+                        "right": {
+                          "id": "nocomm-to-architect-1",
+                          "from": "nocomm",
+                          "to": "architect",
+                          "label": "수정 설계",
+                          "collectionIndex": 18,
+                          "artifactIndex": 19
+                        },
+                        "point": [
+                          542.5,
+                          575
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "blast-to-arena-1",
+                          "from": "blast",
+                          "to": "arena",
+                          "label": "큰 변경",
+                          "collectionIndex": 12,
+                          "artifactIndex": 13
+                        },
+                        "right": {
+                          "id": "techw-to-unslop-1",
+                          "from": "techw",
+                          "to": "unslop",
+                          "label": "",
+                          "collectionIndex": 19,
+                          "artifactIndex": 20
+                        },
+                        "point": [
+                          690,
+                          722
+                        ]
+                      },
+                      {
+                        "left": {
+                          "id": "blast-to-arena-1",
+                          "from": "blast",
+                          "to": "arena",
+                          "label": "큰 변경",
+                          "collectionIndex": 12,
+                          "artifactIndex": 13
+                        },
+                        "right": {
+                          "id": "automate-to-unslop-1",
+                          "from": "automate",
+                          "to": "unslop",
+                          "label": "",
+                          "collectionIndex": 20,
+                          "artifactIndex": 21
+                        },
+                        "point": [
+                          676,
+                          722
+                        ]
+                      }
+                    ],
+                    "crowdedSides": [
+                      {
+                        "node": "hub",
+                        "label": "/poteto-mode",
+                        "side": "right",
+                        "relationships": 5,
+                        "sidePx": 60,
+                        "neededPx": 88
+                      },
+                      {
+                        "node": "why",
+                        "label": "why",
+                        "side": "left",
+                        "relationships": 4,
+                        "sidePx": 60,
+                        "neededPx": 74
+                      }
+                    ],
+                    "detours": [
+                      {
+                        "relationship": {
+                          "id": "hub-to-how-1",
+                          "from": "hub",
+                          "to": "how",
+                          "label": "큰 변경",
+                          "collectionIndex": 0,
+                          "artifactIndex": 1
+                        },
+                        "bends": 4,
+                        "stretch": 1.06
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-architect-1",
+                          "from": "hub",
+                          "to": "architect",
+                          "label": "경계 넘는 코드",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "bends": 4,
+                        "stretch": 1
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-swarm-1",
+                          "from": "hub",
+                          "to": "swarm",
+                          "label": "병렬 검증",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "bends": 3,
+                        "stretch": 1
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-interrogate-1",
+                          "from": "hub",
+                          "to": "interrogate",
+                          "label": "설계 논쟁",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "bends": 4,
+                        "stretch": 1
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-nocomm-1",
+                          "from": "hub",
+                          "to": "nocomm",
+                          "label": "리뷰 전",
+                          "collectionIndex": 5,
+                          "artifactIndex": 6
+                        },
+                        "bends": 4,
+                        "stretch": 1
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-techw-1",
+                          "from": "hub",
+                          "to": "techw",
+                          "label": "문서·PR",
+                          "collectionIndex": 6,
+                          "artifactIndex": 7
+                        },
+                        "bends": 4,
+                        "stretch": 1.143
+                      },
+                      {
+                        "relationship": {
+                          "id": "hub-to-smyw-1",
+                          "from": "hub",
+                          "to": "smyw",
+                          "label": "긴 작업",
+                          "collectionIndex": 7,
+                          "artifactIndex": 8
+                        },
+                        "bends": 4,
+                        "stretch": 1
+                      },
+                      {
+                        "relationship": {
+                          "id": "teach-to-how-1",
+                          "from": "teach",
+                          "to": "how",
+                          "label": "",
+                          "collectionIndex": 8,
+                          "artifactIndex": 9
+                        },
+                        "bends": 3,
+                        "stretch": 1.056,
+                        "directCorridorBlockers": [
+                          {
+                            "id": "swarm",
+                            "label": "swarm",
+                            "box": [
+                              335,
+                              266,
+                              120,
+                              60
+                            ]
+                          },
+                          {
+                            "id": "smyw",
+                            "label": "show-me-your-work",
+                            "box": [
+                              630,
+                              266,
+                              129,
+                              60
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "relationship": {
+                          "id": "teach-to-why-1",
+                          "from": "teach",
+                          "to": "why",
+                          "label": "",
+                          "collectionIndex": 9,
+                          "artifactIndex": 10
+                        },
+                        "bends": 3,
+                        "stretch": 1.047
+                      },
+                      {
+                        "relationship": {
+                          "id": "recall-to-why-1",
+                          "from": "recall",
+                          "to": "why",
+                          "label": "공유 기록",
+                          "collectionIndex": 10,
+                          "artifactIndex": 11
+                        },
+                        "bends": 4,
+                        "stretch": 1.086,
+                        "directCorridorBlockers": [
+                          {
+                            "id": "architect",
+                            "label": "architect",
+                            "box": [
+                              630,
+                              452,
+                              120,
+                              60
+                            ]
+                          },
+                          {
+                            "id": "interrogate",
+                            "label": "interrogate",
+                            "box": [
+                              335,
+                              452,
+                              120,
+                              60
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "leadingSpace": {
+                    "measured": true,
+                    "emptyTopPx": 71.2,
+                    "emptyTopRatio": 0.063,
+                    "occupiedTop": 71.2,
+                    "viewBoxTop": 0,
+                    "canvasHeight": 1138,
+                    "typicalNodeHeight": 60,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": false,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "hub-to-how-1",
+                      "from": "hub",
+                      "to": "how"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.857142857142857,
+                    "semanticTextCount": 33
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "02f7fcfa-3a97-4ca4-9b3a-aa314aa90b14"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/pstack/.archify/explainer-pstack-skill-map-20261030-215518/pstack-skill-map.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-30T12:56:23.695Z",
+  "durationMs": 1147,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "check-failed"
+  }
+}

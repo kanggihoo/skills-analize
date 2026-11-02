@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "37d1b4ce-4f4b-4012-941c-77a5687fa8e5",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/egm/.archify/explainer-egm-skill-map-20261031-085659/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/egm/.archify/explainer-egm-skill-map-20261031-085659/egm-skill-map.html",
+  "specification": {
+    "sha256": "7fccfd0672398b049d926a4f07ad106339776f5bb09a17c1a96dff22e0042a09",
+    "bytes": 12270
+  },
+  "artifact": {
+    "sha256": "1f794f0c25d68526bb02071d0bd10a2efb4f03bd9d85ad9bfdcd88d3b0a7da40",
+    "bytes": 1419121
+  },
+  "explainer": {
+    "preparedSha256": "7bc30560d8af8bb6c1e7acde76e9aa8ef7cf664e2e3d6d44a71e8dd4c2d2b483",
+    "dependencies": [
+      {
+        "kind": "diagram-spec",
+        "id": "skill-flow",
+        "inline": true,
+        "sha256": "9cad5ecc60aa881be95a38ede1821d97edeeadc3178f2eb364fee57b2729c740",
+        "bytes": 1967
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "review-round",
+        "inline": true,
+        "sha256": "e2c13a05e227117a50ad2385700619d63b8cc6d1ae6a9bf5dfeb83b47c930ad2",
+        "bytes": 1622
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "review-stages-flow",
+        "inline": true,
+        "sha256": "5966900f876096c1e65d8f5d2d60c2892bdce3284b81815015547ee581caab92",
+        "bytes": 1343
+      }
+    ]
+  }
+}
