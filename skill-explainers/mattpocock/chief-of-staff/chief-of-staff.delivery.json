@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "1dd7f570-e837-4ae8-89e7-965773736088",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/chief-of-staff/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/chief-of-staff/chief-of-staff.html",
+  "specification": {
+    "sha256": "52d346d9756e8c55bfda5e200fca23b9e09f0b0f6701ded4f4a047e1f23806b4",
+    "bytes": 15582
+  },
+  "artifact": {
+    "sha256": "1b2c260fe10b4430751a1cde60138e9dd1f505aacef24bf95ff08d28cd60c5ca",
+    "bytes": 1525923
+  },
+  "explainer": {
+    "preparedSha256": "430bdf5118c91e56dc4ff18982b46d8c65bfb6604c5e4c268a69cceffc7e09d4",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "cos-fm",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-yaml",
+        "path": "mattpocock/chief-of-staff/agents/openai.yaml",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83",
+        "bytes": 184
+      },
+      {
+        "kind": "repository",
+        "id": "cos-role",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-sched",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-sub",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-wiki",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-ops",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-hist",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-hist-ex",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-proc",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-retro",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-large",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-strat",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-first",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "cos-relent",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "retro-step1",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-step4",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "lock-cos",
+        "path": "mattpocock/skills-lock.json",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "9b320fb740b6db1e374c265eabbeeba79662bdaf73a12714d17c99890697ce66",
+        "bytes": 3127
+      },
+      {
+        "kind": "repository",
+        "id": "lock-retro",
+        "path": "mattpocock/skills-lock.json",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "9b320fb740b6db1e374c265eabbeeba79662bdaf73a12714d17c99890697ce66",
+        "bytes": 3127
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cos-turn",
+        "inline": true,
+        "sha256": "06921dbff4ae6a64e600b69ffc902c6a73b51554a0f28f0b96c9206747434803",
+        "bytes": 1375
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cos-wiki-tree",
+        "inline": true,
+        "sha256": "12b941135e05f5b63bfbc77cf870dca07f35c9591a85182ce8c11ee63916be1b",
+        "bytes": 466
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cos-position",
+        "inline": true,
+        "sha256": "44b2f2939392f0ecd11ac8daed5180a69d76052a4977e343d96aa8e63042380b",
+        "bytes": 862
+      }
+    ]
+  }
+}

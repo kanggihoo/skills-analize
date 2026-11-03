@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:22:28.463Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/candidate.archify.md",
+    "sha256": "1c0f5ca24f07b03e78597e1eee7f38677e3a17dfd9369893bb1825f31b871cc9",
+    "bytes": 11578
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+    "sha256": "655eea151035e2d8b160b1815b144ad9ebd217477e1b3c1bcb8ca68e046ae935",
+    "bytes": 1124211
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "1c0f5ca24f07b03e78597e1eee7f38677e3a17dfd9369893bb1825f31b871cc9",
+          "bytes": 11578
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1672,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "a1647951-ae9e-4654-b011-c2a8efed43b4",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+        "explainer": {
+          "preparedSha256": "b78462f7871af600a1c54c75ad492270a3842c240795a13e14612475f0905326",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "core",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "step1",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "step2",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "step3",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "step4",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "step5",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "style",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "reply",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "help-row",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "help-pair",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "recipe",
+              "path": "pstack/poteto-help/references/recipes.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+              "bytes": 3287
+            },
+            {
+              "kind": "repository",
+              "id": "why-skip",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "teach-flow",
+              "inline": true,
+              "sha256": "c6b4807dcf3b56115d5a456059a7b19e73eb77ebd1be63b79e9921c9a7f281ea",
+              "bytes": 1064
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "teach-position",
+              "inline": true,
+              "sha256": "3feb382714b1478ec4a751c1c57f1d3b9e42c5bd2109b70cb988dc705ec86f09",
+              "bytes": 1050
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "1c0f5ca24f07b03e78597e1eee7f38677e3a17dfd9369893bb1825f31b871cc9",
+          "bytes": 11578
+        },
+        "artifact": {
+          "sha256": "655eea151035e2d8b160b1815b144ad9ebd217477e1b3c1bcb8ca68e046ae935",
+          "bytes": 1124211
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 809,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "655eea151035e2d8b160b1815b144ad9ebd217477e1b3c1bcb8ca68e046ae935",
+          "bytes": 1124211
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "105 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "15 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "teach-flow: pass",
+              "teach-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "teach-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Uji6Rq/child.html",
+                "artifact": {
+                  "sha256": "8e76868d962dce990f32273ee4000a394d03bf0749b3cb68f47c98a2a5adf344",
+                  "bytes": 834960
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "pick"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "teach-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-DoR7cU/child.html",
+                "artifact": {
+                  "sha256": "232101cd62b3545f951cf3d4b6450e3ab4c549e50256d260097a0c40827446a1",
+                  "bytes": 835351
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 34.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 38,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "p-teach-to-p-how-1",
+                      "from": "p-teach",
+                      "to": "p-how"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "a1647951-ae9e-4654-b011-c2a8efed43b4"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:22:31.136Z",
+  "durationMs": 2673,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

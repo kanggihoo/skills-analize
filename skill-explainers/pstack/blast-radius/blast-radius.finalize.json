@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:23:13.401Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/candidate.archify.md",
+    "sha256": "0464a4514af42fcd37a442066d8a4d12b147bf5e371c5e3b12decde13b4d2404",
+    "bytes": 11701
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+    "sha256": "2d205b6450ee703d0445c593912ee9d9e17cfb1e3615dbd9b1aa56e67c96deb6",
+    "bytes": 1121241
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "0464a4514af42fcd37a442066d8a4d12b147bf5e371c5e3b12decde13b4d2404",
+          "bytes": 11701
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1936,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "d51afd3c-2693-454a-8192-045dcd53ef55",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+        "explainer": {
+          "preparedSha256": "13f362bc936f7fe674bc41e66c9339fe84e4910c446d5d879847dc8aff8f54ac",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "core",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "writeup",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "ladder",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s1",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s2",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s3",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s4",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s5",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "s6",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "out",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "style",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "repository",
+              "id": "why-anchor",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "arena-fm",
+              "path": "pstack/arena/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "e3a1f6c49a08b7e0b92134e53300d146f1f22ba83386d2019926e736df421851",
+              "bytes": 4973
+            },
+            {
+              "kind": "repository",
+              "id": "help-row",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "help-diff",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "br-flow",
+              "inline": true,
+              "sha256": "8c99196ec2dda525e7f3a6f28d468fe117429d5df6b6a96085c60ee704d7a9ae",
+              "bytes": 1023
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "br-position",
+              "inline": true,
+              "sha256": "cf4e854b9fcc857a1e1732955e52077fb41900ce37a8ab3966cc623e78278aca",
+              "bytes": 1073
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "0464a4514af42fcd37a442066d8a4d12b147bf5e371c5e3b12decde13b4d2404",
+          "bytes": 11701
+        },
+        "artifact": {
+          "sha256": "2d205b6450ee703d0445c593912ee9d9e17cfb1e3615dbd9b1aa56e67c96deb6",
+          "bytes": 1121241
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1226,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "2d205b6450ee703d0445c593912ee9d9e17cfb1e3615dbd9b1aa56e67c96deb6",
+          "bytes": 1121241
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "106 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "18 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "br-flow: pass",
+              "br-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "br-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-mbWuHd/child.html",
+                "artifact": {
+                  "sha256": "e45dcaf797e2b1fdfdfe6865ab46c06548a60b8e5dbe0636de570ead05f2c7dd",
+                  "bytes": 834497
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "read"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "br-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-zprISD/child.html",
+                "artifact": {
+                  "sha256": "cdd39f8858e535c4ffc3a47433ddaec705e3bba626c54d015d1672616308c319",
+                  "bytes": 835394
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "p-br-to-p-arena-1",
+                      "from": "p-br",
+                      "to": "p-arena"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "d51afd3c-2693-454a-8192-045dcd53ef55"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/blast-radius/blast-radius.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:23:16.898Z",
+  "durationMs": 3496,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

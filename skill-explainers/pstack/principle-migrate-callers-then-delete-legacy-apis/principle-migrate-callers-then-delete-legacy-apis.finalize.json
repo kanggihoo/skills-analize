@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:11:01.564Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
+    "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
+    "bytes": 7194
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+    "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
+    "bytes": 695443
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
+          "bytes": 7194
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 764,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "5693da02-1347-48db-a73d-60c19089525f",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+        "explainer": {
+          "preparedSha256": "331b44a10f07149aeb6020d4a0e55f306714570e2a2dc0c4a67f38b29766035f",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+              "bytes": 1146
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intro",
+              "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+              "bytes": 1146
+            },
+            {
+              "kind": "repository",
+              "id": "skill-rule",
+              "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+              "bytes": 1146
+            },
+            {
+              "kind": "repository",
+              "id": "skill-when",
+              "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+              "bytes": 1146
+            },
+            {
+              "kind": "repository",
+              "id": "skill-why",
+              "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+              "bytes": 1146
+            },
+            {
+              "kind": "repository",
+              "id": "pm-cite",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-read",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-line",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pb-refactoring",
+              "path": "pstack/poteto-mode/playbooks/refactoring.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+              "bytes": 3211
+            },
+            {
+              "kind": "repository",
+              "id": "help-principles",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "rubric",
+              "path": "pstack/interrogate/references/rubric.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+              "bytes": 5025
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "migrate-position",
+              "inline": true,
+              "sha256": "bb8055454e9a401337a241e291e8423413d94c6ef274d9b9e949d336eb0c0261",
+              "bytes": 872
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
+          "bytes": 7194
+        },
+        "artifact": {
+          "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
+          "bytes": 695443
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 398,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
+          "bytes": 695443
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "63 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "12 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "migrate-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "migrate-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-uJQ1u8/child.html",
+                "artifact": {
+                  "sha256": "6c3e6466228539ba0c16816bb52b47e887b8ba13118551e2c310658b07f6b91c",
+                  "bytes": 833600
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 67.6,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 46.8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pb-to-this-1",
+                      "from": "pb",
+                      "to": "this"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "5693da02-1347-48db-a73d-60c19089525f"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:11:02.856Z",
+  "durationMs": 1292,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

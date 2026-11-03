@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:16:27.021Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/candidate.archify.md",
+    "sha256": "25c9c9769391f59846476b9d07c4e3b19509c5d9221d759f5016c8b4dcb3baaf",
+    "bytes": 3017
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+    "sha256": "6576643625def5697ece8ca15ecff8a34e978d59c1c0e91ba32b05cdae168cc8",
+    "bytes": 178168
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "25c9c9769391f59846476b9d07c4e3b19509c5d9221d759f5016c8b4dcb3baaf",
+          "bytes": 3017
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 733,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "9193c6bc-44c9-4191-b11b-bc343f2b8f02",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+        "explainer": {
+          "preparedSha256": "aabe4e647bb94b42594f3c7c78152d2c5acce4a563398a4f5cabcc47bc465a6c",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "pstack/bro/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+              "bytes": 267
+            },
+            {
+              "kind": "repository",
+              "id": "body",
+              "path": "pstack/bro/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+              "bytes": 267
+            },
+            {
+              "kind": "repository",
+              "id": "help-bro",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "recipe-bro",
+              "path": "pstack/poteto-help/references/recipes.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+              "bytes": 3287
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "25c9c9769391f59846476b9d07c4e3b19509c5d9221d759f5016c8b4dcb3baaf",
+          "bytes": 3017
+        },
+        "artifact": {
+          "sha256": "6576643625def5697ece8ca15ecff8a34e978d59c1c0e91ba32b05cdae168cc8",
+          "bytes": 178168
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 374,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "6576643625def5697ece8ca15ecff8a34e978d59c1c0e91ba32b05cdae168cc8",
+          "bytes": 178168
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "26 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "4 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": []
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "9193c6bc-44c9-4191-b11b-bc343f2b8f02"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:16:28.454Z",
+  "durationMs": 1433,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:18:32.207Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/candidate.archify.md",
+    "sha256": "ffb2b1cb47d4347aa4610cb6995ed755c626f772e8d77fcda39e8749a608293d",
+    "bytes": 17214
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+    "sha256": "aae2bb781a70a853b0cf54172021882e90a3d2a8eb13ada66b56f8b7f3ca166d",
+    "bytes": 1275873
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "ffb2b1cb47d4347aa4610cb6995ed755c626f772e8d77fcda39e8749a608293d",
+          "bytes": 17214
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1531,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "8ad80806-e474-4641-83f3-d9f52893eeb1",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+        "explainer": {
+          "preparedSha256": "aba528dbf40ee4b58a98bc7cd575d3995e03424b9a4875943285e91a46d97c58",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intro",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-scope",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intent",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-spawn",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-fallback",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-prompt",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-synth",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-judge",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "skill-out",
+              "path": "pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "repository",
+              "id": "reviewer",
+              "path": "pstack/interrogate/references/reviewer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+              "bytes": 2491
+            },
+            {
+              "kind": "repository",
+              "id": "reviewer-intent",
+              "path": "pstack/interrogate/references/reviewer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+              "bytes": 2491
+            },
+            {
+              "kind": "repository",
+              "id": "reviewer-sev",
+              "path": "pstack/interrogate/references/reviewer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+              "bytes": 2491
+            },
+            {
+              "kind": "repository",
+              "id": "rubric",
+              "path": "pstack/interrogate/references/rubric.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+              "bytes": 5025
+            },
+            {
+              "kind": "repository",
+              "id": "cq",
+              "path": "pstack/interrogate/references/code-quality-review.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+              "bytes": 5217
+            },
+            {
+              "kind": "repository",
+              "id": "cq-dims",
+              "path": "pstack/interrogate/references/code-quality-review.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+              "bytes": 5217
+            },
+            {
+              "kind": "repository",
+              "id": "cq-bar",
+              "path": "pstack/interrogate/references/code-quality-review.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+              "bytes": 5217
+            },
+            {
+              "kind": "repository",
+              "id": "lead",
+              "path": "pstack/interrogate/references/lead-judgment.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+              "bytes": 3465
+            },
+            {
+              "kind": "repository",
+              "id": "lead-filter",
+              "path": "pstack/interrogate/references/lead-judgment.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+              "bytes": 3465
+            },
+            {
+              "kind": "repository",
+              "id": "lead-calib",
+              "path": "pstack/interrogate/references/lead-judgment.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+              "bytes": 3465
+            },
+            {
+              "kind": "repository",
+              "id": "pm-trigger",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "architect-c",
+              "path": "pstack/architect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+              "bytes": 5675
+            },
+            {
+              "kind": "repository",
+              "id": "setup-line",
+              "path": "pstack/setup-pstack/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+              "bytes": 5548
+            },
+            {
+              "kind": "repository",
+              "id": "pb-feature",
+              "path": "pstack/poteto-mode/playbooks/feature.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
+              "bytes": 2766
+            },
+            {
+              "kind": "repository",
+              "id": "pb-pr",
+              "path": "pstack/poteto-mode/playbooks/opening-a-pr.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
+              "bytes": 6142
+            },
+            {
+              "kind": "repository",
+              "id": "pb-bugfix",
+              "path": "pstack/poteto-mode/playbooks/bug-fix.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
+              "bytes": 2255
+            },
+            {
+              "kind": "repository",
+              "id": "dup",
+              "path": "verification-skills/pstack/interrogate/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+              "bytes": 5054
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "interrogate-flow",
+              "inline": true,
+              "sha256": "10a4a259e6610c6b3e868c1fe71a88867a74085b6ed38099b908c91e24a698a6",
+              "bytes": 1366
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "interrogate-position",
+              "inline": true,
+              "sha256": "2cc1f7c91da6aa9c18113922d22251c44ca77707924999acf4011f4728e42263",
+              "bytes": 744
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "ffb2b1cb47d4347aa4610cb6995ed755c626f772e8d77fcda39e8749a608293d",
+          "bytes": 17214
+        },
+        "artifact": {
+          "sha256": "aae2bb781a70a853b0cf54172021882e90a3d2a8eb13ada66b56f8b7f3ca166d",
+          "bytes": 1275873
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 678,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "aae2bb781a70a853b0cf54172021882e90a3d2a8eb13ada66b56f8b7f3ca166d",
+          "bytes": 1275873
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "140 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "29 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "interrogate-flow: pass",
+              "interrogate-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "interrogate-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jBaeGp/child.html",
+                "artifact": {
+                  "sha256": "7b32f30ef53a36ff5c83041ff628f9a5c2137025e857cdfe709766742d960412",
+                  "bytes": 838532
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 64.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-spawn-1",
+                      "from": "ask",
+                      "to": "spawn"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "interrogate-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-29FJ8q/child.html",
+                "artifact": {
+                  "sha256": "785e12b326dc1071dbb56ed679b4b0af222576723372c66876aad23e2f4624db",
+                  "bytes": 831300
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 115.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.717842323651452,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 38,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "caller-to-interrogate-1",
+                      "from": "caller",
+                      "to": "interrogate"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.717842323651452,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "8ad80806-e474-4641-83f3-d9f52893eeb1"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:18:34.605Z",
+  "durationMs": 2397,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

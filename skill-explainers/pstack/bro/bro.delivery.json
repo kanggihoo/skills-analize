@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9193c6bc-44c9-4191-b11b-bc343f2b8f02",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/bro/bro.html",
+  "specification": {
+    "sha256": "25c9c9769391f59846476b9d07c4e3b19509c5d9221d759f5016c8b4dcb3baaf",
+    "bytes": 3017
+  },
+  "artifact": {
+    "sha256": "6576643625def5697ece8ca15ecff8a34e978d59c1c0e91ba32b05cdae168cc8",
+    "bytes": 178168
+  },
+  "explainer": {
+    "preparedSha256": "aabe4e647bb94b42594f3c7c78152d2c5acce4a563398a4f5cabcc47bc465a6c",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "pstack/bro/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+        "bytes": 267
+      },
+      {
+        "kind": "repository",
+        "id": "body",
+        "path": "pstack/bro/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+        "bytes": 267
+      },
+      {
+        "kind": "repository",
+        "id": "help-bro",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "repository",
+        "id": "recipe-bro",
+        "path": "pstack/poteto-help/references/recipes.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+        "bytes": 3287
+      }
+    ]
+  }
+}

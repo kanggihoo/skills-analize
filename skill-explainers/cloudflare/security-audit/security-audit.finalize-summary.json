@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/candidate.archify.md",
+    "sha256": "3e463cce81f8dc1f73476fcfc9245f238ee1512533914ac762281f0125545177",
+    "bytes": 51937
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/security-audit.html",
+    "sha256": "a637086660c3ad1538ea3d7034f6ec7386a1659b5e4d0bc3bcd778edc0cf8b6b",
+    "bytes": 3696874
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/security-audit.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/security-audit.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4068,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

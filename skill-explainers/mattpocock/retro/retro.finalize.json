@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T15:51:02.499Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/candidate.archify.md",
+    "sha256": "f204ce14328cd57145d375ca4ef65ea2b6eae6c458c431575ca4c0040ddcdd99",
+    "bytes": 13392
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+    "sha256": "ad0d72e6e7dc3cc382fbf9badb952672feca0243314ea84ddd9a962e8cc1a74e",
+    "bytes": 1501077
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "f204ce14328cd57145d375ca4ef65ea2b6eae6c458c431575ca4c0040ddcdd99",
+          "bytes": 13392
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1303,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "7850da8c-65d1-4ca1-8e76-62557e59d733",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+        "explainer": {
+          "preparedSha256": "56d596eaa393ed1d94ad5af983412e0a11c26749f43dd37d04328503272c6bbc",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "retro-fm",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-yaml",
+              "path": "mattpocock/retro/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+              "bytes": 146
+            },
+            {
+              "kind": "repository",
+              "id": "retro-intro",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s1",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s2",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-cats",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-nav",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-checks",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-std",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-agents",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-tool",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-noop",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-info",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s4",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-ir",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-files",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "cos-retro",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-fm",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "spc-fm",
+              "path": "mattpocock/setup-pre-commit/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+              "bytes": 2258
+            },
+            {
+              "kind": "repository",
+              "id": "gg-fm",
+              "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+              "bytes": 2313
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "retro-flow",
+              "inline": true,
+              "sha256": "53c55add2d8b2d72b4d45b0e02194de3c029161a231000a4da509cad07893d39",
+              "bytes": 767
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "retro-classify",
+              "inline": true,
+              "sha256": "3d55ce7e2a44d0a655c8043e9574e7b47dfd0b0f05b73a749112677395aa224f",
+              "bytes": 870
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "retro-position",
+              "inline": true,
+              "sha256": "6fb4f359c25d997d192c54ac1cd156a264636d9e8b717591a9f062201eb8c8f1",
+              "bytes": 877
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "f204ce14328cd57145d375ca4ef65ea2b6eae6c458c431575ca4c0040ddcdd99",
+          "bytes": 13392
+        },
+        "artifact": {
+          "sha256": "ad0d72e6e7dc3cc382fbf9badb952672feca0243314ea84ddd9a962e8cc1a74e",
+          "bytes": 1501077
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 717,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "ad0d72e6e7dc3cc382fbf9badb952672feca0243314ea84ddd9a962e8cc1a74e",
+          "bytes": 1501077
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "115 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "23 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "retro-flow: pass",
+              "retro-classify: pass",
+              "retro-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "retro-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-wvhOvM/child.html",
+                "artifact": {
+                  "sha256": "a01fbb6f8b1e523b324b09ff9f5278c7b2750fdbc7d92ba7aceedae76d70da99",
+                  "bytes": 832773
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 102.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "find-to-present-1",
+                      "from": "find",
+                      "to": "present"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "retro-classify",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Yza4GQ/child.html",
+                "artifact": {
+                  "sha256": "a808630f7f0d9f1203b549e5d94ecca9372b1af499c75c38bcb5996902e63d83",
+                  "bytes": 833554
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 70.7,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "kind-to-check-1",
+                      "from": "kind",
+                      "to": "check"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "retro-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-DRWelA/child.html",
+                "artifact": {
+                  "sha256": "58aeaf7cd64a66dd535e03ac7831cfaff930fdf26788eb6e991e5012ef5aaecb",
+                  "bytes": 833427
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 59.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "cos-to-retro-1",
+                      "from": "cos",
+                      "to": "retro"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "7850da8c-65d1-4ca1-8e76-62557e59d733"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T15:51:04.662Z",
+  "durationMs": 2162,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,540 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T15:55:18.294Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/candidate.archify.md",
+    "sha256": "3d8d2056cf394690e31d840bc09de1affcca985904690879ecfbda4a66bbb32d",
+    "bytes": 11784
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+    "sha256": "44e6ca30c0328790b5eda2dbc5c458da23b13eb6fac5b3fa49338c35951b6452",
+    "bytes": 764353
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "3d8d2056cf394690e31d840bc09de1affcca985904690879ecfbda4a66bbb32d",
+          "bytes": 11784
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 784,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "454f3c11-adce-4a6e-bed0-2d8544f2e770",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+        "explainer": {
+          "preparedSha256": "3728ea06bd81eabc1b415488df10dffa3ce900acf8108407f84467b4786ac172",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "cos-fm",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-role",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-wiki",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-ops",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-ex",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-proc",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-retro",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-large",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-strat",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "retro-fm",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s1",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s2",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-checks",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-std",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s4",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-files",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-fm",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "mech-model",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-user",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-shared",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "cos-yaml",
+              "path": "mattpocock/chief-of-staff/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c0f68ed9da6977adc97a791be3bb0830d301b2d27f9c635d92d6f325bffefb83",
+              "bytes": 184
+            },
+            {
+              "kind": "repository",
+              "id": "retro-yaml",
+              "path": "mattpocock/retro/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+              "bytes": 146
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-yaml",
+              "path": "mattpocock/writing-for-agents/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
+              "bytes": 102
+            },
+            {
+              "kind": "repository",
+              "id": "spc-fm",
+              "path": "mattpocock/setup-pre-commit/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+              "bytes": 2258
+            },
+            {
+              "kind": "repository",
+              "id": "gg-fm",
+              "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+              "bytes": 2313
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "env-flow",
+              "inline": true,
+              "sha256": "82ba1ed9326376cdfaf316f2e4ff13cc24ad57797b91da0aa948dc982e6ef196",
+              "bytes": 897
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "3d8d2056cf394690e31d840bc09de1affcca985904690879ecfbda4a66bbb32d",
+          "bytes": 11784
+        },
+        "artifact": {
+          "sha256": "44e6ca30c0328790b5eda2dbc5c458da23b13eb6fac5b3fa49338c35951b6452",
+          "bytes": 764353
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 404,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "44e6ca30c0328790b5eda2dbc5c458da23b13eb6fac5b3fa49338c35951b6452",
+          "bytes": 764353
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "83 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "26 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "env-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "env-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-vFKbMr/child.html",
+                "artifact": {
+                  "sha256": "379e14bef37ef37cd5ddac8e6ddf3ddcd539dda5591d916f7e20e13848f0bdc2",
+                  "bytes": 833573
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "cos-to-retro-1",
+                      "from": "cos",
+                      "to": "retro"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "454f3c11-adce-4a6e-bed0-2d8544f2e770"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/_group-env-improve/env-improve.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T15:55:19.628Z",
+  "durationMs": 1333,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "5159f791-c987-474e-a005-2ae20d4dc51e",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-never-block-on-the-human/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-never-block-on-the-human/principle-never-block-on-the-human.html",
+  "specification": {
+    "sha256": "3c861adf9e11ccc432d30aa2afde3e2a852d2c5ca028e38faa4be4f6b4d94141",
+    "bytes": 7045
+  },
+  "artifact": {
+    "sha256": "95f28df699b0b3f1476741a9fbb245dddd15ab813f7e03d22e2eeaa8bd01bd98",
+    "bytes": 715952
+  },
+  "explainer": {
+    "preparedSha256": "8f30bd8591a233a7ae7f3a066158f97a8354220230feb7fa0b828d09b6ed915c",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/principle-never-block-on-the-human/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+        "bytes": 1172
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "pstack/principle-never-block-on-the-human/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+        "bytes": 1172
+      },
+      {
+        "kind": "repository",
+        "id": "skill-why",
+        "path": "pstack/principle-never-block-on-the-human/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+        "bytes": 1172
+      },
+      {
+        "kind": "repository",
+        "id": "skill-pattern",
+        "path": "pstack/principle-never-block-on-the-human/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+        "bytes": 1172
+      },
+      {
+        "kind": "repository",
+        "id": "skill-bounds",
+        "path": "pstack/principle-never-block-on-the-human/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "f2764bb9338cbfc788c903cf4b9cd0a5f4042d3a04dd6d59cbd525d9beaadd0a",
+        "bytes": 1172
+      },
+      {
+        "kind": "repository",
+        "id": "pm-cite",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-read",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-line",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "fio",
+        "path": "pstack/figure-it-out/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
+        "bytes": 4059
+      },
+      {
+        "kind": "repository",
+        "id": "pb-mpp",
+        "path": "pstack/poteto-mode/playbooks/multi-phase-plan.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+        "bytes": 12977
+      },
+      {
+        "kind": "repository",
+        "id": "help-principles",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "never-block-position",
+        "inline": true,
+        "sha256": "8104802f2700992439d241f03e458153eea3103b0f88390031d7ae2d0b80e2a4",
+        "bytes": 1075
+      }
+    ]
+  }
+}

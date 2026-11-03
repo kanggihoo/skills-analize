@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:20:08.049Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/candidate.archify.md",
+    "sha256": "c8c71ea0e6f33227a917613dfbb5df261fba69f37c4c2b83ae237db2a21b4a72",
+    "bytes": 11369
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+    "sha256": "b12f9dc3d8dee29614694365d0d4cbcc653939b1ac0df1ba6a9e4084c57ee2c6",
+    "bytes": 764936
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "c8c71ea0e6f33227a917613dfbb5df261fba69f37c4c2b83ae237db2a21b4a72",
+          "bytes": 11369
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1134,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "d4c107c8-f9df-4880-9237-9e4ca42a2be6",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+        "explainer": {
+          "preparedSha256": "0df5fd62a791c5b41d0229f6ccd615d57454ec0f5bf818b6d99181410d2188d2",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "intro",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step0",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step1",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step2",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step3",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step4",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step5",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "step6",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "guard",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "eval",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "notuse",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "repository",
+              "id": "recall-route",
+              "path": "pstack/recall/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+              "bytes": 5212
+            },
+            {
+              "kind": "repository",
+              "id": "help-am",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "am-flow",
+              "inline": true,
+              "sha256": "7eecb24b59a15e03664fcbec7a44db1eac0a2f43ee56cc7f66fa4a340dd3c210",
+              "bytes": 1202
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "c8c71ea0e6f33227a917613dfbb5df261fba69f37c4c2b83ae237db2a21b4a72",
+          "bytes": 11369
+        },
+        "artifact": {
+          "sha256": "b12f9dc3d8dee29614694365d0d4cbcc653939b1ac0df1ba6a9e4084c57ee2c6",
+          "bytes": 764936
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 568,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "b12f9dc3d8dee29614694365d0d4cbcc653939b1ac0df1ba6a9e4084c57ee2c6",
+          "bytes": 764936
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "86 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "15 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "am-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "am-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ls2eaT/child.html",
+                "artifact": {
+                  "sha256": "37c7e312a7e4ad2d6417bf107d034c00f1d8923cb4741a2a86d3fa57277001b0",
+                  "bytes": 836137
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "check"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "d4c107c8-f9df-4880-9237-9e4ca42a2be6"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:20:09.950Z",
+  "durationMs": 1900,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

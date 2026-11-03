@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:15:03.922Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
+    "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
+    "bytes": 6163
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+    "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
+    "bytes": 682486
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
+          "bytes": 6163
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1877,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "74b4b6ec-652c-43b9-a763-5cfc9aae4147",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+        "explainer": {
+          "preparedSha256": "be4901c494129fbcb3476e994194f79d968ccfd99a4bc709c9450321927630be",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+              "bytes": 1078
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intro",
+              "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+              "bytes": 1078
+            },
+            {
+              "kind": "repository",
+              "id": "skill-why",
+              "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+              "bytes": 1078
+            },
+            {
+              "kind": "repository",
+              "id": "skill-core",
+              "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+              "bytes": 1078
+            },
+            {
+              "kind": "repository",
+              "id": "skill-guard",
+              "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+              "bytes": 1078
+            },
+            {
+              "kind": "repository",
+              "id": "pm-cite",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-read",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-line",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "architect",
+              "path": "pstack/architect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+              "bytes": 5675
+            },
+            {
+              "kind": "repository",
+              "id": "help-principles",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "outcome-position",
+              "inline": true,
+              "sha256": "f04e80ed9499f468f878b80518387fb34351a799d8b8d08bc955a3e8d8e7b4be",
+              "bytes": 895
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
+          "bytes": 6163
+        },
+        "artifact": {
+          "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
+          "bytes": 682486
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 743,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
+          "bytes": 682486
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "58 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "11 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "outcome-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "outcome-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-JRldGV/child.html",
+                "artifact": {
+                  "sha256": "39f87842387d31753d855ac8cbc5d9b662ef148230cb1ce77b341f9654e8c676",
+                  "bytes": 833650
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 61.9,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "architect-to-this-1",
+                      "from": "architect",
+                      "to": "this"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "74b4b6ec-652c-43b9-a763-5cfc9aae4147"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:15:06.781Z",
+  "durationMs": 2858,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

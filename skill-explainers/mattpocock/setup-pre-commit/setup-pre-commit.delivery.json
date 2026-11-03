@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "ca1a7340-432f-4400-9a4a-6e83d47b2271",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.html",
+  "specification": {
+    "sha256": "11bb7f316f01f54610815c7ac9979339c86be096c0325ca4ba9189e017b57b09",
+    "bytes": 7928
+  },
+  "artifact": {
+    "sha256": "f3b13975fd864a26c55f6f50443d4db91c345ebbfbaa5302862fd5db0dbb7311",
+    "bytes": 614300
+  },
+  "explainer": {
+    "preparedSha256": "b7fb146228b6ffd6bde9e08b362182f5305303ee591dbfa7ec03db15c2bdd220",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-what",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-detect",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-install",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-hook",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-lintstaged",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-prettier",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-verify",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-commit",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "skill-notes",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "oa-yaml",
+        "path": "mattpocock/setup-pre-commit/agents/openai.yaml",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1",
+        "bytes": 99
+      },
+      {
+        "kind": "repository",
+        "id": "gg-desc",
+        "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "bytes": 2313
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "setup-flow",
+        "inline": true,
+        "sha256": "5ab0d395a1654395246cebcbb5d204553205f14994bedd6f5493723e70624681",
+        "bytes": 950
+      }
+    ]
+  }
+}

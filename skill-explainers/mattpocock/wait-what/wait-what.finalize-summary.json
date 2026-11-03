@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/candidate.archify.md",
+    "sha256": "4eae63bf76249c35efe727a9099a35e78e130a436e63e8d017d9b3219ccdb02b",
+    "bytes": 3264
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/wait-what.html",
+    "sha256": "f98aaf3af72acbc9dc9af2dd223d11e32ea2857c27658bde644c8c90fdbd14ff",
+    "bytes": 162004
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/wait-what.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/wait-what.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 866,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

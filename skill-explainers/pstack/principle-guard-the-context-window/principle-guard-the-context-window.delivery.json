@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a6331831-e298-4c7a-bc51-17d772146227",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+  "specification": {
+    "sha256": "94967c7531cc817d2237c852d266de034b1558cd03c0861777e5976719ea75f9",
+    "bytes": 8343
+  },
+  "artifact": {
+    "sha256": "811176c46dd4ee71f61b8d42a281173e8c6545aac21a3f05d78cae03fdd48d5a",
+    "bytes": 726741
+  },
+  "explainer": {
+    "preparedSha256": "a9b95c1cbd6491960906bd82122c0ebf4ffe14394f11b2f716c0b468ac0d99e6",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "rule",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "why",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "p-isolate",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "p-inline",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "p-cap",
+        "path": "pstack/principle-guard-the-context-window/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+        "bytes": 939
+      },
+      {
+        "kind": "repository",
+        "id": "pm-cite",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-read",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-trigger",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pb-pickup",
+        "path": "pstack/poteto-mode/playbooks/session-pickup.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
+        "bytes": 1678
+      },
+      {
+        "kind": "repository",
+        "id": "pb-trace",
+        "path": "pstack/poteto-mode/playbooks/trace-forensics.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
+        "bytes": 1865
+      },
+      {
+        "kind": "repository",
+        "id": "pb-worktree",
+        "path": "pstack/poteto-mode/playbooks/worktree-cleanup.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
+        "bytes": 2932
+      },
+      {
+        "kind": "repository",
+        "id": "mrl",
+        "path": "pstack/principle-minimize-reader-load/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
+        "bytes": 2095
+      },
+      {
+        "kind": "repository",
+        "id": "pb-hill",
+        "path": "pstack/poteto-mode/playbooks/hillclimb.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
+        "bytes": 4403
+      },
+      {
+        "kind": "repository",
+        "id": "pb-plan",
+        "path": "pstack/poteto-mode/playbooks/multi-phase-plan.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+        "bytes": 12977
+      },
+      {
+        "kind": "repository",
+        "id": "pb-runtime",
+        "path": "pstack/poteto-mode/playbooks/runtime-forensics.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
+        "bytes": 1210
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "guard-position",
+        "inline": true,
+        "sha256": "a22743c70dcfb54587e83e6ae56add1f6f6506ea5cacbd24d37b35480e2e5b4b",
+        "bytes": 1082
+      }
+    ]
+  }
+}

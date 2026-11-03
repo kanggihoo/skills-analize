@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a1647951-ae9e-4654-b011-c2a8efed43b4",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/teach/teach.html",
+  "specification": {
+    "sha256": "1c0f5ca24f07b03e78597e1eee7f38677e3a17dfd9369893bb1825f31b871cc9",
+    "bytes": 11578
+  },
+  "artifact": {
+    "sha256": "655eea151035e2d8b160b1815b144ad9ebd217477e1b3c1bcb8ca68e046ae935",
+    "bytes": 1124211
+  },
+  "explainer": {
+    "preparedSha256": "b78462f7871af600a1c54c75ad492270a3842c240795a13e14612475f0905326",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "core",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "step1",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "step2",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "step3",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "step4",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "step5",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "style",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "reply",
+        "path": "pstack/teach/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+        "bytes": 5623
+      },
+      {
+        "kind": "repository",
+        "id": "help-row",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "repository",
+        "id": "help-pair",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "repository",
+        "id": "recipe",
+        "path": "pstack/poteto-help/references/recipes.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+        "bytes": 3287
+      },
+      {
+        "kind": "repository",
+        "id": "why-skip",
+        "path": "pstack/why/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+        "bytes": 10360
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "teach-flow",
+        "inline": true,
+        "sha256": "c6b4807dcf3b56115d5a456059a7b19e73eb77ebd1be63b79e9921c9a7f281ea",
+        "bytes": 1064
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "teach-position",
+        "inline": true,
+        "sha256": "3feb382714b1478ec4a751c1c57f1d3b9e42c5bd2109b70cb988dc705ec86f09",
+        "bytes": 1050
+      }
+    ]
+  }
+}

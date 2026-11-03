@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:25:47.536Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/candidate.archify.md",
+    "sha256": "94967c7531cc817d2237c852d266de034b1558cd03c0861777e5976719ea75f9",
+    "bytes": 8343
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+    "sha256": "811176c46dd4ee71f61b8d42a281173e8c6545aac21a3f05d78cae03fdd48d5a",
+    "bytes": 726741
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "94967c7531cc817d2237c852d266de034b1558cd03c0861777e5976719ea75f9",
+          "bytes": 8343
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 802,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "a6331831-e298-4c7a-bc51-17d772146227",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+        "explainer": {
+          "preparedSha256": "a9b95c1cbd6491960906bd82122c0ebf4ffe14394f11b2f716c0b468ac0d99e6",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "rule",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "why",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "p-isolate",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "p-inline",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "p-cap",
+              "path": "pstack/principle-guard-the-context-window/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d2cef147862576e3d709b7afc149d85196245e8338b9c7eef337c95fba412b3e",
+              "bytes": 939
+            },
+            {
+              "kind": "repository",
+              "id": "pm-cite",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-read",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-trigger",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pb-pickup",
+              "path": "pstack/poteto-mode/playbooks/session-pickup.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
+              "bytes": 1678
+            },
+            {
+              "kind": "repository",
+              "id": "pb-trace",
+              "path": "pstack/poteto-mode/playbooks/trace-forensics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
+              "bytes": 1865
+            },
+            {
+              "kind": "repository",
+              "id": "pb-worktree",
+              "path": "pstack/poteto-mode/playbooks/worktree-cleanup.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
+              "bytes": 2932
+            },
+            {
+              "kind": "repository",
+              "id": "mrl",
+              "path": "pstack/principle-minimize-reader-load/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "42551c5dc74cd578163c148da552db3ff67d29b78600ef216bfd311fb828fe69",
+              "bytes": 2095
+            },
+            {
+              "kind": "repository",
+              "id": "pb-hill",
+              "path": "pstack/poteto-mode/playbooks/hillclimb.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
+              "bytes": 4403
+            },
+            {
+              "kind": "repository",
+              "id": "pb-plan",
+              "path": "pstack/poteto-mode/playbooks/multi-phase-plan.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+              "bytes": 12977
+            },
+            {
+              "kind": "repository",
+              "id": "pb-runtime",
+              "path": "pstack/poteto-mode/playbooks/runtime-forensics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
+              "bytes": 1210
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "guard-position",
+              "inline": true,
+              "sha256": "a22743c70dcfb54587e83e6ae56add1f6f6506ea5cacbd24d37b35480e2e5b4b",
+              "bytes": 1082
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "94967c7531cc817d2237c852d266de034b1558cd03c0861777e5976719ea75f9",
+          "bytes": 8343
+        },
+        "artifact": {
+          "sha256": "811176c46dd4ee71f61b8d42a281173e8c6545aac21a3f05d78cae03fdd48d5a",
+          "bytes": 726741
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 414,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "811176c46dd4ee71f61b8d42a281173e8c6545aac21a3f05d78cae03fdd48d5a",
+          "bytes": 726741
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "69 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "17 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "guard-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "guard-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-iWRuiV/child.html",
+                "artifact": {
+                  "sha256": "0f91f4d7bc391c1a53af292c8b8e233644a81020e3c5502583f0a2b67a3561b6",
+                  "bytes": 835645
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 66.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.359050445103858,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "me-to-cite-1",
+                      "from": "me",
+                      "to": "cite"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.359050445103858,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "a6331831-e298-4c7a-bc51-17d772146227"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-guard-the-context-window/principle-guard-the-context-window.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:25:48.899Z",
+  "durationMs": 1363,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

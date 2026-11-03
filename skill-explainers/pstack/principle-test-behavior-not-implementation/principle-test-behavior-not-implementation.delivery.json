@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "eeab50c2-d148-4bba-abcf-3c644bd7034d",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+  "specification": {
+    "sha256": "a9557ac98bacf2673c4d83cb26358473f6d501e46993136caffb2f18fc160e20",
+    "bytes": 7793
+  },
+  "artifact": {
+    "sha256": "cebd5c7f8cdfc20e13df5639f1c91f0c9f79c8792f0b7fef3e4311a4524ecf09",
+    "bytes": 704796
+  },
+  "explainer": {
+    "preparedSha256": "6a4a501778ff29402bd85f1850311e9831c273df0c209eb68d33d29fc23c6cd3",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-check",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-why",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-shapes",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-fix",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "skill-keep",
+        "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+        "bytes": 2575
+      },
+      {
+        "kind": "repository",
+        "id": "pm-cite",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-read",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-line",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "rubric",
+        "path": "pstack/interrogate/references/rubric.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+        "bytes": 5025
+      },
+      {
+        "kind": "repository",
+        "id": "help-principles",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "test-position",
+        "inline": true,
+        "sha256": "1f69ff2c0c2ebc6e5489b85810a3dd027cd2b681dc51f3e09994261ab1d9b854",
+        "bytes": 691
+      }
+    ]
+  }
+}

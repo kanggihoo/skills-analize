@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:22:33.374Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/candidate.archify.md",
+    "sha256": "a9557ac98bacf2673c4d83cb26358473f6d501e46993136caffb2f18fc160e20",
+    "bytes": 7793
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+    "sha256": "cebd5c7f8cdfc20e13df5639f1c91f0c9f79c8792f0b7fef3e4311a4524ecf09",
+    "bytes": 704796
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a9557ac98bacf2673c4d83cb26358473f6d501e46993136caffb2f18fc160e20",
+          "bytes": 7793
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 2035,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "eeab50c2-d148-4bba-abcf-3c644bd7034d",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+        "explainer": {
+          "preparedSha256": "6a4a501778ff29402bd85f1850311e9831c273df0c209eb68d33d29fc23c6cd3",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intro",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-check",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-why",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-shapes",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-fix",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "skill-keep",
+              "path": "pstack/principle-test-behavior-not-implementation/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "87e40efe4e486f7ea639d2ed1fc0abe6c93b8fd0e89a81218086909d2470a52e",
+              "bytes": 2575
+            },
+            {
+              "kind": "repository",
+              "id": "pm-cite",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-read",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pm-line",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "rubric",
+              "path": "pstack/interrogate/references/rubric.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+              "bytes": 5025
+            },
+            {
+              "kind": "repository",
+              "id": "help-principles",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "test-position",
+              "inline": true,
+              "sha256": "1f69ff2c0c2ebc6e5489b85810a3dd027cd2b681dc51f3e09994261ab1d9b854",
+              "bytes": 691
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a9557ac98bacf2673c4d83cb26358473f6d501e46993136caffb2f18fc160e20",
+          "bytes": 7793
+        },
+        "artifact": {
+          "sha256": "cebd5c7f8cdfc20e13df5639f1c91f0c9f79c8792f0b7fef3e4311a4524ecf09",
+          "bytes": 704796
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 937,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "cebd5c7f8cdfc20e13df5639f1c91f0c9f79c8792f0b7fef3e4311a4524ecf09",
+          "bytes": 704796
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "61 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "13 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "test-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "test-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-eExX95/child.html",
+                "artifact": {
+                  "sha256": "4585ef8715a8e1e5574b3b430aae03ebdcb4466e930157e23c6d298e88267bf2",
+                  "bytes": 831712
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 115.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 38,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pm-to-this-1",
+                      "from": "pm",
+                      "to": "this"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "eeab50c2-d148-4bba-abcf-3c644bd7034d"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-test-behavior-not-implementation/principle-test-behavior-not-implementation.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:22:36.691Z",
+  "durationMs": 3316,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

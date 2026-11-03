@@ -1,0 +1,1218 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:22:58.271Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/candidate.archify.md",
+    "sha256": "e5b17763173c197b1b011ed8e833ec417fb4d4d0e9e278d88a598eee91ae604c",
+    "bytes": 49066
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+    "sha256": "afb0ca96b2c570c692cf181224b244f13759bed54afa6f3082f477404a7b047e",
+    "bytes": 3259158
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "e5b17763173c197b1b011ed8e833ec417fb4d4d0e9e278d88a598eee91ae604c",
+          "bytes": 49066
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 2886,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "b758e209-f6bc-4990-b2a7-ec969af5705e",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+        "explainer": {
+          "preparedSha256": "2511ae1bd9a03be5c0dfe3de7fd00e59421eb9e44d5ae80abcbc03d4a3bb4c8e",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-head",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-how",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-ask",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-code",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-prose",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-ship",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "nn-rest",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "principles",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "autonomy",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "subagent-type",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "subagent-defaults",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "subagent-own",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "reply",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "comments",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pb-copy",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pb-list",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "pb-investigation",
+              "path": "pstack/poteto-mode/playbooks/investigation.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
+              "bytes": 928
+            },
+            {
+              "kind": "repository",
+              "id": "pb-bugfix",
+              "path": "pstack/poteto-mode/playbooks/bug-fix.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
+              "bytes": 2255
+            },
+            {
+              "kind": "repository",
+              "id": "pb-perf",
+              "path": "pstack/poteto-mode/playbooks/perf-issue.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
+              "bytes": 1446
+            },
+            {
+              "kind": "repository",
+              "id": "pb-hill",
+              "path": "pstack/poteto-mode/playbooks/hillclimb.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
+              "bytes": 4403
+            },
+            {
+              "kind": "repository",
+              "id": "pb-runtime",
+              "path": "pstack/poteto-mode/playbooks/runtime-forensics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
+              "bytes": 1210
+            },
+            {
+              "kind": "repository",
+              "id": "pb-trace",
+              "path": "pstack/poteto-mode/playbooks/trace-forensics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "137ce3984fb96e45971fdff4d3c79fa4ccc647c5b30ae4945783b9fb23f8cec7",
+              "bytes": 1865
+            },
+            {
+              "kind": "repository",
+              "id": "pb-feature",
+              "path": "pstack/poteto-mode/playbooks/feature.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
+              "bytes": 2766
+            },
+            {
+              "kind": "repository",
+              "id": "pb-refactor",
+              "path": "pstack/poteto-mode/playbooks/refactoring.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+              "bytes": 3211
+            },
+            {
+              "kind": "repository",
+              "id": "pb-proto",
+              "path": "pstack/poteto-mode/playbooks/prototype.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
+              "bytes": 2161
+            },
+            {
+              "kind": "repository",
+              "id": "pb-visual",
+              "path": "pstack/poteto-mode/playbooks/visual-parity.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
+              "bytes": 1197
+            },
+            {
+              "kind": "repository",
+              "id": "pb-skill",
+              "path": "pstack/poteto-mode/playbooks/authoring-a-skill.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "f6a13a445c360b48d6cd72780ac01955f45b82826476efe0e67c7559329407aa",
+              "bytes": 831
+            },
+            {
+              "kind": "repository",
+              "id": "pb-eval",
+              "path": "pstack/poteto-mode/playbooks/eval.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "b862bfa2fae2399abf047a8e80d3e3dddb64003af96fb1cebb625216131e36bb",
+              "bytes": 2524
+            },
+            {
+              "kind": "repository",
+              "id": "pb-babysit-mode",
+              "path": "pstack/poteto-mode/playbooks/babysit.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
+              "bytes": 8289
+            },
+            {
+              "kind": "repository",
+              "id": "pb-babysit-watch",
+              "path": "pstack/poteto-mode/playbooks/babysit.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
+              "bytes": 8289
+            },
+            {
+              "kind": "repository",
+              "id": "pb-babysit-ci",
+              "path": "pstack/poteto-mode/playbooks/babysit.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a0346c37c2313f36a863b80f66ee7b98059c2242adf74fc7b3e48abdb9ec6f5a",
+              "bytes": 8289
+            },
+            {
+              "kind": "repository",
+              "id": "pb-ship",
+              "path": "pstack/poteto-mode/playbooks/shipping.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
+              "bytes": 5439
+            },
+            {
+              "kind": "repository",
+              "id": "pb-auto",
+              "path": "pstack/poteto-mode/playbooks/autonomous-run.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "15e54ad3ac92565613980772d8708de6e19cc4690bfd4bb3fb8836522407377b",
+              "bytes": 1878
+            },
+            {
+              "kind": "repository",
+              "id": "orch-head",
+              "path": "pstack/poteto-mode/playbooks/orchestrate.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+              "bytes": 16779
+            },
+            {
+              "kind": "repository",
+              "id": "orch-store",
+              "path": "pstack/poteto-mode/playbooks/orchestrate.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+              "bytes": 16779
+            },
+            {
+              "kind": "repository",
+              "id": "orch-steps",
+              "path": "pstack/poteto-mode/playbooks/orchestrate.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+              "bytes": 16779
+            },
+            {
+              "kind": "repository",
+              "id": "orch-stack",
+              "path": "pstack/poteto-mode/playbooks/orchestrate.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+              "bytes": 16779
+            },
+            {
+              "kind": "repository",
+              "id": "orch-esc",
+              "path": "pstack/poteto-mode/playbooks/orchestrate.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+              "bytes": 16779
+            },
+            {
+              "kind": "repository",
+              "id": "pb-apfull",
+              "path": "pstack/poteto-mode/playbooks/autopilot-full.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
+              "bytes": 9431
+            },
+            {
+              "kind": "repository",
+              "id": "pb-apstack",
+              "path": "pstack/poteto-mode/playbooks/autopilot-stack.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "007c0a3b12011954a224f54773ef4ad7b75918be0a311914c1b51ad4e794c1e5",
+              "bytes": 5031
+            },
+            {
+              "kind": "repository",
+              "id": "pb-pickup",
+              "path": "pstack/poteto-mode/playbooks/session-pickup.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
+              "bytes": 1678
+            },
+            {
+              "kind": "repository",
+              "id": "pb-pause",
+              "path": "pstack/poteto-mode/playbooks/pause-safely.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "77968cfe5f4a71a8cd33e0ae8ffcdbd88dd693a212c240457773e6c40c96c21d",
+              "bytes": 1135
+            },
+            {
+              "kind": "repository",
+              "id": "pb-plan",
+              "path": "pstack/poteto-mode/playbooks/multi-phase-plan.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+              "bytes": 12977
+            },
+            {
+              "kind": "repository",
+              "id": "pb-plan-skel",
+              "path": "pstack/poteto-mode/playbooks/multi-phase-plan.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+              "bytes": 12977
+            },
+            {
+              "kind": "repository",
+              "id": "pb-wt",
+              "path": "pstack/poteto-mode/playbooks/worktree-cleanup.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
+              "bytes": 2932
+            },
+            {
+              "kind": "repository",
+              "id": "pb-openpr",
+              "path": "pstack/poteto-mode/playbooks/opening-a-pr.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
+              "bytes": 6142
+            },
+            {
+              "kind": "repository",
+              "id": "pb-openpr-babysit",
+              "path": "pstack/poteto-mode/playbooks/opening-a-pr.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
+              "bytes": 6142
+            },
+            {
+              "kind": "repository",
+              "id": "bugbot",
+              "path": "pstack/poteto-mode/references/bugbot-triage.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
+              "bytes": 9629
+            },
+            {
+              "kind": "repository",
+              "id": "bugbot-ask",
+              "path": "pstack/poteto-mode/references/bugbot-triage.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
+              "bytes": 9629
+            },
+            {
+              "kind": "repository",
+              "id": "s-pkg",
+              "path": "pstack/poteto-mode/scripts/package.json",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d1f815091209d49763775cc188e8e06ff32d5fec648bffd2272bc25a165e87c3",
+              "bytes": 352
+            },
+            {
+              "kind": "repository",
+              "id": "s-boot",
+              "path": "pstack/poteto-mode/scripts/bootstrap.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ccd2ed08fd9da9d0d942e5f2491cfc74bb92d8a08fa51755e0da1ac8de287361",
+              "bytes": 1737
+            },
+            {
+              "kind": "repository",
+              "id": "s-check",
+              "path": "pstack/poteto-mode/scripts/check-plan.mjs",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
+              "bytes": 7594
+            },
+            {
+              "kind": "repository",
+              "id": "s-check-out",
+              "path": "pstack/poteto-mode/scripts/check-plan.mjs",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "4f9432d9989880b6afc2bdda503d5b12a9d07d357ecf31936b7ab5e83bc80523",
+              "bytes": 7594
+            },
+            {
+              "kind": "repository",
+              "id": "s-wta",
+              "path": "pstack/poteto-mode/scripts/worktree-audit.sh",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "95b8530f3c0ccada8cabc4b0727c052fbc85c141531375aaace65c427af8aecc",
+              "bytes": 3984
+            },
+            {
+              "kind": "repository",
+              "id": "s-wta-bucket",
+              "path": "pstack/poteto-mode/scripts/worktree-audit.sh",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "95b8530f3c0ccada8cabc4b0727c052fbc85c141531375aaace65c427af8aecc",
+              "bytes": 3984
+            },
+            {
+              "kind": "repository",
+              "id": "s-orch",
+              "path": "pstack/poteto-mode/scripts/orch/orch.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
+              "bytes": 15511
+            },
+            {
+              "kind": "repository",
+              "id": "s-orch-status",
+              "path": "pstack/poteto-mode/scripts/orch/orch.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
+              "bytes": 15511
+            },
+            {
+              "kind": "repository",
+              "id": "s-store-init",
+              "path": "pstack/poteto-mode/scripts/orch/store.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+              "bytes": 42927
+            },
+            {
+              "kind": "repository",
+              "id": "s-store-ledger",
+              "path": "pstack/poteto-mode/scripts/orch/store.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+              "bytes": 42927
+            },
+            {
+              "kind": "repository",
+              "id": "s-store-lock",
+              "path": "pstack/poteto-mode/scripts/orch/store.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+              "bytes": 42927
+            },
+            {
+              "kind": "repository",
+              "id": "s-store-gt",
+              "path": "pstack/poteto-mode/scripts/orch/store.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+              "bytes": 42927
+            },
+            {
+              "kind": "repository",
+              "id": "s-store-frontier",
+              "path": "pstack/poteto-mode/scripts/orch/store.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+              "bytes": 42927
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-entry",
+              "path": "pstack/poteto-mode/scripts/watch-pr/watch-pr",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
+              "bytes": 211
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-cli",
+              "path": "pstack/poteto-mode/scripts/watch-pr/cli.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
+              "bytes": 6983
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-gh",
+              "path": "pstack/poteto-mode/scripts/watch-pr/github.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
+              "bytes": 24072
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-gate",
+              "path": "pstack/poteto-mode/scripts/watch-pr/github.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
+              "bytes": 24072
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-bugbot",
+              "path": "pstack/poteto-mode/scripts/watch-pr/github.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d1bbbafbe8e2c703c84da2029de7f2c4011412512f8cf65a42100f46bcb92c8a",
+              "bytes": 24072
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-policy",
+              "path": "pstack/poteto-mode/scripts/watch-pr/policy.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "68d240505852cf23c9b2dea463342e9e61243f486b3cc86c735d140f9ee7be49",
+              "bytes": 25132
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-types",
+              "path": "pstack/poteto-mode/scripts/watch-pr/types.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "64ba6221e3bfe61bbb292337d199cdec6309455477280efb060203dba34e0e91",
+              "bytes": 12359
+            },
+            {
+              "kind": "repository",
+              "id": "s-watch-render",
+              "path": "pstack/poteto-mode/scripts/watch-pr/render.ts",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
+              "bytes": 7083
+            },
+            {
+              "kind": "repository",
+              "id": "help-work",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "setup-rule",
+              "path": "pstack/setup-pstack/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+              "bytes": 5548
+            },
+            {
+              "kind": "repository",
+              "id": "recall-route",
+              "path": "pstack/recall/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+              "bytes": 5212
+            },
+            {
+              "kind": "repository",
+              "id": "fio-start",
+              "path": "pstack/figure-it-out/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
+              "bytes": 4059
+            },
+            {
+              "kind": "repository",
+              "id": "automate-read",
+              "path": "pstack/automate-me/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+              "bytes": 7164
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "pm-route",
+              "inline": true,
+              "sha256": "21409d5cf22c59f38705f80e50ff0928a60156e0c66884aac8588b715df86554",
+              "bytes": 1558
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "pm-pr-life",
+              "inline": true,
+              "sha256": "044bfaf97dc608aa3215656d88ad3b0fa285edb7ac5273c1e64bae83d7d2bc7d",
+              "bytes": 1495
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "pm-position",
+              "inline": true,
+              "sha256": "bd65f459440d12b7687692a39255d449557c37f1288c57aa11fcea0e892d7bac",
+              "bytes": 1254
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "e5b17763173c197b1b011ed8e833ec417fb4d4d0e9e278d88a598eee91ae604c",
+          "bytes": 49066
+        },
+        "artifact": {
+          "sha256": "afb0ca96b2c570c692cf181224b244f13759bed54afa6f3082f477404a7b047e",
+          "bytes": 3259158
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1451,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "afb0ca96b2c570c692cf181224b244f13759bed54afa6f3082f477404a7b047e",
+          "bytes": 3259158
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "311 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "79 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "pm-route: pass",
+              "pm-pr-life: pass",
+              "pm-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "pm-route",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-TrGUr0/child.html",
+                "artifact": {
+                  "sha256": "387d72e2a208d36429abbac0c70bf7c016812769d03c16d33be3f8864c8f79a5",
+                  "bytes": 840898
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.733887733887734,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "big-to-fio-1",
+                      "from": "big",
+                      "to": "fio"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.733887733887734,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "pm-pr-life",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-AJZA7d/child.html",
+                "artifact": {
+                  "sha256": "ca42a458bd778f69bdca2159634d4a373923a44e3b2477b5755e046370f449d1",
+                  "bytes": 839072
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 56.3,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-mode-1",
+                      "from": "ask",
+                      "to": "mode"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "pm-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-NvZAu6/child.html",
+                "artifact": {
+                  "sha256": "73dcea054e843645a421800c0dacd455e0396f5863ef65c3f7ce79b0957b34a9",
+                  "bytes": 836690
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 6,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "help-to-pm-1",
+                      "from": "help",
+                      "to": "pm"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "b758e209-f6bc-4990-b2a7-ec969af5705e"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/poteto-mode/poteto-mode.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:23:02.840Z",
+  "durationMs": 4569,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

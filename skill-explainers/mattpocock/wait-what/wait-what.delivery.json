@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "dce319a2-6ccf-467d-a93b-1351eb72a2b9",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/wait-what/wait-what.html",
+  "specification": {
+    "sha256": "4eae63bf76249c35efe727a9099a35e78e130a436e63e8d017d9b3219ccdb02b",
+    "bytes": 3264
+  },
+  "artifact": {
+    "sha256": "f98aaf3af72acbc9dc9af2dd223d11e32ea2857c27658bde644c8c90fdbd14ff",
+    "bytes": 162004
+  },
+  "explainer": {
+    "preparedSha256": "0769bf10bea4aa310c13540656cc558bf0607cbd81ec71af148717b118e89fd5",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "mattpocock/wait-what/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "bytes": 396
+      },
+      {
+        "kind": "repository",
+        "id": "skill-body",
+        "path": "mattpocock/wait-what/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+        "bytes": 396
+      },
+      {
+        "kind": "repository",
+        "id": "oa-yaml",
+        "path": "mattpocock/wait-what/agents/openai.yaml",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
+        "bytes": 158
+      },
+      {
+        "kind": "repository",
+        "id": "teach-glossary",
+        "path": "mattpocock/teach/GLOSSARY-FORMAT.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+        "bytes": 2122
+      }
+    ]
+  }
+}

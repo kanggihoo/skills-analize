@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7850da8c-65d1-4ca1-8e76-62557e59d733",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/retro/retro.html",
+  "specification": {
+    "sha256": "f204ce14328cd57145d375ca4ef65ea2b6eae6c458c431575ca4c0040ddcdd99",
+    "bytes": 13392
+  },
+  "artifact": {
+    "sha256": "ad0d72e6e7dc3cc382fbf9badb952672feca0243314ea84ddd9a962e8cc1a74e",
+    "bytes": 1501077
+  },
+  "explainer": {
+    "preparedSha256": "56d596eaa393ed1d94ad5af983412e0a11c26749f43dd37d04328503272c6bbc",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "retro-fm",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-yaml",
+        "path": "mattpocock/retro/agents/openai.yaml",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+        "bytes": 146
+      },
+      {
+        "kind": "repository",
+        "id": "retro-intro",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-s1",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-s2",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-cats",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-nav",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-checks",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-std",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-agents",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-tool",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-noop",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-info",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-s4",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-ir",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "retro-files",
+        "path": "mattpocock/retro/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+        "bytes": 4369
+      },
+      {
+        "kind": "repository",
+        "id": "cos-retro",
+        "path": "mattpocock/chief-of-staff/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+        "bytes": 4729
+      },
+      {
+        "kind": "repository",
+        "id": "wfa-fm",
+        "path": "mattpocock/writing-for-agents/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "bytes": 10886
+      },
+      {
+        "kind": "repository",
+        "id": "spc-fm",
+        "path": "mattpocock/setup-pre-commit/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
+        "bytes": 2258
+      },
+      {
+        "kind": "repository",
+        "id": "gg-fm",
+        "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
+        "bytes": 2313
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "retro-flow",
+        "inline": true,
+        "sha256": "53c55add2d8b2d72b4d45b0e02194de3c029161a231000a4da509cad07893d39",
+        "bytes": 767
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "retro-classify",
+        "inline": true,
+        "sha256": "3d55ce7e2a44d0a655c8043e9574e7b47dfd0b0f05b73a749112677395aa224f",
+        "bytes": 870
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "retro-position",
+        "inline": true,
+        "sha256": "6fb4f359c25d997d192c54ac1cd156a264636d9e8b717591a9f062201eb8c8f1",
+        "bytes": 877
+      }
+    ]
+  }
+}

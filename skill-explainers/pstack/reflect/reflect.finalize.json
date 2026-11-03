@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:18:57.982Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/candidate.archify.md",
+    "sha256": "548b42cb063d7634491d88e3fc756fd1ccb88bddf039864ac079c99c6ce0d55b",
+    "bytes": 15934
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+    "sha256": "f8775986b1e87c764de290e853de85337d22d3971bbf64e269eaec0d851e123d",
+    "bytes": 900654
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "548b42cb063d7634491d88e3fc756fd1ccb88bddf039864ac079c99c6ce0d55b",
+          "bytes": 15934
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1556,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "e325e724-91a3-413a-b4fa-cbfd06d89606",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+        "explainer": {
+          "preparedSha256": "a5ff6bda4a8dd6dbad80ef10bc60437e5cba03b68da4becdb07fa5ae6173f7b9",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "purpose",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "when",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "locate",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "spawn",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "synth",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "struct",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "apply",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "summary",
+              "path": "pstack/reflect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "36efa48cc4ec2ba6f8131651aae24c6321682b098ed47a1069a7509462bf4a84",
+              "bytes": 4982
+            },
+            {
+              "kind": "repository",
+              "id": "jr",
+              "path": "pstack/reflect/references/judgment-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+              "bytes": 3255
+            },
+            {
+              "kind": "repository",
+              "id": "jr-guard",
+              "path": "pstack/reflect/references/judgment-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+              "bytes": 3255
+            },
+            {
+              "kind": "repository",
+              "id": "jr-scope",
+              "path": "pstack/reflect/references/judgment-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+              "bytes": 3255
+            },
+            {
+              "kind": "repository",
+              "id": "jr-out",
+              "path": "pstack/reflect/references/judgment-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+              "bytes": 3255
+            },
+            {
+              "kind": "repository",
+              "id": "dr",
+              "path": "pstack/reflect/references/divergent-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
+              "bytes": 3889
+            },
+            {
+              "kind": "repository",
+              "id": "dr-scan",
+              "path": "pstack/reflect/references/divergent-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
+              "bytes": 3889
+            },
+            {
+              "kind": "repository",
+              "id": "tr",
+              "path": "pstack/reflect/references/tooling-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+              "bytes": 4609
+            },
+            {
+              "kind": "repository",
+              "id": "tr-lens",
+              "path": "pstack/reflect/references/tooling-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+              "bytes": 4609
+            },
+            {
+              "kind": "repository",
+              "id": "tr-scan",
+              "path": "pstack/reflect/references/tooling-reviewer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+              "bytes": 4609
+            },
+            {
+              "kind": "repository",
+              "id": "sy",
+              "path": "pstack/reflect/references/synthesizer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+              "bytes": 4164
+            },
+            {
+              "kind": "repository",
+              "id": "sy-crit",
+              "path": "pstack/reflect/references/synthesizer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+              "bytes": 4164
+            },
+            {
+              "kind": "repository",
+              "id": "sy-keep",
+              "path": "pstack/reflect/references/synthesizer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+              "bytes": 4164
+            },
+            {
+              "kind": "repository",
+              "id": "sy-out",
+              "path": "pstack/reflect/references/synthesizer.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+              "bytes": 4164
+            },
+            {
+              "kind": "repository",
+              "id": "pm-93",
+              "path": "pstack/poteto-mode/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+              "bytes": 20559
+            },
+            {
+              "kind": "repository",
+              "id": "setup-reflect",
+              "path": "pstack/setup-pstack/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+              "bytes": 5548
+            },
+            {
+              "kind": "repository",
+              "id": "help-reflect",
+              "path": "pstack/poteto-help/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+              "bytes": 12884
+            },
+            {
+              "kind": "repository",
+              "id": "recipe-reflect",
+              "path": "pstack/poteto-help/references/recipes.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+              "bytes": 3287
+            },
+            {
+              "kind": "repository",
+              "id": "encode",
+              "path": "pstack/principle-encode-lessons-in-structure/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "77044c83a9ac6df78fc643887ea5f1f11f082adaf14b717c060cdaed03cce863",
+              "bytes": 2211
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "reflect-flow",
+              "inline": true,
+              "sha256": "f921d8e129229bf37bb281499aeb7923121eda77e4b58cf27dda37212060f55c",
+              "bytes": 1577
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "548b42cb063d7634491d88e3fc756fd1ccb88bddf039864ac079c99c6ce0d55b",
+          "bytes": 15934
+        },
+        "artifact": {
+          "sha256": "f8775986b1e87c764de290e853de85337d22d3971bbf64e269eaec0d851e123d",
+          "bytes": 900654
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 710,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "f8775986b1e87c764de290e853de85337d22d3971bbf64e269eaec0d851e123d",
+          "bytes": 900654
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "104 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "28 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "reflect-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "reflect-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-SjuEyB/child.html",
+                "artifact": {
+                  "sha256": "8cdb2bbf6588b5d21622b3deabe4e98f9d0336902ec94de8d414001d6fd12110",
+                  "bytes": 840512
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "check-to-backlog-1",
+                      "from": "check",
+                      "to": "backlog"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "e325e724-91a3-413a-b4fa-cbfd06d89606"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/reflect/reflect.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:19:00.542Z",
+  "durationMs": 2559,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

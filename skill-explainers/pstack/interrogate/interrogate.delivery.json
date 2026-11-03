@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8ad80806-e474-4641-83f3-d9f52893eeb1",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/interrogate/interrogate.html",
+  "specification": {
+    "sha256": "ffb2b1cb47d4347aa4610cb6995ed755c626f772e8d77fcda39e8749a608293d",
+    "bytes": 17214
+  },
+  "artifact": {
+    "sha256": "aae2bb781a70a853b0cf54172021882e90a3d2a8eb13ada66b56f8b7f3ca166d",
+    "bytes": 1275873
+  },
+  "explainer": {
+    "preparedSha256": "aba528dbf40ee4b58a98bc7cd575d3995e03424b9a4875943285e91a46d97c58",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-scope",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intent",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-spawn",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-fallback",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-prompt",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-synth",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-judge",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "skill-out",
+        "path": "pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "repository",
+        "id": "reviewer",
+        "path": "pstack/interrogate/references/reviewer-prompt.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+        "bytes": 2491
+      },
+      {
+        "kind": "repository",
+        "id": "reviewer-intent",
+        "path": "pstack/interrogate/references/reviewer-prompt.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+        "bytes": 2491
+      },
+      {
+        "kind": "repository",
+        "id": "reviewer-sev",
+        "path": "pstack/interrogate/references/reviewer-prompt.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+        "bytes": 2491
+      },
+      {
+        "kind": "repository",
+        "id": "rubric",
+        "path": "pstack/interrogate/references/rubric.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+        "bytes": 5025
+      },
+      {
+        "kind": "repository",
+        "id": "cq",
+        "path": "pstack/interrogate/references/code-quality-review.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+        "bytes": 5217
+      },
+      {
+        "kind": "repository",
+        "id": "cq-dims",
+        "path": "pstack/interrogate/references/code-quality-review.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+        "bytes": 5217
+      },
+      {
+        "kind": "repository",
+        "id": "cq-bar",
+        "path": "pstack/interrogate/references/code-quality-review.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+        "bytes": 5217
+      },
+      {
+        "kind": "repository",
+        "id": "lead",
+        "path": "pstack/interrogate/references/lead-judgment.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+        "bytes": 3465
+      },
+      {
+        "kind": "repository",
+        "id": "lead-filter",
+        "path": "pstack/interrogate/references/lead-judgment.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+        "bytes": 3465
+      },
+      {
+        "kind": "repository",
+        "id": "lead-calib",
+        "path": "pstack/interrogate/references/lead-judgment.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+        "bytes": 3465
+      },
+      {
+        "kind": "repository",
+        "id": "pm-trigger",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "architect-c",
+        "path": "pstack/architect/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+        "bytes": 5675
+      },
+      {
+        "kind": "repository",
+        "id": "setup-line",
+        "path": "pstack/setup-pstack/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+        "bytes": 5548
+      },
+      {
+        "kind": "repository",
+        "id": "pb-feature",
+        "path": "pstack/poteto-mode/playbooks/feature.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
+        "bytes": 2766
+      },
+      {
+        "kind": "repository",
+        "id": "pb-pr",
+        "path": "pstack/poteto-mode/playbooks/opening-a-pr.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "pb-bugfix",
+        "path": "pstack/poteto-mode/playbooks/bug-fix.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
+        "bytes": 2255
+      },
+      {
+        "kind": "repository",
+        "id": "dup",
+        "path": "verification-skills/pstack/interrogate/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "59d498c3e9848a24b2d105eb3f05b808aa4152adf4cb1de7bbb6aff4f4cd9b68",
+        "bytes": 5054
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "interrogate-flow",
+        "inline": true,
+        "sha256": "10a4a259e6610c6b3e868c1fe71a88867a74085b6ed38099b908c91e24a698a6",
+        "bytes": 1366
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "interrogate-position",
+        "inline": true,
+        "sha256": "2cc1f7c91da6aa9c18113922d22251c44ca77707924999acf4011f4728e42263",
+        "bytes": 744
+      }
+    ]
+  }
+}

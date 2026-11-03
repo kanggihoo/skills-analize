@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d4c107c8-f9df-4880-9237-9e4ca42a2be6",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/automate-me/automate-me.html",
+  "specification": {
+    "sha256": "c8c71ea0e6f33227a917613dfbb5df261fba69f37c4c2b83ae237db2a21b4a72",
+    "bytes": 11369
+  },
+  "artifact": {
+    "sha256": "b12f9dc3d8dee29614694365d0d4cbcc653939b1ac0df1ba6a9e4084c57ee2c6",
+    "bytes": 764936
+  },
+  "explainer": {
+    "preparedSha256": "0df5fd62a791c5b41d0229f6ccd615d57454ec0f5bf818b6d99181410d2188d2",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "intro",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step0",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step1",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step2",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step3",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step4",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step5",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "step6",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "guard",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "eval",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "notuse",
+        "path": "pstack/automate-me/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+        "bytes": 7164
+      },
+      {
+        "kind": "repository",
+        "id": "recall-route",
+        "path": "pstack/recall/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+        "bytes": 5212
+      },
+      {
+        "kind": "repository",
+        "id": "help-am",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "am-flow",
+        "inline": true,
+        "sha256": "7eecb24b59a15e03664fcbec7a44db1eac0a2f43ee56cc7f66fa4a340dd3c210",
+        "bytes": 1202
+      }
+    ]
+  }
+}

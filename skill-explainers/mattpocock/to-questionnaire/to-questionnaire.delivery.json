@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "5168f29c-5b4f-44b2-aff0-7eeaa86242a7",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+  "specification": {
+    "sha256": "b4928980c8173b14573f67ca17d1d9a7124bd2067d217e34ae5e951e1fd41abd",
+    "bytes": 5391
+  },
+  "artifact": {
+    "sha256": "b4f0d5f379cc32ce115923ec851062ab7b803ac62401104668dcd78306b47c14",
+    "bytes": 570077
+  },
+  "explainer": {
+    "preparedSha256": "c81b9bd14d4eff0ddda3f19b140debbc958c74fd9adbf3d481d09bd07fce522e",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "skill-send",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "skill-steps",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "skill-structure",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "skill-template",
+        "path": "mattpocock/to-questionnaire/SKILL.md",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+        "bytes": 2904
+      },
+      {
+        "kind": "repository",
+        "id": "oa-yaml",
+        "path": "mattpocock/to-questionnaire/agents/openai.yaml",
+        "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+        "sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+        "bytes": 166
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "q-flow",
+        "inline": true,
+        "sha256": "127f8a341ddcc7b6b19d3ec78837c43c3e905d1b7fd013c0b64118910c8f688f",
+        "bytes": 648
+      }
+    ]
+  }
+}

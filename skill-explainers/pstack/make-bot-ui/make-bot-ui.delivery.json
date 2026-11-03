@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "c50a8c23-0ff5-41f5-85f4-e1351794c81e",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/make-bot-ui/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/make-bot-ui/make-bot-ui.html",
+  "specification": {
+    "sha256": "240ed9bbd46209dca01cd650c56185e707b73d33323e7472cbc13f410e7dc9ea",
+    "bytes": 12025
+  },
+  "artifact": {
+    "sha256": "cacf3bc68640a5c124a202bdf5d6b57bc47d7f17fc10e5652839c604a34caff8",
+    "bytes": 1073006
+  },
+  "explainer": {
+    "preparedSha256": "01cccc5cd2ab07f39429e37f44a877b99e3b1343f794b5aa273d17ead8542180",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-routine",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-copy",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-secret",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-host",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-post",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-tail-reuse",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-tail-install",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "skill-wake",
+        "path": "pstack/make-bot-ui/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+        "bytes": 4649
+      },
+      {
+        "kind": "repository",
+        "id": "help-row",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "bot-wake",
+        "inline": true,
+        "sha256": "01a3b4560702ea8d91fca723b1d29abcf9ce94292233793a113157d655e90f16",
+        "bytes": 783
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "bot-setup",
+        "inline": true,
+        "sha256": "8f3b828c7fe94fd8a8851e118ccf8771396de6c4552914359abde3ff325fa347",
+        "bytes": 1508
+      }
+    ]
+  }
+}

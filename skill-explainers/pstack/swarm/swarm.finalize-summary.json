@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/swarm/candidate.archify.md",
+    "sha256": "4c9b5c930dc2b8dcf8c341e784cf8e021b56ae188213dcd9bf7e7f6e2039090b",
+    "bytes": 10772
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/swarm/swarm.html",
+    "sha256": "1320c88afb3996c7080f871f8a84c4d1be255e7744db152d9c277f87e4d20825",
+    "bytes": 1122363
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/swarm/swarm.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/swarm/swarm.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 2823,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

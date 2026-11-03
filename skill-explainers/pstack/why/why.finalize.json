@@ -1,0 +1,882 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T14:22:00.750Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/candidate.archify.md",
+    "sha256": "a649612dbf171e79502729638f3303c076522dfd3f68ceea92fd9555bfc1dc2c",
+    "bytes": 23088
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+    "sha256": "f3b5896a8ab502937a02774d78906b1711448927f58240d7450f026c23ad2b82",
+    "bytes": 1667480
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a649612dbf171e79502729638f3303c076522dfd3f68ceea92fd9555bfc1dc2c",
+          "bytes": 23088
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 2666,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "06788719-426f-4239-9386-a2301c0b43b2",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+        "explainer": {
+          "preparedSha256": "4d8e2cb0fa43901f20e1151712df379f7def18e9f8edd744901d6fc73f0d6fad",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "skill-body",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "models",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "posture",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "target",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "anchor",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "discovery",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "inv-config",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "roster",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "skip",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "synth",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "present",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "failure",
+              "path": "pstack/why/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "2a852ec8680920109d2b56538b027c52867896a597250ac5d18a13e0b42e5b06",
+              "bytes": 10360
+            },
+            {
+              "kind": "repository",
+              "id": "ep-intro",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tiers-intro",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tier-direct",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tier-supported",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tier-inferred",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tier-spec",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "tier-unknown",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "phrasing",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "syco",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "contra",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "missing",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "calib",
+              "path": "pstack/why/references/epistemics.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+              "bytes": 7749
+            },
+            {
+              "kind": "repository",
+              "id": "inv-posture",
+              "path": "pstack/why/references/investigator-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+              "bytes": 6985
+            },
+            {
+              "kind": "repository",
+              "id": "inv-loop",
+              "path": "pstack/why/references/investigator-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+              "bytes": 6985
+            },
+            {
+              "kind": "repository",
+              "id": "inv-out",
+              "path": "pstack/why/references/investigator-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+              "bytes": 6985
+            },
+            {
+              "kind": "repository",
+              "id": "syn-rules",
+              "path": "pstack/why/references/synthesizer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+              "bytes": 7984
+            },
+            {
+              "kind": "repository",
+              "id": "syn-steps",
+              "path": "pstack/why/references/synthesizer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+              "bytes": 7984
+            },
+            {
+              "kind": "repository",
+              "id": "syn-out",
+              "path": "pstack/why/references/synthesizer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+              "bytes": 7984
+            },
+            {
+              "kind": "repository",
+              "id": "syn-qc",
+              "path": "pstack/why/references/synthesizer-prompt.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+              "bytes": 7984
+            },
+            {
+              "kind": "repository",
+              "id": "playbook-index",
+              "path": "pstack/why/references/source-playbook.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "9ae9dcb9d09111c9facc68510331c5aba4aed9b1b057314ff1fc0e166ad3993a",
+              "bytes": 1363
+            },
+            {
+              "kind": "repository",
+              "id": "pb-git",
+              "path": "pstack/why/references/sources/code-archaeology.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
+              "bytes": 3489
+            },
+            {
+              "kind": "repository",
+              "id": "pb-linear",
+              "path": "pstack/why/references/sources/linear.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
+              "bytes": 2996
+            },
+            {
+              "kind": "repository",
+              "id": "pb-notion",
+              "path": "pstack/why/references/sources/notion.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
+              "bytes": 2853
+            },
+            {
+              "kind": "repository",
+              "id": "pb-slack",
+              "path": "pstack/why/references/sources/slack.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
+              "bytes": 3105
+            },
+            {
+              "kind": "repository",
+              "id": "pb-datadog",
+              "path": "pstack/why/references/sources/datadog.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
+              "bytes": 5323
+            },
+            {
+              "kind": "repository",
+              "id": "pb-sentry",
+              "path": "pstack/why/references/sources/sentry.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
+              "bytes": 4947
+            },
+            {
+              "kind": "repository",
+              "id": "pb-databricks",
+              "path": "pstack/why/references/sources/databricks.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
+              "bytes": 6994
+            },
+            {
+              "kind": "repository",
+              "id": "pb-incident",
+              "path": "pstack/why/references/sources/incident-postmortem.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
+              "bytes": 1973
+            },
+            {
+              "kind": "repository",
+              "id": "dd-window",
+              "path": "pstack/why/references/sources/datadog.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
+              "bytes": 5323
+            },
+            {
+              "kind": "repository",
+              "id": "db-window",
+              "path": "pstack/why/references/sources/databricks.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
+              "bytes": 6994
+            },
+            {
+              "kind": "repository",
+              "id": "slack-auth",
+              "path": "pstack/why/references/sources/slack.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
+              "bytes": 3105
+            },
+            {
+              "kind": "repository",
+              "id": "setup-roles",
+              "path": "pstack/setup-pstack/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
+              "bytes": 5548
+            },
+            {
+              "kind": "repository",
+              "id": "architect-why",
+              "path": "pstack/architect/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+              "bytes": 5675
+            },
+            {
+              "kind": "repository",
+              "id": "pb-investigation",
+              "path": "pstack/poteto-mode/playbooks/investigation.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
+              "bytes": 928
+            },
+            {
+              "kind": "repository",
+              "id": "pb-bugfix",
+              "path": "pstack/poteto-mode/playbooks/bug-fix.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
+              "bytes": 2255
+            },
+            {
+              "kind": "repository",
+              "id": "teach-why",
+              "path": "pstack/teach/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "bd286e5a6290673be2cd28aef7af2ec7f1fb138e6bce156ea657368c7e7fc8a4",
+              "bytes": 5623
+            },
+            {
+              "kind": "repository",
+              "id": "recall-why",
+              "path": "pstack/recall/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+              "bytes": 5212
+            },
+            {
+              "kind": "repository",
+              "id": "blast-why",
+              "path": "pstack/blast-radius/SKILL.md",
+              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "sha256": "5f02db9101ccf26c20254718f0fcd5c2c7ac5d4292b0e0923d0944ac47237aff",
+              "bytes": 3851
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "why-flow",
+              "inline": true,
+              "sha256": "9c61e5a7152533199ba8a33d265ac21566e7f2d44b72a3ff659e10e906e6625c",
+              "bytes": 1069
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "why-position",
+              "inline": true,
+              "sha256": "98842c177ef8cd3c2c265fad0b5d05e37b9dbd4ab4e6e4fafa76b82040782422",
+              "bytes": 652
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a649612dbf171e79502729638f3303c076522dfd3f68ceea92fd9555bfc1dc2c",
+          "bytes": 23088
+        },
+        "artifact": {
+          "sha256": "f3b5896a8ab502937a02774d78906b1711448927f58240d7450f026c23ad2b82",
+          "bytes": 1667480
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1106,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "f3b5896a8ab502937a02774d78906b1711448927f58240d7450f026c23ad2b82",
+          "bytes": 1667480
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "165 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "53 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "why-flow: pass",
+              "why-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "why-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-yV8kl3/child.html",
+                "artifact": {
+                  "sha256": "693e63d9bc4a58e2d4e0ebd9b7fa73680c442dce48ae95b37afd33c98045e17d",
+                  "bytes": 834399
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "target"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "why-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-aKylwD/child.html",
+                "artifact": {
+                  "sha256": "bcd048d1c08bc3d9316ccd304b731eb0841bd4db0add9af997f6d374196465bd",
+                  "bytes": 831031
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 96.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "caller-to-why-1",
+                      "from": "caller",
+                      "to": "why"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "06788719-426f-4239-9386-a2301c0b43b2"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/why/why.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T14:22:04.835Z",
+  "durationMs": 4085,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

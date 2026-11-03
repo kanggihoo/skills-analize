@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9d01ec2c-2e6d-4502-a695-dc035465e72a",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-subtract-before-you-add/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-subtract-before-you-add/principle-subtract-before-you-add.html",
+  "specification": {
+    "sha256": "a21173b477c2967568be4de734547c0e84b98644039b39b3a269d89308a8c513",
+    "bytes": 6942
+  },
+  "artifact": {
+    "sha256": "b1e4d4c879935776a6059b7f18de47cc55a9a13a577fa09f858e34be90c1f155",
+    "bytes": 707823
+  },
+  "explainer": {
+    "preparedSha256": "33fa3d1c0805aa85a6d70e183f433adfe71e04f5666e087a5f6b679981a5aa43",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "pstack/principle-subtract-before-you-add/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+        "bytes": 1094
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "pstack/principle-subtract-before-you-add/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+        "bytes": 1094
+      },
+      {
+        "kind": "repository",
+        "id": "skill-why",
+        "path": "pstack/principle-subtract-before-you-add/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+        "bytes": 1094
+      },
+      {
+        "kind": "repository",
+        "id": "skill-invest",
+        "path": "pstack/principle-subtract-before-you-add/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+        "bytes": 1094
+      },
+      {
+        "kind": "repository",
+        "id": "skill-pattern",
+        "path": "pstack/principle-subtract-before-you-add/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "a983a50e732c1ed315eba7aaf47a61329e31c4794eb1ab9d25d9945265b31e03",
+        "bytes": 1094
+      },
+      {
+        "kind": "repository",
+        "id": "pm-cite",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-read",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pm-line",
+        "path": "pstack/poteto-mode/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
+        "bytes": 20559
+      },
+      {
+        "kind": "repository",
+        "id": "pb-refactoring",
+        "path": "pstack/poteto-mode/playbooks/refactoring.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+        "bytes": 3211
+      },
+      {
+        "kind": "repository",
+        "id": "pb-refactoring-8",
+        "path": "pstack/poteto-mode/playbooks/refactoring.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+        "bytes": 3211
+      },
+      {
+        "kind": "repository",
+        "id": "architect",
+        "path": "pstack/architect/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
+        "bytes": 5675
+      },
+      {
+        "kind": "repository",
+        "id": "help-principles",
+        "path": "pstack/poteto-help/SKILL.md",
+        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
+        "bytes": 12884
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "subtract-position",
+        "inline": true,
+        "sha256": "b0438ac59484cc8bd79eb3327268e5c269fa2ad280e9f16fb3c5f1d78926839c",
+        "bytes": 1094
+      }
+    ]
+  }
+}

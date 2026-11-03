@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T15:52:26.241Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
+    "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+    "bytes": 6030
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+    "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+    "bytes": 587970
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+          "bytes": 6030
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 765,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "c3b2b2a4-6667-4f5e-9f83-44576ee8f1cd",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+        "explainer": {
+          "preparedSha256": "2081ab0be54f2f07e76359af14fedb44ab49c8f494daf77317071b271abbdac2",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-why",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-install",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-large",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-patterns",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-table",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "skill-workflow",
+              "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
+              "bytes": 2795
+            },
+            {
+              "kind": "repository",
+              "id": "oa-yaml",
+              "path": "mattpocock/migrate-to-shoehorn/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d",
+              "bytes": 110
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "shoehorn-flow",
+              "inline": true,
+              "sha256": "6df781918036c09d0ce0205b0b79ce391fcc8e53524e17c7180c7dc6e1683a8b",
+              "bytes": 914
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+          "bytes": 6030
+        },
+        "artifact": {
+          "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+          "bytes": 587970
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 407,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+          "bytes": 587970
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "54 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "9 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "shoehorn-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "shoehorn-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-RtRvzz/child.html",
+                "artifact": {
+                  "sha256": "b71e8e0d2fa3413e541cdf0e85173a10782520f4816c63793c46cf5c6a8a4e9f",
+                  "bytes": 833399
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "ask"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "c3b2b2a4-6667-4f5e-9f83-44576ee8f1cd"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T15:52:27.535Z",
+  "durationMs": 1293,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/candidate.archify.md",
+    "sha256": "11bb7f316f01f54610815c7ac9979339c86be096c0325ca4ba9189e017b57b09",
+    "bytes": 7928
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.html",
+    "sha256": "f3b13975fd864a26c55f6f50443d4db91c345ebbfbaa5302862fd5db0dbb7311",
+    "bytes": 614300
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1322,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

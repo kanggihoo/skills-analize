@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T15:53:43.577Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
+    "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
+    "bytes": 20045
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+    "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
+    "bytes": 1724093
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
+          "bytes": 20045
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1304,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "43dbcf35-41b9-4f4d-9ba4-0e7e9e423cde",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+        "explainer": {
+          "preparedSha256": "789392da29624af1a0d82627486435c7b77ab3ed57f25afb6b94c5ad207aa214",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "wfa-fm",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-yaml",
+              "path": "mattpocock/writing-for-agents/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
+              "bytes": 102
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-intro",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-ptr",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-loads",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-ladder",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-disc",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-coloc",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-sprawl",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-steps",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-split",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-lead",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-neg",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-sst",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-cache",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-rel",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "wfa-noop",
+              "path": "mattpocock/writing-for-agents/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+              "bytes": 10886
+            },
+            {
+              "kind": "repository",
+              "id": "mech-intro",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-model",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-user",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-pick",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-split",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "mech-router",
+              "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+              "bytes": 2629
+            },
+            {
+              "kind": "repository",
+              "id": "retro-s1",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-skills",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "retro-dmi",
+              "path": "mattpocock/retro/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
+              "bytes": 4369
+            },
+            {
+              "kind": "repository",
+              "id": "cos-dmi",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-ex",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "repository",
+              "id": "cos-proc",
+              "path": "mattpocock/chief-of-staff/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
+              "bytes": 4729
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "wfa-invoke",
+              "inline": true,
+              "sha256": "5e43a9ff15395843587f0b793823b87bb5ecc9b29c3b8fab6414a49f2913b5d6",
+              "bytes": 716
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "wfa-rush",
+              "inline": true,
+              "sha256": "684921680dd2e5b66e82c90c7663399e723ea3396effb1cb068a514fd0d995d1",
+              "bytes": 833
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "wfa-position",
+              "inline": true,
+              "sha256": "138b8d0f34bb7d144f891b42ec7f4a2c32814e54c983f9aecdf4c20adac222c0",
+              "bytes": 889
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
+          "bytes": 20045
+        },
+        "artifact": {
+          "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
+          "bytes": 1724093
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 733,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
+          "bytes": 1724093
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "144 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "32 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "wfa-invoke: pass",
+              "wfa-rush: pass",
+              "wfa-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "wfa-invoke",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-a0Izym/child.html",
+                "artifact": {
+                  "sha256": "1866aa8dbf5e34a37a1818eec429093e3534675298aa33bd4ee9eb2ecb1841d7",
+                  "bytes": 831295
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "need-to-model-1",
+                      "from": "need",
+                      "to": "model"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "wfa-rush",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-asAz1G/child.html",
+                "artifact": {
+                  "sha256": "66d865ddd3dec160f2e8fbdfdf49201e14a2c010d2817f7945712ac14f52e9e7",
+                  "bytes": 832267
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 96.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "fuzzy-to-sharpen-1",
+                      "from": "fuzzy",
+                      "to": "sharpen"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "wfa-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-8bx4Cy/child.html",
+                "artifact": {
+                  "sha256": "8f85d7f41fe1c4aad4479448620c9bbafbfbd856f9b958537fc948b1426ca7d7",
+                  "bytes": 833072
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 88.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.965738758029978,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "cos-to-wfa-1",
+                      "from": "cos",
+                      "to": "wfa"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.965738758029978,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "43dbcf35-41b9-4f4d-9ba4-0e7e9e423cde"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T15:53:45.764Z",
+  "durationMs": 2187,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

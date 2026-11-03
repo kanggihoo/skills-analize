@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-03T15:52:17.483Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/candidate.archify.md",
+    "sha256": "b4928980c8173b14573f67ca17d1d9a7124bd2067d217e34ae5e951e1fd41abd",
+    "bytes": 5391
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+    "sha256": "b4f0d5f379cc32ce115923ec851062ab7b803ac62401104668dcd78306b47c14",
+    "bytes": 570077
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "b4928980c8173b14573f67ca17d1d9a7124bd2067d217e34ae5e951e1fd41abd",
+          "bytes": 5391
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 762,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "5168f29c-5b4f-44b2-aff0-7eeaa86242a7",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+        "explainer": {
+          "preparedSha256": "c81b9bd14d4eff0ddda3f19b140debbc958c74fd9adbf3d481d09bd07fce522e",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skill-fm",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "skill-intro",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "skill-send",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "skill-steps",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "skill-structure",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "skill-template",
+              "path": "mattpocock/to-questionnaire/SKILL.md",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "b5eb929842ee0e93d867c5e906d183d350f2f2d149eaeaa86967d94d8eda1d3b",
+              "bytes": 2904
+            },
+            {
+              "kind": "repository",
+              "id": "oa-yaml",
+              "path": "mattpocock/to-questionnaire/agents/openai.yaml",
+              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+              "bytes": 166
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "q-flow",
+              "inline": true,
+              "sha256": "127f8a341ddcc7b6b19d3ec78837c43c3e905d1b7fd013c0b64118910c8f688f",
+              "bytes": 648
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "b4928980c8173b14573f67ca17d1d9a7124bd2067d217e34ae5e951e1fd41abd",
+          "bytes": 5391
+        },
+        "artifact": {
+          "sha256": "b4f0d5f379cc32ce115923ec851062ab7b803ac62401104668dcd78306b47c14",
+          "bytes": 570077
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 418,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "b4f0d5f379cc32ce115923ec851062ab7b803ac62401104668dcd78306b47c14",
+          "bytes": 570077
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "52 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "8 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "q-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "q-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-HMhN1L/child.html",
+                "artifact": {
+                  "sha256": "202dc833a7da368a03ce2c887d2dd92f568b04ae2040ea6164d7628604e71ced",
+                  "bytes": 831103
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "who"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 3
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "5168f29c-5b4f-44b2-aff0-7eeaa86242a7"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/to-questionnaire/to-questionnaire.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-03T15:52:18.791Z",
+  "durationMs": 1308,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
