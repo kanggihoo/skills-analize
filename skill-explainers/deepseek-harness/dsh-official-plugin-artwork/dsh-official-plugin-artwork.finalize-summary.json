@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-official-plugin-artwork/candidate.archify.md",
+    "sha256": "44f65ec16750044d418240c1801fc9796294d2ae99f07e3eaf981ab6e93e5004",
+    "bytes": 17417
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-official-plugin-artwork/dsh-official-plugin-artwork.html",
+    "sha256": "51f2ed53774753a97f95500e3872deb63a67cf7bdef52527d3afc73f3cdf3a3b",
+    "bytes": 1234665
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-official-plugin-artwork/dsh-official-plugin-artwork.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-official-plugin-artwork/dsh-official-plugin-artwork.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1810,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

@@ -1,10 +1,10 @@
 # how 스킬은 에이전트를 어떻게 바꾸나 {#how-skill}
 
-`how`를 쓰면 에이전트는 "X는 어떻게 동작하나"에 직접 답하지 않는다. 읽기 전용 서브에이전트에게 조사와 설명을 맡기고, 그 설명을 거의 그대로 전한다.[](source:skill-body)
+`how`를 켜면, 에이전트는 "X는 어떻게 동작하나"에 직접 답하지 않는다. 에이전트는 읽기 전용 서브에이전트에게 조사와 설명을 맡기고, 그 설명을 거의 그대로 전한다.[](source:skill-body)
 
-- 질문이 단순하면 설명 담당 하나가 조사와 설명을 한 번에 한다. 복잡하면 탐색 담당 2~4개가 먼저 나눠 조사한다.[](source:skill-assess)
-- 판단이 애매하면 단순한 경로를 고른다.[](source:skill-assess)
-- 띄우는 서브에이전트는 모두 `readonly: true`다. 코드를 바꾸지 않는다.[](source:skill-explore)
+- 질문이 단순하면, 설명 담당 하나가 조사와 설명을 한 번에 한다. 질문이 복잡하면, 탐색 담당 2~4개가 먼저 나눠 조사한다.[](source:skill-assess)
+- 단순한지 복잡한지 판단이 애매하면, 에이전트는 단순한 경로를 고른다.[](source:skill-assess)
+- 에이전트가 띄우는 서브에이전트는 모두 `readonly: true`다. 서브에이전트는 코드를 바꾸지 않는다.[](source:skill-explore)
 - 결과는 개요, 핵심 개념, 동작 방식, 파일 위치, 주의할 점 순서의 설명이다. 메인 에이전트는 이 설명을 크게 고쳐 쓰지 않는다.[](source:skill-present)
 
 @answer scope="pstack/how · 원본 텍스트 파일 3개 · 커밋 5760176"
@@ -28,7 +28,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/how`를 입력하거나, 다른 스킬이 실행 단계에서 부를 때 켜진다. `description`은 이 스킬이 어떤 질문을 다루는지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 그래서 이 스킬은 사용자가 `/how`를 입력하거나, 다른 스킬이 실행 단계에서 부를 때 켜진다. `description`은 이 스킬이 어떤 질문을 다루는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -54,11 +54,11 @@
 | direct > present | | |
 
 @steps id=how-steps
-| s-assess | 복잡한가? | 모듈 하나, 작은 유틸리티, 함수 하나에 대한 질문은 단순하다. 여러 파일이나 서비스에 걸친 하위 시스템, 전체 구조 개요는 복잡하다. 범위가 애매하면 해석을 밝히고 진행한다. 사용자가 방향을 바꿀 수 있다. | how-flow | assess |
-| s-explore | 탐색 2~4개 | 질문을 서로 다른 조사 각도 2~4개로 나눈다. 탐색 담당을 한 메시지에서 한꺼번에 띄운다. 각자 탐색 담당 프롬프트에 자기 각도를 채워 받는다. | how-flow | explore |
-| s-synth | 종합 | 탐색 담당이 모두 돌아오면 설명 담당 하나를 띄운다. 모든 탐색 결과를 설명 담당 프롬프트에 채워 넘긴다. | how-flow | synth |
-| s-direct | 단독 설명 | 설명 담당 하나가 조사와 설명을 한 번에 한다. 프롬프트에서 탐색 결과 부분은 뺀다. | how-flow | direct |
-| s-present | 전달 | 설명 담당의 결과를 사용자에게 보여 준다. 대화 맥락을 덧붙이거나 읽기 쉽게 조금 다듬는 것은 괜찮다. 크게 다시 쓰지는 않는다. | how-flow | present |
+| s-assess | 복잡한가? | 에이전트는 질문의 범위를 본다. 모듈 하나, 작은 유틸리티, 함수 하나에 대한 질문은 단순하다. 여러 파일이나 서비스에 걸친 하위 시스템, 전체 구조 개요는 복잡하다. 범위가 애매하면, 해석을 밝히고 진행한다. 그러면 사용자가 방향을 바꿀 수 있다. | how-flow | assess |
+| s-explore | 탐색 2~4개 | 에이전트는 질문을 서로 다른 조사 각도 2~4개로 나눈다. 탐색 담당을 한 메시지에서 한꺼번에 띄운다. 각 탐색 담당은 탐색 담당 프롬프트에 자기 각도를 채워 받는다. | how-flow | explore |
+| s-synth | 종합 | 탐색 담당이 모두 돌아오면, 에이전트는 설명 담당 하나를 띄운다. 모든 탐색 결과를 설명 담당 프롬프트에 채워 넘긴다. | how-flow | synth |
+| s-direct | 단독 설명 | 설명 담당 하나가 조사와 설명을 한 번에 한다. 에이전트는 프롬프트에서 탐색 결과 부분을 뺀다. | how-flow | direct |
+| s-present | 전달 | 에이전트는 설명 담당의 결과를 사용자에게 보여 준다. 대화 맥락을 덧붙이거나 읽기 쉽게 조금 다듬는 것은 괜찮다. 크게 다시 쓰지는 않는다. | how-flow | present |
 
 이 흐름은 `SKILL.md`의 Step 1~4를 그대로 옮긴 것이다.[](source:skill-assess)[](source:skill-explore)[](source:skill-synth)[](source:skill-present)
 
@@ -77,7 +77,7 @@
 | 탐색 담당 모델 | 규칙 파일의 `how explorer` 줄. 없으면 `grok-4.7-xhigh-fast` |
 | 설명 담당 모델 | 규칙 파일의 `how explainer` 줄. 없으면 `claude-opus-5-5-max` |
 
-모델은 `setup-pstack`이 쓰는 `~/.cursor/rules/pstack-models.mdc`에서 읽는다.[](source:setup-roles) 값이 `auto`나 `inherit-parent`면 `model`을 비워 부모 채팅 모델을 쓴다. Task 도구가 이름을 거부하면 기본값을 쓰고 그 사실을 알린다. 기본값도 거부되면 오류 메시지에 나온 같은 계열의 가장 가까운 이름을 쓴다.[](source:skill-body)
+에이전트는 모델을 `setup-pstack`이 쓰는 `~/.cursor/rules/pstack-models.mdc`에서 읽는다.[](source:setup-roles) 값이 `auto`나 `inherit-parent`이면, `model`을 비워 부모 채팅 모델을 쓴다. Task 도구가 이름을 거부하면, 기본값을 쓰고 그 사실을 알린다. 기본값도 거부되면, 오류 메시지에 나온 같은 계열의 가장 가까운 이름을 쓴다.[](source:skill-body)
 
 ## 서브에이전트에게 무엇을 시키나 {#prompts}
 

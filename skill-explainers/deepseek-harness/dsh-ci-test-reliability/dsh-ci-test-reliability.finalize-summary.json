@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-ci-test-reliability/candidate.archify.md",
+    "sha256": "09b6349aaabd2c84d4d472d9b2aedd964699af77814ca7ab8997cc8ec8337dbe",
+    "bytes": 25096
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-ci-test-reliability/dsh-ci-test-reliability.html",
+    "sha256": "20a50ffe3811afad5dc1a1516dcf60f55d2d2f8a960269476e7dbffb266a1ef2",
+    "bytes": 1335209
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-ci-test-reliability/dsh-ci-test-reliability.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-ci-test-reliability/dsh-ci-test-reliability.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1817,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

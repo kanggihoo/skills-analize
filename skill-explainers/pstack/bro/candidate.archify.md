@@ -1,9 +1,9 @@
 # bro 스킬은 에이전트를 어떻게 바꾸나 {#bro-skill}
 
-`/bro`를 입력하면 에이전트는 자기 직전 메시지를 다시 말한다. 전문어를 빼고, 더 짧고 쉽게, 사람이 사람에게 말하듯 쓴다.[](source:body)
+`/bro`를 입력하면 에이전트는 자기 직전 메시지를 다시 말한다. 이때 전문어를 빼고, 더 짧고 쉽게, 사람이 사람에게 말하듯 쓴다.[](source:body)
 
 - 본문은 지시 세 문장이 전부다. 절차, 형식, 길이 기준은 없다.[](source:body)
-- 대상은 사용자가 아니라 에이전트 자신이 바로 앞에 쓴 메시지다.[](source:body)
+- 다시 말하는 대상은 사용자의 메시지가 아니라 에이전트 자신이 바로 앞에 쓴 메시지다.[](source:body)
 - 다른 스킬이 이 스킬을 부르는 곳은 없다. 사용자가 직접 입력할 때만 쓰인다.
 
 @answer scope="pstack/bro · 원본 텍스트 파일 1개 · 커밋 5760176"
@@ -17,7 +17,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/bro`를 입력할 때 켜진다. `poteto-help`는 "직전 답을 쉬운 말로 다시 듣고 싶을 때" 쓰라고 안내한다.[](source:help-bro)[](source:recipe-bro)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 그래서 이 스킬은 사용자가 `/bro`를 입력할 때 켜진다. `poteto-help`는 "직전 답을 쉬운 말로 다시 듣고 싶을 때" 쓰라고 안내한다.[](source:help-bro)[](source:recipe-bro)
 
 관계 원장에는 `bro`를 부르거나 `bro`가 부르는 관계가 없다. `pstack` 안에서 이 이름은 `poteto-help`의 안내 표와 사용 예에만 나온다.
 

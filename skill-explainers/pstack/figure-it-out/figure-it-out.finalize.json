@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:20:19.246Z",
+  "startedAt": "2026-11-04T12:49:57.301Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/candidate.archify.md",
-    "sha256": "510dc9adfd1da37929c2d45170fc8e3f92c336a15c484dc9f48fa969f5f9c0e0",
-    "bytes": 12218
+    "sha256": "2212b7e9d0ca7404fc2d72626dd474260be5aa3be9766ae87883a138b1648b99",
+    "bytes": 12427
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/figure-it-out.html",
-    "sha256": "73ee436f5ada6ab4fbb62b30efb40fe6ff81673f8de7a3f9e521e6dc92b6c839",
-    "bytes": 1129447
+    "sha256": "5306ce5622de6bf6c408850c03d88abafaecbc0db72b41dd597b9fa0781eabcb",
+    "bytes": 1130075
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "510dc9adfd1da37929c2d45170fc8e3f92c336a15c484dc9f48fa969f5f9c0e0",
-          "bytes": 12218
+          "sha256": "2212b7e9d0ca7404fc2d72626dd474260be5aa3be9766ae87883a138b1648b99",
+          "bytes": 12427
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1965,
+      "durationMs": 1047,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "2a27e782-b4d2-471e-be7c-f283e0c29f2b",
+        "receiptId": "162f3f4e-ceec-4649-a463-1d939d9e42ab",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/figure-it-out.html",
         "explainer": {
-          "preparedSha256": "ed3c6b2de6d8c09616e3c8e0a80a32b9868c6b7e7fd26b415322761500d1b8ee",
+          "preparedSha256": "25ba38dd254e5900d20c283add96816cb8aac81ec79fb316006421628f30de23",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "purpose",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "start",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "frame",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "design",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "loop",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "trail",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "handback",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "pm-route",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "refactoring",
               "path": "pstack/poteto-mode/playbooks/refactoring.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
               "bytes": 3211
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "orchestrate",
               "path": "pstack/poteto-mode/playbooks/orchestrate.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
               "bytes": 16779
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "help-pick",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "help-close",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -206,12 +206,12 @@
           ]
         },
         "specification": {
-          "sha256": "510dc9adfd1da37929c2d45170fc8e3f92c336a15c484dc9f48fa969f5f9c0e0",
-          "bytes": 12218
+          "sha256": "2212b7e9d0ca7404fc2d72626dd474260be5aa3be9766ae87883a138b1648b99",
+          "bytes": 12427
         },
         "artifact": {
-          "sha256": "73ee436f5ada6ab4fbb62b30efb40fe6ff81673f8de7a3f9e521e6dc92b6c839",
-          "bytes": 1129447
+          "sha256": "5306ce5622de6bf6c408850c03d88abafaecbc0db72b41dd597b9fa0781eabcb",
+          "bytes": 1130075
         },
         "validation": {
           "checksPassed": 4,
@@ -237,7 +237,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 828,
+      "durationMs": 564,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -250,8 +250,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/figure-it-out.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "73ee436f5ada6ab4fbb62b30efb40fe6ff81673f8de7a3f9e521e6dc92b6c839",
-          "bytes": 1129447
+          "sha256": "5306ce5622de6bf6c408850c03d88abafaecbc0db72b41dd597b9fa0781eabcb",
+          "bytes": 1130075
         },
         "checks": [
           {
@@ -296,7 +296,7 @@
               "id": "fio-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-DRtNky/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ygmyWX/child.html",
                 "artifact": {
                   "sha256": "8b5c46699732fdf4e66c8c1881f7b1d022ecec832c9bfcb38b1280b402834701",
                   "bytes": 835135
@@ -423,7 +423,7 @@
               "id": "fio-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Hbwrv3/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-FXyNcg/child.html",
                 "artifact": {
                   "sha256": "1a758444bef7415a7d6f7838086162066114b32d1011aec25dcb4e0fe28332d2",
                   "bytes": 833566
@@ -550,7 +550,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "2a27e782-b4d2-471e-be7c-f283e0c29f2b"
+        "deliveryReceiptId": "162f3f4e-ceec-4649-a463-1d939d9e42ab"
       }
     }
   },
@@ -564,17 +564,16 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/figure-it-out/figure-it-out.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:20:22.305Z",
-  "durationMs": 3059,
+  "finishedAt": "2026-11-04T12:49:59.062Z",
+  "durationMs": 1760,
   "update": {
-    "status": "unavailable",
-    "installedVersion": null,
-    "availableVersion": null,
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
     "releaseNotes": null,
-    "checkedAt": null,
-    "source": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
     "noticeRequired": false,
-    "noticeText": null,
-    "reason": "timeout"
+    "noticeText": null
   }
 }

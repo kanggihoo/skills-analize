@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:11:01.564Z",
+  "startedAt": "2026-11-04T13:34:14.044Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
-    "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
-    "bytes": 7194
+    "sha256": "834270981864b438c113ffe7f927369577e23e30f39b4f94e6650cfeb21cdbbc",
+    "bytes": 7335
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
-    "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
-    "bytes": 695443
+    "sha256": "fe5c625287c4d31b576010d508a609a9d30c485c6eede343687e6ccdc1d4e91a",
+    "bytes": 695897
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
-          "bytes": 7194
+          "sha256": "834270981864b438c113ffe7f927369577e23e30f39b4f94e6650cfeb21cdbbc",
+          "bytes": 7335
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 764,
+      "durationMs": 772,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "5693da02-1347-48db-a73d-60c19089525f",
+        "receiptId": "d08c17b4-eac5-4a26-a609-953af885c115",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
         "explainer": {
-          "preparedSha256": "331b44a10f07149aeb6020d4a0e55f306714570e2a2dc0c4a67f38b29766035f",
+          "preparedSha256": "145c686ec83ce4d504e203302ffa768e2b4c45dc9b80820ca9ba515922b064d7",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
               "bytes": 1146
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
               "bytes": 1146
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-rule",
               "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
               "bytes": 1146
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-when",
               "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
               "bytes": 1146
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-why",
               "path": "pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
               "bytes": 1146
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "pm-line",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "pb-refactoring",
               "path": "pstack/poteto-mode/playbooks/refactoring.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
               "bytes": 3211
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "help-principles",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "rubric",
               "path": "pstack/interrogate/references/rubric.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
               "bytes": 5025
             },
@@ -183,12 +183,12 @@
           ]
         },
         "specification": {
-          "sha256": "9a2574cc86b32143d4f024aab4571c67149bd4da3dc048370a3a43f241bf5204",
-          "bytes": 7194
+          "sha256": "834270981864b438c113ffe7f927369577e23e30f39b4f94e6650cfeb21cdbbc",
+          "bytes": 7335
         },
         "artifact": {
-          "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
-          "bytes": 695443
+          "sha256": "fe5c625287c4d31b576010d508a609a9d30c485c6eede343687e6ccdc1d4e91a",
+          "bytes": 695897
         },
         "validation": {
           "checksPassed": 4,
@@ -214,7 +214,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 398,
+      "durationMs": 404,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -227,8 +227,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "a538d35adb83d77ec5f0e1c2f6d60e098ce3225f78aecc1f26327534f3b49a3a",
-          "bytes": 695443
+          "sha256": "fe5c625287c4d31b576010d508a609a9d30c485c6eede343687e6ccdc1d4e91a",
+          "bytes": 695897
         },
         "checks": [
           {
@@ -272,7 +272,7 @@
               "id": "migrate-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-uJQ1u8/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ePSAho/child.html",
                 "artifact": {
                   "sha256": "6c3e6466228539ba0c16816bb52b47e887b8ba13118551e2c310658b07f6b91c",
                   "bytes": 833600
@@ -399,7 +399,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "5693da02-1347-48db-a73d-60c19089525f"
+        "deliveryReceiptId": "d08c17b4-eac5-4a26-a609-953af885c115"
       }
     }
   },
@@ -413,8 +413,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-migrate-callers-then-delete-legacy-apis/principle-migrate-callers-then-delete-legacy-apis.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:11:02.856Z",
-  "durationMs": 1292,
+  "finishedAt": "2026-11-04T13:34:15.378Z",
+  "durationMs": 1334,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

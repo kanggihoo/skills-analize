@@ -1,10 +1,10 @@
 # principle-build-the-lever 스킬은 에이전트를 어떻게 바꾸나 {#build-the-lever-skill}
 
-`principle-build-the-lever`를 읽은 에이전트는 사소하지 않은 일을 손으로 하지 않는다. 그 일을 하거나 증명하는 도구(지렛대)를 먼저 만든다. 코드모드, 스크립트, 생성기, 서브에이전트가 따르는 스킬이 여기에 든다.[](source:rule)
+`principle-build-the-lever`를 읽은 에이전트는 사소하지 않은 일을 손으로 하지 않는다. 먼저 그 일을 하거나 증명하는 도구(지렛대)를 만든다. 도구에는 코드모드, 스크립트, 생성기, 서브에이전트가 따르는 스킬이 든다.[](source:rule)
 
 - 원문이 드는 이득은 둘이다. 도구는 매번 같은 방식으로 일하고 공짜로 다시 돈다. 리뷰어는 도구 하나를 읽고 다시 돌려서 확인한다.[](source:why)
-- 기준은 반복 여부가 아니라 사소함이다. 한눈에 보이는 뻔한 수정 두어 개만 예외다.[](source:pattern)[](source:balance)
-- 이 원칙을 적용하면 파일이 남는다. 인용했는데 `diff`에 도구가 없으면 적용하지 않은 것이다.[](source:p-proof)
+- 도구를 만들지 말지는 일이 반복되는지가 아니라 사소한지로 정한다. 한눈에 보이는 뻔한 수정 두어 개만 예외다.[](source:pattern)[](source:balance)
+- 에이전트가 이 원칙을 적용하면 도구 파일이 남는다. 원칙을 인용했는데 `diff`에 도구가 없으면 적용하지 않은 것이다.[](source:p-proof)
 - 도구는 가장 작은 스크립트로 만든다. 프레임워크를 만들지 않는다.[](source:balance)
 
 @answer scope="pstack/principle-build-the-lever · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
@@ -30,7 +30,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-build-the-lever`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다. 이 원칙은 대량 작업만이 아니라 수정, 이전, 분석, 검사 모두에 적용한다고 스스로 밝힌다.[](source:fm)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-build-the-lever`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다. 이 원칙은 대량 작업만이 아니라 수정, 이전, 분석, 검사 모두에 적용한다고 스스로 밝힌다.[](source:fm)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -38,7 +38,7 @@
 | `poteto-mode` (Core 분류) | 사소하지 않은 모든 작업[](source:pm-trigger) |
 | `worktree-cleanup` 플레이북 | 1단계에서 감사 스크립트를 돌릴 때[](source:pb-worktree) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
 ## 무엇을 강제하나 {#rules}
 
@@ -53,7 +53,7 @@
 | 서브에이전트에게 나눠 줄 때는 방법, 검증 계약, 손대지 말 경계를 스킬 하나에 쓴다[](source:p-fanout) | 의무 |
 | 그 스킬은 서브에이전트의 쓰기 범위 밖에 둔다. 계약을 몰래 고치지 못하게 한다[](source:p-fanout) | 의무 |
 | 원칙을 인용했는데 `diff`에 도구 파일이 없으면 적용하지 않은 것이다[](source:p-proof) | 판정 기준 |
-| 작업이 세션보다 오래 가면 도구를 커밋한다[](source:p-proof) | 의무 |
+| 작업이 세션보다 오래 가면 도구를 commit한다[](source:p-proof) | 의무 |
 | 일회성 작업이라도 도구가 검증을 가능하게 하면 만든다[](source:balance) | 의무 |
 
 원문은 손으로 한 변경과 도구를 이렇게 대비한다.[](source:why)
@@ -63,7 +63,7 @@
 | 다시 확인하는 법 | {bad:다시 해 봐야 함} | {good:다시 돌림} |
 | 리뷰어에게 주는 말 | "믿어 달라" | "이걸 돌려 보라" |
 
-이 원칙은 `principle-encode-lessons-in-structure`와 다르다. 그쪽은 되풀이되는 지시를 오래가는 장치로 바꾼다. 이쪽은 눈앞의 일의 처리량과 리뷰 가능성을 다룬다. 검증 자체를 스크립트로 만드는 일은 `principle-prove-it-works`를 보라고 한다.[](source:distinct)
+이 원칙은 `principle-encode-lessons-in-structure`와 다르다. 그쪽은 되풀이되는 지시를 오래가는 장치로 바꾼다. 이쪽은 지금 하는 일의 처리량과 리뷰 가능성을 다룬다. 검증 자체를 스크립트로 만드는 일은 원문이 `principle-prove-it-works`를 보라고 한다.[](source:distinct)
 
 ## 흐름 속 위치 {#position}
 
@@ -101,7 +101,7 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 2곳이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

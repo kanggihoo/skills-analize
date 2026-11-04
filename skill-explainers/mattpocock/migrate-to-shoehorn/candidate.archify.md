@@ -80,4 +80,4 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-사용자 답에 따라 범위를 어떻게 좁히는지, 타입 검사가 실패하면 되돌리는지는 원문에 명시 없음. 커밋 지시도 없다.
+사용자 답에 따라 범위를 어떻게 좁히는지, 타입 검사가 실패하면 되돌리는지는 원문에 명시 없음. commit 지시도 없다.

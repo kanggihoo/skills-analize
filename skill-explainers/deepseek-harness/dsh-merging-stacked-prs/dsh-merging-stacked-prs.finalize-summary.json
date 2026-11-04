@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/candidate.archify.md",
+    "sha256": "522dac4f8a38f1020c5e1ae1718bfa837de11299fa8a275c835a6708c81ac4ca",
+    "bytes": 18910
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/dsh-merging-stacked-prs.html",
+    "sha256": "bee7c29cdbab428bc5a3e07d560f55eac60aeab08c5f5eff255e54a17e2ee105",
+    "bytes": 1261948
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/dsh-merging-stacked-prs.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/dsh-merging-stacked-prs.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1815,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

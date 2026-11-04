@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "receiptId": "7335bf86-ed94-4159-b56f-83afac91b4eb",
+  "receiptId": "7a2d5ee3-2423-47c6-b634-bd9361957c49",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/cloudflare/security-audit/security-audit.html",
   "specification": {
-    "sha256": "3e463cce81f8dc1f73476fcfc9245f238ee1512533914ac762281f0125545177",
-    "bytes": 51937
+    "sha256": "25ee5fd006d34e23b3e3eab7d69191bf68151c58e4cb5191192ed58e1a5d5e03",
+    "bytes": 51979
   },
   "artifact": {
-    "sha256": "a637086660c3ad1538ea3d7034f6ec7386a1659b5e4d0bc3bcd778edc0cf8b6b",
-    "bytes": 3696874
+    "sha256": "1ca1de8d1cea1b8faf934a7b4035e4d4aec0301be94fd808192f4ed1c06afcda",
+    "bytes": 3696668
   },
   "explainer": {
-    "preparedSha256": "6bcf6f9c580d9fe6002b84c63ea81d54a7d5e6da8ed07f968de74851d45b4139",
+    "preparedSha256": "8c254965c92049c3c4e056f5158b9d790d2a96af719ce9dcc77226c3e8bfa74b",
     "dependencies": [
       {
         "kind": "repository",
         "id": "skm-fm",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -29,7 +29,7 @@
         "kind": "repository",
         "id": "skm-purpose",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -37,7 +37,7 @@
         "kind": "repository",
         "id": "skm-modes",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -45,7 +45,7 @@
         "kind": "repository",
         "id": "skm-terms",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -53,7 +53,7 @@
         "kind": "repository",
         "id": "skm-safety",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -61,7 +61,7 @@
         "kind": "repository",
         "id": "skm-setup",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -69,7 +69,7 @@
         "kind": "repository",
         "id": "skm-isolation",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -77,7 +77,7 @@
         "kind": "repository",
         "id": "skm-promote",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -85,7 +85,7 @@
         "kind": "repository",
         "id": "skm-repro",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -93,7 +93,7 @@
         "kind": "repository",
         "id": "skm-coverage",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -101,7 +101,7 @@
         "kind": "repository",
         "id": "skm-profiles",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -109,7 +109,7 @@
         "kind": "repository",
         "id": "skm-budget",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -117,7 +117,7 @@
         "kind": "repository",
         "id": "skm-boundary",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -125,7 +125,7 @@
         "kind": "repository",
         "id": "skm-local",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -133,7 +133,7 @@
         "kind": "repository",
         "id": "skm-visibility",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -141,7 +141,7 @@
         "kind": "repository",
         "id": "skm-priority",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -149,7 +149,7 @@
         "kind": "repository",
         "id": "skm-fix",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -157,7 +157,7 @@
         "kind": "repository",
         "id": "skm-workflow",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -165,7 +165,7 @@
         "kind": "repository",
         "id": "skm-anti",
         "path": "cloudflare/security-audit/SKILL.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
         "bytes": 22026
       },
@@ -173,7 +173,7 @@
         "kind": "repository",
         "id": "rec-agents",
         "path": "cloudflare/security-audit/RECONNAISSANCE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
         "bytes": 15902
       },
@@ -181,7 +181,7 @@
         "kind": "repository",
         "id": "rec-prior",
         "path": "cloudflare/security-audit/RECONNAISSANCE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
         "bytes": 15902
       },
@@ -189,7 +189,7 @@
         "kind": "repository",
         "id": "rec-arch",
         "path": "cloudflare/security-audit/RECONNAISSANCE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
         "bytes": 15902
       },
@@ -197,7 +197,7 @@
         "kind": "repository",
         "id": "rec-ledger",
         "path": "cloudflare/security-audit/RECONNAISSANCE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
         "bytes": 15902
       },
@@ -205,7 +205,7 @@
         "kind": "repository",
         "id": "rec-state",
         "path": "cloudflare/security-audit/RECONNAISSANCE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
         "bytes": 15902
       },
@@ -213,7 +213,7 @@
         "kind": "repository",
         "id": "hunt-assign",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -221,7 +221,7 @@
         "kind": "repository",
         "id": "hunt-prompt",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -229,7 +229,7 @@
         "kind": "repository",
         "id": "hunt-method",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -237,7 +237,7 @@
         "kind": "repository",
         "id": "hunt-promote",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -245,7 +245,7 @@
         "kind": "repository",
         "id": "hunt-gate",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -253,7 +253,7 @@
         "kind": "repository",
         "id": "hunt-local",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -261,7 +261,7 @@
         "kind": "repository",
         "id": "hunt-result",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -269,7 +269,7 @@
         "kind": "repository",
         "id": "hunt-consolidate",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -277,7 +277,7 @@
         "kind": "repository",
         "id": "hunt-critic",
         "path": "cloudflare/security-audit/HUNTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
         "bytes": 22446
       },
@@ -285,7 +285,7 @@
         "kind": "repository",
         "id": "val-p3",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -293,7 +293,7 @@
         "kind": "repository",
         "id": "val-verifier",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -301,7 +301,7 @@
         "kind": "repository",
         "id": "val-decide",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -309,7 +309,7 @@
         "kind": "repository",
         "id": "val-p4",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -317,7 +317,7 @@
         "kind": "repository",
         "id": "val-p5",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -325,7 +325,7 @@
         "kind": "repository",
         "id": "val-p6",
         "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
         "bytes": 17843
       },
@@ -333,7 +333,7 @@
         "kind": "repository",
         "id": "atk-select",
         "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
         "bytes": 15695
       },
@@ -341,7 +341,7 @@
         "kind": "repository",
         "id": "atk-classes",
         "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
         "bytes": 15695
       },
@@ -349,7 +349,7 @@
         "kind": "repository",
         "id": "dom-ai",
         "path": "cloudflare/security-audit/AI-AND-LLM.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "7335a95c43554eadefcf03ece639291bb0e038c398a179299e3887ffe06bd2ef",
         "bytes": 10617
       },
@@ -357,7 +357,7 @@
         "kind": "repository",
         "id": "dom-web",
         "path": "cloudflare/security-audit/WEB-PROTOCOL-AND-AUTH.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "4f3066dffa23c5635859187be9b96c32f2aff29a688186b91ff0c63e47d62b5c",
         "bytes": 12300
       },
@@ -365,7 +365,7 @@
         "kind": "repository",
         "id": "dom-client",
         "path": "cloudflare/security-audit/CLIENT-SIDE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "613f6b98f86083e045525c5b60154ffdab122bac35f1e05eb17488e6e453370c",
         "bytes": 8594
       },
@@ -373,7 +373,7 @@
         "kind": "repository",
         "id": "dom-mem",
         "path": "cloudflare/security-audit/MEMORY-SAFETY-AND-BINARY.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "7c8b0dccfb35315cca2455509674d49632b2fe37e1f3aac16c1a496a7e9924a7",
         "bytes": 10513
       },
@@ -381,7 +381,7 @@
         "kind": "repository",
         "id": "dom-supply",
         "path": "cloudflare/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "f372e919940e335468ba1ae09f99026c3986a345f7fe26f8068f132e199f52a5",
         "bytes": 7258
       },
@@ -389,7 +389,7 @@
         "kind": "repository",
         "id": "dom-cloud",
         "path": "cloudflare/security-audit/CLOUD-AND-DEPLOYMENT.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "3c80f3088be22345e07b057c056d6ed99fe2b0304f794398964f7ccd5a496ca3",
         "bytes": 8291
       },
@@ -397,7 +397,7 @@
         "kind": "repository",
         "id": "dom-proto",
         "path": "cloudflare/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "8b73816fa5b3697c9c40977f0c836b40f01d6e81929ff2720fe83ce089e9a619",
         "bytes": 7483
       },
@@ -405,7 +405,7 @@
         "kind": "repository",
         "id": "dom-res",
         "path": "cloudflare/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "4326fab5c92a0b4c420a70196254040105cd794026562130b59bf1a6db3e4baa",
         "bytes": 7476
       },
@@ -413,7 +413,7 @@
         "kind": "repository",
         "id": "dom-data",
         "path": "cloudflare/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "307dcb3e24d292715c4a041190e7bb135646a37eb6187619ae01d000a634a4ad",
         "bytes": 7798
       },
@@ -421,7 +421,7 @@
         "kind": "repository",
         "id": "dom-desk",
         "path": "cloudflare/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "58eae8ee0ca6a46611c501ec5a3ab47fdff88dd7db0d8d74789bbf8bb19d8cb2",
         "bytes": 8739
       },
@@ -429,7 +429,7 @@
         "kind": "repository",
         "id": "schema",
         "path": "cloudflare/security-audit/report-schema.json",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
         "bytes": 14494
       },
@@ -437,7 +437,7 @@
         "kind": "repository",
         "id": "schema-c",
         "path": "cloudflare/security-audit/report-schema.json",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
         "bytes": 14494
       },
@@ -445,7 +445,7 @@
         "kind": "repository",
         "id": "schema-nv",
         "path": "cloudflare/security-audit/report-schema.json",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
         "bytes": 14494
       },
@@ -453,7 +453,7 @@
         "kind": "repository",
         "id": "schema-r",
         "path": "cloudflare/security-audit/report-schema.json",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "6575c9de4a62255699ea052ebf9a49ebfb373a32891bcd89af6f55cc84b35519",
         "bytes": 14494
       },
@@ -461,7 +461,7 @@
         "kind": "repository",
         "id": "vf-limits",
         "path": "cloudflare/security-audit/validate-findings.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
         "bytes": 28806
       },
@@ -469,7 +469,7 @@
         "kind": "repository",
         "id": "vf-path",
         "path": "cloudflare/security-audit/validate-findings.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
         "bytes": 28806
       },
@@ -477,7 +477,7 @@
         "kind": "repository",
         "id": "vf-semantic",
         "path": "cloudflare/security-audit/validate-findings.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
         "bytes": 28806
       },
@@ -485,7 +485,7 @@
         "kind": "repository",
         "id": "vf-read",
         "path": "cloudflare/security-audit/validate-findings.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
         "bytes": 28806
       },
@@ -493,7 +493,7 @@
         "kind": "repository",
         "id": "vf-run",
         "path": "cloudflare/security-audit/validate-findings.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "e85f232e36bfac0f866f244da50376692d6b45c690beadcb00608b0e6c8b5283",
         "bytes": 28806
       },
@@ -501,7 +501,7 @@
         "kind": "repository",
         "id": "vl-limits",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -509,7 +509,7 @@
         "kind": "repository",
         "id": "vl-fields",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -517,7 +517,7 @@
         "kind": "repository",
         "id": "vl-checks",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -525,7 +525,7 @@
         "kind": "repository",
         "id": "vl-state",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -533,7 +533,7 @@
         "kind": "repository",
         "id": "vl-attempts",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -541,7 +541,7 @@
         "kind": "repository",
         "id": "vl-unit",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -549,7 +549,7 @@
         "kind": "repository",
         "id": "vl-doc",
         "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
         "bytes": 33522
       },
@@ -557,7 +557,7 @@
         "kind": "repository",
         "id": "vft-accept",
         "path": "cloudflare/security-audit/validate-findings.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
         "bytes": 26384
       },
@@ -565,7 +565,7 @@
         "kind": "repository",
         "id": "vft-reject",
         "path": "cloudflare/security-audit/validate-findings.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
         "bytes": 26384
       },
@@ -573,7 +573,7 @@
         "kind": "repository",
         "id": "vft-cli",
         "path": "cloudflare/security-audit/validate-findings.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
         "bytes": 26384
       },
@@ -581,7 +581,7 @@
         "kind": "repository",
         "id": "vft-align",
         "path": "cloudflare/security-audit/validate-findings.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "b92001117a92c4161d43777a0ba2fa182a8a4d97f2304cc8c0cee5331497b73b",
         "bytes": 26384
       },
@@ -589,7 +589,7 @@
         "kind": "repository",
         "id": "vlt-ids",
         "path": "cloudflare/security-audit/validate-coverage-ledger.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
         "bytes": 28483
       },
@@ -597,7 +597,7 @@
         "kind": "repository",
         "id": "vlt-artifacts",
         "path": "cloudflare/security-audit/validate-coverage-ledger.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
         "bytes": 28483
       },
@@ -605,7 +605,7 @@
         "kind": "repository",
         "id": "vlt-state",
         "path": "cloudflare/security-audit/validate-coverage-ledger.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
         "bytes": 28483
       },
@@ -613,7 +613,7 @@
         "kind": "repository",
         "id": "vlt-attempts",
         "path": "cloudflare/security-audit/validate-coverage-ledger.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
         "bytes": 28483
       },
@@ -621,7 +621,7 @@
         "kind": "repository",
         "id": "vlt-limits",
         "path": "cloudflare/security-audit/validate-coverage-ledger.test.cjs",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "cfb9df26b03469a4279a70e7664a2a5434dd6f8c2c204e91f9b0aeb9dd71e648",
         "bytes": 28483
       },
@@ -629,7 +629,7 @@
         "kind": "repository",
         "id": "lock",
         "path": "cloudflare/skills-lock.json",
-        "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
         "sha256": "faea08213040cc69d6141aa8288b71c5b3b39a2778c30593c623b8547be23861",
         "bytes": 291
       },
@@ -644,8 +644,8 @@
         "kind": "diagram-spec",
         "id": "audit-flow",
         "inline": true,
-        "sha256": "1f5fbaea9f3f82d167eac9e9c891937b81196d2cf7d4c8702b55517747b1bcc9",
-        "bytes": 1390
+        "sha256": "64445798c92bbd8eaaac5fc852a80fdae446c9845b824b9cd18fd2f3ff673112",
+        "bytes": 1392
       }
     ]
   }

@@ -3,8 +3,8 @@
 `chief-of-staff`를 쓰면 에이전트는 긴 목표 하나를 맡은 책임자가 된다. 일은 서브에이전트(subagent)에게 맡기고, 자신은 기억을 위키에 쌓으며 작업 환경을 계속 고친다.[](source:cos-role)[](source:cos-sub)[](source:cos-wiki)
 
 - 두 갈래로 동시에 생각한다. 지금 일을 끝내는 전술(tactical)과, 다음 일이 더 잘되게 환경을 바꾸는 전략(strategic)이다.[](source:cos-role)
-- 모든 일은 서브에이전트가 한다. 지시와 보고는 짧게 하고, 위키 페이지나 커밋 같은 컨텍스트 포인터(context pointer)로 주고받는다.[](source:cos-sub)
-- 위키는 "지금 이렇다"가 아니라 날짜와 커밋을 붙인 기록으로 쓴다.[](source:cos-hist)
+- 모든 일은 서브에이전트가 한다. 지시와 보고는 짧게 하고, 위키 페이지나 commit 같은 컨텍스트 포인터(context pointer)로 주고받는다.[](source:cos-sub)
+- 위키는 "지금 이렇다"가 아니라 날짜와 commit을 붙인 기록으로 쓴다.[](source:cos-hist)
 - 서브에이전트 세션 약 5개 중 1개는 `retro` 절차로 돌아본다. 이 절차는 `../retro/SKILL.md` 파일을 읽어 따른다.[](source:cos-retro)
 
 @answer scope="mattpocock/chief-of-staff · 원본 텍스트 파일 2개 · 커밋 0f0d1b0 · 실행하지 않음, 지시상 동작만"
@@ -93,7 +93,7 @@
 | 모든 일은 서브에이전트에서 한다. 자기 컨텍스트 창을 지킨다[](source:cos-sub) | 권고(should) |
 | 백그라운드 에이전트를 써서 사용자와 대화를 이어 간다[](source:cos-sub) | 의무(명령형) |
 | 서브에이전트는 매번 새 컨텍스트 창으로 시작한다[](source:cos-sub) | 의무(명령형) |
-| 주고받는 말은 짧게. 연구 메모, 이전 커밋, 위키 페이지 같은 포인터로 전한다[](source:cos-sub) | 권고(should) |
+| 주고받는 말은 짧게. 연구 메모, 이전 commit, 위키 페이지 같은 포인터로 전한다[](source:cos-sub) | 권고(should) |
 | 포인터로 볼 수 있는 정보를 다시 적지 않는다[](source:cos-sub) | 금지 |
 | 위키 위치: 사용자나 다른 에이전트가 쓰는 공용 위키를 먼저 찾고 그 관례를 따른다. 없을 때만 첫 쓰기 **전에** 사용자와 위치를 정한다[](source:cos-wiki) | 의무, 사람 개입 |
 | 이슈, PR, 대화 기록 같은 원자료는 위키에 복사하거나 고치지 않고 인용만 한다[](source:cos-wiki) | 금지 |
@@ -117,8 +117,8 @@
 **"현재가 아니라 기록을 쓴다"**는 위키 문장 규칙이다. 위키는 코드를 따라잡을 수 없으므로 지금 상태를 말하지 않는다.[](source:cos-hist)
 
 - 모든 주장에 날짜를 붙인다. 원문 예: `On 2026-10-13, Matt decided...`.[](source:cos-hist)
-- 코드에 대한 주장에는 그 주장이 참이던 커밋과 저장소를 붙인다. 원문 예시는 `mattpocock/skills@abc1234` 시점에 `retro`가 1단계에서 `writing-for-agents`를 불러온다는 문장이다.[](source:cos-hist-ex)
-- 코드에 대해 "currently", "now", "is"를 날짜나 커밋 없이 쓰지 않는다.[](source:cos-hist)
+- 코드에 대한 주장에는 그 주장이 참이던 commit과 저장소를 붙인다. 원문 예시는 `mattpocock/skills@abc1234` 시점에 `retro`가 1단계에서 `writing-for-agents`를 불러온다는 문장이다.[](source:cos-hist-ex)
+- 코드에 대해 "currently", "now", "is"를 날짜나 commit 없이 쓰지 않는다.[](source:cos-hist)
 - 바뀐 것은 날짜를 붙인 새 주장으로 추가하고, 옛 주장은 대체됨으로 표시한다. 옛 문장을 고쳐 쓰지 않는다.[](source:cos-hist)
 
 ## 다른 스킬의 절차는 어떻게 쓰나 {#procedures}

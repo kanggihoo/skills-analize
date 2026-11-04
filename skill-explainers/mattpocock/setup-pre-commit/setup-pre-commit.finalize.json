@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:50:01.632Z",
+  "startedAt": "2026-11-04T13:38:19.510Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/candidate.archify.md",
-    "sha256": "11bb7f316f01f54610815c7ac9979339c86be096c0325ca4ba9189e017b57b09",
+    "sha256": "34d1c908a3e3f0c6b574806f0288afe384f182beb45dc2dfa890dc44165eab81",
     "bytes": 7928
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.html",
-    "sha256": "f3b13975fd864a26c55f6f50443d4db91c345ebbfbaa5302862fd5db0dbb7311",
-    "bytes": 614300
+    "sha256": "138810f07d3e2cff80e0c11985d094b62886b221a6cfc927ded5faf1cf491588",
+    "bytes": 614292
   },
   "stages": {
     "browser-check": {
@@ -44,7 +44,7 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "11bb7f316f01f54610815c7ac9979339c86be096c0325ca4ba9189e017b57b09",
+          "sha256": "34d1c908a3e3f0c6b574806f0288afe384f182beb45dc2dfa890dc44165eab81",
           "bytes": 7928
         },
         "validation": {
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 779,
+      "durationMs": 780,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "ca1a7340-432f-4400-9a4a-6e83d47b2271",
+        "receiptId": "ebe85832-3891-4f75-9986-d338f2f91ccd",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.html",
         "explainer": {
-          "preparedSha256": "b7fb146228b6ffd6bde9e08b362182f5305303ee591dbfa7ec03db15c2bdd220",
+          "preparedSha256": "679d781dcc56e56ade7cf46b8af85fb6afcdfc423d7d5cafb165b7af4eef5fc9",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-what",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-detect",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-install",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-hook",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-lintstaged",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-prettier",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skill-verify",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "skill-commit",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "skill-notes",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "oa-yaml",
               "path": "mattpocock/setup-pre-commit/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "acf41db398c5c43afe504008bb7d615a97b6498b0f1f6c5b2395254c0bfb57d1",
               "bytes": 99
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "gg-desc",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -185,18 +185,18 @@
               "kind": "diagram-spec",
               "id": "setup-flow",
               "inline": true,
-              "sha256": "5ab0d395a1654395246cebcbb5d204553205f14994bedd6f5493723e70624681",
+              "sha256": "ed973237b3dc44d850c114998f7f5f7b96db3e53041e6f5b6e6d9181308f79d2",
               "bytes": 950
             }
           ]
         },
         "specification": {
-          "sha256": "11bb7f316f01f54610815c7ac9979339c86be096c0325ca4ba9189e017b57b09",
+          "sha256": "34d1c908a3e3f0c6b574806f0288afe384f182beb45dc2dfa890dc44165eab81",
           "bytes": 7928
         },
         "artifact": {
-          "sha256": "f3b13975fd864a26c55f6f50443d4db91c345ebbfbaa5302862fd5db0dbb7311",
-          "bytes": 614300
+          "sha256": "138810f07d3e2cff80e0c11985d094b62886b221a6cfc927ded5faf1cf491588",
+          "bytes": 614292
         },
         "validation": {
           "checksPassed": 4,
@@ -222,7 +222,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 417,
+      "durationMs": 413,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -235,8 +235,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "f3b13975fd864a26c55f6f50443d4db91c345ebbfbaa5302862fd5db0dbb7311",
-          "bytes": 614300
+          "sha256": "138810f07d3e2cff80e0c11985d094b62886b221a6cfc927ded5faf1cf491588",
+          "bytes": 614292
         },
         "checks": [
           {
@@ -280,9 +280,9 @@
               "id": "setup-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-SkLAwT/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jkqQvF/child.html",
                 "artifact": {
-                  "sha256": "3e48692956876b228ca456dc0e1e86e8b6728e54844153710a51dba1c4b99c35",
+                  "sha256": "f3650e385e14d15fcc6069d140b02e95bae57f28acf5245a604f9b890bdd79ed",
                   "bytes": 832867
                 },
                 "checks": [
@@ -405,7 +405,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "ca1a7340-432f-4400-9a4a-6e83d47b2271"
+        "deliveryReceiptId": "ebe85832-3891-4f75-9986-d338f2f91ccd"
       }
     }
   },
@@ -419,8 +419,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/setup-pre-commit/setup-pre-commit.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:50:02.954Z",
-  "durationMs": 1322,
+  "finishedAt": "2026-11-04T13:38:20.852Z",
+  "durationMs": 1342,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

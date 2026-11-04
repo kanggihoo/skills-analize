@@ -5,7 +5,7 @@
 - 원문의 이유: 컨텍스트가 넘치면 추론 품질이 떨어지고, 압축 흔적이 생기고, 진행이 멈춘다.[](source:why)
 - 큰 출력, 스크린샷, 큰 문서는 서브에이전트가 읽는다. 메인 컨텍스트는 원자료가 아니라 요약을 받는다.[](source:p-isolate)
 - 매번 쓰는 템플릿과 참고 자료는 스킬 파일 안에 둔다. 따로 두면 읽을 때마다 비용이 든다.[](source:p-inline)
-- 단계 크기를 정하고 범위에 상한을 둔다. 단계당 파일 수를 제한하고 턴 예산을 정한다.[](source:p-cap)
+- 에이전트는 단계 크기를 정하고 범위에 상한을 둔다. 단계당 파일 수를 제한하고 턴 예산을 정한다.[](source:p-cap)
 
 @answer scope="pstack/principle-guard-the-context-window · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
 @meta locale=ko
@@ -30,7 +30,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-guard-the-context-window`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-guard-the-context-window`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -40,7 +40,7 @@
 | `trace-forensics` 플레이북 | 큰 트레이스 파일을 서브에이전트에서 파싱할 때[](source:pb-trace) |
 | `worktree-cleanup` 플레이북 | 대화 기록을 읽는 서브에이전트를 여러 갈래로 나눠 돌릴 때[](source:pb-worktree) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
 ## 무엇을 강제하나 {#rules}
 
@@ -89,7 +89,7 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 3곳이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

@@ -1,11 +1,11 @@
 # interrogate 스킬은 에이전트를 어떻게 바꾸나 {#interrogate-skill}
 
-`interrogate`를 쓰면 에이전트는 변경을 혼자 리뷰하지 않는다. 설정된 모델마다 읽기 전용 리뷰어를 하나씩 띄워 같은 프롬프트로 공격적으로 리뷰하게 하고, 그 결과를 선임 리뷰어로서 걸러 판정 하나로 낸다.[](source:skill-intro)
+`interrogate`를 켜면, 에이전트는 변경을 혼자 리뷰하지 않는다. 에이전트는 설정된 모델마다 읽기 전용 리뷰어를 하나씩 띄워 같은 프롬프트로 공격적으로 리뷰하게 한다. 그리고 그 결과를 선임 리뷰어로서 걸러 판정 하나로 낸다.[](source:skill-intro)
 
-- 적대적 신호는 역할 연기가 아니라 모델의 다양성에서 나온다고 본다.[](source:skill-intro)
-- 결과물은 종합 판정이다. 변경을 자동으로 적용하지 않는다.[](source:skill-intro)
-- 의도가 불확실하면 리뷰어를 띄우기 전에 사용자에게 묻는다.[](source:skill-intent)
-- 모든 지적을 네 칸(Act on, Consider, Noted, Dismissed)으로 나누고, 버린 지적도 이유와 함께 보여 준다.[](source:skill-judge)[](source:lead-calib)
+- 이 스킬은 적대적 신호가 역할 연기가 아니라 모델의 다양성에서 나온다고 본다.[](source:skill-intro)
+- 결과물은 종합 판정이다. 에이전트는 변경을 자동으로 적용하지 않는다.[](source:skill-intro)
+- 의도가 불확실하면, 에이전트는 리뷰어를 띄우기 전에 사용자에게 묻는다.[](source:skill-intent)
+- 에이전트는 모든 지적을 네 칸(Act on, Consider, Noted, Dismissed)으로 나누고, 버린 지적도 이유와 함께 보여 준다.[](source:skill-judge)[](source:lead-calib)
 
 @answer scope="pstack/interrogate · 원본 텍스트 파일 5개 · 커밋 5760176"
 @meta locale=ko
@@ -41,7 +41,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/interrogate`를 입력하거나, 다른 스킬이 진행 중에 부를 때 켜진다. `description`의 "tear this apart" 같은 표현은 어떤 요청에 맞는지 보여 주는 예이고, 정확히 일치해야 켜지는 목록이 아니다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 그래서 이 스킬은 사용자가 `/interrogate`를 입력하거나, 다른 스킬이 진행 중에 부를 때 켜진다. `description`의 "tear this apart" 같은 표현은 어떤 요청에 맞는지 보여 주는 예이고, 정확히 일치해야 켜지는 목록이 아니다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -73,17 +73,17 @@
 | judge > out | | |
 
 @steps id=interrogate-steps
-| s-scope | 범위 정하기 | Step 1. 사용자가 파일이나 `diff`를 가리키면 그것을 쓴다. 기능 브랜치면 `git diff main...HEAD`(또는 맞는 기반 브랜치)로 전체 변경을 모은다. 최근 작업을 언급하면 관련 파일을 모은다. 리뷰어가 코드를 이해하는 데 필요한 주변 파일도 함께 묶는다. | interrogate-flow | scope |
-| s-intent | 의도 분명? | Step 2. 사용자 메시지, 커밋 메시지, PR 설명, 코드에서 의도를 끌어내 한 문단으로 쓴다. | interrogate-flow | intent |
+| s-scope | 범위 정하기 | Step 1. 사용자가 파일이나 `diff`를 가리키면, 에이전트는 그것을 쓴다. 기능 branch이면, `git diff main...HEAD`(또는 맞는 기반 branch)로 전체 변경을 모은다. 사용자가 최근 작업을 언급하면, 관련 파일을 모은다. 리뷰어가 코드를 이해하는 데 필요한 주변 파일도 함께 묶는다. | interrogate-flow | scope |
+| s-intent | 의도 분명? | Step 2. 에이전트는 사용자 메시지, commit 메시지, PR 설명, 코드에서 의도를 끌어내 한 문단으로 쓴다. | interrogate-flow | intent |
 | s-ask | 사용자 질문 | 의도가 불확실하면 진행하기 전에 사용자에게 묻는다. 이 스킬에서 사람이 개입하는 유일한 지점이다. | interrogate-flow | ask |
-| s-spawn | 리뷰어 띄우기 | Step 3. 모든 리뷰어를 한 메시지에서 띄운다. `subagent_type: generalPurpose`, `readonly: true`. 리뷰어 프롬프트 양식에 의도, diff, 리뷰 기준, 코드 품질 관점을 채워 모두에게 똑같이 준다. | interrogate-flow | spawn |
-| s-synth | 종합 | Step 4. 지적을 모두 파싱한다. 2개 이상의 모델이 따로 낸 지적이 가장 강한 신호다. 한 모델만 낸 지적도 읽되 무게를 낮춘다. 같은 문제를 다르게 쓴 것은 합치고 어느 모델이 냈는지 적는다. 모델끼리 정반대로 말하면 그 사실을 적는다. | interrogate-flow | synth |
+| s-spawn | 리뷰어 띄우기 | Step 3. 에이전트는 모든 리뷰어를 한 메시지에서 띄운다. 설정은 `subagent_type: generalPurpose`, `readonly: true`다. 리뷰어 프롬프트 양식에 의도, diff, 리뷰 기준, 코드 품질 관점을 채워 모두에게 똑같이 준다. | interrogate-flow | spawn |
+| s-synth | 종합 | Step 4. 에이전트는 지적을 모두 파싱한다. 2개 이상의 모델이 따로 낸 지적이 가장 강한 신호다. 한 모델만 낸 지적도 읽되 무게를 낮춘다. 같은 문제를 다르게 쓴 지적은 합치고 어느 모델이 냈는지 적는다. 모델끼리 정반대로 말하면, 그 사실을 적는다. | interrogate-flow | synth |
 | s-judge | 선임 판단 | Step 5. 에이전트는 중립적인 집계자가 아니라 실용적인 시니어 엔지니어다. `references/lead-judgment.md`를 읽고 지적마다 네 칸 중 하나로 나눈다. | interrogate-flow | judge |
-| s-out | 판정 보고 | Intent, Reviewers, Act On, Consider, Noted, Dismissed, Agreement Map 순서로 낸다. 변경은 적용하지 않는다. | interrogate-flow | out |
+| s-out | 판정 보고 | 에이전트는 Intent, Reviewers, Act On, Consider, Noted, Dismissed, Agreement Map 순서로 낸다. 변경은 적용하지 않는다. | interrogate-flow | out |
 
 ## 리뷰어는 무엇을 보고 무엇을 내나 {#reviewer}
 
-리뷰어 프롬프트는 의도 자체를 의심하지 말고 실행만 공격하라고 고정한다.[](source:reviewer-intent) 칭찬하지 않고, 찾은 것이 없으면 "no findings"라고 쓰고 멈춘다. 빈 리뷰도 정상 결과다.[](source:reviewer-sev)
+리뷰어 프롬프트는 리뷰어에게 의도 자체를 의심하지 말고 실행만 공격하라고 고정한다.[](source:reviewer-intent) 리뷰어는 칭찬하지 않고, 찾은 것이 없으면 "no findings"라고 쓰고 멈춘다. 빈 리뷰도 정상 결과다.[](source:reviewer-sev)
 
 | 지적 항목 | 내용 |
 | --- | --- |
@@ -125,11 +125,11 @@
 | Noted | 기술적으로 맞지만 지금 단계에서 조치할 것이 아닌 것 |
 | Dismissed | 틀렸거나, 트집이거나, 맥락을 놓친 것. 짧은 이유를 붙인다 |
 
-지적마다 어느 모델이 냈는지, 어느 칸인지, 한 줄 이유를 붙인다.[](source:skill-judge)
+에이전트는 지적마다 어느 모델이 냈는지, 어느 칸인지, 한 줄 이유를 붙인다.[](source:skill-judge)
 
 | 거르는 원칙 | 판단 |
 | --- | --- |
-| 트집 끌림 | 리뷰어가 큰 문제를 못 찾으면 사소한 지적을 부풀린다. 전부 nit이면 코드는 아마 괜찮다고 말한다 |
+| 트집 끌림 | 리뷰어가 큰 문제를 못 찾으면, 사소한 지적을 부풀린다. 전부 nit이면, 선임 리뷰어는 코드가 아마 괜찮다고 말한다 |
 | 가정과 실제 | 호출하는 쪽이 실제로 `null`을 넘길 수 있을 때만 지적이다. 호출 위치를 추적한다 |
 | 섣부른 추상 | 두 번째 방식으로 바뀔 일이 없으면 추상은 이르다 |
 | "나라면 다르게" | 현재 방식의 구체적 문제를 보이지 않으면 버리고 이유를 적는다 |
@@ -149,7 +149,7 @@ Act On 상한과 Dismissed 칸의 역할은 판정 보정 절에서 왔다.[](so
 
 ## 모델 설정과 대체 규칙 {#models}
 
-리뷰어는 `~/.cursor/rules/pstack-models.mdc`의 `interrogate reviewers` 줄에서 항목마다 하나씩 띄운다. 항목 수에 맞춰 A/B/C 이름표를 늘리거나 줄인다. 규칙이나 줄이 없으면 표의 기본값을 쓴다.[](source:skill-spawn)[](source:setup-line) 값이 `auto`나 `inherit-parent`면 `model`을 비워 부모 모델을 쓴다.[](source:skill-spawn)
+에이전트는 `~/.cursor/rules/pstack-models.mdc`의 `interrogate reviewers` 줄에서 항목마다 리뷰어를 하나씩 띄운다. 항목 수에 맞춰 A/B/C 이름표를 늘리거나 줄인다. 규칙이나 줄이 없으면, 표의 기본값을 쓴다.[](source:skill-spawn)[](source:setup-line) 값이 `auto`나 `inherit-parent`이면, `model`을 비워 부모 모델을 쓴다.[](source:skill-spawn)
 
 | 상황 | 해야 할 일 |
 | --- | --- |
@@ -161,7 +161,7 @@ Act On 상한과 Dismissed 칸의 역할은 판정 보정 절에서 왔다.[](so
 대체 규칙은 Step 3 문단을 표로 옮긴 것이다.[](source:skill-fallback)
 
 @callout level=warning title="리뷰 스킬 안에 PR을 여는 지시가 있다"
-기본 모델 이름이 거부되면 기본값 표를 고치는 PR을 따로 열라고 한다.[](source:skill-fallback) 판정: 리뷰 대상 코드에는 손대지 않지만, 저장소에 쓰는 동작이 하나 숨어 있다. 어느 저장소에 여는지는 원문에 명시 없음.
+원문은 기본 모델 이름이 거부되면 기본값 표를 고치는 PR을 따로 열라고 한다.[](source:skill-fallback) 판정: 리뷰 대상 코드에는 손대지 않지만, 저장소에 쓰는 동작이 하나 숨어 있다. 어느 저장소에 여는지는 원문에 명시 없음.
 
 ## 흐름 속 위치 {#position}
 
@@ -191,4 +191,4 @@ Act On 상한과 Dismissed 칸의 역할은 판정 보정 절에서 왔다.[](so
 
 @callout level=open-question title="확인하지 못한 것"
 리뷰어의 심각도(`critical`, `warning`, `nit`)와 선임 리뷰어의 네 칸을 어떻게 대응시키는지는 원문에 명시 없음.[](source:reviewer-sev)[](source:skill-judge)
-`architect`는 합친 스케치에 이 스킬을 돌리라고 한다.[](source:architect-c) Step 1은 diff나 파일을 범위로 잡는다.[](source:skill-scope) 판정: 커밋되지 않은 스케치라면 사용자가 파일을 가리키는 경로로 들어가는 것으로 보인다.
+`architect`는 합친 스케치에 이 스킬을 돌리라고 한다.[](source:architect-c) Step 1은 diff나 파일을 범위로 잡는다.[](source:skill-scope) 판정: commit되지 않은 스케치라면 사용자가 파일을 가리키는 경로로 들어가는 것으로 보인다.

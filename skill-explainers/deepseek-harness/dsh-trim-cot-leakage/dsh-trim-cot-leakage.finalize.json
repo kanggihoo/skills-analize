@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T13:35:35.055Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/candidate.archify.md",
+    "sha256": "f4b05fe9c96db684d07a4c11b9a3c8d070a3ea68dd895cc52fd4db38eb32ddc5",
+    "bytes": 19816
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+    "sha256": "a56143b2ad854740bd6925958e9446ceed010670a939e7f7a2b51df103b93796",
+    "bytes": 1371538
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "f4b05fe9c96db684d07a4c11b9a3c8d070a3ea68dd895cc52fd4db38eb32ddc5",
+          "bytes": 19816
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1093,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "2877ac0e-94b3-4bb9-bffb-79ab2c11e08c",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+        "explainer": {
+          "preparedSha256": "1df5fcb50ec06c49361e80621cf5d7cb4ca274157b11f7f3adc8bf35558ad134",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "tc-fm",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "bt-en",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+              "bytes": 4980
+            },
+            {
+              "kind": "repository",
+              "id": "tc-intro",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-test",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-tax",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-keeps",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-workflow",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-scope",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-audit",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-owner",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-trap",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "tc-verify",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+              "bytes": 7699
+            },
+            {
+              "kind": "repository",
+              "id": "ex-head",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-dead",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-change",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-justify",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-visible",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-keeps",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "ex-traps",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+              "bytes": 12566
+            },
+            {
+              "kind": "repository",
+              "id": "bt-head",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+              "bytes": 4980
+            },
+            {
+              "kind": "repository",
+              "id": "bt-rules",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+              "bytes": 4980
+            },
+            {
+              "kind": "repository",
+              "id": "bt-zh",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+              "bytes": 4980
+            },
+            {
+              "kind": "repository",
+              "id": "bt-fp",
+              "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+              "bytes": 4980
+            },
+            {
+              "kind": "repository",
+              "id": "doc-r12",
+              "path": "deepseek-harness/dsh-doc/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+              "bytes": 18418
+            },
+            {
+              "kind": "repository",
+              "id": "ps-r10",
+              "path": "deepseek-harness/dsh-prose-standard/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "63530dfc600b1be07b6f2c1d1a794a3ce0ef78f91d2c18b7b1303dce3b0d5e72",
+              "bytes": 9899
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "trim-flow",
+              "inline": true,
+              "sha256": "5ffc0addf0dd742e7cf7115c449799ffed768105dc54b9f0f78504c054c6396a",
+              "bytes": 968
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "trim-position",
+              "inline": true,
+              "sha256": "8640e96d56229bff1927c2bccb0a720d9d85995e43793593698e1223b1aa3641",
+              "bytes": 719
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "f4b05fe9c96db684d07a4c11b9a3c8d070a3ea68dd895cc52fd4db38eb32ddc5",
+          "bytes": 19816
+        },
+        "artifact": {
+          "sha256": "a56143b2ad854740bd6925958e9446ceed010670a939e7f7a2b51df103b93796",
+          "bytes": 1371538
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 587,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "a56143b2ad854740bd6925958e9446ceed010670a939e7f7a2b51df103b93796",
+          "bytes": 1371538
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "128 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "27 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "trim-flow: pass",
+              "trim-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "trim-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-QDbfQB/child.html",
+                "artifact": {
+                  "sha256": "ff5e6f96cd1d34e06e0735f40d73cd65e2c0657be67201c3c760967d5d3aaf65",
+                  "bytes": 833782
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 102.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.948717948717949,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "sweep-to-props-1",
+                      "from": "sweep",
+                      "to": "props"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.948717948717949,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "trim-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-59TD9o/child.html",
+                "artifact": {
+                  "sha256": "0e1feb7f89b242182f8de7afb281b4608dce977c305f338347e8041130caed14",
+                  "bytes": 831235
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 174.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.709844559585492,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "doc-to-trim-1",
+                      "from": "doc",
+                      "to": "trim"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.709844559585492,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "2877ac0e-94b3-4bb9-bffb-79ab2c11e08c"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T13:35:36.888Z",
+  "durationMs": 1833,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

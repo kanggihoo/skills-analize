@@ -1,10 +1,10 @@
 # typescript-best-practices 스킬은 에이전트를 어떻게 바꾸나 {#typescript-best-practices-skill}
 
-`typescript-best-practices`를 쓰면 에이전트는 `.ts`나 `.tsx` 파일을 읽거나 고칠 때 규칙 16개를 적용한다. 핵심은 잘못된 상태를 타입으로 만들 수 없게 하고, 외부 데이터는 경계에서 한 번 검증하는 것이다.[](source:table)
+`typescript-best-practices`를 쓰면 에이전트는 `.ts`나 `.tsx` 파일을 읽거나 고칠 때 규칙 16개를 적용한다. 이 규칙의 핵심은 잘못된 상태를 타입으로 만들 수 없게 하고, 외부 데이터는 경계에서 한 번 검증하는 것이다.[](source:table)
 
-- 먼저 `principle-type-system-discipline` 원칙을 적용하라고 한다. 이 스킬은 그 원칙을 TypeScript 문법으로 옮긴 것이다.[](source:first)[](source:tsd)
-- `as` 캐스트는 검증 뒤에만 쓴다. 타입을 좁히는 방법에는 다섯 단계 우선순위가 있다.[](source:table)
-- `pstack`에서 `paths:` 필드를 가진 스킬은 이 스킬 하나다. 대상 파일을 `**/*.ts`, `**/*.tsx`로 선언한다.[](source:fm)
+- 스킬 본문은 먼저 `principle-type-system-discipline` 원칙을 적용하라고 한다. 이 스킬은 그 원칙을 TypeScript 문법으로 옮긴 것이다.[](source:first)[](source:tsd)
+- 에이전트는 `as` 캐스트를 검증 뒤에만 쓴다. 타입을 좁히는 방법에는 다섯 단계 우선순위가 있다.[](source:table)
+- `pstack`에서 `paths:` 필드를 가진 스킬은 이 스킬 하나다. 이 스킬은 대상 파일을 `**/*.ts`, `**/*.tsx`로 선언한다.[](source:fm)
 - 코드 예는 `references/patterns.md`에 있다. 규칙 16개 가운데 14개에 예가 있다.[](source:examples)[](source:pat-intro)
 
 @answer scope="pstack/typescript-best-practices · 원본 텍스트 파일 2개 · 커밋 5760176"
@@ -41,9 +41,9 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/typescript-best-practices`를 입력하면 켜진다. `poteto-help`는 "`.ts`나 `.tsx` 작업에 TypeScript 규칙을 적용할 때" 쓰라고 안내한다.[](source:help-ts)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 그래서 사용자가 `/typescript-best-practices`를 입력하면 켜진다. `poteto-help`는 "`.ts`나 `.tsx` 작업에 TypeScript 규칙을 적용할 때" 쓰라고 안내한다.[](source:help-ts)
 
-`paths:` 필드는 이 스킬이 다루는 파일을 경로 패턴으로 적는다. `reflect`의 종합 담당 프롬프트도 "path-shaped triggers belong in `paths:`, not description prose"를 남길 패턴으로 든다.[](source:sy-paths) 판정: 저자는 `paths:`를 경로 기반 트리거로 쓰려고 넣었다. 다만 이 필드가 `disable-model-invocation: true`와 함께 있을 때 실행 환경이 스킬을 자동으로 붙이는지는 원문에 명시 없음.[](source:fm)
+`paths:` 필드는 이 스킬이 다루는 파일을 경로 패턴으로 적는다. `reflect`의 종합 담당 프롬프트도 "path-shaped triggers belong in `paths:`, not description prose"를 남길 패턴으로 든다.[](source:sy-paths) 판정: 저자는 `paths:`를 경로 기반 트리거로 쓰려고 넣었다. 다만 `paths:`와 `disable-model-invocation: true`가 함께 있을 때 실행 환경이 이 스킬을 자동으로 붙이는지는 원문에 명시 없음.[](source:fm)
 
 `pstack` 안에서 이 스킬을 직접 부르는 스킬은 없다. `principle-type-system-discipline`이 이 스킬을 "특정 문법으로 구체화하는 스킬"의 예로 든다(r97).[](source:tsd) `poteto-mode`는 타입이나 시그니처를 설계할 때 그 원칙을 꺼낸다.[](source:pm-tsd)
 
@@ -80,7 +80,7 @@
 | 실제 테스트 | 돌릴 수 있는 것은 가짜(mock)로 바꾸지 않는다. 프레임워크의 실제 테스트 도구와 누수 검사를 쓰고, UI는 실행 중인 빌드에서 확인한다[](source:t-conv) | 로컬에서 못 돌리는 것만 가짜로 바꾼다. patterns.md에 예 없음 |
 | 구조화된 로그 | id만으로 디버깅할 수 있는 맥락을 담은 구조화 로거를 쓴다[](source:t-conv) | 배포 코드에 `console.log` 금지. patterns.md에 예 없음 |
 
-`as`를 없앨 때 찾는 원인 네 가지다.[](source:pat-as)
+`as`를 없앨 때 에이전트가 찾는 원인은 네 가지다.[](source:pat-as)
 
 - 판별 필드가 없다. 하나 더하고 판별 유니온으로 바꾼다.
 - 원본 타입이 너무 넓다(예: `Record<string, unknown>`). 좁힌다.
@@ -93,7 +93,7 @@
 
 @code source=pat-du language=ts
 
-느슨한 배열이 `!`를 부르는 곳에서만 입력 타입을 강화하는 예다.[](source:pat-total) 결과를 `Session | undefined`로 약하게 하는 것도 다른 total 시그니처로 인정한다.[](source:pat-total-alt)
+느슨한 배열이 `!`를 부르는 곳에서만 입력 타입을 강화하는 예다.[](source:pat-total) 결과를 `Session | undefined`로 약하게 하는 것도 원문은 다른 total 시그니처로 인정한다.[](source:pat-total-alt)
 
 @code source=pat-total language=ts
 
@@ -103,10 +103,10 @@
 - 관계 확인용으로 읽은 줄: 위 출처 목록의 다른 스킬 줄. 각 줄만 확인했다.
 - 제외한 파일: `SKILL.KO.md`, `references/patterns.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 이 페이지의 동작은 모두 원문이 지시한 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-`paths:`와 `disable-model-invocation: true`가 함께 있을 때 Cursor 환경이 경로에 맞는 파일을 열면 스킬을 붙이는지는 원문에 명시 없음.[](source:fm)
+`paths:`와 `disable-model-invocation: true`가 함께 있을 때, 경로에 맞는 파일을 열면 Cursor 환경이 스킬을 붙이는지는 원문에 명시 없음.[](source:fm)
 patterns.md는 "Code examples for each rule"이라고 적지만, "Real tests"와 "Structured telemetry"에는 절이 없다.[](source:pat-intro)[](source:t-conv)
 `SKILL.md`는 `principle-type-system-discipline`을 먼저 적용하라고 하고, `principle-boundary-discipline`을 참고하라고 한다. 관계 원장에는 이 스킬에서 나가는 두 관계가 없다.[](source:first)[](source:bd)

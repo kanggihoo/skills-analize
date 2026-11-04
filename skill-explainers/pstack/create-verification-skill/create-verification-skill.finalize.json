@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:16:37.855Z",
+  "startedAt": "2026-11-04T12:38:02.830Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/candidate.archify.md",
-    "sha256": "d966c9fa9d4845d8ac9f0713a797e15fc79a6775cfeb93f18a9eb56202cf91fd",
-    "bytes": 15844
+    "sha256": "26f5a9b734478a1a7df8f217ca723e03d1d44971b67f055e60a2eeefb68d23e6",
+    "bytes": 16173
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/create-verification-skill.html",
-    "sha256": "cc0b40aafa4e4733efa0ef50d8e4649c4c1a2343c39157e35a84b9fd5172430d",
-    "bytes": 1563493
+    "sha256": "d82eebd9402e1c1f97e7ff9d126563f92a98c8502488c1aa85db81131e86f097",
+    "bytes": 1564559
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "d966c9fa9d4845d8ac9f0713a797e15fc79a6775cfeb93f18a9eb56202cf91fd",
-          "bytes": 15844
+          "sha256": "26f5a9b734478a1a7df8f217ca723e03d1d44971b67f055e60a2eeefb68d23e6",
+          "bytes": 16173
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1517,
+      "durationMs": 1476,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "618925c4-f62b-4c32-bd1f-b06a383a45a6",
+        "receiptId": "b68e0a2c-54cd-42b0-b797-0d49629c38ea",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/create-verification-skill.html",
         "explainer": {
-          "preparedSha256": "02e9c5a63d2b2fc44ff0fe0e7dc4a0a1372a5e363b65e90b65324587916d0062",
+          "preparedSha256": "73a66c5bd7969ffec87bcd358a5c4bfc7b742bec73a945180a53c35a4bb24d2f",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-interview",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-broken",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-generate",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-sections",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-evidence",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skill-map",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "skill-prove",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "skill-offer",
               "path": "pstack/create-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644f2551403c1bca01a2855b34611b6e7be0ce0dc5b204514c376c0f6a6e6ac4",
               "bytes": 5879
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "ex-readme",
               "path": "pstack/create-verification-skill/references/feature-map-example/README.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
               "bytes": 2601
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "ex-base",
               "path": "pstack/create-verification-skill/references/feature-map-example/README.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
               "bytes": 2601
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "ex-proof",
               "path": "pstack/create-verification-skill/references/feature-map-example/README.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
               "bytes": 2601
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "ex-contract",
               "path": "pstack/create-verification-skill/references/feature-map-example/README.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "cb7bd782cf89968a4ba3d58a5151db837430db92d19a6f52a906973b77b516ba",
               "bytes": 2601
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "ex-create",
               "path": "pstack/create-verification-skill/references/feature-map-example/create-note.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
               "bytes": 2926
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "ex-create-gotcha",
               "path": "pstack/create-verification-skill/references/feature-map-example/create-note.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
               "bytes": 2926
             },
@@ -217,7 +217,7 @@
               "kind": "repository",
               "id": "ex-search",
               "path": "pstack/create-verification-skill/references/feature-map-example/search.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
               "bytes": 3478
             },
@@ -225,7 +225,7 @@
               "kind": "repository",
               "id": "ex-search-gotcha",
               "path": "pstack/create-verification-skill/references/feature-map-example/search.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
               "bytes": 3478
             },
@@ -233,7 +233,7 @@
               "kind": "repository",
               "id": "setup-offer",
               "path": "pstack/setup-pstack/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "125dd0c8f588782cfb271efae8f97a0719e43e79f56b3495c095f460bcee6389",
               "bytes": 5548
             },
@@ -241,7 +241,7 @@
               "kind": "repository",
               "id": "help-mention",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -249,7 +249,7 @@
               "kind": "repository",
               "id": "maintain-intro",
               "path": "pstack/maintain-verification-skill/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8",
               "bytes": 4922
             },
@@ -277,12 +277,12 @@
           ]
         },
         "specification": {
-          "sha256": "d966c9fa9d4845d8ac9f0713a797e15fc79a6775cfeb93f18a9eb56202cf91fd",
-          "bytes": 15844
+          "sha256": "26f5a9b734478a1a7df8f217ca723e03d1d44971b67f055e60a2eeefb68d23e6",
+          "bytes": 16173
         },
         "artifact": {
-          "sha256": "cc0b40aafa4e4733efa0ef50d8e4649c4c1a2343c39157e35a84b9fd5172430d",
-          "bytes": 1563493
+          "sha256": "d82eebd9402e1c1f97e7ff9d126563f92a98c8502488c1aa85db81131e86f097",
+          "bytes": 1564559
         },
         "validation": {
           "checksPassed": 4,
@@ -308,7 +308,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 705,
+      "durationMs": 699,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -321,8 +321,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/create-verification-skill.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "cc0b40aafa4e4733efa0ef50d8e4649c4c1a2343c39157e35a84b9fd5172430d",
-          "bytes": 1563493
+          "sha256": "d82eebd9402e1c1f97e7ff9d126563f92a98c8502488c1aa85db81131e86f097",
+          "bytes": 1564559
         },
         "checks": [
           {
@@ -368,7 +368,7 @@
               "id": "cvs-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-XGf1BC/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-aw9FbP/child.html",
                 "artifact": {
                   "sha256": "049457fa94a1fe4032a73764ec0c566737b0e3dd8ffcd262b40534e82b234698",
                   "bytes": 837794
@@ -495,7 +495,7 @@
               "id": "verify-layout",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-N1LaEV/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-TuQ6eY/child.html",
                 "artifact": {
                   "sha256": "bebef8f150436e7b095fa25b87f05ab0536cd241342f1718c9d14c7f5b923244",
                   "bytes": 835660
@@ -625,7 +625,7 @@
               "id": "cvs-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-e8BaCm/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-16kMbl/child.html",
                 "artifact": {
                   "sha256": "8f3f11d1c372dbc1707970ce95cbbf1f9ba25319803e9b79dae70ad2af5e9dea",
                   "bytes": 831293
@@ -752,7 +752,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "618925c4-f62b-4c32-bd1f-b06a383a45a6"
+        "deliveryReceiptId": "b68e0a2c-54cd-42b0-b797-0d49629c38ea"
       }
     }
   },
@@ -766,8 +766,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/create-verification-skill/create-verification-skill.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:16:40.243Z",
-  "durationMs": 2387,
+  "finishedAt": "2026-11-04T12:38:05.189Z",
+  "durationMs": 2359,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

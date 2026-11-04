@@ -1,11 +1,11 @@
 # pstack 작업 실행 묶음(run)은 어떻게 이어지나 {#run-group}
 
-사용자가 `/poteto-mode`로 일을 맡기면 `poteto-mode`가 플레이북을 고르고, 조건에 맞는 스킬을 불러 쓴 뒤 정해진 형식으로 답한다. 나머지 네 스킬은 그 앞뒤를 맡는다.[](source:pm-pb)[](source:pm-triggers)
+사용자가 `/poteto-mode`로 일을 맡기면 `poteto-mode`가 플레이북을 고르고, 조건에 맞는 스킬을 불러 쓴 뒤 정해진 형식으로 답한다. 나머지 네 스킬은 `poteto-mode`의 앞뒤 단계를 맡는다.[](source:pm-pb)[](source:pm-triggers)
 
-- 준비는 `setup-pstack`이 맡는다. 역할별 모델을 `~/.cursor/rules/pstack-models.mdc`에 쓰고, 다른 스킬은 이 파일을 읽는다.[](source:setup-write)[](source:pm-sub)
-- `poteto-help`는 안내만 한다. 도움 질문에는 일을 시작하지 않고, 일을 시키는 메시지면 `poteto-mode` 아래에서 일한다.[](source:help-work)
-- 크거나 여러 곳에 걸친 작업, 또는 맞는 플레이북이 없는 작업은 `figure-it-out`으로 넘어간다.[](source:pm-pb)
-- 길거나 자율적인 작업은 `show-me-your-work`로 결정 기록을 남긴다.[](source:pm-smyw)
+- 준비는 `setup-pstack`이 맡는다. `setup-pstack`이 역할별 모델을 `~/.cursor/rules/pstack-models.mdc`에 쓰고, 다른 스킬은 이 파일을 읽는다.[](source:setup-write)[](source:pm-sub)
+- `poteto-help`는 안내만 한다. 사용자가 도움을 묻는 질문이면 일을 시작하지 않고, 일을 시키는 메시지이면 `poteto-mode` 아래에서 일한다.[](source:help-work)
+- `poteto-mode`는 크거나 여러 곳에 걸친 작업, 또는 맞는 플레이북이 없는 작업을 `figure-it-out`으로 넘긴다.[](source:pm-pb)
+- 길거나 자율적인 작업이면, `show-me-your-work`로 결정 기록을 남긴다.[](source:pm-smyw)
 
 @answer scope="pstack/run 묶음 · 스킬 5개의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
 @meta locale=ko
@@ -73,12 +73,12 @@
 | fio > log | 기록 | |
 
 @steps id=run-steps
-| s-setup | setup-pstack | 역할마다 모델을 정해 규칙 파일 하나에 쓴다. 이 파일은 새 채팅부터 적용된다. | run-flow | setup |
-| s-help | poteto-help | 도움 질문이면 답과 보낼 프롬프트만 준다. 일을 시키는 메시지면 `poteto-mode`를 읽고 그 아래에서 일한다. | run-flow | help |
-| s-mode | poteto-mode | 작업을 플레이북에 맞춘다. 크거나 여러 곳에 걸친 작업, 자리를 비운 뒤 검토할 작업, 맞는 플레이북이 없는 작업은 `figure-it-out`으로 보낸다. 여러 날짜에 걸친 프로그램은 Orchestrate 플레이북으로 보낸다. | run-flow | mode |
-| s-pb | 플레이북 | 단계를 할 일 목록 맨 앞에 그대로 복사해 차례로 실행한다. 하지 않는 단계는 `skip: <이유>`로 남긴다. Non-negotiables 조건이 맞으면 해당 스킬을 실행하고, 끝나면 이 단계로 돌아온다. | run-flow | pb |
-| s-fio | figure-it-out | 이 작업만을 위한 플레이북을 설계하고, 단계마다 가설을 세워 확인하며 실행한다. | run-flow | fio |
-| s-log | 결정 기록 | `show-me-your-work`가 결정마다 TSV 한 줄을 남긴다. 길거나 자율적인 작업, 사용자가 자리를 비우는 작업이 대상이다. 위험이 크면 커밋하고, 아니면 로컬에 둔다. | run-flow | log |
+| s-setup | setup-pstack | `setup-pstack`이 역할마다 모델을 정해 규칙 파일 하나에 쓴다. 이 파일은 새 채팅부터 적용된다. | run-flow | setup |
+| s-help | poteto-help | 사용자 메시지가 도움 질문이면, `poteto-help`는 답과 보낼 프롬프트만 준다. 일을 시키는 메시지이면 `poteto-mode`를 읽고 그 아래에서 일한다. | run-flow | help |
+| s-mode | poteto-mode | `poteto-mode`가 작업을 플레이북에 맞춘다. 크거나 여러 곳에 걸친 작업, 자리를 비운 뒤 검토할 작업, 맞는 플레이북이 없는 작업은 `figure-it-out`으로 보낸다. 여러 날짜에 걸친 프로그램은 Orchestrate 플레이북으로 보낸다. | run-flow | mode |
+| s-pb | 플레이북 | 에이전트가 플레이북의 단계를 할 일 목록 맨 앞에 그대로 복사해 차례로 실행한다. 하지 않는 단계는 `skip: <이유>`로 남긴다. Non-negotiables 조건이 맞으면 해당 스킬을 실행하고, 스킬이 끝나면 이 단계로 돌아온다. | run-flow | pb |
+| s-fio | figure-it-out | `figure-it-out`이 이 작업만을 위한 플레이북을 설계하고, 단계마다 가설을 세워 확인하면서 실행한다. | run-flow | fio |
+| s-log | 결정 기록 | `show-me-your-work`가 결정마다 TSV 한 줄을 남긴다. 길거나 자율적인 작업, 사용자가 자리를 비우는 작업이 대상이다. 위험이 크면 commit하고, 아니면 로컬에 둔다. | run-flow | log |
 
 그림에는 마지막 답변 단계를 넣지 않았다. 모든 플레이북은 `poteto-mode`의 답변 규칙대로 쓴 답변으로 끝난다.[](source:pm-reply)
 
@@ -95,19 +95,19 @@ Opening a PR 플레이북은 다른 모든 플레이북의 끝에서 실행된�
 | r01 | 사소하지 않은 변경, 아키텍처 결정, "정말 확실해?"[](source:pm-how) | `how` | 내부 위임 | 플레이북 노드에 포함 |
 | r13 | 코드를 쓸 때. 먼저 데이터 모양을 정한다[](source:pm-model) | `principle-model-the-domain` | 참고 | 플레이북 노드에 포함 |
 | r02 | 함수 경계를 넘는 코드. 구현 전에 병렬 설계 탐색[](source:pm-arch) | `architect` | 내부 위임 | 플레이북 노드에 포함 |
-| r03 | 병렬로 나눠 돌리기(커버리지, 경주, 관문, 탐색 분할)[](source:pm-fan) | `swarm` | 내부 위임 | 플레이북 노드에 포함 |
-| r04 | 설계나 코드의 경합(기반 후보 고르기, 접붙이기)[](source:pm-fan) | `arena` | 내부 위임 | 플레이북 노드에 포함 |
+| r03 | 병렬로 나눠 돌리기(커버리지, race(같은 일을 여럿이 경쟁), gauntlet(연달아 통과해야 하는 시험), 탐색 분할)[](source:pm-fan) | `swarm` | 내부 위임 | 플레이북 노드에 포함 |
+| r04 | 설계나 코드의 경합(base(기반이 되는 후보) 고르기, graft(진 후보의 장점을 base에 합치기))[](source:pm-fan) | `arena` | 내부 위임 | 플레이북 노드에 포함 |
 | r05 | 설계에 이견이 있을 때, 출시 전[](source:pm-int) | `interrogate` | 내부 위임 | 플레이북 노드에 포함 |
 | r06 | 모든 산문. 답변도 산문이다[](source:pm-prose) | `unslop` | 내부 위임 | 플레이북 노드에 포함 |
-| r07 | 문서, RFC, README, PR 설명, 커밋 메시지[](source:pm-prose) | `technical-writing` | 내부 위임 | 플레이북 노드에 포함 |
+| r07 | 문서, RFC, README, PR 설명, commit 메시지[](source:pm-prose) | `technical-writing` | 내부 위임 | 플레이북 노드에 포함 |
 | r08 | 리뷰 전[](source:pm-nocomm) | `no-comments` | 내부 위임 | 플레이북 노드에 포함 |
 | r09 | 직접 잰 성능 수치를 보고하거나 그에 따라 움직이기 전[](source:pm-bench) | `benchmark-checklist` | 내부 위임 | 플레이북 노드에 포함 |
 | r10 | 길거나 자율적이거나 여러 단계인 작업, 사용자가 자리를 비우는 작업[](source:pm-smyw) | `show-me-your-work` | 내부 위임 | 결정 기록 노드 |
-| r16 | 커밋 전, 에이전트용 글, UI·CLI 출시[](source:pm-outside) | `deslop`, `create-skill`, `control-cli`, `control-ui` | 내부 위임(범위 밖) | 생략 |
+| r16 | commit 전, 에이전트용 글, UI·CLI 출시[](source:pm-outside) | `deslop`, `create-skill`, `control-cli`, `control-ui` | 내부 위임(범위 밖) | 생략 |
 | r12 | 원칙을 적용할 때. 그 원칙의 `SKILL.md`를 끝까지 읽고, 읽은 원칙만 인용한다[](source:pm-cite)[](source:pm-principles) | `principle-*` 24개 | 참고 | 생략 |
 | r15 | 라우팅되는 워크플로 스킬 목록에 이름만 있다[](source:pm-reflect) | `reflect` | 미확인 | 생략 |
 
-r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록이 필요하면 커밋하고, 그렇지 않으면 로컬에 둔다.[](source:pm-smyw) 원칙 24개의 조건은 `pstack/_group-principles/principles.html`에 있다.
+r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록이 필요하면 commit하고, 그렇지 않으면 로컬에 둔다.[](source:pm-smyw) 원칙 24개의 조건은 `pstack/_group-principles/principles.html`에 있다.
 
 ## 같은 묶음 안에서 주고받는 것 {#handoffs}
 
@@ -115,12 +115,12 @@ r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록�
 | --- | --- | --- | --- | --- | --- |
 | r14 | `setup-pstack` → `poteto-mode` | 공유 상태 | 규칙 파일의 역할 줄이 서브에이전트 모델 기본값을 덮어쓴다[](source:pm-sub)[](source:setup-rule) | 역할별 모델 | 모델 규칙 간선 |
 | r20 | `poteto-help` → `poteto-mode` | 넘김 | 도움 질문이 아니라 일을 시키는 메시지일 때. 도움 질문이면 일을 시작하지 않는다[](source:help-work) | 사용자 요청 | 일 요청 간선 |
-| r11 | `poteto-mode` → `figure-it-out` | 넘김 | 크거나 여러 곳에 걸친 작업, 자리 비운 뒤 검토할 작업. 좁은 플레이북이 맞아도 넘긴다. 맞는 플레이북이 없을 때도 넘긴다[](source:pm-pb) | 과제 → 맞춤 플레이북 | 크거나 없음 간선 |
-| r70 | `figure-it-out` → `show-me-your-work` | 내부 위임 | 실행 기록을 남긴다. 보통 커밋해서 PR에서 읽게 한다[](source:fio-log) | 결정 → 기록 | 기록 간선 |
-| r68 | `figure-it-out` → `poteto-mode` | 참고 | 할 일 목록 첫 항목이 `poteto-mode`의 Principles 절 읽기다(의무형)[](source:fio-start) | - | 생략 |
-| r21 | `poteto-help` → `setup-pstack` | 참고 | 설치 안내 2단계. 규칙 파일이 없으면 모든 역할이 기본 모델을 쓴다고 알린다[](source:help-setup)[](source:help-state) | - | 생략 |
+| r11 | `poteto-mode` → `figure-it-out` | 넘김 | 크거나 여러 곳에 걸친 작업이나 자리 비운 뒤 검토할 작업이면 넘긴다. 좁은 플레이북이 맞아도 넘기고, 맞는 플레이북이 없을 때도 넘긴다[](source:pm-pb) | 과제 → 맞춤 플레이북 | 크거나 없음 간선 |
+| r70 | `figure-it-out` → `show-me-your-work` | 내부 위임 | `figure-it-out`이 `show-me-your-work`로 실행 기록을 남긴다. 보통 commit해서 PR에서 읽게 한다[](source:fio-log) | 결정 → 기록 | 기록 간선 |
+| r68 | `figure-it-out` → `poteto-mode` | 참고 | `figure-it-out`의 할 일 목록 첫 항목은 `poteto-mode`의 Principles 절 읽기다(의무형)[](source:fio-start) | - | 생략 |
+| r21 | `poteto-help` → `setup-pstack` | 참고 | 설치 안내 2단계에서, 규칙 파일이 없으면 모든 역할이 기본 모델을 쓴다고 알린다[](source:help-setup)[](source:help-state) | - | 생략 |
 
-`show-me-your-work`는 다른 스킬이 결정 기록을 따로 만들지 말고 이 스킬에 맡기라고 적는다.[](source:smyw-compose) 로그는 기본적으로 커밋하지 않는 작업 파일이다. 감사할 기록이 필요할 만큼 큰 작업일 때만 커밋한다.[](source:smyw-where)
+`show-me-your-work`는 다른 스킬이 결정 기록을 따로 만들지 말고 이 스킬에 맡기라고 적는다.[](source:smyw-compose) 로그는 기본적으로 commit하지 않는 작업 파일이다. 감사할 기록이 필요할 만큼 큰 작업일 때만 commit한다.[](source:smyw-where)
 
 ## 묶음 밖으로 나가는 관계(그림에서 생략) {#outbound}
 
@@ -129,12 +129,12 @@ r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록�
 | r69 | `figure-it-out` → `architect` | 내부 위임 | 되돌리기 어려운 설계 결정일 때. 모양이 정해진 기계적 작업이면 건너뛴다[](source:fio-arch) | `pstack/_group-design-review/design-review.html` |
 | r71 | `figure-it-out` → `principle-laziness-protocol` | 참고 | 정해진 설계에 `arena`를 또 돌리는 것은 과설계라는 근거[](source:fio-arch) | `pstack/_group-principles/principles.html` |
 | r113 | `figure-it-out` → 원칙 6개(`prove-it-works`, `never-block-on-the-human`, `foundational-thinking`, `separate-before-serializing-shared-state`, `sequence-verifiable-units`, `encode-lessons-in-structure`) | 참고 | 맞춤 플레이북 설계 단계별 근거[](source:fio-principles) | `pstack/_group-principles/principles.html` |
-| r114 | `show-me-your-work` → `principle-encode-lessons-in-structure` | 참고 | 손으로 만든 근거보다 커밋된 스크립트가 만든 근거를 쓴다[](source:smyw-encode) | `pstack/_group-principles/principles.html` |
+| r114 | `show-me-your-work` → `principle-encode-lessons-in-structure` | 참고 | 손으로 만든 근거보다 commit된 스크립트가 만든 근거를 쓴다[](source:smyw-encode) | `pstack/_group-principles/principles.html` |
 | r119 | `poteto-help` → `principle-prove-it-works` | 참고 | "초록 빌드로 성공을 주장"하는 증상의 처방[](source:help-prove) | `pstack/_group-principles/principles.html` |
-| r37 | `setup-pstack` → `create-verification-skill` | 넘김 | 앱을 직접 돌릴 수단이 없으면 한 번만 제안. 예면 실행, 아니면 넘어간다[](source:setup-offer) | `pstack/_group-verify-harness/verify-harness.html` |
+| r37 | `setup-pstack` → `create-verification-skill` | 넘김 | 앱을 직접 돌릴 수단이 없으면 한 번만 제안한다. 사용자 답이 예이면 실행하고, 아니면 넘어간다[](source:setup-offer) | `pstack/_group-verify-harness/verify-harness.html` |
 | r22 | `poteto-help` → 형제 스킬 25개 | 참고 | "상황 → 스킬" 표. 27줄 중 자기 자신과 폴더 없는 `/tdd`를 빼면 25개다. 추천 전에 그 스킬을 읽는다[](source:help-table) | `pstack/poteto-help/poteto-help.html` |
 | r23 | `poteto-help` → `tdd` | 참고(불명) | 표에 링크가 있으나 `pstack/tdd/` 폴더가 없다[](source:help-tdd) | `pstack/poteto-help/poteto-help.html` |
-| r24 | `poteto-help` → `create-verification-skill` | 참고 | `verify-*` 스킬이 없고 질문이 "변경이 동작함을 증명"일 때만 언급[](source:help-state) | `pstack/_group-verify-harness/verify-harness.html` |
+| r24 | `poteto-help` → `create-verification-skill` | 참고 | `verify-*` 스킬이 없고 질문이 "변경이 동작함을 증명"일 때만 언급한다[](source:help-state) | `pstack/_group-verify-harness/verify-harness.html` |
 | r25 | `poteto-help` → `deslop`, `control-cli`, `control-ui`, `loop`, `create-skill` | 참고(범위 밖) | pstack 밖 스킬이라고 안내[](source:help-notin) | `pstack/poteto-help/poteto-help.html` |
 
 ## 공유 상태 {#shared-state}
@@ -154,7 +154,7 @@ r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록�
 | `poteto-mode` | `disable-model-invocation: true`, `mode: true`. 사용자가 `/poteto-mode`를 입력하거나 모드로 켠다[](source:pm-fm) |
 | `poteto-help`, `figure-it-out`, `show-me-your-work` | `disable-model-invocation: true`. 사용자가 이름을 입력하거나 다른 스킬이 부를 때 켜진다[](source:help-fm)[](source:fio-fm)[](source:smyw-fm) |
 
-`poteto-mode`의 `reminder` 필드는 가벼운 대화나 사용자가 원하지 않는 턴에는 적용하지 말라고 적는다.[](source:pm-fm) `poteto-help`는 도움 질문에 일을 시작하지 않는다. pstack 실행에 토큰이 많이 들기 때문이다.[](source:help-work)
+`poteto-mode`의 `reminder` 필드는 가벼운 대화나 사용자가 원하지 않는 턴에는 적용하지 말라고 적는다.[](source:pm-fm) `poteto-help`는 도움 질문에 일을 시작하지 않는다. pstack으로 일을 돌리면 토큰이 많이 들기 때문이다.[](source:help-work)
 
 ## 이 분석의 범위와 한계 {#audit}
 
@@ -162,7 +162,7 @@ r10의 강도는 원문 그대로 옮긴다. 위험이 커서 감사할 기록�
 - 읽지 않은 파일: `poteto-mode/playbooks/*.md`(충돌 확인용 두 줄 제외), `references/`, `scripts/`. 플레이북 단계는 `pstack/poteto-mode/poteto-mode.html`이 다룬다. 이 페이지는 스킬 사이의 연결만 다룬다.
 - 제외한 파일: `*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: r01~r16, r20~r25, r37, r68~r71, r113, r114, r119의 출처 줄을 원문과 대조했다. 종류와 조건이 원장과 같다.
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 스킬 문서가 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

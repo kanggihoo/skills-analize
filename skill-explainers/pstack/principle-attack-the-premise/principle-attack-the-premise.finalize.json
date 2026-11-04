@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:24:16.344Z",
+  "startedAt": "2026-11-04T12:34:40.216Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/candidate.archify.md",
-    "sha256": "529051739cbf2fb1d4ecf1c22c289285319ba16f339671d14855cd5cb6badab4",
-    "bytes": 7657
+    "sha256": "5d358f96a2e6b7d1cc6cd5e27a43a8fe1bfa6d1120e75ed1f0879060cc3b8fd9",
+    "bytes": 7913
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/principle-attack-the-premise.html",
-    "sha256": "6decbc9d55ab8694eece8811622b3f8b174e16852e6556c2bc9ab183a111b512",
-    "bytes": 699394
+    "sha256": "55892892e9d090ec2e0caa4c22c8e1839be7d3a27584efaca773a9f1f558bc0e",
+    "bytes": 700169
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "529051739cbf2fb1d4ecf1c22c289285319ba16f339671d14855cd5cb6badab4",
-          "bytes": 7657
+          "sha256": "5d358f96a2e6b7d1cc6cd5e27a43a8fe1bfa6d1120e75ed1f0879060cc3b8fd9",
+          "bytes": 7913
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 792,
+      "durationMs": 988,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "51263e80-7efe-4b14-9d01-8e9d9187f11d",
+        "receiptId": "f0719913-32be-4457-a517-92cf82bb363c",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/principle-attack-the-premise.html",
         "explainer": {
-          "preparedSha256": "4f3345762f0d3a6d9918642fe2d5e23efbb0d61840dab2d7cf563834a7d4464f",
+          "preparedSha256": "de20712c54cfc80d8ef7b6c1fae981c66b7952ba17921f00f68206087b8d4fa8",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "p-write",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "p-census",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "p-skew",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "p-remove",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "stop",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "distinct",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -183,12 +183,12 @@
           ]
         },
         "specification": {
-          "sha256": "529051739cbf2fb1d4ecf1c22c289285319ba16f339671d14855cd5cb6badab4",
-          "bytes": 7657
+          "sha256": "5d358f96a2e6b7d1cc6cd5e27a43a8fe1bfa6d1120e75ed1f0879060cc3b8fd9",
+          "bytes": 7913
         },
         "artifact": {
-          "sha256": "6decbc9d55ab8694eece8811622b3f8b174e16852e6556c2bc9ab183a111b512",
-          "bytes": 699394
+          "sha256": "55892892e9d090ec2e0caa4c22c8e1839be7d3a27584efaca773a9f1f558bc0e",
+          "bytes": 700169
         },
         "validation": {
           "checksPassed": 4,
@@ -214,7 +214,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 426,
+      "durationMs": 579,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -227,8 +227,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/principle-attack-the-premise.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "6decbc9d55ab8694eece8811622b3f8b174e16852e6556c2bc9ab183a111b512",
-          "bytes": 699394
+          "sha256": "55892892e9d090ec2e0caa4c22c8e1839be7d3a27584efaca773a9f1f558bc0e",
+          "bytes": 700169
         },
         "checks": [
           {
@@ -272,7 +272,7 @@
               "id": "attack-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-FYYpRA/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-nUOQh0/child.html",
                 "artifact": {
                   "sha256": "9a01f5979dc4dc97ebe17776b67bba4dfbc2669ce8cc6bfdf66ec1d32e21ce56",
                   "bytes": 837591
@@ -399,7 +399,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "51263e80-7efe-4b14-9d01-8e9d9187f11d"
+        "deliveryReceiptId": "f0719913-32be-4457-a517-92cf82bb363c"
       }
     }
   },
@@ -413,8 +413,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-attack-the-premise/principle-attack-the-premise.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:24:17.718Z",
-  "durationMs": 1373,
+  "finishedAt": "2026-11-04T12:34:41.962Z",
+  "durationMs": 1745,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

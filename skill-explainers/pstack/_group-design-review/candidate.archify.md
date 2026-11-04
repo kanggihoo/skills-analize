@@ -1,11 +1,11 @@
 # 설계·병렬 시도·리뷰 묶음(design-review)은 어떻게 이어지나 {#design-review-group}
 
-구현 전에 코드의 모양을 정하고, 여러 번 시도해 합치고, 리뷰하는 스킬 다섯 개다. 중심은 `architect`다. `how`·`why`로 바탕을 조사하고, `arena`로 설계 후보를 여럿 만든 뒤 구현한다.[](source:arch-ground)[](source:arch-sketch)
+이 묶음은 구현 전에 코드의 모양을 정하고, 여러 번 시도한 결과를 합치고, 리뷰하는 스킬 다섯 개다. 중심은 `architect`다. `architect`는 `how`·`why`로 바탕을 조사하고, `arena`로 설계 후보를 여럿 만든 뒤 구현한다.[](source:arch-ground)[](source:arch-sketch)
 
-- `arena`는 같은 과제를 여러 후보에게 맡겨 기반 후보를 고르고 접붙인다. `swarm`은 일을 조각이나 경주로 나눠 보고서 하나를 돌려준다.[](source:pm-fan)[](source:help-close)
-- `interrogate`는 여러 모델이 변경을 적대적으로 리뷰하게 한다. 변경을 자동으로 적용하지 않는다.[](source:int-deliver)
-- `no-comments`는 리뷰 전에 주석을 정리한다. 수정에 모양이 필요하면 `architect`를 한 번 돌리고 스케치에서 멈춘다.[](source:nc-arch)
-- 다섯 스킬은 모두 `poteto-mode`가 조건에 따라 부른다.[](source:pm-arch)[](source:pm-fan)[](source:pm-int)[](source:pm-nocomm)
+- `arena`는 같은 과제를 여러 후보에게 맡기고, base(기반이 되는 후보)를 고른 뒤 다른 후보의 좋은 부분을 graft(진 후보의 장점을 base에 합치기)한다. `swarm`은 일을 slice(일을 나눈 한 조각)로 나누거나 race(같은 일을 여럿이 경쟁)시켜서 보고서 하나를 돌려준다.[](source:pm-fan)[](source:help-close)
+- `interrogate`는 여러 모델에게 변경을 적대적으로 리뷰시킨다. 변경을 자동으로 적용하지 않는다.[](source:int-deliver)
+- `no-comments`는 리뷰 전에 주석을 정리한다. 수정에 모양이 필요하면 `architect`를 한 번 돌리고, `architect`는 스케치에서 멈춘다.[](source:nc-arch)
+- `poteto-mode`는 조건이 맞으면 다섯 스킬을 모두 부른다.[](source:pm-arch)[](source:pm-fan)[](source:pm-int)[](source:pm-nocomm)
 
 @answer scope="pstack/design-review 묶음 · 스킬 5개와 호출 대상의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
 @meta locale=ko
@@ -66,13 +66,13 @@
 | int > impl | 리뷰 후 | |
 
 @steps id=architect-steps
-| s-how | how | 새 코드가 닿는 모든 시스템의 동작을 조사한다. 완전히 새 코드라 붙을 시스템이 없을 때만 건너뛴다. | architect-flow | how |
-| s-why | why | 설계가 소유권이나 계층을 다시 정할 때만 돌린다. 기존 모양의 이유를 추측이 아닌 제약으로 바꾼다. | architect-flow | why |
-| s-arena | arena | 설계 과제와 바탕 조사 결과를 러너들에게 같은 프롬프트로 넘긴다. 후보 중 기반을 고르고 접붙여 설계 하나로 합친다. | architect-flow | arena |
-| s-int | interrogate | 구현 전에 합친 설계에 적대적 압박을 주고 싶을 때만 돌린다. 기본 흐름에는 없다. | architect-flow | int |
-| s-impl | 구현 | `architect`가 합친 스케치를 계약으로 삼아 채운다. 기본은 사람 확인 없이 바로 구현한다. | architect-flow | impl |
+| s-how | how | `how`가 새 코드가 닿는 모든 시스템의 동작을 조사한다. 완전히 새 코드라 붙을 시스템이 없을 때만 건너뛴다. | architect-flow | how |
+| s-why | why | 설계가 소유권이나 계층을 다시 정할 때만 `why`를 돌린다. `why`는 기존 모양이 그렇게 생긴 이유를 추측이 아닌 제약으로 바꿔 준다. | architect-flow | why |
+| s-arena | arena | `architect`가 설계 과제와 바탕 조사 결과를 runner들에게 같은 프롬프트로 넘긴다. `arena`는 후보 중 base를 고르고 다른 후보의 좋은 부분을 graft해서 설계 하나로 합친다. | architect-flow | arena |
+| s-int | interrogate | 구현 전에 합친 설계에 적대적 압박을 주고 싶을 때만 `interrogate`를 돌린다. 기본 흐름에는 들어 있지 않다. | architect-flow | int |
+| s-impl | 구현 | `architect`가 합친 스케치를 계약으로 삼아 나머지를 채운다. 기본으로는 사람 확인 없이 바로 구현한다. | architect-flow | impl |
 
-그림에 없는 되돌림이 두 가지 있다. 구현이 스케치로 감당할 수 없는 마찰을 계속 낳으면, `architect`는 지은 것에 `how`를 다시 돌리고 `arena` 단계로 돌아간다.[](source:arch-scrap) 사용자가 "with checkpoint"처럼 명시적으로 요청하면 구현 전에 멈추고 승인을 기다린다. 사람이 모양에 반대하면 바탕 조사부터 다시 한다.[](source:arch-agree)
+그림에 없는 되돌림이 두 가지 있다. 구현이 스케치로 감당할 수 없는 마찰을 계속 만들어 내면, `architect`는 이미 지은 코드에 `how`를 다시 돌리고 `arena` 단계로 돌아간다.[](source:arch-scrap) 사용자가 "with checkpoint"처럼 명시적으로 요청하면, `architect`는 구현 전에 멈추고 승인을 기다린다. 사람이 모양에 반대하면, `architect`는 바탕 조사부터 다시 한다.[](source:arch-agree)
 
 각 스킬의 내부 단계는 `pstack/architect/architect.html`, `pstack/arena/arena.html`, `pstack/interrogate/interrogate.html`에 있다. `how`·`why`는 `pstack/_group-understand/understand.html`에 있다.
 
@@ -88,19 +88,19 @@
 | arch | nc | 설계 스케치 | return |
 
 @steps id=no-comments-steps
-| s-nc | no-comments | `subagent_type: "Comment Sicko"`로 서브에이전트를 띄우고 범위만 넘긴다. 돌아온 지적을 검토해 받아들일 것만 고른다. | no-comments-seq | nc |
-| s-sicko | Comment Sicko | 주석을 검사해 보고서와 수정안을 돌려준다. 스킬이 아니라 서브에이전트 종류다. | no-comments-seq | sicko |
-| s-arch | architect | 받아들인 지적 전체와 주변 코드에 대해 한 번만 돌린다. 스케치에서 멈추고, 구현은 `no-comments` 4단계가 한다. | no-comments-seq | arch |
+| s-nc | no-comments | `subagent_type: "Comment Sicko"`로 서브에이전트를 띄우고 리뷰 범위만 넘긴다. 서브에이전트가 돌려준 지적은 `no-comments`가 검토해서 받아들일 것만 고른다. | no-comments-seq | nc |
+| s-sicko | Comment Sicko | 범위 안의 주석을 검사해서 보고서와 수정안을 `no-comments`에 돌려준다. `Comment Sicko`는 스킬이 아니라 서브에이전트 종류다. | no-comments-seq | sicko |
+| s-arch | architect | 받아들인 지적 전체와 그 주변 코드를 대상으로 `architect`를 한 번만 돌린다. `architect`는 스케치에서 멈추고, 구현은 `no-comments` 4단계가 한다. | no-comments-seq | arch |
 
-`no-comments`는 수정 중 하나라도 모양을 정해야 할 때만 `architect`를 부른다(r66).[](source:nc-arch) 단순한 지적은 직접 고친다.[](source:nc-arch)
+`no-comments`는 수정 중 하나라도 모양을 정해야 할 때만 `architect`를 부른다(r66).[](source:nc-arch) 단순한 지적은 `no-comments`가 직접 고친다.[](source:nc-arch)
 
 ## arena·swarm 비교 {#compare}
 
 | 기준 | `arena` | `swarm` |
 | --- | --- | --- |
-| 일을 나누는 방식 | 모든 후보가 같은 과제를 받는다[](source:help-close) | 조각으로 나누거나 같은 과제로 경주시킨다[](source:help-close) |
-| 결과 | 기반 후보에 진 후보의 좋은 부분을 접붙인 결과 하나[](source:arena-fm) | 보고서 하나[](source:swarm-fm) |
-| `poteto-mode`가 고르는 조건 | 설계나 코드의 경합, 기반 고르기와 접붙이기(r04) {good:설계 경합}[](source:pm-fan) | 커버리지 표, 경주, 관문, 탐색 분할(r03) {good:병렬 확인}[](source:pm-fan) |
+| 일을 나누는 방식 | 모든 후보가 같은 과제를 받는다[](source:help-close) | slice로 나누거나 같은 과제로 race시킨다[](source:help-close) |
+| 결과 | base에 진 후보의 좋은 부분을 graft한 결과 하나[](source:arena-fm) | 보고서 하나[](source:swarm-fm) |
+| `poteto-mode`가 고르는 조건 | 설계나 코드의 경합, base 고르기와 graft(r04) {good:설계 경합}[](source:pm-fan) | 커버리지 표, race, gauntlet, 탐색 분할(r03) {good:병렬 확인}[](source:pm-fan) |
 | 이 묶음 안의 연결 | `architect`, `blast-radius`가 부른다(r62, r50) | 원장상 묶음 안의 다른 스킬과 직접 연결이 없다 |
 
 판정: `swarm`은 `arena`와 함께 "병렬로 나눠 돌리기"의 선택지로만 이 묶음에 속한다. `architect` 흐름에는 나오지 않는다.[](source:pm-fan)[](source:arch-sketch)
@@ -111,25 +111,25 @@
 
 | rel-id | from → to | 종류 | 조건·강도 | 그림 |
 | --- | --- | --- | --- | --- |
-| r60 | `architect` → `how` | 내부 위임 | 첫 단계(Phase A)에서 새 코드가 닿는 모든 시스템에 실행. 구현이 어긋나면 다시 실행[](source:arch-ground)[](source:arch-scrap)[](source:how-fm) | 동작 모델 간선(재실행은 생략) |
+| r60 | `architect` → `how` | 내부 위임 | 첫 단계(Phase A)에서 새 코드가 닿는 모든 시스템에 실행한다. 구현이 어긋나면 다시 실행한다.[](source:arch-ground)[](source:arch-scrap)[](source:how-fm) | 동작 모델 간선(재실행은 생략) |
 | r61 | `architect` → `why` | 내부 위임 | 설계가 소유권이나 계층을 다시 정할 때만[](source:arch-ground)[](source:why-fm) | 계층 변경 간선 |
-| r62 | `architect` → `arena` | 내부 위임 | Phase B. `references/runner-prompt.md`를 각 러너 프롬프트로 넘긴다. 러너 모델은 `architect runners` 줄. 구현이 어긋나면 스케치 단계(Phase B)로 돌아가 다시 실행[](source:arch-sketch)[](source:arch-scrap) | arena 노드(되돌림은 생략) |
+| r62 | `architect` → `arena` | 내부 위임 | Phase B. `references/runner-prompt.md`를 각 runner 프롬프트로 넘긴다. runner 모델은 `architect runners` 줄. 구현이 어긋나면 스케치 단계(Phase B)로 돌아가 다시 실행[](source:arch-sketch)[](source:arch-scrap) | arena 노드(되돌림은 생략) |
 | r63 | `architect` → `interrogate` | 내부 위임 | 구현 전에 설계에 적대적 압박을 주고 싶을 때(선택)[](source:arch-agree) | 선택 간선 |
-| r64 | `architect` → `principle-foundational-thinking`, `principle-outcome-oriented-execution` | 참고 | 골격 먼저 커밋, 계획된 중간 파손 허용의 근거[](source:arch-agree) | 생략 |
+| r64 | `architect` → `principle-foundational-thinking`, `principle-outcome-oriented-execution` | 참고 | 골격을 먼저 commit하고 계획된 중간 파손을 허용하는 판단의 근거로 참고한다.[](source:arch-agree) | 생략 |
 | r65 | `arena` → `principle-separate-before-serializing-shared-state` | 참고 | 후보마다 출력 위치를 따로 준다(worktree 또는 `/tmp/arena-<slug>/candidate-<n>/`)[](source:arena-runners) | 생략 |
-| r110 | `no-comments` → `how`, `why` | 내부 위임 | 2단계에서 판정 근거가 얇은 심볼에만 실행[](source:nc-howwhy) | 생략 |
-| r111 | `architect` → 원칙 10개 | 참고 | 본문과 러너 프롬프트·근거 템플릿에서 설계 판단 근거로 지목. 본문 줄은 `exhaust-the-design-space`, `redesign-from-first-principles`, `fix-root-causes`, `subtract-before-you-add`[](source:arch-exhaust)[](source:arch-scrap-pr)[](source:arch-scrap) | 생략 |
-| r112 | `arena` → `principle-laziness-protocol`, `principle-redesign-from-first-principles`, `principle-prove-it-works` | 참고 | 기반 고르기, 접붙이기, 검증의 판단 근거[](source:arena-pick)[](source:arena-graft)[](source:arena-verify) | 생략 |
-| r66 | `no-comments` → `architect` | 내부 위임 | 수정 중 하나라도 모양이 필요하면 받아들인 지적 전체에 한 번 실행하고 스케치에서 멈춘다[](source:nc-arch) | 위 시퀀스 |
+| r110 | `no-comments` → `how`, `why` | 내부 위임 | 2단계에서 판정 근거가 얇은 심볼에만 실행한다.[](source:nc-howwhy) | 생략 |
+| r111 | `architect` → 원칙 10개 | 참고 | 본문과 runner 프롬프트·근거 템플릿이 설계 판단의 근거로 지목한다. 본문 줄에 나오는 원칙은 `exhaust-the-design-space`, `redesign-from-first-principles`, `fix-root-causes`, `subtract-before-you-add`[](source:arch-exhaust)[](source:arch-scrap-pr)[](source:arch-scrap) | 생략 |
+| r112 | `arena` → `principle-laziness-protocol`, `principle-redesign-from-first-principles`, `principle-prove-it-works` | 참고 | base 고르기, graft, 검증의 판단 근거[](source:arena-pick)[](source:arena-graft)[](source:arena-verify) | 생략 |
+| r66 | `no-comments` → `architect` | 내부 위임 | 수정 중 하나라도 모양이 필요하면 받아들인 지적 전체를 대상으로 한 번 실행하고 스케치에서 멈춘다[](source:nc-arch) | 위 시퀀스 |
 | r67 | `no-comments` → `principle-fix-root-causes`, `principle-redesign-from-first-principles` | 참고 | 의도만 안내한다. 범위 밖 수정을 허락하지 않는다[](source:nc-principles) | 생략 |
 
 ## 묶음 밖에서 들어오는 호출(그림에서 생략) {#callers}
 
 | rel-id | from → to | 종류 | 조건 |
 | --- | --- | --- | --- |
-| r02 | `poteto-mode` → `architect` | 내부 위임 | 함수 경계를 넘는 코드. 구현 전에 병렬 설계 탐색[](source:pm-arch) |
-| r03 | `poteto-mode` → `swarm` | 내부 위임 | 병렬 분산(커버리지, 경주, 관문, 탐색 분할)[](source:pm-fan) |
-| r04 | `poteto-mode` → `arena` | 내부 위임 | 설계나 코드의 경합(기반 선택·접붙이기)[](source:pm-fan) |
+| r02 | `poteto-mode` → `architect` | 내부 위임 | 코드가 함수 경계를 넘을 때, 구현 전에 병렬로 설계를 탐색한다[](source:pm-arch) |
+| r03 | `poteto-mode` → `swarm` | 내부 위임 | 병렬 분산(커버리지, race, gauntlet, 탐색 분할)[](source:pm-fan) |
+| r04 | `poteto-mode` → `arena` | 내부 위임 | 설계나 코드의 경합(base 선택·graft)[](source:pm-fan) |
 | r05 | `poteto-mode` → `interrogate` | 내부 위임 | 설계에 이견이 있을 때, 출시 전[](source:pm-int) |
 | r08 | `poteto-mode` → `no-comments` | 내부 위임 | 리뷰 전[](source:pm-nocomm) |
 | r69 | `figure-it-out` → `architect` | 내부 위임 | 되돌리기 어려운 설계 결정일 때. 모양이 정해진 기계적 작업이면 건너뛴다. 정해진 설계에 `arena`를 또 돌리지 않는다[](source:fio-arch) |
@@ -143,21 +143,21 @@
 | --- | --- | --- |
 | `~/.cursor/rules/pstack-models.mdc` | `setup-pstack` | `arena`의 `arena runners`, `arena cross-judge pool` 줄(r32)[](source:arena-runners)[](source:arena-judge). `swarm`의 `swarm workers` 줄(r33)[](source:swarm-model). `architect`의 `architect runners` 줄로, `arena`를 부를 때 `arena runners` 대신 쓴다(r34)[](source:arch-sketch). `interrogate`의 `interrogate reviewers` 줄(r35)[](source:int-model) |
 
-역할 줄의 모양은 `setup-pstack`의 규칙 예시에 있다.[](source:setup-roles) 패널 역할(`arena runners`, `architect runners`, `interrogate reviewers`)은 목록이고, 항목 하나당 서브에이전트 하나가 돈다.[](source:setup-panel) 규칙 파일이나 줄이 없으면 각 스킬의 기본 모델을 쓴다. `no-comments`는 이 파일을 읽는다는 내용이 원문에 명시 없음.
+역할 줄의 모양은 `setup-pstack`의 규칙 예시에 있다.[](source:setup-roles) 패널 역할(`arena runners`, `architect runners`, `interrogate reviewers`)은 목록이고, 항목 하나당 서브에이전트 하나가 돈다.[](source:setup-panel) 규칙 파일이나 줄이 없으면 각 스킬의 기본 모델을 쓴다. `no-comments`가 이 파일을 읽는다는 내용은 원문에 명시 없음.
 
 ## 이 분석의 범위와 한계 {#audit}
 
 - 읽은 파일: 묶음 스킬 5개의 `SKILL.md`와 `architect` 참조 파일 두 줄. 관계 확인을 위해 `poteto-mode`, `poteto-help`, `setup-pstack`, `figure-it-out`, `blast-radius`의 해당 줄과 `how`, `why`의 머리말을 읽었다. 모두 원본이다.
-- 읽지 않은 파일: 각 스킬의 `references/`(충돌 확인용 `architect` 참조 두 줄 제외). 러너 프롬프트, 심사 기준, 리뷰어 프롬프트는 스킬 페이지가 다룬다. 그래서 r111 중 참조 파일에 있는 원칙 6개는 줄 대조를 하지 않았다.
+- 읽지 않은 파일: 각 스킬의 `references/`(충돌 확인용 `architect` 참조 두 줄 제외). runner 프롬프트, 심사 기준, 리뷰어 프롬프트는 스킬 페이지가 다룬다. 그래서 r111 중 참조 파일에 있는 원칙 6개는 줄 대조를 하지 않았다.
 - 제외한 파일: `*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: r02~r05, r08, r32~r35, r50, r60~r67, r69, r110~r112의 출처 줄을 원문과 대조했다. 종류와 조건이 원장과 같다.
 - 모든 스킬이 `disable-model-invocation: true`다. 사용자가 이름을 입력하거나 다른 스킬이 부를 때만 켜진다.[](source:arch-fm)[](source:arena-fm)[](source:swarm-fm)[](source:int-fm)[](source:nc-fm)
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 스킬 문서가 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=warning title="원문끼리 충돌하는 곳"
 `architect` 본문은 중간 확인을 합의 단계(Phase C)에 둔다.[](source:arch-agree) 근거 템플릿은 같은 승인을 "Phase D sign-off"라고 부른다.[](source:arch-tmpl)
-`arena`는 후보 폴더를 worktree나 `/tmp/arena-<slug>/candidate-<n>/`로 정한다.[](source:arena-runners) `architect` 러너 프롬프트는 워크트리(worktree)를 못 쓰면 스케치 폴더 아래 러너별 하위 폴더를 쓴다.[](source:arch-runner) 어느 쪽이 우선인지는 원문에 명시 없음.
+`arena`는 후보 폴더를 worktree나 `/tmp/arena-<slug>/candidate-<n>/`로 정한다.[](source:arena-runners) `architect` runner 프롬프트는 worktree(worktree)를 못 쓰면 스케치 폴더 아래 runner별 하위 폴더를 쓴다.[](source:arch-runner) 어느 쪽이 우선인지는 원문에 명시 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-r111 중 `architect`의 러너 프롬프트와 근거 템플릿에 있는 원칙 참고는 이 페이지에서 줄 대조를 하지 않았다. 원장의 기록을 그대로 옮겼다.
+r111 중 `architect`의 runner 프롬프트와 근거 템플릿에 있는 원칙 참고는 이 페이지에서 줄 대조를 하지 않았다. 원장의 기록을 그대로 옮겼다.

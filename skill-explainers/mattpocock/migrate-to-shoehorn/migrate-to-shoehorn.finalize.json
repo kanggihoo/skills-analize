@@ -5,15 +5,15 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:52:26.241Z",
+  "startedAt": "2026-11-04T13:38:43.787Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
-    "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+    "sha256": "6dcd54e787bf7bd3bfd44a89636d41218cd7653ef401081c3ef036ababb159c5",
     "bytes": 6030
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
-    "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+    "sha256": "f5bd8f63f804b15b4ecf6b9638ab7beebc3c15fbe98d2f453b6b8cb21990c2a0",
     "bytes": 587970
   },
   "stages": {
@@ -44,7 +44,7 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+          "sha256": "6dcd54e787bf7bd3bfd44a89636d41218cd7653ef401081c3ef036ababb159c5",
           "bytes": 6030
         },
         "validation": {
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 765,
+      "durationMs": 778,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "c3b2b2a4-6667-4f5e-9f83-44576ee8f1cd",
+        "receiptId": "b50d07be-c728-48e4-8649-eb2926f2802a",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
         "explainer": {
-          "preparedSha256": "2081ab0be54f2f07e76359af14fedb44ab49c8f494daf77317071b271abbdac2",
+          "preparedSha256": "160f0857e12b97eb4dcb0c1718d4e422010ff750d71e4939bb0115dea6cb272c",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-why",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-install",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-large",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-patterns",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-table",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-workflow",
               "path": "mattpocock/migrate-to-shoehorn/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "de4da4c11d924fac79c924b2ee3d2db4a5cb98386eb490a599119463d036ae72",
               "bytes": 2795
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "oa-yaml",
               "path": "mattpocock/migrate-to-shoehorn/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "395c2db852e66a199f1cd07f7ed92d66cb6f0787460c5475926f1a5e778b699d",
               "bytes": 110
             },
@@ -159,11 +159,11 @@
           ]
         },
         "specification": {
-          "sha256": "17e480f8371e2ee866ebe1290c329d6e7c106fa85280bff8a62358e1e413990d",
+          "sha256": "6dcd54e787bf7bd3bfd44a89636d41218cd7653ef401081c3ef036ababb159c5",
           "bytes": 6030
         },
         "artifact": {
-          "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+          "sha256": "f5bd8f63f804b15b4ecf6b9638ab7beebc3c15fbe98d2f453b6b8cb21990c2a0",
           "bytes": 587970
         },
         "validation": {
@@ -190,7 +190,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 407,
+      "durationMs": 409,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -203,7 +203,7 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "b5c1d313d33a5af98c194592320a45b04300c48e1c3d5cb90242514391b71ee6",
+          "sha256": "f5bd8f63f804b15b4ecf6b9638ab7beebc3c15fbe98d2f453b6b8cb21990c2a0",
           "bytes": 587970
         },
         "checks": [
@@ -248,7 +248,7 @@
               "id": "shoehorn-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-RtRvzz/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-CwjJdn/child.html",
                 "artifact": {
                   "sha256": "b71e8e0d2fa3413e541cdf0e85173a10782520f4816c63793c46cf5c6a8a4e9f",
                   "bytes": 833399
@@ -373,7 +373,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "c3b2b2a4-6667-4f5e-9f83-44576ee8f1cd"
+        "deliveryReceiptId": "b50d07be-c728-48e4-8649-eb2926f2802a"
       }
     }
   },
@@ -387,8 +387,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/migrate-to-shoehorn/migrate-to-shoehorn.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:52:27.535Z",
-  "durationMs": 1293,
+  "finishedAt": "2026-11-04T13:38:45.116Z",
+  "durationMs": 1329,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

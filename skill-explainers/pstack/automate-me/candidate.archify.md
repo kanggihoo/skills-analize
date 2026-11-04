@@ -1,11 +1,11 @@
 # automate-me 스킬은 에이전트를 어떻게 바꾸나 {#automate-me-skill}
 
-`automate-me`를 쓰면 에이전트는 사용자의 작업 습관을 `-mode` 스킬 하나로 만든다(예: `jay-mode`). 최근 대화 기록과 객관식 질문으로 습관을 모으고, `create-skill`로 초안을 쓰고, `unslop`으로 문장을 다듬는다.[](source:intro)
+`automate-me`를 켜면 에이전트가 사용자의 작업 습관을 `-mode` 스킬 하나로 만든다(예: `jay-mode`). 에이전트는 최근 대화 기록과 객관식 질문으로 습관을 모으고, `create-skill`로 초안을 쓰고, `unslop`으로 문장을 다듬는다.[](source:intro)
 
-- 세 가지를 순서대로 엮을 뿐 대신하지 않는다. 기록 분석(mining)은 이 스킬 안에서 하고, 작성은 Cursor 내장 `create-skill`, 문장 다듬기는 `unslop`이 맡는다.[](source:intro)
-- 사용자 개입이 세 번 있다. 기존 스킬을 고칠지 묻고, 객관식으로 선호를 묻고, 초안을 보여 주고 고친다.[](source:step0)[](source:step2)[](source:step5)
-- 대화 하나에서 본 선호는 규칙으로 굳히지 않는다. 기록 조각 2곳 이상에서 보여야 믿는다.[](source:step1)[](source:guard)
-- 결과는 `main`에 직접 올리지 않는다. 워크트리에서 커밋하고 PR을 연다.[](source:step6)
+- 이 스킬은 기록 분석, 작성, 문장 다듬기 세 가지를 순서대로 엮을 뿐, 작성과 다듬기를 직접 하지 않는다. 기록 분석(mining)은 이 스킬 안에서 하고, 작성은 Cursor 내장 `create-skill`이, 문장 다듬기는 `unslop`이 맡는다.[](source:intro)
+- 사용자가 개입하는 곳은 세 번이다. 에이전트가 기존 스킬을 고칠지 묻고, 객관식으로 선호를 묻고, 초안을 보여 주고 의견을 받아 고친다.[](source:step0)[](source:step2)[](source:step5)
+- 에이전트는 대화 하나에서만 본 선호를 규칙으로 굳히지 않는다. 기록 조각 2곳 이상에서 나타나야 믿는다.[](source:step1)[](source:guard)
+- 에이전트는 결과를 `main`에 직접 push하지 않는다. worktree에서 commit하고 PR을 연다.[](source:step6)
 
 @answer scope="pstack/automate-me · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -28,12 +28,12 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) `description`은 "automate me", "update my -mode skill" 같은 요청을 다룬다고 설명한다. 사용자가 `/automate-me`를 입력하거나, 다른 스킬이 넘길 때 켜진다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) `description`은 "automate me", "update my -mode skill" 같은 요청을 다룬다고 설명한다. 그래서 이 스킬은 사용자가 `/automate-me`를 입력하거나 다른 스킬이 넘길 때 켜진다.
 
 | 누가 넘기나 | 조건 | rel-id |
 | --- | --- | --- |
-| `recall` | 요청을 먼저 분류한다. 습관을 오래 쓸 스킬로 굳히는 일이면 `automate-me`가 맡는다[](source:recall-route) | r46 |
-| `poteto-help` | "자기 작업 습관을 개인 모드 스킬로 만들 때" 쓰라고 안내한다. `/poteto-mode`와 함께 쓰는 스킬로 소개한다[](source:help-am) | r22 |
+| `recall` | `recall`이 요청을 먼저 분류한다. 요청이 습관을 오래 쓸 스킬로 굳히는 일이면, `automate-me`가 맡는다[](source:recall-route) | r46 |
+| `poteto-help` | `poteto-help`가 "자기 작업 습관을 개인 모드 스킬로 만들 때" 쓰라고 안내하고, `/poteto-mode`와 함께 쓰는 스킬로 소개한다[](source:help-am) | r22 |
 
 | 쓰지 않는 경우 | 대신 할 일 |
 | --- | --- |
@@ -61,13 +61,13 @@
 | polish > land | | |
 
 @steps id=am-steps
-| s-check | 기존 확인 | 사용자 핸들과 맞는 `.cursor/skills/**/*-mode/SKILL.md`, `~/.cursor/skills/*-mode/SKILL.md`를 재귀로 찾는다. 있으면 `AskQuestion`으로 고칠지 새로 쓸지 묻는다. 사용자가 이미 "update my skill"이라고 했으면 묻지 않는다. 반복 실행의 기본값은 고치기다. 새로 쓰기는 드물고, 하기 전에 이유를 묻는다. | am-flow | check |
-| s-mine | 기록 분석 | 현재 작업 공간의 `agent-transcripts/`만 본다. 기록을 여러 조각으로 나눠 서브에이전트들에게 병렬로 맡긴다. 각자 신호를 찾아 근거 위치와 함께 짧은 목록으로 돌려준다. 고치기 모드면 스킬을 마지막으로 고친 뒤의 기록만 본다. | am-flow | mine |
-| s-ask | 직접 질문 | 기록에 아직 드러나지 않은 의도를 묻는다. `AskQuestion` 객관식으로 넓게 묻고, 고른 영역을 좁혀 묻는다. 마지막에 자유 질문 하나로 빠진 것을 잡는다. 고치기 모드면 무엇이 바뀌었거나 빠졌는지 묻는다. | am-flow | ask |
-| s-cluster | 묶기 | 모은 신호를 절로 묶는다. 해당하는 절만 쓴다. `poteto-mode`를 읽어 세밀함의 수준을 보되 내용은 베끼지 않는다. | am-flow | cluster |
-| s-draft | 초안 작성 | `create-skill`로 스킬을 쓴다. 고치기 모드면 기존 파일을 제자리에서 고친다. 사용자가 반박하지 않은 절은 남기고, 새 근거가 있는 절만 고치고, 정말 새 규칙에만 절을 더한다. | am-flow | draft |
-| s-polish | 다듬기 | 모든 줄에 `unslop`과 `create-skill`의 글쓰기 지침을 적용한다. 초안을 사용자에게 보여 주고 의견을 받는다. 여러 번 반복된다고 보고 과감히 줄인다. | am-flow | polish |
-| s-land | PR 열기 | `main`에서 갈라진 워크트리에서 작업한다. 커밋하고 PR을 연다. `main`에 직접 push하지 않는다. | am-flow | land |
+| s-check | 기존 확인 | 에이전트가 사용자 핸들과 맞는 `.cursor/skills/**/*-mode/SKILL.md`, `~/.cursor/skills/*-mode/SKILL.md`를 하위 폴더까지 찾는다. 파일이 있으면, `AskQuestion`으로 고칠지 새로 쓸지 묻는다. 사용자가 이미 "update my skill"이라고 했으면, 묻지 않는다. 이 스킬을 반복해서 실행할 때 기본값은 고치기다. 새로 쓰기는 드문 경우이고, 새로 쓰기 전에 이유를 묻는다. | am-flow | check |
+| s-mine | 기록 분석 | 에이전트는 현재 작업 공간의 `agent-transcripts/`만 본다. 기록을 여러 조각으로 나눠 서브에이전트들에게 병렬로 맡기면, 서브에이전트들은 각자 신호를 찾아 근거 위치와 함께 짧은 목록으로 돌려준다. 고치기 모드이면, 스킬을 마지막으로 고친 뒤의 기록만 본다. | am-flow | mine |
+| s-ask | 직접 질문 | 에이전트가 기록에 아직 드러나지 않은 의도를 묻는다. 먼저 `AskQuestion` 객관식으로 넓게 묻고, 사용자가 고른 영역을 좁혀 묻는다. 마지막에 자유 질문 하나로 빠진 것을 잡는다. 고치기 모드이면, 무엇이 바뀌었거나 빠졌는지 묻는다. | am-flow | ask |
+| s-cluster | 묶기 | 에이전트가 모은 신호를 절로 묶는다. 해당하는 절만 쓴다. `poteto-mode`는 읽어서 세밀함의 수준만 참고하고, 내용은 베끼지 않는다. | am-flow | cluster |
+| s-draft | 초안 작성 | 에이전트가 `create-skill`로 스킬을 쓴다. 고치기 모드이면, 기존 파일을 제자리에서 고친다. 사용자가 반박하지 않은 절은 남기고, 새 근거가 있는 절만 고치고, 정말 새 규칙에만 절을 더한다. | am-flow | draft |
+| s-polish | 다듬기 | 에이전트가 모든 줄에 `unslop`과 `create-skill`의 글쓰기 지침을 적용한다. 초안을 사용자에게 보여 주고 의견을 받는다. 여러 번 고치게 될 것으로 보고 과감히 줄인다. | am-flow | polish |
+| s-land | PR 열기 | 에이전트는 `main`에서 갈라진 worktree에서 작업한다. commit하고 PR을 연다. `main`에 직접 push하지 않는다. | am-flow | land |
 
 이 흐름은 `SKILL.md`의 0~6단계를 그대로 옮긴 것이다.[](source:step0)[](source:step1)[](source:step2)[](source:step3)[](source:step4)[](source:step5)[](source:step6)
 
@@ -89,7 +89,7 @@
 | 위임 습관 | 서브에이전트, 모델, 전문 작업 흐름, 병렬 |
 | 검증 태도 | "완료"의 뜻, 단위 테스트 대 실제 재현, 리뷰어 |
 | 코드와 글 규율 | 문체, 인용하는 원칙, 린트·포맷 도구 |
-| 작업 관례 | 워크트리, 커밋, PR, 리뷰·병합 도구 |
+| 작업 관례 | worktree, commit, PR, 리뷰·병합 도구 |
 | 메타 선호 | 작업 중 스킬 고치기, 새 스킬 제안 |
 
 묶을 때 흔히 쓰는 절은 응답 문체, 자율성, 먼저 이해하기, 서브에이전트, 글·코드 규율, 리뷰와 검증, 작업 절차, 스킬이다. 해당하는 절만 쓴다.[](source:step3)
@@ -108,14 +108,14 @@
 | 가드레일 | 에이전트가 하는 일 |
 | --- | --- |
 | 대화 하나에 맞추지 않는다 | 한 번 말하고 다른 때 뒤집은 선호는 잡음으로 본다. 여러 번 나와야 규칙으로 쓴다[](source:guard) |
-| 꾸미지 않는다 | 다른 스킬 내용 되풀이, 비유 지어내기, 시적인 문장을 쓰지 않는다. 실행에 쓰이는 문장만 쓴다[](source:guard) |
-| 붙이지 말고 가리킨다 | 사용자가 쓰는 다른 스킬과 원칙 문서는 발췌가 아니라 경로로 적는다[](source:guard) |
+| 꾸미지 않는다 | 다른 스킬의 내용을 되풀이하지 않고, 비유를 지어내지 않고, 시적인 문장을 쓰지 않는다. 실행에 쓰이는 문장만 쓴다[](source:guard) |
+| 붙이지 말고 가리킨다 | 사용자가 쓰는 다른 스킬과 원칙 문서는 발췌를 붙이지 않고 경로로 적는다[](source:guard) |
 | 절을 최소로 둔다 | 기본값과 다른 구체적 규칙이 있을 때만 절을 만든다. "Communicate clearly"는 절이 아니다[](source:guard) |
 | 이름을 일반화한다 | 명령문에는 작성자 이름 대신 "the user"나 "the human"을 쓴다[](source:guard) |
 | 대칭을 억지로 맞추지 않는다 | 적을 만한 작업 절차가 없으면 그 절을 통째로 뺀다[](source:guard) |
 
 @callout level=warning title="다른 프로젝트의 대화를 읽지 않는다"
-원문은 `~/.cursor/projects/*/`를 훑지 말라고 한다. 작업 공간 경계를 넘어 관계없는 프로젝트의 비공개 대화를 읽게 되기 때문이다. 서브에이전트에도 부모가 준 작업 공간 경로만 넘긴다.[](source:step1)
+원문은 에이전트가 `~/.cursor/projects/*/`를 훑지 말라고 한다. 훑으면 작업 공간 경계를 넘어 관계없는 프로젝트의 비공개 대화를 읽게 되기 때문이다. 서브에이전트는 부모 에이전트가 넘겨 준 작업 공간 경로만 읽는다.[](source:step1)
 
 ## 이 분석의 범위와 한계 {#audit}
 

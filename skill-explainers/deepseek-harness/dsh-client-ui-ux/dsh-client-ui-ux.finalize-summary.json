@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-client-ui-ux/candidate.archify.md",
+    "sha256": "304613897bf2b2fbdd2728e78475f16c0890fee4f905d775a213eca68e669d32",
+    "bytes": 20446
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-client-ui-ux/dsh-client-ui-ux.html",
+    "sha256": "1e99ef6f557ee77e8200391a8bcf831213327a2ae0f39bb0f20cff7c8412882b",
+    "bytes": 1493160
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-client-ui-ux/dsh-client-ui-ux.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-client-ui-ux/dsh-client-ui-ux.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1874,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

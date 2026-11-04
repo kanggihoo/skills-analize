@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:26:08.255Z",
+  "startedAt": "2026-11-04T13:39:09.197Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/candidate.archify.md",
-    "sha256": "8e4320e6688a808c6a372b14db8657c089cc2f17c4d4770afe8bb3d4f2292843",
-    "bytes": 6950
+    "sha256": "8a2d76d9d53125039dbec14286d4a9c83cf331f33a238d33f2a54c7db5f6750c",
+    "bytes": 7175
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/principle-make-operations-idempotent.html",
-    "sha256": "03fce5458d967805d2b7a414b6f16e349a2444cc28bafc5760962937ed1e6ae5",
-    "bytes": 662203
+    "sha256": "d5e74ef415d6edd1398e822f77e5cac41252ac5fe48c98f0fcfa8637ac7e02ed",
+    "bytes": 662912
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "8e4320e6688a808c6a372b14db8657c089cc2f17c4d4770afe8bb3d4f2292843",
-          "bytes": 6950
+          "sha256": "8a2d76d9d53125039dbec14286d4a9c83cf331f33a238d33f2a54c7db5f6750c",
+          "bytes": 7175
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 812,
+      "durationMs": 787,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "bded0d65-9225-4586-bd25-dad4ff38709e",
+        "receiptId": "0f2f6134-42b3-4f9f-b788-c476df0cd81d",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/principle-make-operations-idempotent.html",
         "explainer": {
-          "preparedSha256": "47d32312b23f79c9b417919a923954704bbfbc648776b671451ed1dc1997aae7",
+          "preparedSha256": "a3d5d379f08b16a33bb39a18c281ded6e201d38eb53d4a854871ef9295d16f74",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "why",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "pattern",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "tests",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "verdict",
               "path": "pstack/principle-make-operations-idempotent/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
               "bytes": 1390
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "runner",
               "path": "pstack/architect/references/runner-prompt.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "983bf2820cc14ed8ecab6e448e1033e5cfe6031967d0a9287b48c7fa9c33d925",
               "bytes": 3087
             },
@@ -175,12 +175,12 @@
           ]
         },
         "specification": {
-          "sha256": "8e4320e6688a808c6a372b14db8657c089cc2f17c4d4770afe8bb3d4f2292843",
-          "bytes": 6950
+          "sha256": "8a2d76d9d53125039dbec14286d4a9c83cf331f33a238d33f2a54c7db5f6750c",
+          "bytes": 7175
         },
         "artifact": {
-          "sha256": "03fce5458d967805d2b7a414b6f16e349a2444cc28bafc5760962937ed1e6ae5",
-          "bytes": 662203
+          "sha256": "d5e74ef415d6edd1398e822f77e5cac41252ac5fe48c98f0fcfa8637ac7e02ed",
+          "bytes": 662912
         },
         "validation": {
           "checksPassed": 4,
@@ -206,7 +206,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 429,
+      "durationMs": 408,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -219,8 +219,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/principle-make-operations-idempotent.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "03fce5458d967805d2b7a414b6f16e349a2444cc28bafc5760962937ed1e6ae5",
-          "bytes": 662203
+          "sha256": "d5e74ef415d6edd1398e822f77e5cac41252ac5fe48c98f0fcfa8637ac7e02ed",
+          "bytes": 662912
         },
         "checks": [
           {
@@ -264,7 +264,7 @@
               "id": "idem-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-YaS3MW/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-dvzFBo/child.html",
                 "artifact": {
                   "sha256": "04ac788ef5ab99d0bf44907ea683b5f8c42d2c5f113149f8cdc4750f911e4df9",
                   "bytes": 831750
@@ -391,7 +391,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "bded0d65-9225-4586-bd25-dad4ff38709e"
+        "deliveryReceiptId": "0f2f6134-42b3-4f9f-b788-c476df0cd81d"
       }
     }
   },
@@ -405,8 +405,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-make-operations-idempotent/principle-make-operations-idempotent.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:26:09.649Z",
-  "durationMs": 1394,
+  "finishedAt": "2026-11-04T13:39:10.540Z",
+  "durationMs": 1343,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

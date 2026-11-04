@@ -1,0 +1,739 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T12:48:11.104Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/candidate.archify.md",
+    "sha256": "b50f0072c47fd6c7bbd3336dc879def4297cb056109611bcccfbe2dce988ef83",
+    "bytes": 25219
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+    "sha256": "15d829f6149fbd1f7ee8f38aa95ddf173a1e29697d7255c3fbdd5d523039d9bb",
+    "bytes": 1611270
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "b50f0072c47fd6c7bbd3336dc879def4297cb056109611bcccfbe2dce988ef83",
+          "bytes": 25219
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1195,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "af9b13d6-8ea0-47c3-a4a3-10e1953930b5",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+        "explainer": {
+          "preparedSha256": "da2d28209721c229bad4918c4f5c5c5b7af5ddbcebeeae1eb47e57464a8ba1c4",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fs-fm",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "rel-doc",
+              "path": "deepseek-harness/dsh-doc/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+              "bytes": 18418
+            },
+            {
+              "kind": "repository",
+              "id": "fs-intro",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-scope",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-protect",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-broad",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-search",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-effect",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-distinct",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-explicit",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-derive",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-compose",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-q-cost",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-reach",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-record",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-reject",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-own",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-async",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-dep",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-dep-test",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-prose",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-note",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-supersede",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-fold",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "fs-report",
+              "path": "deepseek-harness/dsh-find-simplifications/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "0287165e16f482bc197bc36a40e66a2eee3d47479bb0dfc1836602a96052befe",
+              "bytes": 11425
+            },
+            {
+              "kind": "repository",
+              "id": "hp-intro",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-effect",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-distinct",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-trade",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-assume",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-derive",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-compose",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "repository",
+              "id": "hp-reject",
+              "path": "deepseek-harness/dsh-find-simplifications/references/historical-patterns.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+              "bytes": 8573
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "simplify-flow",
+              "inline": true,
+              "sha256": "22e30feba20d75205a272279f32d8389bf614519775c7fde2662acd4a3e3993e",
+              "bytes": 1347
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "find-position",
+              "inline": true,
+              "sha256": "d875ab2e6a8ae6d7a5346d64cf29e1e341a1f2fb249d4e5bea86d45f2cd750cb",
+              "bytes": 939
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "b50f0072c47fd6c7bbd3336dc879def4297cb056109611bcccfbe2dce988ef83",
+          "bytes": 25219
+        },
+        "artifact": {
+          "sha256": "15d829f6149fbd1f7ee8f38aa95ddf173a1e29697d7255c3fbdd5d523039d9bb",
+          "bytes": 1611270
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 631,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "15d829f6149fbd1f7ee8f38aa95ddf173a1e29697d7255c3fbdd5d523039d9bb",
+          "bytes": 1611270
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "143 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "35 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "simplify-flow: pass",
+              "find-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "simplify-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-xfsCqj/child.html",
+                "artifact": {
+                  "sha256": "652fad23a53e675c479f7255930cc1575dc99ac2fc3a071719bd06f045368791",
+                  "bytes": 838071
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 76.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "hold-to-cand-1",
+                      "from": "hold",
+                      "to": "cand"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "find-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-j2P3jv/child.html",
+                "artifact": {
+                  "sha256": "40063628e5ec8c96a4594bdc0fc9aaa5bb4ab6eccaf48b9004e993a062177997",
+                  "bytes": 834079
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 94.6,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.545638945233265,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 80.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "doc-to-me-1",
+                      "from": "doc",
+                      "to": "me"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.545638945233265,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "af9b13d6-8ea0-47c3-a4a3-10e1953930b5"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-find-simplifications/dsh-find-simplifications.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T12:48:13.089Z",
+  "durationMs": 1985,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

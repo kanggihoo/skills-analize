@@ -5,15 +5,15 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:48:11.090Z",
+  "startedAt": "2026-11-04T13:38:25.080Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/candidate.archify.md",
-    "sha256": "8d30adfc37c25c36b40171bd278b926a6d79e0a1c80e6488a9c7620cd5d76332",
+    "sha256": "8228c8b2e69dba36972a3525002b99a7bbcde418204fff48ff9ba24275b027e4",
     "bytes": 9406
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/git-guardrails-claude-code.html",
-    "sha256": "87ec0dcc10d7e2365f8ce91dfee873ccb191585be46d95ec12a089e2dd627660",
+    "sha256": "94e1f86bfaf048245bb44a4ede52004b9129203690f34f118a59ee5acf2e4390",
     "bytes": 620700
   },
   "stages": {
@@ -44,7 +44,7 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "8d30adfc37c25c36b40171bd278b926a6d79e0a1c80e6488a9c7620cd5d76332",
+          "sha256": "8228c8b2e69dba36972a3525002b99a7bbcde418204fff48ff9ba24275b027e4",
           "bytes": 9406
         },
         "validation": {
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 790,
+      "durationMs": 845,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "9f3dc5fe-51d6-40ef-9a0a-435a08dd9e36",
+        "receiptId": "afd3ac69-83a2-41ee-9be8-0e445ae33553",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/git-guardrails-claude-code.html",
         "explainer": {
-          "preparedSha256": "44f3b403d39a6d3157fd83b3addff83db71a5facbde2a9b28d4eaa892ff9aa25",
+          "preparedSha256": "f1e69b357e0fb65b5c65c1608c2b5c2f5278ef7d668e5aed4efedd151f3c6239",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "script",
               "path": "mattpocock/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
               "bytes": 507
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-scope",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-copy",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-settings",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-custom",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skill-verify",
               "path": "mattpocock/git-guardrails-claude-code/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "69b291d655626a01602b998a1836fcb93c058ede68dfafddfd71e87f17074764",
               "bytes": 2313
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "oa-yaml",
               "path": "mattpocock/git-guardrails-claude-code/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "d53cd783fc0ac208dec9a4c267989284384785aab6422dccdaed42f9e40243ec",
               "bytes": 112
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "script-input",
               "path": "mattpocock/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
               "bytes": 507
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "script-patterns",
               "path": "mattpocock/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
               "bytes": 507
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "script-loop",
               "path": "mattpocock/git-guardrails-claude-code/scripts/block-dangerous-git.sh",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "234922b83c0a1737ee7300806c21ac0f389b07aaeb65c2d71ccedafbc5e1ea4b",
               "bytes": 507
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "pc-desc",
               "path": "mattpocock/setup-pre-commit/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c9819d7f1e3b198064edc1faa3154224ed67395e9f07f5d3cea4b67cf0a11a98",
               "bytes": 2258
             },
@@ -199,11 +199,11 @@
           ]
         },
         "specification": {
-          "sha256": "8d30adfc37c25c36b40171bd278b926a6d79e0a1c80e6488a9c7620cd5d76332",
+          "sha256": "8228c8b2e69dba36972a3525002b99a7bbcde418204fff48ff9ba24275b027e4",
           "bytes": 9406
         },
         "artifact": {
-          "sha256": "87ec0dcc10d7e2365f8ce91dfee873ccb191585be46d95ec12a089e2dd627660",
+          "sha256": "94e1f86bfaf048245bb44a4ede52004b9129203690f34f118a59ee5acf2e4390",
           "bytes": 620700
         },
         "validation": {
@@ -243,7 +243,7 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/git-guardrails-claude-code.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "87ec0dcc10d7e2365f8ce91dfee873ccb191585be46d95ec12a089e2dd627660",
+          "sha256": "94e1f86bfaf048245bb44a4ede52004b9129203690f34f118a59ee5acf2e4390",
           "bytes": 620700
         },
         "checks": [
@@ -288,7 +288,7 @@
               "id": "install-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-TQgKhK/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-bxocDt/child.html",
                 "artifact": {
                   "sha256": "580cad7a2e7f69f21eb0175e61a86d0549436ce1c38e0062c70a4ae85fbd80d2",
                   "bytes": 832598
@@ -415,7 +415,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "9f3dc5fe-51d6-40ef-9a0a-435a08dd9e36"
+        "deliveryReceiptId": "afd3ac69-83a2-41ee-9be8-0e445ae33553"
       }
     }
   },
@@ -429,8 +429,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/git-guardrails-claude-code/git-guardrails-claude-code.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:48:12.447Z",
-  "durationMs": 1356,
+  "finishedAt": "2026-11-04T13:38:26.490Z",
+  "durationMs": 1410,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

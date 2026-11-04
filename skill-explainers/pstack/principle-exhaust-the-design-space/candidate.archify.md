@@ -2,8 +2,8 @@
 
 `principle-exhaust-the-design-space`를 읽은 에이전트는 선례 없는 상호작용이나 아키텍처 결정을 바로 구현하지 않는다. 서로 경쟁하는 시제품이나 스케치를 2~3개 만들어 나란히 비교한 뒤에야 하나를 고른다.[](source:rule)
 
-- 원문의 이유: 틀린 것을 만드는 비용이 선택지 세 개를 살펴보는 비용보다 크다.[](source:intro)
-- 첫 모양의 변형 하나를 더 만드는 것은 두 번째 후보로 치지 않는다.[](source:rule)
+- 원문의 이유: 틀린 것을 만드는 비용이 선택지 세 개를 살펴보는 비용보다 크다는 것이다.[](source:intro)
+- 에이전트는 첫 모양의 변형 하나를 더 만들어도 두 번째 후보로 세지 않는다.[](source:rule)
 - "두 번 설계하라(design it twice)"는 같은 규칙의 다른 이름이다.[](source:rule)
 - 패턴이 이미 정해진 기계적 구현, 목표 상태가 분명한 버그 수정과 리팩터링에는 적용하지 않는다.[](source:not)
 
@@ -24,14 +24,14 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-exhaust-the-design-space`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-exhaust-the-design-space`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/principle-exhaust-the-design-space` 입력 |
-| `poteto-mode` (Core 분류) | 선례 없는 상호작용이나 아키텍처 결정. 2~3개 경쟁 시제품을 만들어 비교한 뒤 결정[](source:pm-trigger) |
+| `poteto-mode` (Core 분류) | 선례 없는 상호작용이나 아키텍처 결정이면, 경쟁 시제품을 2~3개 만들어 비교한 뒤 결정한다[](source:pm-trigger) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장 기준으로 이 원칙을 이름으로 부르는 플레이북은 없다.
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장에는 이 원칙을 이름으로 부르는 플레이북이 없다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -40,7 +40,7 @@
 | 정답이 뻔하지 않으면 경쟁하는 시제품이나 스케치를 2~3개 만든다[](source:rule) | 의무 |
 | 후보를 나란히 놓고 비교한다[](source:rule) | 의무 |
 | 비교가 끝난 뒤에만 하나에 결정한다[](source:rule) | 의무 |
-| 첫 모양의 다른 맛 하나는 후보로 세지 않는다[](source:rule) | 판단 기준 |
+| 첫 모양의 변형 하나는 후보로 세지 않는다[](source:rule) | 판단 기준 |
 
 | 상황 | 적용 여부 |
 | --- | --- |
@@ -71,8 +71,8 @@
 
 이 원칙은 다른 스킬을 가리키지 않는다. 원장에는 없지만 이 원칙을 이름으로 언급하는 곳이 있다(rel-id 없음).
 
-- `prototype` 플레이북 4단계: 대안을 한 전환 스위치 뒤에 두고 각 변형에 이름을 붙인다. 이것을 이 원칙의 싼 형태라고 부른다.[](source:pb-proto)
-- `architect`: 구조가 다른 후보를 최소 2개 요구하고, 이것을 이 원칙의 구체화라고 부른다.[](source:architect)
+- `prototype` 플레이북 4단계: 대안을 한 전환 스위치 뒤에 두고 각 변형에 이름을 붙인다. 플레이북은 이것을 이 원칙의 싼 형태라고 부른다.[](source:pb-proto)
+- `architect`는 구조가 다른 후보를 최소 2개 요구하고, 이것을 이 원칙의 구체화라고 부른다.[](source:architect)
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다. 관계 근거는 `pstack/relations.md`의 `rel-id`로 확인한다.
 
@@ -82,7 +82,7 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 2곳이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

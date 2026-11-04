@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:25:58.334Z",
+  "startedAt": "2026-11-04T13:39:39.591Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/candidate.archify.md",
-    "sha256": "2d9bb04009ea9cbdc7463a85fbf35f4f59446d2f985e6ba289293bc635985d24",
-    "bytes": 9999
+    "sha256": "8da2a806a5cc8545830b3068fb7b06aa65e79ba8df37ddfd166a958fa9f75ef2",
+    "bytes": 10084
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/principle-laziness-protocol.html",
-    "sha256": "4878539868e286f65dc5e0ac7fbc28bf39dae3baa67e3415c0a2982f2d5877b8",
-    "bytes": 769592
+    "sha256": "f627813d96e4b76fdf638e9152f9b3ece5f191d692d1eb0cd25a9a8bdd91e963",
+    "bytes": 769848
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "2d9bb04009ea9cbdc7463a85fbf35f4f59446d2f985e6ba289293bc635985d24",
-          "bytes": 9999
+          "sha256": "8da2a806a5cc8545830b3068fb7b06aa65e79ba8df37ddfd166a958fa9f75ef2",
+          "bytes": 10084
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 807,
+      "durationMs": 1202,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "5261111b-69de-43e3-9910-8085339bb246",
+        "receiptId": "3f40c9b0-ab26-41d2-890e-96bbc1ae9157",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/principle-laziness-protocol.html",
         "explainer": {
-          "preparedSha256": "c57b9dde3914e4ca4d97538d784c878d47b00251b6a3f62dd56042599cafdc99",
+          "preparedSha256": "92905afb7326ce3b3e578fb91ab6787bfc2aee9adcb4e159ee58e66385c798a9",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "p-delete",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "p-flat",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "p-one",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "p-diff",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "p-thread",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "p-leak",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "test",
               "path": "pstack/principle-laziness-protocol/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "9006579e9e3f33955d17569733db688ae65f22577dc3b21803d219a5a8445aff",
               "bytes": 1371
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "pb-refactor",
               "path": "pstack/poteto-mode/playbooks/refactoring.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
               "bytes": 3211
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "fio",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "attack",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "lever",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -217,7 +217,7 @@
               "kind": "repository",
               "id": "pb-proto",
               "path": "pstack/poteto-mode/playbooks/prototype.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
               "bytes": 2161
             },
@@ -225,7 +225,7 @@
               "kind": "repository",
               "id": "pb-feature",
               "path": "pstack/poteto-mode/playbooks/feature.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
               "bytes": 2766
             },
@@ -233,7 +233,7 @@
               "kind": "repository",
               "id": "pb-hill",
               "path": "pstack/poteto-mode/playbooks/hillclimb.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
               "bytes": 4403
             },
@@ -241,7 +241,7 @@
               "kind": "repository",
               "id": "arena",
               "path": "pstack/arena/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e3a1f6c49a08b7e0b92134e53300d146f1f22ba83386d2019926e736df421851",
               "bytes": 4973
             },
@@ -249,7 +249,7 @@
               "kind": "repository",
               "id": "frc",
               "path": "pstack/principle-fix-root-causes/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
               "bytes": 1246
             },
@@ -257,7 +257,7 @@
               "kind": "repository",
               "id": "runner",
               "path": "pstack/architect/references/runner-prompt.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "983bf2820cc14ed8ecab6e448e1033e5cfe6031967d0a9287b48c7fa9c33d925",
               "bytes": 3087
             },
@@ -271,12 +271,12 @@
           ]
         },
         "specification": {
-          "sha256": "2d9bb04009ea9cbdc7463a85fbf35f4f59446d2f985e6ba289293bc635985d24",
-          "bytes": 9999
+          "sha256": "8da2a806a5cc8545830b3068fb7b06aa65e79ba8df37ddfd166a958fa9f75ef2",
+          "bytes": 10084
         },
         "artifact": {
-          "sha256": "4878539868e286f65dc5e0ac7fbc28bf39dae3baa67e3415c0a2982f2d5877b8",
-          "bytes": 769592
+          "sha256": "f627813d96e4b76fdf638e9152f9b3ece5f191d692d1eb0cd25a9a8bdd91e963",
+          "bytes": 769848
         },
         "validation": {
           "checksPassed": 4,
@@ -302,7 +302,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 428,
+      "durationMs": 566,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -315,8 +315,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/principle-laziness-protocol.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "4878539868e286f65dc5e0ac7fbc28bf39dae3baa67e3415c0a2982f2d5877b8",
-          "bytes": 769592
+          "sha256": "f627813d96e4b76fdf638e9152f9b3ece5f191d692d1eb0cd25a9a8bdd91e963",
+          "bytes": 769848
         },
         "checks": [
           {
@@ -360,7 +360,7 @@
               "id": "lazy-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-IKtyRl/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-oyamFV/child.html",
                 "artifact": {
                   "sha256": "64fa485a1d1355ad483d9cc47f135e180c9d7ea1c02f51790c2d5faa4975b22c",
                   "bytes": 837718
@@ -487,7 +487,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "5261111b-69de-43e3-9910-8085339bb246"
+        "deliveryReceiptId": "3f40c9b0-ab26-41d2-890e-96bbc1ae9157"
       }
     }
   },
@@ -501,8 +501,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-laziness-protocol/principle-laziness-protocol.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:25:59.718Z",
-  "durationMs": 1384,
+  "finishedAt": "2026-11-04T13:39:41.526Z",
+  "durationMs": 1934,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

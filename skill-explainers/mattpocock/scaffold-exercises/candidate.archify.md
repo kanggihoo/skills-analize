@@ -1,11 +1,11 @@
 # scaffold-exercises 스킬은 에이전트를 어떻게 바꾸나 {#scaffold-exercises-skill}
 
-`scaffold-exercises`를 쓰면 에이전트는 강의 계획을 받아 `exercises/` 아래에 연습 문제 폴더 골격을 만든다. 골격은 `pnpm ai-hero-cli internal lint`를 통과해야 하고, 통과하면 `git commit`으로 커밋한다.[](source:skill-intro)
+`scaffold-exercises`를 쓰면 에이전트는 강의 계획을 받아 `exercises/` 아래에 연습 문제 폴더 골격을 만든다. 골격은 `pnpm ai-hero-cli internal lint`를 통과해야 하고, 통과하면 `git commit`으로 commit한다.[](source:skill-intro)
 
 - 폴더 이름은 `XX-section-name/`, `XX.YY-exercise-name/` 꼴의 번호와 소문자 대시 이름이다.[](source:skill-naming)
 - 연습마다 `problem/`, `solution/`, `explainer/` 중 하나 이상을 두고, 각각에 비어 있지 않은 `readme.md`를 둔다. 골격만 만들 때는 `explainer/`가 기본이다.[](source:skill-variants)[](source:skill-readme)
 - 완료 조건은 린트 통과다. 오류가 나면 통과할 때까지 고친다.[](source:skill-workflow)
-- 판정: 사용자에게 묻거나 커밋 전에 확인받는 단계가 없다.[](source:skill-intro)[](source:skill-workflow)
+- 판정: 사용자에게 묻거나 commit 전에 확인받는 단계가 없다.[](source:skill-intro)[](source:skill-workflow)
 
 @answer scope="mattpocock/scaffold-exercises · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
 @meta locale=ko
@@ -35,7 +35,7 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 | mkdir | 폴더 만들기 | backend |
 | readme | readme 작성 | backend |
 | lint | 린트 통과? | backend |
-| commit | 커밋 | backend |
+| commit | commit | backend |
 | parse > mkdir | | |
 | mkdir > readme | | |
 | readme > lint | | |
@@ -47,9 +47,9 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 | s-mkdir | 폴더 만들기 | 경로마다 `mkdir -p`를 실행한다. | scaffold-flow | mkdir |
 | s-readme | readme 작성 | 변형 폴더마다 제목이 있는 `readme.md`를 하나씩 만든다. 골격에는 제목과 설명 한 줄이면 된다. | scaffold-flow | readme |
 | s-lint | 린트 통과? | `pnpm ai-hero-cli internal lint`를 돌린다. 오류가 나면 고치고 다시 돌린다. | scaffold-flow | lint |
-| s-commit | 커밋 | `git commit`으로 커밋한다. 이 단계는 Workflow 목록이 아니라 첫 문장에만 있다. | scaffold-flow | commit |
+| s-commit | commit | `git commit`으로 commit한다. 이 단계는 Workflow 목록이 아니라 첫 문장에만 있다. | scaffold-flow | commit |
 
-1~5단계는 Workflow 절을 따른다.[](source:skill-workflow) 커밋은 스킬 첫 문장에 있다.[](source:skill-intro)
+1~5단계는 Workflow 절을 따른다.[](source:skill-workflow) commit은 스킬 첫 문장에 있다.[](source:skill-intro)
 
 @tree id=scaffold-tree title="원문 예시로 만드는 폴더"
 | root | exercises | - |
@@ -85,8 +85,8 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 - 읽은 파일: `SKILL.md`, `agents/openai.yaml`. 두 파일 모두 원본이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준). 원장에 이 스킬의 관계 행은 없다.
-- 실행하지 않았다. 폴더 생성·린트·커밋은 모두 지시상 동작이다. `ai-hero-cli` 린터의 실제 규칙은 확인하지 않았다.
+- 실행하지 않았다. 폴더 생성·린트·commit은 모두 지시상 동작이다. `ai-hero-cli` 린터의 실제 규칙은 확인하지 않았다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-커밋 메시지, 커밋 범위, 린트를 끝내 통과하지 못할 때의 멈춤 조건은 원문에 명시 없음. "주 폴더"가 어느 폴더인지도 원문에 명시 없음.
+commit 메시지, commit 범위, 린트를 끝내 통과하지 못할 때의 멈춤 조건은 원문에 명시 없음. "주 폴더"가 어느 폴더인지도 원문에 명시 없음.

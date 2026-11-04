@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "2877ac0e-94b3-4bb9-bffb-79ab2c11e08c",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-trim-cot-leakage/dsh-trim-cot-leakage.html",
+  "specification": {
+    "sha256": "f4b05fe9c96db684d07a4c11b9a3c8d070a3ea68dd895cc52fd4db38eb32ddc5",
+    "bytes": 19816
+  },
+  "artifact": {
+    "sha256": "a56143b2ad854740bd6925958e9446ceed010670a939e7f7a2b51df103b93796",
+    "bytes": 1371538
+  },
+  "explainer": {
+    "preparedSha256": "1df5fcb50ec06c49361e80621cf5d7cb4ca274157b11f7f3adc8bf35558ad134",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "tc-fm",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "bt-en",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+        "bytes": 4980
+      },
+      {
+        "kind": "repository",
+        "id": "tc-intro",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-test",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-tax",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-keeps",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-workflow",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-scope",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-audit",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-owner",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-trap",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-verify",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "ex-head",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-dead",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-change",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-justify",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-visible",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-keeps",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "ex-traps",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/examples.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "893ad4a0680ecd18d515ba8b4bc1487df783e4eb49a82316e1b065a5c8c28a90",
+        "bytes": 12566
+      },
+      {
+        "kind": "repository",
+        "id": "bt-head",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+        "bytes": 4980
+      },
+      {
+        "kind": "repository",
+        "id": "bt-rules",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+        "bytes": 4980
+      },
+      {
+        "kind": "repository",
+        "id": "bt-zh",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+        "bytes": 4980
+      },
+      {
+        "kind": "repository",
+        "id": "bt-fp",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/references/recall-batteries.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "179ef0336af3a4a33410bec4e11e802c7c78ba8a0bdf6d455503dbf539e2a34c",
+        "bytes": 4980
+      },
+      {
+        "kind": "repository",
+        "id": "doc-r12",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "ps-r10",
+        "path": "deepseek-harness/dsh-prose-standard/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "63530dfc600b1be07b6f2c1d1a794a3ce0ef78f91d2c18b7b1303dce3b0d5e72",
+        "bytes": 9899
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "trim-flow",
+        "inline": true,
+        "sha256": "5ffc0addf0dd742e7cf7115c449799ffed768105dc54b9f0f78504c054c6396a",
+        "bytes": 968
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "trim-position",
+        "inline": true,
+        "sha256": "8640e96d56229bff1927c2bccb0a720d9d85995e43793593698e1223b1aa3641",
+        "bytes": 719
+      }
+    ]
+  }
+}

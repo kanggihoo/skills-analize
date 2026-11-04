@@ -4,7 +4,7 @@
 
 - 실행: 정상 상태 → 변경 하나 → 검사 → 진행. 변경을 모아서 한꺼번에 검사하지 않는다.[](source:skill-exec)
 - 시작 전에 깨끗한 trunk 위로 `rebase`한다. 그래야 검사가 진짜 기준선과 비교된다.[](source:skill-exec)
-- 전달: 커밋과 PR을 작업을 증명하는 순서로 쌓는다. 기본형은 실패하는 테스트가 먼저, 수정이 그 위다.[](source:skill-deliv)
+- 전달: commit과 PR을 작업을 증명하는 순서로 쌓는다. 기본형은 실패하는 테스트가 먼저, 수정이 그 위다.[](source:skill-deliv)
 - 플레이북 7개와 `figure-it-out`이 이 원칙으로 단계를 쪼갠다.[](source:pm-line)[](source:fio)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
@@ -32,18 +32,18 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-sequence-verifiable-units`를 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-sequence-verifiable-units`를 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/principle-sequence-verifiable-units` 입력[](source:help-principles) |
-| `poteto-mode` | Verification 원칙. 여러 단계 작업(일괄 수정, 이전, 비슷한 편집의 연속), 커밋과 PR 쌓기[](source:pm-line) |
+| `poteto-mode` | Verification 원칙. 여러 단계 작업(일괄 수정, 이전, 비슷한 편집의 연속), commit과 PR 쌓기[](source:pm-line) |
 | 플레이북 7개 | `bug-fix`, `autonomous-run`, `multi-phase-plan`, `feature`, `perf-issue`, `hillclimb`, `refactoring`(아래 표) |
 | `figure-it-out` | Phase C. 실험 단위마다 검증할 때[](source:fio) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -60,19 +60,19 @@
 @steps id=unit-steps
 | u-good | 정상 상태 | 알려진 정상 상태에서 시작한다. 처음에는 깨끗한 trunk 위로 rebase해서 검사가 진짜 기준선과 비교되게 한다. | unit-bracket | good |
 | u-change | 변경 하나 | 단위 하나에 변경 하나만 넣는다. | unit-bracket | change |
-| u-check | 검사 통과? | 다음 변경을 시작하기 전에 검사를 돌린다. 지렛대(lever)가 편집을 해서 검사 비용이 거의 없어도 돌린다. | unit-bracket | check |
+| u-check | 검사 통과? | 다음 변경을 시작하기 전에 검사를 돌린다. 지렛대(lever)가 편집을 대신해 단위별 검사 비용이 거의 없어도 검사를 돌린다. | unit-bracket | check |
 | u-next | 다음 단위 | 통과해야만 넘어간다. 실패했을 때 무엇을 하는지는 원문이 "통과 전에는 넘어가지 않는다"고만 쓴다. | unit-bracket | next |
 
 이 흐름은 원문 Execution 문단을 옮긴 것이다.[](source:skill-intro)[](source:skill-exec) 그림의 "아니오" 간선은 넘어가지 않는다는 뜻으로 그렸다(판정).
 
 | 전달 규칙 | 원문의 강도 |
 | --- | --- |
-| 커밋과 PR을 작업을 증명하는 순서로 쌓는다[](source:skill-deliv) | 의무 |
+| commit과 PR을 작업을 증명하는 순서로 쌓는다[](source:skill-deliv) | 의무 |
 | 기본형: 실패하는 테스트가 먼저, 수정이 그 위[](source:skill-deliv) | 기본형 |
 | 다른 순서의 예: 재구성 전에 빼기, 처리 전에 기준선 기록, 기능 전에 골격[](source:skill-deliv) | 예시 |
-| 커밋마다 따로 병합될 수 있어야 하고, 순서 전체가 하나의 논증으로 읽혀야 한다[](source:skill-deliv) | 의무 |
+| commit마다 따로 병합될 수 있어야 하고, 순서 전체가 하나의 논증으로 읽혀야 한다[](source:skill-deliv) | 의무 |
 
-원문이 드는 이유는 이렇다. 깨진 곳을 그 단위에서 잡으면 위치를 찾기 쉽다. 묶음 뒤에 잡으면 파묻히고, 이미 깨진 바탕 위에 더 쌓은 뒤다. 순서를 리뷰어가 다시 재생할 수 있게 하면 "믿어 달라"가 "빨갛다가 초록이 되는 것을 보라"로 바뀐다.[](source:skill-why)
+원문이 드는 이유는 이렇다. 깨진 곳을 그 단위에서 잡으면 위치를 찾기 쉽다. 묶음 뒤에 잡으면 깨진 곳이 파묻히고, 그때는 이미 깨진 바탕 위에 더 쌓은 뒤다. 순서를 리뷰어가 다시 재생할 수 있게 하면 "믿어 달라"가 "빨갛다가 초록이 되는 것을 보라"로 바뀐다.[](source:skill-why)
 
 ## 흐름 속 위치 {#position}
 
@@ -81,7 +81,7 @@
 | pb | 플레이북 7개 | backend |
 | fio | figure-it-out | backend |
 | this | 검증 단위 | backend |
-| back | 단위별 커밋 | frontend |
+| back | 단위별 commit | frontend |
 | pair | 짝 원칙 | backend |
 | pm > this | 여러 단계 | |
 | pb > this | 단계 쪼개기 | |
@@ -91,14 +91,14 @@
 
 | 받는 것 | 넘기는 것 | 조건 | rel-id |
 | --- | --- | --- | --- |
-| `poteto-mode`의 판단 상황 | 답변 속 원칙 이름과 바뀐 선택 | 여러 단계 작업, 커밋·PR 쌓기[](source:pm-line) | r12 |
+| `poteto-mode`의 판단 상황 | 답변 속 원칙 이름과 바뀐 선택 | 여러 단계 작업, commit·PR 쌓기[](source:pm-line) | r12 |
 | `bug-fix` 플레이북 | 실패 테스트 → 수정 순서 | 이 원칙의 기본형이라고 직접 부른다[](source:pb-bugfix) | 원장에 없음 |
 | `autonomous-run` 플레이북 | 단위별 검증 | 검사를 끝에 몰지 않는다[](source:pb-auto) | 원장에 없음 |
 | `multi-phase-plan` 플레이북 4단계 | PR 하나당 절 하나 | PR 하나는 자기 증거를 가진 변경 하나[](source:pb-mpp) | 원장에 없음 |
-| `feature` 플레이북 | 작은 단위마다 빌드·검증·커밋 | 다음 단위 전에[](source:pb-feature) | 원장에 없음 |
+| `feature` 플레이북 | 작은 단위마다 빌드·검증·commit | 다음 단위 전에[](source:pb-feature) | 원장에 없음 |
 | `perf-issue` 플레이북 | 시도마다 검증 | 다음 시도 전에[](source:pb-perf) | 원장에 없음 |
 | `hillclimb` 플레이북 | 반복마다 검사 | 다음 반복 전에[](source:pb-hillclimb) | 원장에 없음 |
-| `refactoring` 플레이북 8단계 | 빼기 → 재구성 → 정리 커밋 | 동작을 지키는 조각마다 초록 유지[](source:pb-refactoring) | 원장에 없음 |
+| `refactoring` 플레이북 8단계 | 빼기 → 재구성 → 정리 commit | 동작을 지키는 조각마다 초록 유지[](source:pb-refactoring) | 원장에 없음 |
 | `figure-it-out` Phase C | 실험 단위마다 검증 | 검사를 끝에 몰지 않는다[](source:fio) | 원장에 없음 |
 | - | `principle-prove-it-works`, `principle-build-the-lever` 참고 | 저쪽은 검사가 진짜인지, 검사를 싸게 만드는지를 맡는다[](source:skill-pair) | 원장에 없음 |
 
@@ -109,7 +109,7 @@
 - 읽은 파일: `SKILL.md`(1705B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, 플레이북 7개, `figure-it-out/SKILL.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

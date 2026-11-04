@@ -2,7 +2,7 @@
 
 `principle-laziness-protocol`을 읽은 에이전트는 가장 적은 코드와 복잡도로 가장 큰 결과를 노린다. 리팩터링이나 개선을 맡으면 무엇을 더할지보다 무엇을 지울지 먼저 찾는다.[](source:rule)[](source:p-delete)
 
-- 문제를 푸는 가장 작은 변경을 고른다. "우아한" 상용구보다 줄 수가 적은 쪽이 낫다.[](source:p-diff)
+- 에이전트는 문제를 푸는 가장 작은 변경을 고른다. "우아한" 상용구보다 줄 수가 적은 쪽이 낫다.[](source:p-diff)
 - 질문 하나에 답하려고 파일이나 계층을 3개 넘게 따라가야 하면 호출 구조를 평평하게 만든다.[](source:p-flat)
 - 새 신호를 타입, 스키마, 파이프라인 같은 계층마다 통과시키라는 과제면 멈추고 더 직접적인 길을 찾는다.[](source:p-thread)
 - 판단 기준: 사람 개발자가 유지하기 지친다고 느낄 코드면 나쁜 해법이다.[](source:test)
@@ -36,7 +36,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-laziness-protocol`을 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-laziness-protocol`을 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -45,7 +45,7 @@
 | `refactoring` 플레이북 | 4단계에서 목표 모양에 닿는 가장 작은 변경을 고를 때[](source:pb-refactor) |
 | `figure-it-out` | 이미 정해진 설계에 두 번째 `arena`를 돌리면 과설계라는 근거[](source:fio) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
 ## 무엇을 강제하나 {#rules}
 
@@ -96,18 +96,18 @@
 그림의 "원칙 2개"는 r102와 r104의 두 원칙이다. 원장에는 없지만 이 원칙을 언급하는 곳이 더 있다(rel-id 없음). 위 표의 `prototype`, `feature` 플레이북 말고도 아래 세 곳이 있다.
 
 - `hillclimb` 6단계: 동작을 깨는 성과는 되돌리고, 수치를 지키는 단순화는 남긴다.[](source:pb-hill)
-- `arena`: 두 후보가 비슷하면 경계가 더 깔끔하거나 공개 인터페이스가 더 작은 쪽을 기반 후보로 고른다.[](source:arena)
-- `architect` 러너 프롬프트: 흐름을 따라가는 데 파일이 3개 넘게 필요하면 평평하게 만든다.[](source:runner)
+- `arena`: 두 후보가 비슷하면 경계가 더 깔끔하거나 공개 인터페이스가 더 작은 쪽을 base(기반이 되는 후보)로 고른다.[](source:arena)
+- `architect` runner 프롬프트: 흐름을 따라가는 데 파일이 3개 넘게 필요하면 평평하게 만든다.[](source:runner)
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다. 관계 근거는 `pstack/relations.md`의 `rel-id`로 확인한다.
 
 ## 이 분석의 범위와 한계 {#audit}
 
 - 읽은 파일: `pstack/principle-laziness-protocol/SKILL.md` 전체. 호출 측은 `pstack/poteto-mode/SKILL.md` 15, 40, 44줄과 위에 인용한 줄만 확인했다.
-- 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 5곳이다(`prototype`, `feature`, `hillclimb`, `arena`, `architect` 러너 프롬프트).
+- 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 5곳이다(`prototype`, `feature`, `hillclimb`, `arena`, `architect` runner 프롬프트).
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

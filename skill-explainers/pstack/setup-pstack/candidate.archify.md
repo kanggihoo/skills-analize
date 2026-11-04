@@ -1,11 +1,11 @@
 # setup-pstack 스킬은 에이전트를 어떻게 바꾸나 {#setup-pstack-skill}
 
-`setup-pstack`을 쓰면 에이전트는 쓸 수 있는 모델을 먼저 확인한다. 그다음 사용자에게 예산과 역할별 모델을 확인받고 `~/.cursor/rules/pstack-models.mdc`를 통째로 다시 쓴다.[](source:purpose)[](source:s5)
+`setup-pstack`이 켜지면, 에이전트는 이 세션에서 쓸 수 있는 모델을 먼저 확인한다. 그다음 사용자에게 예산과 역할별 모델을 확인받고, `~/.cursor/rules/pstack-models.mdc`를 통째로 다시 쓴다.[](source:purpose)[](source:s5)
 
-- 확인하지 않은 실제 모델 이름(slug)은 절대 쓰지 않는다. `inherit-parent`와 `auto`만 예외로 항상 허용한다.[](source:s1)[](source:s4)
-- 사람 확인은 두 번이다. 예산 네 가지 중 하나를 묻고, 역할 표를 보여 주고 그대로 쓸지 바꿀지 묻는다.[](source:s3a)[](source:s3c)
-- 이 파일은 항상 적용되는 규칙이다. 다른 pstack 스킬은 서브에이전트를 띄울 때 여기서 자기 역할 줄을 읽는다.[](source:pm-models)
-- 끝으로 앱을 직접 돌릴 수단이 없으면 `/create-verification-skill`을 한 번만 제안한다.[](source:s7)
+- 에이전트는 확인하지 않은 실제 모델 이름(slug)을 규칙에 절대 쓰지 않는다. `inherit-parent`와 `auto`만 예외이고, 이 둘은 항상 허용한다.[](source:s1)[](source:s4)
+- 에이전트가 사용자에게 확인받는 것은 두 번이다. 먼저 예산 네 가지 중 하나를 묻고, 그다음 역할 표를 보여 주고 그대로 쓸지 바꿀지 묻는다.[](source:s3a)[](source:s3c)
+- 이 파일은 항상 적용되는 규칙이다. 다른 pstack 스킬은 서브에이전트를 띄울 때 이 파일에서 자기 역할 줄을 읽는다.[](source:pm-models)
+- 끝으로, 프로젝트에 앱을 직접 돌릴 수단이 없으면 에이전트가 `/create-verification-skill`을 한 번만 제안한다.[](source:s7)
 
 @answer scope="pstack/setup-pstack · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -66,18 +66,18 @@
 | write > offer | | |
 
 @steps id=setup-steps
-| st-detect | 모델 확인 | 이 세션에서 `Task` 서브에이전트에 넘길 수 있는 모델 이름을 나열한다. 이것이 믿을 만한 출처다. 사용자가 쓸 수 있는 모델 목록을 주는 API나 CLI 도구가 Cursor 쪽에 있으면 그쪽을 우선한다. 하나도 못 찾으면 사용자에게 쓸 수 있는 이름을 붙여 넣어 달라고 한다. | setup-flow | detect |
-| st-load | 현재 상태 | 규칙 파일이 있으면 읽고 `# budget` 줄과 역할 값을 현재 선택으로 삼는다. 없으면 5단계 모양의 기본값에서 시작한다. 5단계에 없는 역할 줄(예: `how critics`)은 은퇴한 역할이라 버린다. | setup-flow | load |
-| st-ask | 예산·역할 | 예산을 묻고, 예산을 적용한 역할 표를 보여 준 뒤 그대로 쓸지 바꿀지 묻는다. 두 질문 모두 자유 입력보다 `AskQuestion`을 우선한다. 자세한 규칙은 아래 패널에 있다. | setup-flow | ask |
-| st-valid | 모두 확인? | 쓸 실제 모델 이름은 모두 1단계에서 확인한 것이어야 한다. 고른 이름이 없으면 멈추고 다시 묻는다. | setup-flow | valid |
-| st-write | 규칙 쓰기 | `alwaysApply: true`, `# budget` 줄, 역할마다 한 줄을 쓴다. 다시 돌려도 결과가 같도록 파일 전체를 덮어쓴다. 사용자에게 규칙이 새 세션부터 적용되고 다시 돌리면 갱신된다고 알린다(6단계). | setup-flow | write |
-| st-offer | 검증 제안 | 프로젝트에 `verify-*` 스킬이나 앱 하네스가 없으면 검증 스킬 생성을 딱 한 번 제안한다. 예라고 하면 `/create-verification-skill`을 실행하고, 아니라고 하면 더 권하지 않고 넘어간다. | setup-flow | offer |
+| st-detect | 모델 확인 | 에이전트가 이 세션에서 `Task` 서브에이전트에 넘길 수 있는 모델 이름을 나열한다. 이 목록이 믿을 만한 출처다. 다만 사용자가 쓸 수 있는 모델 목록을 주는 API나 CLI 도구가 Cursor 쪽에 있으면, 그쪽을 우선한다. 하나도 못 찾으면, 사용자에게 쓸 수 있는 이름을 붙여 넣어 달라고 한다. | setup-flow | detect |
+| st-load | 현재 상태 | 규칙 파일이 있으면, 에이전트가 파일을 읽고 `# budget` 줄과 역할 값을 현재 선택으로 삼는다. 파일이 없으면 5단계 모양의 기본값에서 시작한다. 5단계에 없는 역할 줄(예: `how critics`)은 은퇴한 역할이므로 버린다. | setup-flow | load |
+| st-ask | 예산·역할 | 에이전트가 예산을 묻고, 그 예산을 적용한 역할 표를 보여 준 뒤 그대로 쓸지 바꿀지 묻는다. 두 질문 모두 자유 입력보다 `AskQuestion`을 우선한다. 자세한 규칙은 아래 패널에 있다. | setup-flow | ask |
+| st-valid | 모두 확인? | 규칙에 쓸 실제 모델 이름은 모두 1단계에서 확인한 것이어야 한다. 고른 이름이 확인된 목록에 없으면, 멈추고 다시 묻는다. | setup-flow | valid |
+| st-write | 규칙 쓰기 | 에이전트가 `alwaysApply: true`, `# budget` 줄, 역할마다 한 줄을 쓴다. 다시 돌려도 결과가 같도록 파일 전체를 덮어쓴다. 그다음 사용자에게 규칙이 새 세션부터 적용되고, 다시 돌리면 갱신된다고 알린다(6단계). | setup-flow | write |
+| st-offer | 검증 제안 | 프로젝트에 `verify-*` 스킬이나 앱 하네스가 없으면, 검증 스킬 생성을 한 번만 제안한다. 사용자가 예라고 하면 `/create-verification-skill`을 실행하고, 아니라고 하면 더 권하지 않고 넘어간다. | setup-flow | offer |
 
 이 흐름은 `SKILL.md`의 1~7단계를 그대로 옮긴 것이다. 1단계는 모델 확인, 2단계는 현재 상태, 3단계는 예산·역할, 4단계는 검증, 5·6단계는 규칙 쓰기, 7단계는 검증 제안이다.[](source:s1)[](source:s2)[](source:s4)[](source:s6)[](source:s7)
 
 ## 예산과 역할은 어떻게 정하나 {#budget}
 
-예산 질문은 아래 네 라벨을 원문 그대로 보여 준다. 규칙에 기록된 예산이 있으면 현재 예산이 무엇인지도 말한다.[](source:s3a)
+에이전트는 예산 질문에서 아래 네 라벨을 원문 그대로 보여 준다. 규칙 파일에 기록된 예산이 있으면, 현재 예산이 무엇인지도 말한다.[](source:s3a)
 
 | 예산 라벨 | 실제 모델 이름의 추론 강도 |
 | --- | --- |
@@ -89,8 +89,8 @@
 예산을 적용하는 규칙은 다음과 같다.[](source:s3b)
 
 - 작업 표는 스킬 기본값에서 만든다. 다시 돌릴 때는 사용자가 계열·목록·별칭으로 바꿔 둔 역할을 유지한다.
-- 추론 강도(effort)는 모델 이름의 마지막 토큰이다. 끝에 `fast`가 붙으면 그 앞 토큰이다. 패널 목록 안의 이름도 모두 바꾼다.
-- 바꾼 이름이 확인된 모델에 없으면 같은 계열에서 목표 이하 중 가장 높은 추론 강도를 고른다. 그것도 없으면 그 역할을 "선택 필요"로 표시한다.
+- 추론 강도(effort)는 모델 이름의 마지막 토큰이다. 이름 끝에 `fast`가 붙어 있으면, 그 앞 토큰이다. 패널 목록 안의 이름도 모두 바꾼다.
+- 바꾼 이름이 확인된 모델에 없으면, 같은 계열에서 목표 이하 중 가장 높은 추론 강도를 고른다. 그런 모델도 없으면, 그 역할을 "선택 필요"로 표시한다.
 - `inherit-parent`와 `auto`는 바꾸지 않는다.
 
 @facts
@@ -106,9 +106,9 @@
 
 | 역할 종류 | 값의 뜻 |
 | --- | --- |
-| 패널 역할(`arena runners`, `architect runners`, `interrogate reviewers`) | 목록이다. 항목마다 서브에이전트가 하나씩 돈다. 별칭 항목도 하나로 센다. 그래서 목록 길이가 개수를 정한다[](source:s3c) |
+| 패널 역할(`arena runners`, `architect runners`, `interrogate reviewers`) | 값이 목록이다. 항목 하나마다 서브에이전트가 하나씩 돈다. 별칭 항목도 하나로 센다. 그래서 목록 길이가 서브에이전트 개수를 정한다[](source:s3c) |
 | `arena cross-judge pool` | 목록이지만 `arena`가 하나만 고른다. 가능하면 부모와 다른 계열을 고른다[](source:s3c) |
-| `swarm workers` | 모든 작업자의 기본 모델이다. 경주나 비교에서 갈래마다 모델을 따로 주면 그것을 쓴다[](source:s3c) |
+| `swarm workers` | 모든 작업자의 기본 모델이다. race(같은 일을 여럿이 경쟁)나 비교에서 갈래마다 모델을 따로 주면 그것을 쓴다[](source:s3c) |
 
 ## 무엇을 쓰고 누가 읽나 {#rule-file}
 
@@ -125,7 +125,7 @@
 | `interrogate reviewers` | `interrogate`[](source:interrogate-models) | r35 |
 | `reflect tooling`, `reflect judgment, divergent, synthesizer` | `reflect`[](source:reflect-models) | r36 |
 
-읽는 쪽 스킬은 모두 같은 규칙을 따른다. 파일이나 줄이 없으면 자기 기본값을 쓰고, 값이 `auto`나 `inherit-parent`면 `model`을 비운다.[](source:how-models)[](source:pm-models) 줄 하나를 지우면 그 역할은 스킬 기본값으로 돌아간다.[](source:shape)
+읽는 쪽 스킬은 모두 같은 규칙을 따른다. 파일이나 줄이 없으면 자기 기본값을 쓰고, 값이 `auto`나 `inherit-parent`이면, `model`을 비운다.[](source:how-models)[](source:pm-models) 줄 하나를 지우면 그 역할은 스킬 기본값으로 돌아간다.[](source:shape)
 
 @callout level=warning title="파일 전체를 덮어쓴다"
 5단계는 다시 돌려도 결과가 같도록 파일을 통째로 다시 쓴다.[](source:s5) 2단계에서 버린 은퇴 역할 줄은 새 파일에 남지 않는다.[](source:s2) 판정: 사용자가 이 파일에 손으로 넣은 다른 줄이나 주석도 사라진다. 원문은 버린 줄을 3단계에서 보여 주라고만 한다.[](source:s3c)
@@ -150,7 +150,7 @@
 | 규칙 쓰기 완료(스킬별 줄) | 역할별 모델 → `how`, `why`, `arena`, `swarm`, `architect`, `interrogate`, `reflect` | 줄이 없으면 각 스킬 기본값 | r30–r36 |
 | 7단계 제안에 대한 사용자 답 | `/create-verification-skill` 실행 | 앱을 돌릴 수단이 없고 사용자가 예라고 할 때만. 제안은 한 번 | r37 |
 
-`setup-pstack`은 두 묶음에 속한다. 작업 준비 단계로는 `pstack/_group-run/run.html`, 검증 도구를 만드는 입구로는 `pstack/_group-verify-harness/verify-harness.html`을 본다. 공유 상태는 순서 관계가 아니다. 이 파일을 쓴 뒤 다른 스킬이 꼭 이어서 도는 것은 아니다.
+`setup-pstack`은 두 묶음에 속한다. 작업 준비 단계로는 `pstack/_group-run/run.html`, 검증 도구를 만드는 입구로는 `pstack/_group-verify-harness/verify-harness.html`을 본다. 공유 상태는 순서 관계가 아니다. 이 파일을 쓴다고 해서 다른 스킬이 꼭 이어서 도는 것은 아니다.
 
 ## 이 분석의 범위와 한계 {#audit}
 
@@ -158,10 +158,10 @@
 - 대조용으로 읽은 줄: `poteto-help`, `poteto-mode`, `how`, `why`, `reflect`, `arena`, `swarm`, `architect`, `interrogate`, `create-verification-skill`의 해당 줄. 출처 목록에 줄 범위가 있다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 모델 확인, 규칙 쓰기, 검증 스킬 제안은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 그래서 모델 확인, 규칙 쓰기, 검증 스킬 제안은 모두 스킬에 적힌 지시상의 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-다시 돌릴 때 "계열·목록·별칭으로 바꾼 역할을 유지한다"에서 계열로 바꿨다는 것을 어떻게 알아내는지는 원문에 명시 없음. 이전 규칙과 기본값을 비교한다고 짐작할 뿐이다.
+다시 돌릴 때 "계열·목록·별칭으로 바꾼 역할을 유지한다"에서, 역할을 계열로 바꿨다는 것을 에이전트가 어떻게 알아내는지는 원문에 명시 없음. 이전 규칙과 기본값을 비교한다고 짐작할 뿐이다.
 모델 계열(family)의 경계도 원문에 명시 없음. 예시는 `claude-opus-5-5`, `grok-4.7` 앞부분을 같은 계열로 다룬다.
-`arena cross-judge pool`과 `swarm workers`에도 예산의 추론 강도 변경이 적용되는지는 "패널 항목 포함, 모든 실제 이름"이라는 문장으로만 읽힌다. 판정: 적용된다.
+`arena cross-judge pool`과 `swarm workers`에도 예산의 추론 강도 변경이 적용되는지는, "패널 항목 포함, 모든 실제 이름"이라는 문장에서만 읽어낼 수 있다. 판정: 적용된다.

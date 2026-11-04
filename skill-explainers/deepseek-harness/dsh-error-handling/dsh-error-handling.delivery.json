@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "50d47640-f8ff-49fd-9f9e-b38c78c150d4",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-error-handling/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-error-handling/dsh-error-handling.html",
+  "specification": {
+    "sha256": "acecaa00d7d64bc219da1b39fc55fcda13472d531a999549b27747afc40c312f",
+    "bytes": 12011
+  },
+  "artifact": {
+    "sha256": "6539a144d95dc5b7a317a8aff59860c914165b6e5060350083456de1a1a3aa62",
+    "bytes": 1044745
+  },
+  "explainer": {
+    "preparedSha256": "2c6c92b3f7b2306b974c8d82c1dcf16a140b4821d08624a0abb69d730ad4b5d2",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "eh-fm",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-intro",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-typed",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-define",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-catch",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-report",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-visible",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-verify",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "eh-found",
+        "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+        "bytes": 2389
+      },
+      {
+        "kind": "repository",
+        "id": "ui-eh",
+        "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+        "bytes": 9486
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "failure-decision",
+        "inline": true,
+        "sha256": "4b54be63981a135ddd729aa66232e0e699c46ee61b548fb9694911d14e030670",
+        "bytes": 1694
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "error-position",
+        "inline": true,
+        "sha256": "ea57dbc33f55901e244d43cda92a304c7575a5814746d157f2a574445f9c029b",
+        "bytes": 725
+      }
+    ]
+  }
+}

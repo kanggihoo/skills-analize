@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T12:47:48.807Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/candidate.archify.md",
+    "sha256": "84f6b9b8a7f657bc8300cc446a5f117bf2b6756a19a3ea4b8bf55bc6ef23a6d1",
+    "bytes": 21077
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+    "sha256": "358aee10e253eb40069ee5648c3be743e303ae19aae18278ddcbf6bae92bac7a",
+    "bytes": 1429716
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "84f6b9b8a7f657bc8300cc446a5f117bf2b6756a19a3ea4b8bf55bc6ef23a6d1",
+          "bytes": 21077
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1113,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "eb8050e7-036a-4205-82c9-d25bba65f297",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+        "explainer": {
+          "preparedSha256": "5407d822c7ea37c826ab06379767de99149024403e07b32121c0dcb2899bf7a5",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "cs-fm",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-yaml",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-recog",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-no",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-choices",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-auth",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-create",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-create-out",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-cfg",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-unlock",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-verify",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-e2e",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "cs-remove",
+              "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+              "bytes": 8047
+            },
+            {
+              "kind": "repository",
+              "id": "si-doc",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-const",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-priv",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-lock",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-dir",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-owned",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-load",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-cert",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-setup",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-remove",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "si-main",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+              "bytes": 11817
+            },
+            {
+              "kind": "repository",
+              "id": "e2e-doc",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_e2e.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "96a6c7649730f5fce6566392602479ed7c3745afe986f1c8ea31000d9abbcd17",
+              "bytes": 4524
+            },
+            {
+              "kind": "repository",
+              "id": "e2e-main",
+              "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_e2e.py",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "96a6c7649730f5fce6566392602479ed7c3745afe986f1c8ea31000d9abbcd17",
+              "bytes": 4524
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "cua-flow",
+              "inline": true,
+              "sha256": "16214725ac9331e6a3cbb235a5e5dda4c830218a47cd51079f9be4120d4f2cd7",
+              "bytes": 1324
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "key-layout",
+              "inline": true,
+              "sha256": "97f7991fa2a8bcbad4186ed6e30bb1222939e4c749d424db6be62b52050598aa",
+              "bytes": 536
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "84f6b9b8a7f657bc8300cc446a5f117bf2b6756a19a3ea4b8bf55bc6ef23a6d1",
+          "bytes": 21077
+        },
+        "artifact": {
+          "sha256": "358aee10e253eb40069ee5648c3be743e303ae19aae18278ddcbf6bae92bac7a",
+          "bytes": 1429716
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 610,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "358aee10e253eb40069ee5648c3be743e303ae19aae18278ddcbf6bae92bac7a",
+          "bytes": 1429716
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "136 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "28 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "cua-flow: pass",
+              "key-layout: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "cua-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-QAjPyN/child.html",
+                "artifact": {
+                  "sha256": "792436f28451f8c359de3c6a591e9f0d47bf812086027323f22ae1d9977192ee",
+                  "bytes": 838597
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 82.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.864693446088795,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-keep-1",
+                      "from": "ask",
+                      "to": "keep"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.864693446088795,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "key-layout",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-hRgp3p/child.html",
+                "artifact": {
+                  "sha256": "010c2eef11286c3c7e96be9b006174db6931d0a380f5dd174057876266bf5e36",
+                  "bytes": 836132
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 13,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "lock"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 13,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "eb8050e7-036a-4205-82c9-d25bba65f297"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T12:47:50.690Z",
+  "durationMs": 1882,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

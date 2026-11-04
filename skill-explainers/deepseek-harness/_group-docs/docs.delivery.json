@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "efd0fd34-6bb0-4b2d-9003-c96855b31c77",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-docs/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-docs/docs.html",
+  "specification": {
+    "sha256": "a2d8a0e68769ee71042554d18fa7607f50ea2825c1aeb9ed94c65e6d8f8832d0",
+    "bytes": 17882
+  },
+  "artifact": {
+    "sha256": "f4a653d84fc1934d25b840bf91ffbe144c70751d61d302fe3cdac10d9e594ee6",
+    "bytes": 1108597
+  },
+  "explainer": {
+    "preparedSha256": "24adfd60607de2c483370818c5c45932015645ba1a8a7faac16db4227b09b3bd",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "td-fm",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "doc-fm",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "doc-pair",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "doc-kind-ug",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "doc-slop",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "doc-prose",
+        "path": "deepseek-harness/dsh-doc/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a0f5a09bf759a75d63d145d64899c640dcc240845e15eb5b87a3a2ab2eda65de",
+        "bytes": 18418
+      },
+      {
+        "kind": "repository",
+        "id": "doc-style",
+        "path": "deepseek-harness/dsh-doc/references/style.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "62600401bc7d771e17aaefd93748432153def0502cbc38b9176cdc15cc6167af",
+        "bytes": 4117
+      },
+      {
+        "kind": "repository",
+        "id": "doc-web19",
+        "path": "deepseek-harness/dsh-doc/references/website-sync.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "6ab2dc43aa43c964350a800304f53d51fcc6280ee882aac2a3223dff3e52bdfc",
+        "bytes": 6850
+      },
+      {
+        "kind": "repository",
+        "id": "doc-web87",
+        "path": "deepseek-harness/dsh-doc/references/website-sync.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "6ab2dc43aa43c964350a800304f53d51fcc6280ee882aac2a3223dff3e52bdfc",
+        "bytes": 6850
+      },
+      {
+        "kind": "repository",
+        "id": "doc-tpl",
+        "path": "deepseek-harness/dsh-doc/templates/upgrade-guide.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "06ba6b63e6ccff6aad68f4aa11467cbc7786db880729a5eaf84c0fdf6d0c818f",
+        "bytes": 909
+      },
+      {
+        "kind": "repository",
+        "id": "ps-split",
+        "path": "deepseek-harness/dsh-prose-standard/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "63530dfc600b1be07b6f2c1d1a794a3ce0ef78f91d2c18b7b1303dce3b0d5e72",
+        "bytes": 9899
+      },
+      {
+        "kind": "repository",
+        "id": "ps-arch",
+        "path": "deepseek-harness/dsh-prose-standard/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "63530dfc600b1be07b6f2c1d1a794a3ce0ef78f91d2c18b7b1303dce3b0d5e72",
+        "bytes": 9899
+      },
+      {
+        "kind": "repository",
+        "id": "tc-scope",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "tc-fix",
+        "path": "deepseek-harness/dsh-trim-cot-leakage/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "977eeb1dfe694e170ac36d9a61c2d9548a2547c3bc170c87e50033cc701d7c2e",
+        "bytes": 7699
+      },
+      {
+        "kind": "repository",
+        "id": "ug-fm",
+        "path": "deepseek-harness/dsh-create-upgrade-guide/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "0ee972372b3fa02c92736e39179940dfe3e8ff1141a95dceefd4fd864ff8963a",
+        "bytes": 3734
+      },
+      {
+        "kind": "repository",
+        "id": "ug-tpl",
+        "path": "deepseek-harness/dsh-create-upgrade-guide/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "0ee972372b3fa02c92736e39179940dfe3e8ff1141a95dceefd4fd864ff8963a",
+        "bytes": 3734
+      },
+      {
+        "kind": "repository",
+        "id": "ug-prose",
+        "path": "deepseek-harness/dsh-create-upgrade-guide/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "0ee972372b3fa02c92736e39179940dfe3e8ff1141a95dceefd4fd864ff8963a",
+        "bytes": 3734
+      },
+      {
+        "kind": "repository",
+        "id": "td-boundary",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "td-step5",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "td-rec",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "td-prose",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "td-pre",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "td-review",
+        "path": "deepseek-harness/dsh-translate-docs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "a72d26e988a6f9be29a09d6776bda0539ead49c42a447d327636fe4de0da83e7",
+        "bytes": 10604
+      },
+      {
+        "kind": "repository",
+        "id": "cr-prose",
+        "path": "deepseek-harness/dsh-code-review/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "f89af2214a53de119f08aa7391dad15f7d235c16f38d542090e1abac99067e47",
+        "bytes": 11550
+      },
+      {
+        "kind": "repository",
+        "id": "cr-bi",
+        "path": "deepseek-harness/dsh-code-review/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "f89af2214a53de119f08aa7391dad15f7d235c16f38d542090e1abac99067e47",
+        "bytes": 11550
+      },
+      {
+        "kind": "repository",
+        "id": "cr-notes",
+        "path": "deepseek-harness/dsh-code-review/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "f89af2214a53de119f08aa7391dad15f7d235c16f38d542090e1abac99067e47",
+        "bytes": 11550
+      },
+      {
+        "kind": "repository",
+        "id": "an-fm",
+        "path": "deepseek-harness/dsh-archive-agent-notes/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "298e95629ade953ba5e0e4fd4c50e5205389ac6adc5d55dea1ef26617a323f84",
+        "bytes": 6721
+      },
+      {
+        "kind": "repository",
+        "id": "sp-ug",
+        "path": "deepseek-harness/dsh-session-projection/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "18f73a4b08b3fe6fb9d779c0a0dfd4a014d8bc05fff755b417aa0c8e05f58e50",
+        "bytes": 5476
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "docs-flow",
+        "inline": true,
+        "sha256": "40c8b69eebdc9ad01e3698290c86fc117dce1a6bf1a9ef0b4a65161312edb03b",
+        "bytes": 2119
+      }
+    ]
+  }
+}

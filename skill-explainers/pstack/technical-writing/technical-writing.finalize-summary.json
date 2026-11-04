@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/candidate.archify.md",
-    "sha256": "6cba8fec400b37b51fa3e0dad7fc6e7249baf3216d0525fe6793c8c46587fa31",
-    "bytes": 14505
+    "sha256": "3cce4a794e5304242f661635d297262d1734f025b385f7833c7a443d23747d85",
+    "bytes": 14795
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/technical-writing.html",
-    "sha256": "46631e4475229918c9a2aed25669108c5005b134d1cb8b2f193a361f2146dfa1",
-    "bytes": 907677
+    "sha256": "0b9b10877cc888ce26fab6ee07775a43e91e0a6537db1b3b321b508d27816284",
+    "bytes": 906568
   },
   "gates": {
     "validate": "pass",
@@ -21,59 +21,28 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/candidate.archify.md",
-        "line": 72,
-        "component": "list",
-        "panelId": "flow"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "In order to"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/candidate.archify.md",
-        "line": 73,
-        "component": "list",
-        "panelId": "flow"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "utilize"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    }
-  ],
+  "diagnostics": [],
   "diagnosticSummary": {
-    "total": 2,
-    "shown": 2,
+    "total": 0,
+    "shown": 0,
     "truncated": false
   },
   "evidence": {
     "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/technical-writing.finalize.json",
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/technical-writing/technical-writing.finalize-summary.json"
   },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
   "visualReview": "not-requested",
-  "durationMs": 3538,
+  "durationMs": 1416,
   "browserCheck": {
     "requested": false,
     "ran": false

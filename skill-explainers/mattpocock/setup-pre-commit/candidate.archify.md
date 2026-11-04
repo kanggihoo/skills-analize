@@ -1,11 +1,11 @@
 # setup-pre-commit 스킬은 에이전트를 어떻게 바꾸나 {#setup-pre-commit-skill}
 
-`setup-pre-commit`을 쓰면 에이전트는 현재 저장소에 Husky 커밋 전 훅을 설치한다. 훅은 스테이징된 파일에 Prettier를 돌리고, 이어서 타입 검사와 테스트를 돌린다.[](source:skill-what)
+`setup-pre-commit`을 쓰면 에이전트는 현재 저장소에 Husky commit 전 훅을 설치한다. 훅은 스테이징된 파일에 Prettier를 돌리고, 이어서 타입 검사와 테스트를 돌린다.[](source:skill-what)
 
 - 패키지 관리자는 잠금 파일로 고른다. 애매하면 npm을 쓴다.[](source:skill-detect)
 - 사용자에게 묻는 단계가 없다. `typecheck`나 `test` 스크립트가 없을 때만 그 줄을 빼고 사용자에게 알린다.[](source:skill-hook)
-- 마지막에 바뀐 파일을 모두 스테이징하고 직접 커밋한다. 이 커밋이 새 훅의 첫 시험이다.[](source:skill-commit)
-- 판정: 커밋 전에 사용자 확인을 받으라는 말이 없어서, 이 스킬이 켜지면 커밋까지 한 번에 간다.[](source:skill-commit)
+- 마지막에 바뀐 파일을 모두 스테이징하고 직접 commit한다. 이 commit이 새 훅의 첫 시험이다.[](source:skill-commit)
+- 판정: commit 전에 사용자 확인을 받으라는 말이 없어서, 이 스킬이 켜지면 commit까지 한 번에 간다.[](source:skill-commit)
 
 @answer scope="mattpocock/setup-pre-commit · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
 @meta locale=ko
@@ -28,7 +28,7 @@
 
 frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `description`을 보고 스스로 켤 수 있다.[](source:skill-fm) `agents/openai.yaml`에도 `policy` 블록이 없다. 암묵 호출을 막는 `allow_implicit_invocation: false`가 없다는 뜻이다.[](source:oa-yaml)
 
-`description`이 그리는 상황은 커밋 전 훅, Husky, lint-staged, 커밋 시점의 포맷·타입 검사·테스트를 더하고 싶을 때다. 이 설명은 판단 참고용이다.
+`description`이 그리는 상황은 commit 전 훅, Husky, lint-staged, commit 시점의 포맷·타입 검사·테스트를 더하고 싶을 때다. 이 설명은 판단 참고용이다.
 
 ## 어떤 순서로 설치하나 {#flow}
 
@@ -37,7 +37,7 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 | install | 의존성 설치 | backend |
 | files | 설정 파일 작성 | backend |
 | verify | 확인 목록 | backend |
-| commit | 커밋 | backend |
+| commit | commit | backend |
 | detect > install | | |
 | install > files | | |
 | files > verify | | |
@@ -48,7 +48,7 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 | s-install | 의존성 설치 | `husky`, `lint-staged`, `prettier`를 개발 의존성으로 설치한다. 이어서 `npx husky init`으로 `.husky/`를 만들고 `package.json`에 `prepare: "husky"`를 넣는다. | setup-flow | install |
 | s-files | 설정 파일 작성 | `.husky/pre-commit`, `.lintstagedrc`를 쓴다. Prettier 설정이 하나도 없을 때만 `.prettierrc`를 만든다. | setup-flow | files |
 | s-verify | 확인 목록 | 아래 다섯 항목을 확인한다. 마지막 항목은 `npx lint-staged`를 직접 돌리는 것이다. | setup-flow | verify |
-| s-commit | 커밋 | 바뀐 파일을 모두 스테이징하고 `Add pre-commit hooks (husky + lint-staged + prettier)` 메시지로 커밋한다. 새 훅이 이 커밋에서 처음 돈다. | setup-flow | commit |
+| s-commit | commit | 바뀐 파일을 모두 스테이징하고 `Add pre-commit hooks (husky + lint-staged + prettier)` 메시지로 commit한다. 새 훅이 이 commit에서 처음 돈다. | setup-flow | commit |
 
 | 만드는 것 | 내용 | 조건 |
 | --- | --- | --- |
@@ -76,10 +76,10 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 - [ ] Prettier 설정이 있다
 - [ ] `npx lint-staged`가 성공한다
 
-위 목록은 7단계 원문 그대로다.[](source:skill-verify) 8단계 커밋이 훅을 거쳐 성공하면 종단 시험까지 끝난다.[](source:skill-commit)
+위 목록은 7단계 원문 그대로다.[](source:skill-verify) 8단계 commit이 훅을 거쳐 성공하면 종단 시험까지 끝난다.[](source:skill-commit)
 
 @callout level=warning title="커밋 범위와 확인 절차"
-8단계는 "바뀌거나 만든 파일을 모두" 스테이징한다. 판정: 작업 트리에 이 스킬과 무관한 변경이 있으면 그것도 같은 커밋에 들어갈 수 있다. 커밋 전 사용자 확인은 원문에 명시 없음.[](source:skill-commit)
+8단계는 "바뀌거나 만든 파일을 모두" 스테이징한다. 판정: 작업 트리에 이 스킬과 무관한 변경이 있으면 그것도 같은 commit에 들어갈 수 있다. commit 전 사용자 확인은 원문에 명시 없음.[](source:skill-commit)
 
 판정: 원문 안에 작은 불일치가 있다. 설치는 감지한 관리자로 하라고 하지만, `npx husky init`과 확인 단계의 `npx lint-staged`는 `npx`로 고정돼 있다.[](source:skill-install)[](source:skill-verify) 이미 있는 lint-staged 설정(예: `package.json`의 키)을 어떻게 할지도 원문에 명시 없음.
 
@@ -87,8 +87,8 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 
 | rel-id | 상대 | 종류 | 내용 |
 | --- | --- | --- | --- |
-| r08 | `git-guardrails-claude-code` | 같은 계열(추론) | 둘 다 장치로 실수를 막는다. 이 스킬은 커밋 전에, `git-guardrails-claude-code`는 명령 실행 전에 막는다.[](source:gg-desc) |
-| r09 | `retro` | 산출물 호환(추론) | `retro`가 "커밋 전 훅도 CI도 없는 저장소"를 개선 후보로 내면 이 스킬이 실행 도구가 될 수 있다. `retro`는 이 스킬을 이름으로 부르지 않는다. |
+| r08 | `git-guardrails-claude-code` | 같은 계열(추론) | 둘 다 장치로 실수를 막는다. 이 스킬은 commit 전에, `git-guardrails-claude-code`는 명령 실행 전에 막는다.[](source:gg-desc) |
+| r09 | `retro` | 산출물 호환(추론) | `retro`가 "commit 전 훅도 CI도 없는 저장소"를 개선 후보로 내면 이 스킬이 실행 도구가 될 수 있다. `retro`는 이 스킬을 이름으로 부르지 않는다. |
 
 관계 근거는 `mattpocock/relations.md`의 rel-id로 확인한다.
 
@@ -97,8 +97,8 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 - 읽은 파일: `SKILL.md`, `agents/openai.yaml`. 두 파일 모두 원본이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실행하지 않았다. 설치·파일 작성·커밋은 모두 지시상 동작이다.
+- 실행하지 않았다. 설치·파일 작성·commit은 모두 지시상 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-"Prettier 설정이 있다"를 어떤 파일 이름으로 판단하는지는 원문에 명시 없음. `typecheck`·`test`가 실패해 8단계 커밋이 막혔을 때 어떻게 할지도 원문에 명시 없음.
+"Prettier 설정이 있다"를 어떤 파일 이름으로 판단하는지는 원문에 명시 없음. `typecheck`·`test`가 실패해 8단계 commit이 막혔을 때 어떻게 할지도 원문에 명시 없음.

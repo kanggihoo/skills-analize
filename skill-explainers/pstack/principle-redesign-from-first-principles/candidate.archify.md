@@ -28,7 +28,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-redesign-from-first-principles`를 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-redesign-from-first-principles`를 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -36,12 +36,12 @@
 | `poteto-mode` | Core 원칙. 새 요구를 기존 설계에 통합할 때[](source:pm-line) |
 | `refactoring` 플레이북 | 3단계. 목표 모양에 이름을 붙일 때[](source:pb-refactoring) |
 | `architect` | Phase E. 구현 마찰이 계속되어 설계 스케치를 버릴 때[](source:architect-e)[](source:architect-scrap) |
-| `arena` | 진 후보의 좋은 부분을 기반 후보에 접붙일 때[](source:arena) |
+| `arena` | 진 후보의 좋은 부분을 base(기반이 되는 후보)에 graft(진 후보의 장점을 합치기)할 때[](source:arena) |
 | `no-comments` | 4단계. 근본 원인 수정의 의도를 잡을 때[](source:nocomments) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -77,8 +77,8 @@
 | `poteto-mode`의 판단 상황 | 답변 속 원칙 이름과 바뀐 선택 | 새 요구를 기존 설계에 통합[](source:pm-line) | r12 |
 | `refactoring` 3단계 | 오늘 짓는다면 어떤 모듈 배치·타입·호출 그래프일지 | `principle-foundational-thinking`과 함께 든다[](source:pb-refactoring) | 원장 플레이북 표 |
 | `architect` Phase E | 새 스케치 | 구현 마찰을 스케치가 흡수하지 못할 때. 새 제약을 첫날 가정처럼 다룬다[](source:architect-e)[](source:architect-scrap) | 원장에 없음 |
-| `arena` 접붙이기 | 하나의 머릿속 모델로 일관된 결과 | 기계적으로 붙여 넣지 않고 손으로 합친다[](source:arena) | 원장에 없음 |
-| `no-comments` 4단계 | - | 의도만 안내한다. 범위 밖 수정을 허락하지 않는다[](source:nocomments) | r67 |
+| `arena` graft | 하나의 머릿속 모델로 일관된 결과 | 기계적으로 붙여 넣지 않고 손으로 합친다[](source:arena) | 원장에 없음 |
+| `no-comments` 4단계 | - | 이 원칙은 의도만 안내하며 범위 밖 수정을 허락하지 않는다[](source:nocomments) | r67 |
 | `principle-attack-the-premise` | - | 두 원칙의 구별[](source:premise) | r103 |
 
 이 원칙은 다른 스킬을 부르지 않는다. 전체 흐름은 `pstack/_group-principles/principles.html`에 있다.
@@ -88,9 +88,9 @@
 - 읽은 파일: `SKILL.md`(844B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `playbooks/refactoring.md`, `architect/SKILL.md`, `arena/SKILL.md`, `no-comments/SKILL.md`, `principle-attack-the-premise/SKILL.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-"조금씩 전달한다"의 단위(커밋, PR)는 원문에 명시 없음.
+"조금씩 전달한다"의 단위(commit, PR)는 원문에 명시 없음.
 "선택의 여지(option value)"가 무엇을 가리키는지 원문은 더 설명하지 않는다.

@@ -3,9 +3,9 @@
 이 원칙을 적용하면 에이전트는 도메인을 여러 곳에 흩어진 조건문으로 쓰지 않는다. 도메인에 맞는 자료 구조를 먼저 고르고, 그 구조에 규칙을 담는다.[](source:skill-intro)
 
 - 흩어진 boolean 대신 상태 기계, 여러 파일에 퍼진 분기 대신 표나 등록부처럼 구조를 바꿔 끼운다.[](source:skill-structures)
-- 구조는 코드를 쓸 때 고른다. 쓸 때는 싸지만 나중에 되찾으면 리팩터링이 되어 미뤄지기 때문이다.[](source:skill-why)
+- 구조는 코드를 쓸 때 고른다. 쓸 때 고르면 비용이 작지만, 나중에 되찾으려 하면 리팩터링으로 보여 계속 미뤄지기 때문이다.[](source:skill-why)
 - 추상화를 억지로 만들지는 않는다. 모양이 이미 명확하고 지역적이면 평범한 코드를 둔다.[](source:skill-caution)
-- `poteto-mode`는 코드를 쓸 때마다 데이터 모양을 먼저 정하고, 그 구조를 이 원칙으로 고르게 한다.[](source:pm-code)
+- `poteto-mode`는 에이전트가 코드를 쓸 때마다 데이터 모양을 먼저 정하고, 그 구조를 이 원칙으로 고르게 한다.[](source:pm-code)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
 @meta locale=ko
@@ -27,7 +27,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-model-the-domain`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-model-the-domain`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -37,9 +37,9 @@
 | `feature` 플레이북 | 4단계. 코드 작성을 서브에이전트에 맡기기 전에 구조를 정할 때[](source:pb-feature) |
 | `refactoring` 플레이북 | 2단계. 코드에 빠진 구조를 이름 붙일 때[](source:pb-refactoring) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -87,7 +87,7 @@
 | --- | --- | --- | --- |
 | `poteto-mode` Non-negotiables | 데이터 모양과 그 구조 | 모든 코드 작성. 의무형[](source:pm-code) | r13 |
 | `poteto-mode` 원칙 목록 | 답변 속 원칙 이름과 바뀐 선택 | 상태 있는 로직, 분기가 많거나 모양 가정이 반복될 때[](source:pm-line) | r12 |
-| `feature` 플레이북 4단계 | 위임 범위에 넣을 구조 | 서브에이전트가 로직을 쓰기 전에 고른다[](source:pb-feature) | 원장 플레이북 표 |
+| `feature` 플레이북 4단계 | 위임 범위에 넣을 구조 | 위임하는 에이전트가, 서브에이전트가 로직을 쓰기 전에 구조를 고른다[](source:pb-feature) | 원장 플레이북 표 |
 | `refactoring` 플레이북 2단계 | 빠진 구조의 이름 | 평범한 코드는 둔다. 재구성은 분기나 잘못된 상태를 지워야 한다[](source:pb-refactoring) | 원장 플레이북 표 |
 
 이 원칙은 다른 스킬을 부르지 않는다. 원칙끼리의 참고 관계(r100~r107)에도 나오지 않는다. 전체 흐름은 `pstack/_group-principles/principles.html`에 있다.
@@ -97,7 +97,7 @@
 - 읽은 파일: `SKILL.md`(2082B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `playbooks/feature.md`, `playbooks/refactoring.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

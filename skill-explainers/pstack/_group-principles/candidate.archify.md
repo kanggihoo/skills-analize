@@ -1,9 +1,9 @@
 # 원칙 묶음(principles)은 어떻게 쓰이나 {#principles-group}
 
-원칙 24개는 `poteto-mode`가 판단 근거로 읽고 답변에 인용하는 한 줄 규칙이다. `poteto-mode`는 원칙마다 꺼낼 조건을 적고, 다섯 분류로 묶는다.[](source:pm-head)[](source:help-principles)
+원칙 24개는 `poteto-mode`가 판단 근거로 읽고 답변에 인용하는 한 줄 규칙이다. `poteto-mode`는 원칙마다 꺼낼 조건을 적어 두고, 원칙을 다섯 분류로 묶는다.[](source:pm-head)[](source:help-principles)
 
-- 원칙을 적용하려면 그 원칙의 `SKILL.md`를 끝까지 읽어야 한다. 답변에는 결정에 영향을 준 원칙과 그 원칙이 바꾼 선택을 밝힌다.[](source:pm-cite)[](source:pm-head)
-- 인용은 이번 세션에 읽은 원칙만 할 수 있다.[](source:pm-cite)
+- 원칙을 적용하려면, 에이전트는 그 원칙의 `SKILL.md`를 끝까지 읽어야 한다. 답변에는 결정에 영향을 준 원칙과 그 원칙이 바꾼 선택을 밝힌다.[](source:pm-cite)[](source:pm-head)
+- 에이전트는 이번 세션에 읽은 원칙만 인용할 수 있다.[](source:pm-cite)
 - 분류별 개수는 Core 10, Architecture 6, Verification 5, Delegation 2, Meta 1이다.[](source:pm-core)[](source:pm-archi)[](source:pm-verif)[](source:pm-deleg)[](source:pm-meta)
 - 원칙끼리 서로를 가리키기도 한다. 대부분 "자세한 건 저쪽" 또는 "저쪽과 이렇게 다르다"는 참고다.[](source:attack-refs)[](source:lever-refs)
 
@@ -78,15 +78,15 @@
 
 @steps id=principle-use-steps
 | s-match | 조건 맞나? | `poteto-mode`는 원칙마다 꺼낼 조건을 적어 둔다. 지금 작업이 그 조건에 맞는지 본다. | principle-use | match |
-| s-read | 원칙 읽기 | 적용할 원칙의 `SKILL.md`를 끝까지 읽는다. | principle-use | read |
-| s-decide | 결정 | 원칙에 따라 선택을 정한다. | principle-use | decide |
-| s-cite | 답변 인용 | 결정에 영향을 준 원칙과 그 원칙이 바꾼 선택을 답변에 적는다. 이번 세션에 읽은 원칙만 인용한다. | principle-use | cite |
+| s-read | 원칙 읽기 | 에이전트가 적용할 원칙의 `SKILL.md`를 끝까지 읽는다. | principle-use | read |
+| s-decide | 결정 | 에이전트가 읽은 원칙에 따라 선택을 정한다. | principle-use | decide |
+| s-cite | 답변 인용 | 에이전트가 결정에 영향을 준 원칙과 그 원칙이 바꾼 선택을 답변에 적는다. 이번 세션에 읽은 원칙만 인용한다. | principle-use | cite |
 
 이 순서는 원장의 r12다.[](source:pm-cite)[](source:pm-head)
 
-사용자가 원칙을 직접 부르는 일은 드물다. 대신 `apply prove it works` 같은 말로 원칙 이름을 써서 방향을 잡는다. `/principle-<이름>`을 입력하면 그 원칙을 바로 불러올 수 있다.[](source:help-principles) 24개 모두 `disable-model-invocation: true`라서 모델이 스스로 켜지 않는다.[](source:p-attack-the-premise)[](source:p-type-system-discipline)
+사용자가 원칙을 직접 부르는 일은 드물다. 대신 사용자가 `apply prove it works` 같은 말로 원칙 이름을 써서 방향을 잡는다. 사용자가 `/principle-<이름>`을 입력하면 그 원칙을 바로 불러올 수 있다.[](source:help-principles) 24개 모두 `disable-model-invocation: true`이므로 모델이 스스로 원칙을 켜지 않는다.[](source:p-attack-the-premise)[](source:p-type-system-discipline)
 
-`principle-model-the-domain`만은 Non-negotiables 목록에도 따로 나온다. 코드를 쓸 때는 먼저 데이터 모양을 정하고, 구조를 이 원칙에 따라 고른다(r13, 의무형).[](source:pm-model)
+`principle-model-the-domain`만은 `poteto-mode`의 Non-negotiables 목록에도 따로 나온다. 에이전트는 코드를 쓸 때 먼저 데이터 모양을 정하고, 구조를 이 원칙에 따라 고른다(r13, 의무형).[](source:pm-model)
 
 ## Core 원칙 10개 {#core}
 
@@ -112,7 +112,7 @@
 | `principle-type-system-discipline` | 타입 언어에서 타입이나 시그니처를 설계할 때[](source:pm-archi) | 잘못된 상태를 표현할 수 없게 만든다[](source:p-type-system-discipline) |
 | `principle-make-operations-idempotent` | 충돌과 재시도 속에서 도는 명령, 수명 주기 단계, 루프를 설계할 때[](source:pm-archi) | 몇 번 돌아도 같은 끝 상태로 수렴하게 한다[](source:p-make-operations-idempotent) |
 | `principle-migrate-callers-then-delete-legacy-apis` | 옛 호출자가 남은 채 새 내부 API를 들일 때[](source:pm-archi) | 호출자 이전과 옛 API 삭제를 한 번에 한다[](source:p-migrate-callers-then-delete-legacy-apis) |
-| `principle-separate-before-serializing-shared-state` | 동시 실행자가 같은 파일·브랜치·키·객체에 쓸 수 있을 때[](source:pm-archi) | 순서를 맞추기 전에 공유부터 없앤다[](source:p-separate-before-serializing-shared-state) |
+| `principle-separate-before-serializing-shared-state` | 동시 실행자가 같은 파일·branch·키·객체에 쓸 수 있을 때[](source:pm-archi) | 순서를 맞추기 전에 공유부터 없앤다[](source:p-separate-before-serializing-shared-state) |
 
 ## Verification, Delegation, Meta 원칙 8개 {#verify-delegate-meta}
 
@@ -120,7 +120,7 @@
 | --- | --- | --- | --- |
 | `principle-prove-it-works` | Verification | 작업을 마치고 완료를 선언하기 전[](source:pm-verif) | 대리 지표가 아닌 실제 산출물로 확인한다[](source:p-prove-it-works) |
 | `principle-fix-root-causes` | Verification | 디버깅할 때[](source:pm-verif) | 재현하고 근본 원인까지 "왜"를 묻는다[](source:p-fix-root-causes) |
-| `principle-sequence-verifiable-units` | Verification | 여러 단계 작업, 커밋과 PR을 쌓는 방식[](source:pm-verif) | 작은 단위마다 확인하고 다음으로 간다[](source:p-sequence-verifiable-units) |
+| `principle-sequence-verifiable-units` | Verification | 여러 단계 작업, commit과 PR을 쌓는 방식[](source:pm-verif) | 작은 단위마다 확인하고 다음으로 간다[](source:p-sequence-verifiable-units) |
 | `principle-test-behavior-not-implementation` | Verification | 테스트를 쓰거나 바꾸거나 남길 때[](source:pm-verif) | 사용자처럼 호출하고 리터럴 기대값과 비교한다[](source:p-test-behavior-not-implementation) |
 | `principle-explain-the-number` | Verification | 직접 잰 수치를 믿거나 보고하거나 그에 따라 움직이기 전[](source:pm-verif) | 수치를 제한하는 것을 찾고, 다른 것을 잰 게 아닌지 배제한다[](source:p-explain-the-number) |
 | `principle-guard-the-context-window` | Delegation | 컨텍스트가 찰 때. 큰 출력, 긴 파일, 반복 읽기, 여러 갈래 계획[](source:pm-deleg) | 대량 작업은 서브에이전트로 보내고 요약만 남긴다[](source:p-guard-the-context-window) |
@@ -154,8 +154,8 @@
 | 단위 확인 | `principle-sequence-verifiable-units`. 작은 단위마다 확인한다. 검사를 진짜로 만드는 원칙과 싸게 만드는 원칙을 짝으로 든다. |
 | 수치 설명 | `principle-explain-the-number`. 잰 수치가 말하는 그 뜻인지 확인한다. |
 | 지렛대 | `principle-build-the-lever`. 손 대신 도구를 만든다. 가장 작은 스크립트로 만들라며 게으름 규약을 가리킨다. 구조로 새김과의 구별(r105)은 그림에서 뺐다. |
-| 근본 원인 | `principle-fix-root-causes`. 역할을 주는 장치가 다음 "왜"라는 근거로 쓰인다. |
-| 게으름 규약 | `principle-laziness-protocol`. "보정하지 말고 없애라", "프레임워크 말고 작은 스크립트"의 근거로 쓰인다. |
+| 근본 원인 | `principle-fix-root-causes`. `attack-the-premise`가 역할을 주는 장치를 찾는 것을 다음 "왜"로 삼으며 이 원칙을 가리킨다. |
+| 게으름 규약 | `principle-laziness-protocol`. "보정하지 말고 없애라"(`attack-the-premise`)와 "프레임워크 말고 작은 스크립트"(`build-the-lever`)가 이 원칙을 가리킨다. |
 | 직접 증명 | `principle-prove-it-works`. 출력이 진짜인지 확인한다. 세 원칙이 이 원칙을 가리킨다. |
 
 ## 원칙끼리 어떻게 가리키나: 경계와 독자 {#cross-refs-2}
@@ -174,9 +174,9 @@
 | exp > found | 구별 | dashed |
 
 @steps id=principle-refs-2-steps
-| s-minimize | 읽기 부담 | `principle-minimize-reader-load`. 사람 독자의 부담을 줄인다. 컨텍스트 보호의 사람판이라고 밝힌다. | principle-refs-2 | minimize |
-| s-type | 타입 규율 | `principle-type-system-discipline`. 검증 위치는 경계 규율에, 스키마에서 타입 끌어오기는 구조로 새김에 맡긴다. | principle-refs-2 | type |
-| s-exp | 경험 우선 | `principle-experience-first`. 기초 사고는 작업 순서를, 자신은 목표를 다룬다고 가른다. 링크 없이 원칙 제목만 쓴다. | principle-refs-2 | exp |
+| s-minimize | 읽기 부담 | `principle-minimize-reader-load`. 사람 독자의 부담을 줄인다. 이 원칙이 `guard-the-context-window`의 사람판이라고 밝힌다. | principle-refs-2 | minimize |
+| s-type | 타입 규율 | `principle-type-system-discipline`. 검증 위치는 `boundary-discipline`에, 스키마에서 타입을 끌어오는 일은 `encode-lessons-in-structure`에 맡긴다. | principle-refs-2 | type |
+| s-exp | 경험 우선 | `principle-experience-first`. `foundational-thinking`은 작업 순서를 다루고 이 원칙은 목표를 다룬다고 가른다. 링크 없이 원칙 제목만 쓴다. | principle-refs-2 | exp |
 
 ## 원칙끼리의 참고 관계 표 {#cross-ref-table}
 
@@ -185,12 +185,12 @@
 | r100 | `principle-attack-the-premise` → `principle-build-the-lever` | 참고 | 집계를 다시 돌릴 수 있는 스크립트로 쓴다[](source:attack-15) | 집계 간선 |
 | r101 | `principle-attack-the-premise` → `principle-fix-root-causes` | 참고 | 역할을 주는 장치를 찾는 것이 다음 "왜"[](source:attack-16) | 다음 왜 간선 |
 | r102 | `principle-attack-the-premise` → `principle-laziness-protocol` | 참고 | 비대칭을 보정하지 말고 없앤다[](source:attack-17) | 비대칭 간선 |
-| r103 | `principle-attack-the-premise` → `principle-redesign-from-first-principles` | 참고 | 구별. 저쪽은 새 요구로 재설계, 이쪽은 현재 설계가 가정한 사실을 의심[](source:attack-23) | 생략 |
+| r103 | `principle-attack-the-premise` → `principle-redesign-from-first-principles` | 참고 | 구별한다. `redesign-from-first-principles`는 새 요구로 재설계하고, `attack-the-premise`는 현재 설계가 가정한 사실을 의심한다[](source:attack-23) | 생략 |
 | r104 | `principle-build-the-lever` → `principle-laziness-protocol` | 참고 | 프레임워크 말고 일을 하거나 증명하는 가장 작은 스크립트[](source:lever-refs) | 작게 간선 |
 | r105 | `principle-build-the-lever` → `principle-encode-lessons-in-structure`, `principle-prove-it-works` | 참고 | 구별. 반복 지시의 영구 장치 / 검증 자체를 스크립트로 쓰기[](source:lever-refs) | `prove-it-works` 쪽만 구별 간선, 나머지 생략 |
-| r106 | `principle-explain-the-number` → `principle-prove-it-works` | 참고 | 구별. 저쪽은 출력이 진짜인지, 이쪽은 수치가 그 뜻인지[](source:explain-23) | 구별 간선 |
-| r120 | `principle-sequence-verifiable-units` → `principle-build-the-lever`, `principle-prove-it-works` | 참고 | 각 단위의 검사 방법. 하나는 검사를 진짜로, 하나는 싸게 만든다[](source:seq-17) | 싸게·진짜로 간선 |
-| r107 | `principle-minimize-reader-load` → `principle-guard-the-context-window` | 참고 | 사람 독자판 대응 원칙[](source:minimize-13) | 사람판 간선 |
+| r106 | `principle-explain-the-number` → `principle-prove-it-works` | 참고 | 구별한다. `prove-it-works`는 출력이 진짜인지 확인하고, `explain-the-number`는 수치가 그 뜻인지 확인한다[](source:explain-23) | 구별 간선 |
+| r120 | `principle-sequence-verifiable-units` → `principle-build-the-lever`, `principle-prove-it-works` | 참고 | 각 단위의 검사 방법으로 든다. `prove-it-works`는 검사를 진짜로 만들고, `build-the-lever`는 싸게 만든다[](source:seq-17) | 싸게·진짜로 간선 |
+| r107 | `principle-minimize-reader-load` → `principle-guard-the-context-window` | 참고 | `guard-the-context-window`에 대응하는 사람 독자판 원칙이다[](source:minimize-13) | 사람판 간선 |
 | r121 | `principle-type-system-discipline` → `principle-boundary-discipline`, `principle-encode-lessons-in-structure` | 참고 | 경계 파싱, 권위 있는 스키마에서 타입 끌어오기[](source:type-18)[](source:type-21) | 경계 파싱·스키마 간선 |
 | r122 | `principle-experience-first` → `principle-foundational-thinking` | 참고 | 링크 없이 원칙 제목만 쓴다[](source:exp-19) | 구별 간선 |
 
@@ -198,13 +198,13 @@
 
 | rel-id | from → to | 종류 | 조건 |
 | --- | --- | --- | --- |
-| r95 | `principle-explain-the-number` → `benchmark-checklist` | 넘김 | 성능 수치면 전체 절차를 그 스킬로 실행한다[](source:explain-19)[](source:bench-head) |
-| r96 | `principle-prove-it-works` → `show-me-your-work` | 참고 | 크거나 복잡한 작업이라 나중에 감사할 기록이 필요할 때만 커밋한다[](source:prove-22)[](source:smyw-fm) |
+| r95 | `principle-explain-the-number` → `benchmark-checklist` | 넘김 | 수치가 성능 수치이면, 전체 절차를 `benchmark-checklist`로 실행한다[](source:explain-19)[](source:bench-head) |
+| r96 | `principle-prove-it-works` → `show-me-your-work` | 참고 | 크거나 복잡한 작업이라 나중에 감사할 기록이 필요할 때만 commit한다[](source:prove-22)[](source:smyw-fm) |
 | r97 | `principle-type-system-discipline` → `typescript-best-practices` | 참고 | 특정 언어 문법으로 구체화하는 스킬의 예[](source:type-11)[](source:ts-fm) |
 | r94 | `benchmark-checklist` → `principle-explain-the-number` | 참고 | 왜 필요한지는 그 원칙이 말한다(r95의 반대 방향)[](source:bench-head) |
-| r116 | `typescript-best-practices` → `principle-type-system-discipline` | 참고 | 이 원칙을 먼저 적용한다(의무형). r97의 반대 방향[](source:ts-10) |
+| r116 | `typescript-best-practices` → `principle-type-system-discipline` | 참고 | `typescript-best-practices`는 이 원칙을 먼저 적용하라고 한다(의무형). r97의 반대 방향이다[](source:ts-10) |
 | r117 | `typescript-best-practices` → `principle-boundary-discipline` | 참고 | 경계에서 외부 데이터를 파싱한다[](source:ts-25) |
-| r114 | `show-me-your-work` → `principle-encode-lessons-in-structure` | 참고 | 손으로 만든 근거보다 커밋된 스크립트가 만든 근거를 쓴다[](source:smyw-53) |
+| r114 | `show-me-your-work` → `principle-encode-lessons-in-structure` | 참고 | 손으로 만든 근거보다 commit된 스크립트가 만든 근거를 쓴다[](source:smyw-53) |
 | r119 | `poteto-help` → `principle-prove-it-works` | 참고 | "초록 빌드로 성공을 주장"하는 증상의 처방[](source:help-133) |
 
 원장에는 `architect`(r64, r111), `arena`(r65, r112), `no-comments`(r67), `figure-it-out`(r71, r113), `reflect`(r115)가 원칙을 가리키는 관계와 플레이북별 원칙 목록도 있다. 이 페이지에서는 그 스킬 파일을 읽지 않았다. 각 스킬 페이지와 `pstack/_group-design-review/design-review.html`, `pstack/_group-run/run.html`이 다룬다.
@@ -214,7 +214,7 @@
 - 읽은 파일: `principle-*` 24개의 `SKILL.md` 전체. 관계 확인을 위해 `poteto-mode`의 Non-negotiables 목록과 Principles 절, `poteto-help`의 원칙 안내 줄, `benchmark-checklist`·`show-me-your-work`·`typescript-best-practices`의 해당 줄을 읽었다. 모두 29개, 원본이다.
 - 제외한 파일: `*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: r12, r13, r94~r97, r100~r107, r114, r116, r117, r119~r122의 출처 줄과 분류표 24줄(`poteto-mode` 44~79줄)을 원문과 대조했다. 종류, 조건, 분류가 원장과 같다.
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 스킬 문서가 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

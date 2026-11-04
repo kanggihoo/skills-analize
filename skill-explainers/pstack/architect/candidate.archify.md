@@ -1,11 +1,11 @@
 # architect 스킬은 에이전트를 어떻게 바꾸나 {#architect-skill}
 
-`architect`를 쓰면 에이전트는 코드를 바로 쓰지 않는다. 먼저 타입·시그니처·모듈 경계를 빈 몸체로 스케치하고, 여러 모델이 낸 후보를 합친 설계를 계약으로 삼아 구현한다.[](source:skill-intro)
+`architect`를 쓰면 에이전트는 코드를 바로 쓰지 않는다. 먼저 타입·시그니처·모듈 경계를 빈 몸체로 스케치한다. 그다음 여러 모델이 낸 후보를 합친 설계를 계약으로 삼아 구현한다.[](source:skill-intro)
 
-- 설계 전에 `how`로 닿는 시스템을 모두 추적한다. 소유권이나 계층을 다시 정하면 `why`도 돌린다.[](source:skill-a)
-- 스케치는 `arena`에 맡긴다. 구조가 다른 후보가 최소 2개 있어야 합친다.[](source:skill-b-arena)[](source:skill-b-twice)
-- 기본값은 사람 확인 없이 바로 구현이다. 호출자가 명시적으로 요청할 때만 멈추고 승인을 받는다.[](source:skill-c)
-- 구현이 같은 모양의 마찰을 반복해서 낳으면 스케치를 버리고 다시 설계한다.[](source:skill-e-tells)
+- 설계 전에 `how`로 새 코드가 닿는 시스템을 모두 추적한다. 설계가 소유권이나 계층을 다시 정하면 `why`도 돌린다.[](source:skill-a)
+- 스케치는 `arena`에 맡긴다. 합치기 전에 구조가 다른 후보를 최소 2개 만들어야 한다.[](source:skill-b-arena)[](source:skill-b-twice)
+- 기본으로는 사람 확인 없이 바로 구현한다. 호출자가 명시적으로 요청할 때만 구현 전에 멈추고 승인을 받는다.[](source:skill-c)
+- 구현하다가 같은 모양의 마찰이 반복해서 나오면, 스케치를 버리고 다시 설계한다.[](source:skill-e-tells)
 
 @answer scope="pstack/architect · 원본 텍스트 파일 4개 · 커밋 5760176"
 @meta locale=ko
@@ -55,7 +55,7 @@
 
 ## 다섯 단계는 어떻게 이어지나 {#flow}
 
-시작할 때 단계마다 한 줄씩 할 일 목록(todolist)을 연다. 항목은 Ground, Sketch, Agree, Implement, Scrap 다섯 개다.[](source:skill-start)
+시작할 때 에이전트가 단계마다 한 줄씩 할 일 목록(todolist)을 연다. 항목은 Ground, Sketch, Agree, Implement, Scrap 다섯 개다.[](source:skill-start)
 
 @workflow id=architect-flow title="architect 단계 흐름"
 | ground | 근거 다지기 | backend |
@@ -77,15 +77,15 @@
 | scrap > ground | how 재실행 | dashed |
 
 @steps id=architect-steps
-| s-ground | 근거 다지기 | Phase A. 새 코드가 닿는 모든 시스템에 `how`를 돌려 추적한 모델을 만든다. 파일 이름을 대는 것은 근거가 아니다. 설계가 소유권이나 계층을 다시 정하면 기존 모양에 `why`도 돌려 그 이유를 제약으로 삼는다. | architect-flow | ground |
-| s-sketch | 스케치 | Phase B. 설계 과제와 Phase A 자료를 `arena`에 넘긴다. 러너마다 `references/runner-prompt.md`를 프롬프트로 준다. `arena`는 합친 설계 묶음 하나를 돌려준다. | architect-flow | sketch |
-| s-ask | 확인 요청? | Phase C. 호출자가 "/architect with checkpoint", "구현 전에 멈추고 보여 줘"처럼 명시적으로 요청했는지 본다. 기본값은 확인 없이 진행이다. | architect-flow | ask |
-| s-agree | 사람 승인 | 합친 설계를 보여 주고 승인을 기다린다. 사람이 모양에 반대하면 그 반대를 Phase A 근거로 다룬다. 다시 근거를 다지고 Phase B를 다시 돌린 뒤에 코드를 더 쓴다. 이 되돌림은 그림에서 생략했다. | architect-flow | agree |
-| s-impl | 구현 | Phase D. `not implemented` 몸체를 코드로, 의사 코드를 로직으로 바꾼다. 합친 스케치가 계약이다. 스케치에 없던 매개변수가 필요하면 스케치가 틀렸는지, 요구를 놓쳤는지, 구현이 넘치는지 따진다. | architect-flow | impl |
-| s-wrong | 구조가 틀림? | Phase E. 신호는 한 번이 아니라 반복되는 패턴이다. 엣지 케이스 몇 개로 구조를 버리지 않는다. 데이터가 복잡한 것은 설계가 복잡한 것과 다르다. | architect-flow | wrong |
+| s-ground | 근거 다지기 | Phase A. 새 코드가 닿는 모든 시스템에 `how`를 돌려서, 시스템이 지금 어떻게 동작하는지 추적한 모델을 만든다. 파일 이름을 대는 것은 근거가 아니다. 설계가 소유권이나 계층을 다시 정하면, 기존 모양에 `why`도 돌려서 그 이유를 제약으로 삼는다. | architect-flow | ground |
+| s-sketch | 스케치 | Phase B. `architect`가 설계 과제와 Phase A 자료를 `arena`에 넘기고, runner마다 `references/runner-prompt.md`를 프롬프트로 준다. `arena`는 합친 설계 묶음 하나를 돌려준다. | architect-flow | sketch |
+| s-ask | 확인 요청? | Phase C. `architect`는 호출자가 "/architect with checkpoint", "구현 전에 멈추고 보여 줘"처럼 명시적으로 요청했는지 본다. 요청하지 않았으면 기본값대로 확인 없이 진행한다. | architect-flow | ask |
+| s-agree | 사람 승인 | `architect`가 합친 설계를 보여 주고 승인을 기다린다. 사람이 모양에 반대하면, 그 반대를 Phase A 근거로 다룬다. 근거를 다시 다지고 Phase B를 다시 돌린 뒤에 코드를 더 쓴다. 이 되돌림은 그림에서 생략했다. | architect-flow | agree |
+| s-impl | 구현 | Phase D. 에이전트가 `not implemented` 몸체를 코드로, 의사 코드를 로직으로 바꾼다. 합친 스케치가 계약이다. 스케치에 없던 매개변수가 필요해지면, 스케치가 틀렸는지, 요구를 놓쳤는지, 구현이 넘치는지 따진다. | architect-flow | impl |
+| s-wrong | 구조가 틀림? | Phase E. 스케치를 버릴 신호는 한 번 나타난 일이 아니라 반복되는 패턴이다. 엣지 케이스 몇 개로 구조를 버리지 않는다. 데이터가 복잡한 것과 설계가 복잡한 것은 다르다. | architect-flow | wrong |
 | s-scrap | 폐기 | 만든 것에 `how`를 다시 돌린다. 새 제약을 처음부터 알았던 것처럼 다시 설계한다. 새 스케치는 커지기 전에 먼저 옛 스케치보다 작아야 한다. 그림에서는 이 재추적을 근거 다지기로 되돌아가는 선으로 그렸다. 그다음 Phase B로 돌아가 `arena`를 다시 돌린다. | architect-flow | scrap |
 
-구현 중에 생긴 어긋남은 조용히 흡수하지 말고 드러낸다.[](source:skill-d) 합친 스케치는 확인 단계 여부와 상관없이 따로 커밋할 수 있다. 채워 가는 동안의 계획된 파손도 괜찮다고 한다.[](source:skill-c)
+구현 중에 생긴 어긋남은 조용히 흡수하지 말고 드러낸다.[](source:skill-d) 합친 스케치는 확인 단계 여부와 상관없이 따로 commit할 수 있다. `architect`는 합친 스케치를 채워 가는 동안의 계획된 파손도 괜찮다고 한다.[](source:skill-c)
 
 ## 언제 스케치를 버리나 {#scrap}
 
@@ -108,16 +108,16 @@
 | 합치기 전에 모든 후보를 `references/design-red-flags.md`로 거른다[](source:skill-b-screen) | 의무 |
 | 다음 기여자는 연 파일만 보고, 가장 가까운 예를 베끼고, 컴파일되는 가장 짧은 길을 고르는 에이전트라고 가정한다[](source:skill-b-screen) | 의무 |
 | 쓸 만한 후보끼리는 인터페이스 깊이로 비교하고, 더 작은 공개 면 뒤에 더 많은 복잡도를 숨긴 쪽을 고른다[](source:skill-b-screen) | 권고 |
-| 러너는 `pstack-models.mdc`의 `architect runners` 줄에서 고른다(`arena runners` 대신)[](source:skill-b-arena) | 의무 |
+| runner는 `pstack-models.mdc`의 `architect runners` 줄에서 고른다(`arena runners` 대신)[](source:skill-b-arena) | 의무 |
 
 @facts
 | 할 일 목록 항목 | 5개(Ground, Sketch, Agree, Implement, Scrap) |
 | 최소 후보 수 | 구조가 다른 후보 2개 |
-| 기본 러너 | `claude-opus-5-5-max`, `gpt-5.6-sol-max`, `grok-4.7-xhigh-fast` |
-| 러너가 지킬 호출 사슬 | 흐름을 따라가는 데 파일이 3개를 넘으면 계층을 줄인다 |
+| 기본 runner | `claude-opus-5-5-max`, `gpt-5.6-sol-max`, `grok-4.7-xhigh-fast` |
+| runner가 지킬 호출 사슬 | 흐름을 따라가는 데 파일이 3개를 넘으면 계층을 줄인다 |
 | 호출 예시 | 실제 호출 위치 2~3개를 타입보다 먼저 쓴다 |
 
-규칙 파일이나 줄이 없으면 위 기본 러너를 쓴다. 별칭과 거부된 모델 이름은 `arena` Phase A의 러너 규칙을 따른다.[](source:skill-b-arena) 러너 프롬프트는 각 러너에게 "다른 후보를 의식해 무난한 중간으로 수렴하지 말라"고 시킨다. 후보 사이의 차이가 기반 선택과 접붙이기(graft)의 신호이기 때문이다.[](source:runner)
+규칙 파일이나 줄이 없으면 위 기본 runner를 쓴다. 별칭과 거부된 모델 이름은 `arena` Phase A의 runner 규칙을 따른다.[](source:skill-b-arena) runner 프롬프트는 각 runner에게 "다른 후보를 의식해 무난한 중간으로 수렴하지 말라"고 시킨다. 후보 사이의 차이가 base(기반이 되는 후보) 선택과 graft(진 후보의 장점을 base에 합치기)의 신호이기 때문이다.[](source:runner)
 
 ## 후보를 무엇으로 거르나 {#red-flags}
 
@@ -136,20 +136,20 @@
 
 ## 무엇을 만들어 남기나 {#outputs}
 
-호출자의 사용 예를 먼저 쓰고, 타입 스케치는 거기서 끌어낸다. 작은 변경이면 새 타입과 시그니처를 담은 파일 하나, 큰 작업이면 모듈 지도와 타입 정의를 만든다. 근거 문서가 그 옆에 함께 간다.[](source:skill-out)
+`architect`는 호출자의 사용 예를 먼저 쓰고, 타입 스케치는 거기서 끌어낸다. 작은 변경이면 새 타입과 시그니처를 담은 파일 하나를, 큰 작업이면 모듈 지도와 타입 정의를 만든다. 근거 문서도 그 옆에 함께 남긴다.[](source:skill-out)
 
 | 근거 문서 절 | 담는 것 |
 | --- | --- |
 | Problem | 목표와, 모양이 뻔하지 않은 이유. Phase A에서 나온 제약 |
 | Usage | 타입보다 먼저 쓴다. README 한 편, 실제 호출 위치 2~3개. 스케치와 어긋나면 스케치를 고친다 |
 | Shape | 데이터 구조, 흐름, 핵심 결정, 타입에 담은 불변식, 인터페이스 깊이 판단 |
-| Synthesis decision | `arena`가 채운다. 기반 후보와 그 이유, 다른 후보에서 가져온 것과 버린 것 |
+| Synthesis decision | `arena`가 채운다. base와 그 이유, 다른 후보에서 가져온 것과 버린 것 |
 | Tradeoffs accepted | "Y를 얻으려고 X를 받아들인다" 꼴의 항목 |
 | Alternatives considered | 필수. 최소 1개. 경쟁자가 실제로 있었으면 2~3개 |
 | Open questions and risks | 사람이 판단할 것. 단정 말고 질문으로 쓴다 |
 | Next implementation step | 바로 만들 첫 번째 것, 한 문장 |
 
-절 구성과 조건은 `rationale-template.md`에서 왔다.[](source:rationale) 대안 절은 다른 러너의 후보가 아니라, 고른 모양이 검토하고 버린 설계 대안을 적는 자리다.[](source:rationale-alt)
+절 구성과 조건은 `rationale-template.md`에서 왔다.[](source:rationale) 대안 절은 다른 runner의 후보가 아니라, 고른 모양이 검토하고 버린 설계 대안을 적는 자리다.[](source:rationale-alt)
 
 ## 흐름 속 위치 {#position}
 
@@ -172,7 +172,7 @@
 | 기존 모양 → `why` | 제약 | 소유권·계층을 다시 정할 때만 | r61 |
 | 설계 과제 → `arena` | 합친 설계 묶음 | Phase B, 폐기 후 다시 | r62 |
 | 합친 스케치 → `interrogate` | 리뷰 | 선택. 구현 전 적대적 압박을 원할 때 | r63 |
-| `pstack-models.mdc`의 `architect runners` 줄 | - | 줄이 없으면 기본 러너 | r34 |
+| `pstack-models.mdc`의 `architect runners` 줄 | - | 줄이 없으면 기본 runner | r34 |
 
 원칙 스킬 참고는 r64에 있다.[](source:skill-c) 판정: `no-comments`가 부를 때는 Phase D 이후를 건너뛰고 스케치에서 끝나는 셈이다.[](source:nc-trigger) 전체 흐름은 `pstack/_group-design-review/design-review.html`에 있다.
 
@@ -182,10 +182,10 @@
 - 호출 조건을 확인하려고 `poteto-mode`, `figure-it-out`, `no-comments`, `setup-pstack`, 플레이북 5개의 해당 줄을 읽었다.[](source:setup-runners)
 - 제외한 파일: `SKILL.KO.md`, `references/*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 스킬 문서가 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-후보 작업 폴더 위치가 두 곳에서 다르다. 러너 프롬프트는 워크트리가 없으면 스케치 폴더 아래 러너별 하위 폴더를 쓰라고 한다.[](source:runner-dir) `arena`는 `/tmp/arena-<slug>/candidate-<n>/`을 쓰라고 한다.[](source:arena-dir) 어느 쪽이 우선인지는 원문에 명시 없음.
+후보 작업 폴더 위치가 두 곳에서 다르다. runner 프롬프트는 worktree가 없으면 스케치 폴더 아래 runner별 하위 폴더를 쓰라고 한다.[](source:runner-dir) `arena`는 `/tmp/arena-<slug>/candidate-<n>/`을 쓰라고 한다.[](source:arena-dir) 어느 쪽이 우선인지는 원문에 명시 없음.
 근거 문서의 Open questions 절은 사람이 답할 질문을 모은다.[](source:rationale-alt) 그런데 기본값은 사람 확인 없이 구현으로 넘어간다.[](source:skill-c) 확인 단계가 없을 때 이 질문을 누가 언제 답하는지는 원문에 명시 없음.
 Phase D 승인 뒤라는 표현이 근거 문서 양식에 나오지만, 승인 단계는 본문에서 Phase C다.[](source:rationale) 판정: 양식의 단계 이름이 본문과 어긋난 것으로 보인다.

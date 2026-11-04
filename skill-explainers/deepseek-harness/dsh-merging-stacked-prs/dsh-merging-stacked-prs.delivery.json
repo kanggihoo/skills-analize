@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "625bbf00-ea46-4edf-815f-ab7cd9138dc6",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-merging-stacked-prs/dsh-merging-stacked-prs.html",
+  "specification": {
+    "sha256": "522dac4f8a38f1020c5e1ae1718bfa837de11299fa8a275c835a6708c81ac4ca",
+    "bytes": 18910
+  },
+  "artifact": {
+    "sha256": "bee7c29cdbab428bc5a3e07d560f55eac60aeab08c5f5eff255e54a17e2ee105",
+    "bytes": 1261948
+  },
+  "explainer": {
+    "preparedSha256": "085287083817229d0c6242759a2718f424da7c3e33e3f0d57fd16b28c45c5402",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skill-fm",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-intro",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-ver",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-meta",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-graphql",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-order",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-cmp",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-link",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-never",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-refresh",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-native",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-mfwd",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-rewrite",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-pre",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-merge",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-nobypass",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-verify",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-delete",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "repository",
+        "id": "skill-check",
+        "path": "deepseek-harness/dsh-merging-stacked-prs/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "d7b45f7c56f741e725d369887396f582f65d131c775ae58861d7835ca892bfcd",
+        "bytes": 7839
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "merge-flow",
+        "inline": true,
+        "sha256": "d8e1e58d323d79dc81a611b65ef89e733cb2ad7f5ff3e6e3578574835da69490",
+        "bytes": 2029
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "merging-position",
+        "inline": true,
+        "sha256": "2014ae069e2ce61c9dfc3c7f1cdc2534aad5373cbb6fdd8c2e460e9e273ad214",
+        "bytes": 710
+      }
+    ]
+  }
+}

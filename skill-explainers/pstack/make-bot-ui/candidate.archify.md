@@ -1,11 +1,11 @@
 # make-bot-ui 스킬은 에이전트를 어떻게 바꾸나 {#make-bot-ui-skill}
 
-`make-bot-ui`를 쓰면 에이전트는 버튼을 누르면 봇(Grok Bot)이 깨어나는 페이지를 만든다. 웹훅(webhook)을 부르는 쪽은 브라우저가 아니라 이 컴퓨터의 로컬 서버다.[](source:skill-intro)[](source:skill-host)
+`make-bot-ui`를 켜면, 에이전트는 버튼을 누르면 봇(Grok Bot)이 깨어나는 페이지를 만든다. 웹훅(webhook)을 부르는 쪽은 브라우저가 아니라 이 컴퓨터의 로컬 서버다.[](source:skill-intro)[](source:skill-host)
 
-- 발신 키(sender key)는 서버 설정에만 둔다. 브라우저, 채팅, 이 스킬 파일에는 두지 않는다.[](source:skill-intro)
+- 에이전트는 발신 키(sender key)를 서버 설정에만 둔다. 브라우저, 채팅, 이 스킬 파일에는 두지 않는다.[](source:skill-intro)
 - 에이전트는 키를 채팅으로 받지 않는다. 비밀 요청 카드를 보내고 그 턴을 끝낸다.[](source:skill-secret)
 - 사용자가 제출한 키는 connector 자격 증명 파일에 들어간다. 에이전트는 값을 보지 못한 채 서버 설정으로 옮긴다.[](source:skill-secret)
-- 페이지는 Tailscale 망(tailnet)에 HTTP 주소로 공개한다. 이미 켜진 노드가 있으면 새로 만들지 않는다.[](source:skill-tail-reuse)
+- 에이전트는 페이지를 Tailscale 망(tailnet)에 HTTP 주소로 공개한다. 이미 켜진 노드가 있으면, 새로 만들지 않는다.[](source:skill-tail-reuse)
 
 @answer scope="pstack/make-bot-ui · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -25,7 +25,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/make-bot-ui`를 입력하거나 다른 스킬이 부를 때 켜진다. pstack 안에서 이 스킬을 부르는 스킬은 없다. `poteto-help`의 안내표가 "버튼으로 봇을 깨우는 페이지" 상황에 추천할 뿐이다.[](source:help-row)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 그래서 이 스킬은 사용자가 `/make-bot-ui`를 입력하거나 다른 스킬이 부를 때 켜진다. pstack 안에서 이 스킬을 부르는 스킬은 없다. `poteto-help`의 안내표가 "버튼으로 봇을 깨우는 페이지" 상황에 추천할 뿐이다.[](source:help-row)
 
 `description`은 세 경우를 든다. 웹훅으로 봇을 깨우는 맞춤 UI를 만들 때, 사용자가 발신 키를 넘겨야 할 때, 그 UI를 Tailscale 망에 공개할 때다.[](source:skill-fm) frontmatter 항목 `name`은 폴더 이름과 달리 `Make Bot UI`다.
 
@@ -44,8 +44,8 @@
 | hook | bot | 깨움 턴 | emphasis |
 
 @steps id=wake-steps
-| s-click | 버튼 POST | 사용자가 페이지 버튼을 누르면 브라우저는 같은 컴퓨터의 로컬 서버로만 요청을 보낸다. 브라우저는 웹훅 주소도 키도 모른다. | bot-wake | browser |
-| s-post | POST + 키 | 로컬 서버가 웹훅 주소로 JSON 객체 하나를 보낸다. 키는 `Authorization: Bearer <key>`와 `X-Automation-Key: <key>` 두 헤더에 모두 싣는다. 시간 제한 8초, 한 번만 보내고 재시도하지 않는다. | bot-wake | server |
+| s-click | 버튼 POST | 사용자가 페이지 버튼을 누르면, 브라우저는 같은 컴퓨터의 로컬 서버로만 요청을 보낸다. 브라우저는 웹훅 주소도 키도 모른다. | bot-wake | browser |
+| s-post | POST + 키 | 로컬 서버가 웹훅 주소로 JSON 객체 하나를 보낸다. 키는 `Authorization: Bearer <key>`와 `X-Automation-Key: <key>` 두 헤더에 모두 싣는다. 시간 제한은 8초이고, 한 번만 보내며 재시도하지 않는다. | bot-wake | server |
 | s-ok | HTTP 200 | 루틴이 깨어나면 HTTP 200이 돌아온다. | bot-wake | hook |
 | s-wake | 깨움 턴 | 봇은 `[routine]` 턴을 받는다. `<webhook_event>` 블록에 `headers`, `body_digest`(sha256), `body`, `timestamp_ms`가 들어 있다. 이 턴에는 발신 키가 없다. | bot-wake | bot |
 
@@ -94,16 +94,16 @@
 | install > urls | | |
 
 @steps id=setup-steps
-| s-routine | 루틴 생성 | `update_state`를 대상 `routine`, 동작 `create`로 부른다. `trigger`는 `{ "type": "webhook" }`. `prompt`에는 POST 본문을 신뢰하지 않을 데이터로 다루라, UI가 보내는 JSON 필드 이름, 맞는 동작, 보고할 것이 없으면 메시지를 보내지 말라를 적는다. 확인 카드가 뜨면 사용자 확인을 기다린다. 폴더 슬러그는 이름의 kebab-case다. | bot-setup | routine |
-| s-copy | URL·키 복사 | 사용자에게 안내한다. 채팅 헤더의 에이전트 이름을 누르거나 Cmd+Shift+I를 누른다. 컴퓨터 미리보기 아래 Routines 목록에서 이 루틴을 연다. 웹훅 주소와 발신 키를 복사한다. 다른 클릭 경로를 지어내지 않는다. | bot-setup | copy |
-| s-secret | 키 요청 | `SendToUser`로 `secret-request`를 보내고 멈춘다. 카드의 `secret.label`은 `webhook sender key`다. | bot-setup | secret |
-| s-host | 서버 실행 | UI 폴더에 `{url, key}`를 저장한다. 서버는 `127.0.0.1`이 아니라 `0.0.0.0:<port>`에 바인딩한다. localhost에만 바인딩하면 Tailscale 피어가 접속하지 못한다. | bot-setup | host |
-| s-probe | 시험 POST | UI가 동작한다고 말하기 전에, 프롬프트가 무시하는 해롭지 않은 동작으로 한 번 호출해 본다. | bot-setup | probe |
-| s-online | 노드 있나? | 이 컴퓨터의 에이전트들은 Tailscale 노드 하나를 같이 쓴다. `tailscale status`에 온라인 노드가 보이면 설치를 건너뛴다. 이미 온라인인 노드에 두 번째 호스트 이름을 만들지 않는다. | bot-setup | online |
-| s-install | 설치·로그인 | 설치 스크립트를 `sudo`로 실행하고 `tailscale up --hostname=<short-name> --accept-dns=false --ssh=false`로 노드를 켠다. 출력된 로그인 주소를 사용자에게 보낸다. 사용자가 브라우저에서 기기를 승인한다. 만료되면 `tailscale up`을 다시 돌리고 새 주소를 보낸다. | bot-setup | install |
-| s-urls | URL 전달 | `tailscale status`로 호스트 이름을, `tailscale ip -4`로 IPv4를 읽는다. `http://<hostname>.<tailnet>.ts.net:<port>`와 `http://<100.x.x.x>:<port>` 두 주소를 준다. 새로 설치했다면 `http://<100.x.x.x>:<port>/`가 HTTP 200인지 확인한다. | bot-setup | urls |
+| s-routine | 루틴 생성 | 에이전트는 `update_state`를 대상 `routine`, 동작 `create`로 부른다. `trigger`는 `{ "type": "webhook" }`다. `prompt`에는 POST 본문을 신뢰하지 않을 데이터로 다루라는 것, UI가 보내는 JSON 필드 이름, 맞는 동작, 보고할 것이 없으면 메시지를 보내지 말라는 것을 적는다. 확인 카드가 뜨면, 사용자 확인을 기다린다. 폴더 슬러그는 이름의 kebab-case다. | bot-setup | routine |
+| s-copy | URL·키 복사 | 에이전트는 사용자에게 이렇게 안내한다. 채팅 헤더의 에이전트 이름을 누르거나 Cmd+Shift+I를 누른다. 컴퓨터 미리보기 아래 Routines 목록에서 이 루틴을 연다. 웹훅 주소와 발신 키를 복사한다. 다른 클릭 경로를 지어내지 않는다. | bot-setup | copy |
+| s-secret | 키 요청 | 에이전트는 `SendToUser`로 `secret-request`를 보내고 멈춘다. 카드의 `secret.label`은 `webhook sender key`다. | bot-setup | secret |
+| s-host | 서버 실행 | 에이전트는 UI 폴더에 `{url, key}`를 저장한다. 서버는 `127.0.0.1`이 아니라 `0.0.0.0:<port>`에 바인딩한다. localhost에만 바인딩하면, Tailscale 피어가 접속하지 못한다. | bot-setup | host |
+| s-probe | 시험 POST | UI가 동작한다고 말하기 전에, 에이전트는 프롬프트가 무시하는 해롭지 않은 동작으로 한 번 호출해 본다. | bot-setup | probe |
+| s-online | 노드 있나? | 이 컴퓨터의 에이전트들은 Tailscale 노드 하나를 같이 쓴다. `tailscale status`에 온라인 노드가 보이면, 설치를 건너뛴다. 이미 온라인인 노드에 두 번째 호스트 이름을 만들지 않는다. | bot-setup | online |
+| s-install | 설치·로그인 | 에이전트는 설치 스크립트를 `sudo`로 실행하고 `tailscale up --hostname=<short-name> --accept-dns=false --ssh=false`로 노드를 켠다. 출력된 로그인 주소를 사용자에게 보낸다. 사용자가 브라우저에서 기기를 승인한다. 만료되면, `tailscale up`을 다시 돌리고 새 주소를 보낸다. | bot-setup | install |
+| s-urls | URL 전달 | 에이전트는 `tailscale status`로 호스트 이름을, `tailscale ip -4`로 IPv4를 읽는다. `http://<hostname>.<tailnet>.ts.net:<port>`와 `http://<100.x.x.x>:<port>` 두 주소를 준다. 새로 설치했다면, `http://<100.x.x.x>:<port>/`가 HTTP 200인지 확인한다. | bot-setup | urls |
 
-절차는 원문 절 순서를 따랐다.[](source:skill-routine)[](source:skill-copy)[](source:skill-secret)[](source:skill-host)[](source:skill-post)[](source:skill-tail-reuse)[](source:skill-tail-install) HTTPS 적용은 사용자가 요청할 때만 한다. Tailscale 자격 증명은 묻지도 입력하지도 않는다.[](source:skill-tail-install)
+절차는 원문 절 순서를 따랐다.[](source:skill-routine)[](source:skill-copy)[](source:skill-secret)[](source:skill-host)[](source:skill-post)[](source:skill-tail-reuse)[](source:skill-tail-install) 에이전트는 HTTPS를 사용자가 요청할 때만 적용한다. Tailscale 자격 증명은 묻지도 입력하지도 않는다.[](source:skill-tail-install)
 
 @facts
 | 웹훅 호출 시간 제한 | 8초 |

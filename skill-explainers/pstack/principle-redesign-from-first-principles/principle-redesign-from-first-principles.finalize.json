@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:18:22.875Z",
+  "startedAt": "2026-11-04T13:34:05.979Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/candidate.archify.md",
-    "sha256": "dbe28308aa658fe8b6a08447fee125ec892798692620017cd0ef2afd0fbe22b0",
-    "bytes": 7558
+    "sha256": "10ee5e69e37984e53fd4b668dd8e0836358b0c1488088dfcb8a174f90da9204f",
+    "bytes": 7723
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/principle-redesign-from-first-principles.html",
-    "sha256": "2742ec99fda603267cee6116944eb637cae18c8183ab88dbbab76eefdc4d2abf",
-    "bytes": 731700
+    "sha256": "3c911cce837c0b20653f3fe20a9cfc504c63b56b0f0cf7a83726faa151ba4eee",
+    "bytes": 732195
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "dbe28308aa658fe8b6a08447fee125ec892798692620017cd0ef2afd0fbe22b0",
-          "bytes": 7558
+          "sha256": "10ee5e69e37984e53fd4b668dd8e0836358b0c1488088dfcb8a174f90da9204f",
+          "bytes": 7723
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1029,
+      "durationMs": 779,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "1e6f45c9-a69d-4555-a95c-d28623ba3aa8",
+        "receiptId": "f36e991e-c373-40db-9d88-d0d5d81fcf50",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/principle-redesign-from-first-principles.html",
         "explainer": {
-          "preparedSha256": "7b26d55b4883c5351f76a0a3481226a9274785bc4c3f1c78aa6ef829f5015d56",
+          "preparedSha256": "31375bd4d0934dd8e730ec4caa7619a0dc57690be919853fbe3b46707fa2c9c9",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/principle-redesign-from-first-principles/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
               "bytes": 844
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/principle-redesign-from-first-principles/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
               "bytes": 844
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-steps",
               "path": "pstack/principle-redesign-from-first-principles/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
               "bytes": 844
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-close",
               "path": "pstack/principle-redesign-from-first-principles/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "a1c7fd0a96b40e12a74bceb0e6bb20a9666dd844dcabfb624acb27da23b929fe",
               "bytes": 844
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "pm-line",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "pb-refactoring",
               "path": "pstack/poteto-mode/playbooks/refactoring.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
               "bytes": 3211
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "architect-e",
               "path": "pstack/architect/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
               "bytes": 5675
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "architect-scrap",
               "path": "pstack/architect/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
               "bytes": 5675
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "arena",
               "path": "pstack/arena/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e3a1f6c49a08b7e0b92134e53300d146f1f22ba83386d2019926e736df421851",
               "bytes": 4973
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "nocomments",
               "path": "pstack/no-comments/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5c5b0882297d704c3a9720c52b7a793c68b013eaf717989f0945624efdfe2b05",
               "bytes": 2560
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "premise",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "help-principles",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -207,12 +207,12 @@
           ]
         },
         "specification": {
-          "sha256": "dbe28308aa658fe8b6a08447fee125ec892798692620017cd0ef2afd0fbe22b0",
-          "bytes": 7558
+          "sha256": "10ee5e69e37984e53fd4b668dd8e0836358b0c1488088dfcb8a174f90da9204f",
+          "bytes": 7723
         },
         "artifact": {
-          "sha256": "2742ec99fda603267cee6116944eb637cae18c8183ab88dbbab76eefdc4d2abf",
-          "bytes": 731700
+          "sha256": "3c911cce837c0b20653f3fe20a9cfc504c63b56b0f0cf7a83726faa151ba4eee",
+          "bytes": 732195
         },
         "validation": {
           "checksPassed": 4,
@@ -238,7 +238,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 529,
+      "durationMs": 402,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -251,8 +251,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/principle-redesign-from-first-principles.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "2742ec99fda603267cee6116944eb637cae18c8183ab88dbbab76eefdc4d2abf",
-          "bytes": 731700
+          "sha256": "3c911cce837c0b20653f3fe20a9cfc504c63b56b0f0cf7a83726faa151ba4eee",
+          "bytes": 732195
         },
         "checks": [
           {
@@ -296,7 +296,7 @@
               "id": "redesign-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-VxRodh/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-aYM6hK/child.html",
                 "artifact": {
                   "sha256": "a3314b13cbebfe2bcb243628ddcdb4de13538d314a0a744d59a20fcc41c3cb30",
                   "bytes": 835635
@@ -423,7 +423,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "1e6f45c9-a69d-4555-a95c-d28623ba3aa8"
+        "deliveryReceiptId": "f36e991e-c373-40db-9d88-d0d5d81fcf50"
       }
     }
   },
@@ -437,8 +437,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-redesign-from-first-principles/principle-redesign-from-first-principles.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:18:24.593Z",
-  "durationMs": 1717,
+  "finishedAt": "2026-11-04T13:34:07.311Z",
+  "durationMs": 1332,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

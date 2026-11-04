@@ -1,11 +1,11 @@
 # maintain-verification-skill 스킬은 에이전트를 어떻게 바꾸나 {#maintain-verification-skill-skill}
 
-`maintain-verification-skill`을 쓰면 에이전트는 검증 스킬의 기능 지도가 지금 앱과 맞는지 기능 단위로 다시 확인한다. 소스로 한 번, 실제 조작으로 한 번 확인하고, 증명된 수정만 PR 하나로 낸다.[](source:skill-intro)[](source:skill-fm)
+`maintain-verification-skill`을 켜면, 에이전트는 검증 스킬의 기능 지도가 지금 앱과 맞는지 기능 단위로 다시 확인한다. 에이전트는 소스로 한 번, 실제 조작으로 한 번 확인하고, 증명된 수정만 PR 하나로 낸다.[](source:skill-intro)[](source:skill-fm)
 
 - 결과는 `clean`, `changed`, `blocked` 중 하나이고, 무엇인지 밝힌다.[](source:skill-outcomes)
-- 고치는 범위는 검증 스킬 자기 폴더뿐이다. 제품 코드는 고치지 않는다.[](source:skill-scope)
-- 기능 파일마다 읽기 전용 서브에이전트를 하나씩 동시에 띄운다. 앱 조작은 조정자 혼자 한다.[](source:skill-wave)[](source:skill-live)
-- 소스가 깨끗해 보여도 실제 조작 단계는 반드시 한다.[](source:skill-live)
+- 에이전트가 고치는 범위는 검증 스킬 자기 폴더뿐이다. 제품 코드는 고치지 않는다.[](source:skill-scope)
+- 에이전트는 기능 파일마다 읽기 전용 서브에이전트를 하나씩 동시에 띄운다. 앱 조작은 조정자 혼자 한다.[](source:skill-wave)[](source:skill-live)
+- 소스가 깨끗해 보여도, 에이전트는 실제 조작 단계를 반드시 한다.[](source:skill-live)
 
 @answer scope="pstack/maintain-verification-skill · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -28,11 +28,11 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/maintain-verification-skill`을 입력하거나 다른 스킬이 부를 때 켜진다. `description`은 이 스킬을 주기적으로 도는 점검이라고 소개한다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 그래서 이 스킬은 사용자가 `/maintain-verification-skill`을 입력하거나 다른 스킬이 부를 때 켜진다. `description`은 이 스킬을 주기적으로 도는 점검이라고 소개한다.
 
 대상은 `/create-verification-skill`이 만든 스킬, 또는 기능 지도를 가진 다른 프로젝트 검증 스킬이다.[](source:skill-intro) `create-verification-skill`은 생성을 마치면 사용자에게 이 스킬을 알려 준다. 점검 주기는 사용자가 물을 때만 제안한다.[](source:create-offer) 주기를 정해 자동으로 돌리는 장치는 원문에 명시 없음.
 
-엄밀함의 단위는 문장이 아니라 기능이다. 모든 기능 파일을 소스로 확인하고 모든 기능을 실제로 조작하지만, 문장 하나하나를 터미널에서 검증하지는 않는다.[](source:skill-intro)
+엄밀함의 단위는 문장이 아니라 기능이다. 에이전트는 모든 기능 파일을 소스로 확인하고 모든 기능을 실제로 조작하지만, 문장 하나하나를 터미널에서 검증하지는 않는다.[](source:skill-intro)
 
 ## 한 번의 점검은 어떻게 진행하나 {#flow}
 
@@ -57,16 +57,16 @@
 | triage > ship | | emphasis |
 
 @steps id=mvs-steps
-| s-locate | 대상? | 실행·조작 절과 기능 지도를 가진 프로젝트 검증 스킬을 찾는다. 보통 `.cursor/skills/verify-*/`다. 후보가 여럿이면 사용자에게 어느 것인지 묻는다. | mvs-flow | locate |
-| s-stop | 멈춤 | 후보가 없으면 대상을 지어내지 않고 멈춘다. `/create-verification-skill`을 안내한다. | mvs-flow | stop |
-| s-index | 색인 | 기능 지도 `README`를 읽고 같은 폴더 파일을 `glob` 패턴으로 모은다. 빠졌거나, 남거나, 중복이거나, 죽은 항목을 고친다. 가볍게 하고 목록 파일을 따로 생성하지 않는다. | mvs-flow | index |
-| s-wave | 소스 | 기능 파일마다 읽기 전용 서브에이전트 하나를 동시에 띄운다. 각자 "이 기능은 어떻게 동작하나"를 소스로 설명하고, 문서가 어긋났을 만한 곳을 인용과 함께 짚고, 실제 검증 절차 하나를 돌려준다. | mvs-flow | wave |
-| s-recon | 대조 | 모든 기능 파일에 요약이 돌아왔는지 본다. 겹치는 절차를 가능한 한 적은 앱 상태로 합친다. 인용된 어긋남은 표본으로 확인하고, 깨끗하다는 주장은 다시 증명하지 않는다. 최근 변경에서 지도에 빠진 사용자 표면을 찾는다. 빠졌다고 하려면 구체적인 소스 경로가 있어야 한다. | mvs-flow | recon |
-| s-live | 조작 | 조정자가 모든 조작을 맡는다. 검증 스킬의 Launch 절이 정한 방식을 따른다. 서버·UI는 오래 사는 인스턴스 하나를 순서대로, 수명이 짧은 CLI 앱은 조작마다 새 격리 세션을 쓴다. 모든 기능을 최소 한 번 조작하고 아래 불변 조건 세 개를 지킨다. | mvs-flow | live |
-| s-triage | 분류 | 아래 분류표대로 나눈다. 하네스 수정은 내보내기 전에 실제로 다시 조작해 본다. | mvs-flow | triage |
-| s-ship | 보고 | `changed`면 바뀐 파일을 모두 다시 읽고 증명된 수정만 PR 하나로 낸다. `clean`·`blocked`면 PR 없이 결과와 확인 범위를 그대로 보고한다. | mvs-flow | ship |
+| s-locate | 대상? | 에이전트는 실행·조작 절과 기능 지도를 가진 프로젝트 검증 스킬을 찾는다. 보통 `.cursor/skills/verify-*/`다. 후보가 여럿이면, 사용자에게 어느 것인지 묻는다. | mvs-flow | locate |
+| s-stop | 멈춤 | 후보가 없으면, 대상을 지어내지 않고 멈춘다. `/create-verification-skill`을 안내한다. | mvs-flow | stop |
+| s-index | 색인 | 에이전트는 기능 지도 `README`를 읽고 같은 폴더 파일을 `glob` 패턴으로 모은다. 빠졌거나, 남거나, 중복이거나, 죽은 항목을 고친다. 작업은 가볍게 하고, 목록 파일을 따로 생성하지 않는다. | mvs-flow | index |
+| s-wave | 소스 | 에이전트는 기능 파일마다 읽기 전용 서브에이전트 하나를 동시에 띄운다. 각 서브에이전트는 "이 기능은 어떻게 동작하나"를 소스로 설명하고, 문서가 어긋났을 만한 곳을 인용과 함께 짚고, 실제 검증 절차 하나를 돌려준다. | mvs-flow | wave |
+| s-recon | 대조 | 에이전트는 모든 기능 파일에 요약이 돌아왔는지 본다. 겹치는 절차를 가능한 한 적은 앱 상태로 합친다. 인용된 어긋남은 표본으로 확인하고, 깨끗하다는 주장은 다시 증명하지 않는다. 최근 변경에서 지도에 빠진 사용자 표면을 찾는다. 빠졌다고 하려면 구체적인 소스 경로가 있어야 한다. | mvs-flow | recon |
+| s-live | 조작 | 조정자가 모든 조작을 맡는다. 검증 스킬의 Launch 절이 정한 방식을 따른다. 서버·UI는 오래 사는 인스턴스 하나로 기능을 순서대로 조작하고, 수명이 짧은 CLI 앱은 조작마다 새 격리 세션을 쓴다. 모든 기능을 최소 한 번 조작하고 아래 불변 조건 세 개를 지킨다. | mvs-flow | live |
+| s-triage | 분류 | 에이전트는 아래 분류표대로 나눈다. 하네스 수정은 내보내기 전에 실제로 다시 조작해 본다. | mvs-flow | triage |
+| s-ship | 보고 | `changed`이면, 바뀐 파일을 모두 다시 읽고 증명된 수정만 PR 하나로 낸다. `clean`·`blocked`이면, PR 없이 결과와 확인 범위를 그대로 보고한다. | mvs-flow | ship |
 
-흐름은 원문 Pass 0~6을 따랐다.[](source:skill-locate)[](source:skill-index)[](source:skill-wave)[](source:skill-recon)[](source:skill-live)[](source:skill-triage)[](source:skill-ship) 소스 조사 서브에이전트는 앱을 조작하지도, 파일을 고치지도 않는다. 돌려주는 모양은 기능 요약 / 소스 진입점 / 어긋남 후보 또는 없음 / 절차 하나다.[](source:skill-wave)
+흐름은 원문 Pass 0~6을 따랐다.[](source:skill-locate)[](source:skill-index)[](source:skill-wave)[](source:skill-recon)[](source:skill-live)[](source:skill-triage)[](source:skill-ship) 소스 조사 서브에이전트는 앱을 조작하지도, 파일을 고치지도 않는다. 서브에이전트가 돌려주는 형식은 기능 요약 / 소스 진입점 / 어긋남 후보 또는 없음 / 절차 하나다.[](source:skill-wave)
 
 ## 실제 조작 단계에서 무엇을 지키나 {#live}
 
@@ -82,7 +82,7 @@
 | 점검 실패가 스킬 어긋남일 때 | 범위 안에서 고치고 1회 재시도 |
 | PR | 최대 1개(`changed`일 때만) |
 
-상태 점검 실패가 검증 스킬의 어긋남 때문이면 그것도 어긋남이다. 수정 범위 안에서 고치고, 그 수정이 무효로 만든 것만 다시 시작해 한 번 재시도한다. 그래도 안 되면 `blocked`다.[](source:skill-live)
+상태 점검이 검증 스킬의 어긋남 때문에 실패하면, 그것도 어긋남이다. 에이전트는 수정 범위 안에서 고치고, 그 수정이 무효로 만든 것만 다시 시작해 한 번 재시도한다. 그래도 안 되면, `blocked`다.[](source:skill-live)
 
 닿지 못한 기능은 구체적인 전제(인증, 권한, OS, 외부 상태)와 시도한 경로가 있을 때만 `verified-unreachable`로 적는다. 지도에 그 전제가 빠져 있으면 그것도 어긋남이다. 마지막 정리는 재검증까지 포함한 마지막 조작 뒤에 한다. 근거는 스킬이 정한 대로 남긴다.[](source:skill-live)
 
@@ -90,19 +90,19 @@
 
 | 분류 | 판단 기준 | 처리 |
 | --- | --- | --- |
-| 문서 어긋남(doc drift) | 사용자 관점 설명이 틀리거나 빠졌다 | 지도를 고친다 {good:이번 PR}[](source:skill-triage) |
-| 하네스 빈틈(harness gap) | 앱은 잘 동작하는데 하네스가 조작하지 못한다 | 하네스를 고친다. 스크립트는 실행 가능, 호출 방법은 본문에[](source:skill-triage)[](source:create-helpers) |
+| doc drift(문서가 실제 동작과 어긋남) | 사용자 관점 설명이 틀리거나 빠졌다 | 지도를 고친다 {good:이번 PR}[](source:skill-triage) |
+| 하네스 빈틈(harness gap) | 앱은 잘 동작하는데 하네스가 조작하지 못한다 | 하네스를 고친다. 스크립트는 실행 가능해야 하고, 호출 방법은 본문에 적는다[](source:skill-triage)[](source:create-helpers) |
 | 제품 빈틈(product gap) | 앱 동작이 실제로 깨졌다 | 사용자에게 기록해 둔다 {bad:PR 제외}[](source:skill-triage) |
 
 지도가 말하는 동작을 앱이 더는 하지 않으면 둘 중 하나다. 문서가 어긋났거나 제품이 퇴행했다. 퇴행을 문서 수정으로 덮지 않는다.[](source:skill-scope)
 
-| 결과 | 뜻 | 브랜치·PR |
+| 결과 | 뜻 | branch·PR |
 | --- | --- | --- |
 | `clean` | 모든 기능이 소스와 실제 조작으로 확인됐고 낼 것이 없다 | 없음[](source:skill-outcomes) |
 | `changed` | 증명된 문서, 하네스, 지도 수정이 있다 | PR 하나 {good:최대 1개}[](source:skill-outcomes) |
 | `blocked` | 확인을 끝내지 못했거나 증명된 수정을 안전하게 내지 못했다 | 없음. 무엇이 막았는지 정확히 밝힌다[](source:skill-outcomes) |
 
-수정 범위는 검증 스킬의 `SKILL.md`, `features/`, 그 스킬이 가진 하네스 스크립트다.[](source:skill-scope) 실행 노트(확인한 기능, 닿지 못한 전제, 확인된 어긋남, 결과)는 임시 위치에 짧게 남기고 커밋하지 않는다.[](source:skill-ship)
+수정 범위는 검증 스킬의 `SKILL.md`, `features/`, 그 스킬이 가진 하네스 스크립트다.[](source:skill-scope) 에이전트는 실행 노트(확인한 기능, 닿지 못한 전제, 확인된 어긋남, 결과)를 임시 위치에 짧게 남기고 commit하지 않는다.[](source:skill-ship)
 
 ## 흐름 속 위치 {#position}
 

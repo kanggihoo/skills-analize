@@ -4,7 +4,7 @@
 
 - 설치 전에 사용자에게 두 번 묻는다. 적용 범위(이 프로젝트/모든 프로젝트)와 막을 패턴의 추가·삭제다.[](source:skill-scope)[](source:skill-custom)
 - 막는 방식은 명령 문자열에 `grep -E` 패턴 9개를 대 보는 것이다. git 문법을 해석하지 않는다.[](source:script-patterns)
-- 판정: 문자열 비교라서 빈틈과 과잉 차단이 함께 있다. 예를 들어 `git -C repo push`는 통과하고, 커밋 메시지에 "git push"가 들어간 명령은 막힌다.[](source:script-patterns)
+- 판정: 문자열 비교라서 빈틈과 과잉 차단이 함께 있다. 예를 들어 `git -C repo push`는 통과하고, commit 메시지에 "git push"가 들어간 명령은 막힌다.[](source:script-patterns)
 - 완료 확인은 가짜 `git push` 입력을 스크립트에 넣어 종료 코드 2와 `BLOCKED` 메시지를 보는 것이다.[](source:skill-verify)
 
 @answer scope="mattpocock/git-guardrails-claude-code · 원본 텍스트 파일 3개 · 커밋 0f0d1b0"
@@ -86,7 +86,7 @@ frontmatter에 `disable-model-invocation`이 없다. 그래서 모델이 `descri
 
 | rel-id | 상대 | 종류 | 내용 |
 | --- | --- | --- | --- |
-| r08 | `setup-pre-commit` | 같은 계열(추론) | 둘 다 사람이 아닌 장치로 실수를 막는다. 이 스킬은 명령 실행 전, `setup-pre-commit`은 커밋 전에 막는다.[](source:pc-desc) |
+| r08 | `setup-pre-commit` | 같은 계열(추론) | 둘 다 사람이 아닌 장치로 실수를 막는다. 이 스킬은 명령 실행 전, `setup-pre-commit`은 commit 전에 막는다.[](source:pc-desc) |
 | r09 | `retro` | 산출물 호환(추론) | `retro`가 "안전장치 없는 저장소"를 개선 후보로 내면 이 스킬이 실행 도구가 될 수 있다. `retro`는 이 스킬을 이름으로 부르지 않는다. |
 
 관계 근거는 `mattpocock/relations.md`의 rel-id로 확인한다.

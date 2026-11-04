@@ -4,8 +4,8 @@
 
 - 스킬을 불러온 것만으로는 전체 워크플로나 파일 생성이 허락되지 않는다. 감사·침투 테스트, 전체·종합 리뷰, 보고서 산출물 요청일 때만 전체 감사 모드가 된다.[](source:skm-modes)
 - 대상 코드는 읽기만 한다. 대상이 통제하는 실행은 네트워크·환경·쓰기·자원을 모두 막은 OS 샌드박스에서만 한다. 하나라도 못 막으면 실행하지 않는다.[](source:skm-safety)
-- 후보는 확정이 아니다. 사냥하지 않은 검증 담당이 다시 확인해야 `confirmed`가 되고, 심각도는 그때만 붙는다.[](source:skm-priority)[](source:val-p3)
-- 조사 범위는 결정적인 장부로 센다. 한 번의 실행이 대상을 다 훑었다고 말하지 않는다.[](source:skm-coverage)
+- 후보는 확정이 아니다. hunt하지 않은 verifier(후보를 독립적으로 다시 확인하는 서브에이전트)가 다시 확인해야 `confirmed`가 되고, 심각도는 그때만 붙는다.[](source:skm-priority)[](source:val-p3)
+- 조사 범위는 결정적인 coverage ledger로 센다. 한 번의 실행이 대상을 다 훑었다고 말하지 않는다.[](source:skm-coverage)
 
 @answer scope="cloudflare/security-audit · 원본 21개 파일 · 커밋 5760176 · 지시상 동작"
 @meta locale=ko
@@ -31,16 +31,16 @@
 @source rec-agents title="cloudflare/security-audit/RECONNAISSANCE.md · 15902B · Phase 1 정찰 에이전트" path=cloudflare/security-audit/RECONNAISSANCE.md lines=3:57
 @source rec-prior title="RECONNAISSANCE.md · Prior-run input" path=cloudflare/security-audit/RECONNAISSANCE.md lines=59:71
 @source rec-arch title="RECONNAISSANCE.md · architecture.md와 보조 문서 선택" path=cloudflare/security-audit/RECONNAISSANCE.md lines=73:88
-@source rec-ledger title="RECONNAISSANCE.md · 결정적 범위 장부" path=cloudflare/security-audit/RECONNAISSANCE.md lines=90:139
+@source rec-ledger title="RECONNAISSANCE.md · 결정적 coverage ledger" path=cloudflare/security-audit/RECONNAISSANCE.md lines=90:139
 @source rec-state title="RECONNAISSANCE.md · 상태표와 검증기 실행" path=cloudflare/security-audit/RECONNAISSANCE.md lines=141:156
 @source hunt-assign title="cloudflare/security-audit/HUNTING.md · 22446B · Phase 2 배정" path=cloudflare/security-audit/HUNTING.md lines=3:9
-@source hunt-prompt title="HUNTING.md · 사냥 담당 프롬프트 구성" path=cloudflare/security-audit/HUNTING.md lines=11:25
+@source hunt-prompt title="HUNTING.md · hunter 프롬프트 구성" path=cloudflare/security-audit/HUNTING.md lines=11:25
 @source hunt-method title="HUNTING.md · Core hunting method" path=cloudflare/security-audit/HUNTING.md lines=27:97
 @source hunt-promote title="HUNTING.md · 승격 절차 블록" path=cloudflare/security-audit/HUNTING.md lines=99:136
 @source hunt-gate title="HUNTING.md · Candidate gate" path=cloudflare/security-audit/HUNTING.md lines=138:157
 @source hunt-local title="HUNTING.md · Local validation boundaries" path=cloudflare/security-audit/HUNTING.md lines=159:166
 @source hunt-result title="HUNTING.md · Structured hunter result" path=cloudflare/security-audit/HUNTING.md lines=168:213
-@source hunt-consolidate title="HUNTING.md · 부모의 통합과 장부 갱신" path=cloudflare/security-audit/HUNTING.md lines=215:219
+@source hunt-consolidate title="HUNTING.md · 부모의 통합과 ledger 갱신" path=cloudflare/security-audit/HUNTING.md lines=215:219
 @source hunt-critic title="HUNTING.md · Coverage-critic waves" path=cloudflare/security-audit/HUNTING.md lines=221:251
 @source val-p3 title="cloudflare/security-audit/VALIDATION-AND-REPORTING.md · 17843B · Phase 3" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=3:7
 @source val-verifier title="VALIDATION-AND-REPORTING.md · 후보 검증 프롬프트" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=9:46
@@ -144,7 +144,7 @@
 | 대상 | 검토할 저장소 루트의 절대 경로 |
 | 저장소 이름 | 폴더나 로컬 Git 원격에서 얻은 안정된 식별자 |
 | 출력 폴더 | 대상 밖의 새 폴더. 기본값 `~/security-audit-skill/<repo-name>/run-<N>`, `<N>`은 아직 안 쓴 다음 정수 |
-| 소스 기준 | 검토한 커밋과 작업 트리 변경 여부. 검토하지 않은 생성·수정 파일을 다른 리비전으로 취급하지 않는다 |
+| 소스 기준 | 검토한 commit과 작업 트리 변경 여부. 검토하지 않은 생성·수정 파일을 다른 리비전으로 취급하지 않는다 |
 
 대상 안의 출력 폴더는 사용자가 명시적으로 골랐고, 부모가 그 폴더 전체가 버전 관리에서 무시되는지 확인했을 때만 쓴다. 아니면 멈추고 외부 경로를 요청한다.[](source:skm-setup)
 
@@ -162,7 +162,7 @@
 | scratch | scratch | aid |
 | art | artifacts | aid |
 
-부모만 위 일곱 공유 파일을 만들고 쓴다.[](source:skm-isolation) 사냥 담당(hunter)과 검증 담당(verifier)은 각자 `<output-dir>/agents/<agent-id>/` 아래 `scratch/`와 `artifacts/`를 받는다.
+부모만 위 일곱 공유 파일을 만들고 쓴다.[](source:skm-isolation) hunter(후보를 찾는 서브에이전트)와 verifier는 각자 `<output-dir>/agents/<agent-id>/` 아래 `scratch/`와 `artifacts/`를 받는다.
 
 - 에이전트와 대상 프로세스는 `scratch/`에만 쓴다. `artifacts/`는 부모 소유이고, 샌드박스에 노출하지 않는다.[](source:skm-isolation)
 - 에이전트 ID는 `^[a-z0-9][a-z0-9_-]{0,63}$`에 맞아야 한다. `con`, `prn`, `aux`, `nul`, `com1`~`com9`, `lpt1`~`lpt9` 같은 Windows 장치 이름은 쓸 수 없다. 소문자만 써서 대소문자 충돌을 막는다.
@@ -193,28 +193,28 @@
 
 ## 전체 감사는 어떻게 계획하나 {#planning}
 
-이 절의 범위·이전 실행·프로필·예산 규칙은 전체 감사 모드에만 적용된다.[](source:skm-coverage) 한 번의 실행으로 완전한 조사는 없다는 것이 출발점이다. 사냥 전에 결정적인 범위 계획을 세우고, 에이전트 결과가 올 때마다 갱신한다. 장부는 부모만 고친다.
+이 절의 범위·이전 실행·프로필·예산 규칙은 전체 감사 모드에만 적용된다.[](source:skm-coverage) 한 번의 실행으로 완전한 조사는 없다는 것이 출발점이다. hunting 전에 결정적인 범위 계획을 세우고, 에이전트 결과가 올 때마다 갱신한다. ledger는 부모만 고친다.
 
 **이전 실행이 있으면** 호환되는 `coverage-ledger.json`과 `findings.json`을 모두 읽은 뒤 계획한다.[](source:skm-coverage)[](source:rec-prior)
 
 | 이전 기록 | 이번 실행에서 하는 일 |
 | --- | --- |
-| 출처가 그대로인 `confirmed` | 관련 소스·조건이 그대로이고 근거가 현재 계약을 채울 때만 후보로 가져온다. 지문(fingerprint)을 유지하고 `planned` 단위에 잇는다. 그 근본 원인만 사냥에서 뺀다. Phase 3 검증 담당이 다시 확인하며 단위 소유자가 된다 |
-| 소스가 바뀐 `confirmed` | 재검증 단위를 새로 만든다. 사냥 제외 목록에 넣지 않는다. 현재 독립 검증이 다시 입증할 때만 확정으로 남는다 |
+| 출처가 그대로인 `confirmed` | 관련 소스·조건이 그대로이고 근거가 현재 계약을 채울 때만 후보로 가져온다. fingerprint(같은 근본 원인을 가리키는 식별자)를 유지하고 `planned` 단위에 잇는다. 그 근본 원인만 hunting에서 뺀다. Phase 3 verifier가 다시 확인하며 단위 소유자가 된다 |
+| 소스가 바뀐 `confirmed` | 재검증 단위를 새로 만든다. hunting 제외 목록에 넣지 않는다. 현재 독립 검증이 다시 입증할 때만 확정으로 남는다 |
 | `needs_validation`, `deferred`, `blocked`, `out_of_scope`, 소스가 바뀐 단위 | 모두 이번 작업으로 만든다. 여전히 외부 사실이 필요한 `needs_validation`은 현재 소스 추적을 확인한 뒤에만 가져온다 |
-| 출처가 그대로인 `covered` 단위 | 우선순위 참고는 되지만 현재 장부에 그대로 보인다 |
+| 출처가 그대로인 `covered` 단위 | 우선순위 참고는 되지만 현재 ledger에 그대로 보인다 |
 | `rejected` | 바뀌지 않은 실패 주장만 막는다. 그 단위의 조사는 막지 않는다 |
-| 이전 `quick`·범위 한정 장부 | 기록된 근거와 빈틈만 쓴다. "나머지는 괜찮다"는 뜻으로 읽지 않는다 |
+| 이전 `quick`·범위 한정 ledger | 기록된 근거와 빈틈만 쓴다. "나머지는 괜찮다"는 뜻으로 읽지 않는다 |
 
-이전 장부가 없으면 최종 범위 진술에 그렇게 적는다. 장부가 없거나 호환되지 않는 것을 빈 범위로 취급하지 않는다.[](source:skm-coverage)[](source:rec-prior)
+이전 ledger가 없으면 최종 범위 진술에 그렇게 적는다. ledger가 없거나 호환되지 않는 것을 빈 범위로 취급하지 않는다.[](source:skm-coverage)[](source:rec-prior)
 
 **실행 프로필.** 요청에서 고르거나, 대상 크기와 위험도로 하나를 제안한다. 기본값은 `standard`다. `run-metadata.json`에 기록하고 보고서에 밝힌다.[](source:skm-profiles)
 
-| 프로필 | 장부 단위 | 사냥·비평 | 검증 |
+| 프로필 | ledger 단위 | hunting·critic | 검증 |
 | --- | --- | --- | --- |
-| `quick` | 표면 × 경계 × 공격 유형으로 거칠게. 하위 시스템은 고정값 `profile/quick/all-in-scope-subsystems` | 사냥 차수 정확히 1번, 마지막 범위 비평 정확히 1번. 추가 차수 없이 비평이 찾은 일은 `deferred` | 후보마다 새 검증 담당 하나가 후보 검증과 최종 기록 검증을 함께 한다 |
+| `quick` | 표면 × 경계 × 공격 유형으로 거칠게. 하위 시스템은 고정값 `profile/quick/all-in-scope-subsystems` | hunting 차수 정확히 1번, 마지막 coverage critic 정확히 1번. 추가 차수 없이 critic이 찾은 일은 `deferred` | 후보마다 새 verifier 하나가 후보 검증과 최종 기록 검증을 함께 한다 |
 | `standard` | 원문 그대로 | 빠진 곳이 없을 때까지 차수 반복 | 후보 검증과 최종 검증을 따로 |
-| `deep` | 하위 시스템과 생애 주기 모드별로 쪼갠다 | 깨끗한 비평이 나올 때까지 | 두 검증을 각각 새 에이전트로. `prior_covered_same_source` 단위도 독립 2차 확인 |
+| `deep` | 하위 시스템과 생애 주기 모드별로 쪼갠다 | critic이 빈틈을 더 찾지 못할 때까지 | 두 검증을 각각 새 에이전트로. `prior_covered_same_source` 단위도 독립 2차 확인 |
 | 범위 한정 실행 | 지정 경로, 하위 시스템 하나, 보조 도메인 하나, 두 소스 기준 사이 차이 | 범위 밖은 `out_of_scope`로 기록. `covered`로 적지 않는다 | 같음 |
 
 `quick`과 범위 한정 실행은 스스로를 부분 조사로 밝혀야 한다. 프로필은 넓이와 중복만 바꾸고 증거 기준은 바꾸지 않는다. 후보 관문, 소스·국소 실행 경계, `needs_validation` 규율, 스키마 검증, 확정 기록의 독립 검증은 줄이지 않는다.[](source:skm-profiles)
@@ -222,31 +222,31 @@
 **비용 예산.** 사용자가 정하거나, 큰 대상이면 부모가 제안한다. 단위는 모든 단계의 에이전트 호출 수 최댓값이다.[](source:skm-budget)
 
 @facts
-| 단위 1개 | 사냥 담당 배정 약 1회 |
-| 살아남은 후보 1개 | 프로필에 따라 검증 담당 1~2회 |
-| 정찰 전 예약 | 기본 정찰 4회 + 비평(`quick` 1회, `standard`·`deep` 2회) + 검증 최소 1회 |
+| 단위 1개 | hunter 배정 약 1회 |
+| 살아남은 후보 1개 | 프로필에 따라 verifier 1~2회 |
+| 정찰 전 예약 | 기본 정찰 4회 + critic(`quick` 1회, `standard`·`deep` 2회) + 검증 최소 1회 |
 | 판정: 최소 예산 | `quick` 4+1+1 = 6회, `standard`·`deep` 4+2+1 = 7회 |
-| 검증 예약 | 예상 후보당 약 1~2회. 모르면 비평 예약 후 잔액의 30% |
+| 검증 예약 | 예상 후보당 약 1~2회. 모르면 critic 예약 후 잔액의 30% |
 
 정찰 에이전트를 띄우기 전에 엄격한 예산 관문을 먼저 적용한다. 추가 정찰은 호출마다 이 관문을 다시 통과해야 한다.[](source:skm-budget) 최소 예약도 못 대면 아무 에이전트도 띄우지 않고 예산 증액, 범위 축소, 프로필 변경을 묻는다. 요청이 그대로면 `run_status: "incomplete"`로 기록하고, 감사가 전혀 돌지 않았다고 보고한다.
 
 @list ordered=true
-| 정찰, 모든 차수 후 비평, 별도 마지막 깨끗한 비평(final-clean critic)을 모두 호출 수로 센다. |
-| 사냥 전에 비평과 검증을 예약한다. `standard`·`deep`은 차수마다 차수 후 비평 1회와 별도 마지막 비평 1회를 예약한다. 두 예약에 사냥 담당을 배정하지 않는다. |
-| 우선순위 순서로 사냥 담당을 배정한다. 차수 후 비평 예약은 그 차수 직후 쓰고, 마지막 비평과 검증 예약은 남겨 둔다. |
-| 다음 차수 전에 새 차수 후 비평을 다시 예약한다. 비평과 검증 예약을 못 대면 그 차수 사냥을 띄우지 않고, 계획 단위를 `deferred`로 돌린다. |
+| 정찰, 모든 차수 후 critic, 별도 final-clean critic을 모두 호출 수로 센다. |
+| hunting 전에 critic과 검증을 예약한다. `standard`·`deep`은 차수마다 차수 후 critic 1회와 별도 마지막 critic 1회를 예약한다. 두 예약에 hunter를 배정하지 않는다. |
+| 우선순위 순서로 hunter를 배정한다. 차수 후 critic 예약은 그 차수 직후 쓰고, 마지막 critic과 검증 예약은 남겨 둔다. |
+| 다음 차수 전에 새 차수 후 critic을 다시 예약한다. critic과 검증 예약을 못 대면 그 차수 hunting을 띄우지 않고, 계획 단위를 `deferred`로 돌린다. |
 
-1차 사냥 전에 정찰 전 추정을 갱신한다. 시드 단위 수, 필요한 사냥 담당 수, 필수 비평 호출, 검증 예약, 남은 예산으로 충분한지를 적는다.[](source:skm-budget) 분명히 모자라면 근거를 몰래 줄이지 말고 범위 축소나 더 거친 프로필을 제안한다. 사용자가 정한 엄격한 예산을 말없이 넘기지 않는다.
+1차 hunting 전에 정찰 전 추정을 갱신한다. 시드 단위 수, 필요한 hunter 수, 필수 critic 호출, 검증 예약, 남은 예산으로 충분한지를 적는다.[](source:skm-budget) 분명히 모자라면 근거를 몰래 줄이지 말고 범위 축소나 더 거친 프로필을 제안한다. 사용자가 정한 엄격한 예산을 말없이 넘기지 않는다.
 
 | 상황 | 기록하는 값 | 결과 |
 | --- | --- | --- |
 | 정찰과 예약을 못 댄다 | `incomplete_reason: "budget_cannot_fund_reconnaissance_and_reserves"` | 에이전트를 하나도 띄우지 않는다 |
-| 차수의 비평·검증 예약을 못 댄다 | 단위 사유 `budget_cannot_reserve_critics_and_validation` | 그 차수 단위는 `deferred`. 남겨 둔 마지막 비평이 빈틈을 기록한다 |
-| 마지막 비평 예약까지 쓰였다 | `incomplete_reason: "critic_budget_exhausted"` | 사냥 중단, 계획 작업 모두 `deferred`, 완전 범위 주장 금지 |
-| 모든 후보를 검증할 예산이 없다 | `incomplete_reason: "validation_budget_exhausted"` | 사냥 중단, 지문 순서로 검증. 미검증 후보는 장부에 `candidate`로만 남고 `findings.json`에 들어가지 않는다 |
-| `quick`의 마지막 비평이 일을 찾았다 | 단위 사유 `quick_profile_final_critic` | 두 번째 차수 없이 `deferred` |
+| 차수의 critic·검증 예약을 못 댄다 | 단위 사유 `budget_cannot_reserve_critics_and_validation` | 그 차수 단위는 `deferred`. 남겨 둔 마지막 critic이 빈틈을 기록한다 |
+| 마지막 critic 예약까지 쓰였다 | `incomplete_reason: "critic_budget_exhausted"` | hunting 중단, 계획 작업 모두 `deferred`, 완전 범위 주장 금지 |
+| 모든 후보를 검증할 예산이 없다 | `incomplete_reason: "validation_budget_exhausted"` | hunting 중단, fingerprint 순서로 검증. 미검증 후보는 ledger에 `candidate`로만 남고 `findings.json`에 들어가지 않는다 |
+| `quick`의 마지막 critic이 일을 찾았다 | 단위 사유 `quick_profile_final_critic` | 두 번째 차수 없이 `deferred` |
 
-예산이 모자라 미완료가 되면, Phase 6 보고서 첫 절에 후보 검증이 끝나지 않았다고 쓰고 해당 지문과 단위를 나열한다.[](source:skm-budget)[](source:hunt-critic)
+예산이 모자라 미완료가 되면, Phase 6 보고서 첫 절에 후보 검증이 끝나지 않았다고 쓰고 해당 fingerprint와 단위를 나열한다.[](source:skm-budget)[](source:hunt-critic)
 
 ## 어떤 원칙으로 후보를 거르나 {#principles}
 
@@ -274,34 +274,34 @@
 
 @workflow id=audit-flow title="전체 감사 6단계"
 | recon | 정찰 | backend |
-| hunt | 사냥 차수 | backend |
+| hunt | hunting 차수 | backend |
 | gap | 빠진 곳? | security |
 | verify | 후보 검증 | security |
 | records | 기록·재검증 | database |
 | report | 보고서 | frontend |
-| recon > hunt | 장부 | |
-| hunt > gap | 비평 | |
+| recon > hunt | ledger | |
+| hunt > gap | critic | |
 | gap > hunt | 예 | dashed |
 | gap > verify | 아니오 | emphasis |
 | verify > records | | |
 | records > report | 통과 | emphasis |
 
 @steps id=audit-steps
-| s-recon | 정찰 | `RECONNAISSANCE.md`를 읽는다. 부모가 `run-metadata.json`을 만들고 예산 관문을 적용한다. `research` 에이전트 4개(1a 제품·스택·로컬 실행, 1b 주체·권한·통제, 1c 진입 표면·사본·싱크, 1d 로컬 실행·배포 가시성)를 병렬로 띄운다. 이들은 파일을 쓰지 않고 사실만 돌려준다. 부모는 약 1,000단어 이하의 `architecture.md`, 보조 문서 선택, 결정적 범위 장부를 만든다. | audit-flow | recon |
-| s-hunt | 사냥 차수 | `HUNTING.md`, `ATTACK-CLASSES.md`, 고른 도메인 문서를 쓴다. 부모가 `planned` 단위를 `general` 사냥 담당에게 배정하고 `in_progress`로 바꾼다. 프롬프트는 정해진 9개 부분을 순서대로 담고, 고른 블록은 이름이 아니라 원문 그대로 넣는다. 사냥 담당은 JSON 객체 하나만 돌려준다. | audit-flow | hunt |
-| s-gap | 빠진 곳? | 차수 직후 예약해 둔 새 `research` 범위 비평 담당이 장부를 읽는다. 빠진 진입점, 확인 안 된 병렬 경로, 빠진 생애 주기, 단위 없는 보조 유형, 근거 없는 제외, 경로·확인 없이 닫힌 단위를 찾는다. 지적이 아니라 범위만 제안한다. 받아들인 `missing_units`나 `reassign_ids`가 있으면 다시 사냥한다. `standard`·`deep`은 없을 때 별도 마지막 비평을 한 번 더 돌리고, 그것도 비어야 완전 범위다. `quick`은 비평 1회로 끝내고 찾은 일은 `deferred`로 둔다. | audit-flow | gap |
-| s-verify | 후보 검증 | `VALIDATION-AND-REPORTING.md` Phase 3. 지문과 근본 원인으로 후보를 합치고, 그 후보를 사냥하지 않은 새 `general` 검증 담당에게 하나씩 준다. 검증 담당은 반박을 목표로 모든 소스 위치를 다시 읽고, 안전하게 재현할 수 있는 결정적 확인은 직접 다시 돌린다. 다른 검증 담당의 결론은 받지 않는다. | audit-flow | verify |
-| s-records | 기록·재검증 | Phase 4. 부모가 독립 판정된 기록을 지문 순으로 `findings.json`에 쓴다. 쓰기 직전에 `report-schema.json`을 읽는다. `validate-findings.cjs`와 `validate-coverage-ledger.cjs`를 돌려 모든 오류를 고친다. Phase 5에서는 최종 `confirmed`와 `needs_validation` 기록마다 새 `research` 검증 담당을 병렬로 띄운다. 결과는 `verified` 또는 `replace`다. 판정을 올리거나 근본 원인·재현·영향·심각도를 바꾸는 교체는 또 다른 새 검증 담당이 확인한 뒤에만 적용한다. 교체 후에는 두 검증기를 다시 돌린다. `quick`에서는 Phase 3과 합친다. | audit-flow | records |
-| s-report | 보고서 | Phase 6. 모든 기록이 Phase 5를 통과한 뒤에만, 최종 기록과 장부와 보강 메모에서 `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`를 만든다. 산문은 판정·심각도·막힌 이유·영향을 바꾸지 않는다. 라이브 탐침 지시는 넣지 않는다. | audit-flow | report |
+| s-recon | 정찰 | `RECONNAISSANCE.md`를 읽는다. 부모가 `run-metadata.json`을 만들고 예산 관문을 적용한다. `research` 에이전트 4개(1a 제품·스택·로컬 실행, 1b 주체·권한·통제, 1c 진입 표면·사본·싱크, 1d 로컬 실행·배포 가시성)를 병렬로 띄운다. 이들은 파일을 쓰지 않고 사실만 돌려준다. 부모는 약 1,000단어 이하의 `architecture.md`, 보조 문서 선택, 결정적 coverage ledger를 만든다. | audit-flow | recon |
+| s-hunt | hunting 차수 | `HUNTING.md`, `ATTACK-CLASSES.md`, 고른 도메인 문서를 쓴다. 부모가 `planned` 단위를 `general` hunter에게 배정하고 `in_progress`로 바꾼다. 프롬프트는 정해진 9개 부분을 순서대로 담고, 고른 블록은 이름이 아니라 원문 그대로 넣는다. hunter는 JSON 객체 하나만 돌려준다. | audit-flow | hunt |
+| s-gap | 빠진 곳? | 차수 직후 예약해 둔 새 `research` coverage critic이 ledger를 읽는다. 빠진 진입점, 확인 안 된 병렬 경로, 빠진 생애 주기, 단위 없는 보조 유형, 근거 없는 제외, 경로·확인 없이 닫힌 단위를 찾는다. 지적이 아니라 범위만 제안한다. 받아들인 `missing_units`나 `reassign_ids`가 있으면 다시 hunting한다. `standard`·`deep`은 없을 때 별도 마지막 critic을 한 번 더 돌리고, 그것도 비어야 완전 범위다. `quick`은 critic 1회로 끝내고 찾은 일은 `deferred`로 둔다. | audit-flow | gap |
+| s-verify | 후보 검증 | `VALIDATION-AND-REPORTING.md` Phase 3. fingerprint와 근본 원인으로 후보를 합치고, 그 후보를 hunt하지 않은 새 `general` verifier에게 하나씩 준다. verifier는 반박을 목표로 모든 소스 위치를 다시 읽고, 안전하게 재현할 수 있는 결정적 확인은 직접 다시 돌린다. 다른 verifier의 결론은 받지 않는다. | audit-flow | verify |
+| s-records | 기록·재검증 | Phase 4. 부모가 독립 판정된 기록을 fingerprint 순으로 `findings.json`에 쓴다. 쓰기 직전에 `report-schema.json`을 읽는다. `validate-findings.cjs`와 `validate-coverage-ledger.cjs`를 돌려 모든 오류를 고친다. Phase 5에서는 최종 `confirmed`와 `needs_validation` 기록마다 새 `research` verifier를 병렬로 띄운다. 결과는 `verified` 또는 `replace`다. 판정을 올리거나 근본 원인·재현·영향·심각도를 바꾸는 교체는 또 다른 새 verifier가 확인한 뒤에만 적용한다. 교체 후에는 두 검증기를 다시 돌린다. `quick`에서는 Phase 3과 합친다. | audit-flow | records |
+| s-report | 보고서 | Phase 6. 모든 기록이 Phase 5를 통과한 뒤에만, 최종 기록과 ledger와 보강 메모에서 `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`를 만든다. 산문은 판정·심각도·막힌 이유·영향을 바꾸지 않는다. 라이브 탐침 지시는 넣지 않는다. | audit-flow | report |
 
 이 순서는 `SKILL.md`의 Full audit workflow 1~6단계를 따른다.[](source:skm-workflow)[](source:rec-agents)[](source:hunt-prompt)[](source:hunt-critic)[](source:val-verifier)[](source:val-p4)[](source:val-p5)[](source:val-p6)
 
 @callout level=note title="끝낼 수 있는 상태는 정확히 둘"
-(a) Phase 6 산출물이 모두 써졌고 두 검증기가 통과했다. (b) `run_status: "incomplete"`와 정확한 사유를 기록하고 빈틈을 보고서에 밝혔다. 단계 중간에서 멈추지 않는다.[](source:skm-workflow) `run_status: "complete"`는 모든 장부 후보가 독립 최종 판정을 받고, 남긴 기록이 모두 Phase 5를 통과했을 때만 쓴다.[](source:val-p5)
+(a) Phase 6 산출물이 모두 써졌고 두 검증기가 통과했다. (b) `run_status: "incomplete"`와 정확한 사유를 기록하고 빈틈을 보고서에 밝혔다. 단계 중간에서 멈추지 않는다.[](source:skm-workflow) `run_status: "complete"`는 모든 ledger 후보가 독립 최종 판정을 받고, 남긴 기록이 모두 Phase 5를 통과했을 때만 쓴다.[](source:val-p5)
 
-**사냥 우선순위.** 예산이나 프로필이 사냥 담당 수를 제한하면 순서대로 배정하고 그 이유를 장부에 남긴다. (1) 인증 없는·가장 낮은 신뢰 진입 표면, (2) 가장 값진 자원(자격 증명, 테넌트 간 데이터, 코드 실행, 릴리스 권한)을 지키는 경계, (3) 이전 빈틈·재검증·바뀐 소스, (4) 이 대상 유형에서 확정이 잘 나온 유형 순이다. 동점은 `coverage_id` 사전 순으로 정한다.[](source:hunt-assign)
+**hunting 우선순위.** 예산이나 프로필이 hunter 수를 제한하면 순서대로 배정하고 그 이유를 ledger에 남긴다. (1) 인증 없는·가장 낮은 신뢰 진입 표면, (2) 가장 값진 자원(자격 증명, 테넌트 간 데이터, 코드 실행, 릴리스 권한)을 지키는 경계, (3) 이전 빈틈·재검증·바뀐 소스, (4) 이 대상 유형에서 확정이 잘 나온 유형 순이다. 동점은 `coverage_id` 사전 순으로 정한다.[](source:hunt-assign)
 
-**도메인 문서는 언제 읽나.** `ATTACK-CLASSES.md`는 모든 사냥에 일반 공격 유형을 준다.[](source:atk-classes)
+**도메인 문서는 언제 읽나.** `ATTACK-CLASSES.md`는 모든 hunting에 일반 공격 유형을 준다.[](source:atk-classes)
 
 - 도메인 보조 문서는 그 문서의 "When to use this file"이 말하는 신뢰 민감 경계를 정찰에서 찾았을 때만 고른다. 언어나 의존성 이름만 보고 고르지 않는다.[](source:rec-arch)
 - 고른 보조 문서에서는 `Core discipline`, 고른 유형, `Universal moves`, `Validation rules`를 함께 프롬프트에 넣는다.[](source:hunt-prompt)
@@ -326,15 +326,15 @@
 | --- | --- |
 | `run-metadata.json` | 실행 기본 사실과 `run_status`. 사실이 바뀔 때만 갱신한다[](source:skm-repro) |
 | `architecture.md` | 제품·주체·보호 자원, 비교 대상 기준선, 스택, 진입 표면, 신뢰 경계, 시작 경로, 이전 빈틈, 보조 문서 선택 요약. 약 1,000단어 상한[](source:rec-arch) |
-| `coverage-ledger.json` | 범위 단위의 최상위 배열. 이 장부가 곧 범위 주장이다. 요약문이나 에이전트 수는 범위 근거가 아니다[](source:rec-ledger)[](source:rec-state) |
-| `findings.json` | `confirmed`, `needs_validation`, `rejected` 최종 기록. 지문 순 정렬[](source:val-p4) |
-| `REPORT.md` | 프로필·범위·예산 사용·소스 기준·실행 정책, 보안 상태 요약, 확정 표, 확정 상세, 별도 `NEEDS VALIDATION` 표, 보강 메모와 좋은 패턴, 장부 범위 요약[](source:val-p6) |
+| `coverage-ledger.json` | 범위 단위의 최상위 배열. 이 ledger가 곧 범위 주장이다. 요약문이나 에이전트 수는 범위 근거가 아니다[](source:rec-ledger)[](source:rec-state) |
+| `findings.json` | `confirmed`, `needs_validation`, `rejected` 최종 기록. fingerprint 순 정렬[](source:val-p4) |
+| `REPORT.md` | 프로필·범위·예산 사용·소스 기준·실행 정책, 보안 상태 요약, 확정 표, 확정 상세, 별도 `NEEDS VALIDATION` 표, 보강 메모와 좋은 패턴, ledger 범위 요약[](source:val-p6) |
 | `FINDINGS-DETAIL.md` | 확정된 `medium`·`high`·`critical` 기록마다 전체 추적, 가짜 주체·자원, 국소 재현, 관찰 결과, 조건, 수정안과 회귀 사례[](source:val-p6) |
 | `NEEDS-VALIDATION.md` | 미해결 기록마다 추적, 확인된 근거, 막힌 이유, 경계, 국소·소유자 관찰 계획. 심각도 없이 우선순위만[](source:val-p6) |
 
 보고서는 근거에 비례한다. 확정이 0건이어도 그렇게 쓰고 남은 한계를 밝힌다. LOW 지적을 지어내지 않는다.[](source:val-p6)
 
-**`report-schema.json`.** 최상위가 배열이고, 항목은 세 갈래 중 정확히 하나에 맞아야 한다. 모든 갈래가 `additionalProperties: false`라서 사냥 담당의 감싸기 필드를 남기면 실패한다.[](source:schema)[](source:val-p4)
+**`report-schema.json`.** 최상위가 배열이고, 항목은 세 갈래 중 정확히 하나에 맞아야 한다. 모든 갈래가 `additionalProperties: false`라서 hunter의 감싸기 필드를 남기면 실패한다.[](source:schema)[](source:val-p4)
 
 | 필드 | `confirmed` | `needs_validation` | `rejected` |
 | --- | --- | --- | --- |
@@ -343,9 +343,9 @@
 | 판정 고유 | `conditions`, `execution`(재현 입력·지시·`observed_result`), `remediation`, `severity`, `confidence` | `blockers`(1개 이상), `validation_plan`(`local`·`deployment`) | `reason` |
 | 심각도 | 있음 {good:필수} | 없음 {bad:금지} | 없음 {bad:금지} |
 
-필수 필드 목록은 각 갈래의 `required`에 있다.[](source:schema-c)[](source:schema-nv)[](source:schema-r) 지문은 `^[A-Za-z0-9][A-Za-z0-9._:/@+-]*$`에 맞아야 하고, 줄·차수·에이전트·심각도·판정을 담지 않는다.[](source:hunt-gate)
+필수 필드 목록은 각 갈래의 `required`에 있다.[](source:schema-c)[](source:schema-nv)[](source:schema-r) fingerprint는 `^[A-Za-z0-9][A-Za-z0-9._:/@+-]*$`에 맞아야 하고, 줄·차수·에이전트·심각도·판정을 담지 않는다.[](source:hunt-gate)
 
-**장부 단위의 상태.** 원문은 이 표를 "정확히" 지키라고 한다.[](source:rec-state)
+**ledger 단위의 상태.** 원문은 이 표를 "정확히" 지키라고 한다.[](source:rec-state)
 
 | 상태 | `agent_id` | `reviewed_paths`·`local_checks` | `result_fingerprints` | `unresolved` |
 | --- | --- | --- | --- | --- |
@@ -362,7 +362,7 @@
 
 | 검증기 | 입력 | 주요 검사 | 이러면 실패한다 |
 | --- | --- | --- | --- |
-| `validate-findings.cjs` | `findings.json` 경로. 같은 폴더의 `report-schema.json`을 스스로 읽는다 | 스키마 갈래 정확히 하나, 필수·추가 필드, 열거값, 보이는 글자 포함, 지문 패턴. 그다음 의미 검사[](source:vf-semantic) | 지문 중복, 지문 순 정렬 아님, 줄 번호 1 미만, 안전하지 않은 경로(절대 경로, `..`, `:`, 역슬래시, Windows 예약 이름, 제어 문자), 추적 순서 위반(여러 단계면 `entrypoint`로 시작·`sink`로 끝), 판정별 금지 필드, `overall_severity`가 `impact`보다 높음, `needs_validation`에 보이는 `local`·`deployment` 계획이 하나도 없음[](source:vf-semantic)[](source:vf-path) |
+| `validate-findings.cjs` | `findings.json` 경로. 같은 폴더의 `report-schema.json`을 스스로 읽는다 | 스키마 갈래 정확히 하나, 필수·추가 필드, 열거값, 보이는 글자 포함, fingerprint 패턴. 그다음 의미 검사[](source:vf-semantic) | fingerprint 중복, fingerprint 순 정렬 아님, 줄 번호 1 미만, 안전하지 않은 경로(절대 경로, `..`, `:`, 역슬래시, Windows 예약 이름, 제어 문자), 추적 순서 위반(여러 단계면 `entrypoint`로 시작·`sink`로 끝), 판정별 금지 필드, `overall_severity`가 `impact`보다 높음, `needs_validation`에 보이는 `local`·`deployment` 계획이 하나도 없음[](source:vf-semantic)[](source:vf-path) |
 | `validate-coverage-ledger.cjs` | `coverage-ledger.json` 경로 | 19개 필수 필드, 기준 참조와 `coverage_id` 재계산 일치, 상태표, 확인 기록 소유, 재배정 기록[](source:vl-fields)[](source:vl-unit) | ID 중복·충돌, 같은 의미 묶음에 다른 ID, 정렬 아님, 선택과 제외에 같은 블록, 잘못된 `prior_status`·`status`, 상태표 위반, `source` 확인에 산출물 있음, `local` 확인의 산출물이 `agents/<agent_id>/artifacts/` 밖, 단위 경로가 확인 경로의 합집합과 다름, 재배정에서 이전 소유자·산출물 재사용[](source:vl-checks)[](source:vl-state)[](source:vl-attempts) |
 
 입력 파일 자체도 거른다. 두 검증기 모두 링크를 따라가지 않고 비차단으로 열어, 심볼릭 링크와 일반 파일이 아닌 것(FIFO 등)을 거부한다. UTF-8이 아니어도 실패한다.[](source:vf-read)
@@ -370,35 +370,35 @@
 @facts
 | 공통 입력 한도 | 5 MiB, 중첩 64단계, 오류 출력 100개 |
 | `findings.json` | 배열마다 1,000항목[](source:vf-limits) |
-| 범위 장부 | 단위 10,000개, 중첩 배열 1,000항목, 객체 필드 1,000개, 값 500,000개[](source:vl-limits) |
+| coverage ledger | 단위 10,000개, 중첩 배열 1,000항목, 객체 필드 1,000개, 값 500,000개[](source:vl-limits) |
 | 실제 상한 | 5 MiB 한도가 먼저 걸린다. 현실적 단위 약 2,000~5,000개[](source:rec-state) |
 
-검증기 통과는 형식과 장부 일관성만 증명한다.[](source:val-p4) 판정: 두 검증기는 서로의 파일을 읽지 않는다. 그래서 `findings.json`의 지문이 장부의 `candidate` 단위와 이어지는지는 기계로 확인되지 않는다.[](source:vf-run)[](source:vl-doc)
+검증기 통과는 형식과 ledger 일관성만 증명한다.[](source:val-p4) 판정: 두 검증기는 서로의 파일을 읽지 않는다. 그래서 `findings.json`의 fingerprint가 ledger의 `candidate` 단위와 이어지는지는 기계로 확인되지 않는다.[](source:vf-run)[](source:vl-doc)
 
 **테스트 파일은 의도의 근거로만 읽었다.** 분석자는 테스트를 실행하지 않았다. 테스트가 기대하는 동작은 다음과 같다.
 
 - `validate-findings.test.cjs`: 세 갈래가 모두 든 정상 문서와, `local`만 또는 `deployment`만 있는 검증 계획을 통과시킨다.[](source:vft-accept) 정렬 위반, 영향보다 높은 심각도, 위험한 경로는 거부한다.[](source:vft-reject) FIFO 입력과 심볼릭 링크 입력은 막히지 않고 바로 거부한다.[](source:vft-cli) 두 검증기의 경로·보이는 글자 규칙과 공통 한도가 같은지도 확인한다.[](source:vft-align)
-- `validate-coverage-ledger.test.cjs`: 슬러그 ID, 중복, 충돌, 별칭, 정렬 위반을 거부한다.[](source:vlt-ids) 다른 소유자의 산출물을 쓰는 `local` 확인을 거부하고, 검증 담당 확인이 사냥 담당 확인과 함께 있는 것은 허용한다.[](source:vlt-artifacts) 상태표를 강제하고[](source:vlt-state), 재배정 때 새 소유자를 요구한다.[](source:vlt-attempts) 구조 한도도 시험한다.[](source:vlt-limits)
+- `validate-coverage-ledger.test.cjs`: 슬러그 ID, 중복, 충돌, 별칭, 정렬 위반을 거부한다.[](source:vlt-ids) 다른 소유자의 산출물을 쓰는 `local` 확인을 거부하고, verifier 확인이 hunter 확인과 함께 있는 것은 허용한다.[](source:vlt-artifacts) 상태표를 강제하고[](source:vlt-state), 재배정 때 새 소유자를 요구한다.[](source:vlt-attempts) 구조 한도도 시험한다.[](source:vlt-limits)
 
 ## 후보와 확정은 어떻게 다르고, 무엇을 하지 말아야 하나 {#verdicts}
 
 | 상태 | 뜻 | 심각도 | 어디에 남나 |
 | --- | --- | --- | --- |
-| 후보(candidate) | 사냥 담당이 낸 주장. 아직 독립 검증 전 | 없음 | 장부의 `candidate` 단위 |
+| 후보(candidate) | hunter가 낸 주장. 아직 독립 검증 전 | 없음 | ledger의 `candidate` 단위 |
 | `confirmed` | 소스 근거와 제한된 국소 검증이 경계 전체와 의미 있는 결과를 세웠다 | 있음 | `findings.json`, 보고서 |
 | `needs_validation` | 소스에 근거한 구체적 경계 가설이 특정 외부 사실 때문에 막혔다. 확신 낮은 확정이 아니다 | 없음 | `findings.json`, `NEEDS-VALIDATION.md` |
 | `rejected` | 소스, 국소 동작, 보이는 통제, 영향 없음, 불가능한 전제로 반박됐다 | 없음 | `findings.json`. 다음 실행이 같은 주장을 반복하지 않게 |
 
-검증 담당은 경로 전체와 관찰 결과를 독립적으로 세웠을 때만 `needs_validation`을 `confirmed`로 올린다. 배포·런타임 사실이 모르는 채로 남으면 `confirmed`를 `needs_validation`으로 내린다. `needs_validation`은 추측을 넣어 두는 곳이 아니다.[](source:val-decide)[](source:skm-priority)
+verifier는 경로 전체와 관찰 결과를 독립적으로 세웠을 때만 `needs_validation`을 `confirmed`로 올린다. 배포·런타임 사실이 모르는 채로 남으면 `confirmed`를 `needs_validation`으로 내린다. `needs_validation`은 추측을 넣어 두는 곳이 아니다.[](source:val-decide)[](source:skm-priority)
 
-사냥 담당의 후보 관문은 일곱 줄이다.[](source:hunt-gate)
+hunter의 후보 관문은 일곱 줄이다.[](source:hunt-gate)
 
 - 후보는 저장소 상대 경로로 된 완전한 추적과, 가장 강한 통제까지 포함한 근본 원인 근거가 필요하다.
 - 확정 제안은 제한된 국소 관찰 결과, 경계를 넘는 의미 있는 영향, 완전한 조건, 막는 계층이 없음을 갖춘다.
 - 충돌을 코드 실행으로, 평범한 작업을 공유 가용성 문제로, 같은 주체의 행동을 권한 상승으로 부풀리지 않는다.
 - 필요한 사실이 소스나 국소 관찰로 안 보이면 `needs_validation`으로 두고 막힌 이유를 정확히 쓴다.
 - 영향받는 주체·자원이 없는 모범 사례 누락은 제외하거나 보강 메모로 돌린다. 소스가 반박한 후보는 `needs_validation`이 아니다.
-- 같은 근본 원인에는 모든 상태에서 같은 지문을 쓴다.
+- 같은 근본 원인에는 모든 상태에서 같은 fingerprint를 쓴다.
 - 남는 것이 없으면 빈 후보 배열을 돌려준다.
 
 원문이 꼽은 안티패턴 10개다.[](source:skm-anti)
@@ -410,8 +410,8 @@
 | 소스에 없는 제공자·프록시·브라우저·ID·배포 동작을 짐작하기 |
 | 의도된 같은 주체 권한이나 자기 영향을 경계 넘는 결과로 보기 |
 | 파서·런타임 효과를 관찰한 것보다 강하게 보고하기 |
-| 중복 제거·검증이 안 되는 산문 형태 사냥 결과 내기 |
-| 출처가 그대로인 이전 확정 기록을 다시 보고하거나, 사냥의 본보기로 삼기 |
+| 중복 제거·검증이 안 되는 산문 형태 hunting 결과 내기 |
+| 출처가 그대로인 이전 확정 기록을 다시 보고하거나, hunting의 본보기로 삼기 |
 | `needs_validation` 기록에 심각도 붙이기 |
 | 독립 검증 전에 보고서를 쓰거나, 산문과 JSON 기록이 어긋나게 두기 |
 
@@ -428,5 +428,5 @@
 @callout level=open-question title="확인하지 못한 것"
 두 모드 사이가 "애매한" 요청의 판단 기준은 원문에 명시 없음. 부모가 프로필을 "제안"할 때 사용자 승인을 기다려야 하는지도 원문에 명시 없음.
 OS가 강제하는 샌드박스를 어떤 도구로 만드는지는 원문에 명시 없음. 판정: 실행 환경이 네 통제를 못 주면 국소 확인 대신 `needs_validation`이 늘어난다.[](source:skm-safety)
-문서는 `findings.json` 한도를 "최상위 1,000건"이라고 적는다.[](source:val-p4) 코드는 같은 1,000 한도를 모든 배열에 건다.[](source:vf-limits) 장부 검증기의 객체 필드 1,000개 한도도 문서에는 없다.[](source:vl-limits)
-`findings.json`과 장부를 서로 대조하는 검증기는 없다. 미완료 실행의 부분 보고서가 미검증 지문을 다 밝혔는지도 기계로 확인되지 않는다.
+문서는 `findings.json` 한도를 "최상위 1,000건"이라고 적는다.[](source:val-p4) 코드는 같은 1,000 한도를 모든 배열에 건다.[](source:vf-limits) ledger 검증기의 객체 필드 1,000개 한도도 문서에는 없다.[](source:vl-limits)
+`findings.json`과 ledger를 서로 대조하는 검증기는 없다. 미완료 실행의 부분 보고서가 미검증 fingerprint를 다 밝혔는지도 기계로 확인되지 않는다.

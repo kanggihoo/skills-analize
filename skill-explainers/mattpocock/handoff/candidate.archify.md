@@ -4,7 +4,7 @@
 
 - 문서는 작업 폴더가 아니라 OS의 임시 폴더에 저장한다.[](source:skill-body)
 - 다음 에이전트가 Skill 도구로 부를 스킬을 "suggested skills" 절에 적는다.[](source:skill-skills)
-- 명세·계획·이슈·커밋처럼 이미 있는 기록은 옮겨 적지 않고 경로나 URL로 가리킨다.[](source:skill-nodup)
+- 명세·계획·이슈·commit처럼 이미 있는 기록은 옮겨 적지 않고 경로나 URL로 가리킨다.[](source:skill-nodup)
 - API 키, 비밀번호, 개인 식별 정보는 지운다.[](source:skill-redact)
 
 @answer scope="mattpocock/handoff · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
@@ -31,12 +31,12 @@
 | --- | --- |
 | `$TMPDIR`, 없으면 `/tmp`, Windows는 `%TEMP%`에 저장한다. 작업 폴더에는 두지 않는다[](source:skill-body) | 의무 |
 | "suggested skills" 절에 다음 에이전트가 부를 스킬 이름을 적는다[](source:skill-skills) | 의무 |
-| 명세, 계획, ADR, 이슈, 커밋, diff에 이미 있는 내용은 되풀이하지 않고 경로나 URL로 가리킨다[](source:skill-nodup) | 금지 |
+| 명세, 계획, ADR, 이슈, commit, diff에 이미 있는 내용은 되풀이하지 않고 경로나 URL로 가리킨다[](source:skill-nodup) | 금지 |
 | API 키, 비밀번호, 개인 식별 정보를 지운다[](source:skill-redact) | 의무 |
 | 인자가 있으면 그 초점에 맞춰 문서를 고친다[](source:skill-args) | 조건부 의무 |
 
 - 사용자에게 묻는 단계가 없다.
-- 판정: 저장 위치를 임시 폴더로 정해 둔 덕에 인계 문서가 저장소 커밋에 섞이지 않는다.[](source:skill-body)
+- 판정: 저장 위치를 임시 폴더로 정해 둔 덕에 인계 문서가 저장소 commit에 섞이지 않는다.[](source:skill-body)
 - 파일 이름, 문서의 절 구성(suggested skills 외), 길이, 완료 조건은 원문에 명시 없음. 저장한 경로를 사용자에게 알리라는 지시도 원문에 명시 없음.
 
 ## 이 분석의 범위와 한계 {#audit}

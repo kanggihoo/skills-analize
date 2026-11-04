@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:53:02.856Z",
+  "startedAt": "2026-11-04T13:32:15.740Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/candidate.archify.md",
-    "sha256": "c2b065e5a60ffe3b19b06dc1ce4c7b05e6bf114a26aa39d0f844794e04d9fe3a",
-    "bytes": 7422
+    "sha256": "ae3e3826a9f2b16a462ed38b7e6dc9b9234a4b8ebb9c23cdcd6b2c6fd309a442",
+    "bytes": 7439
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/loop-me.html",
-    "sha256": "074530da8cb361b907679554bb842aa1c553d6902a7f99cf1bb8202ae1788655",
-    "bytes": 621292
+    "sha256": "77d58b8d3261f925f7e00b724107cc1d7ef7131cbed2faeddcda2ae00daf452e",
+    "bytes": 621343
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "c2b065e5a60ffe3b19b06dc1ce4c7b05e6bf114a26aa39d0f844794e04d9fe3a",
-          "bytes": 7422
+          "sha256": "ae3e3826a9f2b16a462ed38b7e6dc9b9234a4b8ebb9c23cdcd6b2c6fd309a442",
+          "bytes": 7439
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 774,
+      "durationMs": 962,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "adbdc66c-3dd1-4e33-8725-a5e03c591109",
+        "receiptId": "59a6c8e0-afb8-42f1-ba8a-30e7487f7225",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/loop-me.html",
         "explainer": {
-          "preparedSha256": "1cb7f39aba1c862964d9f0ecda02aa1568c9214797e27eb67f554bdb9fc8c9f8",
+          "preparedSha256": "4be18db24423ca40a9ae9ede56b4d3cd0924bd7c803bf873a29d4aefa92d2886",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-run",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-lens",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-vocab",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-done",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-workspace",
               "path": "mattpocock/loop-me/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "e44d1cc3e760fb86ac42964c2a5f1fcac511715db50fb375f3f7be814de1eaa7",
               "bytes": 2522
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "oa-yaml",
               "path": "mattpocock/loop-me/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "b66fa10079957051be6a812f45e55b67ac394b71d5ba88349962b4c9205802c3",
               "bytes": 140
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "teach-notes",
               "path": "mattpocock/teach/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "550482c2d674b085c9043b87bfdc14a8f2ec453c736119e7fcbb1e9332bffeba",
               "bytes": 9733
             },
@@ -159,12 +159,12 @@
           ]
         },
         "specification": {
-          "sha256": "c2b065e5a60ffe3b19b06dc1ce4c7b05e6bf114a26aa39d0f844794e04d9fe3a",
-          "bytes": 7422
+          "sha256": "ae3e3826a9f2b16a462ed38b7e6dc9b9234a4b8ebb9c23cdcd6b2c6fd309a442",
+          "bytes": 7439
         },
         "artifact": {
-          "sha256": "074530da8cb361b907679554bb842aa1c553d6902a7f99cf1bb8202ae1788655",
-          "bytes": 621292
+          "sha256": "77d58b8d3261f925f7e00b724107cc1d7ef7131cbed2faeddcda2ae00daf452e",
+          "bytes": 621343
         },
         "validation": {
           "checksPassed": 4,
@@ -190,7 +190,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 403,
+      "durationMs": 447,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -203,8 +203,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/loop-me.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "074530da8cb361b907679554bb842aa1c553d6902a7f99cf1bb8202ae1788655",
-          "bytes": 621292
+          "sha256": "77d58b8d3261f925f7e00b724107cc1d7ef7131cbed2faeddcda2ae00daf452e",
+          "bytes": 621343
         },
         "checks": [
           {
@@ -248,7 +248,7 @@
               "id": "loop-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-yrFoYB/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-pD3LDK/child.html",
                 "artifact": {
                   "sha256": "c9d83b57ee7bbef8a299b2fe767dff43c7553ace9b81c45114d4068318383a59",
                   "bytes": 837710
@@ -375,7 +375,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "adbdc66c-3dd1-4e33-8725-a5e03c591109"
+        "deliveryReceiptId": "59a6c8e0-afb8-42f1-ba8a-30e7487f7225"
       }
     }
   },
@@ -389,8 +389,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/loop-me/loop-me.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:53:04.167Z",
-  "durationMs": 1311,
+  "finishedAt": "2026-11-04T13:32:17.309Z",
+  "durationMs": 1568,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

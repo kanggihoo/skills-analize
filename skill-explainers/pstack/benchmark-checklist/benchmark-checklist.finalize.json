@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:18:55.074Z",
+  "startedAt": "2026-11-04T12:37:44.532Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/candidate.archify.md",
-    "sha256": "2d132454b5d6f64327e5cdc32aa3fa06ac241858739734434f1c79c8e3fad2fa",
-    "bytes": 12197
+    "sha256": "9af14ae284c3443d3c889dbfd84a84d3379a990a0ed4096cbf484d90632b458f",
+    "bytes": 12776
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/benchmark-checklist.html",
-    "sha256": "d8534b0cee99ea57f01414c27cbd53c13f4b73b899417987bdb4f7e7cf47290f",
-    "bytes": 763669
+    "sha256": "aa8a2ae50b4afd55abaaafa7fa0e758d45ac1aaf9d1040c87d7812218ad06542",
+    "bytes": 765423
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "2d132454b5d6f64327e5cdc32aa3fa06ac241858739734434f1c79c8e3fad2fa",
-          "bytes": 12197
+          "sha256": "9af14ae284c3443d3c889dbfd84a84d3379a990a0ed4096cbf484d90632b458f",
+          "bytes": 12776
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1146,
+      "durationMs": 1039,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "aa6ceb08-6339-4759-9ee2-9b9cb6424140",
+        "receiptId": "c99e820c-b44e-455e-b483-9147467f7b0f",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/benchmark-checklist.html",
         "explainer": {
-          "preparedSha256": "0b1a9a646a31c52571b466da89dd6a7f2c3cfbd7c3c92bb8c6f6e418811b9462",
+          "preparedSha256": "816fcbcaf50d1df0f67ac755ae36e4bf21f28365fc65be60c0ad5444316fb32f",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-ballpark",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-before",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-q1",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-q2",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-q3",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skill-q4",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "skill-q5",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "skill-q6",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "skill-q7",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "skill-report",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "skill-fit",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "pb-hill",
               "path": "pstack/poteto-mode/playbooks/hillclimb.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
               "bytes": 4403
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "pb-perf",
               "path": "pstack/poteto-mode/playbooks/perf-issue.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
               "bytes": 1446
             },
@@ -217,7 +217,7 @@
               "kind": "repository",
               "id": "pb-pr",
               "path": "pstack/poteto-mode/playbooks/opening-a-pr.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "ab40de7163c1c6e274f46ee559b2e53ef45673703f601f13f4931c199e6fb90f",
               "bytes": 6142
             },
@@ -225,7 +225,7 @@
               "kind": "repository",
               "id": "etn",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -239,12 +239,12 @@
           ]
         },
         "specification": {
-          "sha256": "2d132454b5d6f64327e5cdc32aa3fa06ac241858739734434f1c79c8e3fad2fa",
-          "bytes": 12197
+          "sha256": "9af14ae284c3443d3c889dbfd84a84d3379a990a0ed4096cbf484d90632b458f",
+          "bytes": 12776
         },
         "artifact": {
-          "sha256": "d8534b0cee99ea57f01414c27cbd53c13f4b73b899417987bdb4f7e7cf47290f",
-          "bytes": 763669
+          "sha256": "aa8a2ae50b4afd55abaaafa7fa0e758d45ac1aaf9d1040c87d7812218ad06542",
+          "bytes": 765423
         },
         "validation": {
           "checksPassed": 4,
@@ -270,7 +270,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 591,
+      "durationMs": 502,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -283,8 +283,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/benchmark-checklist.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "d8534b0cee99ea57f01414c27cbd53c13f4b73b899417987bdb4f7e7cf47290f",
-          "bytes": 763669
+          "sha256": "aa8a2ae50b4afd55abaaafa7fa0e758d45ac1aaf9d1040c87d7812218ad06542",
+          "bytes": 765423
         },
         "checks": [
           {
@@ -328,7 +328,7 @@
               "id": "bench-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-WjTHsY/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-7xmODP/child.html",
                 "artifact": {
                   "sha256": "0e655193efac38bd048cd2e639b621d8c9f26be8fa2ce6f3658524a52c024d7f",
                   "bytes": 834760
@@ -455,7 +455,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "aa6ceb08-6339-4759-9ee2-9b9cb6424140"
+        "deliveryReceiptId": "c99e820c-b44e-455e-b483-9147467f7b0f"
       }
     }
   },
@@ -469,8 +469,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/benchmark-checklist/benchmark-checklist.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:18:57.016Z",
-  "durationMs": 1941,
+  "finishedAt": "2026-11-04T12:37:46.265Z",
+  "durationMs": 1732,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

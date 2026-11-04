@@ -2,10 +2,10 @@
 
 이 원칙을 적용하면 에이전트는 "끝났다"고 말하기 전에 실물을 직접 확인한다. 기능을 돌려 보고, 실제 값을 읽고, `diff`를 열어 본다. "컴파일된다"나 자기 보고는 근거로 쓰지 않는다.[](source:skill-fm)[](source:skill-intro)
 
-- 파일 수정 시각, 출력의 최신 여부, 에이전트의 자기 보고, 캐시된 스크린샷은 대리 근거다. 싸 보이지만 틀린 추론의 비용이 더 크다.[](source:skill-why)
+- 파일 수정 시각, 출력의 최신 여부, 에이전트의 자기 보고, 캐시된 스크린샷은 대리 근거다. 직접 확인보다 싸 보이지만, 틀린 추론에 따라 행동하면 원본을 확인할 때보다 비용이 더 든다.[](source:skill-why)
 - 검증이 실패하면 시스템보다 관찰 방법을 먼저 의심한다.[](source:skill-real)
 - 가장 강한 증명은 같은 비교를 다시 돌리는 결정적 스크립트다. 출력은 리뷰어가 다시 돌릴 수 있는 산출물로 남긴다.[](source:skill-script)
-- 산출물은 사람이 볼 수 있게 둔다. 커밋은 나중에 감사해야 할 큰 작업일 때만 한다.[](source:skill-commit)
+- 산출물은 사람이 볼 수 있게 둔다. commit은 나중에 감사해야 할 큰 작업일 때만 한다.[](source:skill-commit)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
 @meta locale=ko
@@ -48,9 +48,9 @@
 | 플레이북 6개 | `refactoring`, `session-pickup`, `worktree-cleanup`, `multi-phase-plan`, `autopilot-full`, `hillclimb`의 검증 단계(아래 표) |
 | `figure-it-out`, `arena` | 완료 조건을 정할 때, 종합한 결과를 검증할 때[](source:fio)[](source:arena) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -62,7 +62,7 @@
 | 검증이 실패하면 시스템보다 관찰 방법을 먼저 의심한다[](source:skill-real) | 의무 |
 | 가능하면 확인을 결정적 스크립트로 쓰고, 돌리고, 출력을 산출물로 남긴다[](source:skill-script) | 권고(할 수 있을 때) |
 | 산출물은 사람이 볼 수 있게 둔다[](source:skill-commit) | 의무 |
-| 산출물 커밋은 큰 이식이나 이전처럼 나중에 감사할 기록이 필요할 때만 한다. 이때 `show-me-your-work`를 쓴다[](source:skill-commit) | 조건부 |
+| 산출물 commit은 큰 이식이나 이전처럼 나중에 감사할 기록이 필요할 때만 한다. 이때 `show-me-your-work`를 쓴다[](source:skill-commit) | 조건부 |
 
 | 피할 근거(원문의 예) | 대신 볼 것 |
 | --- | --- |
@@ -97,12 +97,12 @@
 | `autopilot-full` 2단계 | PR 담당의 자체 증명 | 실물로 증명한다[](source:pb-autopilot) | 원장에 없음 |
 | `hillclimb` 핵심 규율 | 유지 또는 되돌리기 | 코드만 읽고 개선을 주장하지 않는다[](source:pb-hillclimb) | 원장에 없음 |
 | `figure-it-out` Phase A | 반증 가능한 완료 조건 | 긴 실행을 시작하기 전[](source:fio) | 원장에 없음 |
-| `arena` 종합 결과 | 같은 수준의 검증 | 접붙인 결과도 다른 출력처럼 검증한다[](source:arena) | 원장에 없음 |
-| `principle-build-the-lever` | - | 검증 자체를 스크립트로 만드는 일은 이 원칙을 보라고 한다[](source:lever) | r105 |
+| `arena` 종합 결과 | 같은 수준의 검증 | graft(진 후보의 장점을 base에 합치기)한 결과도 다른 출력처럼 검증한다[](source:arena) | 원장에 없음 |
+| `principle-build-the-lever` | - | 검증 자체를 스크립트로 만들 때는 이 원칙을 보라고 안내한다[](source:lever) | r105 |
 | `principle-explain-the-number` | - | 구별: 이 원칙은 출력이 진짜인지, 저쪽은 수치가 그 뜻인지 본다[](source:number) | r106 |
 | `principle-sequence-verifiable-units` | - | 짝 원칙: 저쪽은 순서, 이 원칙은 각 검사가 진짜인지[](source:units) | 원장에 없음 |
 | `poteto-help` 상황표 | - | 답변이 초록 빌드로 성공을 주장할 때 이 원칙을 안내한다[](source:help-row) | 원장에 없음 |
-| - | `show-me-your-work`로 남긴 기록 | 크거나 복잡해서 나중에 감사할 기록이 필요할 때만 커밋[](source:skill-commit) | r96 |
+| - | `show-me-your-work`로 남긴 기록 | 크거나 복잡해서 나중에 감사할 기록이 필요할 때만 commit[](source:skill-commit) | r96 |
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다.
 
@@ -111,9 +111,9 @@
 - 읽은 파일: `SKILL.md`(1371B). 이 원칙을 부르는 위치를 확인하려고 위 출처 목록의 플레이북 6개, `figure-it-out`, `arena`, 다른 원칙 3개, `poteto-help`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: `reporting-skills/pstack/principle-prove-it-works`, `verification-skills/pstack/principle-prove-it-works`와 원문 동일(`shasum` 일치, 원장과 같음).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-어떤 작업이 "크거나 복잡해서" 커밋할 대상인지는 큰 이식·이전이라는 예만 있다. 기준은 원문에 명시 없음.
+어떤 작업이 "크거나 복잡해서" commit할 대상인지는 큰 이식·이전이라는 예만 있다. 기준은 원문에 명시 없음.
 "관찰 방법을 먼저 의심한다" 뒤에 무엇을 하는지(다른 관찰법으로 다시 보기 등)는 원문에 명시 없음.

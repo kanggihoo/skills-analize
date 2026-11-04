@@ -2,9 +2,9 @@
 
 이 원칙을 적용하면 에이전트는 계획된 재작성이나 이전에서 중간 상태를 매끄럽게 지키려 하지 않는다. 검증할 수 있는 최종 상태를 목표로 삼고, 그 상태로 곧장 수렴한다.[](source:skill-intro)
 
-- 중간 단계마다 안정성을 지키려고 만든 임시 호환 코드가 오래 남는 부채가 된다고 본다.[](source:skill-why)
+- 원문은 중간 단계마다 안정성을 지키려고 만든 임시 호환 코드가 오래 남는 부채가 된다고 본다.[](source:skill-why)
 - 중간 파손은 계획되고, 범위가 정해지고, 되돌릴 수 있을 때만 허용한다.[](source:skill-core)
-- 단계 경계가 명시된 계획에만 쓴다. 파손을 허용할 곳을 미리 밝힌다.[](source:skill-guard)
+- 이 원칙은 단계 경계가 명시된 계획에만 쓴다. 에이전트는 파손을 허용할 곳을 미리 밝힌다.[](source:skill-guard)
 - 계획이 끝나면 정적 검증과 런타임 검증을 모두 통과해야 한다.[](source:skill-guard)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
@@ -24,7 +24,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-outcome-oriented-execution`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-outcome-oriented-execution`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -32,9 +32,9 @@
 | `poteto-mode` | Core 원칙. 단계 경계가 명시된 계획된 재작성과 이전[](source:pm-line) |
 | `architect` | 종합한 설계를 채워 넣는 동안 생기는 계획된 파손을 허용하는 근거[](source:architect) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -74,7 +74,7 @@
 - 읽은 파일: `SKILL.md`(1078B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `architect/SKILL.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

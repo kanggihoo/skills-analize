@@ -26,20 +26,20 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-test-behavior-not-implementation`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-test-behavior-not-implementation`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/principle-test-behavior-not-implementation` 입력[](source:help-principles) |
 | `poteto-mode` | Verification 원칙. 테스트를 쓰거나, 바꾸거나, 남길 때[](source:pm-line) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
-결함 때문에 실패할 수 없는 테스트는 CI 시간과 리뷰 주의만 쓰고 아무것도 잡지 못한다. 상수를 고정하는 테스트는 더 나쁘다. 누가 그 상수나 프롬프트를 고치면 실패해서 정당한 수정을 막는다.[](source:skill-why)
+결함 때문에 실패할 수 없는 테스트는 CI 시간과 리뷰 주의만 쓰고 아무것도 잡지 못한다. 상수를 고정하는 테스트는 더 나쁘다. 누가 그 상수나 프롬프트를 고치면 이 테스트가 실패해서 정당한 수정을 막는다.[](source:skill-why)
 
 | 걸리는 모양 | 원문의 예 | 고치는 법 |
 | --- | --- | --- |
@@ -78,7 +78,7 @@
 - 읽은 파일: `SKILL.md`(2575B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `interrogate/references/rubric.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: `verification-skills/pstack/principle-test-behavior-not-implementation`과 원문 동일(`shasum` 일치, 원장과 같음).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

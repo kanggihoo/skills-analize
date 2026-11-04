@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:25:37.350Z",
+  "startedAt": "2026-11-04T12:50:20.504Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/candidate.archify.md",
-    "sha256": "9e3ca2b4b61dd2ed2aeab814e45093850ebb34492a1c20c9c769b088edce7214",
-    "bytes": 8498
+    "sha256": "020a42b003611ad6efe060a082a0b4c09dad90a13b2526b37e623dca8c4715af",
+    "bytes": 8599
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/principle-foundational-thinking.html",
-    "sha256": "3c97586cd09de9b1782d81761bb0ed49f3bb2c9e184dcba43e11f51b610bfba7",
-    "bytes": 726019
+    "sha256": "2dbfe32505d7fb71935ef9ad45027d4df0150d45820d0dc06e5c137405a7afab",
+    "bytes": 726272
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "9e3ca2b4b61dd2ed2aeab814e45093850ebb34492a1c20c9c769b088edce7214",
-          "bytes": 8498
+          "sha256": "020a42b003611ad6efe060a082a0b4c09dad90a13b2526b37e623dca8c4715af",
+          "bytes": 8599
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 803,
+      "durationMs": 800,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "7d443273-535b-453d-905d-62e1c63f455c",
+        "receiptId": "e2669512-2047-438c-a161-4c0373dc5814",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/principle-foundational-thinking.html",
         "explainer": {
-          "preparedSha256": "cab8acdbaf222561a4396c492c960305ea4874342984648d4d8825a44da059b9",
+          "preparedSha256": "13fd7e2e7d286264612363c0ad878ade8c511663ae44b41397d16fe27e79b6f9",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "layers",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "data",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "code",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "concurrency",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "scaffold",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "increment",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "subtract",
               "path": "pstack/principle-foundational-thinking/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
               "bytes": 1530
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "pb-refactor",
               "path": "pstack/poteto-mode/playbooks/refactoring.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
               "bytes": 3211
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "architect",
               "path": "pstack/architect/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
               "bytes": 5675
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "fio",
               "path": "pstack/figure-it-out/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "0eb9485f0e7d84fee56b5d0f0af0faf4635e3ca87c8cba3970c01293b76ecc19",
               "bytes": 4059
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "exp",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -209,18 +209,18 @@
               "kind": "diagram-spec",
               "id": "found-position",
               "inline": true,
-              "sha256": "f303c6cf32dc65bb24025864ef2b5eb457847d56a1e7ac4994a0b7a3999b4f85",
+              "sha256": "064f10e1b646e786b12ad5cdc24d2ae8d401263ca3ca8a993dc7c7e262aa16b9",
               "bytes": 1256
             }
           ]
         },
         "specification": {
-          "sha256": "9e3ca2b4b61dd2ed2aeab814e45093850ebb34492a1c20c9c769b088edce7214",
-          "bytes": 8498
+          "sha256": "020a42b003611ad6efe060a082a0b4c09dad90a13b2526b37e623dca8c4715af",
+          "bytes": 8599
         },
         "artifact": {
-          "sha256": "3c97586cd09de9b1782d81761bb0ed49f3bb2c9e184dcba43e11f51b610bfba7",
-          "bytes": 726019
+          "sha256": "2dbfe32505d7fb71935ef9ad45027d4df0150d45820d0dc06e5c137405a7afab",
+          "bytes": 726272
         },
         "validation": {
           "checksPassed": 4,
@@ -246,7 +246,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 409,
+      "durationMs": 433,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -259,8 +259,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/principle-foundational-thinking.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "3c97586cd09de9b1782d81761bb0ed49f3bb2c9e184dcba43e11f51b610bfba7",
-          "bytes": 726019
+          "sha256": "2dbfe32505d7fb71935ef9ad45027d4df0150d45820d0dc06e5c137405a7afab",
+          "bytes": 726272
         },
         "checks": [
           {
@@ -304,10 +304,10 @@
               "id": "found-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-vDHE8I/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-4v56jk/child.html",
                 "artifact": {
-                  "sha256": "b57e6c1391f2626dad8c03cac366ce5ecb8f6c32d5185371b2e739d845ca223a",
-                  "bytes": 837673
+                  "sha256": "d245ec921c83b85fcea33b11b9b93c0693e80a20b00140917ed069ac6f3bde7a",
+                  "bytes": 837646
                 },
                 "checks": [
                   {
@@ -431,7 +431,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "7d443273-535b-453d-905d-62e1c63f455c"
+        "deliveryReceiptId": "e2669512-2047-438c-a161-4c0373dc5814"
       }
     }
   },
@@ -445,8 +445,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-foundational-thinking/principle-foundational-thinking.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:25:38.708Z",
-  "durationMs": 1357,
+  "finishedAt": "2026-11-04T12:50:21.885Z",
+  "durationMs": 1381,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

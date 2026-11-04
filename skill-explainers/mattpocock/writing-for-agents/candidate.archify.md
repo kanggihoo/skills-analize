@@ -100,7 +100,7 @@
 
 | 포인터 작성 규칙 | 뜻 |
 | --- | --- |
-| 이끄는 단어를 앞에 둔다 | 발동을 일으키는 것이 포인터이므로 핵심 단어를 맨 앞에 쓴다[](source:wfa-ptr) |
+| leading word(모델이 이미 아는 압축된 개념)를 앞에 둔다 | 발동을 일으키는 것이 포인터이므로 핵심 단어를 맨 앞에 쓴다[](source:wfa-ptr) |
 | 갈래 하나에 발동어 하나 | 같은 갈래를 이름만 바꾼 동의어는 하나로 합친다. 진짜 다른 갈래(branch)만 남긴다[](source:wfa-ptr) |
 | 본문이 이미 말하는 정체는 뺀다 | 상시 실리는 포인터는 단어마다 매 턴 비용이 들어 본문보다 더 깎는다[](source:wfa-ptr) |
 
@@ -146,12 +146,12 @@
 
 ## 어떤 단어를 쓰고 어떤 문장을 지우나 {#words}
 
-**이끄는 단어(leading word)**는 모델이 사전 학습으로 이미 아는 압축된 개념이다. 예로 `lesson`, `fog of war`, `tracer bullets`가 나온다.[](source:wfa-lead)
+**leading word**는 모델이 사전 학습으로 이미 아는 압축된 개념이다. 예로 `lesson`, `fog of war`, `tracer bullets`가 나온다.[](source:wfa-lead)
 
 - 문장이 아니라 토큰으로 반복하면 넓은 행동 영역을 적은 토큰으로 붙잡는다. 본문에서는 실행을, 포인터에서는 호출을 붙잡는다.[](source:wfa-lead)
 - 새 단어를 지어도 되지만 사전 지식을 끌어오지 못하므로 정의 비용이 든다. 기존 단어를 먼저 찾는다.[](source:wfa-lead)
 
-| 늘어진 표현 | 이끄는 단어 |
+| 늘어진 표현 | leading word |
 | --- | --- |
 | "fast, deterministic, low-overhead" | `tight` (a `tight` loop)[](source:wfa-lead) |
 | "a loop you believe in" | `red`. 흐린 통과 조건을 버그에서 빨개지는지 아닌지라는 이분 상태로 바꾼다[](source:wfa-lead) |
@@ -166,9 +166,9 @@
 | 단일 원본(single source of truth) | 한 뜻은 한 곳에만 둔다. 중복은 유지 비용과 토큰을 들이고, 그 뜻을 계층에서 실제보다 높게 보이게 한다[](source:wfa-sst) |
 | 환경은 원본, 문서는 캐시 | `package.json` 스크립트, 설정 파일, 폴더 구조, `--help` 출력을 다시 적은 문서는 캐시다. 찾아보기 비싼 것만 적는다. 적힌 적 없는 관례, 선택의 이유, 설정에 드러나지 않는 함정이 그렇다[](source:wfa-cache) |
 | 관련성 | 줄마다 아직 문서의 일과 관련 있는지 본다. 가지치기 습관이 없으면 낡은 층이 쌓이는 퇴적층(sediment)이 된다[](source:wfa-rel) |
-| 효과 없는 지시(no-op) | 모델이 기본으로 이미 하는 일을 시키는 문장은 지운다. 단어만 깎지 말고 문장을 통째로 지운다. 판단은 토론이 아니라 문서를 돌려서 한다[](source:wfa-noop) |
+| no-op 지시(모델이 이미 하는 일을 시키는 지시) | 모델이 기본으로 이미 하는 일을 시키는 문장은 지운다. 단어만 깎지 말고 문장을 통째로 지운다. 판단은 토론이 아니라 문서를 돌려서 한다[](source:wfa-noop) |
 
-효과 없는 지시 시험은 이끄는 단어에도 적용된다. 기본값을 못 이기는 약한 단어(`be thorough`)는 효과가 없다. 처방은 다른 기법이 아니라 더 센 단어(`relentless`)다.[](source:wfa-noop)
+no-op 지시 시험은 leading word에도 적용된다. 기본값을 못 이기는 약한 단어(`be thorough`)는 효과가 없다. 처방은 다른 기법이 아니라 더 센 단어(`relentless`)다.[](source:wfa-noop)
 
 ## 흐름 속 위치 {#position}
 

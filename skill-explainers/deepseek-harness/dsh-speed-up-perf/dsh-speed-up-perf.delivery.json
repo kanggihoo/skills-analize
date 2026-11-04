@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "149583b5-212d-49f7-ab91-8ff244500e41",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-speed-up-perf/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-speed-up-perf/dsh-speed-up-perf.html",
+  "specification": {
+    "sha256": "7d102112b016272c4e0c12194c73ac5b21183bf3880df0baa8815539dcc6f9a0",
+    "bytes": 19533
+  },
+  "artifact": {
+    "sha256": "436354d150d8955e5f0f67c6818f43ffc1392afe7ef1b572d3e2dc8fa2749c2e",
+    "bytes": 1125082
+  },
+  "explainer": {
+    "preparedSha256": "b9780462441a72e1ef2fe2f2fc465b9ca56d674342e5c8482787af9c25733fad",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "sp-fm",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-intro",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-auth",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-agree",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-base",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-survey",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-drivers",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-rank",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-bench",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-corpus",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-card",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-node",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-fresh",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-budget",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-e2e",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-browser",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-base-run",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-patterns",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-onefactor",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-behavior",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-minor",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-reject",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-note",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-stack",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-prepush",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "repository",
+        "id": "sp-summary",
+        "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+        "bytes": 12167
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "perf-flow",
+        "inline": true,
+        "sha256": "156fe73dbd36e9c0be4a33b4952cd19af2ec9d6f492fb48cce0b42cc8128de00",
+        "bytes": 1526
+      }
+    ]
+  }
+}

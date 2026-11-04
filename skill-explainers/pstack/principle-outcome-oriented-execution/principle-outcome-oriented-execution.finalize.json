@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:15:03.922Z",
+  "startedAt": "2026-11-04T12:36:53.065Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
-    "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
-    "bytes": 6163
+    "sha256": "9e23a0eca21a1600d49cbd4534242ce2b0f5cc961caac2a7c2855fe2bc594de8",
+    "bytes": 6312
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
-    "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
-    "bytes": 682486
+    "sha256": "91f2e57e07471805b38f68fd1ed9652c3c378c2db17cfff93cd21f7afad71d00",
+    "bytes": 682933
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
-          "bytes": 6163
+          "sha256": "9e23a0eca21a1600d49cbd4534242ce2b0f5cc961caac2a7c2855fe2bc594de8",
+          "bytes": 6312
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1877,
+      "durationMs": 1180,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "74b4b6ec-652c-43b9-a763-5cfc9aae4147",
+        "receiptId": "0c36ce63-9fcb-47ca-961d-59c8531d286b",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
         "explainer": {
-          "preparedSha256": "be4901c494129fbcb3476e994194f79d968ccfd99a4bc709c9450321927630be",
+          "preparedSha256": "abc5c59cc7d4e9d73d46ee414972423844840223064ee4caabd1d36e75baedc6",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
               "bytes": 1078
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
               "bytes": 1078
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-why",
               "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
               "bytes": 1078
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-core",
               "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
               "bytes": 1078
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-guard",
               "path": "pstack/principle-outcome-oriented-execution/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
               "bytes": 1078
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "pm-line",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "architect",
               "path": "pstack/architect/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "741901140ee382ebf93263a7ed03c6ee3719e578416d81afcd195876fa16c496",
               "bytes": 5675
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "help-principles",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -175,12 +175,12 @@
           ]
         },
         "specification": {
-          "sha256": "2409e874435a9fb732d486315dc602ad5c4180181f518c029913ea5ce32399a4",
-          "bytes": 6163
+          "sha256": "9e23a0eca21a1600d49cbd4534242ce2b0f5cc961caac2a7c2855fe2bc594de8",
+          "bytes": 6312
         },
         "artifact": {
-          "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
-          "bytes": 682486
+          "sha256": "91f2e57e07471805b38f68fd1ed9652c3c378c2db17cfff93cd21f7afad71d00",
+          "bytes": 682933
         },
         "validation": {
           "checksPassed": 4,
@@ -206,7 +206,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 743,
+      "durationMs": 578,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -219,8 +219,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "56e1938b36055b928fc89d78b9e7fdda29cd89dba4f2c6602aed7f2e8502180a",
-          "bytes": 682486
+          "sha256": "91f2e57e07471805b38f68fd1ed9652c3c378c2db17cfff93cd21f7afad71d00",
+          "bytes": 682933
         },
         "checks": [
           {
@@ -264,7 +264,7 @@
               "id": "outcome-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-JRldGV/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-FatxpE/child.html",
                 "artifact": {
                   "sha256": "39f87842387d31753d855ac8cbc5d9b662ef148230cb1ce77b341f9654e8c676",
                   "bytes": 833650
@@ -391,7 +391,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "74b4b6ec-652c-43b9-a763-5cfc9aae4147"
+        "deliveryReceiptId": "0c36ce63-9fcb-47ca-961d-59c8531d286b"
       }
     }
   },
@@ -405,17 +405,16 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-outcome-oriented-execution/principle-outcome-oriented-execution.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:15:06.781Z",
-  "durationMs": 2858,
+  "finishedAt": "2026-11-04T12:36:55.042Z",
+  "durationMs": 1977,
   "update": {
-    "status": "unavailable",
-    "installedVersion": null,
-    "availableVersion": null,
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
     "releaseNotes": null,
-    "checkedAt": null,
-    "source": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
     "noticeRequired": false,
-    "noticeText": null,
-    "reason": "timeout"
+    "noticeText": null
   }
 }

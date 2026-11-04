@@ -71,7 +71,7 @@
 | 코딩 규칙(Coding standards) | 리뷰 에이전트(reviewer agent)에 새 규칙을 줄지, 기존 규칙을 지우거나 분명히 할지[](source:retro-std) | 리뷰 에이전트가 실수를 놓쳤을 때 |
 | 전역 `AGENTS.md` | 코딩 규칙이나 자동 검사로 옮겨야 할 지침이 있나[](source:retro-agents) | 저장소나 사용자 전역의 `AGENTS.md`가 특히 클 때 |
 | 도구 비용(Tool economy) | 줄일 수 있는 비싼 도구 호출, 토큰을 많이 쓰는 CLI·MCP 도구가 있나[](source:retro-tool) | 비싼 도구 호출이 있었을 때 |
-| 효과 없는 지시(No-ops) | 지침 파일에 에이전트 행동을 바꾸지 못하는 지시가 있나[](source:retro-noop) | 지침 파일이 크고 다루기 어려울 때 |
+| no-op 지시(에이전트 행동을 바꾸지 못하는 지시) | 지침 파일에 에이전트 행동을 바꾸지 못하는 지시가 있나[](source:retro-noop) | 지침 파일이 크고 다루기 어려울 때 |
 | 정보 접근(Information access) | 개발 서버 로그를 따로 받아 두기, 외부 서비스 읽기 전용 접근처럼 접근을 넓힐 곳[](source:retro-info) | 중요한 정보를 에이전트가 볼 수 없었을 때 |
 
 자동 검사 범주에는 두 가지 의무가 더 붙는다.[](source:retro-checks)
@@ -131,7 +131,7 @@
 | `writing-for-agents` | 문서 작성 기준 | - | 1단계에서 반드시 호출. 4단계 참고 절에서도 이 기준을 따르라고 한다[](source:retro-s1)[](source:retro-files) | r03 |
 | `setup-pre-commit`, `git-guardrails-claude-code` | - | "안전장치 없음" 후보 | 추론. `retro`는 두 스킬을 이름으로 부르지 않는다[](source:retro-checks)[](source:spc-fm)[](source:gg-fm) | r09 |
 
-`writing-for-agents`는 `disable-model-invocation`이 없는 스킬이라 `retro`가 Skill 도구로 부를 수 있다.[](source:wfa-fm) 그림의 "안전장치 설치"는 `setup-pre-commit`(커밋 전 훅)과 `git-guardrails-claude-code`(명령 실행 전 훅)를 묶은 것이다. 전체 흐름은 `mattpocock/_group-env-improve/env-improve.html`에 있다. 관계 근거는 `mattpocock/relations.md`의 `rel-id`로 확인한다.
+`writing-for-agents`는 `disable-model-invocation`이 없는 스킬이라 `retro`가 Skill 도구로 부를 수 있다.[](source:wfa-fm) 그림의 "안전장치 설치"는 `setup-pre-commit`(commit 전 훅)과 `git-guardrails-claude-code`(명령 실행 전 훅)를 묶은 것이다. 전체 흐름은 `mattpocock/_group-env-improve/env-improve.html`에 있다. 관계 근거는 `mattpocock/relations.md`의 `rel-id`로 확인한다.
 
 ## 이 분석의 범위와 한계 {#audit}
 

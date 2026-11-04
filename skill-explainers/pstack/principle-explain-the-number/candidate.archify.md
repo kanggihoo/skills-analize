@@ -1,10 +1,10 @@
 # principle-explain-the-number 스킬은 에이전트를 어떻게 바꾸나 {#explain-the-number-skill}
 
-`principle-explain-the-number`를 읽은 에이전트는 잰 수치를 그대로 믿거나 보고하지 않는다. 먼저 그 수치를 묶는 한계 요인을 찾고, 다른 것을 잰 게 아님을 근거로 배제한다.[](source:rule)
+`principle-explain-the-number`를 읽은 에이전트는 잰 수치를 그대로 믿거나 보고하지 않는다. 먼저 그 수치를 묶는 한계 요인(코어, 락, 디스크, 네트워크 같은 자원이나 코드 경로)을 찾고, 다른 것을 잰 게 아님을 근거로 배제한다.[](source:rule)
 
 - 원문의 이유: 잘못된 실행도 그럴듯한 수치를 낸다. 실패한 요청, 일을 건너뛴 캐시, 돌지 않은 코드, 기본 설정에 남은 한쪽, 실행마다 다른 잡음이 모두 멀쩡해 보이는 결과를 만든다.[](source:why)
 - 핵심 질문은 "왜 두 배가 아닌가?"다. 이 질문에 답하지 못하면 무엇을 쟀는지 모르는 것이다.[](source:why)
-- 성능 수치면 `benchmark-checklist`로 전체 절차를 돌린다.[](source:handoff)
+- 잰 수치가 성능 수치이면, `benchmark-checklist`로 전체 절차를 돌린다.[](source:handoff)
 - 근거에 실행 횟수, 편차, 이름 붙은 한계 요인 중 하나라도 없으면 이 원칙을 건너뛴 것이다.[](source:skipped)
 
 @answer scope="pstack/principle-explain-the-number · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
@@ -27,7 +27,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-explain-the-number`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-explain-the-number`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -35,7 +35,7 @@
 | `poteto-mode` (Verification 분류) | 잰 수치(속도 향상, 회귀, 처리량, 지연, 평가 결과)를 믿거나 보고하거나 그에 따라 행동하기 전[](source:pm-trigger) |
 | `benchmark-checklist` | 체크리스트가 왜 필요한지 설명할 때 이 원칙을 가리킨다[](source:bc) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장 기준으로 이 원칙을 이름으로 부르는 플레이북은 없다.
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장에는 이 원칙을 이름으로 부르는 플레이북이 없다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -52,7 +52,7 @@
 | 흔한 용의자 | 무엇을 확인하나 |
 | --- | --- |
 | 오류 | 실패한 요청이 수치에 섞였는가[](source:p-else) |
-| 건너뛰거나 캐시된 일 | 일이 실제로 수행됐는가[](source:p-else) |
+| 건너뛰거나 캐시된 일 | 일이 실제로 실행됐는가[](source:p-else) |
 | 조정하지 않은 한쪽 | 비교 대상 한쪽이 기본 설정에 남았는가[](source:p-else) |
 | 잡음 | 실행마다 흔들리는 폭이 차이보다 큰가[](source:p-else) |
 | 너무 작은 조각 | 전체 흐름에서 의미가 있을 만큼 큰가[](source:p-else) |
@@ -95,7 +95,7 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 없다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: `reporting-skills/pstack/principle-explain-the-number/SKILL.md`와 원문 동일(`shasum` 일치). 소속 묶음과 호출 측은 `pstack/` 경로 기준으로 확인했다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

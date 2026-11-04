@@ -1,6 +1,6 @@
 # principle-type-system-discipline 스킬은 에이전트를 어떻게 바꾸나 {#type-skill}
 
-이 원칙을 적용하면 에이전트는 타입 검사기를 증명 도구로 쓴다. 불가능한 상태, 섞이면 안 되는 기본형, 처리하지 않은 변형을 컴파일 시점에 막는다. 타입이 무시하게 둔 경우는 런타임 실패가 된다고 본다.[](source:skill-intro)
+이 원칙을 적용하면 에이전트는 타입 검사기를 증명 도구로 쓴다. 불가능한 상태, 섞이면 안 되는 기본형, 처리하지 않은 변형을 컴파일 시점에 막는다. 원문은 타입이 무시하게 둔 경우를 컴파일러가 막을 수 있었던 런타임 실패로 본다.[](source:skill-intro)
 
 - 잘못된 상태는 표현할 수 없게 만든다. 모순된 조합이 컴파일되는 선택 필드 묶음 대신 합 타입(sum type)을 쓴다.[](source:p-illegal)
 - 외부 데이터는 파싱하기 전까지 타입이 없다고 본다. 경계마다 파싱 함수를 둔다.[](source:p-parse)
@@ -32,7 +32,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-type-system-discipline`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-type-system-discipline`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -40,9 +40,9 @@
 | `poteto-mode` | Architecture 원칙. 타입 언어에서 타입이나 시그니처를 설계할 때[](source:pm-line) |
 | `typescript-best-practices` | 그 스킬의 규칙보다 이 원칙을 먼저 적용한다[](source:tbp) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -81,7 +81,7 @@ completedAt !== null
 | 이 `any`, `as`, `assertNotNull`은 어디서 왔나? | 경계까지 따라가 거기서 검증한다[](source:skill-tests) |
 | 다음 달 새 변형이 생기면 컴파일러가 다음 에이전트에게 알려 주나? | 아니오 → 매칭이 빠짐없지 않다[](source:skill-tests) |
 | 다른 파일이 가진 모양을 이 타입이 베끼고 있나? | 예 → 파생한다[](source:skill-tests) |
-| 연산을 전체 함수로 지키려고 강화하나, 더 정밀하려고 강화하나? | 강화하지 않아도 `panic`이 없으면 평범한 타입을 둔다[](source:skill-tests) |
+| 연산을 전체 함수로 지키려고 강화하나, 더 정밀하려고 강화하나? | 강화하지 않아도 `panic`이 날 곳이 없으면 평범한 타입을 둔다[](source:skill-tests) |
 
 ## 흐름 속 위치 {#position}
 
@@ -111,7 +111,7 @@ completedAt !== null
 - 읽은 파일: `SKILL.md`(4922B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `typescript-best-practices/SKILL.md`, `typescript-best-practices/references/patterns.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

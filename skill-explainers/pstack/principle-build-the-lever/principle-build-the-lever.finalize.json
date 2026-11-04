@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:24:36.695Z",
+  "startedAt": "2026-11-04T12:50:11.570Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/candidate.archify.md",
-    "sha256": "d9f81938412644a2fb2f6ae99c9e029312fceed049ca7388978db869d2c573af",
-    "bytes": 9237
+    "sha256": "10a90cba09b440597c13da9458abe7944fdbeadcc25c99ef1098ef1fe6bf1727",
+    "bytes": 9379
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/principle-build-the-lever.html",
-    "sha256": "e54055176625ed9c58ca9185c06c7fa76266d8e6c204434e74b5731e8a60d121",
-    "bytes": 742861
+    "sha256": "05e31ee252a8c66c1cb9a4eca96efb0ad0491b53d0fe0c02b1ffce136f5ff393",
+    "bytes": 743290
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "d9f81938412644a2fb2f6ae99c9e029312fceed049ca7388978db869d2c573af",
-          "bytes": 9237
+          "sha256": "10a90cba09b440597c13da9458abe7944fdbeadcc25c99ef1098ef1fe6bf1727",
+          "bytes": 9379
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 803,
+      "durationMs": 817,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "1d537c3a-e0bb-4fa5-8774-19540be9e2f3",
+        "receiptId": "b9eb038d-5655-4f98-8343-7c7101d42612",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/principle-build-the-lever.html",
         "explainer": {
-          "preparedSha256": "ef29af06c400b4e5fd863eb882b5af415865097509362995f9869f8013e8e4b8",
+          "preparedSha256": "76d7ba61c5e135d79fc9d4b87db43f052d3db9239cc5abf99df79cc68d846823",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "why",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "pattern",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "p-first",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "p-fanout",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "p-proof",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "balance",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "distinct",
               "path": "pstack/principle-build-the-lever/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "458b269eab8e95a1573276955312f7d2a13ae8599879a9efc748248f6bc34b56",
               "bytes": 2458
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "pb-worktree",
               "path": "pstack/poteto-mode/playbooks/worktree-cleanup.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "fc464dc4121926df1704f483c5feca83717c0a40b4651d3e11bd3aedd89441b6",
               "bytes": 2932
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "attack",
               "path": "pstack/principle-attack-the-premise/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
               "bytes": 1941
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "pb-hill",
               "path": "pstack/poteto-mode/playbooks/hillclimb.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
               "bytes": 4403
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "svu",
               "path": "pstack/principle-sequence-verifiable-units/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
               "bytes": 1705
             },
@@ -223,12 +223,12 @@
           ]
         },
         "specification": {
-          "sha256": "d9f81938412644a2fb2f6ae99c9e029312fceed049ca7388978db869d2c573af",
-          "bytes": 9237
+          "sha256": "10a90cba09b440597c13da9458abe7944fdbeadcc25c99ef1098ef1fe6bf1727",
+          "bytes": 9379
         },
         "artifact": {
-          "sha256": "e54055176625ed9c58ca9185c06c7fa76266d8e6c204434e74b5731e8a60d121",
-          "bytes": 742861
+          "sha256": "05e31ee252a8c66c1cb9a4eca96efb0ad0491b53d0fe0c02b1ffce136f5ff393",
+          "bytes": 743290
         },
         "validation": {
           "checksPassed": 4,
@@ -254,7 +254,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 421,
+      "durationMs": 420,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -267,8 +267,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/principle-build-the-lever.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "e54055176625ed9c58ca9185c06c7fa76266d8e6c204434e74b5731e8a60d121",
-          "bytes": 742861
+          "sha256": "05e31ee252a8c66c1cb9a4eca96efb0ad0491b53d0fe0c02b1ffce136f5ff393",
+          "bytes": 743290
         },
         "checks": [
           {
@@ -312,7 +312,7 @@
               "id": "lever-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-XZlvKB/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-oecR6N/child.html",
                 "artifact": {
                   "sha256": "3fbe8d943877168b47510b993ee3e0c93eb9f919f0c2a4fa4333381b203cc5c9",
                   "bytes": 837276
@@ -439,7 +439,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "1d537c3a-e0bb-4fa5-8774-19540be9e2f3"
+        "deliveryReceiptId": "b9eb038d-5655-4f98-8343-7c7101d42612"
       }
     }
   },
@@ -453,8 +453,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-build-the-lever/principle-build-the-lever.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:24:38.069Z",
-  "durationMs": 1374,
+  "finishedAt": "2026-11-04T12:50:12.953Z",
+  "durationMs": 1383,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

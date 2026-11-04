@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:53:43.577Z",
+  "startedAt": "2026-11-04T13:32:29.173Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
-    "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
-    "bytes": 20045
+    "sha256": "451e83006b0db8cff1825d5dd531e321a3e04b9be7d81b50f71fd13645ad5054",
+    "bytes": 20083
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
-    "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
-    "bytes": 1724093
+    "sha256": "badbc4c740dbc9d53229b57f173ab87ad73838ed729682f7917982fd19921a3c",
+    "bytes": 1724207
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
-          "bytes": 20045
+          "sha256": "451e83006b0db8cff1825d5dd531e321a3e04b9be7d81b50f71fd13645ad5054",
+          "bytes": 20083
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1304,
+      "durationMs": 1327,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "43dbcf35-41b9-4f4d-9ba4-0e7e9e423cde",
+        "receiptId": "f0bb51de-abce-4200-96e3-4e5409d497ff",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
         "explainer": {
-          "preparedSha256": "789392da29624af1a0d82627486435c7b77ab3ed57f25afb6b94c5ad207aa214",
+          "preparedSha256": "8b07566d1cda9e7bab62b748f864d2a108e5e84f36cfcf637809e9d736c27994",
           "dependencies": [
             {
               "kind": "repository",
               "id": "wfa-fm",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "wfa-yaml",
               "path": "mattpocock/writing-for-agents/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
               "bytes": 102
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "wfa-intro",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "wfa-ptr",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "wfa-loads",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "wfa-ladder",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "wfa-disc",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "wfa-coloc",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "wfa-sprawl",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "wfa-steps",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "wfa-split",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "wfa-lead",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "wfa-neg",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "wfa-sst",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "wfa-cache",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "wfa-rel",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -217,7 +217,7 @@
               "kind": "repository",
               "id": "wfa-noop",
               "path": "mattpocock/writing-for-agents/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
               "bytes": 10886
             },
@@ -225,7 +225,7 @@
               "kind": "repository",
               "id": "mech-intro",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -233,7 +233,7 @@
               "kind": "repository",
               "id": "mech-model",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -241,7 +241,7 @@
               "kind": "repository",
               "id": "mech-user",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -249,7 +249,7 @@
               "kind": "repository",
               "id": "mech-pick",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -257,7 +257,7 @@
               "kind": "repository",
               "id": "mech-split",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -265,7 +265,7 @@
               "kind": "repository",
               "id": "mech-router",
               "path": "mattpocock/writing-for-agents/SKILL-MECHANICS.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
               "bytes": 2629
             },
@@ -273,7 +273,7 @@
               "kind": "repository",
               "id": "retro-s1",
               "path": "mattpocock/retro/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
               "bytes": 4369
             },
@@ -281,7 +281,7 @@
               "kind": "repository",
               "id": "retro-skills",
               "path": "mattpocock/retro/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
               "bytes": 4369
             },
@@ -289,7 +289,7 @@
               "kind": "repository",
               "id": "retro-dmi",
               "path": "mattpocock/retro/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
               "bytes": 4369
             },
@@ -297,7 +297,7 @@
               "kind": "repository",
               "id": "cos-dmi",
               "path": "mattpocock/chief-of-staff/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
               "bytes": 4729
             },
@@ -305,7 +305,7 @@
               "kind": "repository",
               "id": "cos-ex",
               "path": "mattpocock/chief-of-staff/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
               "bytes": 4729
             },
@@ -313,7 +313,7 @@
               "kind": "repository",
               "id": "cos-proc",
               "path": "mattpocock/chief-of-staff/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "f4c1d6533edece6b275155911cb627154a6b13e2bc19934f77330f3afdd07987",
               "bytes": 4729
             },
@@ -341,12 +341,12 @@
           ]
         },
         "specification": {
-          "sha256": "7be9183646eba12962d27d4011a78ef49e2a990b8b02094590e0dd324ce7990a",
-          "bytes": 20045
+          "sha256": "451e83006b0db8cff1825d5dd531e321a3e04b9be7d81b50f71fd13645ad5054",
+          "bytes": 20083
         },
         "artifact": {
-          "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
-          "bytes": 1724093
+          "sha256": "badbc4c740dbc9d53229b57f173ab87ad73838ed729682f7917982fd19921a3c",
+          "bytes": 1724207
         },
         "validation": {
           "checksPassed": 4,
@@ -385,8 +385,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "2726b92852f11ba3da082cc896e5174163657cc07ddaa41cf64a64e0cb47b920",
-          "bytes": 1724093
+          "sha256": "badbc4c740dbc9d53229b57f173ab87ad73838ed729682f7917982fd19921a3c",
+          "bytes": 1724207
         },
         "checks": [
           {
@@ -432,7 +432,7 @@
               "id": "wfa-invoke",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-a0Izym/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ukWZxM/child.html",
                 "artifact": {
                   "sha256": "1866aa8dbf5e34a37a1818eec429093e3534675298aa33bd4ee9eb2ecb1841d7",
                   "bytes": 831295
@@ -559,7 +559,7 @@
               "id": "wfa-rush",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-asAz1G/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-FQhRND/child.html",
                 "artifact": {
                   "sha256": "66d865ddd3dec160f2e8fbdfdf49201e14a2c010d2817f7945712ac14f52e9e7",
                   "bytes": 832267
@@ -686,7 +686,7 @@
               "id": "wfa-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-8bx4Cy/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-7c4XZm/child.html",
                 "artifact": {
                   "sha256": "8f85d7f41fe1c4aad4479448620c9bbafbfbd856f9b958537fc948b1426ca7d7",
                   "bytes": 833072
@@ -813,7 +813,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "43dbcf35-41b9-4f4d-9ba4-0e7e9e423cde"
+        "deliveryReceiptId": "f0bb51de-abce-4200-96e3-4e5409d497ff"
       }
     }
   },
@@ -827,8 +827,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/writing-for-agents/writing-for-agents.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:53:45.764Z",
-  "durationMs": 2187,
+  "finishedAt": "2026-11-04T13:32:31.375Z",
+  "durationMs": 2202,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

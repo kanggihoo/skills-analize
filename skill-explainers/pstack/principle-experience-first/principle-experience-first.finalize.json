@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:25:07.914Z",
+  "startedAt": "2026-11-04T12:35:02.806Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/candidate.archify.md",
-    "sha256": "9d867ab5facb88d71b91b6cd5f3348bc3c4ae1a44ff377bc284b0a56b7d9e749",
-    "bytes": 6013
+    "sha256": "2a2227dc75edd4b38f88e455025748bb8eb45631b1b9d8d8ee7e2ba519b90b55",
+    "bytes": 6106
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/principle-experience-first.html",
-    "sha256": "aa2ead4c4518e2ecb2e0f5b1b05eaf50606a3f6755c32c8a5919d230f92cdba8",
-    "bytes": 656533
+    "sha256": "92dbd87632129aabf9fb2e7ddfda4a9863a92008f1a8d96f92a282e8d466bf5a",
+    "bytes": 656826
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "9d867ab5facb88d71b91b6cd5f3348bc3c4ae1a44ff377bc284b0a56b7d9e749",
-          "bytes": 6013
+          "sha256": "2a2227dc75edd4b38f88e455025748bb8eb45631b1b9d8d8ee7e2ba519b90b55",
+          "bytes": 6106
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 776,
+      "durationMs": 763,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "0de64fe2-4f69-42d5-b7fb-04f4f41bd50b",
+        "receiptId": "663b0f08-2aeb-49a7-b5db-370413193049",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/principle-experience-first.html",
         "explainer": {
-          "preparedSha256": "e961d62d41135816565d88d9820e77454b6bcf587447f7d16612b88e5763b7fc",
+          "preparedSha256": "c858ec79a84bf988595455afee1368e7753cf1ab604d874865d522c125ee9528",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "list",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "user",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "target",
               "path": "pstack/principle-experience-first/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
               "bytes": 1184
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -159,12 +159,12 @@
           ]
         },
         "specification": {
-          "sha256": "9d867ab5facb88d71b91b6cd5f3348bc3c4ae1a44ff377bc284b0a56b7d9e749",
-          "bytes": 6013
+          "sha256": "2a2227dc75edd4b38f88e455025748bb8eb45631b1b9d8d8ee7e2ba519b90b55",
+          "bytes": 6106
         },
         "artifact": {
-          "sha256": "aa2ead4c4518e2ecb2e0f5b1b05eaf50606a3f6755c32c8a5919d230f92cdba8",
-          "bytes": 656533
+          "sha256": "92dbd87632129aabf9fb2e7ddfda4a9863a92008f1a8d96f92a282e8d466bf5a",
+          "bytes": 656826
         },
         "validation": {
           "checksPassed": 4,
@@ -190,7 +190,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 412,
+      "durationMs": 393,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -203,8 +203,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/principle-experience-first.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "aa2ead4c4518e2ecb2e0f5b1b05eaf50606a3f6755c32c8a5919d230f92cdba8",
-          "bytes": 656533
+          "sha256": "92dbd87632129aabf9fb2e7ddfda4a9863a92008f1a8d96f92a282e8d466bf5a",
+          "bytes": 656826
         },
         "checks": [
           {
@@ -248,7 +248,7 @@
               "id": "experience-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-WWzFxV/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ypbEnt/child.html",
                 "artifact": {
                   "sha256": "47b1f7a8d796c60aa7bb9c1faf30904a59c1d975936813e3148e6e183eca84ea",
                   "bytes": 833642
@@ -375,7 +375,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "0de64fe2-4f69-42d5-b7fb-04f4f41bd50b"
+        "deliveryReceiptId": "663b0f08-2aeb-49a7-b5db-370413193049"
       }
     }
   },
@@ -389,8 +389,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-experience-first/principle-experience-first.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:25:09.249Z",
-  "durationMs": 1334,
+  "finishedAt": "2026-11-04T12:35:04.103Z",
+  "durationMs": 1296,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

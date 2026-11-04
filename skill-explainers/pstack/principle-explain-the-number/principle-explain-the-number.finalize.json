@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:25:17.522Z",
+  "startedAt": "2026-11-04T12:35:40.702Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/candidate.archify.md",
-    "sha256": "ed1fe03f32b5e5eeee1eb2a6261a87b98837439e3369329559baff77a580503e",
-    "bytes": 8650
+    "sha256": "14d73b8db64377486994a439e9523ff52c1819cb32fabb178055b96fb4753ed3",
+    "bytes": 8786
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/principle-explain-the-number.html",
-    "sha256": "f10bec3cfdb34f1f4f96c94583516791520ba24b3cbe61e768c329385b3527d4",
-    "bytes": 713792
+    "sha256": "737a670edafe5316034c34db070a63b1ac41e83aa897550674b9137ccf5f45b8",
+    "bytes": 714272
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "ed1fe03f32b5e5eeee1eb2a6261a87b98837439e3369329559baff77a580503e",
-          "bytes": 8650
+          "sha256": "14d73b8db64377486994a439e9523ff52c1819cb32fabb178055b96fb4753ed3",
+          "bytes": 8786
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 798,
+      "durationMs": 913,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "09fd49da-cddc-480f-b9b5-989459d442bd",
+        "receiptId": "82ef3260-df64-4d2a-819b-ddbc6fe1e78a",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/principle-explain-the-number.html",
         "explainer": {
-          "preparedSha256": "631276a0e9ce66eef778658dc5e2e70f799df744c5950d2ae853be03749d8a12",
+          "preparedSha256": "b8ed595f597baeadb6c5dc299f09380c48a376f4a653bf1a85315b03ce9331d5",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "rule",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "why",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "p-double",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "p-else",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "p-keep",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "handoff",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skipped",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "distinct",
               "path": "pstack/principle-explain-the-number/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5aac99e7ce0bb1b37e2579acf4fe88c32a1456d9d46afd4a57cfe1df9092e89c",
               "bytes": 2109
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "pm-trigger",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "bc",
               "path": "pstack/benchmark-checklist/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "6a767e788a60428fa14e645ee10fe2e49896e514ff654f668b1d824deb9038e8",
               "bytes": 5409
             },
@@ -199,12 +199,12 @@
           ]
         },
         "specification": {
-          "sha256": "ed1fe03f32b5e5eeee1eb2a6261a87b98837439e3369329559baff77a580503e",
-          "bytes": 8650
+          "sha256": "14d73b8db64377486994a439e9523ff52c1819cb32fabb178055b96fb4753ed3",
+          "bytes": 8786
         },
         "artifact": {
-          "sha256": "f10bec3cfdb34f1f4f96c94583516791520ba24b3cbe61e768c329385b3527d4",
-          "bytes": 713792
+          "sha256": "737a670edafe5316034c34db070a63b1ac41e83aa897550674b9137ccf5f45b8",
+          "bytes": 714272
         },
         "validation": {
           "checksPassed": 4,
@@ -230,7 +230,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 417,
+      "durationMs": 437,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -243,8 +243,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/principle-explain-the-number.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "f10bec3cfdb34f1f4f96c94583516791520ba24b3cbe61e768c329385b3527d4",
-          "bytes": 713792
+          "sha256": "737a670edafe5316034c34db070a63b1ac41e83aa897550674b9137ccf5f45b8",
+          "bytes": 714272
         },
         "checks": [
           {
@@ -288,7 +288,7 @@
               "id": "number-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-reVMG1/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-hNfcDa/child.html",
                 "artifact": {
                   "sha256": "ccea06430e4deb8a86333fca334e17b01f155379c89dbc933d517e6127925a9a",
                   "bytes": 835812
@@ -415,7 +415,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "09fd49da-cddc-480f-b9b5-989459d442bd"
+        "deliveryReceiptId": "82ef3260-df64-4d2a-819b-ddbc6fe1e78a"
       }
     }
   },
@@ -429,8 +429,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-explain-the-number/principle-explain-the-number.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:25:18.884Z",
-  "durationMs": 1362,
+  "finishedAt": "2026-11-04T12:35:42.254Z",
+  "durationMs": 1552,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

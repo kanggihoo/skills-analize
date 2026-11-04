@@ -2,7 +2,7 @@
 
 이 원칙을 적용하면 에이전트는 되돌릴 수 있는 일에 "X를 해도 될까요?"라고 묻지 않는다. X를 하고, 결과와 이유를 보여 준다. 사람은 나중에 방향을 고친다.[](source:skill-intro)[](source:skill-pattern)
 
-- 사람은 작업을 비동기로 감독한다고 본다. 허락을 기다리는 멈춤은 사람을 병목으로 만든다.[](source:skill-why)
+- 원문은 사람이 작업을 비동기로 감독한다고 본다. 허락을 받으려고 멈출 때마다 파이프라인이 서고, 사람이 병목이 된다.[](source:skill-why)
 - 되돌릴 수 없는 행동은 여전히 확인을 받는다. 원문의 예는 force-push, 운영 데이터 삭제, 외부 메시지 전송이다.[](source:skill-bounds)
 - 제품 방향은 사람이 정한다. 멈추지 않아야 하는 것은 실행이다.[](source:skill-bounds)
 - `poteto-mode`는 되돌릴 수 있는 일에 확인을 받고 싶어질 때 이 원칙을 꺼낸다.[](source:pm-line)
@@ -25,7 +25,7 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-never-block-on-the-human`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 원칙 이름을 말로 꺼내 방향을 잡는다.[](source:help-principles)
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/principle-never-block-on-the-human`을 입력하거나, 다른 스킬이 이 원칙을 읽게 할 때 켜진다. 사용자가 원칙을 직접 부르는 일은 드물다. 보통은 사용자가 대화에서 원칙 이름을 말해 에이전트의 방향을 잡는다.[](source:help-principles)
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -34,9 +34,9 @@
 | `figure-it-out` | Phase A. 긴 실행 전에 틀과 절충을 보여 주는 대목[](source:fio) |
 | `multi-phase-plan` 플레이북 | 2단계. 열린 질문을 프로토타입으로 정리하는 대목[](source:pb-mpp) |
 
-`poteto-mode`에서 켜지면 의무가 따라온다. 적용하는 원칙은 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝힌다. 인용은 이번 세션에 읽은 원칙만 한다.[](source:pm-cite)
+`poteto-mode`에서 켜지면 의무가 따라온다. 에이전트는 적용하는 원칙의 `SKILL.md`를 끝까지 읽는다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
-`description`은 이 원칙이 다루는 상황을 알려 주는 설명이다. 그 문장과 같은 말이 나와야 켜지는 장치는 아니다.
+`description`은 이 원칙이 다루는 상황을 적은 설명이다. 요청이 그 문장과 같은 말이어야 켜지는 것은 아니다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -46,7 +46,7 @@
 | 먼저 일을 하고, 결과를 보여 준다[](source:skill-pattern) | 의무 |
 | 문제를 발견하면 기록하고 다음 차례에 고친다. 시스템이 스스로 회복하게 만든다[](source:skill-pattern) | 의무 |
 
-어떤 일에 확인을 받을지는 행동의 종류로 가른다.[](source:skill-bounds)
+에이전트는 확인을 받을지를 행동의 종류로 가른다.[](source:skill-bounds)
 
 | 행동 종류 | 원문의 예 | 처리 |
 | --- | --- | --- |
@@ -54,7 +54,7 @@
 | 되돌릴 수 있는 행동 | 코드 작성, 노트 수정, 작업 나누기 | 멈추지 않고 진행한다 {good:진행} |
 | 제품 방향 | - | 사람이 정한다. 실행만 멈추지 않는다 |
 
-원문이 드는 이유는 이렇다. 코드 변경은 되돌릴 수 있고 리뷰할 수 있다. 그래서 잘못된 결정이 멈춰 기다리는 비용보다 대개 싸다.[](source:skill-why)
+원문이 드는 이유는 이렇다. 코드 변경은 되돌릴 수 있고 리뷰할 수 있다. 그래서 잘못된 결정의 비용이 멈춰 기다리는 비용보다 대개 작다.[](source:skill-why)
 
 원문에는 적용 전후 대화 예시가 없다.
 
@@ -84,7 +84,7 @@
 - 읽은 파일: `SKILL.md`(1172B). 이 원칙을 부르는 위치를 확인하려고 `poteto-mode/SKILL.md`, `figure-it-out/SKILL.md`, `playbooks/multi-phase-plan.md`, `poteto-help/SKILL.md`의 해당 줄을 읽었다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

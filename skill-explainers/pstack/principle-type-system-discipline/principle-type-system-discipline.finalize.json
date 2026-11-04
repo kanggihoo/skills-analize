@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T14:23:13.881Z",
+  "startedAt": "2026-11-04T12:37:35.350Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/candidate.archify.md",
-    "sha256": "81db93ece247f21b10fbe1a114f3e0a488076062d483fcce8a845bd2f0ad088a",
-    "bytes": 10696
+    "sha256": "de3ede0b330648ff40a4c801ed86c8c1919c272103c28c52439aa1dcc1056703",
+    "bytes": 10853
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/principle-type-system-discipline.html",
-    "sha256": "a2551663f7e63b0e443942a15d77d2a680a19d20a654c120fb28df79cc5f7423",
-    "bytes": 813792
+    "sha256": "05d20253b4fbe17e7af9bd1f6b028a4ca0c9a78feb61b74973992d39f44864f7",
+    "bytes": 814300
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "81db93ece247f21b10fbe1a114f3e0a488076062d483fcce8a845bd2f0ad088a",
-          "bytes": 10696
+          "sha256": "de3ede0b330648ff40a4c801ed86c8c1919c272103c28c52439aa1dcc1056703",
+          "bytes": 10853
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1398,
+      "durationMs": 1428,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "314ed696-7f24-49f2-a201-233ddc75f38e",
+        "receiptId": "0623a206-81bf-42dc-9c54-0e6591d45db4",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/principle-type-system-discipline.html",
         "explainer": {
-          "preparedSha256": "ba8202a3aa944406ce16a1b179ac949be98ea695f56d36d8c59c809574d7271f",
+          "preparedSha256": "c3f5c167f7406a709b47ad4887a8a1c017d8e72db9fe43c256d82820c3ca29ee",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-scope",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "p-illegal",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "p-construct",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "p-brand",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "p-parse",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "p-lie",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "p-exhaust",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "p-derive",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -169,7 +169,7 @@
               "kind": "repository",
               "id": "p-strengthen",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -177,7 +177,7 @@
               "kind": "repository",
               "id": "skill-tests",
               "path": "pstack/principle-type-system-discipline/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "c83da8031ffb4c86410030d3e261f659598fca2b7d8158fd9dc269d70a3a025e",
               "bytes": 4922
             },
@@ -185,7 +185,7 @@
               "kind": "repository",
               "id": "pm-cite",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -193,7 +193,7 @@
               "kind": "repository",
               "id": "pm-read",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -201,7 +201,7 @@
               "kind": "repository",
               "id": "pm-line",
               "path": "pstack/poteto-mode/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "404c0ef4a78e93451b2ab555ca532e7197b5cf87de29205b6f7109dbee5d9c4d",
               "bytes": 20559
             },
@@ -209,7 +209,7 @@
               "kind": "repository",
               "id": "tbp",
               "path": "pstack/typescript-best-practices/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
               "bytes": 2684
             },
@@ -217,7 +217,7 @@
               "kind": "repository",
               "id": "tbp-patterns",
               "path": "pstack/typescript-best-practices/references/patterns.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
               "bytes": 9214
             },
@@ -225,7 +225,7 @@
               "kind": "repository",
               "id": "help-principles",
               "path": "pstack/poteto-help/SKILL.md",
-              "revision": "5760176b35b502da0f3c9da759c48b4f2fb553c9",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "5fc65e4c30c52edcde690d18904e3a8cf6ba6c2424c672d1a5cb6d29ab28645c",
               "bytes": 12884
             },
@@ -239,12 +239,12 @@
           ]
         },
         "specification": {
-          "sha256": "81db93ece247f21b10fbe1a114f3e0a488076062d483fcce8a845bd2f0ad088a",
-          "bytes": 10696
+          "sha256": "de3ede0b330648ff40a4c801ed86c8c1919c272103c28c52439aa1dcc1056703",
+          "bytes": 10853
         },
         "artifact": {
-          "sha256": "a2551663f7e63b0e443942a15d77d2a680a19d20a654c120fb28df79cc5f7423",
-          "bytes": 813792
+          "sha256": "05d20253b4fbe17e7af9bd1f6b028a4ca0c9a78feb61b74973992d39f44864f7",
+          "bytes": 814300
         },
         "validation": {
           "checksPassed": 4,
@@ -270,7 +270,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 840,
+      "durationMs": 735,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -283,8 +283,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/principle-type-system-discipline.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "a2551663f7e63b0e443942a15d77d2a680a19d20a654c120fb28df79cc5f7423",
-          "bytes": 813792
+          "sha256": "05d20253b4fbe17e7af9bd1f6b028a4ca0c9a78feb61b74973992d39f44864f7",
+          "bytes": 814300
         },
         "checks": [
           {
@@ -328,7 +328,7 @@
               "id": "type-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-to5fLn/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-A1rnsz/child.html",
                 "artifact": {
                   "sha256": "9182d11865171ccb20342ad98421d7777f52ef1e78d1b67c2ca52ecf6716b54b",
                   "bytes": 835277
@@ -455,7 +455,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "314ed696-7f24-49f2-a201-233ddc75f38e"
+        "deliveryReceiptId": "0623a206-81bf-42dc-9c54-0e6591d45db4"
       }
     }
   },
@@ -469,8 +469,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/principle-type-system-discipline/principle-type-system-discipline.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T14:23:16.465Z",
-  "durationMs": 2584,
+  "finishedAt": "2026-11-04T12:37:37.808Z",
+  "durationMs": 2457,
   "update": {
     "status": "unavailable",
     "installedVersion": null,

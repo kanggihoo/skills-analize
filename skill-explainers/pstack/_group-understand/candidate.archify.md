@@ -1,11 +1,11 @@
 # 코드 이해 묶음(understand)은 어떻게 이어지나 {#understand-group}
 
-코드를 바꾸기 전에 이해하는 스킬 다섯 개다. 직접 조사하는 스킬은 `how`와 `why` 둘이다. `teach`, `recall`, `blast-radius`는 이 둘을 불러 쓰거나 같은 규칙을 빌려 쓴다.[](source:teach-run)[](source:recall-why)[](source:br-why)
+이 묶음은 코드를 바꾸기 전에 이해하게 해 주는 스킬 다섯 개다. 직접 조사하는 스킬은 `how`와 `why` 둘이다. `teach`, `recall`, `blast-radius`는 `how`와 `why`를 불러 쓰거나 같은 규칙을 빌려 쓴다.[](source:teach-run)[](source:recall-why)[](source:br-why)
 
 - `how`는 코드가 무엇을 어떻게 하는지, `why`는 왜 그런 모양인지 답한다. 두 스킬은 서로를 짝으로 가리킨다.[](source:why-pair)[](source:how-fm)
 - `teach`는 `how`와 `why`를 실제로 실행하고, 결과를 엮어 쉽게 설명한다.[](source:teach-run)
-- `recall`은 기능·파일·하위 시스템·버그를 가리키는 주제면 기본으로 `why`의 조사 담당을 돌린다.[](source:recall-why)
-- `blast-radius`는 `why` 2단계로 PR과 커밋을 가져오고, 크거나 넓은 변경이면 `arena`로 돌린다.[](source:br-why)[](source:br-arena)
+- `recall`은 주제가 기능·파일·하위 시스템·버그를 가리키면, 기본으로 `why`의 조사 담당을 돌린다.[](source:recall-why)
+- `blast-radius`는 `why` 2단계를 써서 PR과 commit을 가져오고, 변경이 크거나 넓으면 `arena`를 돌린다.[](source:br-why)[](source:br-arena)
 
 @answer scope="pstack/understand 묶음 · 스킬 5개와 호출 대상의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
 @meta locale=ko
@@ -61,12 +61,12 @@
 | blast > arena | 큰 변경 | dashed |
 
 @steps id=understand-steps
-| s-teach | teach | 사람이 실제로 이해하도록 설명한다. `how`와 `why`를 병렬로 돌리고, 결과를 엮어 쉬운 설명 하나로 만든다. | understand-flow | teach |
-| s-recall | recall | 최근 작업 맥락을 되살린다. 자기 채팅 기록을 나눠 조사하고, 공유 기록은 `why`의 조사 담당에게 맡긴다. | understand-flow | recall |
-| s-blast | blast-radius | diff 밖에서 깨질 것을 찾는다. 변경이 안전한 근거가 되는 사실 하나를 코드를 돌려 증명한다. | understand-flow | blast |
-| s-how | how | 코드가 지금 어떻게 동작하는지 읽기 전용 서브에이전트로 조사해 설명한다. 다른 스킬은 부르지 않는다. | understand-flow | how |
-| s-arena | arena | design-review 묶음의 스킬이다. 같은 질문을 여러 모델에 맡기고 답을 합친다. | understand-flow | arena |
-| s-why | why | 코드가 왜 이런 모양인지 출처별 조사 담당을 병렬로 띄워 근거와 확신도를 붙여 답한다. | understand-flow | why |
+| s-teach | teach | `teach`가 사람이 실제로 이해하도록 설명한다. `how`와 `why`를 병렬로 돌리고, 둘의 결과를 엮어 쉬운 설명 하나로 만든다. | understand-flow | teach |
+| s-recall | recall | `recall`이 최근 작업 맥락을 되살린다. 자기 채팅 기록은 나눠서 조사하고, 공유 기록은 `why`의 조사 담당에게 맡긴다. | understand-flow | recall |
+| s-blast | blast-radius | `blast-radius`가 diff 밖에서 깨질 것을 찾는다. 변경이 안전하다는 근거가 되는 사실 하나를 코드를 돌려서 증명한다. | understand-flow | blast |
+| s-how | how | `how`는 읽기 전용 서브에이전트로 코드가 지금 어떻게 동작하는지 조사해서 설명한다. 다른 스킬은 부르지 않는다. | understand-flow | how |
+| s-arena | arena | `arena`는 design-review 묶음의 스킬이다. 같은 질문을 여러 모델에 맡기고 답을 합친다. | understand-flow | arena |
+| s-why | why | `why`는 코드가 왜 이런 모양인지 답한다. 출처별 조사 담당을 병렬로 띄우고, 답에 근거와 확신도를 붙인다. | understand-flow | why |
 
 `how`와 `why`의 내부 단계는 `pstack/how/how.html`, `pstack/why/why.html`에 있다. 나머지는 `pstack/teach/teach.html`, `pstack/recall/recall.html`, `pstack/blast-radius/blast-radius.html`에 있다. `arena`는 `pstack/_group-design-review/design-review.html`이 다룬다.
 
@@ -88,18 +88,18 @@
 
 | rel-id | from → to | 종류 | 조건·강도 | 그림 |
 | --- | --- | --- | --- | --- |
-| r40 | `how` → `why` | 참고 | 동기를 묻는 질문은 `why`로[](source:how-fm) | 생략(같은 짝) |
+| r40 | `how` → `why` | 참고 | 동기를 묻는 질문은 `why`로 안내한다[](source:how-fm) | 생략(같은 짝) |
 | r41 | `why` → `how` | 참고 | `how`의 짝. `how`는 무엇을·어떻게, `why`는 왜[](source:why-pair) | 생략(같은 짝) |
-| r42 | `teach` → `how` | 내부 위임 | 실제 스킬 실행. `why`와 병렬. 작은 변경이면 하나만 써도 된다[](source:teach-run)[](source:teach-par) | 병렬 간선 |
-| r43 | `teach` → `why` | 내부 위임 | 기본은 좁게 묻는다(전체 조사는 느리다). `why`의 확신도 표현은 고치지 않는다[](source:teach-run)[](source:teach-par) | 좁게 간선 |
-| r44 | `teach` → `unslop` | 내부 위임 | 모든 응답[](source:teach-unslop) | 생략 |
-| r45 | `recall` → `why` | 내부 위임 | 주제가 기능·파일·하위 시스템·버그를 가리키면 기본으로 실행. `why` 전체가 아니라 조사 담당과 갈래별 플레이북만 빌린다. 질문을 "지금 무엇이 열려 있나"로 바꿔 넘긴다. 종합 단계를 거치는지는 원문에 명시 없음[](source:recall-why) | 현황 간선 |
-| r46 | `recall` → Session pickup 플레이북, `automate-me` | 넘김 | 먼저 분류한다. 특정 채팅 하나 이어받기는 Session pickup, 습관을 스킬로 굳히기는 `automate-me`[](source:recall-route)[](source:pm-pickup) | 생략 |
-| r47 | `recall` → `unslop` | 내부 위임 | 요약 작성[](source:recall-unslop) | 생략 |
+| r42 | `teach` → `how` | 내부 위임 | `how`를 실제로 실행하고, `why`와 병렬로 돌린다. 변경이 작으면 하나만 써도 된다[](source:teach-run)[](source:teach-par) | 병렬 간선 |
+| r43 | `teach` → `why` | 내부 위임 | 기본으로는 `why`에 좁게 묻는다(전체 조사는 느리다). `why`가 붙인 확신도 표현은 고치지 않는다[](source:teach-run)[](source:teach-par) | 좁게 간선 |
+| r44 | `teach` → `unslop` | 내부 위임 | 모든 응답에 적용한다[](source:teach-unslop) | 생략 |
+| r45 | `recall` → `why` | 내부 위임 | 주제가 기능·파일·하위 시스템·버그를 가리키면 기본으로 실행한다. `why` 전체가 아니라 조사 담당과 갈래별 플레이북만 빌린다. 질문을 "지금 무엇이 열려 있나"로 바꿔 넘긴다. 종합 단계를 거치는지는 원문에 명시 없음[](source:recall-why) | 현황 간선 |
+| r46 | `recall` → Session pickup 플레이북, `automate-me` | 넘김 | 먼저 분류한다. 특정 채팅 하나를 이어받는 일이면 Session pickup으로, 습관을 스킬로 굳히는 일이면 `automate-me`로 넘긴다[](source:recall-route)[](source:pm-pickup) | 생략 |
+| r47 | `recall` → `unslop` | 내부 위임 | 요약을 쓸 때 적용한다[](source:recall-unslop) | 생략 |
 | r48 | `blast-radius` → `how`, `why` | 참고 | 짝 스킬. `how`는 무엇을 하나, `why`는 왜, `blast-radius`는 다른 곳에서 무엇이 깨지나[](source:br-pair) | 생략 |
-| r49 | `blast-radius` → `why` | 내부 위임(명시-역할) | `why` 2단계(코드 기준점 만들기)로 PR과 커밋을 가져온다. 위험 판단도 `why`와 같은 규칙[](source:br-why)[](source:br-risk)[](source:why-anchor) | 2단계 간선 |
+| r49 | `blast-radius` → `why` | 내부 위임(명시-역할) | `why` 2단계(코드 기준점 만들기)를 써서 PR과 commit을 가져온다. 위험을 판단하는 규칙도 `why`와 같다[](source:br-why)[](source:br-risk)[](source:why-anchor) | 2단계 간선 |
 | r50 | `blast-radius` → `arena` | 내부 위임 | 크거나 넓은 변경일 때만[](source:br-arena)[](source:arena-fm) | 큰 변경 간선 |
-| r51 | `blast-radius` → `unslop` | 내부 위임 | 보고서 작성[](source:br-unslop)[](source:unslop-fm) | 생략 |
+| r51 | `blast-radius` → `unslop` | 내부 위임 | 보고서를 쓸 때 적용한다[](source:br-unslop)[](source:unslop-fm) | 생략 |
 
 r46의 `automate-me`는 습관을 개인 모드 스킬로 만드는 스킬이다.[](source:automate-fm) `unslop`은 여러 묶음에서 글을 쓸 때 공통으로 적용된다. 그래서 그림에서 뺐다.
 
@@ -108,9 +108,9 @@ r46의 `automate-me`는 습관을 개인 모드 스킬로 만드는 스킬이다
 | rel-id | from → to | 종류 | 조건 |
 | --- | --- | --- | --- |
 | r01 | `poteto-mode` → `how` | 내부 위임 | 사소하지 않은 변경, 아키텍처 결정, "정말 확실해?"(의무형)[](source:pm-how) |
-| r60 | `architect` → `how` | 내부 위임 | 첫 단계(Phase A)에서 새 코드가 닿는 모든 시스템에 실행. 구현이 어긋나면 다시 실행[](source:arch-ground) |
-| r61 | `architect` → `why` | 내부 위임 | 설계가 소유권이나 계층을 다시 정할 때만[](source:arch-ground) |
-| r110 | `no-comments` → `how`, `why` | 내부 위임 | 2단계에서 판정 근거가 얇은 심볼에만 실행[](source:nc-howwhy) |
+| r60 | `architect` → `how` | 내부 위임 | 첫 단계(Phase A)에서 새 코드가 닿는 모든 시스템에 실행한다. 구현이 어긋나면 다시 실행한다[](source:arch-ground) |
+| r61 | `architect` → `why` | 내부 위임 | 설계가 소유권이나 계층을 다시 정할 때만 실행한다[](source:arch-ground) |
+| r110 | `no-comments` → `how`, `why` | 내부 위임 | 2단계에서 판정 근거가 얇은 심볼에만 실행한다[](source:nc-howwhy) |
 
 플레이북도 `how`나 `why`를 가리킨다. `how`가 나오는 플레이북은 bug-fix, feature, hillclimb, investigation, multi-phase-plan, perf-issue, refactoring이다. `why`가 나오는 플레이북은 bug-fix, investigation이다. 플레이북별 목록은 `pstack/relations.md`의 플레이북 표에 있다.
 
@@ -130,7 +130,7 @@ r46의 `automate-me`는 습관을 개인 모드 스킬로 만드는 스킬이다
 - 제외한 파일: `*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: r01, r30, r31, r40~r51, r60, r61, r110의 출처 줄을 원문과 대조했다. 종류와 조건이 원장과 같다.
 - 모든 스킬이 `disable-model-invocation: true`다. 사용자가 이름을 입력하거나 다른 스킬이 부를 때만 켜진다.[](source:how-fm)[](source:why-fm)[](source:teach-fm)[](source:recall-fm)[](source:br-fm)
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 스킬 문서가 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=warning title="원문끼리 충돌하는 곳"

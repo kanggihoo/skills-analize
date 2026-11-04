@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-03T15:52:35.669Z",
+  "startedAt": "2026-11-04T13:38:34.434Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/candidate.archify.md",
-    "sha256": "eb9a7967e08d308caef669eb0c26699e863cea44b61b88e71fd9bb8ae50ff8d6",
+    "sha256": "d090aed8f1b433a5ca2996a8e31d3d520db927cbf086d46c86150a903116aba3",
     "bytes": 6972
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/scaffold-exercises.html",
-    "sha256": "f326efda74ac02507d7ce0cec0650ff349001a46fee52a552c27d1216f861860",
-    "bytes": 1015928
+    "sha256": "114e5b3a8e37b65e077260e439d2cf67859f829ab762bac242209fe2b7183fb2",
+    "bytes": 1015916
   },
   "stages": {
     "browser-check": {
@@ -44,7 +44,7 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "eb9a7967e08d308caef669eb0c26699e863cea44b61b88e71fd9bb8ae50ff8d6",
+          "sha256": "d090aed8f1b433a5ca2996a8e31d3d520db927cbf086d46c86150a903116aba3",
           "bytes": 6972
         },
         "validation": {
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1022,
+      "durationMs": 1032,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "141ed831-11a0-42e1-939a-919c29748bc5",
+        "receiptId": "4139f15e-949b-4aba-9638-892e079022ee",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/scaffold-exercises.html",
         "explainer": {
-          "preparedSha256": "47764154522276e668a49d4d7fef9811bac321529f08cee8bfcf01b6378d65eb",
+          "preparedSha256": "f4199cc36ba6ba594df3abb4b005a72c6a6dd0852be944fcef17b96947ddb4b8",
           "dependencies": [
             {
               "kind": "repository",
               "id": "skill-fm",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "skill-intro",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "skill-naming",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "skill-variants",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "skill-readme",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "skill-workflow",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "skill-lint",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "skill-move",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "skill-example",
               "path": "mattpocock/scaffold-exercises/SKILL.md",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "75f5c9d771606fb9762f16522efc954df11c324f87148d8ff069bce166257de9",
               "bytes": 3589
             },
@@ -161,7 +161,7 @@
               "kind": "repository",
               "id": "oa-yaml",
               "path": "mattpocock/scaffold-exercises/agents/openai.yaml",
-              "revision": "0f0d1b0403587dece9a32f5ca561cffc7e823a74",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
               "sha256": "525b33913340bea7947ad2de17f2a7c5fb94be543345fe80ae753b9a44ba601d",
               "bytes": 108
             },
@@ -169,7 +169,7 @@
               "kind": "diagram-spec",
               "id": "scaffold-flow",
               "inline": true,
-              "sha256": "8ed4069bcb407dd8e9884cf27c8133945d99f0bbd58ca4126aaedcb280690960",
+              "sha256": "fdbf2e99b0c5d757449e96525eca595eaf8d1fb905f0f98bc818e61b88aa7c94",
               "bytes": 1160
             },
             {
@@ -182,12 +182,12 @@
           ]
         },
         "specification": {
-          "sha256": "eb9a7967e08d308caef669eb0c26699e863cea44b61b88e71fd9bb8ae50ff8d6",
+          "sha256": "d090aed8f1b433a5ca2996a8e31d3d520db927cbf086d46c86150a903116aba3",
           "bytes": 6972
         },
         "artifact": {
-          "sha256": "f326efda74ac02507d7ce0cec0650ff349001a46fee52a552c27d1216f861860",
-          "bytes": 1015928
+          "sha256": "114e5b3a8e37b65e077260e439d2cf67859f829ab762bac242209fe2b7183fb2",
+          "bytes": 1015916
         },
         "validation": {
           "checksPassed": 4,
@@ -213,7 +213,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 561,
+      "durationMs": 570,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -226,8 +226,8 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/scaffold-exercises.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "f326efda74ac02507d7ce0cec0650ff349001a46fee52a552c27d1216f861860",
-          "bytes": 1015928
+          "sha256": "114e5b3a8e37b65e077260e439d2cf67859f829ab762bac242209fe2b7183fb2",
+          "bytes": 1015916
         },
         "checks": [
           {
@@ -272,9 +272,9 @@
               "id": "scaffold-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-r5e4Fk/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-KfKcRR/child.html",
                 "artifact": {
-                  "sha256": "be9d722e9941fd57893c2e82ee6e272ce6330996ae129c71df766eddb1b41939",
+                  "sha256": "2fb9f43ad1538a3ebc2f13119902f14349244e6517a90ebd9a6433c98858a57f",
                   "bytes": 835059
                 },
                 "checks": [
@@ -399,7 +399,7 @@
               "id": "scaffold-tree",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ddRbch/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jNZxuq/child.html",
                 "artifact": {
                   "sha256": "aed426de0e8038a3800440d0f140eecc3bd5063e30d1708b6f6fac39894d479a",
                   "bytes": 841575
@@ -529,7 +529,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "141ed831-11a0-42e1-939a-919c29748bc5"
+        "deliveryReceiptId": "4139f15e-949b-4aba-9638-892e079022ee"
       }
     }
   },
@@ -543,8 +543,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/mattpocock/scaffold-exercises/scaffold-exercises.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-03T15:52:37.380Z",
-  "durationMs": 1711,
+  "finishedAt": "2026-11-04T13:38:36.173Z",
+  "durationMs": 1739,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

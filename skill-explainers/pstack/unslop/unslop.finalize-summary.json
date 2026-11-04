@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-    "sha256": "ef485588852ccc1296b8bddfd905db6eff7110a039ac8b7f021fecf1b7b7b237",
-    "bytes": 12214
+    "sha256": "8c2f5cf31ef82f77318c52b1141cd75305fe2353ce498e8c17a70218fa9d694c",
+    "bytes": 12356
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/unslop.html",
-    "sha256": "8de1c6da1c77d4994532ad967e1ed24bd596625258d6915171d74331e0d9c4fd",
-    "bytes": 550267
+    "sha256": "e3b650f4c15083a958601d0b0f2b000f2309d98546ed49ebd397a85ac8a1b694",
+    "bytes": 544438
   },
   "gates": {
     "validate": "pass",
@@ -21,131 +21,10 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [
-    {
-      "code": "explainer/writing-filler",
-      "severity": "warning",
-      "message": "Opening, closing or signposting filler delays the facts.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 95,
-        "component": "comparison",
-        "panelId": "style-comm"
-      },
-      "evidence": {
-        "reason": "Opening, closing or signposting filler delays the facts.",
-        "example": "综上所述，选 A → 选 A; In summary, use A → Use A",
-        "rule": "filler",
-        "matched": "I hope this helps"
-      },
-      "supportedFixes": [
-        "Delete the phrase; open with the claim and stop after the last supported point."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 97,
-        "component": "comparison",
-        "panelId": "style-comm"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "In order to"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 97,
-        "component": "comparison",
-        "panelId": "style-comm"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "Due to the fact that"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 111,
-        "component": "comparison",
-        "panelId": "plain-speech"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "utilize"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 111,
-        "component": "comparison",
-        "panelId": "plain-speech"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "facilitate"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    },
-    {
-      "code": "explainer/writing-plain-word",
-      "severity": "warning",
-      "message": "A longer word replaces a common one with the same meaning.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/pstack/unslop/candidate.archify.md",
-        "line": 111,
-        "component": "comparison",
-        "panelId": "plain-speech"
-      },
-      "evidence": {
-        "reason": "A longer word replaces a common one with the same meaning.",
-        "example": "utilize → use; prior to → before; in order to → to; due to the fact that → because",
-        "rule": "plain-word",
-        "matched": "in the event that"
-      },
-      "supportedFixes": [
-        "Use the shorter common word."
-      ]
-    }
-  ],
+  "diagnostics": [],
   "diagnosticSummary": {
-    "total": 6,
-    "shown": 6,
+    "total": 0,
+    "shown": 0,
     "truncated": false
   },
   "evidence": {
@@ -163,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1118,
+  "durationMs": 940,
   "browserCheck": {
     "requested": false,
     "ran": false

@@ -1,10 +1,10 @@
 # why 스킬은 에이전트를 어떻게 바꾸나 {#why-skill}
 
-`why`를 쓰면 에이전트는 "왜 이렇게 생겼나"를 코드만 읽고 짐작하지 않는다. 근거 갈래마다 조사 담당을 따로 띄워 기록을 모으고, 종합 담당이 그 근거를 확신도 다섯 단계로 나눠 답한다.[](source:skill-body)[](source:roster)[](source:syn-rules)
+`why`를 쓰면, 에이전트는 "왜 이렇게 생겼나"를 코드만 읽고 짐작하지 않는다.[](source:skill-body) 에이전트는 근거 갈래마다 조사 담당을 따로 띄워 기록을 모은다.[](source:roster) 그러면 종합 담당이 그 근거를 확신도 다섯 단계로 나눠 답한다.[](source:syn-rules)
 
-- 먼저 코드 기준점(code anchor)을 직접 만든다. 파일과 줄, 핵심 이름, 최근 커밋, PR 번호를 모은다.[](source:anchor)
-- 근거는 일곱 갈래로 나눈다. 쓸 수 있는 MCP 서버마다 조사 담당 하나를 붙여 한 메시지에서 모두 띄운다.[](source:discovery)
-- 모든 주장은 직접·뒷받침·추론·추측·모름 중 한 단계에 놓인다. 단계가 표현과 들어갈 절을 정한다.[](source:tiers-intro)
+- 에이전트는 먼저 코드 기준점(code anchor)을 직접 만든다. 코드 기준점은 파일과 줄, 핵심 이름, 최근 commit, PR 번호를 모은 것이다.[](source:anchor)
+- 에이전트는 근거를 일곱 갈래로 나눈다. 그리고 쓸 수 있는 MCP 서버마다 조사 담당 하나를 붙여, 한 메시지에서 모두 띄운다.[](source:discovery)
+- 종합 담당은 모든 주장을 직접·뒷받침·추론·추측·모름 중 한 단계에 놓는다. 단계가 표현과 들어갈 절을 정한다.[](source:tiers-intro)
 - 메인 에이전트는 종합 결과를 전할 때 확신도 표현을 고쳐 쓰지 않는다.[](source:present)
 
 @answer scope="pstack/why · 원본 텍스트 파일 13개 · 커밋 5760176"
@@ -65,16 +65,16 @@
 
 @code source=skill-fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 사용자가 `/why`를 입력하거나 다른 스킬이 실행 단계에서 부를 때 켜진다. `description`은 설계 이유, 회귀, 사후 분석, 수치 기준의 출처 같은 질문을 다룬다고 알려 줄 뿐이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:skill-fm) 그래서 사용자가 `/why`를 입력하거나, 다른 스킬이 실행 단계에서 부를 때 켜진다. `description`은 설계 이유, 회귀, 사후 분석, 수치 기준의 출처 같은 질문을 다룬다고 알려 줄 뿐이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/why` 입력 |
-| `teach` | 이유 설명이 필요할 때 `how`와 병렬로 실행. 기본은 좁게 묻는다[](source:teach-why) |
-| `recall` | 주제가 기능·파일·하위 시스템·버그를 가리킬 때. 조사 담당만 빌려 쓴다[](source:recall-why) |
-| `blast-radius` | 2단계(코드 기준점)만 빌려 PR과 커밋을 가져온다[](source:blast-why) |
-| `architect` | 설계가 소유권이나 계층을 다시 정할 때만[](source:architect-why) |
-| `poteto-mode` 플레이북 | 조사(`investigation.md`): 동기를 묻는 질문일 때. 버그 수정(`bug-fix.md`): 회귀 이력이 필요할 때[](source:pb-investigation)[](source:pb-bugfix) |
+| `teach` | 이유 설명이 필요할 때 `how`와 병렬로 실행한다. 기본은 좁게 묻는다.[](source:teach-why) |
+| `recall` | 주제가 기능·파일·하위 시스템·버그를 가리킬 때 부른다. 조사 담당만 빌려 쓴다.[](source:recall-why) |
+| `blast-radius` | 2단계(코드 기준점)만 빌려 PR과 commit을 가져온다.[](source:blast-why) |
+| `architect` | 설계가 소유권이나 계층을 다시 정할 때만 부른다.[](source:architect-why) |
+| `poteto-mode` 플레이북 | 조사(`investigation.md`)에서는 동기를 묻는 질문일 때 부른다. 버그 수정(`bug-fix.md`)에서는 회귀 이력이 필요할 때 부른다.[](source:pb-investigation)[](source:pb-bugfix) |
 
 `how`는 코드가 무엇을 어떻게 하는지 답한다. `why`는 어떤 힘이 지금 모양을 만들었는지 답한다.[](source:skill-body)
 
@@ -94,22 +94,22 @@
 | synth > present | | |
 
 @steps id=why-steps
-| s-target | 대상 파악 | 대상(코드, 패턴, 기능, 결정)과 질문(설계 이유, 절충, 동기가 된 예외 사례, 외부 제약, 죽은 코드, 이력 훑기)을 가른다. 대상이 모호하면 열린 파일, 최근 수정, 커서 위치, 방금 나눈 대화로 추정한다. 해석을 짧게 밝히고 진행한다. 사용자가 방향을 바꿀 수 있다. | why-flow | target |
-| s-anchor | 코드 기준점 | 메인 에이전트가 직접 만든다. `git blame -L`, `git log --follow -p`, `git log --oneline -20`으로 최근 커밋을 찾는다. 커밋 제목의 `(#1234)`에서 PR 번호를 뽑고, 중요한 커밋은 `gh pr view`로 본문과 리뷰를 읽는다. | why-flow | anchor |
-| s-discover | 갈래 분류 | Cursor 환경에서 쓸 수 있는 MCP 서버 목록을 본다. 도구 지도가 없으면 `mcps/` 폴더를 살핀다. 서버마다 일곱 갈래 중 하나에 넣는다. 둘에 걸치면 주된 근거 쪽으로 넣고, 애매한 경우는 조사 범위표에 적는다. | why-flow | discover |
-| s-invest | 조사 담당 | 맞는 서버가 있는 갈래마다 하나씩, 한 메시지에서 모두 띄운다. 각자 공통 프롬프트, 자기 갈래 플레이북, 코드 기준점, 사용자 질문을 받는다. 방어 코드로 보이면 사고 기록 관점 파일도 붙인다. | why-flow | invest |
-| s-synth | 종합 담당 | 하나만 띄운다. 조사 결과(빈 결과와 건너뛴 사유 포함), 코드 기준점, 질문, 확신도 틀, 종합 프롬프트를 넘긴다. 종합 담당은 겹치는 근거를 합치고, 충돌은 둘 다 남기고, 인용을 표본 확인한다. | why-flow | synth |
-| s-present | 전달 | 종합 결과를 사용자에게 보여 준다. 읽기 쉽게 조금 다듬거나 대화 맥락을 덧붙일 수 있다. 확신도 표현은 고치지 않는다. | why-flow | present |
+| s-target | 대상 파악 | 에이전트는 대상(코드, 패턴, 기능, 결정)과 질문(설계 이유, 절충, 동기가 된 예외 사례, 외부 제약, 죽은 코드, 이력 훑기)을 가른다. 대상이 모호하면, 열린 파일, 최근 수정, 커서 위치, 방금 나눈 대화로 추정한다. 그 해석을 짧게 밝히고 진행한다. 사용자는 방향을 바꿀 수 있다. | why-flow | target |
+| s-anchor | 코드 기준점 | 메인 에이전트가 코드 기준점을 직접 만든다. `git blame -L`, `git log --follow -p`, `git log --oneline -20`으로 최근 commit을 찾는다. commit 제목의 `(#1234)`에서 PR 번호를 뽑고, 중요한 commit은 `gh pr view`로 본문과 리뷰를 읽는다. | why-flow | anchor |
+| s-discover | 갈래 분류 | 에이전트는 Cursor 환경에서 쓸 수 있는 MCP 서버 목록을 본다. 도구 지도가 없으면, `mcps/` 폴더를 살핀다. 서버마다 일곱 갈래 중 하나에 넣는다. 한 서버가 두 갈래에 걸치면, 주된 근거 쪽으로 넣고, 애매한 경우는 조사 범위표에 적는다. | why-flow | discover |
+| s-invest | 조사 담당 | 에이전트는 맞는 서버가 있는 갈래마다 조사 담당을 하나씩, 한 메시지에서 모두 띄운다. 조사 담당은 각자 공통 프롬프트, 자기 갈래 플레이북, 코드 기준점, 사용자 질문을 받는다. 대상 코드가 방어 코드로 보이면, 사고 기록 관점 파일도 붙인다. | why-flow | invest |
+| s-synth | 종합 담당 | 에이전트는 종합 담당을 하나만 띄운다. 이 담당에게 조사 결과(빈 결과와 건너뛴 사유 포함), 코드 기준점, 질문, 확신도 틀, 종합 프롬프트를 넘긴다. 종합 담당은 겹치는 근거를 합치고, 충돌은 둘 다 남기고, 인용을 표본 확인한다. | why-flow | synth |
+| s-present | 전달 | 메인 에이전트는 종합 결과를 사용자에게 보여 준다. 읽기 쉽게 조금 다듬거나 대화 맥락을 덧붙여도 된다. 확신도 표현은 고치지 않는다. | why-flow | present |
 
-드문 예외는 하나다. 커밋 하나짜리 사소한 대상이고 PR 설명에 답이 다 있으면 바로 답할 수 있다. 단, 쓸 수 있는 일곱 갈래 검색이 모두 불필요함을 확인한 뒤에만, 그 사실을 밝히고 답한다.[](source:skip)
+드문 예외가 하나 있다. 대상이 commit 하나짜리 사소한 변경이고 PR 설명에 답이 다 있으면, 에이전트는 바로 답할 수 있다. 단, 쓸 수 있는 일곱 갈래 검색이 모두 불필요함을 확인한 뒤에만 답할 수 있고, 답할 때 그 사실을 밝힌다.[](source:skip)
 
 ## 근거는 어디서 찾나: 일곱 갈래 {#evidence}
 
-조사 담당 하나는 서버 하나만 맡는다. 한 담당에게 여러 서버를 맡기지 않는다.[](source:discovery)[](source:roster) 플레이북은 대표 서버를 예로 든 것이고, 같은 갈래의 다른 서버에 맞춰 고쳐 쓴다.[](source:playbook-index)
+조사 담당 하나는 서버 하나만 맡는다. 한 담당에게 여러 서버를 맡기지 않는다.[](source:discovery)[](source:roster) 플레이북은 대표 서버를 예로 든 것이다. 같은 갈래의 다른 서버라면, 플레이북을 그 서버에 맞춰 고쳐 쓴다.[](source:playbook-index)
 
 | 갈래 | 예시 서버 · 플레이북 | 주로 드러내는 이유 | 플레이북이 경고하는 함정 |
 | --- | --- | --- | --- |
-| 1 소스 관리 기록 | git, `gh` · `code-archaeology.md` | 리뷰 때 남은 구현 당시 이유. 유일하게 늘 쓸 수 있어 항상 띄운다[](source:roster) | 스쿼시 병합으로 사라진 커밋, 내용과 다른 커밋 메시지, 봇 커밋[](source:pb-git) |
+| 1 소스 관리 기록 | git, `gh` · `code-archaeology.md` | 리뷰 때 남은 구현 당시 이유. 유일하게 늘 쓸 수 있어 항상 띄운다[](source:roster) | 스쿼시 병합으로 사라진 commit, 내용과 다른 commit 메시지, 봇 commit[](source:pb-git) |
 | 2 이슈·티켓 | Linear, Jira, GitHub Issues 등 · `linear.md` | 제품·사업 쪽에서 온 강제 요인[](source:roster) | 범위가 바뀐 티켓, 형식만 채운 "Why" 칸, 낡은 계획[](source:pb-linear) |
 | 3 긴 문서 | Notion, Confluence, Google Docs 등 · `notion.md` | 코드가 되기 전에 글로 쓴 설계 이유[](source:roster) | 구현 뒤 갱신 안 된 문서, 문서와 코드의 차이[](source:pb-notion) |
 | 4 실시간 대화 | Slack, Discord, Teams 등 · `slack.md` | 문서에 오르지 않은 실시간 논의. 다른 기록이 빈약할수록 중요[](source:roster) | 보존 기간, 검색 안 되는 DM, 농담을 결정으로 읽기. 인증이 실패하면 멈추고 빈칸으로 보고[](source:pb-slack) |
@@ -117,7 +117,7 @@
 | 6 오류 추적 | Sentry, Rollbar 등 · `sentry.md` | 방어 코드를 낳은 예외와 오류 추이[](source:roster) | 오류 묶음 재편, 릴리스 상관의 잡음, `resolved`는 수정의 증거가 아님, AI 분석 환각[](source:pb-sentry) |
 | 7 제품 분석 웨어하우스 | Databricks, BigQuery, dbt 등 · `databricks.md` | 플래그·실험 코드, 데이터 이전, "이 숫자는 어디서 왔나"[](source:roster) | 계측 변경을 사용 변화로 읽기, 존재를 확인 안 한 테이블[](source:pb-databricks) |
 
-대상 코드가 방어적이면(널 검사, 재시도, 시간 초과, 속도 제한, 기능 플래그, 외부 송신 차단, OOM 처리) `incident-postmortem.md`를 더한다. 별도 갈래가 아니라 각 출처 안에서 사고 기록을 찾는 관점이다.[](source:pb-incident)
+대상 코드가 방어적이면(널 검사, 재시도, 시간 초과, 속도 제한, 기능 플래그, 외부 송신 차단, OOM 처리), 에이전트는 `incident-postmortem.md`를 더한다. 별도 갈래가 아니라 각 출처 안에서 사고 기록을 찾는 관점이다.[](source:pb-incident)
 
 갈래를 건너뛰려면 최종 출처 확인 절에 서면 사유를 남긴다. 인정되는 사유는 둘뿐이다. 맞는 서버가 없거나(빈칸으로 표시), 그 출처가 무관함이 증명될 때다. "아마 무관"은 사유가 아니다.[](source:skip)
 
@@ -125,7 +125,7 @@
 | 소스 관리 | 항상 띄운다(`git`과 `gh`는 늘 있다고 본다) |
 | 로그·이벤트 조회 기간 | 변경 전후 약 30일로 묶는다(권고, Datadog·Databricks) |
 | 기준값 출처 확인 | PR 전 14일 분포의 p99와 상수 비교(조사 패턴 예) |
-| 커밋 목록 | `git log --oneline -20`(명령 예) |
+| commit 목록 | `git log --oneline -20`(명령 예) |
 
 조회 기간 수치는 플레이북의 권고다. 넓히려면 강한 이유가 필요하다.[](source:dd-window)[](source:db-window)
 
@@ -133,7 +133,7 @@
 
 ## 확신도는 어떻게 매기나 {#epistemics}
 
-코드는 자기 동기를 담지 않는다. 그래서 근거가 조각나 있다는 전제로 확신도를 따로 매긴다.[](source:ep-intro) 이 틀은 `references/epistemics.md`에 있고, 종합 담당은 반드시 따른다.[](source:posture)
+코드는 자기 동기를 담지 않는다. 그래서 이 스킬은 근거가 조각나 있다는 전제로, 확신도를 따로 매긴다.[](source:ep-intro) 이 틀은 `references/epistemics.md`에 있고, 종합 담당은 반드시 따른다.[](source:posture)
 
 | 단계 | 기준 | 표현 | 출력 위치 |
 | --- | --- | --- | --- |
@@ -143,7 +143,7 @@
 | 추측(Speculative) | 근거가 얇고 다른 설명도 똑같이 맞는다[](source:tier-spec) | "가능성은 X지만 직접 근거는 없다" | 경쟁 가설 |
 | 모름(Unknown) | 찾아봤지만 못 찾았다. 정당한 결과다[](source:tier-unknown) | 어디서 무엇을 찾았는지 구체적으로 | 모르는 것 |
 
-표현 규칙은 단어 목록으로 주어진다.[](source:phrasing)
+표현 규칙은 원문이 단어 목록으로 준다.[](source:phrasing)
 
 | 종류 | 원문 단어 | 규칙 |
 | --- | --- | --- |
@@ -151,7 +151,7 @@
 | 단정을 피하는 말 | `appears to`, `likely`, `suggests`, `is consistent with`, `may have been` 등 9개 | 추론 절에서 넉넉히 쓴다 |
 | 피할 말 | `obviously`, `clearly`, `of course`, `just`, `I think` | 쓰지 않는다. 의견 대신 "근거가 시사한다"로 쓴다 |
 
-틀은 네 가지 함정도 막는다.
+이 틀은 네 가지 함정도 막는다.
 
 - **사후 합리화**: 저자가 옳게 했다고 가정하고 거꾸로 정당화하지 않는다. 일관된 패턴을 의도로 단정하지 않는다. 언급이 없다고 고려가 없었다고 보지 않는다.[](source:phrasing)
 - **맞장구**: 사용자가 질문에 가설을 담아 와도 그대로 확인하지 않는다. 후보 하나로 두고 따로 검증한다.[](source:syco)
@@ -167,10 +167,10 @@
 | 기본은 전체 병렬 조사다[](source:discovery) | 의무 |
 | 조사 담당은 갈래마다 하나, 한 메시지에서 모두 띄운다[](source:discovery) | 의무 |
 | 조사 담당과 종합 담당 모두 `readonly: false`로 띄운다. 읽기 전용(Ask) 모드는 MCP 접근을 없앤다[](source:inv-config)[](source:synth) | 의무(읽기 전용 금지) |
-| 그래도 조사 담당은 아무것도 쓰지 않는다. 종합 담당은 파일 쓰기, 커밋, 외부 상태 변경을 하지 않는다[](source:inv-config)[](source:syn-steps) | 금지 |
+| 그래도 조사 담당은 아무것도 쓰지 않는다. 종합 담당은 파일 쓰기, commit, 외부 상태 변경을 하지 않는다[](source:inv-config)[](source:syn-steps) | 금지 |
 | 갈래를 건너뛰면 서면 사유를 남긴다. 사유는 두 가지만[](source:skip) | 의무 |
 | 확신도 표현을 다시 쓰지 않는다[](source:present) | 금지 |
-| 가장 최근 커밋을 권위로 삼지 않는다. 앞선 결정까지 거슬러 간다[](source:failure) | 금지 |
+| 가장 최근 commit을 권위로 삼지 않는다. 앞선 결정까지 거슬러 간다[](source:failure) | 금지 |
 | 코드를 그 코드의 의도에 대한 근거로 쓰지 않는다[](source:syn-rules) | 금지 |
 
 @facts
@@ -178,13 +178,13 @@
 | 종합 담당 모델 | 규칙 파일의 `why synthesizer` 줄. 없으면 `claude-opus-5-5-max` |
 | 서브에이전트 종류 | `subagent_type: generalPurpose` |
 
-모델 줄은 `setup-pstack`이 쓰는 `pstack-models.mdc`에서 읽는다.[](source:setup-roles) 값이 `auto`나 `inherit-parent`면 `model`을 비운다. Task 도구가 이름을 거부하면 기본값을 쓰고 알린다. 기본값도 거부되면 오류 메시지에 나온 같은 계열의 가장 가까운 이름을 쓴다.[](source:models)
+에이전트는 모델 줄을 `setup-pstack`이 쓰는 `pstack-models.mdc`에서 읽는다.[](source:setup-roles) 값이 `auto`나 `inherit-parent`면, `model`을 비운다. Task 도구가 모델 이름을 거부하면, 기본값을 쓰고 알린다. 기본값도 거부되면, 오류 메시지에 나온 같은 계열의 가장 가까운 이름을 쓴다.[](source:models)
 
-돌려주는 답은 여덟 절이다. 질문, 대상 코드, 찾은 것, 추론할 수 있는 것, 경쟁 가설, 모르는 것, 출처 확인, 확신도 요약 순서다.[](source:syn-out)
+종합 담당이 돌려주는 답은 여덟 절이다. 질문, 대상 코드, 찾은 것, 추론할 수 있는 것, 경쟁 가설, 모르는 것, 출처 확인, 확신도 요약 순서다.[](source:syn-out)
 
-형식은 상황에 맞게 바꿀 수 있다. 다만 확신도 구분은 지키고, 출처 확인 절은 조사 담당마다 한 줄씩 둔다. 빈 결과와 건너뛴 갈래도 사유와 함께 적는다.[](source:present)
+메인 에이전트는 답의 형식을 상황에 맞게 바꿀 수 있다. 다만 확신도 구분은 지키고, 출처 확인 절은 조사 담당마다 한 줄씩 둔다. 빈 결과와 건너뛴 갈래도 사유와 함께 적는다.[](source:present)
 
-질문이 코드를 바꾸기 위한 준비라면 출처 확인 절 뒤에 제약 목록을 더한다. 지킬 것(Preserve), 바꿀 것(Change), 피할 것(Avoid), 위험(Risk) 네 묶음이다.[](source:present)
+질문이 코드를 바꾸기 위한 준비라면, 출처 확인 절 뒤에 제약 목록을 더한다. 지킬 것(Preserve), 바꿀 것(Change), 피할 것(Avoid), 위험(Risk) 네 묶음이다.[](source:present)
 
 ## 흐름 속 위치 {#position}
 
@@ -199,7 +199,7 @@
 | --- | --- | --- | --- |
 | `teach`의 좁힌 질문 | 근거 있는 이유. 확신도 표현은 `teach`가 유지 | `how`와 병렬, 기본은 좁게 | r43 |
 | `recall`의 주제 | 공유 기록 조사 결과 | 질문을 "지금 무엇이 열려 있나"로 바꿔 넘김 | r45 |
-| `blast-radius`의 변경 | PR·커밋 목록(2단계만) | 위험 판단도 같은 규칙 | r49 |
+| `blast-radius`의 변경 | PR·commit 목록(2단계만) | 위험 판단도 같은 규칙 | r49 |
 | `architect`의 기존 모양 | 설계 제약 | 소유권·계층을 다시 정할 때만 | r61 |
 | `pstack-models.mdc`의 역할 줄 | - | 파일이나 줄이 없으면 기본 모델 | r31 |
 | - | - | `how`의 짝. 동작은 `how`, 이유는 `why` | r41 |
@@ -214,7 +214,7 @@
 - 호출 조건 확인용으로 다른 스킬 파일 일부를 읽었다: `setup-pstack`, `architect`, `teach`, `recall`, `blast-radius`, `poteto-mode/playbooks/investigation.md`, `bug-fix.md`.
 - 제외한 파일: `SKILL.KO.md`, `references/**/*.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다(원장 기준).
-- 실제로 실행해 보지 않았다. 페이지의 흐름은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 이 페이지의 흐름은 모두 원문이 지시한 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="좁힌 조사와 건너뛰기 규칙의 충돌"

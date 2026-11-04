@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T12:42:00.642Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/candidate.archify.md",
+    "sha256": "983f5e4e51180d16dd3dd5914e762d6320743da7ca762cbcfad120d0a629fe55",
+    "bytes": 12974
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+    "sha256": "a7235c41b0aaa2f40a4f55c91f73998c05120a7619e4171e83e929cae33dcd1b",
+    "bytes": 911848
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "983f5e4e51180d16dd3dd5914e762d6320743da7ca762cbcfad120d0a629fe55",
+          "bytes": 12974
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 817,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "1f045f39-9ef4-4913-95a7-658de9478b0f",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+        "explainer": {
+          "preparedSha256": "4c68d243948e1e94f1ca3994177542f85c82e538fbb4a928b7017d1b429ff8df",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ux-fm",
+              "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+              "bytes": 9486
+            },
+            {
+              "kind": "repository",
+              "id": "ux-intro",
+              "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+              "bytes": 9486
+            },
+            {
+              "kind": "repository",
+              "id": "ux-err",
+              "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+              "bytes": 9486
+            },
+            {
+              "kind": "repository",
+              "id": "ux-resp",
+              "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+              "bytes": 9486
+            },
+            {
+              "kind": "repository",
+              "id": "ux-esc",
+              "path": "deepseek-harness/dsh-client-ui-ux/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8cf612a918d62b9da9c457904f726d5f0616c4a344f2c4a22b9c8a7550cb1370",
+              "bytes": 9486
+            },
+            {
+              "kind": "repository",
+              "id": "rui-fm",
+              "path": "deepseek-harness/dsh-responsive-ui/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "be525fae2eb2ce2254a95a45bb4a9bea2434352ea84a29cc1b72468090ee160f",
+              "bytes": 4423
+            },
+            {
+              "kind": "repository",
+              "id": "rui-vp",
+              "path": "deepseek-harness/dsh-responsive-ui/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "be525fae2eb2ce2254a95a45bb4a9bea2434352ea84a29cc1b72468090ee160f",
+              "bytes": 4423
+            },
+            {
+              "kind": "repository",
+              "id": "art-fm",
+              "path": "deepseek-harness/dsh-official-plugin-artwork/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "4d603f04db36c335de20015844c1bca9b83e2cfa6b8628a04268cee99967ddbb",
+              "bytes": 6194
+            },
+            {
+              "kind": "repository",
+              "id": "art-edge",
+              "path": "deepseek-harness/dsh-official-plugin-artwork/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "4d603f04db36c335de20015844c1bca9b83e2cfa6b8628a04268cee99967ddbb",
+              "bytes": 6194
+            },
+            {
+              "kind": "repository",
+              "id": "art-gif",
+              "path": "deepseek-harness/dsh-official-plugin-artwork/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "4d603f04db36c335de20015844c1bca9b83e2cfa6b8628a04268cee99967ddbb",
+              "bytes": 6194
+            },
+            {
+              "kind": "repository",
+              "id": "eh-fm",
+              "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+              "bytes": 2389
+            },
+            {
+              "kind": "repository",
+              "id": "eh-head",
+              "path": "deepseek-harness/dsh-error-handling/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "fcde7e278056263f7b93b6854fe05d0b492bdf09739f4f4f3537e8ffd30a1c2d",
+              "bytes": 2389
+            },
+            {
+              "kind": "repository",
+              "id": "gif-fm",
+              "path": "deepseek-harness/record-browser-gif/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "baacaf5ca4591280a8d3e67f256b8e9beb6a89fe2dd5c0636086621146643806",
+              "bytes": 15698
+            },
+            {
+              "kind": "repository",
+              "id": "gif-must",
+              "path": "deepseek-harness/record-browser-gif/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "baacaf5ca4591280a8d3e67f256b8e9beb6a89fe2dd5c0636086621146643806",
+              "bytes": 15698
+            },
+            {
+              "kind": "repository",
+              "id": "gif-attach",
+              "path": "deepseek-harness/record-browser-gif/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "baacaf5ca4591280a8d3e67f256b8e9beb6a89fe2dd5c0636086621146643806",
+              "bytes": 15698
+            },
+            {
+              "kind": "repository",
+              "id": "pd-gif",
+              "path": "deepseek-harness/dsh-pr-description/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "bb5d25480625dfc3f14061e6f1eef1d99c9f2c45729c151199b4ef52581383ba",
+              "bytes": 18973
+            },
+            {
+              "kind": "repository",
+              "id": "pd-attach",
+              "path": "deepseek-harness/dsh-pr-description/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "bb5d25480625dfc3f14061e6f1eef1d99c9f2c45729c151199b4ef52581383ba",
+              "bytes": 18973
+            },
+            {
+              "kind": "repository",
+              "id": "perf-gif",
+              "path": "deepseek-harness/dsh-speed-up-perf/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "8ffc5fed104ede34b27075145350b97489b45d394f9f13464bf2b605c66e2931",
+              "bytes": 12167
+            },
+            {
+              "kind": "repository",
+              "id": "cr-list",
+              "path": "deepseek-harness/dsh-code-review/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "f89af2214a53de119f08aa7391dad15f7d235c16f38d542090e1abac99067e47",
+              "bytes": 11550
+            },
+            {
+              "kind": "repository",
+              "id": "cr-err",
+              "path": "deepseek-harness/dsh-code-review/SKILL.md",
+              "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+              "sha256": "f89af2214a53de119f08aa7391dad15f7d235c16f38d542090e1abac99067e47",
+              "bytes": 11550
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "client-ui-flow",
+              "inline": true,
+              "sha256": "b7cb217b6e8f7f85efb57bcc57cb72c8843e013b4f008ff289049813d73209c8",
+              "bytes": 1534
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "983f5e4e51180d16dd3dd5914e762d6320743da7ca762cbcfad120d0a629fe55",
+          "bytes": 12974
+        },
+        "artifact": {
+          "sha256": "a7235c41b0aaa2f40a4f55c91f73998c05120a7619e4171e83e929cae33dcd1b",
+          "bytes": 911848
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 430,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "a7235c41b0aaa2f40a4f55c91f73998c05120a7619e4171e83e929cae33dcd1b",
+          "bytes": 911848
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "74 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "21 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "client-ui-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "client-ui-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-krtONl/child.html",
+                "artifact": {
+                  "sha256": "ad59d47c447c01aa304052f067b854833ed1befaf131c710fcdd42e73c71e41a",
+                  "bytes": 839167
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.025495750708215,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "art-to-gif-1",
+                      "from": "art",
+                      "to": "gif"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.025495750708215,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "1f045f39-9ef4-4913-95a7-658de9478b0f"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/_group-client-ui/client-ui.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T12:42:02.034Z",
+  "durationMs": 1392,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

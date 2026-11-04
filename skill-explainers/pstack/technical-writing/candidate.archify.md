@@ -1,11 +1,11 @@
 # technical-writing 스킬은 에이전트를 어떻게 바꾸나 {#technical-writing-skill}
 
-`technical-writing`을 쓰면 에이전트는 문서, RFC, README, PR 설명, 커밋 메시지를 네 겹 기준에 맞춰 쓰거나 리뷰한다. 목표는 지친 엔지니어가 처음 읽고 이해하는 글이다.[](source:goal)
+`technical-writing`을 쓰면 에이전트는 문서, RFC, README, PR 설명, commit 메시지를 네 겹 기준에 맞춰 쓰거나 리뷰한다. 목표는 지친 엔지니어가 처음 읽고 이해하는 글이다.[](source:goal)
 
-- 네 겹은 문서 종류(Diátaxis), 독자에게 거는 문장(Google 개발자 문체), 문장 하나의 정보량(STE), 두 갈래 해석 막기(Global English)다. 넷 다 적용한다.[](source:goal)
-- 그 위에 규칙 세 개가 있다. 일하지 않는 단어를 지우고, 짧은 일상어를 쓰고, 규칙이 문장을 망치면 다른 방법으로 고친다.[](source:over)
-- PR 설명과 커밋 메시지에는 Diátaxis만 빼고 나머지 세 겹을 적용한다.[](source:voice)
-- 손대는 모든 문서에 `unslop`도 적용한다. AI 티 나는 표현 목록은 그 스킬이 맡는다.[](source:voice)
+- 네 겹은 문서 종류(Diátaxis), 독자에게 말을 거는 방식(Google 개발자 문체), 문장 하나의 정보량(STE), 두 갈래 해석 막기(Global English)다. 문서에는 넷 다 적용한다.[](source:goal)
+- 네 겹 위에 규칙 세 개가 더 있다. 에이전트는 일하지 않는 단어를 지우고, 짧은 일상어를 쓰고, 규칙이 문장을 망치면 다른 방법으로 고친다.[](source:over)
+- PR 설명과 commit 메시지에는 Diátaxis를 빼고 나머지 세 겹을 적용한다.[](source:voice)
+- 에이전트는 손대는 모든 문서에 `unslop`도 적용한다. AI 티 나는 표현 목록은 `unslop`이 맡는다.[](source:voice)
 
 @answer scope="pstack/technical-writing · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -32,14 +32,14 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) `description`에 "when writing or reviewing docs"라고 적혀 있어도 마찬가지다. 사용자가 `/technical-writing`을 입력하거나, 다른 스킬이 글을 쓰는 단계에서 부를 때 켜진다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) `description`에 "when writing or reviewing docs"라고 적혀 있어도 마찬가지다. 그래서 사용자가 `/technical-writing`을 입력하거나, 다른 스킬이 글을 쓰는 단계에서 부를 때 켜진다.
 
 | 누가 부르나 | 조건 | rel-id |
 | --- | --- | --- |
 | 사용자 | `/technical-writing` 입력. 안내 표에서는 "문서를 기준에 맞춰 쓸 때" 쓰는 스킬이다[](source:help-tw) | - |
-| `poteto-mode` | 문서, RFC, README, PR 설명, 커밋 메시지를 쓸 때[](source:pm-tw) | r07 |
+| `poteto-mode` | 문서, RFC, README, PR 설명, commit 메시지를 쓸 때[](source:pm-tw) | r07 |
 | `multi-phase-plan` 플레이북 | 계획 문서를 이 스킬로 전부 쓴 뒤 `unslop`을 적용한다. 본문은 how-to 모드 하나다[](source:pb-mpp) | 플레이북 표 |
-| `opening-a-pr` 플레이북 | PR 제목·설명과 커밋 본문. Diátaxis 층을 뺀 모든 층을 적용한다[](source:pb-pr) | 플레이북 표 |
+| `opening-a-pr` 플레이북 | PR 제목·설명과 commit 본문을 쓸 때 부른다. Diátaxis 층을 뺀 모든 층을 적용한다[](source:pb-pr) | 플레이북 표 |
 
 ## 어떤 글에 어떤 기준을 적용하나 {#flow}
 
@@ -58,26 +58,26 @@
 | all > unslop | | emphasis |
 
 @steps id=tw-steps
-| s-kind | 어떤 글인가? | 제품 UI 문자열은 문서가 아니다. PR 설명과 커밋 메시지는 글이다. 나머지 문서는 모드부터 고른다. | tw-flow | kind |
+| s-kind | 어떤 글인가? | 에이전트는 먼저 글의 종류를 가린다. 제품 UI 문자열은 문서가 아니다. PR 설명과 commit 메시지는 글이다. 나머지 문서는 모드부터 고른다. | tw-flow | kind |
 | s-ui | UI 지침 | UI 문자열에는 이 스킬 대신 제품의 문구 지침을 쓴다. | tw-flow | ui |
-| s-pr | 세 겹 적용 | Diátaxis 층을 뺀 세 겹을 적용한다. PR 본문은 리뷰어가 1분 안에 읽는 브리핑이다. swarm 로그, SHA 목록, 지표 표는 붙이지 않고 링크한다. | tw-flow | pr |
-| s-mode | 모드 고르기 | 문서 하나에 모드 하나다. 행동과 이해, 학습과 업무라는 두 질문으로 고른다. 문서 전체에도, 문장 하나에도 쓴다. | tw-flow | mode |
-| s-all | 네 겹 적용 | 고른 모드 안에서 문장 세 겹을 적용한다. 모든 규칙을 지켰는데 기계가 쓴 듯하면 실패한 글이다. | tw-flow | all |
-| s-unslop | unslop | 이 스킬이 손대는 모든 문서에 적용한다. | tw-flow | unslop |
+| s-pr | 세 겹 적용 | 에이전트는 Diátaxis 층을 뺀 세 겹을 적용한다. PR 본문은 리뷰어가 1분 안에 읽는 브리핑이다. swarm 로그, SHA 목록, 지표 표는 붙이지 않고 링크한다. | tw-flow | pr |
+| s-mode | 모드 고르기 | 에이전트는 문서 하나에 모드 하나를 고른다. 행동과 이해, 학습과 업무라는 두 질문으로 고른다. 문서 전체에도, 문장 하나에도 쓴다. | tw-flow | mode |
+| s-all | 네 겹 적용 | 에이전트는 고른 모드 안에서 문장 세 겹을 적용한다. 모든 규칙을 지켰는데도 기계가 쓴 듯하면 실패한 글이다. | tw-flow | all |
+| s-unslop | unslop | 에이전트는 이 스킬이 손대는 모든 문서에 `unslop`을 적용한다. | tw-flow | unslop |
 
 이 흐름의 근거는 `SKILL.md`의 모드 절과 마지막 절이다.[](source:compass)[](source:voice) 네 겹 가운데 모드를 먼저 고른다는 순서만 원문에 있다. 나머지 세 겹과 `unslop` 사이의 순서는 원문에 명시 없음. `multi-phase-plan` 플레이북은 이 스킬을 먼저, `unslop`을 나중에 쓰게 한다.[](source:pb-mpp)
 
 네 겹 위에서 에이전트가 늘 지키는 것은 다음과 같다.
 
-- 일하지 않는 단어를 지운다. "In order to"는 "to"가 되고, "It is important to note that"은 통째로 빠진다.[](source:over)
-- 짧은 일상어를 쓴다. "utilize" 대신 "use", "perform" 대신 "do"다. 긴 단어는 정확성으로 제 길이를 갚아야 한다.[](source:over)
+- 일하지 않는 단어를 지운다. `In order to`는 `to`가 되고, `It is important to note that`은 통째로 빠진다.[](source:over)
+- 짧은 일상어를 쓴다. `utilize` 대신 `use`, `perform` 대신 `do`다. 긴 단어는 길이만큼 더 정확할 때만 쓴다.[](source:over)
 - 코드베이스가 단어 목록이다. 동의어나 묘사 대신 실제 심볼, 파일, 플래그, 명령 이름을 쓴다.[](source:words)
 - 전문어를 지어내지 않는다. "evacuate", "ratchet", "endgame" 대신 "move", "a budget that only decreases"처럼 소리 내어 말할 단어를 쓴다.[](source:words)
 - 문장 길이를 일부러 섞는다. 생각 둘을 담은 문장은 나누고, 하나를 담은 긴 문장은 둔다. 막연한 말 대신 "a column rename fails the build"처럼 구체적으로 쓴다.[](source:rhythm)
 
 ## 문서 모드는 어떻게 고르나 {#diataxis}
 
-두 질문으로 고른다. 내용이 행동을 돕는가 이해를 돕는가, 그리고 학습용인가 업무용인가.[](source:compass)
+에이전트는 두 질문으로 모드를 고른다. 내용이 행동을 돕는가 이해를 돕는가, 그리고 학습용인가 업무용인가.[](source:compass)
 
 | 모드 | 조합 | 에이전트가 하는 일 | 하지 않는 것 |
 | --- | --- | --- | --- |
@@ -90,7 +90,7 @@
 
 ## 문장 세 겹은 무엇을 요구하나 {#sentence-layers}
 
-**Google 개발자 문체.** 독자에게 거는 방식을 정한다.[](source:google)
+**Google 개발자 문체.** 독자에게 말을 거는 방식을 정한다.[](source:google)
 
 | 규칙 | 원문 예 |
 | --- | --- |
@@ -143,7 +143,7 @@
 
 판정: 고친 글은 실제 파일 이름(`budget.mjs`, `budget.json`)을 쓰고, 조건("If the count exceeds")을 결과 앞에 두고, 수동태("is performed")를 없앴다. 각각 코드베이스 단어 목록, Google 문체, STE 규칙에 해당한다.[](source:example)[](source:words)[](source:google)[](source:ste)
 
-저장소에 맞춘 규칙도 있다. 코드 조각은 탭으로 들여 쓴다. 개수나 트리 주장은 그것을 넣는 커밋 시점에 사실이어야 하고, 다시 만드는 명령을 함께 적는다.[](source:voice)
+이 스킬에는 저장소에 맞춘 규칙도 있다. 코드 조각은 탭으로 들여 쓴다. 개수나 트리 주장은 그것을 넣는 commit 시점에 사실이어야 하고, 다시 만드는 명령을 함께 적는다.[](source:voice)
 
 `unslop`과는 역할을 나눈다. 이 스킬은 새 금지 표현을 찾으면 `unslop`의 추상 은유 규칙(26번)에 넣자고 답변에 변경안(diff)으로 제안한다. `unslop` 파일은 직접 고치지 않는다.[](source:words)[](source:unslop-26) 엠 대시를 새 문장으로 바꾸라는 규칙은 `unslop` 규칙 13과 같은 방향이다.[](source:global)[](source:unslop-13)
 
@@ -152,8 +152,8 @@
 - 읽은 파일: `pstack/technical-writing/SKILL.md`(원본, 유일한 텍스트 파일).
 - 관계 확인용으로 읽은 줄: 위 출처 목록의 다른 스킬 줄. 각 줄만 확인했다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
-- 원문 비교: `reporting-skills/pstack/technical-writing/SKILL.md`와 원문 동일(`shasum` 일치).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 원문 비교: `reporting-skills/pstack/technical-writing/SKILL.md`와 내용이 같다(`shasum` 일치).
+- 실제로 실행해 보지 않았다. 이 페이지의 동작은 모두 원문이 지시한 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

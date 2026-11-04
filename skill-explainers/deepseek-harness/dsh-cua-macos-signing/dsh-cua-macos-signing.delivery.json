@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "eb8050e7-036a-4205-82c9-d25bba65f297",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/deepseek-harness/dsh-cua-macos-signing/dsh-cua-macos-signing.html",
+  "specification": {
+    "sha256": "84f6b9b8a7f657bc8300cc446a5f117bf2b6756a19a3ea4b8bf55bc6ef23a6d1",
+    "bytes": 21077
+  },
+  "artifact": {
+    "sha256": "358aee10e253eb40069ee5648c3be743e303ae19aae18278ddcbf6bae92bac7a",
+    "bytes": 1429716
+  },
+  "explainer": {
+    "preparedSha256": "5407d822c7ea37c826ab06379767de99149024403e07b32121c0dcb2899bf7a5",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "cs-fm",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-yaml",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-recog",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-no",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-choices",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-auth",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-create",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-create-out",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-cfg",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-unlock",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-verify",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-e2e",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "cs-remove",
+        "path": "deepseek-harness/dsh-cua-macos-signing/SKILL.md",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "e7988aa8566d27de3a71cdaa1f9410002039a5aa010044f2fa1dfdd9bb311cee",
+        "bytes": 8047
+      },
+      {
+        "kind": "repository",
+        "id": "si-doc",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-const",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-priv",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-lock",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-dir",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-owned",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-load",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-cert",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-setup",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-remove",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "si-main",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_identity.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "3d3cda51b800043db2a010d0646616b333c2d96a3828b4f080d72b2f1b07c353",
+        "bytes": 11817
+      },
+      {
+        "kind": "repository",
+        "id": "e2e-doc",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_e2e.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "96a6c7649730f5fce6566392602479ed7c3745afe986f1c8ea31000d9abbcd17",
+        "bytes": 4524
+      },
+      {
+        "kind": "repository",
+        "id": "e2e-main",
+        "path": "deepseek-harness/dsh-cua-macos-signing/scripts/signing_e2e.py",
+        "revision": "475505cab7ed9a4e4537ddf7485934e25a85106d",
+        "sha256": "96a6c7649730f5fce6566392602479ed7c3745afe986f1c8ea31000d9abbcd17",
+        "bytes": 4524
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cua-flow",
+        "inline": true,
+        "sha256": "16214725ac9331e6a3cbb235a5e5dda4c830218a47cd51079f9be4120d4f2cd7",
+        "bytes": 1324
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "key-layout",
+        "inline": true,
+        "sha256": "97f7991fa2a8bcbad4186ed6e30bb1222939e4c749d424db6be62b52050598aa",
+        "bytes": 536
+      }
+    ]
+  }
+}

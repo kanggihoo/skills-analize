@@ -2,10 +2,10 @@
 
 `principle-encode-lessons-in-structure`를 읽은 에이전트는 같은 지시를 두 번째로 쓰는 순간 멈춘다. 그 지시를 린트 규칙, 메타데이터 플래그, 런타임 검사, 스크립트 같은 장치로 바꾸고 글로 된 지시는 지운다.[](source:pattern)
 
-- 원문의 이유: 글로 된 지시는 읽는 쪽이 알아채고, 기억하고, 따라야 한다. 장치는 협조 없이도 규칙을 지키게 한다.[](source:why)
+- 원문의 이유: 글로 된 지시는 읽는 쪽이 알아채고, 기억하고, 따라야 한다. 장치는 읽는 쪽이 협조하지 않아도 규칙을 지키게 한다.[](source:why)
 - 장치가 여럿 가능하면 가장 강한 것을 고른다. 에이전트는 주변 코드를 따라 하므로 약한 방어가 다음 본보기가 된다.[](source:strongest)
 - 판단이 필요해 장치로 못 바꾸면, 지시를 더 눈에 띄게 하고 실패 사례를 붙인다.[](source:pattern)
-- 사람의 교정, 테스트 실패, 예상 밖 결과는 모두 배울 신호다. 기록하고, 맞는 층으로 보내고, 바로 적용하거나 구체적인 할 일로 만든다.[](source:loop)
+- 에이전트는 사람의 교정, 테스트 실패, 예상 밖 결과를 모두 배울 신호로 본다. 신호를 기록하고, 맞는 층으로 보내고, 바로 적용하거나 구체적인 할 일로 만든다.[](source:loop)
 
 @answer scope="pstack/principle-encode-lessons-in-structure · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
 @meta locale=ko
@@ -33,7 +33,7 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-encode-lessons-in-structure`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-encode-lessons-in-structure`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
@@ -42,7 +42,7 @@
 | `orchestrate` 플레이북 | 지시를 다시 말하고 있으면, 행동하기 전에 `preferences.md`에 한 줄을 더한다[](source:pb-orch) |
 | `worktree-cleanup` 플레이북 | 경로를 손으로 치지 않고 `git worktree list`에서 읽는 근거[](source:pb-worktree) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite)
 
 ## 무엇을 강제하나 {#rules}
 
@@ -56,8 +56,8 @@
 | ask > louder | 아니오 | |
 
 @steps id=encode-steps
-| s-ask | 장치로 되나? | 린트 규칙, 메타데이터 플래그, 런타임 검사, 스크립트 중 하나가 될 수 있는지 묻는다. | encode-flow | ask |
-| s-encode | 장치화 | 된다면 장치로 만든다. 여럿 가능하면 가장 강한 것을 고른다. 그다음 글로 된 지시는 지운다. 구조적 해결이 있으면 구조적 해결만 쓴다. 지시는 증상이다. | encode-flow | encode |
+| s-ask | 장치로 되나? | 반복되는 지시를 린트 규칙, 메타데이터 플래그, 런타임 검사, 스크립트 중 하나로 바꿀 수 있는지 묻는다. | encode-flow | ask |
+| s-encode | 장치화 | 장치로 바꿀 수 있으면 장치로 만든다. 장치가 여럿 가능하면 가장 강한 것을 고른다. 그다음 글로 된 지시는 지운다. 구조적 해결이 있으면 구조적 해결만 쓴다. 지시는 증상이다. | encode-flow | encode |
 | s-louder | 지시 강조 | 판단이 필요해 장치로 못 바꾸면 지시를 더 눈에 띄게 하고 실패 사례를 붙인다. | encode-flow | louder |
 
 이 흐름은 원문 패턴 1~3번과 따름 규칙을 옮긴 것이다.[](source:pattern)[](source:strongest)
@@ -79,7 +79,7 @@
 | 금지하는 것(안티패턴) | 원문의 예 |
 | --- | --- |
 | 기록하지 않고 받아들이기 | "명심하겠습니다"는 남지 않는다[](source:anti) |
-| 기록하고 보내지 않기 | 있어야 할 린트 규칙에 대한 메모는 그 규칙을 만들지 않으면 쓸모없다[](source:anti) |
+| 기록하고 보내지 않기 | 있어야 할 린트 규칙을 적은 메모는 그 규칙을 만들지 않으면 쓸모없다[](source:anti) |
 | 일반화하지 않고 고치기 | 한 곳만 고치고 되풀이되는 패턴은 그대로 둔다[](source:anti) |
 
 기록만 하고 끝내지 않는다. 바로 적용하거나 구체적인 할 일을 만든다.[](source:loop) 이 원칙을 적용하지 않는 경우는 원문에 명시 없음.
@@ -109,8 +109,8 @@
 - `multi-phase-plan` 플레이북 6단계: `check-plan.mjs`를 돌려 나온 줄을 모두 고친다.[](source:pb-plan)
 - `figure-it-out`: 되풀이되는 교정을 관문, 린트 규칙, 검사, 스크립트로 바꾼다.[](source:fio)
 - `reflect`: 장치로 더 잘 지킬 수 있는 항목을 `Accepted`에서 `Backlog`로 옮긴다.[](source:reflect)
-- `show-me-your-work`: 손으로 만든 일회성 근거보다 커밋된 스크립트가 낸 근거를 고른다.[](source:smyw)
-- `architect` 러너 프롬프트: 불변식은 쓰기 어려운 타입, 런타임 검사, 주석 순으로 담는다.[](source:runner)
+- `show-me-your-work`: 손으로 만든 일회성 근거보다 commit된 스크립트가 낸 근거를 고른다.[](source:smyw)
+- `architect` runner 프롬프트: 불변식은 쓰기 어려운 타입, 런타임 검사, 주석 순으로 담는다.[](source:runner)
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다. 관계 근거는 `pstack/relations.md`의 `rel-id`로 확인한다.
 
@@ -120,7 +120,7 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 6곳이다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: `verification-skills/pstack/principle-encode-lessons-in-structure/SKILL.md`와 원문 동일(`shasum` 일치). 소속 묶음과 호출 측은 `pstack/` 경로 기준으로 확인했다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

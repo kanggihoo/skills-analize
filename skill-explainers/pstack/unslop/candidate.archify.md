@@ -1,11 +1,11 @@
 # unslop 스킬은 에이전트를 어떻게 바꾸나 {#unslop-skill}
 
-`unslop`을 적용하면 에이전트는 쓴 글을 번호 붙은 패턴 목록과 대조한다. AI 티 나는 표현(AI tells)을 찾으면 뜻과 의도한 어조를 지키면서 고쳐 쓴다.[](source:proc)
+`unslop`을 적용하면 에이전트는 자기가 쓴 글을 번호 붙은 패턴 목록과 대조한다. AI 티 나는 표현(AI tells)을 찾으면 뜻과 의도한 어조를 지키면서 고쳐 쓴다.[](source:proc)
 
 - 절차는 두 단계뿐이다. 목록대로 훑고, 고쳐 쓴다.[](source:proc)
 - 규칙은 28개이고 7개 범주로 나뉜다. 대상은 영어 산문이다.[](source:content)[](source:plain)
 - 규칙 번호는 다른 스킬이 인용하는 고정 ID다. 지운 규칙의 번호는 빈칸으로 남긴다.[](source:ids)
-- 스스로 켜지지 않는다. `pstack`의 다른 스킬 7개가 글을 쓸 때 이 스킬을 적용하라고 지시한다.
+- 이 스킬은 모델이 스스로 켜지 않는다. 대신 `pstack`의 다른 스킬 7개가 글을 쓸 때 이 스킬을 적용하라고 지시한다.
 
 @answer scope="pstack/unslop · 원본 텍스트 파일 1개 · 커밋 5760176"
 @meta locale=ko
@@ -41,7 +41,7 @@
 
 `description`은 "Must always apply."라고 적는다. 하지만 `disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm)
 
-사용자가 `/unslop`을 입력하거나, 다른 스킬이 글을 쓰는 단계에서 적용하라고 할 때 켜진다. 판정: "항상 적용"은 다른 스킬의 지시로 이루어진다. 아래 표가 그 지시들이다.
+사용자가 `/unslop`을 입력하거나, 다른 스킬이 글을 쓰는 단계에서 적용하라고 할 때 켜진다. 판정: "항상 적용"은 다른 스킬이 적용을 지시할 때 실제로 작동한다. 아래 표가 그 지시들이다.
 
 | 적용을 지시하는 스킬 | 대상 글 | rel-id |
 | --- | --- | --- |
@@ -53,11 +53,11 @@
 | `show-me-your-work` | 결정 기록의 문장[](source:smyw-unslop) | r91 |
 | `automate-me` | 모드 스킬 초안의 모든 줄[](source:am-unslop) | r92 |
 
-`poteto-mode`의 플레이북 세 개도 글을 쓴 뒤 적용하라고 한다. `investigation`은 답변에, `multi-phase-plan`은 계획 문서에, `opening-a-pr`는 PR 제목·설명과 커밋 본문에 적용한다.[](source:pb-inv)[](source:pb-mpp)[](source:pb-pr) 사용자 안내 표에서는 "글에서 AI 티를 걷어낼 때" 쓰는 스킬로 소개한다.[](source:help-unslop)
+`poteto-mode`의 플레이북 세 개도 글을 쓴 뒤 적용하라고 한다. `investigation`은 답변에, `multi-phase-plan`은 계획 문서에, `opening-a-pr`는 PR 제목·설명과 commit 본문에 적용한다.[](source:pb-inv)[](source:pb-mpp)[](source:pb-pr) 사용자 안내 표에서는 "글에서 AI 티를 걷어낼 때" 쓰는 스킬로 소개한다.[](source:help-unslop)
 
 ## 규칙 번호는 왜 비어 있나 {#rule-ids}
 
-다른 스킬이 규칙을 번호로 인용하기 때문이다. 원문은 번호를 고정 ID로 두고, 지운 규칙은 빈 번호로 남긴다고 적는다.[](source:ids) 실제로 `poteto-mode`는 콜론 규칙을 "unslop rule 14"라고 번호로 가리킨다.[](source:pm-r14)
+지운 규칙의 번호를 비워 두는 것은, 다른 스킬이 규칙을 번호로 인용하기 때문이다. 원문은 번호를 고정 ID로 두고, 지운 규칙은 빈 번호로 남긴다고 적는다.[](source:ids) 실제로 `poteto-mode`는 콜론 규칙을 "unslop rule 14"라고 번호로 가리킨다.[](source:pm-r14)
 
 @facts
 | 규칙 수 | 28개(3~33번) |
@@ -65,7 +65,7 @@
 | 범주 | 7개. Content 2, Language 6, Style 7, Communication artifacts 2, Filler 3, Jargon 1, Plain speech 7 |
 | 절차 | 훑기 → 고쳐 쓰기 |
 
-`technical-writing`은 새로 찾은 추상 은유 명사를 규칙 26에 추가하자고 답변에서 변경안(diff)으로 제안하게 한다. 이때 `unslop` 파일은 직접 고치지 않는다.[](source:tw-26)
+`technical-writing`은 에이전트가 새로 찾은 추상 은유 명사를 규칙 26에 추가하자고, 답변에서 변경안(diff)으로 제안하게 한다. 이때 `unslop` 파일은 직접 고치지 않는다.[](source:tw-26)
 
 ## 내용과 어휘에서 무엇을 고치나 {#content-language}
 
@@ -92,9 +92,9 @@
 | 17 | 제목의 Title Case | 문장형 대소문자(sentence case)로 쓴다[](source:style) | - |
 | 18 | 장식 이모지 | 제목과 글머리표에서 지운다[](source:style) | - |
 | 19 | 둥근 따옴표 | 곧은 따옴표로 바꾼다[](source:style) | - |
-| 20 | 챗봇 말투 | 지운다[](source:comm) | "I hope this helps!", "Let me know if...", "Certainly!", "Found the smoking gun!" |
+| 20 | 챗봇 말투 | 지운다[](source:comm) | `I hope this helps!`, `Let me know if...`, `Certainly!`, `Found the smoking gun!` |
 | 22 | 아첨하는 어조 | 바로 답한다[](source:comm) | "Great question! You're absolutely right!" |
-| 23 | 군더더기 구 | 줄이거나 지운다[](source:filler) | "In order to" → "To", "Due to the fact that" → "Because", "It is important to note that" → 삭제 |
+| 23 | 군더더기 구 | 줄이거나 지운다[](source:filler) | `In order to` → `To`, `Due to the fact that` → `Because`, `It is important to note that` → 삭제 |
 | 24 | 지나친 얼버무림 | 한 단어로 줄인다[](source:filler) | "could potentially possibly be argued that it might" → "may" |
 | 25 | 뻔한 결론 | 구체적인 계획이나 사실을 쓴다[](source:filler) | "The future looks bright." |
 
@@ -108,7 +108,7 @@
 | 28 | 빽빽한 문장 | 둘로 나누거나 절을 뺀다. 한 문장에 생각 하나[](source:plain) | 독자가 되돌아 읽어야 하는 문장 |
 | 29 | 수동태 | 행위자를 밝힌다[](source:plain) | "queries are validated" → "the compiler validates queries" |
 | 30 | 부사로 받친 동사 | 부사를 지우고 더 강한 동사나 수치를 쓴다[](source:plain) | "runs quickly" → "is fast", "significantly improves" → 잰 차이 |
-| 31 | 화려한 동의어 | 쉬운 단어를 쓴다[](source:plain) | "utilize" → "use", "facilitate" → "help", "in the event that" → "if" |
+| 31 | 화려한 동의어 | 쉬운 단어를 쓴다[](source:plain) | `utilize` → `use`, `facilitate` → `help`, `in the event that` → `if` |
 | 32 | 꾸민 문장 | 문자 그대로의 표현을 쓴다[](source:plain) | "A dial worth turning" → "a parameter worth varying" |
 | 33 | 지나친 압축 | 관사와 동사를 갖춘 문장으로 쓰고 화살표와 약어를 풀어 쓴다[](source:plain) | "Parser rejects bad date → exit 2, no write" → "The parser rejects a bad date, exits with code 2, and writes nothing." |
 
@@ -123,8 +123,8 @@
 - 읽은 파일: `pstack/unslop/SKILL.md`(원본, 유일한 텍스트 파일).
 - 관계 확인용으로 읽은 줄: 위 출처 목록의 다른 스킬 줄. 각 줄만 확인했다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
-- 원문 비교: `reporting-skills/pstack/unslop/SKILL.md`와 원문 동일(`shasum` 일치).
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 원문 비교: `reporting-skills/pstack/unslop/SKILL.md`와 내용이 같다(`shasum` 일치).
+- 실제로 실행해 보지 않았다. 이 페이지의 동작은 모두 원문이 지시한 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"

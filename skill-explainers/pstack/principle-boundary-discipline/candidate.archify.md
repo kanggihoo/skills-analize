@@ -2,10 +2,10 @@
 
 `principle-boundary-discipline`을 읽은 에이전트는 검증, 타입 좁히기, 오류 처리를 시스템 경계에만 둔다. 경계 안쪽 코드는 조건 없이 믿고, 비즈니스 로직은 순수 함수로 뺀다.[](source:rule)
 
-- 경계는 CLI 인자, 설정 파일, 외부 API, 네트워크 프로토콜이다. 여기서는 검증하고 오류를 돌려주며 방어적으로 다룬다.[](source:p-pattern)
-- 안쪽에서는 타입이 있는 데이터를 쓰고 오류를 전파만 한다. 다시 검증하지 않는다.[](source:p-pattern)
+- 경계는 CLI 인자, 설정 파일, 외부 API, 네트워크 프로토콜이다. 에이전트는 경계에서 데이터를 검증하고, 오류를 돌려주고, 방어적으로 다룬다.[](source:p-pattern)
+- 경계 안쪽에서는 타입이 있는 데이터를 쓰고, 오류는 전파만 한다. 데이터를 다시 검증하지 않는다.[](source:p-pattern)
 - 원문은 이유를 두 가지로 든다. 흩어진 검증은 시끄럽고 중복되며 안전하다는 착각을 준다. 로직을 프레임워크 연결부에서 떼어야 프레임워크 없이 테스트할 수 있다.[](source:why)
-- 판단 질문은 둘이다. "이 데이터가 지금 경계를 넘는가?" "셸이 부르기만 하는 순수 함수로 만들 수 있는가?"[](source:tests)
+- 판단 질문은 둘이다. "이 데이터가 지금 경계를 넘는가?" "셸이 부르기만 하는 순수 함수로 만들 수 있는가?" 여기서 셸은 순수 함수를 부르는 쪽이고, 원문은 셸을 얇고 기계적으로 두라고 한다.[](source:tests)[](source:rule)
 
 @answer scope="pstack/principle-boundary-discipline · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
 @meta locale=ko
@@ -30,14 +30,14 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-boundary-discipline`을 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-boundary-discipline`을 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 이 원칙이 어떤 상황에 맞는지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/principle-boundary-discipline` 입력 |
 | `poteto-mode` (Architecture 분류) | 검증, 오류 처리, 프레임워크 어댑터를 연결할 때[](source:pm-trigger) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장 기준으로 이 원칙을 이름으로 부르는 플레이북은 없다.
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에서 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장에는 이 원칙을 이름으로 부르는 플레이북이 없다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -77,7 +77,7 @@
 이 원칙은 다른 스킬을 가리키지 않는다. 원장에는 없지만 다른 스킬이 이 원칙을 이름으로 언급하는 곳이 있다(rel-id 없음).
 
 - `typescript-best-practices`는 경계 검증 규칙에서 이 원칙을 보라고 한다.[](source:ts-skill)[](source:ts-pat-head)[](source:ts-pat)
-- `architect`의 러너 프롬프트는 "경계에서 검증하고 안쪽은 타입을 믿는다"를 이 원칙에 따라 요구한다.[](source:runner)
+- `architect`의 runner 프롬프트는 "경계에서 검증하고 안쪽은 타입을 믿는다"를 이 원칙에 따라 요구한다.[](source:runner)
 - `interrogate`의 리뷰 기준에는 같은 이름의 항목이 있다. 원칙 스킬을 가리킨다는 표현은 없다.[](source:rubric)
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다. 관계 근거는 `pstack/relations.md`의 `rel-id`로 확인한다.
@@ -88,8 +88,8 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 찾은 언급은 4개 파일 5곳이며 위 목록에 있다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 쓴 동작은 모두 원문이 지시하는 동작이다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-원문이 꼽은 경계는 CLI 인자, 설정 파일, 외부 API, 네트워크 프로토콜이다. 데이터베이스 행이나 환경 변수가 경계인지는 이 원칙에 명시 없음. `principle-type-system-discipline`은 둘 다 파싱이 필요한 외부 데이터로 꼽는다. 그 원칙의 해당 줄만 확인했다.[](source:tsd)
+원문이 꼽은 경계는 CLI 인자, 설정 파일, 외부 API, 네트워크 프로토콜이다. 데이터베이스 행이나 환경 변수가 경계인지는 이 원칙에 명시 없음. `principle-type-system-discipline`은 데이터베이스 행과 환경 변수를 둘 다 파싱이 필요한 외부 데이터로 꼽는다. 그 원칙의 해당 줄만 확인했다.[](source:tsd)

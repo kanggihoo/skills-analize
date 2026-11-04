@@ -1,11 +1,11 @@
 # principle-make-operations-idempotent 스킬은 에이전트를 어떻게 바꾸나 {#idempotent-skill}
 
-`principle-make-operations-idempotent`를 읽은 에이전트는 상태를 바꾸는 작업마다 두 가지를 묻는다. "두 번 돌면 어떻게 되나?" "직전 실행이 중간에 죽었다면?" 그리고 몇 번 돌든 어디서 시작하든 같은 올바른 상태로 수렴하게 설계한다.[](source:rule)
+`principle-make-operations-idempotent`를 읽은 에이전트는 상태를 바꾸는 작업마다 두 가지를 묻는다. "두 번 돌면 어떻게 되나?" "직전 실행이 중간에 죽었다면?" 그리고 몇 번을 돌려도, 어느 지점에서 시작해도 같은 올바른 상태로 수렴하도록 설계한다.[](source:rule)
 
-- 원문의 이유: 명령, 수명 주기 단계, 처리 루프는 충돌, 재시작, 재시도가 흔한 곳에서 돈다.[](source:why)
-- 남은 부분 상태가 다음 실행 결과를 바꾸면, 재시작할 때마다 디버깅을 하게 된다.[](source:why)
-- 시작할 때 기존 상태를 훑고, 낡은 산출물을 치우고, 살아 있는 세션은 이어받는다.[](source:pattern)
-- 어떤 질문의 답이 "남은 상태에 따라 다르다"면 그 작업에는 상태 맞추기(reconciliation) 단계가 필요하다.[](source:verdict)
+- 원문이 드는 이유는, 명령, 수명 주기 단계, 처리 루프가 충돌, 재시작, 재시도가 흔한 환경에서 돌기 때문이다.[](source:why)
+- 이전 실행이 남긴 부분 상태가 다음 실행 결과를 바꾸면, 재시작할 때마다 디버깅을 해야 한다.[](source:why)
+- 원문이 드는 패턴 하나는, 시작할 때 기존 상태를 훑고 낡은 산출물을 치우고 살아 있는 세션은 이어받는 것이다.[](source:pattern)
+- 세 질문 중 하나라도 답이 "남은 상태에 따라 다르다"이면, 그 작업에는 상태 맞추기(reconciliation) 단계가 필요하다.[](source:verdict)
 
 @answer scope="pstack/principle-make-operations-idempotent · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
 @meta locale=ko
@@ -24,14 +24,14 @@
 
 @code source=fm language=yaml
 
-`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-make-operations-idempotent`를 입력하거나, 다른 스킬이 이 원칙을 읽으라고 할 때 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
+`disable-model-invocation: true`라서 모델이 스스로 이 스킬을 켜지 않는다.[](source:fm) 사용자가 `/principle-make-operations-idempotent`를 입력하거나 다른 스킬이 이 원칙을 읽으라고 하면 켜진다. `description`은 어떤 상황에 맞는 원칙인지 알려 주는 설명이다.
 
 | 누가 부르나 | 조건 |
 | --- | --- |
 | 사용자 | `/principle-make-operations-idempotent` 입력 |
 | `poteto-mode` (Architecture 분류) | 충돌과 재시도 속에서 도는 명령, 수명 주기 단계, 루프를 설계할 때[](source:pm-trigger) |
 
-`poteto-mode`는 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 답변에는 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장 기준으로 이 원칙을 이름으로 부르는 플레이북은 없다.
+`poteto-mode`는 에이전트가 원칙을 적용하기 전에 그 원칙의 `SKILL.md`를 끝까지 읽게 한다.[](source:pm-read) 에이전트는 답변에 결정을 바꾼 원칙과 바뀐 선택을 밝히고, 이번 세션에 읽은 원칙만 인용한다.[](source:pm-cite) 원장에는 이 원칙을 이름으로 부르는 플레이북이 없다.
 
 ## 무엇을 강제하나 {#rules}
 
@@ -69,7 +69,7 @@
 | --- | --- | --- | --- |
 | r12 | `poteto-mode`의 원칙 목록 | 답변 속 원칙 이름과 바뀐 선택 | 충돌·재시도 속에서 도는 명령, 수명 주기 단계, 루프 |
 
-이 원칙은 다른 스킬을 가리키지 않는다. 원장에는 없지만 `architect` 러너 프롬프트가 이 원칙을 이름으로 언급한다(rel-id 없음). 해당되면 상태 전이를 멱등하게 만들라고 하고, 같은 두 질문을 던지게 한다.[](source:runner)
+이 원칙은 다른 스킬을 가리키지 않는다. 원장에는 없지만 `architect` runner 프롬프트가 이 원칙을 이름으로 언급한다(rel-id 없음). 이 프롬프트는 해당되는 경우 상태 전이를 멱등하게 만들라고 하고, 같은 두 질문을 묻게 한다.[](source:runner)
 
 전체 흐름은 `pstack/_group-principles/principles.html`에 있다. 관계 근거는 `pstack/relations.md`의 `rel-id`로 확인한다.
 
@@ -79,8 +79,8 @@
 - 원장 밖 언급 검색: `pstack/` 아래 원본 `.md`에서 이 원칙의 이름과 제목을 찾았다. 원장 밖 언급은 1곳이다. `poteto-mode/references/bugbot-triage.md`의 "idempotent"는 일반 단어라 언급으로 세지 않았다.
 - 제외한 파일: `SKILL.KO.md`. 원본이 있는 번역본이다.
 - 원문 비교: 다른 컬렉션에 이름이 같은 스킬이 없다.
-- 실제로 실행해 보지 않았다. 페이지의 동작은 모두 지시상 동작이다.
+- 실제로 실행해 보지 않았다. 페이지에 적은 동작은 모두 SKILL.md가 지시하는 동작이며, 실행해서 확인한 동작이 아니다.
 - 분석 중 바뀐 파일: 없음.
 
 @callout level=open-question title="확인하지 못한 것"
-상태 맞추기 단계가 어떤 모양이어야 하는지(시작 시 검사, 별도 명령 등)는 원문에 명시 없음. PID 기반 락 감지가 PID 재사용을 어떻게 다루는지도 원문에 명시 없음.
+상태 맞추기 단계를 어떤 모양으로 만들지(시작 시 검사, 별도 명령 등)는 원문에 명시 없음. PID 기반 락 감지가 PID 재사용을 어떻게 다루는지도 원문에 명시 없음.
