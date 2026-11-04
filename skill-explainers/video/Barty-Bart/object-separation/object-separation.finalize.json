@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T15:14:03.221Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/candidate.archify.md",
+    "sha256": "ed60651c91fd6052512519828820536f4b744de6a61d6fe28fd9e7baad8441a0",
+    "bytes": 15604
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+    "sha256": "e2e1c3c157f473bc33b188c9e571b4c4699f4b023e62eb9ee43c2fdcb65a89df",
+    "bytes": 1241377
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "ed60651c91fd6052512519828820536f4b744de6a61d6fe28fd9e7baad8441a0",
+          "bytes": 15604
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 531,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "36a76611-7f1c-41b4-a971-1456d74bd052",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+        "explainer": {
+          "preparedSha256": "6910f9b0e869021000fb394c6486f71171f8b12fba4d5af7aa0428791932b5f1",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "os-fm",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-intro",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-setup",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-model",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-params",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-scan",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-points",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-chunk",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-chunk-code",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-render",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-output",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-clean",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "os-notes",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "osr-intro",
+              "path": "video/Barty-Bart/object-separation/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2e6a28d02add53e3757a7322ca09ddb6741fa5fe8a58f57a4fe70fae75d551b1",
+              "bytes": 2140
+            },
+            {
+              "kind": "repository",
+              "id": "osr-does",
+              "path": "video/Barty-Bart/object-separation/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2e6a28d02add53e3757a7322ca09ddb6741fa5fe8a58f57a4fe70fae75d551b1",
+              "bytes": 2140
+            },
+            {
+              "kind": "repository",
+              "id": "osr-req",
+              "path": "video/Barty-Bart/object-separation/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2e6a28d02add53e3757a7322ca09ddb6741fa5fe8a58f57a4fe70fae75d551b1",
+              "bytes": 2140
+            },
+            {
+              "kind": "repository",
+              "id": "mb-readme",
+              "path": "video/Barty-Bart/motion-broll/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "bb1bd0dc80887c2e0dba984010265a34e29bbbd1a0409b93eb60663e67e6faba",
+              "bytes": 3326
+            },
+            {
+              "kind": "repository",
+              "id": "mb-desc",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "sep-flow",
+              "inline": true,
+              "sha256": "7a2aceb47b43d18bb0c7bf4252276a7ef244d8e7e2367eccc80045c9de800056",
+              "bytes": 1748
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "sep-files",
+              "inline": true,
+              "sha256": "18fc31b4196d8a36f377bb07e4ccc4c445451c9694330b3d17e7322c7c2b941d",
+              "bytes": 507
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "ed60651c91fd6052512519828820536f4b744de6a61d6fe28fd9e7baad8441a0",
+          "bytes": 15604
+        },
+        "artifact": {
+          "sha256": "e2e1c3c157f473bc33b188c9e571b4c4699f4b023e62eb9ee43c2fdcb65a89df",
+          "bytes": 1241377
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 270,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "e2e1c3c157f473bc33b188c9e571b4c4699f4b023e62eb9ee43c2fdcb65a89df",
+          "bytes": 1241377
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "109 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "20 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "sep-flow: pass",
+              "sep-files: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "sep-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-iVVutp/child.html",
+                "artifact": {
+                  "sha256": "dadabe85053806859b89f6e454712e2e6b98c4546552deb9166dbbfbb9d2c22b",
+                  "bytes": 841943
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.622950819672131,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 5,
+                    "shortEndpointSegmentCount": 5,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "hand-to-clean-1",
+                      "from": "hand",
+                      "to": "clean"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.622950819672131,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "sep-files",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-uGblPm/child.html",
+                "artifact": {
+                  "sha256": "6115f7e91ee700d594a63445c06d9c0ff8727eb44104529451e4adf1304893cc",
+                  "bytes": 836011
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 13,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "venv"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 13,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "36a76611-7f1c-41b4-a971-1456d74bd052"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/object-separation/object-separation.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T15:14:04.108Z",
+  "durationMs": 886,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T15:11:29.197Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/candidate.archify.md",
+    "sha256": "186e2944b30e7cb7949f1f703610d6fdfb7a8d79753ea87bcb8dd04a172180ae",
+    "bytes": 17237
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+    "sha256": "650795da748bf3c9099967b155e187056b2d0cda2006ebc8a9d1d06909b705b4",
+    "bytes": 1193201
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "186e2944b30e7cb7949f1f703610d6fdfb7a8d79753ea87bcb8dd04a172180ae",
+          "bytes": 17237
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 530,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "356b41a0-614d-4dd0-b6bc-2a0f7bb08d6b",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+        "explainer": {
+          "preparedSha256": "53c7af9b7492b548e4c6f17a5ce97f99ffecacb030f50beeab49e8184f79598b",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "sk-fm",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-intro",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-s1",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-s2",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-s3",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-folder",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-run",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-pages",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-build",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-demo",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "sk-deliver",
+              "path": "video/lemomo-ai/lemo-opuscar/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9036c5fd58ac3c3acc30b9183ed3a415829755a59d66b259a2b13a9fde5dd7c4",
+              "bytes": 3452
+            },
+            {
+              "kind": "repository",
+              "id": "su-head",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-repo",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-libsel",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-sparse",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-managed",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-clone",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-pyfind",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-deps",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-demo",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "repository",
+              "id": "su-miss",
+              "path": "video/lemomo-ai/lemo-opuscar/scripts/setup.sh",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "dd42059e5d143bc236ffc2f3a71261dbc8903c4899019a206cc211505634a697",
+              "bytes": 6845
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "opuscar-flow",
+              "inline": true,
+              "sha256": "29e8391ad9a3e92409555849a9d9cf96cf8caedd701fa0721ded1a3c7dbe4a90",
+              "bytes": 973
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "setup-flow",
+              "inline": true,
+              "sha256": "ff62a46cb0cdcd6b827b4c2c3cfc69895df920ec799e141bba804683c9e162cc",
+              "bytes": 1465
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "186e2944b30e7cb7949f1f703610d6fdfb7a8d79753ea87bcb8dd04a172180ae",
+          "bytes": 17237
+        },
+        "artifact": {
+          "sha256": "650795da748bf3c9099967b155e187056b2d0cda2006ebc8a9d1d06909b705b4",
+          "bytes": 1193201
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 282,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "650795da748bf3c9099967b155e187056b2d0cda2006ebc8a9d1d06909b705b4",
+          "bytes": 1193201
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "105 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "23 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "opuscar-flow: pass",
+              "setup-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "opuscar-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-sI2k8H/child.html",
+                "artifact": {
+                  "sha256": "3ff15858fe6febf21b1cd64501737508940447f117f8591d59b1a7626ec4d865",
+                  "bytes": 834108
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 135.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.395626242544732,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "deps-to-read-1",
+                      "from": "deps",
+                      "to": "read"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.395626242544732,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "setup-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-QgJeWe/child.html",
+                "artifact": {
+                  "sha256": "4faf65d435d99e2777deff91d9589e1bb2823629fb798620dc4bdd1779831a87",
+                  "bytes": 838799
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.790575916230367,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "empty-to-clone-1",
+                      "from": "empty",
+                      "to": "clone"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.790575916230367,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "356b41a0-614d-4dd0-b6bc-2a0f7bb08d6b"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/lemomo-ai/lemo-opuscar/lemo-opuscar.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T15:11:30.101Z",
+  "durationMs": 904,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

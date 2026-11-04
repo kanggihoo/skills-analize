@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "796259c5-66b3-4ca9-9209-9c9d9a2e6a60",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/explainer-engaging/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/explainer-engaging/explainer-engaging.html",
+  "specification": {
+    "sha256": "b1fac67ce0cd87aa3c95a90e9f6b3b7e961689ee04328136fe1e47de54657dfb",
+    "bytes": 31762
+  },
+  "artifact": {
+    "sha256": "4852cfecf7ced2e596d4f7729d7729e80bf7a4d2dfd488bbcaa6d21ed3e15974",
+    "bytes": 3311589
+  },
+  "explainer": {
+    "preparedSha256": "ef654e7fead809208a6ae35660720206a30d5d0f194298b4162f0da10adce2e0",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "e-fm",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-intro",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-ask",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q1",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q2",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q3",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q4",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q5",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q6",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-q7",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-url",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-nofact",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-logo",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-extra",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-len",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-rules",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-sound",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-onefile",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-contract",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-audio",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-beat",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-setup",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-stills",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-draft",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-final",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-deliver",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-args",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-sub",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-shutter",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-hasaudio",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-norm",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "rd-intro",
+        "path": "video/Barty-Bart/explainer-engaging/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "51b97fdedfd972b6087253b5cc496babc6ae8e0de769926bb102ed8b3c92f3e0",
+        "bytes": 2174
+      },
+      {
+        "kind": "repository",
+        "id": "rd-table",
+        "path": "video/Barty-Bart/explainer-engaging/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "51b97fdedfd972b6087253b5cc496babc6ae8e0de769926bb102ed8b3c92f3e0",
+        "bytes": 2174
+      },
+      {
+        "kind": "repository",
+        "id": "rd-use",
+        "path": "video/Barty-Bart/explainer-engaging/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "51b97fdedfd972b6087253b5cc496babc6ae8e0de769926bb102ed8b3c92f3e0",
+        "bytes": 2174
+      },
+      {
+        "kind": "repository",
+        "id": "rd-req",
+        "path": "video/Barty-Bart/explainer-engaging/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "51b97fdedfd972b6087253b5cc496babc6ae8e0de769926bb102ed8b3c92f3e0",
+        "bytes": 2174
+      },
+      {
+        "kind": "repository",
+        "id": "se-desc",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "se-nosynth",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "e-hero",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-mech",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-labels",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-world",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-roll",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-hops",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-impact",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-launch",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-seam",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-gravity",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-slot",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-camhard",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-follow",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-zoom",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-payoff",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-reveal",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-blur",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-pal",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-ui",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-cursor",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "repository",
+        "id": "e-banned",
+        "path": "video/Barty-Bart/explainer-engaging/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "969a4114a2396cd62bc381da6c8ffe61b68e471d3e4f16206d74d7574340d656",
+        "bytes": 23722
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "e-flow",
+        "inline": true,
+        "sha256": "48533de57a7096d33c48cb1503e6483a926c73b3f098b684ed1180edf7265b42",
+        "bytes": 1582
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "engaging-course",
+        "inline": true,
+        "sha256": "42022fd906625f2fa56ee01c1a4ef2adbf64f72afa94d6de77951d3b3a262218",
+        "bytes": 1340
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "e-position",
+        "inline": true,
+        "sha256": "43c41e14b268105cc3b429c406bcbf4df18d6652db1a2e9ad2bbdab5ded738cd",
+        "bytes": 1045
+      }
+    ]
+  }
+}

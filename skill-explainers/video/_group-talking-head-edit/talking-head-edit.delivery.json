@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "04527ab3-7085-4966-b8e6-783a8dbca638",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+  "specification": {
+    "sha256": "fb8225de45d62ddcd9e7adba9b9fd8f9634b0134b7298813f6ed713e76e56b98",
+    "bytes": 8060
+  },
+  "artifact": {
+    "sha256": "cd65b6929bf43fda990cbc4cbd66a1ceca29b567280076d2bccbde665f27366e",
+    "bytes": 789480
+  },
+  "explainer": {
+    "preparedSha256": "a34ac3a184beec21e9bb5b9bc2871699706b2c2f6a03c668b62584859262d9eb",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "th-mb-fm",
+        "path": "video/Barty-Bart/motion-broll/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+        "bytes": 8941
+      },
+      {
+        "kind": "repository",
+        "id": "th-mb-interview",
+        "path": "video/Barty-Bart/motion-broll/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+        "bytes": 8941
+      },
+      {
+        "kind": "repository",
+        "id": "th-mb-approve",
+        "path": "video/Barty-Bart/motion-broll/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+        "bytes": 8941
+      },
+      {
+        "kind": "repository",
+        "id": "th-mb-deliver",
+        "path": "video/Barty-Bart/motion-broll/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+        "bytes": 8941
+      },
+      {
+        "kind": "repository",
+        "id": "th-mb-readme",
+        "path": "video/Barty-Bart/motion-broll/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "bb1bd0dc80887c2e0dba984010265a34e29bbbd1a0409b93eb60663e67e6faba",
+        "bytes": 3326
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-fm",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-usecase",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-cue",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-prove",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-script",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-swap",
+        "path": "video/Barty-Bart/sound-effects/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+        "bytes": 13793
+      },
+      {
+        "kind": "repository",
+        "id": "th-se-map",
+        "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+        "bytes": 14041
+      },
+      {
+        "kind": "repository",
+        "id": "th-os-fm",
+        "path": "video/Barty-Bart/object-separation/SKILL.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "th-os-readme",
+        "path": "video/Barty-Bart/object-separation/README.md",
+        "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+        "sha256": "2e6a28d02add53e3757a7322ca09ddb6741fa5fe8a58f57a4fe70fae75d551b1",
+        "bytes": 2140
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "edit-flow",
+        "inline": true,
+        "sha256": "a2cae209314bcaad59cfdc2f8edc606e24b854c02e3e23d09c5c9668a30690a5",
+        "bytes": 984
+      }
+    ]
+  }
+}

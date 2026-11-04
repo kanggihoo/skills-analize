@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/bangtutorial/bang-motion/candidate.archify.md",
+    "sha256": "4a7f2f73b000800a2125c4371e98e6ec1a7d0712bcd0502ba00a74734962e635",
+    "bytes": 50867
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/bangtutorial/bang-motion/bang-motion.html",
+    "sha256": "1cf19c705556c4424ec158eafa0508f9f81ee596336865643f47faf05ed63640",
+    "bytes": 6113414
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/bangtutorial/bang-motion/bang-motion.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/bangtutorial/bang-motion/bang-motion.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1101,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

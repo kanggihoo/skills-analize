@@ -1,0 +1,963 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T15:15:10.271Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/candidate.archify.md",
+    "sha256": "da3af4cfc385cbf0a84f378e2ce91ab112d3b035cce7c6a1045cd5fcc0a07d9b",
+    "bytes": 34712
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+    "sha256": "5fd17eea4b512c61ca185b05f9ed9c5bc6854197a79815f7aaf76b190b91c60f",
+    "bytes": 2189221
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "da3af4cfc385cbf0a84f378e2ce91ab112d3b035cce7c6a1045cd5fcc0a07d9b",
+          "bytes": 34712
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 573,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "30475eb1-6899-4d16-be17-eb9e18a57a4b",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+        "explainer": {
+          "preparedSha256": "708884c213f01efe01e2b5394c196baed62542bc6b14c8deca701514dbc6af0a",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "b-fm",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-dispatch",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-intro",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-opts",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-voice",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-out",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-s1",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-s2",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-s3",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-s4",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "b-laws",
+              "path": "video/latent-spaces/brag/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "db8e65608a61a28ac051eec42d4c23ef2a01bae92112d0735f1b08cd45569711",
+              "bytes": 9440
+            },
+            {
+              "kind": "repository",
+              "id": "slim-copy",
+              "path": "video/latent-spaces/brag/slim.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "42f58aa8a2e0c0c1aa5b072ae77fd2674ccca699f8ecb01e97713e1eb56749af",
+              "bytes": 9142
+            },
+            {
+              "kind": "repository",
+              "id": "bs-fm",
+              "path": "video/latent-spaces/brag-slim/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "42f58aa8a2e0c0c1aa5b072ae77fd2674ccca699f8ecb01e97713e1eb56749af",
+              "bytes": 9142
+            },
+            {
+              "kind": "repository",
+              "id": "s1-read",
+              "path": "video/latent-spaces/brag/references/step-1-inspect.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "08dabe706f2c3834a08a8cf475dd17094259cc73d40529b6886cd2085cc0d00d",
+              "bytes": 6057
+            },
+            {
+              "kind": "repository",
+              "id": "s1-rubric",
+              "path": "video/latent-spaces/brag/references/step-1-inspect.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "08dabe706f2c3834a08a8cf475dd17094259cc73d40529b6886cd2085cc0d00d",
+              "bytes": 6057
+            },
+            {
+              "kind": "repository",
+              "id": "s1-skip",
+              "path": "video/latent-spaces/brag/references/step-1-inspect.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "08dabe706f2c3834a08a8cf475dd17094259cc73d40529b6886cd2085cc0d00d",
+              "bytes": 6057
+            },
+            {
+              "kind": "repository",
+              "id": "s2-plan",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s2-scenes",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s2-read",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s2-show",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s2-audio",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s2-hand",
+              "path": "video/latent-spaces/brag/references/step-2-plan.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2caec3b2f21626174683804961dc7f2b1c4bf439827cca9b1423f7ebd805e7db",
+              "bytes": 13151
+            },
+            {
+              "kind": "repository",
+              "id": "s3-brief",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-hf",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-assets",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-voice",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-react",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-beat",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-call",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-check",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s3-ground",
+              "path": "video/latent-spaces/brag/references/step-3-compose.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "4e3277cc3d1242d05f77e35170a0f7fb747ad9fcabd2b48f03a8ca582b772829",
+              "bytes": 15600
+            },
+            {
+              "kind": "repository",
+              "id": "s4-val",
+              "path": "video/latent-spaces/brag/references/step-4-deliver.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2c14bc385433021ccab8dcc2a41bd89d5c6e3e4b283b5b4a832e066f82f05852",
+              "bytes": 6827
+            },
+            {
+              "kind": "repository",
+              "id": "s4-prev",
+              "path": "video/latent-spaces/brag/references/step-4-deliver.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2c14bc385433021ccab8dcc2a41bd89d5c6e3e4b283b5b4a832e066f82f05852",
+              "bytes": 6827
+            },
+            {
+              "kind": "repository",
+              "id": "s4-poster",
+              "path": "video/latent-spaces/brag/references/step-4-deliver.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2c14bc385433021ccab8dcc2a41bd89d5c6e3e4b283b5b4a832e066f82f05852",
+              "bytes": 6827
+            },
+            {
+              "kind": "repository",
+              "id": "s4-share",
+              "path": "video/latent-spaces/brag/references/step-4-deliver.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2c14bc385433021ccab8dcc2a41bd89d5c6e3e4b283b5b4a832e066f82f05852",
+              "bytes": 6827
+            },
+            {
+              "kind": "repository",
+              "id": "s4-final",
+              "path": "video/latent-spaces/brag/references/step-4-deliver.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2c14bc385433021ccab8dcc2a41bd89d5c6e3e4b283b5b4a832e066f82f05852",
+              "bytes": 6827
+            },
+            {
+              "kind": "repository",
+              "id": "au-lic",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-react",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-paths",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-sfx",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-tone",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-time",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-music",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-cues",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "au-add",
+              "path": "video/latent-spaces/brag/references/audio.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e30a7cedce8d85e3a773387a454dbba8e7927451452c85b4be5c4343a8846ee2",
+              "bytes": 18734
+            },
+            {
+              "kind": "repository",
+              "id": "tn-head",
+              "path": "video/latent-spaces/brag/references/tones.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e6ea8c6d3061a8734194cdad2c176b371f3ec41cb85c89306ac549baeebaa59e",
+              "bytes": 6677
+            },
+            {
+              "kind": "repository",
+              "id": "tn-chaotic",
+              "path": "video/latent-spaces/brag/references/tones.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e6ea8c6d3061a8734194cdad2c176b371f3ec41cb85c89306ac549baeebaa59e",
+              "bytes": 6677
+            },
+            {
+              "kind": "repository",
+              "id": "tn-deadpan",
+              "path": "video/latent-spaces/brag/references/tones.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "e6ea8c6d3061a8734194cdad2c176b371f3ec41cb85c89306ac549baeebaa59e",
+              "bytes": 6677
+            },
+            {
+              "kind": "repository",
+              "id": "py-head",
+              "path": "video/latent-spaces/brag/scripts/analyze_music_cues.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "1e5d719289536dd3e8555dda77da58ef89857487b94f8f5f1ba7812f15405deb",
+              "bytes": 10751
+            },
+            {
+              "kind": "repository",
+              "id": "py-score",
+              "path": "video/latent-spaces/brag/scripts/analyze_music_cues.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "1e5d719289536dd3e8555dda77da58ef89857487b94f8f5f1ba7812f15405deb",
+              "bytes": 10751
+            },
+            {
+              "kind": "repository",
+              "id": "py-strong",
+              "path": "video/latent-spaces/brag/scripts/analyze_music_cues.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "1e5d719289536dd3e8555dda77da58ef89857487b94f8f5f1ba7812f15405deb",
+              "bytes": 10751
+            },
+            {
+              "kind": "repository",
+              "id": "py-args",
+              "path": "video/latent-spaces/brag/scripts/analyze_music_cues.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "1e5d719289536dd3e8555dda77da58ef89857487b94f8f5f1ba7812f15405deb",
+              "bytes": 10751
+            },
+            {
+              "kind": "repository",
+              "id": "toml",
+              "path": "video/latent-spaces/brag/scripts/pyproject.toml",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "47c9a79037ac77732a45e2dc2daf79d286b6cb3b50650b5ed89a2bc093a84c76",
+              "bytes": 248
+            },
+            {
+              "kind": "repository",
+              "id": "mu-readme",
+              "path": "video/latent-spaces/brag/assets/music/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "c83e56cd5d44205244157256f50b87b3835f171f5848c3843adb501ee975ce73",
+              "bytes": 1163
+            },
+            {
+              "kind": "repository",
+              "id": "sfx-md",
+              "path": "video/latent-spaces/brag/assets/sfx/sfx-analysis.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9f36bb767bef6802f5660e6914244115e842cd39f24b179f3f585c683e728f6a",
+              "bytes": 7055
+            },
+            {
+              "kind": "repository",
+              "id": "sfx-fam",
+              "path": "video/latent-spaces/brag/assets/sfx/sfx-analysis.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9f36bb767bef6802f5660e6914244115e842cd39f24b179f3f585c683e728f6a",
+              "bytes": 7055
+            },
+            {
+              "kind": "repository",
+              "id": "cue1",
+              "path": "video/latent-spaces/brag/assets/music/cues/happy-beats-business-moves-vol-1-by-ende-dot-app.music-cues.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "43546fa23e922b4370b751b65656d540027efaa2c2918c57bae1f3210b374b86",
+              "bytes": 1253
+            },
+            {
+              "kind": "repository",
+              "id": "cue9",
+              "path": "video/latent-spaces/brag/assets/music/cues/happy-beats-business-moves-vol-9-by-ende-dot-app.music-cues.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "d0e64d229b73bf92acb7588aeb8026071e886d411458e5ce0b52f54d6fcde8ec",
+              "bytes": 1255
+            },
+            {
+              "kind": "repository",
+              "id": "cue10",
+              "path": "video/latent-spaces/brag/assets/music/cues/happy-beats-business-moves-vol-10-by-ende-dot-app.music-cues.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "b14050eba9abd2ee98fc4af9aefadc32c4f503b809c597e09f1c5d70ad9783f2",
+              "bytes": 1263
+            },
+            {
+              "kind": "repository",
+              "id": "cue11",
+              "path": "video/latent-spaces/brag/assets/music/cues/happy-beats-business-moves-vol-11-by-ende-dot-app.music-cues.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9475a954b1db9ea356f3bd5cb6f9bd172e4b8594345d9bf3c5733b0a8a5f4dd8",
+              "bytes": 1248
+            },
+            {
+              "kind": "repository",
+              "id": "cue12",
+              "path": "video/latent-spaces/brag/assets/music/cues/happy-beats-business-moves-vol-12-by-ende-dot-app.music-cues.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "964b2f0843f9b39b3083eddee5814d34291e843188b7624d3446eea6963ad8fd",
+              "bytes": 1255
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "brag-flow",
+              "inline": true,
+              "sha256": "91c20f54e15132319518b2253fd584e66cb8f87f4cd740aa37a6bb10bbe06503",
+              "bytes": 1567
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "brag-position",
+              "inline": true,
+              "sha256": "807a2349785e0e838bd92f711b5de0428e70ff330f262c88a28eb4d7c52b1493",
+              "bytes": 861
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "da3af4cfc385cbf0a84f378e2ce91ab112d3b035cce7c6a1045cd5fcc0a07d9b",
+          "bytes": 34712
+        },
+        "artifact": {
+          "sha256": "5fd17eea4b512c61ca185b05f9ed9c5bc6854197a79815f7aaf76b190b91c60f",
+          "bytes": 2189221
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 307,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "5fd17eea4b512c61ca185b05f9ed9c5bc6854197a79815f7aaf76b190b91c60f",
+          "bytes": 2189221
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "205 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "63 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "brag-flow: pass",
+              "brag-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "brag-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-VwFgtZ/child.html",
+                "artifact": {
+                  "sha256": "f5f6cb72b6a7877dfac24e3103b14f65a808e5fc6cf9ab8da4819810c83843f4",
+                  "bytes": 838652
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 7,
+                    "shortEndpointSegmentCount": 7,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "check-to-compose-1",
+                      "from": "check",
+                      "to": "compose"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "brag-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-b79jFn/child.html",
+                "artifact": {
+                  "sha256": "2b198ea14fd092d325e1212f428c84327a8ea092751f4ff4103b9ca6f76c6a00",
+                  "bytes": 833512
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 59.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 51.6,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "brag-to-hf-1",
+                      "from": "brag",
+                      "to": "hf"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "30475eb1-6899-4d16-be17-eb9e18a57a4b"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/latent-spaces/brag/brag.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T15:15:11.231Z",
+  "durationMs": 959,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

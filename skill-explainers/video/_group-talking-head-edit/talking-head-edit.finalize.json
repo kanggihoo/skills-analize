@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T15:25:37.398Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/candidate.archify.md",
+    "sha256": "fb8225de45d62ddcd9e7adba9b9fd8f9634b0134b7298813f6ed713e76e56b98",
+    "bytes": 8060
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+    "sha256": "cd65b6929bf43fda990cbc4cbd66a1ceca29b567280076d2bccbde665f27366e",
+    "bytes": 789480
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "fb8225de45d62ddcd9e7adba9b9fd8f9634b0134b7298813f6ed713e76e56b98",
+          "bytes": 8060
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 416,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "04527ab3-7085-4966-b8e6-783a8dbca638",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+        "explainer": {
+          "preparedSha256": "a34ac3a184beec21e9bb5b9bc2871699706b2c2f6a03c668b62584859262d9eb",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "th-mb-fm",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "repository",
+              "id": "th-mb-interview",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "repository",
+              "id": "th-mb-approve",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "repository",
+              "id": "th-mb-deliver",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "repository",
+              "id": "th-mb-readme",
+              "path": "video/Barty-Bart/motion-broll/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "bb1bd0dc80887c2e0dba984010265a34e29bbbd1a0409b93eb60663e67e6faba",
+              "bytes": 3326
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-fm",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-usecase",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-cue",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-prove",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-script",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-swap",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "th-se-map",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "th-os-fm",
+              "path": "video/Barty-Bart/object-separation/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "cf176a155dd3cd406dd948deafb316e09d6395ceaae018ba188b7bb47d08e002",
+              "bytes": 9414
+            },
+            {
+              "kind": "repository",
+              "id": "th-os-readme",
+              "path": "video/Barty-Bart/object-separation/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "2e6a28d02add53e3757a7322ca09ddb6741fa5fe8a58f57a4fe70fae75d551b1",
+              "bytes": 2140
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "edit-flow",
+              "inline": true,
+              "sha256": "a2cae209314bcaad59cfdc2f8edc606e24b854c02e3e23d09c5c9668a30690a5",
+              "bytes": 984
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "fb8225de45d62ddcd9e7adba9b9fd8f9634b0134b7298813f6ed713e76e56b98",
+          "bytes": 8060
+        },
+        "artifact": {
+          "sha256": "cd65b6929bf43fda990cbc4cbd66a1ceca29b567280076d2bccbde665f27366e",
+          "bytes": 789480
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 205,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "cd65b6929bf43fda990cbc4cbd66a1ceca29b567280076d2bccbde665f27366e",
+          "bytes": 789480
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "60 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "15 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "edit-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "edit-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ts1zkJ/child.html",
+                "artifact": {
+                  "sha256": "f3d296d88d8243b2df7f41f2cef54d132a20458dea7b34a809918558fd795bed",
+                  "bytes": 834817
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 102.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.758081334723671,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "broll-to-plan-1",
+                      "from": "broll",
+                      "to": "plan"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.758081334723671,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "04527ab3-7085-4966-b8e6-783a8dbca638"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-talking-head-edit/talking-head-edit.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T15:25:38.108Z",
+  "durationMs": 710,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,1233 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-04T15:16:02.123Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/candidate.archify.md",
+    "sha256": "f14f069213c226a332210cd2f4b3fc6ec1f877fd96a029312a6ab28f41f374bd",
+    "bytes": 44606
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+    "sha256": "b559d24496b42266c8d257c5eca4cb8f95523b7fec3905afab73b8e42b550485",
+    "bytes": 3467601
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "f14f069213c226a332210cd2f4b3fc6ec1f877fd96a029312a6ab28f41f374bd",
+          "bytes": 44606
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 870,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "907ce268-3d6e-4457-8be7-e17523c016c7",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+        "explainer": {
+          "preparedSha256": "81d8fa39f45ee1baaf2e10dc0931b749130a3330a2d235b27136df2db030cd3c",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "se-fm",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-intro",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-kit",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-synth",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-lib",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-music",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-lic",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-musiclic",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-credits",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-mp4",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0head",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0use",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0src",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0rep",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0tab",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-s0why",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-setup",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-cue",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-cuetab",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-cueone",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-beat",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-align",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-mix",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-prove",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-orig",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-more",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-moretab",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-morerepo",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-script",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-swap",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "se-report",
+              "path": "video/Barty-Bart/sound-effects/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "acce096a668b20b4592919a39349ec82931075f529eafb40b8b82062c57d3692",
+              "bytes": 13793
+            },
+            {
+              "kind": "repository",
+              "id": "rd-what",
+              "path": "video/Barty-Bart/sound-effects/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "d64f7e5e1c288f1eb981598499ae9776bc304b1d01cc144050d02ba84d6efc30",
+              "bytes": 5494
+            },
+            {
+              "kind": "repository",
+              "id": "rd-lib",
+              "path": "video/Barty-Bart/sound-effects/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "d64f7e5e1c288f1eb981598499ae9776bc304b1d01cc144050d02ba84d6efc30",
+              "bytes": 5494
+            },
+            {
+              "kind": "repository",
+              "id": "rd-lic",
+              "path": "video/Barty-Bart/sound-effects/README.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "d64f7e5e1c288f1eb981598499ae9776bc304b1d01cc144050d02ba84d6efc30",
+              "bytes": 5494
+            },
+            {
+              "kind": "repository",
+              "id": "mu-head",
+              "path": "video/Barty-Bart/sound-effects/MUSIC.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "b4166e9a9490e8dbf12750fdb5cf36773eddf70f18ad9a05dbfc19bf7403640d",
+              "bytes": 3311
+            },
+            {
+              "kind": "repository",
+              "id": "mu-tab",
+              "path": "video/Barty-Bart/sound-effects/MUSIC.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "b4166e9a9490e8dbf12750fdb5cf36773eddf70f18ad9a05dbfc19bf7403640d",
+              "bytes": 3311
+            },
+            {
+              "kind": "repository",
+              "id": "mu-allow",
+              "path": "video/Barty-Bart/sound-effects/MUSIC.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "b4166e9a9490e8dbf12750fdb5cf36773eddf70f18ad9a05dbfc19bf7403640d",
+              "bytes": 3311
+            },
+            {
+              "kind": "repository",
+              "id": "mu-other",
+              "path": "video/Barty-Bart/sound-effects/MUSIC.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "b4166e9a9490e8dbf12750fdb5cf36773eddf70f18ad9a05dbfc19bf7403640d",
+              "bytes": 3311
+            },
+            {
+              "kind": "repository",
+              "id": "tp-head",
+              "path": "video/Barty-Bart/sound-effects/TOP-PICKS.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "d4db6cb749e987fd139b3b4d2efd7d8b7546c885e5b5296f4422909aa831b045",
+              "bytes": 4177
+            },
+            {
+              "kind": "repository",
+              "id": "li-code",
+              "path": "video/Barty-Bart/sound-effects/LICENSES.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "6706cb0639d1ea8c57708c3f3771bd3e9ed0fde6bc9b9152f609774493317ab7",
+              "bytes": 19850
+            },
+            {
+              "kind": "repository",
+              "id": "li-rt",
+              "path": "video/Barty-Bart/sound-effects/LICENSES.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "6706cb0639d1ea8c57708c3f3771bd3e9ed0fde6bc9b9152f609774493317ab7",
+              "bytes": 19850
+            },
+            {
+              "kind": "repository",
+              "id": "li-nb",
+              "path": "video/Barty-Bart/sound-effects/LICENSES.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "6706cb0639d1ea8c57708c3f3771bd3e9ed0fde6bc9b9152f609774493317ab7",
+              "bytes": 19850
+            },
+            {
+              "kind": "repository",
+              "id": "mf-norm",
+              "path": "video/Barty-Bart/sound-effects/sfx/manifest.json",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9b6620e6f3dceed41699669ee55f0353ffae0b65dadea51d545f72d44d71bc47",
+              "bytes": 68552
+            },
+            {
+              "kind": "repository",
+              "id": "mf-cmap",
+              "path": "video/Barty-Bart/sound-effects/sfx/manifest.json",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9b6620e6f3dceed41699669ee55f0353ffae0b65dadea51d545f72d44d71bc47",
+              "bytes": 68552
+            },
+            {
+              "kind": "repository",
+              "id": "mf-kit",
+              "path": "video/Barty-Bart/sound-effects/sfx/manifest.json",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9b6620e6f3dceed41699669ee55f0353ffae0b65dadea51d545f72d44d71bc47",
+              "bytes": 68552
+            },
+            {
+              "kind": "repository",
+              "id": "mf-alt",
+              "path": "video/Barty-Bart/sound-effects/sfx/manifest.json",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9b6620e6f3dceed41699669ee55f0353ffae0b65dadea51d545f72d44d71bc47",
+              "bytes": 68552
+            },
+            {
+              "kind": "repository",
+              "id": "sp-args",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-beat",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-align",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-pick",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-place",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-music",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-map",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-loud",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-proof",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-lic",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-uc",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "sp-ts",
+              "path": "video/Barty-Bart/sound-effects/scripts/sound_pass.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "88cd1f981b1aa72e7f159fb7344d2f16e43b961e8a03c01036e8dfb8297b0769",
+              "bytes": 14041
+            },
+            {
+              "kind": "repository",
+              "id": "rp-all",
+              "path": "video/Barty-Bart/sound-effects/scripts/report.py",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "9763c482e214b8e623bb77aa39c1ebffe1374d49de26620fecb9dafaf6ccfe78",
+              "bytes": 3109
+            },
+            {
+              "kind": "repository",
+              "id": "mb-plan",
+              "path": "video/Barty-Bart/motion-broll/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "78e7d064aba37b8b10ea39973c61200e3c16e325fa20074f97ab29e1df1866d2",
+              "bytes": 8941
+            },
+            {
+              "kind": "repository",
+              "id": "ed-audio",
+              "path": "video/Barty-Bart/explainer-default/SKILL.md",
+              "revision": "23e8047abc33a363aec7f43e75255b2a46281ff7",
+              "sha256": "3dc4247d1e916cc070c432afbff4fb211e224ad463b4ca10c90c617abf68162e",
+              "bytes": 21739
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "licence-flow",
+              "inline": true,
+              "sha256": "67b7feb50bb0d2b52b46a33e0eb330f4fc8e05d9225d39533baba346d91c9582",
+              "bytes": 1327
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "sound-flow",
+              "inline": true,
+              "sha256": "05bdc2c4dc529c0fe259b079d48e1c085ea3eee7a9d26b1d1ee95a1fdf9c7d02",
+              "bytes": 2331
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "output-layout",
+              "inline": true,
+              "sha256": "146c38de2478581be423adff85a9b902a8af5aa4e14ede139d72c49e2fc46ae2",
+              "bytes": 664
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "sfx-position",
+              "inline": true,
+              "sha256": "387f6b83c3260fbfb8a93ac27ec62755946a56efa6385b5f1d90d279180e6d0f",
+              "bytes": 716
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "f14f069213c226a332210cd2f4b3fc6ec1f877fd96a029312a6ab28f41f374bd",
+          "bytes": 44606
+        },
+        "artifact": {
+          "sha256": "b559d24496b42266c8d257c5eca4cb8f95523b7fec3905afab73b8e42b550485",
+          "bytes": 3467601
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 462,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "b559d24496b42266c8d257c5eca4cb8f95523b7fec3905afab73b8e42b550485",
+          "bytes": 3467601
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "284 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "65 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "licence-flow: pass",
+              "sound-flow: pass",
+              "output-layout: pass",
+              "sfx-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "licence-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-U6CETX/child.html",
+                "artifact": {
+                  "sha256": "5887de8eefd4909b641378c979f286f06494407278cd91a42970bb9999ebe85d",
+                  "bytes": 836646
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 91.8,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.5,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "lf-ok-to-lf-say-1",
+                      "from": "lf-ok",
+                      "to": "lf-say"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.5,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "sound-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-3tfaIW/child.html",
+                "artifact": {
+                  "sha256": "9d3c04df17737505f65dba2d682ef7e4f6b3630cd3d31ffd4feb7d2afeeed39b",
+                  "bytes": 845424
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 15,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.099236641221374,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 7,
+                    "shortEndpointSegmentCount": 7,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pf-level-to-pf-mix-1",
+                      "from": "pf-level",
+                      "to": "pf-mix"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.099236641221374,
+                    "semanticTextCount": 17
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "output-layout",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ehzhiX/child.html",
+                "artifact": {
+                  "sha256": "c61a74a636a35eb2629ffc90800b3a69c9527dc80218e1800e3454b986722ea7",
+                  "bytes": 838551
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 13,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "after"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 13,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "sfx-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-siMIJd/child.html",
+                "artifact": {
+                  "sha256": "15be0c821ab70535bc28194d50788a618e1bf70f548309bcf8614bc27e073f34",
+                  "bytes": 831510
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 128.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 56.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pos-broll-to-pos-sfx-1",
+                      "from": "pos-broll",
+                      "to": "pos-sfx"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "907ce268-3d6e-4457-8be7-e17523c016c7"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/Barty-Bart/sound-effects/sound-effects.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-04T15:16:03.556Z",
+  "durationMs": 1432,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
