@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8a39511c-4ca0-40a2-a96b-83fdacd9e7d3",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-drift-report/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-drift-report/egm-drift-report.html",
+  "specification": {
+    "sha256": "e01784c7f0ea3853a67a0cf335de03b02368528d2f281a35d80c96c3aff7be9b",
+    "bytes": 16023
+  },
+  "artifact": {
+    "sha256": "64a5af97792159e1c841a470cb6717f8b6e78b78b96c77fda705aa38140a21c5",
+    "bytes": 1213535
+  },
+  "explainer": {
+    "preparedSha256": "39fa4cec6779d110f9b49170ba6ea0729e588de75da7c0dd97fa0155ded0ce6a",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "dr-fm",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-fmt-block",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-ptr",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-goal",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-input",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-list",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-per-doc",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-context",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-locate",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-verify",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-detect",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-filter",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-report",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-format",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-strict",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-fresh",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-seq",
+        "path": "egm/egm-drift-report/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+        "bytes": 3169
+      },
+      {
+        "kind": "repository",
+        "id": "dr-test",
+        "path": "egm/egm-drift-report/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "e688d8129d32bc90ad23a86da017175036695fa0872a04dbce591a890ea70788",
+        "bytes": 1327
+      },
+      {
+        "kind": "repository",
+        "id": "bs-drift",
+        "path": "egm/egm-bootstrap/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+        "bytes": 23764
+      },
+      {
+        "kind": "repository",
+        "id": "dd-save",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "drift-flow",
+        "inline": true,
+        "sha256": "19909fd5a05edb8e6005c8a67ade6ec8a92f8a2da8375bee02bf8a9b1324754c",
+        "bytes": 2443
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "drift-position",
+        "inline": true,
+        "sha256": "27bd75997f655aa1ed6263b94e5cd1976486fc10bd89046f35bbe1bea9a07910",
+        "bytes": 1289
+      }
+    ]
+  }
+}

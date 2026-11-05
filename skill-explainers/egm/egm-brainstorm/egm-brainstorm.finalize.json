@@ -1,0 +1,803 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-05T16:02:40.925Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/candidate.archify.md",
+    "sha256": "d587d53a8c0b3f254ade26f686f2aacbc176d064cd25d638ce9f62c23b666b26",
+    "bytes": 25929
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+    "sha256": "b8ecd4e9f1d431419356e59fd075fbfa6fab2c2b62f229858cd00cf7769bc586",
+    "bytes": 1891039
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "d587d53a8c0b3f254ade26f686f2aacbc176d064cd25d638ce9f62c23b666b26",
+          "bytes": 25929
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1513,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "1d9c8ba5-4bf2-4971-af9e-432983f26240",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+        "explainer": {
+          "preparedSha256": "0512f390ef731e30d58a00b3ae8335c2407c38bafa3416d2ba24fd554798b07f",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "bs-fm",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-brief-tpl",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-ptr",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-overview",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-deleg",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-artifact",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-clarify",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-parallel",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-plain",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-stress",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-c-gate",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-lenses",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s1-start",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s1-drill",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s1-gate",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s1-only",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s2-spawn",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s2-merge",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-alt",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s3",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-align",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-gate",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-opt0",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-opt1",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-opt2",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "bs-s4-opt3",
+              "path": "egm/egm-brainstorm/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+              "bytes": 14769
+            },
+            {
+              "kind": "repository",
+              "id": "ts-open",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-ready",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-cmd",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-route",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-matrix",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-author",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "ts-alt",
+              "path": "egm/egm-brainstorm/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+              "bytes": 7170
+            },
+            {
+              "kind": "repository",
+              "id": "tm-all",
+              "path": "egm/egm-brainstorm/TEST.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "0949da36742d53b9096df7b0ce6b78e45d7edaae811689efda7d575e963851b0",
+              "bytes": 946
+            },
+            {
+              "kind": "repository",
+              "id": "oy-all",
+              "path": "egm/egm-brainstorm/agents/openai.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2b858c20f9d3b54cc1e02410a4fd6f7989b36d6d5d152cc87cd0d1082ce3bfc9",
+              "bytes": 199
+            },
+            {
+              "kind": "repository",
+              "id": "dr-p1",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "repository",
+              "id": "dr-p3",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "repository",
+              "id": "dr-alt",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "repository",
+              "id": "dr-ctx",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "repository",
+              "id": "dr-save",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "repository",
+              "id": "dr-cons",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "brainstorm-flow",
+              "inline": true,
+              "sha256": "0786157e8e19d371e72d817ea809ec6b0d6c0c783838fb49a1d69bc90f2bd5f1",
+              "bytes": 1649
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "brainstorm-position",
+              "inline": true,
+              "sha256": "5d351c0963c7d8f425a3e94a669a5f63f325ddbc255c5458d9b49ab6eeea2a09",
+              "bytes": 914
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "d587d53a8c0b3f254ade26f686f2aacbc176d064cd25d638ce9f62c23b666b26",
+          "bytes": 25929
+        },
+        "artifact": {
+          "sha256": "b8ecd4e9f1d431419356e59fd075fbfa6fab2c2b62f229858cd00cf7769bc586",
+          "bytes": 1891039
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 793,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "b8ecd4e9f1d431419356e59fd075fbfa6fab2c2b62f229858cd00cf7769bc586",
+          "bytes": 1891039
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "160 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "43 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "brainstorm-flow: pass",
+              "brainstorm-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "brainstorm-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6rdG1x/child.html",
+                "artifact": {
+                  "sha256": "2e55c7a92046c59c91ce859f37b034ddaa967fd6300abe555130f462b6edc62e",
+                  "bytes": 839667
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 11.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pick-to-react-1",
+                      "from": "pick",
+                      "to": "react"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "brainstorm-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-LSnAnl/child.html",
+                "artifact": {
+                  "sha256": "84e31ff9f1c0550b4aaf5c6c254a81d2541f66e3244e6cf9c0576e2395a8334c",
+                  "bytes": 834055
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.216294859359845,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "me-to-draft-1",
+                      "from": "me",
+                      "to": "draft"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.216294859359845,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "1d9c8ba5-4bf2-4971-af9e-432983f26240"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-05T16:02:43.420Z",
+  "durationMs": 2495,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

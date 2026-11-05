@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "1d9c8ba5-4bf2-4971-af9e-432983f26240",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-brainstorm/egm-brainstorm.html",
+  "specification": {
+    "sha256": "d587d53a8c0b3f254ade26f686f2aacbc176d064cd25d638ce9f62c23b666b26",
+    "bytes": 25929
+  },
+  "artifact": {
+    "sha256": "b8ecd4e9f1d431419356e59fd075fbfa6fab2c2b62f229858cd00cf7769bc586",
+    "bytes": 1891039
+  },
+  "explainer": {
+    "preparedSha256": "0512f390ef731e30d58a00b3ae8335c2407c38bafa3416d2ba24fd554798b07f",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "bs-fm",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-brief-tpl",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-ptr",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-overview",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-deleg",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-artifact",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-clarify",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-parallel",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-plain",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-stress",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-c-gate",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-lenses",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s1-start",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s1-drill",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s1-gate",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s1-only",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s2-spawn",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s2-merge",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-alt",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s3",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-align",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-gate",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-opt0",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-opt1",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-opt2",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "bs-s4-opt3",
+        "path": "egm/egm-brainstorm/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "fc2adacee9d7f34cd1dac6f641bf779b06f7cc77830e5149e2b57089deed9e2f",
+        "bytes": 14769
+      },
+      {
+        "kind": "repository",
+        "id": "ts-open",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-ready",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-cmd",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-route",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-matrix",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-author",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "ts-alt",
+        "path": "egm/egm-brainstorm/test_scenarios.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "3b453a415181c6e67b90250f45dc88090f3ccc43c9dfe2d3525068d67fe67838",
+        "bytes": 7170
+      },
+      {
+        "kind": "repository",
+        "id": "tm-all",
+        "path": "egm/egm-brainstorm/TEST.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "0949da36742d53b9096df7b0ce6b78e45d7edaae811689efda7d575e963851b0",
+        "bytes": 946
+      },
+      {
+        "kind": "repository",
+        "id": "oy-all",
+        "path": "egm/egm-brainstorm/agents/openai.yaml",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2b858c20f9d3b54cc1e02410a4fd6f7989b36d6d5d152cc87cd0d1082ce3bfc9",
+        "bytes": 199
+      },
+      {
+        "kind": "repository",
+        "id": "dr-p1",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "repository",
+        "id": "dr-p3",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "repository",
+        "id": "dr-alt",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "repository",
+        "id": "dr-ctx",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "repository",
+        "id": "dr-save",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "repository",
+        "id": "dr-cons",
+        "path": "egm/egm-draft/SKILL.md",
+        "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+        "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+        "bytes": 17479
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "brainstorm-flow",
+        "inline": true,
+        "sha256": "0786157e8e19d371e72d817ea809ec6b0d6c0c783838fb49a1d69bc90f2bd5f1",
+        "bytes": 1649
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "brainstorm-position",
+        "inline": true,
+        "sha256": "5d351c0963c7d8f425a3e94a669a5f63f325ddbc255c5458d9b49ab6eeea2a09",
+        "bytes": 914
+      }
+    ]
+  }
+}

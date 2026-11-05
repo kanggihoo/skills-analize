@@ -194,3 +194,18 @@
 | starter | starter 파일(원어 유지) | 스타터 | bang-motion. 코드 시작 파일 |
 | kartun panggung | 카툰 무대 | 카툰 스테이지 | bang-motion 설명 영상 스타일. 원문 표기 `kartun panggung` |
 | sparse clone | sparse clone | 희소 복제 | lemo-opuscar `setup.sh`. 개발 용어라 영어 유지 |
+| Elephant / Goldfish | Elephant / Goldfish(원어 유지) | 코끼리 / 금붕어 | egm. 처음만 `Elephant(이전 대화를 기억하는 메인 에이전트)`, `Goldfish(새 컨텍스트에서 시작하는 리뷰 서브에이전트)` |
+| Peanuts / Hay | Peanuts / Hay(원어 유지) | 땅콩 / 건초 | egm-bootstrap. 처음만 `Peanuts(코드가 든 말단 폴더의 README)`, `Hay(하위 폴더 계약을 모은 상위 폴더 README)` |
+| contract file | 계약 파일 | 계약서 | egm-bootstrap의 `README.md`(또는 `target_filename`). Interface·Invariants·Side Effects 절을 가진다 |
+| lens (review) | 관점 | 렌즈 | egm-brainstorm의 Goldfish 여섯 관점 |
+| persona file | 리뷰어 정의 파일 | 페르소나 | egm의 `agents/<이름>.md`. 서브에이전트의 임무와 출력 형식을 적은 파일 |
+| paraphrase | paraphrase(리뷰어가 문서를 자기 말로 다시 쓴 글) | 의역 | egm-review Stage 6. 처음만 풀이 |
+| semantic split | 의미 경계 | 시맨틱 스플릿 | egm-review 3단계. 기능 명세(`FeatureRange`)와 구현 계획(`DetailedRange`)을 가르는 줄 |
+| settled finding | 정리된 지적 | 확정된 지적 | egm-review-loop. 반박됐거나 수정 없이 기록된 지적. 다음 라운드에서 다시 열지 않는다 |
+| clean round | 깨끗한 라운드 | 클린 라운드 | egm-review-loop. 정리되지 않은 Blocker·Major 지적이 없는 라운드 |
+| converged | 수렴 | | egm-review-loop. 깨끗한 라운드가 두 번 연속 나온 상태 |
+| churn (review loop) | 되풀이 수정 | 처닝 | egm-review-loop. 적용한 수정이 새 지적을 낳고, 그 수정을 되돌리면 지적이 풀리는 상태 |
+| artifact-first | 파일 먼저 | 아티팩트 우선 | egm. 긴 결과물은 채팅에 붙이지 않고 파일에 쓴 뒤 경로만 알린다 |
+| stress-test (an idea) | 반박해 본다 | 스트레스 테스트한다 | egm-brainstorm·egm-draft. 맞장구보다 약점 찾기를 앞세운다 |
+| preset (review) | preset | 프리셋 | egm-review의 네 가지 실행 방식. 개발 용어라 영어 유지 |
+| scout (goldfish-explorer) | scout | 정찰병, 스카우트 | egm-bootstrap의 읽기 전용 코드 탐색 서브에이전트. 영어 유지 |

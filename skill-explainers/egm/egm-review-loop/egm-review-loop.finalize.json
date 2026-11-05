@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-05T16:03:42.655Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/candidate.archify.md",
+    "sha256": "80c3130d8fc004d202aaf40943b48d21a8f71695d4596ce88d331fa542bcd5d8",
+    "bytes": 26744
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+    "sha256": "128c46b2890680c8bdb58c3a0abf55bc97a44f21dc023fcf159a053e84a31d2b",
+    "bytes": 1653652
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "80c3130d8fc004d202aaf40943b48d21a8f71695d4596ce88d331fa542bcd5d8",
+          "bytes": 26744
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1115,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "df9b2207-ea12-4aac-b1ed-d71efde71978",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+        "explainer": {
+          "preparedSha256": "6510cff3f4682fe414169228f0d11d583ff05b64c1a27714ba7589d1b20512fa",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "rl-fm",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-def",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-driver",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-deleg",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-in-core",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ctx",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-names",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ask",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-rec",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-confirm",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-rescan",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-swarm",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ids",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-failed",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-resolve",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-iter",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-settled",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-fixed",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-clean",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-conv",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-cap",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-churn",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-exit",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-turn",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-end",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ts-conv",
+              "path": "egm/egm-review-loop/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6dfa8d74a74f1a65d195cca0787b801e78e061f6517d1400c80bf9ab989ec0b8",
+              "bytes": 5179
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ts-miss",
+              "path": "egm/egm-review-loop/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6dfa8d74a74f1a65d195cca0787b801e78e061f6517d1400c80bf9ab989ec0b8",
+              "bytes": 5179
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ts-url",
+              "path": "egm/egm-review-loop/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6dfa8d74a74f1a65d195cca0787b801e78e061f6517d1400c80bf9ab989ec0b8",
+              "bytes": 5179
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ts-local",
+              "path": "egm/egm-review-loop/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6dfa8d74a74f1a65d195cca0787b801e78e061f6517d1400c80bf9ab989ec0b8",
+              "bytes": 5179
+            },
+            {
+              "kind": "repository",
+              "id": "rl-ts-orch",
+              "path": "egm/egm-review-loop/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6dfa8d74a74f1a65d195cca0787b801e78e061f6517d1400c80bf9ab989ec0b8",
+              "bytes": 5179
+            },
+            {
+              "kind": "repository",
+              "id": "rl-test",
+              "path": "egm/egm-review-loop/TEST.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c065b1b0fe6ff5663e52f6c63fd4b5312d97a8055cd8698614eefd843e8b81e8",
+              "bytes": 1180
+            },
+            {
+              "kind": "repository",
+              "id": "rl-test-degraded",
+              "path": "egm/egm-review-loop/TEST.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c065b1b0fe6ff5663e52f6c63fd4b5312d97a8055cd8698614eefd843e8b81e8",
+              "bytes": 1180
+            },
+            {
+              "kind": "repository",
+              "id": "rl-yaml",
+              "path": "egm/egm-review-loop/agents/openai.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2073f27ed2c084c8db710f72dac367d26cb8cbc16aa2195546feb732b47a23ce",
+              "bytes": 204
+            },
+            {
+              "kind": "repository",
+              "id": "er-critic",
+              "path": "egm/egm-review/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "a172962167d174ae49d86833876d6a8508b77135c8e979b18e24d9dc04a67c1c",
+              "bytes": 24113
+            },
+            {
+              "kind": "repository",
+              "id": "er-ready",
+              "path": "egm/egm-review/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "a172962167d174ae49d86833876d6a8508b77135c8e979b18e24d9dc04a67c1c",
+              "bytes": 24113
+            },
+            {
+              "kind": "repository",
+              "id": "er-unint",
+              "path": "egm/egm-review/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "a172962167d174ae49d86833876d6a8508b77135c8e979b18e24d9dc04a67c1c",
+              "bytes": 24113
+            },
+            {
+              "kind": "repository",
+              "id": "rs-exit",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-cat",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "round-flow",
+              "inline": true,
+              "sha256": "45a6bdc245b5815484bdbbbb6e738e2712e38ea83d0e055a4aa98a870aace43b",
+              "bytes": 1857
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "loop-position",
+              "inline": true,
+              "sha256": "ec382c5c97eb2ec878846693f813b2c5dc92fecc809a4cd8fe95ab0c0176e8fe",
+              "bytes": 661
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "80c3130d8fc004d202aaf40943b48d21a8f71695d4596ce88d331fa542bcd5d8",
+          "bytes": 26744
+        },
+        "artifact": {
+          "sha256": "128c46b2890680c8bdb58c3a0abf55bc97a44f21dc023fcf159a053e84a31d2b",
+          "bytes": 1653652
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 593,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "128c46b2890680c8bdb58c3a0abf55bc97a44f21dc023fcf159a053e84a31d2b",
+          "bytes": 1653652
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "161 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "40 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "round-flow: pass",
+              "loop-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "round-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jBYwlk/child.html",
+                "artifact": {
+                  "sha256": "96ab96a6bad97e66af85b8eb42a4c723888b0da48edb04d83de41a9dd950f609",
+                  "bytes": 841935
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.126436781609195,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-done-1",
+                      "from": "ask",
+                      "to": "done"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.126436781609195,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "loop-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-WNyLOC/child.html",
+                "artifact": {
+                  "sha256": "b5955b788be757f5308fc914815b583ef8f87e6d1626a38ae5f8813fac3da056",
+                  "bytes": 831002
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 141.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.914893617021277,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 80.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "loop-to-resolve-1",
+                      "from": "loop",
+                      "to": "resolve"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.914893617021277,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "df9b2207-ea12-4aac-b1ed-d71efde71978"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-review-loop/egm-review-loop.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-05T16:03:44.505Z",
+  "durationMs": 1849,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

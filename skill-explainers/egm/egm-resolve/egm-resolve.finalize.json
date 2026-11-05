@@ -1,0 +1,802 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-05T16:03:16.248Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/candidate.archify.md",
+    "sha256": "684f231c151da882aab681d5cc228bed19d298da3426d58262b616bcc7983b2c",
+    "bytes": 19796
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+    "sha256": "26df0d20a0d7ce4b11f62ad109d8a64a9af92b132e5d0f5b04145008cf582f41",
+    "bytes": 1778119
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "684f231c151da882aab681d5cc228bed19d298da3426d58262b616bcc7983b2c",
+          "bytes": 19796
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1305,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "bfe7c9db-3712-4f41-8d28-200987945e92",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+        "explainer": {
+          "preparedSha256": "319c370f1cefb3b237d2021365284f51c767d65266e283a6f3a1e071807d6a1f",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "rs-fm",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-docs",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-overview",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-ctx",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-inputs",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-step1",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-cats",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-rules",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-report",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-esc-first",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-msg",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-yield",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-auto",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-cont",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-inter",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-custom",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-step5",
+              "path": "egm/egm-resolve/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "fe12b8712f88b51780d817e6c8f0ac5e7a29961ee111d0fd19bfc2f738d2f531",
+              "bytes": 8541
+            },
+            {
+              "kind": "repository",
+              "id": "rs-test-esc",
+              "path": "egm/egm-resolve/test_scenarios.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "6d667608097ff4c80fb861da2c7580cf7b7f5d01290895ea74422890254a0570",
+              "bytes": 1941
+            },
+            {
+              "kind": "repository",
+              "id": "rs-testmd",
+              "path": "egm/egm-resolve/TEST.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "e4e0723be01ade8a2cd270c5b49a2f1c35b36c28dccbc5ce9374d3b31604030a",
+              "bytes": 871
+            },
+            {
+              "kind": "repository",
+              "id": "rs-yaml",
+              "path": "egm/egm-resolve/agents/openai.yaml",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "7ad63dc69777e6e8b2e3d33cf4105149043038ffb489e750b3f483be7836cf30",
+              "bytes": 193
+            },
+            {
+              "kind": "repository",
+              "id": "x-review-r09",
+              "path": "egm/egm-review/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "a172962167d174ae49d86833876d6a8508b77135c8e979b18e24d9dc04a67c1c",
+              "bytes": 24113
+            },
+            {
+              "kind": "repository",
+              "id": "x-review-r18",
+              "path": "egm/egm-review/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "a172962167d174ae49d86833876d6a8508b77135c8e979b18e24d9dc04a67c1c",
+              "bytes": 24113
+            },
+            {
+              "kind": "repository",
+              "id": "x-loop-r10",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "repository",
+              "id": "x-loop-turn",
+              "path": "egm/egm-review-loop/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa",
+              "bytes": 10325
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "classify-flow",
+              "inline": true,
+              "sha256": "c12183147b99d283ac5b130a9d32efd4737d4a74627572c70ccfedf46306a8c4",
+              "bytes": 1560
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "gate-flow",
+              "inline": true,
+              "sha256": "00dfddd07b1825e53f460283b0e222af0b173c68f1514285db696e0d713d6f2e",
+              "bytes": 1760
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "resolve-position",
+              "inline": true,
+              "sha256": "3841e2808ecb32fda16b53f345c09760fd64de58fafee280dacce8255e3afd74",
+              "bytes": 906
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "684f231c151da882aab681d5cc228bed19d298da3426d58262b616bcc7983b2c",
+          "bytes": 19796
+        },
+        "artifact": {
+          "sha256": "26df0d20a0d7ce4b11f62ad109d8a64a9af92b132e5d0f5b04145008cf582f41",
+          "bytes": 1778119
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 721,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "26df0d20a0d7ce4b11f62ad109d8a64a9af92b132e5d0f5b04145008cf582f41",
+          "bytes": 1778119
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "152 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "27 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "classify-flow: pass",
+              "gate-flow: pass",
+              "resolve-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "classify-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-oabkS2/child.html",
+                "artifact": {
+                  "sha256": "988ebd7b965c15e2c33387184939ec011810d347fd33f04dc8d209f09fb19a8e",
+                  "bytes": 840260
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ev-to-con-1",
+                      "from": "ev",
+                      "to": "con"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "gate-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-b4SA4f/child.html",
+                "artifact": {
+                  "sha256": "e651b4eb575b19f54445895bb007d09db32553363dc75c8f9038ac100f57c42f",
+                  "bytes": 841588
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.286973555337904,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pick-to-auto-1",
+                      "from": "pick",
+                      "to": "auto"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.286973555337904,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "resolve-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-2Kx0PK/child.html",
+                "artifact": {
+                  "sha256": "735dcb604d6eca1e052ae5e041c189b26535de61b2faa124ecb8c7942d6b0151",
+                  "bytes": 832962
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 67.6,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.88135593220339,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "lp-to-me-1",
+                      "from": "lp",
+                      "to": "me"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.88135593220339,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "bfe7c9db-3712-4f41-8d28-200987945e92"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/egm-resolve/egm-resolve.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-05T16:03:18.415Z",
+  "durationMs": 2166,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-05T16:03:59.755Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/candidate.archify.md",
+    "sha256": "405218006124d3ecb7db9acee8d1668db305e678ba5692089621751e2bd4b7e7",
+    "bytes": 12663
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+    "sha256": "39940eb8b16ab6e6119ceafd09aba3df53a9b9cea61c9c9891a5ab9b825691c5",
+    "bytes": 1113160
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "405218006124d3ecb7db9acee8d1668db305e678ba5692089621751e2bd4b7e7",
+          "bytes": 12663
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 807,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "3d598d3e-b2bb-4f91-96d5-d2080ca07cac",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+        "explainer": {
+          "preparedSha256": "033afa13355c3668cc06569543f6d462f1e838b0a39a7693eaf4bffa999141b9",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "c-bs-off",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-off",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-over",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-inputs",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-cons",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-bfs",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-gate",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-prune",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-direct",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-swarm",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-correct",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-scout",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-verify",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-bs-drift",
+              "path": "egm/egm-bootstrap/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "4a63ecf9db2a512f10da122b3767fdd1d501ae28d2d1db9865534557fe0f961b",
+              "bytes": 23764
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-goal",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-input",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-analyze",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-filter",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-report",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-dr-guide",
+              "path": "egm/egm-drift-report/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "c000ffe2e77a9fe74ee6915b314e1547337c95c79a19014c44fd976dc6511476",
+              "bytes": 3169
+            },
+            {
+              "kind": "repository",
+              "id": "c-draft-save",
+              "path": "egm/egm-draft/SKILL.md",
+              "revision": "d494974308338f864c9e91e94067a31d33d3543e",
+              "sha256": "2c107ecd3751635df1eedef261c7e14a79e7bb9429d20753c3f0df5834e1dbec",
+              "bytes": 17479
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "contract-flow",
+              "inline": true,
+              "sha256": "7da87fb36092de5f67de0b45ff28c3eada7d86399048df0006bdbe5f28c8c360",
+              "bytes": 1195
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "405218006124d3ecb7db9acee8d1668db305e678ba5692089621751e2bd4b7e7",
+          "bytes": 12663
+        },
+        "artifact": {
+          "sha256": "39940eb8b16ab6e6119ceafd09aba3df53a9b9cea61c9c9891a5ab9b825691c5",
+          "bytes": 1113160
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 411,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "39940eb8b16ab6e6119ceafd09aba3df53a9b9cea61c9c9891a5ab9b825691c5",
+          "bytes": 1113160
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "83 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "22 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "contract-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "contract-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-TMfxE7/child.html",
+                "artifact": {
+                  "sha256": "70f870bc3d25da39e3500a4fd49e4e01110a8f1ecb757f77c25a96caa909982a",
+                  "bytes": 836080
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.337278106508876,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-drift-1",
+                      "from": "ask",
+                      "to": "drift"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.337278106508876,
+                    "semanticTextCount": 8
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "3d598d3e-b2bb-4f91-96d5-d2080ca07cac"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/egm/_group-contract-and-drift/contract-and-drift.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-05T16:04:01.110Z",
+  "durationMs": 1355,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
