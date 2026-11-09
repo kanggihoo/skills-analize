@@ -1,0 +1,766 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T15:56:06.946Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/candidate.archify.md",
+    "sha256": "bac28103d2174af7ed7d1e2076b78bed27ccb60fef7f4cd97894b7fa64f38527",
+    "bytes": 22102
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+    "sha256": "5af0d48588471a2bbad3617bb62a49e6483653063ca2e6423ac551135df54f00",
+    "bytes": 1907386
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "bac28103d2174af7ed7d1e2076b78bed27ccb60fef7f4cd97894b7fa64f38527",
+          "bytes": 22102
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1160,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "bf63db8a-8d10-4db0-affa-2d3084ee3ad6",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+        "explainer": {
+          "preparedSha256": "eb7139339a39062a44a90e44640a19b377690c9e6fbec38910e22082897faaac",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ss-fm",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-body",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-idea",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-press",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-wf",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s1",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s2",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s3",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s4",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s5",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s6",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-s7",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-faults",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-ex",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-kit",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "ss-refs",
+              "path": "design/benjitaylor/stageshow/SKILL.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "e4df76406d63644d5051d79855c3f7931d48fdbe9aec15b3d5c12a2601aa2de6",
+              "bytes": 19469
+            },
+            {
+              "kind": "repository",
+              "id": "fr-rules",
+              "path": "design/benjitaylor/stageshow/references/framing.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "7843aa673d50068ce5ff70c16eaedf4db77cf74dff14d9601b3f4f61bc10cf2b",
+              "bytes": 13992
+            },
+            {
+              "kind": "repository",
+              "id": "fr-layout",
+              "path": "design/benjitaylor/stageshow/references/framing.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "7843aa673d50068ce5ff70c16eaedf4db77cf74dff14d9601b3f4f61bc10cf2b",
+              "bytes": 13992
+            },
+            {
+              "kind": "repository",
+              "id": "cr-rest",
+              "path": "design/benjitaylor/stageshow/references/craft.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "6b01824cb6e46797cbb57b517e6f31f12149cc3a43cb921aa5b1575cf8a106d1",
+              "bytes": 18567
+            },
+            {
+              "kind": "repository",
+              "id": "mo-story",
+              "path": "design/benjitaylor/stageshow/references/motion.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "7f9b717e8b2cf1c96186988796717f1cd74f64215ccb68966f6857cf73b22f91",
+              "bytes": 23668
+            },
+            {
+              "kind": "repository",
+              "id": "mo-loop",
+              "path": "design/benjitaylor/stageshow/references/motion.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "7f9b717e8b2cf1c96186988796717f1cd74f64215ccb68966f6857cf73b22f91",
+              "bytes": 23668
+            },
+            {
+              "kind": "repository",
+              "id": "ch",
+              "path": "design/benjitaylor/stageshow/references/choreography.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "084c09e6815a30c3f1feabd25f9f59da73f2aeaba1f8abc423ec0b9dea806651",
+              "bytes": 3478
+            },
+            {
+              "kind": "repository",
+              "id": "bt",
+              "path": "design/benjitaylor/stageshow/references/bento.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "c57f8206153d5935e5b7af842baec66a120fdfea62f5804491254b9d74f3e075",
+              "bytes": 10964
+            },
+            {
+              "kind": "repository",
+              "id": "vf-gate",
+              "path": "design/benjitaylor/stageshow/references/verify.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "1151dd3640d5f808cc9f86f2f615a7e8cad173dc73da47327eae70ea80891845",
+              "bytes": 5115
+            },
+            {
+              "kind": "repository",
+              "id": "vf-see",
+              "path": "design/benjitaylor/stageshow/references/verify.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "1151dd3640d5f808cc9f86f2f615a7e8cad173dc73da47327eae70ea80891845",
+              "bytes": 5115
+            },
+            {
+              "kind": "repository",
+              "id": "vf-hand",
+              "path": "design/benjitaylor/stageshow/references/verify.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "1151dd3640d5f808cc9f86f2f615a7e8cad173dc73da47327eae70ea80891845",
+              "bytes": 5115
+            },
+            {
+              "kind": "repository",
+              "id": "rh-film",
+              "path": "design/benjitaylor/stageshow/references/rehearse.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "3d1e38bf7141fa1b06e7f096577c88fd56b48540c11e70d858ce8fd22c603ba1",
+              "bytes": 12776
+            },
+            {
+              "kind": "repository",
+              "id": "rh-never",
+              "path": "design/benjitaylor/stageshow/references/rehearse.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "3d1e38bf7141fa1b06e7f096577c88fd56b48540c11e70d858ce8fd22c603ba1",
+              "bytes": 12776
+            },
+            {
+              "kind": "repository",
+              "id": "rh-last",
+              "path": "design/benjitaylor/stageshow/references/rehearse.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "3d1e38bf7141fa1b06e7f096577c88fd56b48540c11e70d858ce8fd22c603ba1",
+              "bytes": 12776
+            },
+            {
+              "kind": "repository",
+              "id": "rv",
+              "path": "design/benjitaylor/stageshow/references/review.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "76bb8fd33cb77ebcded5bfc9573b5132637ed9a711c1738daeef89de72aa7fe5",
+              "bytes": 3052
+            },
+            {
+              "kind": "repository",
+              "id": "pr",
+              "path": "design/benjitaylor/stageshow/references/products.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "fd8310397b7796a4b7253e7792ddf4e920c32df1f3b6dd28b56441009c18a8ea",
+              "bytes": 2096
+            },
+            {
+              "kind": "repository",
+              "id": "rm-prev",
+              "path": "design/benjitaylor/stageshow/README.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "ecc44e998970ff4b798e31a00b38b9ef273b977b2dd54bc351dcd81cdee97c5e",
+              "bytes": 3026
+            },
+            {
+              "kind": "repository",
+              "id": "rm-contents",
+              "path": "design/benjitaylor/stageshow/README.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "ecc44e998970ff4b798e31a00b38b9ef273b977b2dd54bc351dcd81cdee97c5e",
+              "bytes": 3026
+            },
+            {
+              "kind": "repository",
+              "id": "nt",
+              "path": "design/benjitaylor/stageshow/NOTICE.md",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "eb8eb167a987a8d95f4254a504af138368719a7863bf1d11a4a7e3b662b331d3",
+              "bytes": 1776
+            },
+            {
+              "kind": "repository",
+              "id": "pk",
+              "path": "design/benjitaylor/stageshow/package.json",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "46f0183be9ef4f7d0a43651d5185ffe1bd01d5ac63b9f30c8ba92522100fbe59",
+              "bytes": 930
+            },
+            {
+              "kind": "repository",
+              "id": "fm-gate",
+              "path": "design/benjitaylor/stageshow/scripts/film.mjs",
+              "revision": "2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0",
+              "sha256": "961e4e75794192b1ee35fcaee8bb15fe57c4e22588003a1de4fc673e369626d2",
+              "bytes": 38732
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "stageshow-flow",
+              "inline": true,
+              "sha256": "16f695fabd5e1bca5c2b48b3db10d6ea215abb052e0aef8514e2d09a85ed206c",
+              "bytes": 1606
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "stageshow-folder",
+              "inline": true,
+              "sha256": "4fa0197f03b9411bf9fee9c8629725944164388f6b4c8a83a2f5b4b0b9947bae",
+              "bytes": 849
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "bac28103d2174af7ed7d1e2076b78bed27ccb60fef7f4cd97894b7fa64f38527",
+          "bytes": 22102
+        },
+        "artifact": {
+          "sha256": "5af0d48588471a2bbad3617bb62a49e6483653063ca2e6423ac551135df54f00",
+          "bytes": 1907386
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 620,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "5af0d48588471a2bbad3617bb62a49e6483653063ca2e6423ac551135df54f00",
+          "bytes": 1907386
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "156 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "38 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "stageshow-flow: pass",
+              "stageshow-folder: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "stageshow-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-p39QEv/child.html",
+                "artifact": {
+                  "sha256": "dc09067ed2d8bf4af60ff7d6deee34e75d97fa18b3a9014ad51be59d21b20a22",
+                  "bytes": 839186
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 6,
+                    "shortEndpointSegmentCount": 6,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "gate-to-film-1",
+                      "from": "gate",
+                      "to": "film"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "stageshow-folder",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-auRJQu/child.html",
+                "artifact": {
+                  "sha256": "848605cc8bf61d06dbe79ad43878022e79da967b74be654ad36ce0f3ba507814",
+                  "bytes": 843108
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 13,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "actualReaderWidth": 960,
+                    "desiredReaderWidth": 960,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "skill"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 13,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "bf63db8a-8d10-4db0-affa-2d3084ee3ad6"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/benjitaylor/stageshow/stageshow.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T15:56:08.866Z",
+  "durationMs": 1920,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
