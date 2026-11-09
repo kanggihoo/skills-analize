@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9a3371de-a1fc-45c9-bb62-1a64cd558245",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-writing/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-writing/better-writing.html",
+  "specification": {
+    "sha256": "ae89ffa0bab9dfed9967f0e4a4fd1199720c4f69eddf910b7f25ef79e3d55120",
+    "bytes": 27225
+  },
+  "artifact": {
+    "sha256": "97515e78d53c4fc6718c9db3a19139df1cf7aa65e798c9f8062f2774a60ae909",
+    "bytes": 1211659
+  },
+  "explainer": {
+    "preparedSha256": "bc2eece96c00e02bc0897788c301b78419c1724d77f9afabbf21b51559c2551d",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "pt-icu-code",
+        "path": "design/jakubkrehel/better-writing/patterns.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "93ed5285d2009213b600e6f5af53ae3f7e3ff0114014146779aeda1c1ab42077",
+        "bytes": 2845
+      },
+      {
+        "kind": "repository",
+        "id": "intro",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "owners",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "inv",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "voice",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "you",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "plain",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "whole",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "verb",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "links",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "cap",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "toggle",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "err",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "undo",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "empty",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "ph",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "detect",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "sev",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "verify",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "format",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "pt-destr",
+        "path": "design/jakubkrehel/better-writing/patterns.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "93ed5285d2009213b600e6f5af53ae3f7e3ff0114014146779aeda1c1ab42077",
+        "bytes": 2845
+      },
+      {
+        "kind": "repository",
+        "id": "pt-status",
+        "path": "design/jakubkrehel/better-writing/patterns.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "93ed5285d2009213b600e6f5af53ae3f7e3ff0114014146779aeda1c1ab42077",
+        "bytes": 2845
+      },
+      {
+        "kind": "repository",
+        "id": "pt-icu",
+        "path": "design/jakubkrehel/better-writing/patterns.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "93ed5285d2009213b600e6f5af53ae3f7e3ff0114014146779aeda1c1ab42077",
+        "bytes": 2845
+      },
+      {
+        "kind": "repository",
+        "id": "pt-intl",
+        "path": "design/jakubkrehel/better-writing/patterns.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "93ed5285d2009213b600e6f5af53ae3f7e3ff0114014146779aeda1c1ab42077",
+        "bytes": 2845
+      },
+      {
+        "kind": "repository",
+        "id": "yaml",
+        "path": "design/jakubkrehel/better-writing/agents/openai.yaml",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "a5aec7e0cbc87930962f139eff4341dcf87e83fd19b9447e3f614db2bc71de67",
+        "bytes": 108
+      },
+      {
+        "kind": "repository",
+        "id": "bi-order",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-trig",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-ro",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "ir-rm",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "ir-sig",
+        "path": "design/jakubkrehel/interface-review/removed-signals.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "a7f14e158bcfc6020912604fa9c10290141eae8617ccc03a1f0e2d625438b2ac",
+        "bytes": 3228
+      },
+      {
+        "kind": "repository",
+        "id": "ac-own",
+        "path": "design/jakubkrehel/better-accessibility/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f3f9dc26c947dbdfc64be80d3c0d278d5d8bb070c7826b2dae6bf8c380e81586",
+        "bytes": 10949
+      },
+      {
+        "kind": "repository",
+        "id": "la-own",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ty-own",
+        "path": "design/jakubkrehel/better-typography/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+        "bytes": 12244
+      },
+      {
+        "kind": "repository",
+        "id": "va-axis",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "br-own",
+        "path": "design/jakubkrehel/break/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+        "bytes": 6145
+      },
+      {
+        "kind": "repository",
+        "id": "br-sc1",
+        "path": "design/jakubkrehel/break/scenarios.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+        "bytes": 4378
+      },
+      {
+        "kind": "repository",
+        "id": "br-sc2",
+        "path": "design/jakubkrehel/break/scenarios.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+        "bytes": 4378
+      },
+      {
+        "kind": "repository",
+        "id": "bd-own",
+        "path": "design/jakubkrehel/build-design/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
+        "bytes": 6085
+      },
+      {
+        "kind": "repository",
+        "id": "td-own",
+        "path": "design/jakubkrehel/teardown/preview-page.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "34947a8fab61f37a8efb78479bad7d2dcd723fe1ccb000c0d649815ccefbf96f",
+        "bytes": 8081
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "writing-position",
+        "inline": true,
+        "sha256": "3a20029f26ff32a728d8e8a2bf4779cfc8d5a4917bb534672ce174010cc4a07f",
+        "bytes": 1376
+      }
+    ]
+  }
+}

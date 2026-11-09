@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:09:14.849Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/candidate.archify.md",
+    "sha256": "58ba61ffb3ef80496dccc41b10e57098c6ec4248dae0bd9e784d5f46e3b28632",
+    "bytes": 19597
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+    "sha256": "486782f2e08ae0773b4b989944e04d4ca3658b144403be1e48014b2b66d7e6d4",
+    "bytes": 1243584
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "58ba61ffb3ef80496dccc41b10e57098c6ec4248dae0bd9e784d5f46e3b28632",
+          "bytes": 19597
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1081,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "52aef29b-f3df-4ccf-a00a-ee08354cf55f",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+        "explainer": {
+          "preparedSha256": "05bdec3c625ac3019f79d9f9b69ed9d61b0ccfc9b1aa7100809a895311d5f770",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "af-fm",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-intro",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-hours",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-better",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-wild",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-match",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-rev",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s1",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s2",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s3",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s4",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s5",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-s6",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "af-check",
+              "path": "design/jakubkrehel/afk/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+              "bytes": 8025
+            },
+            {
+              "kind": "repository",
+              "id": "bi-fm",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "repository",
+              "id": "ir-fm",
+              "path": "design/jakubkrehel/interface-review/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+              "bytes": 10128
+            },
+            {
+              "kind": "repository",
+              "id": "va-fm",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "br-fm",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "afk-flow",
+              "inline": true,
+              "sha256": "992b08f7b154669b2548101bd357055196841050e88eb4f00a4abc9246be5185",
+              "bytes": 1607
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "afk-position",
+              "inline": true,
+              "sha256": "4ec55f1aa5c7ce6b224277b457476e2af97bb92d1cc92583ce70a9ebf7d1dabd",
+              "bytes": 694
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "58ba61ffb3ef80496dccc41b10e57098c6ec4248dae0bd9e784d5f46e3b28632",
+          "bytes": 19597
+        },
+        "artifact": {
+          "sha256": "486782f2e08ae0773b4b989944e04d4ca3658b144403be1e48014b2b66d7e6d4",
+          "bytes": 1243584
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 575,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "486782f2e08ae0773b4b989944e04d4ca3658b144403be1e48014b2b66d7e6d4",
+          "bytes": 1243584
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "119 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "20 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "afk-flow: pass",
+              "afk-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "afk-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Cj6E95/child.html",
+                "artifact": {
+                  "sha256": "cd00b762e2b4b4c00569b450055495861f373c973e161a75b979dee3f52dfbbd",
+                  "bytes": 837877
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 50.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.873015873015873,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "af-more-to-af-build-1",
+                      "from": "af-more",
+                      "to": "af-build"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.873015873015873,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "afk-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-9xhYod/child.html",
+                "artifact": {
+                  "sha256": "200c29f3b471054026a64084232f2cfdd8d28821c76e66eb61d5d8d82a0221b5",
+                  "bytes": 831497
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 96.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.982832618025751,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ps-afk-to-ps-back-1",
+                      "from": "ps-afk",
+                      "to": "ps-back"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.982832618025751,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "52aef29b-f3df-4ccf-a00a-ee08354cf55f"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/afk/afk.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:09:16.663Z",
+  "durationMs": 1814,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

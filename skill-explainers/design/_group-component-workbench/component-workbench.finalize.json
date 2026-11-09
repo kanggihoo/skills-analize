@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:22:08.430Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/candidate.archify.md",
+    "sha256": "421d6a1539216f39761539df93abf91493d0c421127fbd6871f401d0d359fdf8",
+    "bytes": 11316
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+    "sha256": "2a0047ad743b8dc931eadd3ded468dce45aea741cc5bf716d9c1dc8734cb1e05",
+    "bytes": 380593
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "421d6a1539216f39761539df93abf91493d0c421127fbd6871f401d0d359fdf8",
+          "bytes": 11316
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 514,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "fa451360-c326-4e41-b3f8-c4972639ae95",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+        "explainer": {
+          "preparedSha256": "8da140827e258067066c4a60d3ebea02c812f0b5ad05342a73c7fae7650ab495",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "va-fm",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-9",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-11",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-axes",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-floor",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-count",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "va-promote",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "br-fm",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "br-9",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "br-11",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "br-del",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "sm-fm",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-9",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-11",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-states",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-del",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "421d6a1539216f39761539df93abf91493d0c421127fbd6871f401d0d359fdf8",
+          "bytes": 11316
+        },
+        "artifact": {
+          "sha256": "2a0047ad743b8dc931eadd3ded468dce45aea741cc5bf716d9c1dc8734cb1e05",
+          "bytes": 380593
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 257,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "2a0047ad743b8dc931eadd3ded468dce45aea741cc5bf716d9c1dc8734cb1e05",
+          "bytes": 380593
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "62 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "16 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": []
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "fa451360-c326-4e41-b3f8-c4972639ae95"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-component-workbench/component-workbench.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:22:09.321Z",
+  "durationMs": 890,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

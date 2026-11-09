@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:13:54.809Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/candidate.archify.md",
+    "sha256": "295d011898aa2dfa0e41dfffded3fb7b241114bba028fef15602c269c3f73ab9",
+    "bytes": 33422
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+    "sha256": "8e9461bd3c701a24d50faf440f1e10ffa4326eb9296fe4d60b5af30ff0651f56",
+    "bytes": 1342571
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "295d011898aa2dfa0e41dfffded3fb7b241114bba028fef15602c269c3f73ab9",
+          "bytes": 33422
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 909,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "20393421-9f5d-4cfc-8f04-1bf2365fd7b7",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+        "explainer": {
+          "preparedSha256": "fc3cc837f550cfabaf64ce91dccf3d4228ee78ca310ac2d5d59a214fe0999147",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ei-oa",
+              "path": "design/jakubkrehel/explain-interface/agents/openai.yaml",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "3858853344ece1dd145523bd9d61c8905c4b2cb6c7307f023cc8666b8f4dc0bc",
+              "bytes": 160
+            },
+            {
+              "kind": "repository",
+              "id": "ei-fm",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-intro",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-judge",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-scope",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-reach",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-prefer",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-mcp",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-kill",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-nob",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-evid",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-tier",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-shot",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-layers",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-mech",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-close",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ei-fin",
+              "path": "design/jakubkrehel/explain-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+              "bytes": 8495
+            },
+            {
+              "kind": "repository",
+              "id": "ef-three",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "ef-search",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "ef-read",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "ef-nocss",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "ef-narrow",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "ef-anim",
+              "path": "design/jakubkrehel/explain-interface/find-the-effect.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "baa6a8e168908ab9f9c95af106a10a10277375e796e3f206855d7bd04c4232df",
+              "bytes": 6340
+            },
+            {
+              "kind": "repository",
+              "id": "fi-bucket",
+              "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+              "bytes": 3532
+            },
+            {
+              "kind": "repository",
+              "id": "fi-color",
+              "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+              "bytes": 3532
+            },
+            {
+              "kind": "repository",
+              "id": "fi-type",
+              "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+              "bytes": 3532
+            },
+            {
+              "kind": "repository",
+              "id": "fi-space",
+              "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+              "bytes": 3532
+            },
+            {
+              "kind": "repository",
+              "id": "fi-hid",
+              "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+              "bytes": 3532
+            },
+            {
+              "kind": "repository",
+              "id": "nb-fetch",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "nb-util",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "nb-inline",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "nb-sheet",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "nb-fp",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "nb-cannot",
+              "path": "design/jakubkrehel/explain-interface/no-browser.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0b18239c712a877356610257a1a33e773062afab05646789075b2a643b0afe8f",
+              "bytes": 3534
+            },
+            {
+              "kind": "repository",
+              "id": "rs-head",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-xo",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-stack",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-tok",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-type",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-space",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-rad",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-motion",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-bp",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-font",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "rs-state",
+              "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+              "bytes": 8423
+            },
+            {
+              "kind": "repository",
+              "id": "ir-fm",
+              "path": "design/jakubkrehel/interface-review/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+              "bytes": 10128
+            },
+            {
+              "kind": "repository",
+              "id": "bi-fm",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "repository",
+              "id": "va-fm",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "bc-fm",
+              "path": "design/jakubkrehel/better-colors/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2fc5964fe9adae02e8ba4d80d40ad85d23da227f3eab3b55e06c7df0ac7e7652",
+              "bytes": 7698
+            },
+            {
+              "kind": "repository",
+              "id": "bt-fm",
+              "path": "design/jakubkrehel/better-typography/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+              "bytes": 12244
+            },
+            {
+              "kind": "repository",
+              "id": "bl-fm",
+              "path": "design/jakubkrehel/better-layout/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+              "bytes": 8414
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "explain-route",
+              "inline": true,
+              "sha256": "f136400ede282012f10f47ef5f818261e85451792bd312b8dc0d1e4e4d913725",
+              "bytes": 1787
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "295d011898aa2dfa0e41dfffded3fb7b241114bba028fef15602c269c3f73ab9",
+          "bytes": 33422
+        },
+        "artifact": {
+          "sha256": "8e9461bd3c701a24d50faf440f1e10ffa4326eb9296fe4d60b5af30ff0651f56",
+          "bytes": 1342571
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 446,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "8e9461bd3c701a24d50faf440f1e10ffa4326eb9296fe4d60b5af30ff0651f56",
+          "bytes": 1342571
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "183 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "52 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "explain-route: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "explain-route",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-0VQZRK/child.html",
+                "artifact": {
+                  "sha256": "227acd4fb48e6ed67221fc24a3d7e3e9bb8f97b5e35c62f5c867e3e23f66fef5",
+                  "bytes": 841406
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.492146596858639,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-fe-1",
+                      "from": "ask",
+                      "to": "fe"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.492146596858639,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "20393421-9f5d-4cfc-8f04-1bf2365fd7b7"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/explain-interface/explain-interface.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:13:56.322Z",
+  "durationMs": 1513,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

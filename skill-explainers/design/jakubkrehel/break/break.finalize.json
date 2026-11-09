@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:11:04.860Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/candidate.archify.md",
+    "sha256": "0a5c34932dba729e7de353c7d4582b10e564347bbe54fd6fb2639556e5916252",
+    "bytes": 22626
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+    "sha256": "1152c6f53ce93493e68d1203834bf45dc623c591e64bebb6318f0cfdd364b18f",
+    "bytes": 1264465
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "0a5c34932dba729e7de353c7d4582b10e564347bbe54fd6fb2639556e5916252",
+          "bytes": 22626
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1082,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "f9616a12-f833-4b3f-8421-ee1c979e0cf2",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+        "explainer": {
+          "preparedSha256": "e82962f2348e0a1f63a827746db58221dd33589351bbe16a2799cb0c7b292377",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "bk-fm",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-intro",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s1",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s2",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s3",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s4",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s5",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s5t",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-s6",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "bk-check",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "sc-intro",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-len",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-shape",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-qty",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-con",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-state",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "sc-env",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "vr-fm",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "sm-fm",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "ir-fm",
+              "path": "design/jakubkrehel/interface-review/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+              "bytes": 10128
+            },
+            {
+              "kind": "repository",
+              "id": "bi-fm",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "break-flow",
+              "inline": true,
+              "sha256": "e746348b1d1b6e6ed127e9393f4fb63d66a634b4cc04b154921cd7a743b358a2",
+              "bytes": 1787
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "break-position",
+              "inline": true,
+              "sha256": "16d0b468bd2d8dae7099eb4566ef13a86b139d29b25995fa9a212b6d7df069d8",
+              "bytes": 965
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "0a5c34932dba729e7de353c7d4582b10e564347bbe54fd6fb2639556e5916252",
+          "bytes": 22626
+        },
+        "artifact": {
+          "sha256": "1152c6f53ce93493e68d1203834bf45dc623c591e64bebb6318f0cfdd364b18f",
+          "bytes": 1264465
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 594,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "1152c6f53ce93493e68d1203834bf45dc623c591e64bebb6318f0cfdd364b18f",
+          "bytes": 1264465
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "137 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "23 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "break-flow: pass",
+              "break-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "break-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-b5FEpw/child.html",
+                "artifact": {
+                  "sha256": "1c4e64fed807fa1b970900fac9b124b0e8b647c4e0ef9612cc3cdf0706077493",
+                  "bytes": 839952
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.425149700598802,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 5,
+                    "shortEndpointSegmentCount": 5,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "bk-browser-to-bk-look-1",
+                      "from": "bk-browser",
+                      "to": "bk-look"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.425149700598802,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "break-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-TgUwYw/child.html",
+                "artifact": {
+                  "sha256": "ba3cadab008455766a9fabfbecf0e4ee0095c7fe0fb612bae21231f635c405ae",
+                  "bytes": 833398
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 96.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.595744680851064,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pos-break-to-pos-page-1",
+                      "from": "pos-break",
+                      "to": "pos-page"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.595744680851064,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "f9616a12-f833-4b3f-8421-ee1c979e0cf2"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/break/break.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:11:06.693Z",
+  "durationMs": 1833,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

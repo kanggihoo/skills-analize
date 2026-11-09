@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b042acdd-9fc1-4282-9cdf-155cc448ccdd",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-layout/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-layout/better-layout.html",
+  "specification": {
+    "sha256": "7c6ca804924fe7b15ffb625094a540890ce143ddc225561b780f56cd727fed43",
+    "bytes": 30290
+  },
+  "artifact": {
+    "sha256": "deff4eee16d071669ddc123549d03435641f4ee684c1ed34c23b7a7e69c9375e",
+    "bytes": 1767608
+  },
+  "explainer": {
+    "preparedSha256": "84c7cac84303cee412e47c9f9907b804a51edf569fac76cfbbbd479e1f7231bb",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "ly-fm",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "oa",
+        "path": "design/jakubkrehel/better-layout/agents/openai.yaml",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "d51a2ca663c9331f8f23b7a550e5f848f83e81361e21f2280cc384e99cc0ae15",
+        "bytes": 117
+      },
+      {
+        "kind": "repository",
+        "id": "ly-lead",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-find",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-own",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p1",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p2",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p3",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p4",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p5",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p6",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p7",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p8",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p9",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p10",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p11",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-p12",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-det",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-sev",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-ver",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-fmt",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ly-end",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "ga-space",
+        "path": "design/jakubkrehel/better-layout/grouping-and-alignment.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
+        "bytes": 3936
+      },
+      {
+        "kind": "repository",
+        "id": "ga-ctrl",
+        "path": "design/jakubkrehel/better-layout/grouping-and-alignment.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
+        "bytes": 3936
+      },
+      {
+        "kind": "repository",
+        "id": "ga-edge",
+        "path": "design/jakubkrehel/better-layout/grouping-and-alignment.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
+        "bytes": 3936
+      },
+      {
+        "kind": "repository",
+        "id": "ga-log",
+        "path": "design/jakubkrehel/better-layout/grouping-and-alignment.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
+        "bytes": 3936
+      },
+      {
+        "kind": "repository",
+        "id": "ga-ord",
+        "path": "design/jakubkrehel/better-layout/grouping-and-alignment.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "30057c8e063a3cb0026140c82de0c16510080c7c306876caacba1206d7e2483a",
+        "bytes": 3936
+      },
+      {
+        "kind": "repository",
+        "id": "sa-clear",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "sa-inset",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "sa-hint",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "sa-bleed",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "sa-hold",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "sa-grow",
+        "path": "design/jakubkrehel/better-layout/spacing-and-adaptivity.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1b7e015f520b5e34cf9712fbb6586deb57a7c9f9902b54aa465719e9e5678958",
+        "bytes": 5834
+      },
+      {
+        "kind": "repository",
+        "id": "bi-order",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "ir-fm",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "ir-rm",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "rs-lay",
+        "path": "design/jakubkrehel/interface-review/removed-signals.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "a7f14e158bcfc6020912604fa9c10290141eae8617ccc03a1f0e2d625438b2ac",
+        "bytes": 3228
+      },
+      {
+        "kind": "repository",
+        "id": "ui-bound",
+        "path": "design/jakubkrehel/better-ui/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+        "bytes": 11122
+      },
+      {
+        "kind": "repository",
+        "id": "ac-sticky",
+        "path": "design/jakubkrehel/better-accessibility/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f3f9dc26c947dbdfc64be80d3c0d278d5d8bb070c7826b2dae6bf8c380e81586",
+        "bytes": 10949
+      },
+      {
+        "kind": "repository",
+        "id": "ac-zoom",
+        "path": "design/jakubkrehel/better-accessibility/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f3f9dc26c947dbdfc64be80d3c0d278d5d8bb070c7826b2dae6bf8c380e81586",
+        "bytes": 10949
+      },
+      {
+        "kind": "repository",
+        "id": "ac-fk",
+        "path": "design/jakubkrehel/better-accessibility/focus-and-keyboard.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "47857a860f25f3159ace5b3e06e4961e9c47bd0f9c30f35d1aab22e97e3f0b5c",
+        "bytes": 6492
+      },
+      {
+        "kind": "repository",
+        "id": "ac-mo",
+        "path": "design/jakubkrehel/better-accessibility/motion-and-zoom.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "16c0c3daeab2f01ed04ee0189998b5711d3c4c9a4ff10604a757577af9bb5896",
+        "bytes": 2437
+      },
+      {
+        "kind": "repository",
+        "id": "wr-bound",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "ty-bound",
+        "path": "design/jakubkrehel/better-typography/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+        "bytes": 12244
+      },
+      {
+        "kind": "repository",
+        "id": "ty-trunc",
+        "path": "design/jakubkrehel/better-typography/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+        "bytes": 12244
+      },
+      {
+        "kind": "repository",
+        "id": "va-axis",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "br-own",
+        "path": "design/jakubkrehel/break/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+        "bytes": 6145
+      },
+      {
+        "kind": "repository",
+        "id": "br-sc19",
+        "path": "design/jakubkrehel/break/scenarios.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+        "bytes": 4378
+      },
+      {
+        "kind": "repository",
+        "id": "br-sc46",
+        "path": "design/jakubkrehel/break/scenarios.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+        "bytes": 4378
+      },
+      {
+        "kind": "repository",
+        "id": "br-sc58",
+        "path": "design/jakubkrehel/break/scenarios.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+        "bytes": 4378
+      },
+      {
+        "kind": "repository",
+        "id": "ex-img",
+        "path": "design/jakubkrehel/explain-interface/from-an-image.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "11dda70e17116dd8b3967fcdaf8973043beda4e7a78a50cd7c6939e896957b77",
+        "bytes": 3532
+      },
+      {
+        "kind": "repository",
+        "id": "ex-sys",
+        "path": "design/jakubkrehel/explain-interface/read-the-system.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "cc0ea0470e72b17b2fab60b9c1a8fdd11298b58f96c3e4ad1d17e61605bd0482",
+        "bytes": 8423
+      },
+      {
+        "kind": "repository",
+        "id": "bd-own",
+        "path": "design/jakubkrehel/build-design/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
+        "bytes": 6085
+      },
+      {
+        "kind": "repository",
+        "id": "td-own",
+        "path": "design/jakubkrehel/teardown/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "9cf92fbee3ffbf28da72ef02ff2ba74bb6333f406cebf379a5c54a3554a72298",
+        "bytes": 10593
+      },
+      {
+        "kind": "repository",
+        "id": "td-pv",
+        "path": "design/jakubkrehel/teardown/preview-page.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "34947a8fab61f37a8efb78479bad7d2dcd723fe1ccb000c0d649815ccefbf96f",
+        "bytes": 8081
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "layout-flow",
+        "inline": true,
+        "sha256": "4a95a816c128267c136b4041ec4f3397ebf6d005dead78b0df08da51b79f17ea",
+        "bytes": 1841
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "layout-position",
+        "inline": true,
+        "sha256": "c15220c0b0582ab4b3ac425af085061a8529bd911a8cd5d591a9535e861c8245",
+        "bytes": 929
+      }
+    ]
+  }
+}

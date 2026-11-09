@@ -1,0 +1,844 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:16:41.794Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/candidate.archify.md",
+    "sha256": "717947d1f24cc6e4c91eb81f3c8f8d5cfd8797661f5fe75f7704cec6b86d29b8",
+    "bytes": 31929
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+    "sha256": "bc9c9d1a4b6916405e54b442f3dc968b3ef6b0e321f86bf5e027f4a34f249ef0",
+    "bytes": 1542092
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "717947d1f24cc6e4c91eb81f3c8f8d5cfd8797661f5fe75f7704cec6b86d29b8",
+          "bytes": 31929
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1214,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "34b4f3b4-bf5d-48f2-8952-2c62b816ca37",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+        "explainer": {
+          "preparedSha256": "cf95ef8d7c9feebeb670457c1d2a57db7f0e21d2f285356d370ebdf7b74b88db",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "intro",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "exact",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "conv",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "owners",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "radius",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "optical",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "shadow",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "outline",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "trans",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "press",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "freq",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "rm",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "stagger",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "exit",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "initial",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "icon",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "theme",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "only",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "willch",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "hover",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "overscroll",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "stroke",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "svg",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "detect",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "sev",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "verify",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "format",
+              "path": "design/jakubkrehel/better-ui/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+              "bytes": 11122
+            },
+            {
+              "kind": "repository",
+              "id": "an-int",
+              "path": "design/jakubkrehel/better-ui/animations.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0e9ee790191d0761a6adf27fdf1e4279d79ecbe5d0d916fc331a28a8c86f39b3",
+              "bytes": 4923
+            },
+            {
+              "kind": "repository",
+              "id": "an-press",
+              "path": "design/jakubkrehel/better-ui/animations.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0e9ee790191d0761a6adf27fdf1e4279d79ecbe5d0d916fc331a28a8c86f39b3",
+              "bytes": 4923
+            },
+            {
+              "kind": "repository",
+              "id": "an-skip",
+              "path": "design/jakubkrehel/better-ui/animations.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0e9ee790191d0761a6adf27fdf1e4279d79ecbe5d0d916fc331a28a8c86f39b3",
+              "bytes": 4923
+            },
+            {
+              "kind": "repository",
+              "id": "an-theme",
+              "path": "design/jakubkrehel/better-ui/animations.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0e9ee790191d0761a6adf27fdf1e4279d79ecbe5d0d916fc331a28a8c86f39b3",
+              "bytes": 4923
+            },
+            {
+              "kind": "repository",
+              "id": "an-rm",
+              "path": "design/jakubkrehel/better-ui/animations.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "0e9ee790191d0761a6adf27fdf1e4279d79ecbe5d0d916fc331a28a8c86f39b3",
+              "bytes": 4923
+            },
+            {
+              "kind": "repository",
+              "id": "ee-enter",
+              "path": "design/jakubkrehel/better-ui/enter-exit.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "de087d3bc69461343409c275dea7d94bca6c1158558b887b7909ce505cdfa70a",
+              "bytes": 3596
+            },
+            {
+              "kind": "repository",
+              "id": "ee-start",
+              "path": "design/jakubkrehel/better-ui/enter-exit.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "de087d3bc69461343409c275dea7d94bca6c1158558b887b7909ce505cdfa70a",
+              "bytes": 3596
+            },
+            {
+              "kind": "repository",
+              "id": "ee-full",
+              "path": "design/jakubkrehel/better-ui/enter-exit.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "de087d3bc69461343409c275dea7d94bca6c1158558b887b7909ce505cdfa70a",
+              "bytes": 3596
+            },
+            {
+              "kind": "repository",
+              "id": "it-lib",
+              "path": "design/jakubkrehel/better-ui/icon-transitions.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "676b344e7b22c37692a520c7ea2ab8fad3b3c8943a833f8133e51042297e9f06",
+              "bytes": 2647
+            },
+            {
+              "kind": "repository",
+              "id": "it-which",
+              "path": "design/jakubkrehel/better-ui/icon-transitions.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "676b344e7b22c37692a520c7ea2ab8fad3b3c8943a833f8133e51042297e9f06",
+              "bytes": 2647
+            },
+            {
+              "kind": "repository",
+              "id": "ic-stroke",
+              "path": "design/jakubkrehel/better-ui/icons.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "eac6195bb5d5ba77efd6d9d7751295a7b0d4dadf6a68146639091b02f1e3dbbd",
+              "bytes": 3963
+            },
+            {
+              "kind": "repository",
+              "id": "ic-lib",
+              "path": "design/jakubkrehel/better-ui/icons.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "eac6195bb5d5ba77efd6d9d7751295a7b0d4dadf6a68146639091b02f1e3dbbd",
+              "bytes": 3963
+            },
+            {
+              "kind": "repository",
+              "id": "ic-var",
+              "path": "design/jakubkrehel/better-ui/icons.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "eac6195bb5d5ba77efd6d9d7751295a7b0d4dadf6a68146639091b02f1e3dbbd",
+              "bytes": 3963
+            },
+            {
+              "kind": "repository",
+              "id": "ic-rtl",
+              "path": "design/jakubkrehel/better-ui/icons.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "eac6195bb5d5ba77efd6d9d7751295a7b0d4dadf6a68146639091b02f1e3dbbd",
+              "bytes": 3963
+            },
+            {
+              "kind": "repository",
+              "id": "pf-all",
+              "path": "design/jakubkrehel/better-ui/performance.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "db59db84ab371903b7ebdb69f1e92bdc0f2e041331d9dd65d312e4d1b5d449d6",
+              "bytes": 2265
+            },
+            {
+              "kind": "repository",
+              "id": "pf-tw",
+              "path": "design/jakubkrehel/better-ui/performance.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "db59db84ab371903b7ebdb69f1e92bdc0f2e041331d9dd65d312e4d1b5d449d6",
+              "bytes": 2265
+            },
+            {
+              "kind": "repository",
+              "id": "pf-wc",
+              "path": "design/jakubkrehel/better-ui/performance.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "db59db84ab371903b7ebdb69f1e92bdc0f2e041331d9dd65d312e4d1b5d449d6",
+              "bytes": 2265
+            },
+            {
+              "kind": "repository",
+              "id": "su-rad",
+              "path": "design/jakubkrehel/better-ui/surfaces.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "35a76b7c4e6da0fc933559e73ca8712fb7b804c383c6f69c25be3b9616ff2721",
+              "bytes": 3584
+            },
+            {
+              "kind": "repository",
+              "id": "su-opt",
+              "path": "design/jakubkrehel/better-ui/surfaces.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "35a76b7c4e6da0fc933559e73ca8712fb7b804c383c6f69c25be3b9616ff2721",
+              "bytes": 3584
+            },
+            {
+              "kind": "repository",
+              "id": "su-shadow",
+              "path": "design/jakubkrehel/better-ui/surfaces.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "35a76b7c4e6da0fc933559e73ca8712fb7b804c383c6f69c25be3b9616ff2721",
+              "bytes": 3584
+            },
+            {
+              "kind": "repository",
+              "id": "su-img",
+              "path": "design/jakubkrehel/better-ui/surfaces.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "35a76b7c4e6da0fc933559e73ca8712fb7b804c383c6f69c25be3b9616ff2721",
+              "bytes": 3584
+            },
+            {
+              "kind": "repository",
+              "id": "yaml",
+              "path": "design/jakubkrehel/better-ui/agents/openai.yaml",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "799e0b58bded32edf5c217f97e08c364660ec24234978b2e3f7dee1868bea871",
+              "bytes": 113
+            },
+            {
+              "kind": "repository",
+              "id": "bi-order",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "repository",
+              "id": "bi-trig",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "repository",
+              "id": "bi-ro",
+              "path": "design/jakubkrehel/better-interface/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+              "bytes": 8779
+            },
+            {
+              "kind": "repository",
+              "id": "ir-exc",
+              "path": "design/jakubkrehel/interface-review/scope-resolution.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "93eb3900d9149d3f51cb2713212d23025d2549b284b859be1d38d09ad7a4fe4e",
+              "bytes": 7611
+            },
+            {
+              "kind": "repository",
+              "id": "ac-own",
+              "path": "design/jakubkrehel/better-accessibility/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "f3f9dc26c947dbdfc64be80d3c0d278d5d8bb070c7826b2dae6bf8c380e81586",
+              "bytes": 10949
+            },
+            {
+              "kind": "repository",
+              "id": "co-own",
+              "path": "design/jakubkrehel/better-colors/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "2fc5964fe9adae02e8ba4d80d40ad85d23da227f3eab3b55e06c7df0ac7e7652",
+              "bytes": 7698
+            },
+            {
+              "kind": "repository",
+              "id": "la-own",
+              "path": "design/jakubkrehel/better-layout/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+              "bytes": 8414
+            },
+            {
+              "kind": "repository",
+              "id": "ty-own",
+              "path": "design/jakubkrehel/better-typography/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+              "bytes": 12244
+            },
+            {
+              "kind": "repository",
+              "id": "br-sc",
+              "path": "design/jakubkrehel/break/scenarios.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "1db84afedc194c5959dfcb8ecad3466fc929e197159216c9db72588ed88c1fc5",
+              "bytes": 4378
+            },
+            {
+              "kind": "repository",
+              "id": "bd-own",
+              "path": "design/jakubkrehel/build-design/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
+              "bytes": 6085
+            },
+            {
+              "kind": "repository",
+              "id": "em-desc",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "em-press",
+              "path": "design/emilkowalski/review-animations/STANDARDS.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "8f5fe3f5a04537556dd4e6a37f7a8d6f616d840eb80f2f68b5b594febb170657",
+              "bytes": 9964
+            },
+            {
+              "kind": "repository",
+              "id": "em-stag",
+              "path": "design/emilkowalski/review-animations/STANDARDS.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "8f5fe3f5a04537556dd4e6a37f7a8d6f616d840eb80f2f68b5b594febb170657",
+              "bytes": 9964
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "ui-position",
+              "inline": true,
+              "sha256": "02f975b7d0be4bb18e3541b04f1a7f702e3d11afb6acd1ceff8354c632527bba",
+              "bytes": 1064
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "717947d1f24cc6e4c91eb81f3c8f8d5cfd8797661f5fe75f7704cec6b86d29b8",
+          "bytes": 31929
+        },
+        "artifact": {
+          "sha256": "bc9c9d1a4b6916405e54b442f3dc968b3ef6b0e321f86bf5e027f4a34f249ef0",
+          "bytes": 1542092
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 653,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "bc9c9d1a4b6916405e54b442f3dc968b3ef6b0e321f86bf5e027f4a34f249ef0",
+          "bytes": 1542092
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "172 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "64 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "ui-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "ui-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-4wUPgs/child.html",
+                "artifact": {
+                  "sha256": "a665e191fece5e033b7bef99e1f6e4b3f2accf264ce45289eef3f35d2d50af8f",
+                  "bytes": 835098
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 39,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.898089171974522,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "u-bi-to-u-prev-1",
+                      "from": "u-bi",
+                      "to": "u-prev"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.898089171974522,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "34b4f3b4-bf5d-48f2-8952-2c62b816ca37"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-ui/better-ui.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:16:43.874Z",
+  "durationMs": 2080,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-09T03:14:31.675Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/candidate.archify.md",
+    "sha256": "8ae12941383f6a84ac0c723ebea6375e43485e5d494359bee38b0156eb5dfc00",
+    "bytes": 25561
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+    "sha256": "4a7bb9501197400e37e01ad5db7db50c59252875c2cba4d1be0d1ef14de50ad1",
+    "bytes": 1420439
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "8ae12941383f6a84ac0c723ebea6375e43485e5d494359bee38b0156eb5dfc00",
+          "bytes": 25561
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1118,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "a8af8739-2d4a-4c63-a930-497f016535b9",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+        "explainer": {
+          "preparedSha256": "6a5a295e37ddb8550aaca4369ff39b329bcd18a5cbe02c882dce62ec72d2b5df",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "sm-fm",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-oy",
+              "path": "design/jakubkrehel/state-machine/agents/openai.yaml",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "46f496a379f86d7ecd91912505b7545abd462fcaaec6529d7fe39e88ae7535ff",
+              "bytes": 177
+            },
+            {
+              "kind": "repository",
+              "id": "sm-what",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-split",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s1",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-kinds",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-unreach",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-write",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s3a",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s3b",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s3c",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s4",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s4b",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s4c",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s4d",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s5",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s6a",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-s6b",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-recheck",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-remove",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sm-mis",
+              "path": "design/jakubkrehel/state-machine/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+              "bytes": 6295
+            },
+            {
+              "kind": "repository",
+              "id": "sw-out",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-list",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-beh",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-place",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-btn",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-cq",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "sw-end",
+              "path": "design/jakubkrehel/state-machine/switcher.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "d6603f2512bc544f86c2d585399791d7f0e6dde50c6b32ad795d899df55a4377",
+              "bytes": 6978
+            },
+            {
+              "kind": "repository",
+              "id": "vr-fm",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "vr-split",
+              "path": "design/jakubkrehel/variant/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+              "bytes": 6848
+            },
+            {
+              "kind": "repository",
+              "id": "vr-btn",
+              "path": "design/jakubkrehel/variant/picker.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+              "bytes": 7042
+            },
+            {
+              "kind": "repository",
+              "id": "br-fm",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "br-split",
+              "path": "design/jakubkrehel/break/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+              "bytes": 6145
+            },
+            {
+              "kind": "repository",
+              "id": "ir-fm",
+              "path": "design/jakubkrehel/interface-review/SKILL.md",
+              "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+              "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+              "bytes": 10128
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "state-flow",
+              "inline": true,
+              "sha256": "b6412e882d6af11b0858c7a876b35e3253ca025e6806c395c0173f6a5514d1de",
+              "bytes": 2046
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "state-position",
+              "inline": true,
+              "sha256": "0b9f99aca29c35456d0b0bb4a49078d2ebfddf34af4b8e21e607e711d5bae39d",
+              "bytes": 733
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "8ae12941383f6a84ac0c723ebea6375e43485e5d494359bee38b0156eb5dfc00",
+          "bytes": 25561
+        },
+        "artifact": {
+          "sha256": "4a7bb9501197400e37e01ad5db7db50c59252875c2cba4d1be0d1ef14de50ad1",
+          "bytes": 1420439
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 593,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "4a7bb9501197400e37e01ad5db7db50c59252875c2cba4d1be0d1ef14de50ad1",
+          "bytes": 1420439
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "147 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "36 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "state-flow: pass",
+              "state-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "state-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-SiHLUN/child.html",
+                "artifact": {
+                  "sha256": "2f03c85a63e030d979b8c6253b4578fd0b35232946f9c2fef7c0ada8eadc0820",
+                  "bytes": 842074
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 11.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 5,
+                    "shortEndpointSegmentCount": 5,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "st-change-to-st-check-1",
+                      "from": "st-change",
+                      "to": "st-check"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "state-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-pv6eE2/child.html",
+                "artifact": {
+                  "sha256": "7a38cd39bccacded9d7c66d70b3f4206f45110930921b2f6b629b801956de6a2",
+                  "bytes": 831750
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 128.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.515151515151516,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 70.8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "p-sm-to-p-out-1",
+                      "from": "p-sm",
+                      "to": "p-out"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.515151515151516,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "a8af8739-2d4a-4c63-a930-497f016535b9"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/state-machine/state-machine.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-09T03:14:33.539Z",
+  "durationMs": 1864,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

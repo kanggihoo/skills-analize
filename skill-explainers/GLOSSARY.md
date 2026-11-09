@@ -256,3 +256,68 @@
 | placeholder | 자리표시 | 플레이스홀더 | `[icon]`, `16:9 image` 같은 정직한 빈자리 |
 | knowledge base (local) | 지식 폴더 | 지식 베이스, 지식창고 | kb-retriever. 로컬 폴더 `knowledge/` |
 | progressive retrieval | 단계적 검색 | 점진적 검색 | kb-retriever. `progressive disclosure`와 구분 |
+| escalation trigger | escalation trigger(처음만 "켜지면 표면이 사소해도 `HIGH`인 증상") | 에스컬레이션 트리거, 격상 조건 | jakubkrehel better-interface가 정한 13개 목록 |
+| cap (report) | cap(보고서 지적 상한, 최대 15개) | 캡, 한도 | better-interface |
+| Not reviewed / Not verified / Clear | `Not reviewed` / `Not verified` / `Clear`(원어 유지) | 미검토, 미검증, 문제 없음 | better-interface. 도메인을 안 봄 / 검사를 못 돌림 / 봤는데 지적 없음. 뜻이 다르다 |
+| Introduced / Regression / Pre-existing | `Introduced` / `Regression` / `Pre-existing`(원어 유지) | 신규 도입, 회귀, 기존 | interface-review의 finding 상태 3가지 |
+| removed signals | 제거 신호 | 삭제 신호 | interface-review. 제거된 줄의 단서이며 finding이 아니다 |
+| surfaces expanded | 영향 화면 | 확장된 표면 | interface-review 범위 블록 필드. `blast radius`(영향 범위)의 결과로 고른 화면 |
+| orchestration (better-interface) | 진행 순서와 통합 | 오케스트레이션 | better-interface. 규칙은 도메인 스킬이 갖는다 |
+| domain skill | 도메인 스킬 | 영역 스킬 | jakubkrehel `better-*` 여섯 개 |
+| picker (variant) | 선택기(`picker`) | 피커 | variant의 버전 전환 UI. 위 `picker (prototype)`과 같은 뜻 |
+| switcher | 전환기(`switcher`) | 스위처 | state-machine의 상태 전환 UI |
+| floor (variant) | 바닥 규칙 | 플로어 | variant가 모든 버전에 요구하는 통과 조건. 축이 아니다. `craft floor`(impeccable)와 구분 |
+| primary axis | 주 축 | 프라이머리 축 | variant. 버전마다 위치만 달리하는 축 하나 |
+| harness (break) | harness 페이지 | 하네스 | break. 컴포넌트를 시나리오별로 한 열에 그린 임시 route. 처음만 `harness 페이지(시나리오별로 그린 임시 페이지)`. 위 `harness (prototype)`, `harness`와 뜻이 다르다 |
+| seam (data) | seam(데이터를 끼워 넣는 자리) | 이음매 | state-machine. 처음만 풀이 |
+| workbench | 워크벤치 | 작업대 | state-machine의 자기 규정("a workbench, not a review") |
+| scenario axis / cue | 시나리오 축 / 단서(cue) | 시나리오 차원, 큐 | break `scenarios.md`. 단서가 맞는 축만 남긴다 |
+| owner (skill) | owner 스킬(깨짐을 고칠 도메인 스킬) | 소유자 | break 보고 표의 Owner 열 |
+| sibling project | sibling 프로젝트(사용자의 다른 프로젝트) | 형제 프로젝트 | afk |
+| AFK run | afk 실행(사용자가 비운 동안 도는 한 번의 자율 작업) | 방치 실행 | afk. 처음만 풀이 |
+| wild idea (afk) | 뜻밖의 아이디어 | 와일드 아이디어 | afk. 제품 동작을 바꾸는 아이디어 |
+| accessible name | 접근 가능한 이름(처음만 `접근 가능한 이름(accessible name)`) | 접근성 이름 | better-accessibility |
+| hit area | hit area | 히트 영역, 클릭 영역 | 영어 유지. target 크기와 구분 |
+| live region | live region | 라이브 영역 | 영어 유지 |
+| ramp | ramp(처음만 "한 hue의 밝기 단계 묶음") | 램프 | better-colors |
+| primitive / semantic token | primitive 토큰 / semantic 토큰 | 원시 토큰, 의미 토큰 | better-colors |
+| gamut | gamut | 색 영역 | 영어 유지 |
+| perceived lightness | 지각 밝기 | 인지 명도 | OKLCH `L` |
+| interpolation space | 보간 공간 | 보간 색공간 | gradient의 `in oklab`·`in oklch` |
+| appearance (light/dark) | appearance | 외관 | 영어 유지 |
+| concentric radius | 중첩 radius(안쪽 radius + padding + border 두께) | 동심 반경 | better-ui. 처음만 풀이 |
+| optical alignment | 광학 정렬 | 시각 정렬 | better-ui |
+| cross-fade | cross-fade | 교차 페이드 | better-ui 아이콘 교체 |
+| forced-colors mode | forced-colors mode | 강제 색상 모드 | 이 모드에서는 `box-shadow`가 사라진다 |
+| ICU MessageFormat | ICU MessageFormat | ICU 메시지 포맷 | better-writing |
+| plural category | plural 범주 | 복수 범주 | `one`, `other`, `few`, `many` |
+| undo | undo | 실행 취소 | better-writing. toast의 `Undo` 동작 |
+| verb-first (button label) | 동사로 시작하는 버튼 | 동사 우선 | better-writing |
+| measure (typography) | measure(한 줄 글자 수) | 측정 | better-typography. 처음만 풀이 |
+| peek | peek(다음 항목이 스크롤 가장자리 밖으로 보이는 부분) | 엿보기 | better-layout |
+| logical property | logical property | 논리 속성 | `margin-inline-start` 같은 방향 무관 속성 |
+| mirror (RTL) | mirror(RTL에서 좌우 반전) | 거울 | better-layout |
+| synthesis (font) | synthesis(브라우저가 없는 weight·style을 만들어 냄) | 합성 | better-typography |
+| exploded view | 분해 뷰 | 폭발도 | teardown. 부품을 분해 경로로 벌린 그림 |
+| assembled view | 조립 뷰 | 어셈블 뷰 | teardown |
+| axonometric | axonometric 뷰(처음만 "축측 투영") | 악소노메트릭 | teardown |
+| orthographic | 정투상 | 직교 투영 | teardown. 제1각·제3각은 그대로 |
+| section (view) | 단면 | 섹션 | teardown. `SECTION A-A` 표기는 원어 유지 |
+| balloon (callout) | balloon(번호 원) | 풍선 | teardown. 부품 번호를 단 원 |
+| leader | 리더(지시선) | 인출선 | teardown. 처음만 풀이 |
+| NTS | `NTS`(비례 아님) | 무척도 | teardown. 처음만 "not to scale" |
+| line role | 선 역할 | 라인 롤 | teardown. outline·edge·detail·texture·axis |
+| evidence record (teardown) | 증거 표(`evidence.md`) | 증거 기록 | teardown. 일반 `evidence`(근거)와 파일 이름을 구분 |
+| concept (drawing flag) | `concept` 플래그 | 컨셉 | teardown. 지어낸 구성을 표시. 기본 true |
+| proof (render check) | proof | 증명, 교정쇄 | teardown. `proof.cjs`가 시트를 그려 확인하는 일 |
+| assembly trail | 분해 경로선 | 조립 궤적 | teardown |
+| Measured / Derived / Inferred | `Measured` / `Derived` / `Inferred`(원어 유지, 처음만 "측정·파생·추론") | 측정됨, 파생됨, 추론됨 | explain-interface의 값 신뢰 3단계 |
+| layer (paint) | layer | 레이어, 층 | explain-interface. paint 순서로 쌓인 효과 한 겹 |
+| reconstruction (from image) | 재구성 | 복원 | explain-interface. 스크린샷으로 "이렇게 만들면 비슷하다"고 답하는 것 |
+| idle value | idle 값 | 유휴 값 | 애니메이션 라이브러리가 남기는 `blur(0px)`, `opacity: 1` 같은 값 |
+| stack fingerprint | stack 지문 | 핑거프린트 | explain-interface |
+| deviation (build-design) | deviation(디자인과 다르게 만든 부분) | 이탈, 편차 | build-design 보고 상태 `Deviates` |
+| unwired | unwired(backend가 없어 props로 그린 부분) | 연결 안 됨 | build-design 목록 `Unwired` |
+| Code Connect | Code Connect(원어 유지) | 코드 커넥트 | Figma의 컴포넌트-코드 매핑 |
+| auto layout | auto layout | 오토 레이아웃 | Figma 기능 |
+| sparse (design context) | `sparse` 표시 | 희소 | build-design `figma.md`. 값이 아닌 요약을 돌려준 디자인 컨텍스트 |

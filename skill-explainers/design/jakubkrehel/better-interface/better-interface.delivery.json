@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "6cb5404d-f4fd-4ace-970d-fa6fa0a38fa5",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-interface/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/better-interface/better-interface.html",
+  "specification": {
+    "sha256": "bde84c82e8e221c113e0bd72ddd27b3b49e264302b296e0aa234d97e4789b28d",
+    "bytes": 27823
+  },
+  "artifact": {
+    "sha256": "84be139c248ad58dc850b02aab8775882f2312d3fdf4491a0912e25a22f77a88",
+    "bytes": 1604632
+  },
+  "explainer": {
+    "preparedSha256": "e19e85c68e3cf3f892d93114cb2d94c255dd48e9d73b5fef5587c85728e6c959",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "bi-fm",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-own",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-evid",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-scope",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-change",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-recon",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-dlist",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-dtake",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-dmiss",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-dtwo",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-verify",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-evidence",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-sev",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-trig-list",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-trig-rank",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-trig-note",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-cheap",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-consol",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-ro",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-mist",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-fmtref",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "rf-cov",
+        "path": "design/jakubkrehel/better-interface/review-format.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4bb2715d6cd7c8afbd984cbe71148a214c9d43ffd535ba00789f7709ee743c01",
+        "bytes": 2126
+      },
+      {
+        "kind": "repository",
+        "id": "rf-find",
+        "path": "design/jakubkrehel/better-interface/review-format.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4bb2715d6cd7c8afbd984cbe71148a214c9d43ffd535ba00789f7709ee743c01",
+        "bytes": 2126
+      },
+      {
+        "kind": "repository",
+        "id": "rf-ver",
+        "path": "design/jakubkrehel/better-interface/review-format.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4bb2715d6cd7c8afbd984cbe71148a214c9d43ffd535ba00789f7709ee743c01",
+        "bytes": 2126
+      },
+      {
+        "kind": "repository",
+        "id": "rf-verdict",
+        "path": "design/jakubkrehel/better-interface/review-format.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4bb2715d6cd7c8afbd984cbe71148a214c9d43ffd535ba00789f7709ee743c01",
+        "bytes": 2126
+      },
+      {
+        "kind": "repository",
+        "id": "rf-chg",
+        "path": "design/jakubkrehel/better-interface/review-format.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4bb2715d6cd7c8afbd984cbe71148a214c9d43ffd535ba00789f7709ee743c01",
+        "bytes": 2126
+      },
+      {
+        "kind": "repository",
+        "id": "oy-all",
+        "path": "design/jakubkrehel/better-interface/agents/openai.yaml",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "541c5d823f474543d4f3a314a9292215f8c90c152249e72411ff3e3632cf55bc",
+        "bytes": 103
+      },
+      {
+        "kind": "repository",
+        "id": "ir-fm",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "ir-own",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "ir-hand",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "var-scope",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "var-floor",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "brk-scope",
+        "path": "design/jakubkrehel/break/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+        "bytes": 6145
+      },
+      {
+        "kind": "repository",
+        "id": "afk-scope",
+        "path": "design/jakubkrehel/afk/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+        "bytes": 8025
+      },
+      {
+        "kind": "repository",
+        "id": "exp-scope",
+        "path": "design/jakubkrehel/explain-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+        "bytes": 8495
+      },
+      {
+        "kind": "repository",
+        "id": "imp-desc",
+        "path": "design/impeccable/impeccable/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fab04b31f946573b00a8559db1fc070f8ea5825254d491c2b13156e5661a86d7",
+        "bytes": 11762
+      },
+      {
+        "kind": "repository",
+        "id": "dom-a11y",
+        "path": "design/jakubkrehel/better-accessibility/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f3f9dc26c947dbdfc64be80d3c0d278d5d8bb070c7826b2dae6bf8c380e81586",
+        "bytes": 10949
+      },
+      {
+        "kind": "repository",
+        "id": "dom-col",
+        "path": "design/jakubkrehel/better-colors/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "2fc5964fe9adae02e8ba4d80d40ad85d23da227f3eab3b55e06c7df0ac7e7652",
+        "bytes": 7698
+      },
+      {
+        "kind": "repository",
+        "id": "dom-typ",
+        "path": "design/jakubkrehel/better-typography/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+        "bytes": 12244
+      },
+      {
+        "kind": "repository",
+        "id": "dom-ui",
+        "path": "design/jakubkrehel/better-ui/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "2d5f9fa4f3bbf045da914349b6e5fde559c947e5323968350b65bb2cdc6b3e4f",
+        "bytes": 11122
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "review-flow",
+        "inline": true,
+        "sha256": "d63f8e5817319a9aa056911bdc335b0dfd650e203809bdd99eef716408c1e6cf",
+        "bytes": 1704
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "interface-position",
+        "inline": true,
+        "sha256": "73e6403eb372736110a13bb0e78eb729a3655466e32af2cc70f88aa0a275d148",
+        "bytes": 1176
+      }
+    ]
+  }
+}

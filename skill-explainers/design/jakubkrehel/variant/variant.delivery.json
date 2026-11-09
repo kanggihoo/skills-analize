@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "04db2e72-0c7c-4017-8a53-b959c085f29c",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/variant/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/jakubkrehel/variant/variant.html",
+  "specification": {
+    "sha256": "76f0798ebb92a436ba06ae25731713fa11af5b835a059efe231034a2edd71516",
+    "bytes": 29042
+  },
+  "artifact": {
+    "sha256": "795b9ab60c7ac44a6c3270b3f0cf1056fbc5fff777203ed7c2a6c9223fa4fde2",
+    "bytes": 1592933
+  },
+  "explainer": {
+    "preparedSha256": "f57af93424d21d66f170cdec134f9510218e418fabee2cbc94b5cef3731519cf",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "vr-fm",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-oy",
+        "path": "design/jakubkrehel/variant/agents/openai.yaml",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "24e006ea99aed264541692cfd778aa758ff111fa242ec81126fd51fdf1b29ff0",
+        "bytes": 152
+      },
+      {
+        "kind": "repository",
+        "id": "vr-what",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-split",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-axes",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-one",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-floor-list",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-floor-rule",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s1",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s2",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s3",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s4a",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s4b",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s4c",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s5a",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s5t",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s5b",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s5f",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s6a",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-s6b",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "vr-mis",
+        "path": "design/jakubkrehel/variant/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6dbe09453c4521c13bf3788d64f2fcc8bcd8b5f7eeebbce95024ec5799defc11",
+        "bytes": 6848
+      },
+      {
+        "kind": "repository",
+        "id": "pk-out",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-list",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-beh",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-place",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-btn",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-cq",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "pk-end",
+        "path": "design/jakubkrehel/variant/picker.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "fe2e8564fd52df1699abc81d986b007df451791a32bfb0249c66f1904a6e0a34",
+        "bytes": 7042
+      },
+      {
+        "kind": "repository",
+        "id": "bi-fm",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "bi-trig",
+        "path": "design/jakubkrehel/better-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "915ed5dc1442d9b78782900ff8b62160133362a2fe23998917814bfb6422869e",
+        "bytes": 8779
+      },
+      {
+        "kind": "repository",
+        "id": "ir-fm",
+        "path": "design/jakubkrehel/interface-review/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "976098555c7fe5dc0d082d70fd37b579f7513eb84a653d1abec8e347c80e32c1",
+        "bytes": 10128
+      },
+      {
+        "kind": "repository",
+        "id": "br-fm",
+        "path": "design/jakubkrehel/break/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+        "bytes": 6145
+      },
+      {
+        "kind": "repository",
+        "id": "br-split",
+        "path": "design/jakubkrehel/break/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e3b9788966cd1ee91fc5bb6488ffb11a3de54d56a09191a3b59e399240d8390",
+        "bytes": 6145
+      },
+      {
+        "kind": "repository",
+        "id": "sm-fm",
+        "path": "design/jakubkrehel/state-machine/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+        "bytes": 6295
+      },
+      {
+        "kind": "repository",
+        "id": "sm-split",
+        "path": "design/jakubkrehel/state-machine/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "a94d55cf0a6b71bb8e374e66da9fd66fc8095141e7ff9859ab7c23e6f704f5cf",
+        "bytes": 6295
+      },
+      {
+        "kind": "repository",
+        "id": "bl-fm",
+        "path": "design/jakubkrehel/better-layout/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "4e7fd6880f41a87a21bb3be8e0b2bd7e7b8c561af5fb706ec0bb3e58877d60ec",
+        "bytes": 8414
+      },
+      {
+        "kind": "repository",
+        "id": "bc-fm",
+        "path": "design/jakubkrehel/better-colors/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "2fc5964fe9adae02e8ba4d80d40ad85d23da227f3eab3b55e06c7df0ac7e7652",
+        "bytes": 7698
+      },
+      {
+        "kind": "repository",
+        "id": "bt-fm",
+        "path": "design/jakubkrehel/better-typography/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "8f00a576f6c8d2f8d72dfbffe765ce569982509d01533ea5881de6e1918d3a68",
+        "bytes": 12244
+      },
+      {
+        "kind": "repository",
+        "id": "bw-fm",
+        "path": "design/jakubkrehel/better-writing/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "109e4337da3621410c225b137d4683d8c246ca06071990a22882376ad60ec6e3",
+        "bytes": 9414
+      },
+      {
+        "kind": "repository",
+        "id": "afk-split",
+        "path": "design/jakubkrehel/afk/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "f2411015897ff1de99f01d9e8129a9575ab0088ddee8e8004fa5871b586b21b3",
+        "bytes": 8025
+      },
+      {
+        "kind": "repository",
+        "id": "ei-split",
+        "path": "design/jakubkrehel/explain-interface/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0",
+        "bytes": 8495
+      },
+      {
+        "kind": "repository",
+        "id": "bd-split",
+        "path": "design/jakubkrehel/build-design/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "d51cb44f594de7248340e9369c767f70a955483ba77f9976697cdbaf2f073a68",
+        "bytes": 6085
+      },
+      {
+        "kind": "repository",
+        "id": "pr-fm",
+        "path": "design/emilkowalski/prototype/SKILL.md",
+        "revision": "0465878505c00d01aa0ebccdb2f01d617816039a",
+        "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9",
+        "bytes": 7830
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "variant-flow",
+        "inline": true,
+        "sha256": "b77b327d1f28634e422cea29a6462690c0d9967527a0e8fec78edda4dba01f8e",
+        "bytes": 1572
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "variant-position",
+        "inline": true,
+        "sha256": "00a578a99e65b7bc337701fa4d476b61e54f5ecb44e7cc63561e22677be1ed32",
+        "bytes": 900
+      }
+    ]
+  }
+}
