@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7bc4b4a7-18e9-43fb-9412-16d5f5e143fd",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/break-ui/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/break-ui/break-ui.html",
+  "specification": {
+    "sha256": "f9d8df8eb4aaf44e4f4e28f1cafa707282e66aa57af9728f9ce4439c04fc9005",
+    "bytes": 27479
+  },
+  "artifact": {
+    "sha256": "d22a7a44ba005d86f421b3dd37c5e4e53c3e653296c0032cb3850bd8c6db725a",
+    "bytes": 1831274
+  },
+  "explainer": {
+    "preparedSha256": "c4731f8c22b2ceaef7b6e3c2366cf5d00bfcb9f10a19f9d16be923333c0df680",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "bu-fm",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-init",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-scope",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-posture",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-fail",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r1",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r2",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r3",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r4",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r5",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-r6",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p1",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p2",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p2x",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p3",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p4",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-sig",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-trunc",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p4done",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p5",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-p6",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-out1",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-out2",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-out3",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-var",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "bu-tone",
+        "path": "design/emilkowalski/break-ui/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+        "bytes": 14380
+      },
+      {
+        "kind": "repository",
+        "id": "ca-head",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-names",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-ids",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-labels",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-nums",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-coll",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-time",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-media",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-states",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "ca-env",
+        "path": "design/emilkowalski/break-ui/CATALOG.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+        "bytes": 8268
+      },
+      {
+        "kind": "repository",
+        "id": "pr-fm",
+        "path": "design/emilkowalski/prototype/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9",
+        "bytes": 7830
+      },
+      {
+        "kind": "repository",
+        "id": "ee-fm",
+        "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+        "bytes": 27509
+      },
+      {
+        "kind": "repository",
+        "id": "ra-fm",
+        "path": "design/emilkowalski/review-animations/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+        "bytes": 8491
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "break-flow",
+        "inline": true,
+        "sha256": "3e9d69d2d5d6327d965973d42f7471d2187a617b1c08f91d621f0a1e40d6e5fe",
+        "bytes": 1537
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "breakui-position",
+        "inline": true,
+        "sha256": "e939024e3ebdca607357fe3be35cab4992dcffe89af69553c8e41461bd904be8",
+        "bytes": 714
+      }
+    ]
+  }
+}

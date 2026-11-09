@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "58a8bd7a-e1c8-4f06-9f40-e95b4b7926ef",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/beautiful-article.html",
+  "specification": {
+    "sha256": "0efd7cb0912708fe207d8c191cc3c90e9a9b2fecc86715daa6bed61c209a2b11",
+    "bytes": 42182
+  },
+  "artifact": {
+    "sha256": "88bef323236b4f469c9e93f1d107c0383231bbdc69f805a506b813c8f8aa5772",
+    "bytes": 3457286
+  },
+  "explainer": {
+    "preparedSha256": "8761e7fb8d821a819250731ed237232e33287a979815da677b5ce44509c58f6b",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "bg",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "bound",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "flow",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "ws",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "qc",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "law14",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "law5",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "read",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p0",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p1",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p2",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp1law",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp1tab",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp1def",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp1tpl",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p4",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp2",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p5",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p6",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p7",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "cp3",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "p8",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "defs",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "success",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "rd-layer",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "rd-core",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "rd-flow",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "rd-faq",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "rd-tools",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "mf",
+        "path": "design/garden-skills/beautiful-article/manifest.json",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "4a77f1ef55cf5258ea49c8f445bfd8efbcdd333973a704870fe86ce40c67c9ce",
+        "bytes": 733
+      },
+      {
+        "kind": "repository",
+        "id": "harness",
+        "path": "design/garden-skills/beautiful-article/references/harness.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "06663300693cd78c12b53a1f15da13785965e27edb5fd24213543ff0cfd2d004",
+        "bytes": 2123
+      },
+      {
+        "kind": "repository",
+        "id": "s2m-tab",
+        "path": "design/garden-skills/beautiful-article/references/source-to-markdown.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0a49b88724be106a175d04566a7990cd53c0b6bc2f00b889c8ef7deddf6e22bd",
+        "bytes": 6401
+      },
+      {
+        "kind": "repository",
+        "id": "s2m-script",
+        "path": "design/garden-skills/beautiful-article/references/source-to-markdown.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0a49b88724be106a175d04566a7990cd53c0b6bc2f00b889c8ef7deddf6e22bd",
+        "bytes": 6401
+      },
+      {
+        "kind": "repository",
+        "id": "s2m-check",
+        "path": "design/garden-skills/beautiful-article/references/source-to-markdown.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0a49b88724be106a175d04566a7990cd53c0b6bc2f00b889c8ef7deddf6e22bd",
+        "bytes": 6401
+      },
+      {
+        "kind": "repository",
+        "id": "rep",
+        "path": "design/garden-skills/beautiful-article/references/repair-policy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "730a766ba9d6ab3556247ddf8fa52ce0868618bb504cbd8899f4177bbd87d06f",
+        "bytes": 1236
+      },
+      {
+        "kind": "repository",
+        "id": "html",
+        "path": "design/garden-skills/beautiful-article/references/html-output.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "34d02ad04ebd2130cbdab56ee2354ec03976854af71003b0b055253347b359b7",
+        "bytes": 1988
+      },
+      {
+        "kind": "repository",
+        "id": "lay",
+        "path": "design/garden-skills/beautiful-article/references/layout.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f3f3aeacd6e7f01fafea4dc3a5278293c55ea581e1fa00c646d9f26cc963e379",
+        "bytes": 2003
+      },
+      {
+        "kind": "repository",
+        "id": "tsel",
+        "path": "design/garden-skills/beautiful-article/references/theme-selection.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "846ec067e96d69141532eeba04d5c7f5869ccd29f4e8af82dfac724ba328598d",
+        "bytes": 2301
+      },
+      {
+        "kind": "repository",
+        "id": "tnew",
+        "path": "design/garden-skills/beautiful-article/references/theme-selection.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "846ec067e96d69141532eeba04d5c7f5869ccd29f4e8af82dfac724ba328598d",
+        "bytes": 2301
+      },
+      {
+        "kind": "repository",
+        "id": "at",
+        "path": "design/garden-skills/beautiful-article/references/article-types.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "55570c3d1a29a31f73596a0f0b12f91f1d52dbb2b4ef0caf14d9ae7ba29ea21e",
+        "bytes": 3767
+      },
+      {
+        "kind": "repository",
+        "id": "dens",
+        "path": "design/garden-skills/beautiful-article/references/information-density.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e9c9c3cdfcbf240271bd08b62b937709ade2c895bacb6c5daec6815c264a1342",
+        "bytes": 3238
+      },
+      {
+        "kind": "repository",
+        "id": "dens-ask",
+        "path": "design/garden-skills/beautiful-article/references/information-density.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e9c9c3cdfcbf240271bd08b62b937709ade2c895bacb6c5daec6815c264a1342",
+        "bytes": 3238
+      },
+      {
+        "kind": "repository",
+        "id": "plan-tpl",
+        "path": "design/garden-skills/beautiful-article/references/plan-template.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "3044d628c60e8a71177f7fac8b5769bb99809d0c17ef5962d657df43b6a17643",
+        "bytes": 5851
+      },
+      {
+        "kind": "repository",
+        "id": "asset",
+        "path": "design/garden-skills/beautiful-article/references/asset-policy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f02280053f6e6506915f1428df9beb4ed7d829c61f3bf92ace0c650f247db964",
+        "bytes": 3833
+      },
+      {
+        "kind": "repository",
+        "id": "cv-size",
+        "path": "design/garden-skills/beautiful-article/references/cover.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e828a9805afdcbba141d4ae9f519d05faebcd821fa09bd5e97e419c649add5db",
+        "bytes": 11868
+      },
+      {
+        "kind": "repository",
+        "id": "cv-hard",
+        "path": "design/garden-skills/beautiful-article/references/cover.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e828a9805afdcbba141d4ae9f519d05faebcd821fa09bd5e97e419c649add5db",
+        "bytes": 11868
+      },
+      {
+        "kind": "repository",
+        "id": "cv-tpl",
+        "path": "design/garden-skills/beautiful-article/references/cover.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e828a9805afdcbba141d4ae9f519d05faebcd821fa09bd5e97e419c649add5db",
+        "bytes": 11868
+      },
+      {
+        "kind": "repository",
+        "id": "cv-check",
+        "path": "design/garden-skills/beautiful-article/references/cover.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e828a9805afdcbba141d4ae9f519d05faebcd821fa09bd5e97e419c649add5db",
+        "bytes": 11868
+      },
+      {
+        "kind": "repository",
+        "id": "cv-off",
+        "path": "design/garden-skills/beautiful-article/references/cover.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e828a9805afdcbba141d4ae9f519d05faebcd821fa09bd5e97e419c649add5db",
+        "bytes": 11868
+      },
+      {
+        "kind": "repository",
+        "id": "sb-num",
+        "path": "design/garden-skills/beautiful-article/references/section-build.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "fd21f86889b637d168a1eba252a68af63c5c05c1a9a49f06b6211808764d574f",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "sb-mode",
+        "path": "design/garden-skills/beautiful-article/references/section-build.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "fd21f86889b637d168a1eba252a68af63c5c05c1a9a49f06b6211808764d574f",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "comp",
+        "path": "design/garden-skills/beautiful-article/references/component-policy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d1f9beafb73ef3b2cf8e082511aae97b775680d2b907b0e645c10beb859b43fe",
+        "bytes": 5543
+      },
+      {
+        "kind": "repository",
+        "id": "raw",
+        "path": "design/garden-skills/beautiful-article/references/raw-policy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f218b85e6d5cc4edee000c79daf9dbb5d2b64559897ef9b58a02827413bdb5b6",
+        "bytes": 4485
+      },
+      {
+        "kind": "repository",
+        "id": "raw-check",
+        "path": "design/garden-skills/beautiful-article/references/raw-policy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f218b85e6d5cc4edee000c79daf9dbb5d2b64559897ef9b58a02827413bdb5b6",
+        "bytes": 4485
+      },
+      {
+        "kind": "repository",
+        "id": "rc-plan",
+        "path": "design/garden-skills/beautiful-article/references/review-checklist.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d7be3daf1a13482bbcfe6771402c1ce50e55189b02be244797a3b25af04c7894",
+        "bytes": 7312
+      },
+      {
+        "kind": "repository",
+        "id": "rc-final",
+        "path": "design/garden-skills/beautiful-article/references/review-checklist.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d7be3daf1a13482bbcfe6771402c1ce50e55189b02be244797a3b25af04c7894",
+        "bytes": 7312
+      },
+      {
+        "kind": "repository",
+        "id": "scaf",
+        "path": "design/garden-skills/beautiful-article/references/scaffold.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5aabed9074c8208f818c41c1007b3ca58a9e8e06015d47aa12d594793febe9bb",
+        "bytes": 3602
+      },
+      {
+        "kind": "repository",
+        "id": "pdf-req",
+        "path": "design/garden-skills/beautiful-article/references/pdf-output.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "086aeb02c374df76b1845e827b63ffeca6f15cde3b4a2883f337c0ffd70b9a91",
+        "bytes": 10041
+      },
+      {
+        "kind": "repository",
+        "id": "pdf-flags",
+        "path": "design/garden-skills/beautiful-article/references/pdf-output.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "086aeb02c374df76b1845e827b63ffeca6f15cde3b4a2883f337c0ffd70b9a91",
+        "bytes": 10041
+      },
+      {
+        "kind": "repository",
+        "id": "pdf-not",
+        "path": "design/garden-skills/beautiful-article/references/pdf-output.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "086aeb02c374df76b1845e827b63ffeca6f15cde3b4a2883f337c0ffd70b9a91",
+        "bytes": 10041
+      },
+      {
+        "kind": "repository",
+        "id": "pdf-ie",
+        "path": "design/garden-skills/beautiful-article/references/pdf-output.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "086aeb02c374df76b1845e827b63ffeca6f15cde3b4a2883f337c0ffd70b9a91",
+        "bytes": 10041
+      },
+      {
+        "kind": "repository",
+        "id": "idx",
+        "path": "design/garden-skills/beautiful-article/theme-profiles/index.json",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b1a81f7876d530db3810e43c33d7441a1765f986f91dff07b8fd8941a65b8f92",
+        "bytes": 5912
+      },
+      {
+        "kind": "repository",
+        "id": "sh-guard",
+        "path": "design/garden-skills/beautiful-article/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1a5ffec7c4d0ce0bacaa3c47f50cbd0acb03cb8efdfc66e4391e0ed9f7ec1692",
+        "bytes": 7516
+      },
+      {
+        "kind": "repository",
+        "id": "sh-npm",
+        "path": "design/garden-skills/beautiful-article/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1a5ffec7c4d0ce0bacaa3c47f50cbd0acb03cb8efdfc66e4391e0ed9f7ec1692",
+        "bytes": 7516
+      },
+      {
+        "kind": "repository",
+        "id": "sh-theme",
+        "path": "design/garden-skills/beautiful-article/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1a5ffec7c4d0ce0bacaa3c47f50cbd0acb03cb8efdfc66e4391e0ed9f7ec1692",
+        "bytes": 7516
+      },
+      {
+        "kind": "repository",
+        "id": "pdf-sh",
+        "path": "design/garden-skills/beautiful-article/scripts/html-to-pdf.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "816d65186c1fe62f36de6f9915aa65cb7ee186b0960dc0d2859d94c3c6aa8c76",
+        "bytes": 6377
+      },
+      {
+        "kind": "repository",
+        "id": "tpl-font",
+        "path": "design/garden-skills/beautiful-article/assets/scaffold-template/index.html",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "19bcaa847b022558b889c182d028bb311aec44a2ddc3f6a5e64f3f4169960244",
+        "bytes": 755
+      },
+      {
+        "kind": "repository",
+        "id": "tpl-main",
+        "path": "design/garden-skills/beautiful-article/assets/scaffold-template/article/main.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "2bc9ba7f4ac3115069d4fb1ba151b98016c0fda9e6ae558e726b8cd47104409f",
+        "bytes": 1173
+      },
+      {
+        "kind": "repository",
+        "id": "tpl-colo",
+        "path": "design/garden-skills/beautiful-article/assets/scaffold-template/article/Article.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a02f3730d2845f23f8ff0ce720a91993e36bcaf8c6d24d719261db2bd728ff0d",
+        "bytes": 2811
+      },
+      {
+        "kind": "repository",
+        "id": "tpl-pkg",
+        "path": "design/garden-skills/beautiful-article/assets/scaffold-template/package.json",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "628df742e15474f9d781a11b68f028ca9cd231f6468159fc8d0e8f8fb4fe3a34",
+        "bytes": 783
+      },
+      {
+        "kind": "repository",
+        "id": "brief-t",
+        "path": "design/garden-skills/beautiful-article/references/article-types/briefing.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "bbd04e897919e53fb56584dc371991306cc505156ae4b2bdc51252d7c28ef657",
+        "bytes": 2177
+      },
+      {
+        "kind": "repository",
+        "id": "ie-t",
+        "path": "design/garden-skills/beautiful-article/references/article-types/interactive-explainer.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5176ed41f04cf531a071122354ae9d5a30140229ac51d634d92abad31e37a52d",
+        "bytes": 5042
+      },
+      {
+        "kind": "repository",
+        "id": "lf-t",
+        "path": "design/garden-skills/beautiful-article/references/article-types/longform.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e2b1bf7f96c8e052c7fdbb6396d9fd078b5871990cf90822a828b937b3f5eab5",
+        "bytes": 2325
+      },
+      {
+        "kind": "repository",
+        "id": "css-head",
+        "path": "design/garden-skills/beautiful-article/scripts/pdf-print-overrides.css",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e708bfb3202c32240bae59645b8e62d26b611b495017adcdf1ad29f878e55039",
+        "bytes": 6457
+      },
+      {
+        "kind": "repository",
+        "id": "wde",
+        "path": "design/garden-skills/web-design-engineer/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1",
+        "bytes": 35406
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "article-flow",
+        "inline": true,
+        "sha256": "0b06a00cd40af64a050f1938fb4ed8d1adb913681460d6a24723d343bf359b20",
+        "bytes": 2109
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "workspace-layout",
+        "inline": true,
+        "sha256": "ccea64edf3171930b4cf2a157a4eb4356de53e7c35cdc7625a27c52f4938d37f",
+        "bytes": 1048
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "ba-position",
+        "inline": true,
+        "sha256": "2ef9ff1a71eab9c55b3335ffcb771c01c2c95d7470f7682b430c751708fbeefd",
+        "bytes": 927
+      }
+    ]
+  }
+}

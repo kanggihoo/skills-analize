@@ -1,0 +1,819 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:19:59.561Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/candidate.archify.md",
+    "sha256": "b9458089033883f9ba8fbde549b5ddad791cf7b5b3dd3d03c8871c9fa8522fc9",
+    "bytes": 34552
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+    "sha256": "943228a2e8d2692538510986fe7d28de2b38ed10c57f4ad3d93f5eab299f7e4f",
+    "bytes": 3714695
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "b9458089033883f9ba8fbde549b5ddad791cf7b5b3dd3d03c8871c9fa8522fc9",
+          "bytes": 34552
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1470,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "14090c23-4179-4e2f-a7e0-9d6271fb864d",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+        "explainer": {
+          "preparedSha256": "6368fef7406712fb9f48d46342bbe74482c8b2ef1fc90e453032ada9548dfcbd",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ws-fm",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-cow",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-photo",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-vfx",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-init",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-base",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-thru",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-ladder",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-value",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-noncopy",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-err",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-prog",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-build",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-rule",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-cost",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-actor",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-send",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-race",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-bridge",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-struct",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-cancel",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-cont",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-swiftui",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-swiftui2",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-proto",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-some",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-api",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-perf",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-algo",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-levers",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-6364",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-hop",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-arc",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-test-a",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-test-b",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-macro",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-log",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-unsafe",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-modern-note",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-modern",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-regex",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-mig",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "repository",
+              "id": "ws-qr",
+              "path": "design/emilkowalski/write-swift/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+              "bytes": 42445
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "concurrency-ladder",
+              "inline": true,
+              "sha256": "c6fcf8a1592fc9bb4889b2fb0571107e3ae989ec3f77e87aa246edb8e86abdfc",
+              "bytes": 1485
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "migration-flow",
+              "inline": true,
+              "sha256": "e0e79e89d349ce56445a99471b0ea658b606846946906cb29b863aa1a6a29325",
+              "bytes": 1453
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "b9458089033883f9ba8fbde549b5ddad791cf7b5b3dd3d03c8871c9fa8522fc9",
+          "bytes": 34552
+        },
+        "artifact": {
+          "sha256": "943228a2e8d2692538510986fe7d28de2b38ed10c57f4ad3d93f5eab299f7e4f",
+          "bytes": 3714695
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 622,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "943228a2e8d2692538510986fe7d28de2b38ed10c57f4ad3d93f5eab299f7e4f",
+          "bytes": 3714695
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "231 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "45 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "concurrency-ladder: pass",
+              "migration-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "concurrency-ladder",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-1NOr5T/child.html",
+                "artifact": {
+                  "sha256": "df59dcccb105414848dbc0bc69902ef4b97cc28a32100ea137907c22c2b56d7f",
+                  "bytes": 837447
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 59,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.690647482014389,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 19,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "c-hang-to-c-conc-1",
+                      "from": "c-hang",
+                      "to": "c-conc"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.690647482014389,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "migration-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-m6YG8S/child.html",
+                "artifact": {
+                  "sha256": "678230e557080b4bb78fb5460d77f54631e4edd661b48a1929f43b2733cb2e56",
+                  "bytes": 836779
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 65.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 23.5,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "m-next-to-m-check-1",
+                      "from": "m-next",
+                      "to": "m-check"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 8
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "14090c23-4179-4e2f-a7e0-9d6271fb864d"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/write-swift/write-swift.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:20:01.809Z",
+  "durationMs": 2247,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

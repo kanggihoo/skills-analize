@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:26:44.975Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/candidate.archify.md",
+    "sha256": "7f99d1b05269fedf62ac82ce27401460c695fc197a3ede36cd77223036207ccf",
+    "bytes": 18175
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+    "sha256": "91b0c401fcf1e9ff46e6359eb9973ac7c74de727bf99a38756076e2c3049c970",
+    "bytes": 1309086
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "7f99d1b05269fedf62ac82ce27401460c695fc197a3ede36cd77223036207ccf",
+          "bytes": 18175
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1756,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "b583782e-ba69-4980-9bd2-e47a330242f4",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+        "explainer": {
+          "preparedSha256": "56b28002d90c83706d6de49dcb6e236bb0aa2461d0a37e43912ffc88524f3570",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fa-fm",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-init",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-scope",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-posture",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-rules",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-gate",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-freq",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-purpose",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-speed",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-func",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-hunt",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-sweep",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-flow",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-out1",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-out2",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-out3",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fa-tone",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "an-role",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "find-flow",
+              "inline": true,
+              "sha256": "4a193ed8405aef69fcf1341ed676b73044a326730e9db1d1c258754f97e49be5",
+              "bytes": 2017
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "find-position",
+              "inline": true,
+              "sha256": "49e38ef6db448bd71bc39c78c74a711b7a3ef59040ead5e622f5f8db7131d806",
+              "bytes": 751
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "7f99d1b05269fedf62ac82ce27401460c695fc197a3ede36cd77223036207ccf",
+          "bytes": 18175
+        },
+        "artifact": {
+          "sha256": "91b0c401fcf1e9ff46e6359eb9973ac7c74de727bf99a38756076e2c3049c970",
+          "bytes": 1309086
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1008,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "91b0c401fcf1e9ff46e6359eb9973ac7c74de727bf99a38756076e2c3049c970",
+          "bytes": 1309086
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "124 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "20 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "find-flow: pass",
+              "find-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "find-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-04Fqfe/child.html",
+                "artifact": {
+                  "sha256": "580dd4455c39db3cb90f20929eae62be4bebcac9034f67f5411f8f5ee4839fc0",
+                  "bytes": 842705
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 20.4,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.940234791889007,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ff-freq-to-ff-purpose-1",
+                      "from": "ff-freq",
+                      "to": "ff-purpose"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.940234791889007,
+                    "semanticTextCount": 18
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "find-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-5ayYpH/child.html",
+                "artifact": {
+                  "sha256": "e2dc4204571fd65fc1d39ad14c30755717c9fa5d016f01e14773f654390d202e",
+                  "bytes": 831832
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 227.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.484909456740443,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 38,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "fp-find-to-fp-improve-1",
+                      "from": "fp-find",
+                      "to": "fp-improve"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.484909456740443,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "b583782e-ba69-4980-9bd2-e47a330242f4"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/find-animation-opportunities/find-animation-opportunities.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:26:47.984Z",
+  "durationMs": 3009,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

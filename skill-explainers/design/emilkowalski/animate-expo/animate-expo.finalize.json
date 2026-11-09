@@ -1,0 +1,795 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:29:35.451Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/candidate.archify.md",
+    "sha256": "3328c0a7a899a11a1851645b04dd9ece16f8472397abb39cd83ca2b8b978cdc5",
+    "bytes": 25804
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+    "sha256": "42d65359449ca4386b987406e7cb04033c7cb63049c5173d9fc950d95e1fc57a",
+    "bytes": 2090286
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "3328c0a7a899a11a1851645b04dd9ece16f8472397abb39cd83ca2b8b978cdc5",
+          "bytes": 25804
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1724,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "8c42659e-6b22-49d9-b9f9-b5ef9792d3ed",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+        "explainer": {
+          "preparedSha256": "cda7c959cb88a313e05896300a565b178cfd4eb854fab7af8429f0d420ed53c5",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ex-fm",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-init",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-why",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-posture",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-hard",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s1",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s2",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s3",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-deps",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s4",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s5spring",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s5ease",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s5dur",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s6",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s7",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s8",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-s9",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-setup",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-120",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-recipes",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-never",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "ex-out",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "xr-setup",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-conv",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-gh3",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-work",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-press",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-sheet",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-swipe",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-header",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-list",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-kb",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-tab",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-screen",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-toast",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "xr-thresh",
+              "path": "design/emilkowalski/animate-expo/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+              "bytes": 16808
+            },
+            {
+              "kind": "repository",
+              "id": "an-scope",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "repository",
+              "id": "an-toast",
+              "path": "design/emilkowalski/animate/RECIPES.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+              "bytes": 7957
+            },
+            {
+              "kind": "repository",
+              "id": "pf-scope",
+              "path": "design/emilkowalski/animation-performance/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+              "bytes": 14269
+            },
+            {
+              "kind": "repository",
+              "id": "mn-scope",
+              "path": "design/emilkowalski/mobile-native/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+              "bytes": 16838
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "expo-flow",
+              "inline": true,
+              "sha256": "f28d7048ba3007e11fef0cfaff80fd122e0e6d498571d2d0db707c21cfd62894",
+              "bytes": 1936
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "expo-position",
+              "inline": true,
+              "sha256": "633529136f30d8b64116b6b6f014f10cac323cd95952fe2f5904c4c610893d30",
+              "bytes": 939
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "3328c0a7a899a11a1851645b04dd9ece16f8472397abb39cd83ca2b8b978cdc5",
+          "bytes": 25804
+        },
+        "artifact": {
+          "sha256": "42d65359449ca4386b987406e7cb04033c7cb63049c5173d9fc950d95e1fc57a",
+          "bytes": 2090286
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 848,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "42d65359449ca4386b987406e7cb04033c7cb63049c5173d9fc950d95e1fc57a",
+          "bytes": 2090286
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "164 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "42 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "expo-flow: pass",
+              "expo-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "expo-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-rNawCx/child.html",
+                "artifact": {
+                  "sha256": "d23beef119a3c9f79444d22d55f2d9c17e1448b719cf0b14847d5476ce593de4",
+                  "bytes": 843473
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.999059266227658,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 5,
+                    "shortEndpointSegmentCount": 5,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "x1-to-x2-1",
+                      "from": "x1",
+                      "to": "x2"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.999059266227658,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "expo-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-n84q4W/child.html",
+                "artifact": {
+                  "sha256": "671b13fa9f075373c20322aa0b9b0b5f5739f3d6dadc98aa4067c82ae0f7c14d",
+                  "bytes": 833552
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 70.7,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 46.8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "q-animate-to-q-expo-1",
+                      "from": "q-animate",
+                      "to": "q-expo"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "8c42659e-6b22-49d9-b9f9-b5ef9792d3ed"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:29:38.254Z",
+  "durationMs": 2802,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

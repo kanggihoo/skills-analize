@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:19:00.417Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/candidate.archify.md",
+    "sha256": "b231d0056303bd3c911119d0db2aa2d58fce15153dfb5a7689703740cb134363",
+    "bytes": 25738
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+    "sha256": "c4eebdef055f80d28b04e0e029888c3fdb4a2f4d5c3bf923ee6ccb5c82f02fd6",
+    "bytes": 1554722
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "b231d0056303bd3c911119d0db2aa2d58fce15153dfb5a7689703740cb134363",
+          "bytes": 25738
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1404,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "cbf36cd7-507c-4236-b595-fa0c955164fe",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+        "explainer": {
+          "preparedSha256": "6676fb4445519de9a1d35e95f99240ee985431221cd959d08fab186fb176109c",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ad-fm",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-init",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-thru",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-core",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-resp",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-direct",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-intr",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-spring",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-ships",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-motion",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-vel",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-proj",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-spatial",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-hint",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-rubber",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-gest",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-frame",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-mat",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-multi",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-a11y",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-type",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-princ",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-tact",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-proc",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ad-quick",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ed-fm",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "release-flow",
+              "inline": true,
+              "sha256": "244ae6828405d6b6da364f8f822ce36a677f94e77ea9986bdf9a4ef97a9893ca",
+              "bytes": 861
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "b231d0056303bd3c911119d0db2aa2d58fce15153dfb5a7689703740cb134363",
+          "bytes": 25738
+        },
+        "artifact": {
+          "sha256": "c4eebdef055f80d28b04e0e029888c3fdb4a2f4d5c3bf923ee6ccb5c82f02fd6",
+          "bytes": 1554722
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 580,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "c4eebdef055f80d28b04e0e029888c3fdb4a2f4d5c3bf923ee6ccb5c82f02fd6",
+          "bytes": 1554722
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "155 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "27 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "release-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "release-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-M1R4o4/child.html",
+                "artifact": {
+                  "sha256": "d045675c7d4ae7a62e2a0b59223bbe9d7dbda1b4a023577cfb196198f35e409a",
+                  "bytes": 832506
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 148.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.848101265822785,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "rf-snap-to-rf-spring-1",
+                      "from": "rf-snap",
+                      "to": "rf-spring"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.848101265822785,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "cbf36cd7-507c-4236-b595-fa0c955164fe"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/apple-design/apple-design.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:19:02.638Z",
+  "durationMs": 2220,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

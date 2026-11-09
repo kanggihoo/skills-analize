@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "3eaa39b7-1adc-4966-94aa-24f9756308c4",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate/animate.html",
+  "specification": {
+    "sha256": "4fc05071cf8bf4cc7121fe47552bfff25c92e5bcf46aeeb8b36068f1715d2e94",
+    "bytes": 27416
+  },
+  "artifact": {
+    "sha256": "a91346a0b170fc6e63b84237f19cd9814ffa898058762bae8f2530036a9bf4e0",
+    "bytes": 1757586
+  },
+  "explainer": {
+    "preparedSha256": "52408f7c6ac1ee071c22f920e4247d5e201e00e1003bf2b0e5ab7a84a0f4ccf1",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "an-fm",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-init",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-scope",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-posture",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-hard",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s1",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s2",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s3",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-comp",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s4",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s5ease",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s5dur",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s5spring",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s6",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-s7",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-recipes",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-never",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-out",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-tone",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "rc-head",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-press",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-pop",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-tip",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-modal",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-drawer",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-toast",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-acc",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-stagger",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-hold",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-tab",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-scroll",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-drag",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-blur",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "rc-waapi",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "pk-fm",
+        "path": "design/emilkowalski/pick-ui-library/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "675fdce308683256ed617351a9b74d23457a5fbd0a562d9831b9c764b8c5e682",
+        "bytes": 4790
+      },
+      {
+        "kind": "repository",
+        "id": "rv-fm",
+        "path": "design/emilkowalski/review-animations/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+        "bytes": 8491
+      },
+      {
+        "kind": "repository",
+        "id": "ex-desc",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "pf-scope",
+        "path": "design/emilkowalski/animation-performance/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+        "bytes": 14269
+      },
+      {
+        "kind": "repository",
+        "id": "mn-tok",
+        "path": "design/emilkowalski/mobile-native/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+        "bytes": 16838
+      },
+      {
+        "kind": "repository",
+        "id": "fo-scope",
+        "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+        "bytes": 9808
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "build-flow",
+        "inline": true,
+        "sha256": "1015e118d2cb0c5a8250113ad78f9b8d6ad9440444380f46c78cff99e6e1ef19",
+        "bytes": 2188
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "animate-position",
+        "inline": true,
+        "sha256": "b55a276692d2f36facad4acb127a94a29837a091d33e0f76759864e41301b4b5",
+        "bytes": 1355
+      }
+    ]
+  }
+}

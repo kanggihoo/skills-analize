@@ -1,0 +1,476 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:34:03.299Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/candidate.archify.md",
+    "sha256": "4d68dbef48625ab6871ffbbc45657912e9699860c27e8025f20aee1f785eea02",
+    "bytes": 10598
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+    "sha256": "4ca812724a58790954895ac2ce4888e08799b89b54e00dd6d53a4dc39df466db",
+    "bytes": 870488
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "4d68dbef48625ab6871ffbbc45657912e9699860c27e8025f20aee1f785eea02",
+          "bytes": 10598
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 845,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "0410fd5e-59ea-408c-964f-533c573a256a",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+        "explainer": {
+          "preparedSha256": "6563250d594a2dfdb452b9f5481267e372a118b72da44c37a63e50d98ee41dfb",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "an-fm",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "repository",
+              "id": "an-16",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "repository",
+              "id": "an-20",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "repository",
+              "id": "an-177",
+              "path": "design/emilkowalski/animate/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+              "bytes": 11910
+            },
+            {
+              "kind": "repository",
+              "id": "ex-fm",
+              "path": "design/emilkowalski/animate-expo/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+              "bytes": 17891
+            },
+            {
+              "kind": "repository",
+              "id": "pf-fm",
+              "path": "design/emilkowalski/animation-performance/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+              "bytes": 14269
+            },
+            {
+              "kind": "repository",
+              "id": "pf-16",
+              "path": "design/emilkowalski/animation-performance/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+              "bytes": 14269
+            },
+            {
+              "kind": "repository",
+              "id": "fi-fm",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fi-16",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fi-26",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "fi-136",
+              "path": "design/emilkowalski/find-animation-opportunities/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+              "bytes": 9808
+            },
+            {
+              "kind": "repository",
+              "id": "im-fm",
+              "path": "design/emilkowalski/improve-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+              "bytes": 8208
+            },
+            {
+              "kind": "repository",
+              "id": "im-18",
+              "path": "design/emilkowalski/improve-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+              "bytes": 8208
+            },
+            {
+              "kind": "repository",
+              "id": "im-modes",
+              "path": "design/emilkowalski/improve-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+              "bytes": 8208
+            },
+            {
+              "kind": "repository",
+              "id": "im-104",
+              "path": "design/emilkowalski/improve-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+              "bytes": 8208
+            },
+            {
+              "kind": "repository",
+              "id": "rv-fm",
+              "path": "design/emilkowalski/review-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+              "bytes": 8491
+            },
+            {
+              "kind": "repository",
+              "id": "rv-verdict",
+              "path": "design/emilkowalski/review-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+              "bytes": 8491
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "motion-route",
+              "inline": true,
+              "sha256": "dd26ddac9a8b22e46fa0e0d239eeac2b1708738035f1976d4ef82e3c86e4d015",
+              "bytes": 1397
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "4d68dbef48625ab6871ffbbc45657912e9699860c27e8025f20aee1f785eea02",
+          "bytes": 10598
+        },
+        "artifact": {
+          "sha256": "4ca812724a58790954895ac2ce4888e08799b89b54e00dd6d53a4dc39df466db",
+          "bytes": 870488
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 440,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "4ca812724a58790954895ac2ce4888e08799b89b54e00dd6d53a4dc39df466db",
+          "bytes": 870488
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "76 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "18 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "motion-route: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "motion-route",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6rWUxP/child.html",
+                "artifact": {
+                  "sha256": "d9d7d11c82e703cdf3aa50b2d38205347e40385d54f13985e82bf766f8cfa696",
+                  "bytes": 837084
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 75.3,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.018867924528302,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "anim-to-review-1",
+                      "from": "anim",
+                      "to": "review"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.018867924528302,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "0410fd5e-59ea-408c-964f-533c573a256a"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-motion-craft/motion-craft.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:34:04.711Z",
+  "durationMs": 1411,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

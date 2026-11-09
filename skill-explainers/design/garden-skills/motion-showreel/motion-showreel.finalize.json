@@ -1,0 +1,1215 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:24:44.833Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/candidate.archify.md",
+    "sha256": "e7bbc528bb08fc81b5615af6b297b47c58a47b73b7978fd63aa69343ee0ee1bc",
+    "bytes": 38252
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+    "sha256": "62795f74ae8e746dc49cc981fffe66acecb15dfca952f9c938664b47d07f6653",
+    "bytes": 3765423
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "e7bbc528bb08fc81b5615af6b297b47c58a47b73b7978fd63aa69343ee0ee1bc",
+          "bytes": 38252
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 4295,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "e461df0b-b3bb-4f88-8dea-71ae542210e2",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+        "explainer": {
+          "preparedSha256": "f5c5876f17eb0c5fe48596358093b7e3a76ee36cd7cb536eab7a45fbb5da3638",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ms-fm",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-principle",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-preview",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-progress",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-feel",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-scope",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-dur",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-weak",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-workflow",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s0",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s1req",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s1cond",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s1prog",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s1mat",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s1confirm",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s2",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-reel",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s3",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s3wait",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s4",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-hard",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s4prog",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s5",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s6",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s7",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-tech",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-review",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-s8",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-base",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "ms-reftab",
+              "path": "design/garden-skills/motion-showreel/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+              "bytes": 32386
+            },
+            {
+              "kind": "repository",
+              "id": "rd-scope",
+              "path": "design/garden-skills/motion-showreel/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f526ad6897ba80824bce19c994a276b20047779f61fd8c1009faae898865bd73",
+              "bytes": 21213
+            },
+            {
+              "kind": "repository",
+              "id": "rd-tree",
+              "path": "design/garden-skills/motion-showreel/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f526ad6897ba80824bce19c994a276b20047779f61fd8c1009faae898865bd73",
+              "bytes": 21213
+            },
+            {
+              "kind": "repository",
+              "id": "rd-43",
+              "path": "design/garden-skills/motion-showreel/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f526ad6897ba80824bce19c994a276b20047779f61fd8c1009faae898865bd73",
+              "bytes": 21213
+            },
+            {
+              "kind": "repository",
+              "id": "mf",
+              "path": "design/garden-skills/motion-showreel/manifest.json",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "e96021c92e5e03de577de992e6ef37efba254c11eec8422905faf7813c3364d9",
+              "bytes": 797
+            },
+            {
+              "kind": "repository",
+              "id": "ed-default",
+              "path": "design/garden-skills/motion-showreel/references/editor.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f0d1a288976ab659adb7cc64a84205ed1f13309735438ece1beacac5e896843c",
+              "bytes": 7300
+            },
+            {
+              "kind": "repository",
+              "id": "ed-open",
+              "path": "design/garden-skills/motion-showreel/references/editor.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f0d1a288976ab659adb7cc64a84205ed1f13309735438ece1beacac5e896843c",
+              "bytes": 7300
+            },
+            {
+              "kind": "repository",
+              "id": "ed-ops",
+              "path": "design/garden-skills/motion-showreel/references/editor.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f0d1a288976ab659adb7cc64a84205ed1f13309735438ece1beacac5e896843c",
+              "bytes": 7300
+            },
+            {
+              "kind": "repository",
+              "id": "ed-tracks",
+              "path": "design/garden-skills/motion-showreel/references/editor.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f0d1a288976ab659adb7cc64a84205ed1f13309735438ece1beacac5e896843c",
+              "bytes": 7300
+            },
+            {
+              "kind": "repository",
+              "id": "ed-export",
+              "path": "design/garden-skills/motion-showreel/references/editor.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f0d1a288976ab659adb7cc64a84205ed1f13309735438ece1beacac5e896843c",
+              "bytes": 7300
+            },
+            {
+              "kind": "repository",
+              "id": "pg-trigger",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "pg-stage",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "pg-confirm",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "pg-shot",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "pg-publish",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "pg-final",
+              "path": "design/garden-skills/motion-showreel/references/progress.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "8f401f82c44dc27f22170a02f03f18726a3c2e3203fa6a4f6165b501f1756a62",
+              "bytes": 11143
+            },
+            {
+              "kind": "repository",
+              "id": "lf-plan",
+              "path": "design/garden-skills/motion-showreel/references/long-form.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "acd71c4633c59aa46b597e9a79aaf3d3fc08a9c1804c7367b4c38dffa1e7e819",
+              "bytes": 6190
+            },
+            {
+              "kind": "repository",
+              "id": "lf-build",
+              "path": "design/garden-skills/motion-showreel/references/long-form.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "acd71c4633c59aa46b597e9a79aaf3d3fc08a9c1804c7367b4c38dffa1e7e819",
+              "bytes": 6190
+            },
+            {
+              "kind": "repository",
+              "id": "lf-review",
+              "path": "design/garden-skills/motion-showreel/references/long-form.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "acd71c4633c59aa46b597e9a79aaf3d3fc08a9c1804c7367b4c38dffa1e7e819",
+              "bytes": 6190
+            },
+            {
+              "kind": "repository",
+              "id": "rv-split",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "rv-checks",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "rv-text",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "rv-loop",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "rv-indep",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "rv-end",
+              "path": "design/garden-skills/motion-showreel/references/review.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "26007aea4a8ef7e6b7540864015badd3448039dd369bc3ef78d9e3ca6205f5af",
+              "bytes": 15015
+            },
+            {
+              "kind": "repository",
+              "id": "nr-user",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "nr-tts",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "nr-timeout",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "nr-asr",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "nr-mix",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "fm-h",
+              "path": "design/garden-skills/motion-showreel/references/formats.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "cde2a3c34ad423c27e6c45d03d620de90d245e912b5c11445367c57efa8dc819",
+              "bytes": 9162
+            },
+            {
+              "kind": "repository",
+              "id": "fm-i",
+              "path": "design/garden-skills/motion-showreel/references/formats.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "cde2a3c34ad423c27e6c45d03d620de90d245e912b5c11445367c57efa8dc819",
+              "bytes": 9162
+            },
+            {
+              "kind": "repository",
+              "id": "fm-j",
+              "path": "design/garden-skills/motion-showreel/references/formats.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "cde2a3c34ad423c27e6c45d03d620de90d245e912b5c11445367c57efa8dc819",
+              "bytes": 9162
+            },
+            {
+              "kind": "repository",
+              "id": "st-assets",
+              "path": "design/garden-skills/motion-showreel/references/stack.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "b65d2c605ffa101b094e00de9cbea4f8948098d074b431d6851ffd186c61049e",
+              "bytes": 13558
+            },
+            {
+              "kind": "repository",
+              "id": "st-perf",
+              "path": "design/garden-skills/motion-showreel/references/stack.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "b65d2c605ffa101b094e00de9cbea4f8948098d074b431d6851ffd186c61049e",
+              "bytes": 13558
+            },
+            {
+              "kind": "repository",
+              "id": "cr-text",
+              "path": "design/garden-skills/motion-showreel/references/craft.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "48946141d68881eff89870ba4643bfeccd4f1f90c07d495d64f520c6315cd8aa",
+              "bytes": 22521
+            },
+            {
+              "kind": "repository",
+              "id": "ix-use",
+              "path": "design/garden-skills/motion-showreel/references/styles/INDEX.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f276df0a41812ff8dcfe3f7c3c8be455a921208276b90d31e8a6c69b32df388b",
+              "bytes": 10177
+            },
+            {
+              "kind": "repository",
+              "id": "ix-three",
+              "path": "design/garden-skills/motion-showreel/references/styles/INDEX.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f276df0a41812ff8dcfe3f7c3c8be455a921208276b90d31e8a6c69b32df388b",
+              "bytes": 10177
+            },
+            {
+              "kind": "repository",
+              "id": "mm-proxy",
+              "path": "design/garden-skills/motion-showreel/references/styles/mixed-media-era.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5c76c3cb39702a776b608d6f38fe86806e96b58a6e21927564a66c473fa6f0ca",
+              "bytes": 9223
+            },
+            {
+              "kind": "repository",
+              "id": "sd-master",
+              "path": "design/garden-skills/motion-showreel/references/sound.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "e057a7228cfbc0ddf7294776cec20c80c36176e5572a666c024ad6a9f6cd4647",
+              "bytes": 28109
+            },
+            {
+              "kind": "repository",
+              "id": "sd-check",
+              "path": "design/garden-skills/motion-showreel/references/sound.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "e057a7228cfbc0ddf7294776cec20c80c36176e5572a666c024ad6a9f6cd4647",
+              "bytes": 28109
+            },
+            {
+              "kind": "repository",
+              "id": "bt-rule",
+              "path": "design/garden-skills/motion-showreel/references/brief-template.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "da53e1d976569b38d7d2813e032d0815d5d78aafb878f15381fe17bc3e1427ae",
+              "bytes": 9534
+            },
+            {
+              "kind": "repository",
+              "id": "nr-test",
+              "path": "design/garden-skills/motion-showreel/references/narration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "537cc0149cc07da9fd75a0c21e6bc7a81f4cb0c01ce7e53b1f4250c14d934e57",
+              "bytes": 12666
+            },
+            {
+              "kind": "repository",
+              "id": "sc-editor",
+              "path": "design/garden-skills/motion-showreel/scripts/editor.mjs",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "fda2bb166f4661492bb5e3e2bd9fef3d7cd60b1972180407f313d5438e61e559",
+              "bytes": 11822
+            },
+            {
+              "kind": "repository",
+              "id": "sc-export",
+              "path": "design/garden-skills/motion-showreel/scripts/lib/editor-media.mjs",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "a1772acf26831d1dc13abee77f92d7526041aa9ecf9ddfc45798394ffd6af6b7",
+              "bytes": 10233
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "ms-flow",
+              "inline": true,
+              "sha256": "3a90cbc4431960d097519137b23d1dab69bb956600a0f3a4a6ad3bcecc99c965",
+              "bytes": 2437
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "ms-export",
+              "inline": true,
+              "sha256": "e8d49605966397f9961f8a32ce132ae9f900e394aca84cd0151ef254571968c8",
+              "bytes": 1202
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "ms-position",
+              "inline": true,
+              "sha256": "24586919c7c1df0cc8da10e68c8349929a2d6b3f61c477c763aec49157f103e6",
+              "bytes": 911
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "e7bbc528bb08fc81b5615af6b297b47c58a47b73b7978fd63aa69343ee0ee1bc",
+          "bytes": 38252
+        },
+        "artifact": {
+          "sha256": "62795f74ae8e746dc49cc981fffe66acecb15dfca952f9c938664b47d07f6653",
+          "bytes": 3765423
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1451,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "62795f74ae8e746dc49cc981fffe66acecb15dfca952f9c938664b47d07f6653",
+          "bytes": 3765423
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "214 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "77 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "ms-flow: pass",
+              "ms-export: pass",
+              "ms-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "ms-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-iUlsA4/child.html",
+                "artifact": {
+                  "sha256": "35c9c154f967056e0effcebc5477ee430c63d2490f1953bd747bd89d67f30fcf",
+                  "bytes": 849056
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 12,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 7,
+                    "shortEndpointSegmentCount": 7,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "g1-to-s2-1",
+                      "from": "g1",
+                      "to": "s2"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 21
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "ms-export",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-xTbSS3/child.html",
+                "artifact": {
+                  "sha256": "5e4d4cf1d65bc8c6b1dd9a46cfda1ce766b13104a865e6c0b47371b77c04f3b9",
+                  "bytes": 833545
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 28,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 11,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 200.3,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "sequenceColumnSpace": {
+                    "measured": true,
+                    "columnFit": "spread",
+                    "participantCount": 4,
+                    "occupiedRight": 880,
+                    "viewBoxLeft": 0,
+                    "canvasWidth": 920,
+                    "emptyRightPx": 40,
+                    "emptyRightRatio": 0.043,
+                    "typicalParticipantWidth": 175,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "user-to-editor-1",
+                      "from": "user",
+                      "to": "editor"
+                    },
+                    "minimumSourceTextPx": 11,
+                    "minimumProjectedTextPx": 11,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "ms-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-HgFHF4/child.html",
+                "artifact": {
+                  "sha256": "8bd8ac9d41eed2236d5c5570e3f12c0bfa491db85496496c5c7b83ef09a99c06",
+                  "bytes": 833820
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 79.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.568667344862665,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 56.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ms-to-wde-1",
+                      "from": "ms",
+                      "to": "wde"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.568667344862665,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "e461df0b-b3bb-4f88-8dea-71ae542210e2"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/motion-showreel/motion-showreel.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:24:50.945Z",
+  "durationMs": 6112,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

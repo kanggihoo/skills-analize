@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "8c42659e-6b22-49d9-b9f9-b5ef9792d3ed",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/animate-expo/animate-expo.html",
+  "specification": {
+    "sha256": "3328c0a7a899a11a1851645b04dd9ece16f8472397abb39cd83ca2b8b978cdc5",
+    "bytes": 25804
+  },
+  "artifact": {
+    "sha256": "42d65359449ca4386b987406e7cb04033c7cb63049c5173d9fc950d95e1fc57a",
+    "bytes": 2090286
+  },
+  "explainer": {
+    "preparedSha256": "cda7c959cb88a313e05896300a565b178cfd4eb854fab7af8429f0d420ed53c5",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "ex-fm",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-init",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-why",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-posture",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-hard",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s1",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s2",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s3",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-deps",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s4",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s5spring",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s5ease",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s5dur",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s6",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s7",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s8",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-s9",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-setup",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-120",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-recipes",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-never",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "ex-out",
+        "path": "design/emilkowalski/animate-expo/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+        "bytes": 17891
+      },
+      {
+        "kind": "repository",
+        "id": "xr-setup",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-conv",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-gh3",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-work",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-press",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-sheet",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-swipe",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-header",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-list",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-kb",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-tab",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-screen",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-toast",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "xr-thresh",
+        "path": "design/emilkowalski/animate-expo/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+        "bytes": 16808
+      },
+      {
+        "kind": "repository",
+        "id": "an-scope",
+        "path": "design/emilkowalski/animate/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+        "bytes": 11910
+      },
+      {
+        "kind": "repository",
+        "id": "an-toast",
+        "path": "design/emilkowalski/animate/RECIPES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+        "bytes": 7957
+      },
+      {
+        "kind": "repository",
+        "id": "pf-scope",
+        "path": "design/emilkowalski/animation-performance/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+        "bytes": 14269
+      },
+      {
+        "kind": "repository",
+        "id": "mn-scope",
+        "path": "design/emilkowalski/mobile-native/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+        "bytes": 16838
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "expo-flow",
+        "inline": true,
+        "sha256": "f28d7048ba3007e11fef0cfaff80fd122e0e6d498571d2d0db707c21cfd62894",
+        "bytes": 1936
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "expo-position",
+        "inline": true,
+        "sha256": "633529136f30d8b64116b6b6f014f10cac323cd95952fe2f5904c4c610893d30",
+        "bytes": 939
+      }
+    ]
+  }
+}

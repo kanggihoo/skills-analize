@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/candidate.archify.md",
+    "sha256": "678c8efafae60bdf974a3780c1922f94668136a62d4405301e452fa6cd98d08b",
+    "bytes": 21263
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/kb-retriever.html",
+    "sha256": "ece1155e54142aedc6125c81abd5ed6ea7f2dc50fc2ce68e616bd570142b0fec",
+    "bytes": 1280712
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/kb-retriever.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/kb-retriever.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 2302,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

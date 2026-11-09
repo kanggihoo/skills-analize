@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "cf0fc1c6-a171-477a-83c3-4e8445f2b576",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/kb-retriever/kb-retriever.html",
+  "specification": {
+    "sha256": "678c8efafae60bdf974a3780c1922f94668136a62d4405301e452fa6cd98d08b",
+    "bytes": 21263
+  },
+  "artifact": {
+    "sha256": "ece1155e54142aedc6125c81abd5ed6ea7f2dc50fc2ce68e616bd570142b0fec",
+    "bytes": 1280712
+  },
+  "explainer": {
+    "preparedSha256": "7aeb572ac923d766723715c4a19dfe31327460a5874602783fc21ef636f57b28",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "kb-fm",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-root",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-locate",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-learn",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s1",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s2",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s3",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s4",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s5",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-s6",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-kw",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-grep",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-iter",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-note",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-md",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-pdf",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-xls",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-tools",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "kb-style",
+        "path": "design/garden-skills/kb-retriever/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9329fac8ad1935b4eaf973605fa16fd7458db94430aa82de82182114c0039c5f",
+        "bytes": 13984
+      },
+      {
+        "kind": "repository",
+        "id": "rd-what",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-tree",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-setup",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-tmpl",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-table",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-faq",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "rd-tools",
+        "path": "design/garden-skills/kb-retriever/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a109ba0034799b31aab3a83764d670af87419a861fb7830b544c8ac21bfaf5ab",
+        "bytes": 7249
+      },
+      {
+        "kind": "repository",
+        "id": "mf-all",
+        "path": "design/garden-skills/kb-retriever/manifest.json",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "37db739b17760fe6192e4a81e5f39555a90c62008c75fad2719365fcac0af3ee",
+        "bytes": 546
+      },
+      {
+        "kind": "repository",
+        "id": "pr-head",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-table",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-prio",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-quick",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-ocr",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-perf",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "pr-ref",
+        "path": "design/garden-skills/kb-retriever/references/pdf_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a32341ca678840426a9e711267549bdc712017edd058caffe89739970bf0cf83",
+        "bytes": 9486
+      },
+      {
+        "kind": "repository",
+        "id": "er-all",
+        "path": "design/garden-skills/kb-retriever/references/excel_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "220db9c345ffe35c63b75a2f30a0260478d52ccb1a0c2b735a43b2a4edcd149f",
+        "bytes": 1742
+      },
+      {
+        "kind": "repository",
+        "id": "er-big",
+        "path": "design/garden-skills/kb-retriever/references/excel_reading.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "220db9c345ffe35c63b75a2f30a0260478d52ccb1a0c2b735a43b2a4edcd149f",
+        "bytes": 1742
+      },
+      {
+        "kind": "repository",
+        "id": "ea-head",
+        "path": "design/garden-skills/kb-retriever/references/excel_analysis.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ffc645d573d9621c27199ba8929a9dda598ad9a90870df18a2b4f9e1edf47aed",
+        "bytes": 2745
+      },
+      {
+        "kind": "repository",
+        "id": "ea-group",
+        "path": "design/garden-skills/kb-retriever/references/excel_analysis.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ffc645d573d9621c27199ba8929a9dda598ad9a90870df18a2b4f9e1edf47aed",
+        "bytes": 2745
+      },
+      {
+        "kind": "repository",
+        "id": "sc-all",
+        "path": "design/garden-skills/kb-retriever/scripts/convert_pdf_to_images.py",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "095a0105a718af75ede309cb03f84a20c81d17f1727f7686fd4b294f1f40294f",
+        "bytes": 1123
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "kb-flow",
+        "inline": true,
+        "sha256": "8b4ca63e802d5f3cf96cffd2baa74bc16034f644513edced03ed7ba209bd60c8",
+        "bytes": 2011
+      }
+    ]
+  }
+}

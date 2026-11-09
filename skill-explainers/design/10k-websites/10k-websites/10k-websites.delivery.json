@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "6bb4d03c-e058-4c7f-8d24-71ad274875b9",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/10k-websites/10k-websites/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/10k-websites/10k-websites/10k-websites.html",
+  "specification": {
+    "sha256": "911488807177d0dac1f7fc1a681d39ccfb4b11ee50ba3984f34384ab09996ed4",
+    "bytes": 42118
+  },
+  "artifact": {
+    "sha256": "f023dac6c941612cb37eb976ba041424156b08225c9457bd0455a4167f29d4c1",
+    "bytes": 3414993
+  },
+  "explainer": {
+    "preparedSha256": "34f8d963fe251f78a2fcae13cccdf8be29cc3d54332c9c681612fe9cc804e1b7",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "sk-fm",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-intro",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-start",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-pipe",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-type",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-level",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-levelrule",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-talk",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-review",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-gen",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p12",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p34",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p5",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p6",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p78",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p9",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p10",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p11",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-links",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "sk-res",
+        "path": "design/10k-websites/10k-websites/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b13270fd36bacfe3b8b5aaaa7df7db814f7dd06738fac0a7cf285da2a348e364",
+        "bytes": 21728
+      },
+      {
+        "kind": "repository",
+        "id": "htu",
+        "path": "design/10k-websites/10k-websites/HOW-TO-USE.txt",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c569138e001ff636e36083060b92158b1ade7e2a68fe54f62db24477c3557846",
+        "bytes": 1219
+      },
+      {
+        "kind": "repository",
+        "id": "pr-choose",
+        "path": "design/10k-websites/10k-websites/references/production.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a922ea5f1a1cecd33b23738bad5771cf9aab8f34c89c6e2be208211f1d6e4e1",
+        "bytes": 7558
+      },
+      {
+        "kind": "repository",
+        "id": "pr-table",
+        "path": "design/10k-websites/10k-websites/references/production.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a922ea5f1a1cecd33b23738bad5771cf9aab8f34c89c6e2be208211f1d6e4e1",
+        "bytes": 7558
+      },
+      {
+        "kind": "repository",
+        "id": "pr-allow",
+        "path": "design/10k-websites/10k-websites/references/production.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a922ea5f1a1cecd33b23738bad5771cf9aab8f34c89c6e2be208211f1d6e4e1",
+        "bytes": 7558
+      },
+      {
+        "kind": "repository",
+        "id": "oa-connect",
+        "path": "design/10k-websites/10k-websites/references/openart.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a23c1aa22edcc976caf57bb9a690a260ea4046a15b4a3cb8a92c01ac3e2c21d",
+        "bytes": 10522
+      },
+      {
+        "kind": "repository",
+        "id": "oa-exec",
+        "path": "design/10k-websites/10k-websites/references/openart.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a23c1aa22edcc976caf57bb9a690a260ea4046a15b4a3cb8a92c01ac3e2c21d",
+        "bytes": 10522
+      },
+      {
+        "kind": "repository",
+        "id": "oa-wait",
+        "path": "design/10k-websites/10k-websites/references/openart.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a23c1aa22edcc976caf57bb9a690a260ea4046a15b4a3cb8a92c01ac3e2c21d",
+        "bytes": 10522
+      },
+      {
+        "kind": "repository",
+        "id": "oa-bal",
+        "path": "design/10k-websites/10k-websites/references/openart.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a23c1aa22edcc976caf57bb9a690a260ea4046a15b4a3cb8a92c01ac3e2c21d",
+        "bytes": 10522
+      },
+      {
+        "kind": "repository",
+        "id": "oa-cli",
+        "path": "design/10k-websites/10k-websites/references/openart.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9a23c1aa22edcc976caf57bb9a690a260ea4046a15b4a3cb8a92c01ac3e2c21d",
+        "bytes": 10522
+      },
+      {
+        "kind": "repository",
+        "id": "de-job",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-review",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-type",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-motion",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-machine",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-copy",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-floor",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "de-scene",
+        "path": "design/10k-websites/10k-websites/references/design.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b080adcf28c9697008b5341c6e147e00d40cabe6a0b3e926e7b07efdd675002c",
+        "bytes": 15631
+      },
+      {
+        "kind": "repository",
+        "id": "dp-band",
+        "path": "design/10k-websites/10k-websites/references/design-package.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d463be2d5cbaac3d162cf9cdfb3483b7e8527ae4f4737e4629d3075f8b5801ed",
+        "bytes": 10570
+      },
+      {
+        "kind": "repository",
+        "id": "dp-rules",
+        "path": "design/10k-websites/10k-websites/references/design-package.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d463be2d5cbaac3d162cf9cdfb3483b7e8527ae4f4737e4629d3075f8b5801ed",
+        "bytes": 10570
+      },
+      {
+        "kind": "repository",
+        "id": "vv-head",
+        "path": "design/10k-websites/10k-websites/references/visual-validation.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b0b5ea078e5f66d56cf84a11bcdbc3196b3a4782dd7297f257422dcef1fbde7b",
+        "bytes": 6157
+      },
+      {
+        "kind": "repository",
+        "id": "sh-wow",
+        "path": "design/10k-websites/10k-websites/references/shots.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "d39ce5c94111fbcb3f57bc75e78a907a9633dec13dc1421cab88614ef399a21c",
+        "bytes": 26546
+      },
+      {
+        "kind": "repository",
+        "id": "pl-person",
+        "path": "design/10k-websites/10k-websites/references/prompt-laws.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0a4e74b968670f0bd7fcccda7395640586af27dbb36be12c3e9ce64747c09d3b",
+        "bytes": 16349
+      },
+      {
+        "kind": "repository",
+        "id": "en-layout",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-span",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-legib",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-sync",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-track",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-paint",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-depth",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-tools",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "en-self",
+        "path": "design/10k-websites/10k-websites/references/engine.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "90398c65e6db1227f0093eeef53a921a767a8b04881130399e72070473706ca6",
+        "bytes": 21240
+      },
+      {
+        "kind": "repository",
+        "id": "fx-head",
+        "path": "design/10k-websites/10k-websites/references/effects.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "3bd521614b908530934c32d35f9160c6a4fa9838dc01b6a01393165be7d6eba4",
+        "bytes": 6412
+      },
+      {
+        "kind": "repository",
+        "id": "fx-fake",
+        "path": "design/10k-websites/10k-websites/references/effects.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "3bd521614b908530934c32d35f9160c6a4fa9838dc01b6a01393165be7d6eba4",
+        "bytes": 6412
+      },
+      {
+        "kind": "repository",
+        "id": "mo-basics",
+        "path": "design/10k-websites/10k-websites/references/mobile.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f37189cdc12145c9bc4a42a330eb96319419ed0e5cfc7d886986d9c54ac26a2",
+        "bytes": 5772
+      },
+      {
+        "kind": "repository",
+        "id": "mo-phone",
+        "path": "design/10k-websites/10k-websites/references/mobile.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f37189cdc12145c9bc4a42a330eb96319419ed0e5cfc7d886986d9c54ac26a2",
+        "bytes": 5772
+      },
+      {
+        "kind": "repository",
+        "id": "ck-score",
+        "path": "design/10k-websites/10k-websites/references/checklist.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a819f9d4033fb804a7185e1813f8defe795a1e957dd4ef08869ad424ed180a9d",
+        "bytes": 4708
+      },
+      {
+        "kind": "repository",
+        "id": "ck-after",
+        "path": "design/10k-websites/10k-websites/references/checklist.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "a819f9d4033fb804a7185e1813f8defe795a1e957dd4ef08869ad424ed180a9d",
+        "bytes": 4708
+      },
+      {
+        "kind": "repository",
+        "id": "la-search",
+        "path": "design/10k-websites/10k-websites/references/launch.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f33b967bb2caf1a444698ae7e885aa2dbd3654204e78ae97c597d38165dfec54",
+        "bytes": 4569
+      },
+      {
+        "kind": "repository",
+        "id": "la-report",
+        "path": "design/10k-websites/10k-websites/references/launch.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f33b967bb2caf1a444698ae7e885aa2dbd3654204e78ae97c597d38165dfec54",
+        "bytes": 4569
+      },
+      {
+        "kind": "repository",
+        "id": "la-client",
+        "path": "design/10k-websites/10k-websites/references/launch.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f33b967bb2caf1a444698ae7e885aa2dbd3654204e78ae97c597d38165dfec54",
+        "bytes": 4569
+      },
+      {
+        "kind": "repository",
+        "id": "dl-target",
+        "path": "design/10k-websites/10k-websites/references/deploy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "955f5fe466207efe7213d7bdf60dd946fc5f34085da15f8df80d5e86d3eba9f4",
+        "bytes": 6896
+      },
+      {
+        "kind": "repository",
+        "id": "dl-archive",
+        "path": "design/10k-websites/10k-websites/references/deploy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "955f5fe466207efe7213d7bdf60dd946fc5f34085da15f8df80d5e86d3eba9f4",
+        "bytes": 6896
+      },
+      {
+        "kind": "repository",
+        "id": "dl-verify",
+        "path": "design/10k-websites/10k-websites/references/deploy.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "955f5fe466207efe7213d7bdf60dd946fc5f34085da15f8df80d5e86d3eba9f4",
+        "bytes": 6896
+      },
+      {
+        "kind": "repository",
+        "id": "be-choice",
+        "path": "design/10k-websites/10k-websites/references/backend.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c9ab6e63d167ad0f8e17391e42ca1de6a3658bfdf122fbd10f295fa6cc2b7b24",
+        "bytes": 7178
+      },
+      {
+        "kind": "repository",
+        "id": "be-safety",
+        "path": "design/10k-websites/10k-websites/references/backend.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c9ab6e63d167ad0f8e17391e42ca1de6a3658bfdf122fbd10f295fa6cc2b7b24",
+        "bytes": 7178
+      },
+      {
+        "kind": "repository",
+        "id": "be-owner",
+        "path": "design/10k-websites/10k-websites/references/backend.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c9ab6e63d167ad0f8e17391e42ca1de6a3658bfdf122fbd10f295fa6cc2b7b24",
+        "bytes": 7178
+      },
+      {
+        "kind": "repository",
+        "id": "be-record",
+        "path": "design/10k-websites/10k-websites/references/backend.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c9ab6e63d167ad0f8e17391e42ca1de6a3658bfdf122fbd10f295fa6cc2b7b24",
+        "bytes": 7178
+      },
+      {
+        "kind": "repository",
+        "id": "tr-three",
+        "path": "design/10k-websites/10k-websites/references/troubleshooting.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c4e1218fa7eb759d610f8f825544d7a6d0fcdd4779734be3d775ea5766420eac",
+        "bytes": 23312
+      },
+      {
+        "kind": "repository",
+        "id": "tr-size",
+        "path": "design/10k-websites/10k-websites/references/troubleshooting.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c4e1218fa7eb759d610f8f825544d7a6d0fcdd4779734be3d775ea5766420eac",
+        "bytes": 23312
+      },
+      {
+        "kind": "repository",
+        "id": "tr-hang",
+        "path": "design/10k-websites/10k-websites/references/troubleshooting.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c4e1218fa7eb759d610f8f825544d7a6d0fcdd4779734be3d775ea5766420eac",
+        "bytes": 23312
+      },
+      {
+        "kind": "repository",
+        "id": "ff-head",
+        "path": "design/10k-websites/10k-websites/references/ffmpeg-recipes.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "9b66d9190bf0cfd9088a3b25f8701c5a478b01a836ef1a3a2613251096a7905a",
+        "bytes": 7857
+      },
+      {
+        "kind": "repository",
+        "id": "pg-head",
+        "path": "design/10k-websites/10k-websites/references/pages.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "6ce420c63b8a927acdceac261b45715adf420195fbce4a2d13dca6327e5a0791",
+        "bytes": 3334
+      },
+      {
+        "kind": "repository",
+        "id": "tk-head",
+        "path": "design/10k-websites/10k-websites/tools/track.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "2f8feba559289114d725b14ccbb3671e627138ac3d854f53be7a4ba5a5017d88",
+        "bytes": 36315
+      },
+      {
+        "kind": "repository",
+        "id": "ts-fail",
+        "path": "design/10k-websites/10k-websites/tools/typesync.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "44d2110fba51c32b0d736f5f244f64d1473630f6774de4dee6ba91ab34abb32c",
+        "bytes": 13372
+      },
+      {
+        "kind": "repository",
+        "id": "cm-dead",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-band",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-contrast",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-phone",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-reduced",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-reuse",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "cm-exit",
+        "path": "design/10k-websites/10k-websites/tools/check.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9ef9c281a852de9399bb730235df641a99ae8836d80b4afc52e29c0da5794",
+        "bytes": 34928
+      },
+      {
+        "kind": "repository",
+        "id": "enc-head",
+        "path": "design/10k-websites/10k-websites/tools/encode.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "24ffa34b03df4040ac07cf7003b246335e7db89ffc362b676bf67ae00b9a39ce",
+        "bytes": 9979
+      },
+      {
+        "kind": "repository",
+        "id": "enc-fit",
+        "path": "design/10k-websites/10k-websites/tools/encode.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "24ffa34b03df4040ac07cf7003b246335e7db89ffc362b676bf67ae00b9a39ce",
+        "bytes": 9979
+      },
+      {
+        "kind": "repository",
+        "id": "enc-phone",
+        "path": "design/10k-websites/10k-websites/tools/encode.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "24ffa34b03df4040ac07cf7003b246335e7db89ffc362b676bf67ae00b9a39ce",
+        "bytes": 9979
+      },
+      {
+        "kind": "repository",
+        "id": "us-head",
+        "path": "design/10k-websites/10k-websites/tools/usage.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "911ab5eab670b4936314b2d96eebe2ddf1f818735cf76deebd7ac2c8122123b1",
+        "bytes": 5525
+      },
+      {
+        "kind": "repository",
+        "id": "us-read",
+        "path": "design/10k-websites/10k-websites/tools/usage.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "911ab5eab670b4936314b2d96eebe2ddf1f818735cf76deebd7ac2c8122123b1",
+        "bytes": 5525
+      },
+      {
+        "kind": "repository",
+        "id": "us-dir",
+        "path": "design/10k-websites/10k-websites/tools/usage.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "911ab5eab670b4936314b2d96eebe2ddf1f818735cf76deebd7ac2c8122123b1",
+        "bytes": 5525
+      },
+      {
+        "kind": "repository",
+        "id": "sv-bind",
+        "path": "design/10k-websites/10k-websites/tools/server.mjs",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "6e3d42ba5f671f749c03b4d8d0a763a813164ccea95964dfbb890a28418a7379",
+        "bytes": 6086
+      },
+      {
+        "kind": "repository",
+        "id": "lb-stamp",
+        "path": "design/10k-websites/10k-websites/backend/api/lib.php",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "30b9309e5209248606a8bbb21f0300c6976be13d969c77572aec257134b77b94",
+        "bytes": 10099
+      },
+      {
+        "kind": "repository",
+        "id": "sb-rate",
+        "path": "design/10k-websites/10k-websites/backend/api/submit.php",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0d6d5eb8683292f1cfce64bb28e92fb7ed370468ab9220ff18639e99729d5304",
+        "bytes": 3526
+      },
+      {
+        "kind": "repository",
+        "id": "ad-lock",
+        "path": "design/10k-websites/10k-websites/backend/admin/index.php",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "3e7d009a33c2c97bd81099d9380e2bdb1739f470a9e92b060832af233cd5d166",
+        "bytes": 11660
+      },
+      {
+        "kind": "repository",
+        "id": "pkg",
+        "path": "design/10k-websites/10k-websites/tools/package.json",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "bf12787a9185fd1a6c476fa97d962697d2e763919ed175d9f972527e0f6529b5",
+        "bytes": 625
+      },
+      {
+        "kind": "repository",
+        "id": "dtf-desc",
+        "path": "design/taste/design-taste-frontend/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f2fe0fb10f4c7d742866d1869a2ce4b16d14e9819612bf0245738705d806062f",
+        "bytes": 21111
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "build-flow",
+        "inline": true,
+        "sha256": "a3d71f057c0aea340c26ba37d121c26a0fce92e117eac700d66b672bc9dc7986",
+        "bytes": 2142
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "project-layout",
+        "inline": true,
+        "sha256": "845fae3c49617ad71664c364ae30ab00e48799a92508de6f86dac9e3f2a7076f",
+        "bytes": 926
+      }
+    ]
+  }
+}

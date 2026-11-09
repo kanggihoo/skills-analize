@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:19:17.445Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/candidate.archify.md",
+    "sha256": "d86af9adc09614c4eccd11b4197b4e81f715ba6e04489dcd7868b3bd14e6dce7",
+    "bytes": 24755
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+    "sha256": "6fd583a76765f4b6faf3cd9792c3161a35b61d52d75274517d0d2c4fd4df82d0",
+    "bytes": 2034709
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "d86af9adc09614c4eccd11b4197b4e81f715ba6e04489dcd7868b3bd14e6dce7",
+          "bytes": 24755
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1318,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "1bf72a4b-833e-4de2-bb4f-aebce96b0b9b",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+        "explainer": {
+          "preparedSha256": "e1f0353cc821e904177c8ef44b1782106d6323aca19b9131c794746752fdab7c",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "ede-fm",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-init",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-phil",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-review",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-freq",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-purpose",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-easing",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-dur",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-perc",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-spring",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-springcfg",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-button",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-scale0",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-origin",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-tooltip",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-trans",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-blur",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-start",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-transform",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-clip",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-gesture",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-perf",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-motion",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-cssjs",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-a11y",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-sonner",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-cohesion",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-nextday",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-asym",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-stagger",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-debug",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "ede-check",
+              "path": "design/emilkowalski/emil-design-eng/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+              "bytes": 27509
+            },
+            {
+              "kind": "repository",
+              "id": "bu-desc",
+              "path": "design/emilkowalski/break-ui/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+              "bytes": 14380
+            },
+            {
+              "kind": "repository",
+              "id": "bu-scope",
+              "path": "design/emilkowalski/break-ui/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+              "bytes": 14380
+            },
+            {
+              "kind": "repository",
+              "id": "ad-desc",
+              "path": "design/emilkowalski/apple-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+              "bytes": 23036
+            },
+            {
+              "kind": "repository",
+              "id": "ra-desc",
+              "path": "design/emilkowalski/review-animations/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+              "bytes": 8491
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "anim-decision",
+              "inline": true,
+              "sha256": "a43df7b895bf4c010ccd8e6150437c1cd5bfde3771145c78bb41ce3c9d62c005",
+              "bytes": 1246
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "d86af9adc09614c4eccd11b4197b4e81f715ba6e04489dcd7868b3bd14e6dce7",
+          "bytes": 24755
+        },
+        "artifact": {
+          "sha256": "6fd583a76765f4b6faf3cd9792c3161a35b61d52d75274517d0d2c4fd4df82d0",
+          "bytes": 2034709
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 659,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "6fd583a76765f4b6faf3cd9792c3161a35b61d52d75274517d0d2c4fd4df82d0",
+          "bytes": 2034709
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "157 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "37 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "anim-decision: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "anim-decision",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-h6sPeA/child.html",
+                "artifact": {
+                  "sha256": "4daaf7def252c15a74d37a82929a82ffbf6a297480a366f2da4cfaa8ef3badde",
+                  "bytes": 836912
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.395626242544732,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "q1-to-none-1",
+                      "from": "q1",
+                      "to": "none"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.395626242544732,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "1bf72a4b-833e-4de2-bb4f-aebce96b0b9b"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/emilkowalski/emil-design-eng/emil-design-eng.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:19:19.676Z",
+  "durationMs": 2231,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d2be5462-b352-428d-a889-293e5abc1328",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-garden-visual/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/_group-garden-visual/garden-visual.html",
+  "specification": {
+    "sha256": "4eb3f0e1ca1c41cb8216bf97787e0ee6c506470f9c54ccbd648c158052f331a8",
+    "bytes": 9086
+  },
+  "artifact": {
+    "sha256": "e42d938d12cc42a04a92781ebf2c1c9a076dd14821841830572fddd1af3e5f5e",
+    "bytes": 1134010
+  },
+  "explainer": {
+    "preparedSha256": "35df54dd35a35a2106b041b217b68eaf5f7d6f1b7d4c8996b5507e349c837b47",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "ba-fm",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "ba-flow",
+        "path": "design/garden-skills/beautiful-article/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0ca56194c1c799ce1cee785f35d108b56564720f721803f4a7a57ffe6ecc0118",
+        "bytes": 31482
+      },
+      {
+        "kind": "repository",
+        "id": "ba-readme",
+        "path": "design/garden-skills/beautiful-article/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "85a0ef24db463dc6ecae790eb25b3697e18c67b2778e34d3a50f38eb00142b52",
+        "bytes": 24181
+      },
+      {
+        "kind": "repository",
+        "id": "gi-fm",
+        "path": "design/garden-skills/gpt-image-2/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+        "bytes": 26643
+      },
+      {
+        "kind": "repository",
+        "id": "gi-out",
+        "path": "design/garden-skills/gpt-image-2/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+        "bytes": 26643
+      },
+      {
+        "kind": "repository",
+        "id": "gi-switch",
+        "path": "design/garden-skills/gpt-image-2/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+        "bytes": 26643
+      },
+      {
+        "kind": "repository",
+        "id": "ms-fm",
+        "path": "design/garden-skills/motion-showreel/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+        "bytes": 32386
+      },
+      {
+        "kind": "repository",
+        "id": "ms-scope",
+        "path": "design/garden-skills/motion-showreel/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+        "bytes": 32386
+      },
+      {
+        "kind": "repository",
+        "id": "ms-len",
+        "path": "design/garden-skills/motion-showreel/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+        "bytes": 32386
+      },
+      {
+        "kind": "repository",
+        "id": "wv-fm",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "wv-cp",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "wd-fm",
+        "path": "design/garden-skills/web-design-engineer/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1",
+        "bytes": 35406
+      },
+      {
+        "kind": "repository",
+        "id": "wd-scope",
+        "path": "design/garden-skills/web-design-engineer/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1",
+        "bytes": 35406
+      },
+      {
+        "kind": "repository",
+        "id": "wd-img",
+        "path": "design/garden-skills/web-design-engineer/references/design-calibration.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "754086f26f7f880cb23559a16b446847c72673a8428087bc539da2d9137fd8e3",
+        "bytes": 6139
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "garden-route",
+        "inline": true,
+        "sha256": "5905dc7afdbdaf53db217d589e91c3d05f65e089bbfefe74a74cfbcc5ac309be",
+        "bytes": 1484
+      }
+    ]
+  }
+}

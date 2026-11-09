@@ -209,3 +209,50 @@
 | stress-test (an idea) | 반박해 본다 | 스트레스 테스트한다 | egm-brainstorm·egm-draft. 맞장구보다 약점 찾기를 앞세운다 |
 | preset (review) | preset | 프리셋 | egm-review의 네 가지 실행 방식. 개발 용어라 영어 유지 |
 | scout (goldfish-explorer) | scout | 정찰병, 스카우트 | egm-bootstrap의 읽기 전용 코드 탐색 서브에이전트. 영어 유지 |
+| easing | easing | 이징, 완화 함수 | design 모션 스킬. 영어 유지 |
+| spring (animation) | spring | 스프링, 용수철 | design 모션 스킬. damping ratio·response와 함께 영어 유지 |
+| stagger | stagger | 스태거, 엇갈림 | 처음만 `stagger(요소마다 시작을 조금씩 늦추기)` |
+| reduced motion | reduced motion | 동작 줄이기, 모션 감소 | `prefers-reduced-motion`. 영어 유지 |
+| jank | jank(끊김) | 쟁크 | animation-performance. 처음만 풀이 |
+| frame budget | 프레임 예산 | 프레임 버짓 | 60Hz 16.7ms, 120Hz 8ms |
+| interruptible (animation) | 중간에 끊을 수 있는 | 인터럽트 가능한 | emil-design-eng, apple-design |
+| rubber-banding | rubber-banding(끝에서 넘어갈수록 커지는 저항) | 고무줄 효과 | 처음만 풀이 |
+| frequency gate | 빈도 관문 | 빈도 게이트 | animate·animate-expo. 하루 100번 넘게 쓰는 동작이면 애니메이션 없음 |
+| delight | 즐거움을 위한 연출 | 딜라이트 | emil 모션 스킬. 드물거나 처음 보는 순간에만 허용 |
+| feel check | 느낌 확인 | 필 체크 | 코드로 판단할 수 없어 사람이 재생하거나 기기로 보는 확인 |
+| Block / Approve | `Block` / `Approve`(원어 유지) | 차단 / 승인 | review-animations의 판정 결과 |
+| severity | 심각도 | 세버리티 | 값 `HIGH`/`MEDIUM`/`LOW`는 영어 유지 |
+| executor (plan) | 실행 서브에이전트 | 집행자 | improve-animations `execute` |
+| picker (prototype) | 선택기 | 피커 | prototype의 버전 전환 UI. `PICKER.md` |
+| variant (prototype) | 버전 | 변형, 배리언트 | prototype의 후보 UI. cva의 variant prop과 구분 |
+| harness (prototype) | 비교 화면 | 하네스 | prototype의 격리된 비교 화면. 기존 `harness`(앱을 조작하는 스크립트 묶음)와 뜻이 다르다 |
+| fixture | fixture | 픽스처, 고정 데이터 | break-ui. 영어 유지 |
+| worst case (data) | 최악 데이터 | 워스트 케이스 | break-ui |
+| safe area | safe area(notch·홈 표시줄을 피한 영역) | 안전 영역 | mobile-native. 처음만 풀이 |
+| browser chrome | 브라우저 chrome(주소창·상태 표시줄 같은 틀) | 크롬 | mobile-native. `window chrome`과 구분 |
+| chrome (stage) | chrome(머리글·바닥글·쪽 번호 같은 장식 틀) | 크롬, 장식 | web-video-presentation. 처음만 풀이 |
+| data race | data race | 데이터 경쟁 | write-swift |
+| CTA | CTA(행동 유도 버튼) | 콜투액션 | landing-page-design. 처음만 풀이 |
+| type scale | type scale | 타입 스케일 | Tailwind 기본 글자 크기 단계 |
+| house rule | house rule(스킬 안 다른 규칙보다 앞서는 기본 규칙) | 하우스 룰 | design-taste-frontend. 처음만 풀이 |
+| deal (layout/palette) | 뽑기(deal) | 딜, 거래 | design-taste-frontend. 이력 파일을 남기는 스크립트 무작위 선택 |
+| comp | comp | 컴프, 목업 | impeccable. 처음만 `comp(이미지로 만든 완성 시안)` |
+| craft floor | 품질 하한(`craft-floor.md`) | 크래프트 플로어 | impeccable. UI 편집 전에 읽는 하한과 금지 목록 |
+| detector | detector | 탐지기, 디텍터 | impeccable 규칙 검사 엔진 |
+| launcher | launcher | 런처, 실행기 | 엔진 바이너리를 찾거나 내려받는 스크립트 |
+| degraded run | 축소 실행 | 열화 실행 | impeccable. 서브에이전트 없이 한 맥락에서 돌린 경우 |
+| production level | 제작 등급 | 프로덕션 레벨 | 10k-websites. 등급 이름(Full throttle 등)은 원어 유지 |
+| scrub (video) | scrub(스크롤 위치로 영상 시점을 옮김) | 스크러빙 | 10k-websites. 처음만 풀이 |
+| partner link | partner 링크(제작자 수익 링크) | 제휴 링크, 어필리에이트 | 10k-websites |
+| Checkpoint (garden-skills) | Checkpoint 1·2·3, `Checkpoint Plan`(원어 유지) | 체크포인트 | beautiful-article, web-video-presentation의 단계 이름. 뜻은 "사람 확인 지점" |
+| information retention (信息保留) | 정보 보존 비율 | 정보 유지율, 리텐션 | beautiful-article. 글 유형마다 표준 비율이 있다 |
+| brief (motion-showreel) | brief(`brief.md`) | 브리프 | 영상 기획서 파일. 서브에이전트 "지시문"과 구분 |
+| proxy (render) | 저해상도 프록시 | 프록시 영상 | motion-showreel. 미리보기용 저화질 MP4. `proxy (verification)`과 구분 |
+| narration | narration | 내레이션, 해설 | web-video-presentation. 처음만 `narration(step마다 읽을 구어 문구)` |
+| host agent | 호스트 에이전트 | 숙주, 宿主 | 스킬을 실행하는 바깥 에이전트. gpt-image-2 Mode B |
+| Advisor mode | Advisor 모드 | 고문 모드 | gpt-image-2 Mode C. 프롬프트만 준다 |
+| mask (image edit) | 마스크 | 가면, 蒙版 | gpt-image-2. 편집할 영역을 표시한 이미지. `mask (video)`와 구분 |
+| anchor (design reference) | anchor | 앵커, 기준점 | web-design-engineer. 처음만 `anchor(기준으로 삼는 실제 브랜드·스튜디오)` |
+| placeholder | 자리표시 | 플레이스홀더 | `[icon]`, `16:9 image` 같은 정직한 빈자리 |
+| knowledge base (local) | 지식 폴더 | 지식 베이스, 지식창고 | kb-retriever. 로컬 폴더 `knowledge/` |
+| progressive retrieval | 단계적 검색 | 점진적 검색 | kb-retriever. `progressive disclosure`와 구분 |

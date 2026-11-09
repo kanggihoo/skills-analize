@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/candidate.archify.md",
+    "sha256": "0efd7cb0912708fe207d8c191cc3c90e9a9b2fecc86715daa6bed61c209a2b11",
+    "bytes": 42182
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/beautiful-article.html",
+    "sha256": "88bef323236b4f469c9e93f1d107c0383231bbdc69f805a506b813c8f8aa5772",
+    "bytes": 3457286
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/beautiful-article.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/beautiful-article/beautiful-article.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 2664,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

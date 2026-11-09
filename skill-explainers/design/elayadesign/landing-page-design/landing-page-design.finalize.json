@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:20:09.173Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+    "sha256": "2e30ecab5968a828ffc4a2794dfa539222eea181e9a17ba35a1ec55276e02b57",
+    "bytes": 26797
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+    "sha256": "998794565e9fd43d03c7f0d4fa6da45d06cacd611569b09a20258c5cedcddfdb",
+    "bytes": 1744199
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "2e30ecab5968a828ffc4a2794dfa539222eea181e9a17ba35a1ec55276e02b57",
+          "bytes": 26797
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1228,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "32e3f522-3239-4292-920b-4ba38f3abe67",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+        "explainer": {
+          "preparedSha256": "e425080c97e206264b6b4ad4d6c1ca206c44a20d94fa7979bb962f4328acff4f",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "lp-fm",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-intro",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-scope",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-intake",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-struct",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-layout",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-conv",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-copy",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-build",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-seo",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-pit",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-font",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-copyrule",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-scale",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-styles",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-space",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-radius",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-bg",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-hero",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-icon",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-motion",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-nav",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-reveal",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-real",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-states",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-ship",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-tag",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-out",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-check",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-credit",
+              "path": "design/elayadesign/landing-page-design/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0c0ad9323121c0cc4f52b637f64a3a446016f065ae9ebf012dab210559f03d5f",
+              "bytes": 22115
+            },
+            {
+              "kind": "repository",
+              "id": "lp-lock",
+              "path": "design/elayadesign/skills-lock.json",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "848680e5e03b4143fdfaad2b2bbec4a19f65bd70e2a59e00e4f63e931fb918a5",
+              "bytes": 298
+            },
+            {
+              "kind": "repository",
+              "id": "tf-desc",
+              "path": "design/taste/design-taste-frontend/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "f2fe0fb10f4c7d742866d1869a2ce4b16d14e9819612bf0245738705d806062f",
+              "bytes": 21111
+            },
+            {
+              "kind": "repository",
+              "id": "tf-lock",
+              "path": "design/taste/skills-lock.json",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "59b4b120ef5ad233e203974779d246863372231dd7cfd14c04f294b514343dbb",
+              "bytes": 284
+            },
+            {
+              "kind": "repository",
+              "id": "im-desc",
+              "path": "design/impeccable/impeccable/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "fab04b31f946573b00a8559db1fc070f8ea5825254d491c2b13156e5661a86d7",
+              "bytes": 11762
+            },
+            {
+              "kind": "repository",
+              "id": "wde-desc",
+              "path": "design/garden-skills/web-design-engineer/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1",
+              "bytes": 35406
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "strategy-flow",
+              "inline": true,
+              "sha256": "9605257074f25ecfcbde3cf783928dfbdb7828ca6d9283aca818490496a4711d",
+              "bytes": 1225
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "2e30ecab5968a828ffc4a2794dfa539222eea181e9a17ba35a1ec55276e02b57",
+          "bytes": 26797
+        },
+        "artifact": {
+          "sha256": "998794565e9fd43d03c7f0d4fa6da45d06cacd611569b09a20258c5cedcddfdb",
+          "bytes": 1744199
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-cliche",
+            "severity": "warning",
+            "message": "This stock phrase gives little information about the concrete outcome.",
+            "subject": {
+              "line": 194,
+              "component": "comparison",
+              "panelId": "visual-behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "cliche",
+              "reason": "This stock phrase gives little information about the concrete outcome.",
+              "example": "赋能业务 → 让客服查到订单状态; seamless → name what no longer needs a manual step",
+              "matched": "cutting edge"
+            },
+            "supportedFixes": [
+              "Replace the stock phrase with the specific action or outcome the reader needs."
+            ]
+          }
+        ],
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      },
+      "stderr": "archify: This stock phrase gives little information about the concrete outcome."
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 693,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "998794565e9fd43d03c7f0d4fa6da45d06cacd611569b09a20258c5cedcddfdb",
+          "bytes": 1744199
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "150 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "36 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "strategy-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "strategy-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-vKueIn/child.html",
+                "artifact": {
+                  "sha256": "32223970726b0dd32e69d9b95927494098c61f34bc50eb2908786eaeaf9d3c50",
+                  "bytes": 835284
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 128.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.244401168451802,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "sf-out-to-sf-build-1",
+                      "from": "sf-out",
+                      "to": "sf-build"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.244401168451802,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "32e3f522-3239-4292-920b-4ba38f3abe67"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [
+    {
+      "code": "explainer/writing-cliche",
+      "severity": "warning",
+      "message": "This stock phrase gives little information about the concrete outcome.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+        "line": 194,
+        "component": "comparison",
+        "panelId": "visual-behavior"
+      },
+      "evidence": {
+        "reason": "This stock phrase gives little information about the concrete outcome.",
+        "example": "赋能业务 → 让客服查到订单状态; seamless → name what no longer needs a manual step",
+        "rule": "cliche",
+        "matched": "cutting edge"
+      },
+      "supportedFixes": [
+        "Replace the stock phrase with the specific action or outcome the reader needs."
+      ]
+    }
+  ],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:20:11.486Z",
+  "durationMs": 2313,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

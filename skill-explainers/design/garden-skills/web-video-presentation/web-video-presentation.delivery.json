@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "ec3b2ccd-0826-4b9a-b123-4b8ddcff5c6f",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/web-video-presentation/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/web-video-presentation/web-video-presentation.html",
+  "specification": {
+    "sha256": "3d224226ffab44d0f6c90d2684d9d6af8d2557e03f12aa04eac7c99e8a62ac8f",
+    "bytes": 39802
+  },
+  "artifact": {
+    "sha256": "8169b10b4e75c6be6d76cd0d065fe932fb34e1e14eaffdf65f73af7b5d4ebfd0",
+    "bytes": 3185828
+  },
+  "explainer": {
+    "preparedSha256": "6fb5976431e9bf8b2a23a18728164b44372748a650f7dad9bff287dc105ceae5",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "sk-fm",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-scope",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-flow",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-dir",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-truth",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-self",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-read",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-input",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-12",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-bound",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-cpp",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-cpp-tpl",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-cpp-fb",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-scaf",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-ch1",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-modes",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-sub",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-24",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-25",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-cpa",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p3",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-p4",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-ten",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "sk-fbk",
+        "path": "design/garden-skills/web-video-presentation/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0197b0dcbaad0a018ed645cb6ea241dda54c509d920a1b49ba3d516cc0f57f34",
+        "bytes": 23239
+      },
+      {
+        "kind": "repository",
+        "id": "cc-ppt",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-reveal",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-dual",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-look",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-ai",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-frame",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-token",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-eng",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "cc-check",
+        "path": "design/garden-skills/web-video-presentation/references/CHAPTER-CRAFT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "017012946c8dec0fd15f0d3e8beaff276e313c3ee8193d7ea5d6aee6b3838290",
+        "bytes": 10676
+      },
+      {
+        "kind": "repository",
+        "id": "of-cc",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-box",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-dur",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-meta",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-pool",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-step",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-split",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "of-check",
+        "path": "design/garden-skills/web-video-presentation/references/OUTLINE-FORMAT.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "ca0c3b3128a8bb3aced7be72013a484af13fd475622b8daf58db35f0ecc7bfea",
+        "bytes": 8523
+      },
+      {
+        "kind": "repository",
+        "id": "ss-base",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-keep",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-short",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-hook",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-sep",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-ai",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-plat",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-check",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "ss-same",
+        "path": "design/garden-skills/web-video-presentation/references/SCRIPT-STYLE.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "c0334ca9ee5409c65e25cdd2aa0c3c7499cef52f240453bad50c5c9d9a374453",
+        "bytes": 17950
+      },
+      {
+        "kind": "repository",
+        "id": "au-truth",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-extract",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-mmx",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-oai",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-fall",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-len",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-run",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "au-5000",
+        "path": "design/garden-skills/web-video-presentation/references/AUDIO.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "99923bf8b90fc710c827dd4de3477f6376ef5d62618c199a491450f726bc1aaf",
+        "bytes": 11126
+      },
+      {
+        "kind": "repository",
+        "id": "rc-auto",
+        "path": "design/garden-skills/web-video-presentation/references/RECORDING.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "22c5957614d53f0e4e9f4b38e2ba47700bcad0a99688421b0a74072cd67463b9",
+        "bytes": 2988
+      },
+      {
+        "kind": "repository",
+        "id": "rc-modes",
+        "path": "design/garden-skills/web-video-presentation/references/RECORDING.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "22c5957614d53f0e4e9f4b38e2ba47700bcad0a99688421b0a74072cd67463b9",
+        "bytes": 2988
+      },
+      {
+        "kind": "repository",
+        "id": "th-one",
+        "path": "design/garden-skills/web-video-presentation/references/THEMES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e056b937952b41b154fc3c2782388c3e3acd278feb36e30825160d4503f37937",
+        "bytes": 23359
+      },
+      {
+        "kind": "repository",
+        "id": "th-list",
+        "path": "design/garden-skills/web-video-presentation/references/THEMES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e056b937952b41b154fc3c2782388c3e3acd278feb36e30825160d4503f37937",
+        "bytes": 23359
+      },
+      {
+        "kind": "repository",
+        "id": "th-rule",
+        "path": "design/garden-skills/web-video-presentation/references/THEMES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e056b937952b41b154fc3c2782388c3e3acd278feb36e30825160d4503f37937",
+        "bytes": 23359
+      },
+      {
+        "kind": "repository",
+        "id": "th-meta",
+        "path": "design/garden-skills/web-video-presentation/references/THEMES.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "e056b937952b41b154fc3c2782388c3e3acd278feb36e30825160d4503f37937",
+        "bytes": 23359
+      },
+      {
+        "kind": "repository",
+        "id": "ex-not",
+        "path": "design/garden-skills/web-video-presentation/references/EXAMPLES/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "f54c15e8f46f8ed3b8bd1a060fb9f798d85afccec5acbe7cc104a5319a695a11",
+        "bytes": 5155
+      },
+      {
+        "kind": "repository",
+        "id": "ct-old",
+        "path": "design/garden-skills/web-video-presentation/references/EXAMPLES/case-tech-review/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "df1cdc8b1ef482a2edae827538ef9dd8e9bf825a2932d0f71eb1ac2138756da2",
+        "bytes": 2917
+      },
+      {
+        "kind": "repository",
+        "id": "rd-flow",
+        "path": "design/garden-skills/web-video-presentation/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "32f07fadcabc1549e20d20a07ec59659fb9373158f19b68db10472251a2d12e0",
+        "bytes": 17939
+      },
+      {
+        "kind": "repository",
+        "id": "rd-ships",
+        "path": "design/garden-skills/web-video-presentation/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "32f07fadcabc1549e20d20a07ec59659fb9373158f19b68db10472251a2d12e0",
+        "bytes": 17939
+      },
+      {
+        "kind": "repository",
+        "id": "rd-map",
+        "path": "design/garden-skills/web-video-presentation/README.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "32f07fadcabc1549e20d20a07ec59659fb9373158f19b68db10472251a2d12e0",
+        "bytes": 17939
+      },
+      {
+        "kind": "repository",
+        "id": "sc-def",
+        "path": "design/garden-skills/web-video-presentation/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "42da66790da184fc9e6eea0af5ddfbc8cec74b382943e5e6f2a28402509594f7",
+        "bytes": 9537
+      },
+      {
+        "kind": "repository",
+        "id": "sc-guard",
+        "path": "design/garden-skills/web-video-presentation/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "42da66790da184fc9e6eea0af5ddfbc8cec74b382943e5e6f2a28402509594f7",
+        "bytes": 9537
+      },
+      {
+        "kind": "repository",
+        "id": "sc-tsc",
+        "path": "design/garden-skills/web-video-presentation/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "42da66790da184fc9e6eea0af5ddfbc8cec74b382943e5e6f2a28402509594f7",
+        "bytes": 9537
+      },
+      {
+        "kind": "repository",
+        "id": "sc-msg",
+        "path": "design/garden-skills/web-video-presentation/scripts/scaffold.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "42da66790da184fc9e6eea0af5ddfbc8cec74b382943e5e6f2a28402509594f7",
+        "bytes": 9537
+      },
+      {
+        "kind": "repository",
+        "id": "vite",
+        "path": "design/garden-skills/web-video-presentation/templates/vite.config.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "810719bf806eaa6d6606e8c67a1a9a9e21322a4252a451af4d525d66bae3cc96",
+        "bytes": 196
+      },
+      {
+        "kind": "repository",
+        "id": "app-est",
+        "path": "design/garden-skills/web-video-presentation/templates/src/App.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b878c2a0f869f947a3160ef588483cd897ffd543f9ad810c839e598b46c41fde",
+        "bytes": 2487
+      },
+      {
+        "kind": "repository",
+        "id": "st-key",
+        "path": "design/garden-skills/web-video-presentation/templates/src/hooks/useStepper.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5b82b58e9f7407ebaf6b0698f7c59eae729124b5d76334bfecf4e276b2538f21",
+        "bytes": 5192
+      },
+      {
+        "kind": "repository",
+        "id": "st-next",
+        "path": "design/garden-skills/web-video-presentation/templates/src/hooks/useStepper.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5b82b58e9f7407ebaf6b0698f7c59eae729124b5d76334bfecf4e276b2538f21",
+        "bytes": 5192
+      },
+      {
+        "kind": "repository",
+        "id": "st-kbd",
+        "path": "design/garden-skills/web-video-presentation/templates/src/hooks/useStepper.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "5b82b58e9f7407ebaf6b0698f7c59eae729124b5d76334bfecf4e276b2538f21",
+        "bytes": 5192
+      },
+      {
+        "kind": "repository",
+        "id": "am-kbd",
+        "path": "design/garden-skills/web-video-presentation/templates/src/hooks/useAutoMode.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "28263924cf2d67866f77c8b62eebe0bd85a44bb45e43bafbd2337e3c160373d9",
+        "bytes": 2473
+      },
+      {
+        "kind": "repository",
+        "id": "ap-auto",
+        "path": "design/garden-skills/web-video-presentation/templates/src/hooks/useAudioPlayer.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "b07c8ee988df4e9fd54c69d42ed65ba5275875862f3ebc1e273a37274036b7f0",
+        "bytes": 3768
+      },
+      {
+        "kind": "repository",
+        "id": "stage",
+        "path": "design/garden-skills/web-video-presentation/templates/src/components/Stage.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "911ed9d9a4c707e31529079ac5ff895f062541e5fab6d58514830429ac858fa0",
+        "bytes": 1507
+      },
+      {
+        "kind": "repository",
+        "id": "pb-gh",
+        "path": "design/garden-skills/web-video-presentation/templates/src/components/ProgressBar.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "56f3296aa9e27345ca07f88d4babd39a029f8aa93845500516a7fe1527624bae",
+        "bytes": 3837
+      },
+      {
+        "kind": "repository",
+        "id": "exm",
+        "path": "design/garden-skills/web-video-presentation/templates/src/chapters/01-example/Example.tsx",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "249e88bb06603e2dc57e28862e336999867b297dff44e86907efb4543b090627",
+        "bytes": 3878
+      },
+      {
+        "kind": "repository",
+        "id": "ext",
+        "path": "design/garden-skills/web-video-presentation/templates/scripts/extract-narrations.ts",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "0bb12ecd80dbba8280473f18ea0bfc9ebbd01de3eb939becc05e5ead22eb8a39",
+        "bytes": 4717
+      },
+      {
+        "kind": "repository",
+        "id": "syn",
+        "path": "design/garden-skills/web-video-presentation/templates/scripts/synthesize-audio.sh",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "bb91adcdf02baa15ff0a0a51a6f1c505a1c694a25c29e595ccfdbab1c1e96cd4",
+        "bytes": 5119
+      },
+      {
+        "kind": "repository",
+        "id": "ms-route",
+        "path": "design/garden-skills/motion-showreel/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+        "bytes": 32386
+      },
+      {
+        "kind": "repository",
+        "id": "ms-desc",
+        "path": "design/garden-skills/motion-showreel/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "1f4c26afebac69aa2b6a8e61c3440c636c686623161f74905143993bcf4af343",
+        "bytes": 32386
+      },
+      {
+        "kind": "repository",
+        "id": "wde-scope",
+        "path": "design/garden-skills/web-design-engineer/SKILL.md",
+        "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+        "sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1",
+        "bytes": 35406
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "wvp-flow",
+        "inline": true,
+        "sha256": "46f940e4bcf6244b4a2b82e03352edfd1c8f1e5065ede1c0149bad052590a5b9",
+        "bytes": 2508
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "wvp-position",
+        "inline": true,
+        "sha256": "56196ba28cc2ee8e17d1250071f26e6b07fdf89e8917926908b4745834df3c8f",
+        "bytes": 985
+      }
+    ]
+  }
+}

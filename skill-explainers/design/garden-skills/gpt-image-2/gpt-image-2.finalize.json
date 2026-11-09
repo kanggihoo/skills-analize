@@ -1,0 +1,1059 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-06T16:24:05.168Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/candidate.archify.md",
+    "sha256": "704dfa114dfe2afcc6cb906580ac45b89277a467359ad0819e7a15bbefb7f8d9",
+    "bytes": 39406
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+    "sha256": "18f220fd43b96b0fcb57d8e66ea174063ffd845ddc09c54ccb600739aff5fa0b",
+    "bytes": 3220071
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "704dfa114dfe2afcc6cb906580ac45b89277a467359ad0819e7a15bbefb7f8d9",
+          "bytes": 39406
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 2830,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "38b1f4cd-735a-4cfa-a77f-a7e5b24c0098",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+        "explainer": {
+          "preparedSha256": "7f7d7bd98c3e1d7d9f4fb436e1cba7aa04634d3fd8cce2de6904fc7a3da0caed",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "sk-fm",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-intro",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-check",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-a",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-b",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-c",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-table",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-unsure",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-asktool",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-struct",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-env",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-outdir",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-naming",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-promptsave",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-imgsave",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-cmds",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-bcusage",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-json",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-ask",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-index",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-cats",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-academic",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-tech",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-flow",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-cons",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "sk-when",
+              "path": "design/garden-skills/gpt-image-2/SKILL.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "919cfb275970571cbf4b87657fbc8d5609076c45f6e07f678ac2ef4789b5feb1",
+              "bytes": 26643
+            },
+            {
+              "kind": "repository",
+              "id": "cm-truthy",
+              "path": "design/garden-skills/gpt-image-2/scripts/check-mode.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6467befad28db01bbe2a26bef1cd8a96de5fd3cdb36bc1ae8d2d1628eed36ee4",
+              "bytes": 2213
+            },
+            {
+              "kind": "repository",
+              "id": "cm-branch",
+              "path": "design/garden-skills/gpt-image-2/scripts/check-mode.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6467befad28db01bbe2a26bef1cd8a96de5fd3cdb36bc1ae8d2d1628eed36ee4",
+              "bytes": 2213
+            },
+            {
+              "kind": "repository",
+              "id": "cm-out",
+              "path": "design/garden-skills/gpt-image-2/scripts/check-mode.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "6467befad28db01bbe2a26bef1cd8a96de5fd3cdb36bc1ae8d2d1628eed36ee4",
+              "bytes": 2213
+            },
+            {
+              "kind": "repository",
+              "id": "sh-env",
+              "path": "design/garden-skills/gpt-image-2/scripts/shared.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "fb5aa330daf5e777081b1a1930c538feac746981c4c987c84fb3c98df5302be8",
+              "bytes": 6324
+            },
+            {
+              "kind": "repository",
+              "id": "sh-names",
+              "path": "design/garden-skills/gpt-image-2/scripts/shared.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "fb5aa330daf5e777081b1a1930c538feac746981c4c987c84fb3c98df5302be8",
+              "bytes": 6324
+            },
+            {
+              "kind": "repository",
+              "id": "sh-api",
+              "path": "design/garden-skills/gpt-image-2/scripts/shared.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "fb5aa330daf5e777081b1a1930c538feac746981c4c987c84fb3c98df5302be8",
+              "bytes": 6324
+            },
+            {
+              "kind": "repository",
+              "id": "ge-cli",
+              "path": "design/garden-skills/gpt-image-2/scripts/generate.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "4893f188d34ab6299e20807ca699b1101b351a2e6f6ab0b78610b89bb5856f46",
+              "bytes": 5681
+            },
+            {
+              "kind": "repository",
+              "id": "ge-run",
+              "path": "design/garden-skills/gpt-image-2/scripts/generate.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "4893f188d34ab6299e20807ca699b1101b351a2e6f6ab0b78610b89bb5856f46",
+              "bytes": 5681
+            },
+            {
+              "kind": "repository",
+              "id": "ed-cli",
+              "path": "design/garden-skills/gpt-image-2/scripts/edit.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5cdce6440827630b4338fa858876e9529b07b1ad643f33bd8575d41fffa040d6",
+              "bytes": 7078
+            },
+            {
+              "kind": "repository",
+              "id": "ed-run",
+              "path": "design/garden-skills/gpt-image-2/scripts/edit.js",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "5cdce6440827630b4338fa858876e9529b07b1ad643f33bd8575d41fffa040d6",
+              "bytes": 7078
+            },
+            {
+              "kind": "repository",
+              "id": "rd-count",
+              "path": "design/garden-skills/gpt-image-2/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "c163416da4980bd3e3554217e75d1baafd149a8c291e225381c2e5c7473ca954",
+              "bytes": 19179
+            },
+            {
+              "kind": "repository",
+              "id": "rd-modes",
+              "path": "design/garden-skills/gpt-image-2/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "c163416da4980bd3e3554217e75d1baafd149a8c291e225381c2e5c7473ca954",
+              "bytes": 19179
+            },
+            {
+              "kind": "repository",
+              "id": "rd-tree",
+              "path": "design/garden-skills/gpt-image-2/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "c163416da4980bd3e3554217e75d1baafd149a8c291e225381c2e5c7473ca954",
+              "bytes": 19179
+            },
+            {
+              "kind": "repository",
+              "id": "rd-env",
+              "path": "design/garden-skills/gpt-image-2/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "c163416da4980bd3e3554217e75d1baafd149a8c291e225381c2e5c7473ca954",
+              "bytes": 19179
+            },
+            {
+              "kind": "repository",
+              "id": "rd-prin",
+              "path": "design/garden-skills/gpt-image-2/README.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "c163416da4980bd3e3554217e75d1baafd149a8c291e225381c2e5c7473ca954",
+              "bytes": 19179
+            },
+            {
+              "kind": "repository",
+              "id": "pw-struct",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-skel",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-fields",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-params",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-ask",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-auto",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-src",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "pw-phase",
+              "path": "design/garden-skills/gpt-image-2/references/prompt-writing.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "55aaa6cc36edd7fad9efb8d0b87c58b7f3e757ddd645c5d2c92892223c0823c8",
+              "bytes": 24019
+            },
+            {
+              "kind": "repository",
+              "id": "tp-live",
+              "path": "design/garden-skills/gpt-image-2/references/ui-mockups/live-commerce-ui.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "bb0d9e4239c5c4f424c98c00c763aa9d81d1253912027146855cbab53c67571b",
+              "bytes": 8688
+            },
+            {
+              "kind": "repository",
+              "id": "tp-livevar",
+              "path": "design/garden-skills/gpt-image-2/references/ui-mockups/live-commerce-ui.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "bb0d9e4239c5c4f424c98c00c763aa9d81d1253912027146855cbab53c67571b",
+              "bytes": 8688
+            },
+            {
+              "kind": "repository",
+              "id": "tp-removal",
+              "path": "design/garden-skills/gpt-image-2/references/editing-workflows/object-removal.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "0abedd4277e7e7e8945df7690a67b9ca8c8a5664ea48e16247875cb912e97897",
+              "bytes": 2896
+            },
+            {
+              "kind": "repository",
+              "id": "tp-pub",
+              "path": "design/garden-skills/gpt-image-2/references/academic-figures/publication-chart.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "a4f8b9f5add1847c44d0e914d92a6f93dec701b56cae1bb27df47cb9d1d53206",
+              "bytes": 11594
+            },
+            {
+              "kind": "repository",
+              "id": "tp-arch",
+              "path": "design/garden-skills/gpt-image-2/references/technical-diagrams/system-architecture.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "2f895f08764722a7c03cde5fdc456982ae337cf3d7200d2ddc273e5bf0ba9175",
+              "bytes": 11788
+            },
+            {
+              "kind": "repository",
+              "id": "tp-selfie",
+              "path": "design/garden-skills/gpt-image-2/references/avatars-and-profile/style-transfer-selfie.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "67021faabdbd9e5d5db6851eb2e5bc6a650a76ef399a4f0949fdae0f93989461",
+              "bytes": 5194
+            },
+            {
+              "kind": "repository",
+              "id": "wde-cal",
+              "path": "design/garden-skills/web-design-engineer/references/design-calibration.md",
+              "revision": "4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d",
+              "sha256": "754086f26f7f880cb23559a16b446847c72673a8428087bc539da2d9137fd8e3",
+              "bytes": 6139
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "mode-decision",
+              "inline": true,
+              "sha256": "3c9730b12cb6eb001a0ebe866526a3fcc6df67774e3919bf38b7ddd073b9beed",
+              "bytes": 2281
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "prompt-pipeline",
+              "inline": true,
+              "sha256": "fcbc34743429c9ac957ad05abd92ce8991b813d1759940caed91deab2a3ddf93",
+              "bytes": 2398
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "gi-position",
+              "inline": true,
+              "sha256": "9b9b38bb37e5e4db8fb7894aaaa8ab8a02a822f2677f41f38fac041cf41dd94f",
+              "bytes": 658
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "704dfa114dfe2afcc6cb906580ac45b89277a467359ad0819e7a15bbefb7f8d9",
+          "bytes": 39406
+        },
+        "artifact": {
+          "sha256": "18f220fd43b96b0fcb57d8e66ea174063ffd845ddc09c54ccb600739aff5fa0b",
+          "bytes": 3220071
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1952,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "18f220fd43b96b0fcb57d8e66ea174063ffd845ddc09c54ccb600739aff5fa0b",
+          "bytes": 3220071
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "250 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "59 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "mode-decision: pass",
+              "prompt-pipeline: pass",
+              "gi-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "mode-decision",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-zNZLBE/child.html",
+                "artifact": {
+                  "sha256": "cb7a775d75e3517d603138eee17787f5721027fafecc863aebd8d859dd7fee09",
+                  "bytes": 845814
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 9,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.092469018112488,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 6,
+                    "shortEndpointSegmentCount": 6,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "md-a-to-md-ask-1",
+                      "from": "md-a",
+                      "to": "md-ask"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.092469018112488,
+                    "semanticTextCount": 20
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "prompt-pipeline",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-g26lrT/child.html",
+                "artifact": {
+                  "sha256": "db37dd7ace879ceabde39bcd75a07ae5d6a192d623a42399207cb86b6965fabc",
+                  "bytes": 846216
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 9,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.654320987654321,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pf-gap-to-pf-q-1",
+                      "from": "pf-gap",
+                      "to": "pf-q"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.654320987654321,
+                    "semanticTextCount": 17
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "gi-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-XaqIUX/child.html",
+                "artifact": {
+                  "sha256": "99e39ea2500400ed7b29e3e0d072438ba1e5295b29dcba6239ca3c3ae84d0dce",
+                  "bytes": 830486
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 59.3,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "pos-gi-to-pos-wde-1",
+                      "from": "pos-gi",
+                      "to": "pos-wde"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 4
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "38b1f4cd-735a-4cfa-a77f-a7e5b24c0098"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/garden-skills/gpt-image-2/gpt-image-2.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-06T16:24:10.373Z",
+  "durationMs": 5204,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

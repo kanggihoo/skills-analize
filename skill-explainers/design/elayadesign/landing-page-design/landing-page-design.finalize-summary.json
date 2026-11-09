@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+    "sha256": "2e30ecab5968a828ffc4a2794dfa539222eea181e9a17ba35a1ec55276e02b57",
+    "bytes": 26797
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.html",
+    "sha256": "998794565e9fd43d03c7f0d4fa6da45d06cacd611569b09a20258c5cedcddfdb",
+    "bytes": 1744199
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [
+    {
+      "code": "explainer/writing-cliche",
+      "severity": "warning",
+      "message": "This stock phrase gives little information about the concrete outcome.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/candidate.archify.md",
+        "line": 194,
+        "component": "comparison",
+        "panelId": "visual-behavior"
+      },
+      "evidence": {
+        "reason": "This stock phrase gives little information about the concrete outcome.",
+        "example": "赋能业务 → 让客服查到订单状态; seamless → name what no longer needs a manual step",
+        "rule": "cliche",
+        "matched": "cutting edge"
+      },
+      "supportedFixes": [
+        "Replace the stock phrase with the specific action or outcome the reader needs."
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/design/elayadesign/landing-page-design/landing-page-design.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 2313,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}
