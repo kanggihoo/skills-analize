@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-10T15:52:48.164Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/candidate.archify.md",
+    "sha256": "9de7091ef7cbef0ad1ce52412a5b2c8d6904a7c1a63628f2d7c9ce8f0c508052",
+    "bytes": 22697
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+    "sha256": "c4432c3fdc9ca06bd2039a823f30ecdbd938da665072bf5d9ffc5b326771db8a",
+    "bytes": 1444206
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "9de7091ef7cbef0ad1ce52412a5b2c8d6904a7c1a63628f2d7c9ce8f0c508052",
+          "bytes": 22697
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 918,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "02ab921d-7b2b-4681-95cf-79ea25f74af7",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+        "explainer": {
+          "preparedSha256": "d23568c5c45d9edd68f089c182d779694724be059a81a3d3adced8a6274412f2",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "fm",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "ov",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "xl",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "sub",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "cli",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "ocr",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "enc",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "qr",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "nx",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "wm",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "img",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "qs",
+              "path": "anthropics/pdf/SKILL.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee",
+              "bytes": 8058
+            },
+            {
+              "kind": "repository",
+              "id": "f-crit",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-info",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-val",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-run",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-nf",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-a1",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-a2",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-a3",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-a4",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-b",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-b4",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-hy",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-s2",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-s3",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "f-s4",
+              "path": "anthropics/pdf/forms.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44",
+              "bytes": 11854
+            },
+            {
+              "kind": "repository",
+              "id": "r-in",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-js",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-cli",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-py",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-wf",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-perf",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-ts",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-lic",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "r-pdfium",
+              "path": "anthropics/pdf/reference.md",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "03a5f964f8abecbbe156f363356e927e864d7ee964f1012c84ee1bfc8acbeb95",
+              "bytes": 16692
+            },
+            {
+              "kind": "repository",
+              "id": "s-cff",
+              "path": "anthropics/pdf/scripts/check_fillable_fields.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "1fe10b9980a5493c9bbec8c20630c603eaa475b45403751c08f26738736647b8",
+              "bytes": 268
+            },
+            {
+              "kind": "repository",
+              "id": "s-efi",
+              "path": "anthropics/pdf/scripts/extract_form_field_info.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "bb235b36f497bbb1c7c6821cecf527bbba7213520de11219da99f7b13a38c109",
+              "bytes": 4300
+            },
+            {
+              "kind": "repository",
+              "id": "s-efi2",
+              "path": "anthropics/pdf/scripts/extract_form_field_info.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "bb235b36f497bbb1c7c6821cecf527bbba7213520de11219da99f7b13a38c109",
+              "bytes": 4300
+            },
+            {
+              "kind": "repository",
+              "id": "s-fff",
+              "path": "anthropics/pdf/scripts/fill_fillable_fields.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "d140872c2e92e41b1e05370ae8d270c5b7f5ebdf55d9905f03bc974a9c708ff5",
+              "bytes": 3819
+            },
+            {
+              "kind": "repository",
+              "id": "s-efs",
+              "path": "anthropics/pdf/scripts/extract_form_structure.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "6814e3fe8f78c2b16d766c132b5a727ff7a31b71d76a7d46bd6e40fe50bc97c5",
+              "bytes": 3945
+            },
+            {
+              "kind": "repository",
+              "id": "s-cbb",
+              "path": "anthropics/pdf/scripts/check_bounding_boxes.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "0ced522402dd7b3c82a0be9518cf4e485fa9cc0467d7beab6ddb04cb36fcc3e1",
+              "bytes": 2774
+            },
+            {
+              "kind": "repository",
+              "id": "s-cpi",
+              "path": "anthropics/pdf/scripts/convert_pdf_to_images.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "7f58e292a67e18a8ff000d30bad2469389546731f7e8a698cc1d0aed001ea15d",
+              "bytes": 1008
+            },
+            {
+              "kind": "repository",
+              "id": "s-cvi",
+              "path": "anthropics/pdf/scripts/create_validation_image.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "8fa9fd7962c9f940045b81cf6b991e7c1057c1838e3f9cc6d305007a222ffebf",
+              "bytes": 1258
+            },
+            {
+              "kind": "repository",
+              "id": "s-ffa",
+              "path": "anthropics/pdf/scripts/fill_pdf_form_with_annotations.py",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "8a56e063a49ed53c0b0e1d312ecf8023af76816ed139486ec3b539873de202fd",
+              "bytes": 3235
+            },
+            {
+              "kind": "repository",
+              "id": "lic",
+              "path": "anthropics/pdf/LICENSE.txt",
+              "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+              "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+              "bytes": 11357
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "form-flow",
+              "inline": true,
+              "sha256": "0c6292256554fe2358a07d7cf0db90a90bc769c2a198cb87c436e6dc547cec02",
+              "bytes": 2282
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "9de7091ef7cbef0ad1ce52412a5b2c8d6904a7c1a63628f2d7c9ce8f0c508052",
+          "bytes": 22697
+        },
+        "artifact": {
+          "sha256": "c4432c3fdc9ca06bd2039a823f30ecdbd938da665072bf5d9ffc5b326771db8a",
+          "bytes": 1444206
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 486,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "c4432c3fdc9ca06bd2039a823f30ecdbd938da665072bf5d9ffc5b326771db8a",
+          "bytes": 1444206
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "146 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "47 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "form-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "form-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-XXcW5C/child.html",
+                "artifact": {
+                  "sha256": "3834a012655917a9f09f1cb23694fc73086478d46c83e46d68fd8da67a966768",
+                  "bytes": 845983
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 9,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.425149700598802,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 7,
+                    "shortEndpointSegmentCount": 7,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "chk-to-info-1",
+                      "from": "chk",
+                      "to": "info"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.425149700598802,
+                    "semanticTextCount": 17
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "02ab921d-7b2b-4681-95cf-79ea25f74af7"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pdf/pdf.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-10T15:52:49.709Z",
+  "durationMs": 1545,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

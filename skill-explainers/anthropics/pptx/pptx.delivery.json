@@ -1,0 +1,804 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b0e7d440-699f-4282-bb20-156b39ed45d3",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pptx/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/pptx/pptx.html",
+  "specification": {
+    "sha256": "ad765cdaa2ea1a9c86a1264af0810ed1a707f0e65cf3fdb4257df68277325d94",
+    "bytes": 43316
+  },
+  "artifact": {
+    "sha256": "fb2d9dad11a352bed4ea02e96e46919a41792c4df809f90a039e1bb1b6b9d350",
+    "bytes": 3697877
+  },
+  "explainer": {
+    "preparedSha256": "be412d73c08fbe6ccd721d356e7ae46bd310f2fc18e1e8e39692a2dfebdc9254",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "sk-fm",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-grep",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-route",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-scripts",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-31",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-33",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-34",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-35",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-36",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-37",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-38",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-39",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-40",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-41",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-42",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-43",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-44",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-45",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-46",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-47",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-48",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-49",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-50",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-54",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-56-64",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-66",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-67",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-68",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-69",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-70",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-74",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-75",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-76",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-77",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-78",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-before",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-palette",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-slide",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-fonts",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-sizes",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-spacing",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-avoid",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-161",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-162",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-163",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-164",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-qa-head",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-content",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-file",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-visual",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-conv",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "sk-deps",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "lic",
+        "path": "anthropics/pptx/LICENSE.txt",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+        "bytes": 11357
+      },
+      {
+        "kind": "repository",
+        "id": "vd-args",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "vd-family",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "vd-case",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "vd-repair",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "vd-exit",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "vd-fail",
+        "path": "anthropics/pptx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "so-run",
+        "path": "anthropics/pptx/scripts/office/soffice.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "df2c8d7249c132a4512d744482e4b5ed0ecbe885f0bcfb1295e7e6a7ced0432c",
+        "bytes": 5927
+      },
+      {
+        "kind": "repository",
+        "id": "so-shim",
+        "path": "anthropics/pptx/scripts/office/soffice.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "df2c8d7249c132a4512d744482e4b5ed0ecbe885f0bcfb1295e7e6a7ced0432c",
+        "bytes": 5927
+      },
+      {
+        "kind": "repository",
+        "id": "pv-order",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-theme",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-chart",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-slides",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-pre",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-layout",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "pv-notes",
+        "path": "anthropics/pptx/scripts/office/validators/pptx.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "17eadad2b7a8374ccbe4cda45693bcd6a36f9d61a7d60f9c9ceef9464dec8299",
+        "bytes": 15966
+      },
+      {
+        "kind": "repository",
+        "id": "bs-ignore",
+        "path": "anthropics/pptx/scripts/office/validators/base.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea",
+        "bytes": 33756
+      },
+      {
+        "kind": "repository",
+        "id": "bs-refs",
+        "path": "anthropics/pptx/scripts/office/validators/base.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea",
+        "bytes": 33756
+      },
+      {
+        "kind": "repository",
+        "id": "bs-ct",
+        "path": "anthropics/pptx/scripts/office/validators/base.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea",
+        "bytes": 33756
+      },
+      {
+        "kind": "repository",
+        "id": "bs-tpl",
+        "path": "anthropics/pptx/scripts/office/validators/base.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "f818ea28c793ba42960fa4498265e2632a62c86f7b5d6aff6fa89dacc02d59ea",
+        "bytes": 33756
+      },
+      {
+        "kind": "repository",
+        "id": "hc-limits",
+        "path": "anthropics/pptx/scripts/office/helpers/pptx_chart.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964",
+        "bytes": 5862
+      },
+      {
+        "kind": "repository",
+        "id": "hc-axes",
+        "path": "anthropics/pptx/scripts/office/helpers/pptx_chart.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964",
+        "bytes": 5862
+      },
+      {
+        "kind": "repository",
+        "id": "hc-checks",
+        "path": "anthropics/pptx/scripts/office/helpers/pptx_chart.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "47ac266f7d39d11ede6bb0d1f3a19d801394fd2964636f1b48beb701f1832964",
+        "bytes": 5862
+      },
+      {
+        "kind": "repository",
+        "id": "hs-deny",
+        "path": "anthropics/pptx/scripts/office/helpers/pptx_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "7b9f69b4a5bd6a2d9eabf9e0e3e796d7a421373145f6a8cd11f60b7ba2d6a5d0",
+        "bytes": 1675
+      },
+      {
+        "kind": "repository",
+        "id": "ht-inert",
+        "path": "anthropics/pptx/scripts/office/helpers/pptx_theme.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "ebb54c56e9c13807f5f98f0cae22d47cdd0162da8525eaa664e3f2c8c8d6bb03",
+        "bytes": 3510
+      },
+      {
+        "kind": "repository",
+        "id": "hp-family",
+        "path": "anthropics/pptx/scripts/office/helpers/__init__.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "678e42456d9e10923c8b9a93691cdd993de3433448a184fa72a0c31f4ae086d5",
+        "bytes": 3358
+      },
+      {
+        "kind": "repository",
+        "id": "hp-zip",
+        "path": "anthropics/pptx/scripts/office/helpers/__init__.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "678e42456d9e10923c8b9a93691cdd993de3433448a184fa72a0c31f4ae086d5",
+        "bytes": 3358
+      },
+      {
+        "kind": "repository",
+        "id": "cl-doc",
+        "path": "anthropics/pptx/scripts/clean.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+        "bytes": 10415
+      },
+      {
+        "kind": "repository",
+        "id": "cl-refuse",
+        "path": "anthropics/pptx/scripts/clean.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+        "bytes": 10415
+      },
+      {
+        "kind": "repository",
+        "id": "cl-dirs",
+        "path": "anthropics/pptx/scripts/clean.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+        "bytes": 10415
+      },
+      {
+        "kind": "repository",
+        "id": "cl-loop",
+        "path": "anthropics/pptx/scripts/clean.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+        "bytes": 10415
+      },
+      {
+        "kind": "repository",
+        "id": "cl-main",
+        "path": "anthropics/pptx/scripts/clean.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "5c808cd4dff7e02661ef3c68b5917f4e25097cc6610c92a3a7df4a6366a5c3c1",
+        "bytes": 10415
+      },
+      {
+        "kind": "repository",
+        "id": "ad-doc",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-shared",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-layout",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-layout-fn",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-dup",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-pre",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "ad-out",
+        "path": "anthropics/pptx/scripts/add_slide.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "3922f819ee1f6b8bdc6aa146d1a86de70640f5f919321fe3f01a764482ff69c9",
+        "bytes": 14537
+      },
+      {
+        "kind": "repository",
+        "id": "th-const",
+        "path": "anthropics/pptx/scripts/thumbnail.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c",
+        "bytes": 9802
+      },
+      {
+        "kind": "repository",
+        "id": "th-input",
+        "path": "anthropics/pptx/scripts/thumbnail.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c",
+        "bytes": 9802
+      },
+      {
+        "kind": "repository",
+        "id": "th-hidden",
+        "path": "anthropics/pptx/scripts/thumbnail.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c",
+        "bytes": 9802
+      },
+      {
+        "kind": "repository",
+        "id": "th-grid",
+        "path": "anthropics/pptx/scripts/thumbnail.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "94ef83a84346aa2d63913de0d42bb2fe902ccdc17bfac6130096ca758381793c",
+        "bytes": 9802
+      },
+      {
+        "kind": "repository",
+        "id": "xsd-pml",
+        "path": "anthropics/pptx/scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "d173c3e5d61e42e2e3a97226c632fd2ab7cc481fc4e492365b87024ab546daff",
+        "bytes": 83612
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "edit-flow",
+        "inline": true,
+        "sha256": "c1dfad9bedaf3d596a65f8619e844ec63004c0d567ad38438e281402ec103fb8",
+        "bytes": 1188
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "qa-loop",
+        "inline": true,
+        "sha256": "cd37f08622cecc7306bf32390cc85983bcce5731425cbe1480d7f288a28a5f4d",
+        "bytes": 1602
+      }
+    ]
+  }
+}

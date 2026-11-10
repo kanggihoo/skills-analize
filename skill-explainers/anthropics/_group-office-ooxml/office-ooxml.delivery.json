@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "4be8839f-f220-4579-8305-70661f719465",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/_group-office-ooxml/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/anthropics/_group-office-ooxml/office-ooxml.html",
+  "specification": {
+    "sha256": "56eab5dc3325280df8b253a42486098458f56fad849b03af7982aa078a6d72e4",
+    "bytes": 6589
+  },
+  "artifact": {
+    "sha256": "96243f5f8a7662540380c5dd4ee376409566b20c54d5fca19d28dc6b3d7953d3",
+    "bytes": 761055
+  },
+  "explainer": {
+    "preparedSha256": "d32089a0ab4c26d2e74cbc53f83499fe4612ab79f3687c941d8e95b328fa9a0b",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "d-top",
+        "path": "anthropics/docx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "9e8202e2524a9ed87da67a5b3eaa76e8e6038f4171f8251ad6aaefd34e82a3df",
+        "bytes": 6897
+      },
+      {
+        "kind": "repository",
+        "id": "d-val",
+        "path": "anthropics/docx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "9e8202e2524a9ed87da67a5b3eaa76e8e6038f4171f8251ad6aaefd34e82a3df",
+        "bytes": 6897
+      },
+      {
+        "kind": "repository",
+        "id": "p-top",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "p-tools",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "p-qa",
+        "path": "anthropics/pptx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2",
+        "bytes": 20782
+      },
+      {
+        "kind": "repository",
+        "id": "x-top",
+        "path": "anthropics/xlsx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "caa1e1c29cf974c8d874bf3d0a70838445e7342b570f856ddb3e4a21ef7c7e8b",
+        "bytes": 8584
+      },
+      {
+        "kind": "repository",
+        "id": "x-recalc",
+        "path": "anthropics/xlsx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "caa1e1c29cf974c8d874bf3d0a70838445e7342b570f856ddb3e4a21ef7c7e8b",
+        "bytes": 8584
+      },
+      {
+        "kind": "repository",
+        "id": "x-dep",
+        "path": "anthropics/xlsx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "caa1e1c29cf974c8d874bf3d0a70838445e7342b570f856ddb3e4a21ef7c7e8b",
+        "bytes": 8584
+      },
+      {
+        "kind": "repository",
+        "id": "x-imp",
+        "path": "anthropics/xlsx/scripts/recalc.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "66f6e726d5a53cfabea0b6471d6669deb95e54e96cb7913b687e4388da1bb3d9",
+        "bytes": 10670
+      },
+      {
+        "kind": "repository",
+        "id": "x-vfam",
+        "path": "anthropics/xlsx/scripts/office/validate.py",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "346a4c89d92fff55e610f11efda48c30228815b29bdb10b987e48f7af70acf1e",
+        "bytes": 6142
+      },
+      {
+        "kind": "repository",
+        "id": "d-desc",
+        "path": "anthropics/docx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "9e8202e2524a9ed87da67a5b3eaa76e8e6038f4171f8251ad6aaefd34e82a3df",
+        "bytes": 6897
+      },
+      {
+        "kind": "repository",
+        "id": "x-desc",
+        "path": "anthropics/xlsx/SKILL.md",
+        "revision": "b825733a707f8debae1a9b5d6e4e796c343b8ae1",
+        "sha256": "caa1e1c29cf974c8d874bf3d0a70838445e7342b570f856ddb3e4a21ef7c7e8b",
+        "bytes": 8584
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "shared-tree",
+        "inline": true,
+        "sha256": "e0e0ed66bad89da8ebd4a14094be25f0d5afa385efd43a63a9f29056fe7051f7",
+        "bytes": 594
+      }
+    ]
+  }
+}

@@ -321,3 +321,14 @@
 | Code Connect | Code Connect(원어 유지) | 코드 커넥트 | Figma의 컴포넌트-코드 매핑 |
 | auto layout | auto layout | 오토 레이아웃 | Figma 기능 |
 | sparse (design context) | `sparse` 표시 | 희소 | build-design `figma.md`. 값이 아닌 요약을 돌려준 디자인 컨텍스트 |
+| tracked changes / redlining | 변경 추적 | 수정 내역, 레드라이닝 | docx. `--author` 검사의 대상 |
+| run (`w:r`) | run | 런, 실행 조각 | docx XML에서 서식이 같은 글자 묶음. 처음만 `run(서식이 같은 글자 묶음)` |
+| marker (comment range) | marker | 마커, 표식 | 댓글 위치를 가리키는 `commentRangeStart` 등. 처음만 `marker(댓글 위치 표시 태그)` |
+| shim | shim | 심, 덧대기 | `soffice.py`의 `LD_PRELOAD` 대체 모듈 |
+| baseline (`--original`) | 기준선 | 베이스라인 | 원본의 기존 오류를 새 오류로 세지 않는 비교 기준 |
+| fillable field | fillable 필드 | 채울 수 있는 필드 | pdf. 풀이는 처음 한 번 |
+| spill | spill | 흘러넘침 | xlsx 배열 함수. 처음만 `spill(결과가 옆 칸으로 번지는 배열)` |
+| chart | chart | 차트 | PowerPoint 네이티브 chart, 조사를 바로 붙임 |
+| part (OPC) | part | 파트, 부품 | OOXML 패키지 안의 파일 단위 |
+| denylist | denylist | 거부 목록 | 알려진 오류만 막는 방식. 처음만 `denylist(알려진 오류만 막는 목록)` |
+| frontmatter | frontmatter | 머리말 | `SKILL.md` 상단 YAML |
