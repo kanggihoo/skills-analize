@@ -1,8 +1,9 @@
 # video 관계 원장
-분석 커밋: 23e8047abc33a363aec7f43e75255b2a46281ff7
+분석 커밋: 23e8047abc33a363aec7f43e75255b2a46281ff7 (기존 10개 스킬) · f415191a236e0230db370553888ff9699eb4440d (추가 2개: cokacmotion, script-to-motion)
 
-- 범위: `video/` 아래 `SKILL.md` 10개. 작성자 폴더 4개(`Barty-Bart`, `latent-spaces`, `bangtutorial`, `lemomo-ai`)에 나뉘어 있다. 원격 출처는 폴더마다 있는 `skills-lock.json`이다. `Barty-Bart`의 스킬 6개는 모두 `Barty-Bart/motion-graphics` 저장소의 `skills/<이름>/SKILL.md`다.
+- 범위: `video/` 아래 `SKILL.md` 12개(작성자 폴더에 속하지 않는 `cokacmotion/skills/aimotion`, `script-to-motion` 2개를 뒤에 추가). 작성자 폴더 4개(`Barty-Bart`, `latent-spaces`, `bangtutorial`, `lemomo-ai`)에 나뉘어 있다. 원격 출처는 폴더마다 있는 `skills-lock.json`이다. `Barty-Bart`의 스킬 6개는 모두 `Barty-Bart/motion-graphics` 저장소의 `skills/<이름>/SKILL.md`다.
 - **커밋 상태**: `video/`는 분석을 시작할 때 저장소에 한 번도 커밋되지 않은 상태(`?? video/`)였다. 출처 인용(`@source path=`)이 커밋된 원문을 요구해서, 사용자 승인을 받아 `video/`만 local commit(`23e8047`, 491개 파일)했다. 위 "분석 커밋"이 그 commit이다. push는 하지 않았다.
+- **추가분 커밋**: `video/cokacmotion/`과 `video/script-to-motion/`은 각각 내부에 자체 `.git`이 있어 그대로 add하면 gitlink가 된다. 사용자 승인("자체 git 있는 거 날려버리고 커밋")으로 두 폴더의 `.git`을 지우고 local commit(`f415191`, cokacmotion 954개·script-to-motion 99개 파일)했다. push는 하지 않았다. 원본 저장소는 `github.com/kstost/cokacmotion`이고, `script-to-motion`의 원격 출처는 이 저장소에서 확인하지 않았다(lock 파일 없음).
 - 번역본: 이 컬렉션에는 없다. `bang-motion/references/opener-konsep.md`는 접미사 `-KO`가 아니라 인도네시아어 단어 `konsep`이 든 원본 파일이다. `bang-motion`은 SKILL.md 본문이 인도네시아어이며, 그것이 원본이다.
 - 원문 비교: 이 10개와 이름이 같은 스킬은 다른 컬렉션에 없다(`find`로 확인). 같은 컬렉션 안에서 `brag/slim.md`와 `brag-slim/SKILL.md`는 `shasum`이 같다(`11c041fc…`).
 - 번들 폴더: `brag/`에는 `slim.md`(= brag-slim 사본)가 들어 있다. `Barty-Bart/` 아래 스킬 폴더마다 `README.md`가 있고, 이 README는 SKILL.md가 아닌 안내 문서다.
@@ -24,6 +25,8 @@
 | video/Barty-Bart/sound-effects | 모션그래픽 영상에 박자를 맞춘 효과음·음악을 넣고 음량을 측정해 검증한다 | 완료 | - | talking-head-edit | 단계 |
 | video/bangtutorial/bang-motion | HTML·CSS·GSAP로 홍보 영상·오프너·설명 영상을 영화처럼 움직이게 만든다 | 완료 | - | - | 단계 |
 | video/lemomo-ai/lemo-opuscar | 외부 Lemo-Opuscar 라이브러리를 내려받아 설치하고, 그 라이브러리의 스타일 중 하나로 단편 영상을 만들도록 넘기는 입구 스킬이다 | 부분 | - | - | 단계 |
+| video/cokacmotion/skills/aimotion | 영상 장면에 맞는 표현 기법을 166개 데모에서 찾아, 기술만 영상 코드로 다시 짜게 하는 참고서 스킬이다 | 부분 | - | narrated-motion-video | 안내 |
+| video/script-to-motion | 대본·주제·기획서로 브라우저에서 재생되는 나레이션 모션그래픽 영상 프로젝트를 끝까지 만든다 | 부분 | - | narrated-motion-video | 단계 |
 
 ## 관계
 
@@ -66,6 +69,15 @@
 | r13 | explainer-default | lemo-opuscar | 같은 계열 | 추론 | 둘 다 "영상·홍보·설명"을 코드로 만든다. lemo-opuscar는 이름 붙은 스타일을 고르는 방식이다 | - | - | 범위 내 | explainer-default:3; lemo-opuscar:3 |
 | r14 | brag | explainer-high-energy | 같은 계열 | 추론 | 둘 다 제품 홍보·출시 영상을 코드에서 만든다. brag는 프로젝트 코드를 읽어 소재를 얻고, explainer는 제품 설명을 질문으로 받는다 | - | - | 범위 내 | brag:3; explainer-high-energy:3 |
 
+### cokacmotion과 script-to-motion
+
+| rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
+|---|---|---|---|---|---|---|---|---|---|
+| r16 | script-to-motion | cokacmotion(aimotion) | 내부 위임 | 명시-이름 | 5단계에서 beat마다 효과의 기법을 "찾는다"(의무형). 자체 `cokacmotion.mjs`가 저장소를 `~/.cache/motion-video-cokacmotion`에 받아(`git clone --depth 1`, git이 없으면 tarball, 하루 한 번 갱신) 받은 `scripts/aimotion.mjs`를 `node`로 실행한다. aimotion의 `SKILL.md`를 부르라는 지시는 없고, 셰이더 함정 절 "영상에 옮길 때"만 참조하라고 한다(references/cokacmotion.md:123-125). 첫 다운로드(약 70MB) 전 사용자에게 한 줄로 알린다. 데모 파일은 프로젝트에 불러오지 않고 기술만 다시 짠다. 코드 블록이 데모와 실질적으로 같으면 `licenses/cokacmotion-LICENSE.txt`를 복사한다 | 기법 한 문장, 데모 id(storyboard References) | 로컬 캐시, `COKACMOTION_DIR` | 범위 내 | script-to-motion:476-481,840-849,905-907; references/cokacmotion.md:57-66,147-153; scripts/cokacmotion.mjs:85-95,179-183; aimotion:55-59 |
+| r17 | cokacmotion(aimotion) | (작업 중인 영상 스킬) | 참고 | 명시-역할 | "영상 스킬의 규칙이 먼저다"라고만 적는다. 어느 영상 스킬인지는 원문에 명시 없음 | - | - | 불명 | aimotion:60-62 |
+| r18 | script-to-motion | bang-motion | 같은 계열 | 추론 | 둘 다 HTML·CSS·GSAP로 브라우저에서 움직이는 설명·홍보 영상을 만든다. 직접 연결은 없다. 나레이션 TTS와 사용자 승인 녹음 흐름은 script-to-motion에만 있다 | - | - | 범위 내 | script-to-motion:3; bang-motion:3 |
+| r19 | script-to-motion | explainer-default | 같은 계열 | 추론 | 둘 다 코드에서 설명 영상을 만들어 MP4로 낸다(script-to-motion은 `render.py`를 사용자가 실행). 직접 연결은 없다 | - | - | 범위 내 | script-to-motion:3,19; explainer-default:3 |
+
 ## 묶음
 
 | group-id | 작업 목표 | 구성 스킬과 역할 | 그림 |
@@ -73,5 +85,6 @@
 | launch-video | 내 프로젝트를 소개하는 출시 영상을 만든다 | brag(전체 워크플로, 기본), brag-slim(Opus 5.5 변형) | `@workflow`: brag 호출 → 모델·옵션 확인? → 예: brag-slim으로 넘김 / 아니오: brag 4단계(r01). r02는 표에만 |
 | product-explainer | 제품 소개 영상의 연출 방식을 고른다 | explainer-default(차분한 데모), explainer-engaging(원테이크), explainer-high-energy(빠른 홍보) | `@workflow`: 결정 노드 하나에서 세 갈래(r06~r08, 서로 순서 없음). sound-effects와의 관계(r04)는 `미확인`이라 그리지 않고 표에 남긴다 |
 | talking-head-edit | 말하는 사람 영상을 가공하고 소리를 입힌다 | motion-broll(B-roll 클립 제작), sound-effects(소리 입히기), object-separation(피사체 분리·같은 계열) | `@workflow`: motion-broll → sound-effects(r03, 권고). object-separation은 연결이 없어(r05 같은 계열) 선을 긋지 않고 표에 둔다 |
+| narrated-motion-video | 대본에서 나레이션 모션그래픽 영상을 만들고, 장면마다 표현 기법을 찾는다 | script-to-motion(단계, 5·6단계 사이에 기법 찾기), aimotion(안내, 기법 도서관) | `@workflow`: script-to-motion 5단계 → aimotion 기법 찾기(r16) → 6단계. r17·r18·r19는 표에만 |
 
 독립 스킬(묶음 없음): bang-motion(연결 없음, r11·r12는 같은 계열 표시), lemo-opuscar(r13은 같은 계열 표시).

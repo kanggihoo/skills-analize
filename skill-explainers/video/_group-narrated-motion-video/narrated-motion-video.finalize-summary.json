@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+    "sha256": "23ab808076d0bfac6beb1d3f639c0bd6ab881f87bead57bd38e2c67766c9d10c",
+    "bytes": 10128
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+    "sha256": "41056273cd6ff48f422631e992fb73fa58365e3f685c3a1d62641f573358913a",
+    "bytes": 1340811
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1442,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

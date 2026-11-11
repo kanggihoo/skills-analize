@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "f56b8fbd-1e1b-4964-a9af-391bb896dc5b",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+  "specification": {
+    "sha256": "23ab808076d0bfac6beb1d3f639c0bd6ab881f87bead57bd38e2c67766c9d10c",
+    "bytes": 10128
+  },
+  "artifact": {
+    "sha256": "41056273cd6ff48f422631e992fb73fa58365e3f685c3a1d62641f573358913a",
+    "bytes": 1340811
+  },
+  "explainer": {
+    "preparedSha256": "d2437137b21032a010fcf5ae064465bea917ede4306e735ac1cd862459094ed1",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "nm-st-board",
+        "path": "video/script-to-motion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+        "bytes": 97091
+      },
+      {
+        "kind": "repository",
+        "id": "nm-st-build",
+        "path": "video/script-to-motion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+        "bytes": 97091
+      },
+      {
+        "kind": "repository",
+        "id": "nm-st-orig",
+        "path": "video/script-to-motion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+        "bytes": 97091
+      },
+      {
+        "kind": "repository",
+        "id": "nm-st-hand",
+        "path": "video/script-to-motion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+        "bytes": 97091
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-ref",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-rule",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-dl",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-lic",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-note",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-shader",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-cmd",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-intro",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-lib",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "nm-cokac-run",
+        "path": "video/script-to-motion/scripts/cokacmotion.mjs",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "2e92ea6fa8a87545a4f1e22050c2ea3f933e2856299655854156d46a082a19f3",
+        "bytes": 8142
+      },
+      {
+        "kind": "repository",
+        "id": "nm-am-rule",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "nm-am-port",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "nm-am-script",
+        "path": "video/cokacmotion/skills/aimotion/scripts/aimotion.mjs",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "fc703d4bb26f87a6d4b787c0358bbcefe149df17991fa398c902b999317dcf83",
+        "bytes": 5526
+      },
+      {
+        "kind": "repository",
+        "id": "nm-am-desc",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "nm-flow",
+        "inline": true,
+        "sha256": "537d757999e44b1220c8d812243ef6ef81805c4078384214edf9454368c4d246",
+        "bytes": 1045
+      }
+    ]
+  }
+}

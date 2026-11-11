@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a9af5e9d-6183-4806-a82a-28b4c1488061",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/cokacmotion/skills/aimotion/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/cokacmotion/skills/aimotion/aimotion.html",
+  "specification": {
+    "sha256": "e3481ed21d495ee80aff78c47c9d7f208dd431264a08ab1777da5b9a19bb6a2d",
+    "bytes": 11733
+  },
+  "artifact": {
+    "sha256": "569f6d08660f48f337b7f1cf873fff588994e75bbd658397ad9328214ba45905",
+    "bytes": 1482663
+  },
+  "explainer": {
+    "preparedSha256": "ef75cc75335972dff47e841d3ad2d573ef00933f50d63a4f5e08bc5f5567dd5a",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "am-desc",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "am-intro",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "am-rule",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "am-usage",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "am-port",
+        "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+        "bytes": 9031
+      },
+      {
+        "kind": "repository",
+        "id": "am-script",
+        "path": "video/cokacmotion/skills/aimotion/scripts/aimotion.mjs",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "fc703d4bb26f87a6d4b787c0358bbcefe149df17991fa398c902b999317dcf83",
+        "bytes": 5526
+      },
+      {
+        "kind": "repository",
+        "id": "am-readme-use",
+        "path": "video/cokacmotion/README.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "e57b371449aac00bf212280d51cecbfae7b00af1af7aae89515f662a4d5bf3cd",
+        "bytes": 75322
+      },
+      {
+        "kind": "repository",
+        "id": "am-readme-install",
+        "path": "video/cokacmotion/README.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "e57b371449aac00bf212280d51cecbfae7b00af1af7aae89515f662a4d5bf3cd",
+        "bytes": 75322
+      },
+      {
+        "kind": "repository",
+        "id": "am-indexmd",
+        "path": "video/cokacmotion/skills/aimotion/INDEX.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "ac40dcb68a4e1c839bf03adae5502ac702a2c4058194231268242ed72042d6c5",
+        "bytes": 134623
+      },
+      {
+        "kind": "repository",
+        "id": "am-license",
+        "path": "video/cokacmotion/LICENSE",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "ebd34accb9b48b8b56a5e7e97b936531236f91c28d33506e507744996e4d41ad",
+        "bytes": 1063
+      },
+      {
+        "kind": "repository",
+        "id": "st-ref",
+        "path": "video/script-to-motion/references/cokacmotion.md",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+        "bytes": 12393
+      },
+      {
+        "kind": "repository",
+        "id": "st-tool",
+        "path": "video/script-to-motion/scripts/cokacmotion.mjs",
+        "revision": "f415191a236e0230db370553888ff9699eb4440d",
+        "sha256": "2e92ea6fa8a87545a4f1e22050c2ea3f933e2856299655854156d46a082a19f3",
+        "bytes": 8142
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "aimotion-flow",
+        "inline": true,
+        "sha256": "3b779b42862ae7fadca26aee227025a89e4892b288bb8e89642196996371275c",
+        "bytes": 1613
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "aimotion-position",
+        "inline": true,
+        "sha256": "40cc4874d1f85a8f174231eb82505a6d1c3502003e38adf6f01dcf888184a842",
+        "bytes": 770
+      }
+    ]
+  }
+}
