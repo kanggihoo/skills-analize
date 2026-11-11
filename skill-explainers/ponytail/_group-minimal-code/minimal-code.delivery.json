@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "10741b52-7fc5-49b9-ba7e-870434cf52e7",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\_group-minimal-code\\candidate.archify.md",
+  "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\_group-minimal-code\\minimal-code.html",
+  "specification": {
+    "sha256": "5da215ded43b20d89d1cc962569e51e5b3b0519064562fd6ded5948403b17525",
+    "bytes": 9638
+  },
+  "artifact": {
+    "sha256": "d54f4a3f0db4769e1da11729ea68b98dacdbf2efda6344b1180bfb6f5f5f8c2a",
+    "bytes": 682859
+  },
+  "explainer": {
+    "preparedSha256": "2f230bb11060989526f0d84fafb86728be18bb9aae969f039d5805d205a3e74e",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "build",
+        "path": "ponytail/ponytail/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+        "bytes": 3496
+      },
+      {
+        "kind": "repository",
+        "id": "help",
+        "path": "ponytail/ponytail-help/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
+        "bytes": 3188
+      },
+      {
+        "kind": "repository",
+        "id": "review",
+        "path": "ponytail/ponytail-review/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
+        "bytes": 5143
+      },
+      {
+        "kind": "repository",
+        "id": "audit",
+        "path": "ponytail/ponytail-audit/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
+        "bytes": 5417
+      },
+      {
+        "kind": "repository",
+        "id": "debt",
+        "path": "ponytail/ponytail-debt/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "bytes": 1769
+      },
+      {
+        "kind": "repository",
+        "id": "gain",
+        "path": "ponytail/ponytail-gain/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+        "bytes": 2164
+      },
+      {
+        "kind": "repository",
+        "id": "review-limit",
+        "path": "ponytail/ponytail-review/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
+        "bytes": 5143
+      },
+      {
+        "kind": "repository",
+        "id": "audit-limit",
+        "path": "ponytail/ponytail-audit/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
+        "bytes": 5417
+      },
+      {
+        "kind": "repository",
+        "id": "host",
+        "path": "ponytail/ponytail-help/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
+        "bytes": 3188
+      },
+      {
+        "kind": "repository",
+        "id": "review-end",
+        "path": "ponytail/ponytail-review/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e",
+        "bytes": 5143
+      },
+      {
+        "kind": "repository",
+        "id": "audit-end",
+        "path": "ponytail/ponytail-audit/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
+        "bytes": 5417
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "collection-flow",
+        "inline": true,
+        "sha256": "2438049adf4e47f1067dfa6d6396b67987fa947df60144adce2372f6100864ab",
+        "bytes": 1524
+      }
+    ]
+  }
+}

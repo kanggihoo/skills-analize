@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "530e0f0f-d144-4c06-af1d-62df190d4fea",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-debt\\candidate.archify.md",
+  "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-debt\\ponytail-debt.html",
+  "specification": {
+    "sha256": "8bbf15faeb237816a24a623383928257006b13c6be3d1f2cc87fa1bfef3a768e",
+    "bytes": 7041
+  },
+  "artifact": {
+    "sha256": "6db7bd3ec382b24fbda1c59460ae8d2e2e2a7449aab493241ec5703479381799",
+    "bytes": 950667
+  },
+  "explainer": {
+    "preparedSha256": "0ea8007787bc68e4ed1b0dfab847f762de5c6f179d315e68bbc4535bd3102d9b",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "front",
+        "path": "ponytail/ponytail-debt/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "bytes": 1769
+      },
+      {
+        "kind": "repository",
+        "id": "scan",
+        "path": "ponytail/ponytail-debt/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "bytes": 1769
+      },
+      {
+        "kind": "repository",
+        "id": "output",
+        "path": "ponytail/ponytail-debt/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "bytes": 1769
+      },
+      {
+        "kind": "repository",
+        "id": "boundary",
+        "path": "ponytail/ponytail-debt/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+        "bytes": 1769
+      },
+      {
+        "kind": "repository",
+        "id": "producer",
+        "path": "ponytail/ponytail/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509",
+        "bytes": 3496
+      },
+      {
+        "kind": "repository",
+        "id": "help",
+        "path": "ponytail/ponytail-help/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
+        "bytes": 3188
+      },
+      {
+        "kind": "repository",
+        "id": "gain",
+        "path": "ponytail/ponytail-gain/SKILL.md",
+        "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+        "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+        "bytes": 2164
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "debt-flow",
+        "inline": true,
+        "sha256": "e13158c89fa75fab501bbc150915e5efb080b0c33ab5ac1e79f188c8794b4fc4",
+        "bytes": 893
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "3dbadc137fcad6190a0606cebb75a31087ce7c4c37b8373bf4fa6299dbf95308",
+        "bytes": 532
+      }
+    ]
+  }
+}

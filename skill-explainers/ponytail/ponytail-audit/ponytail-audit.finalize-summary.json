@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-audit\\candidate.archify.md",
+    "sha256": "4440ae8cbf5946dba7ea3b0da0f2e1a116c755e75e39bb7600160f37d2a96167",
+    "bytes": 9586
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-audit\\ponytail-audit.html",
+    "sha256": "ccb4317c5e4ff59c367907249ed8a05fc01c31ea8817a89a29bfabbf1374eb5c",
+    "bytes": 649666
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-audit\\ponytail-audit.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-audit\\ponytail-audit.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-10T05:47:30.095Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3560,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

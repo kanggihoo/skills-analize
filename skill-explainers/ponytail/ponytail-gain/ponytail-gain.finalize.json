@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-11T03:48:27.783Z",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\candidate.archify.md",
+    "sha256": "fdde62454ade242f93a6aa8a983b905c5afa194a0b662b86a8373a4a4f764d30",
+    "bytes": 7279
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+    "sha256": "8b083bc3f63039f53c2665c803202cf769466ba1599e3b6b284746a6026ccacf",
+    "bytes": 603996
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\4388_1794368865874\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\candidate.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "fdde62454ade242f93a6aa8a983b905c5afa194a0b662b86a8373a4a4f764d30",
+          "bytes": 7279
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1861,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\4388_1794368865874\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\candidate.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "691236e6-fdec-461f-a435-ea4a853dbb0a",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\candidate.archify.md",
+        "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+        "explainer": {
+          "preparedSha256": "a9e49ac81166d5f10ac63c87c06eb187e558f081dd49dc9282266c03286109e0",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "front",
+              "path": "ponytail/ponytail-gain/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+              "bytes": 2164
+            },
+            {
+              "kind": "repository",
+              "id": "boundary",
+              "path": "ponytail/ponytail-gain/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+              "bytes": 2164
+            },
+            {
+              "kind": "repository",
+              "id": "bench",
+              "path": "ponytail/ponytail-gain/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+              "bytes": 2164
+            },
+            {
+              "kind": "repository",
+              "id": "card",
+              "path": "ponytail/ponytail-gain/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+              "bytes": 2164
+            },
+            {
+              "kind": "repository",
+              "id": "honesty",
+              "path": "ponytail/ponytail-gain/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090",
+              "bytes": 2164
+            },
+            {
+              "kind": "repository",
+              "id": "debt",
+              "path": "ponytail/ponytail-debt/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f",
+              "bytes": 1769
+            },
+            {
+              "kind": "repository",
+              "id": "audit",
+              "path": "ponytail/ponytail-audit/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28",
+              "bytes": 5417
+            },
+            {
+              "kind": "repository",
+              "id": "help",
+              "path": "ponytail/ponytail-help/SKILL.md",
+              "revision": "835ad00af6ccb24e5ab01bbe0a91f878f95cc417",
+              "sha256": "86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9",
+              "bytes": 3188
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "position-flow",
+              "inline": true,
+              "sha256": "cec4b518896fa01b7e372b9f8fcb4e7f4a174595cdfdb771d865e8fb31a026b6",
+              "bytes": 999
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "fdde62454ade242f93a6aa8a983b905c5afa194a0b662b86a8373a4a4f764d30",
+          "bytes": 7279
+        },
+        "artifact": {
+          "sha256": "8b083bc3f63039f53c2665c803202cf769466ba1599e3b6b284746a6026ccacf",
+          "bytes": 603996
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 819,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\4388_1794368865874\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "8b083bc3f63039f53c2665c803202cf769466ba1599e3b6b284746a6026ccacf",
+          "bytes": 603996
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "63 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "9 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "position-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "position-flow",
+              "receipt": {
+                "ok": true,
+                "file": "C:\\Users\\SSAFY\\AppData\\Local\\Temp\\archify-explainer-check-nKIv7L\\child.html",
+                "artifact": {
+                  "sha256": "964d41efdf65ab950e3566a7e4084c53a1fb00809694c80983063fc03757cc63",
+                  "bytes": 834167
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 73.3,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 56.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "before-to-current-1",
+                      "from": "before",
+                      "to": "current"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "691236e6-fdec-461f-a435-ea4a853dbb0a"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\ponytail\\ponytail-gain\\ponytail-gain.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-11T03:48:31.850Z",
+  "durationMs": 4066,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-10T05:47:30.095Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}
