@@ -1,0 +1,19 @@
+/* 123 · 모퉁이 라이브 — the package's tokens and the one clip-path every bar uses (no transitions/animations here) */
+.pk {
+  --ink: #0d1730; --ink2: #18264a; --paper: #f7f3ea; --acc: #c9f23a; --mute: #9aa6c0; --inkMute: #59647f;
+  position: absolute; inset: 0; pointer-events: none;
+  font-kerning: normal; font-synthesis: none; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision;
+}
+.pk .kr { font-family: "Pretendard Variable"; }
+.pk .lat { font-family: "Roboto Flex Variable"; font-variation-settings: 'wdth' 84, 'opsz' 28, 'GRAD' 0; text-transform: uppercase; }
+.pk .tnum { font-variant-numeric: tabular-nums; }
+.pk .abs { position: absolute; white-space: nowrap; }
+.pk .sh { filter: drop-shadow(0 10px 22px rgba(4, 8, 20, .34)); }
+/* the signature wipe: --r opens the right edge, --l closes the left edge, corners stay R16 on the moving edge */
+.pk .base, .pk .acc {
+  position: absolute; top: 0; height: 100%; border-radius: 16px; overflow: hidden;
+  --r: 0; --l: 0;
+  clip-path: inset(0 calc((1 - var(--r)) * 100%) 0 calc(var(--l) * 100%) round 16px);
+}
+.pk .acc { background: var(--acc); }
+.pk .mask { position: absolute; overflow: hidden; }

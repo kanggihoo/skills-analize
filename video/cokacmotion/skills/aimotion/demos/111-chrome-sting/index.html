@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>111 · 오늘의 발견</title>
+<link rel="stylesheet" href="../_lib/fonts.css">
+<script type="importmap">
+{ "imports": {
+  "three": "../node_modules/three/build/three.module.js",
+  "three/addons/": "../node_modules/three/examples/jsm/"
+} }
+</script>
+<style>
+  /* the subtitle lock-up under the 3D word: DOM text, every property written per frame from t (no transitions) */
+  .cs-sub { position: absolute; left: 0; right: 0; height: 60px; display: flex; align-items: center; justify-content: center;
+    gap: 26px; pointer-events: none; }
+  .cs-rule { width: 120px; height: 2px; }
+  .cs-rule.l { background: linear-gradient(90deg, rgba(232, 182, 108, 0), rgba(232, 182, 108, .95)); transform-origin: 100% 50%; }
+  .cs-rule.r { background: linear-gradient(90deg, rgba(232, 182, 108, .95), rgba(232, 182, 108, 0)); transform-origin: 0% 50%; }
+  .cs-txt { position: relative; font-family: "Pretendard Variable", sans-serif; font-weight: 600; font-size: 40px; line-height: 60px;
+    letter-spacing: 0.07em; color: #c0c8d3; white-space: nowrap; font-variant-numeric: tabular-nums;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, .6); }
+  .cs-txt b { font-weight: 800; color: #f2c27f; }
+  .cs-glint { position: absolute; left: 0; top: 0; white-space: nowrap; color: transparent; -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; background-clip: text; text-shadow: none;
+    filter: drop-shadow(0 0 7px rgba(255, 214, 150, .85)); }
+</style>
+</head>
+<body>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

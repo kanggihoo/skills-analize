@@ -1,0 +1,323 @@
+/*
+ * 83 · CSS로만 그린 일출 — every pixel is CSS: gradients, clip-path polygons, blend modes, filters, offset-path.
+ * Every moving value is a CSS @keyframes animation. main.js only sets the clock: --t on .sunrise.
+ *
+ * THE CLOCK. Every animation in the piece is paused and its delay is (start − t), so its local time is exactly
+ * t − start. A delay change re-times a paused animation without restarting it, and even if the browser did
+ * recreate one, the delay alone fixes its position: the picture is a pure function of --t.
+ * Timeline animations are all 10 s long (keyframe % = seconds × 10); loops (wings, twinkle) set --phase.
+ */
+.sunrise, .sunrise *, .sunrise *::before, .sunrise *::after { box-sizing: border-box; }
+.sunrise *, .sunrise *::before, .sunrise *::after {
+  animation-play-state: paused !important;
+  animation-delay: calc(var(--phase, 0s) - var(--t, 0) * 1s) !important;
+}
+
+/* ---------- registered custom properties: typed, so keyframes interpolate them (and every gradient that uses them) ---------- */
+@property --s0 { syntax: '<color>'; inherits: true; initial-value: #0b0a22; }
+@property --s1 { syntax: '<color>'; inherits: true; initial-value: #1c1644; }
+@property --s2 { syntax: '<color>'; inherits: true; initial-value: #3a2463; }
+@property --s3 { syntax: '<color>'; inherits: true; initial-value: #63356f; }
+@property --r1a { syntax: '<color>'; inherits: true; initial-value: #2f2558; }
+@property --r1b { syntax: '<color>'; inherits: true; initial-value: #241c48; }
+@property --r1h { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --r2a { syntax: '<color>'; inherits: true; initial-value: #231b47; }
+@property --r2b { syntax: '<color>'; inherits: true; initial-value: #1a1438; }
+@property --r2h { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --r3a { syntax: '<color>'; inherits: true; initial-value: #191335; }
+@property --r3b { syntax: '<color>'; inherits: true; initial-value: #120e28; }
+@property --r4a { syntax: '<color>'; inherits: true; initial-value: #0f0b20; }
+@property --r4b { syntax: '<color>'; inherits: true; initial-value: #0a0716; }
+@property --l1 { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --l2 { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --l3 { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --l4 { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --mist { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --mist-warm { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --cloud { syntax: '<color>'; inherits: true; initial-value: #2a2350; }
+@property --cloud-lit { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --sun-core { syntax: '<color>'; inherits: true; initial-value: #ff6a3d; }
+@property --sun-edge { syntax: '<color>'; inherits: true; initial-value: #e83a2a; }
+@property --sun-halo { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --glow-c { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --glow-r { syntax: '<length>'; inherits: true; initial-value: 140px; }
+@property --ray-c { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --ray-w { syntax: '<angle>'; inherits: true; initial-value: 2deg; }
+@property --ray-rot { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
+@property --w-near { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --w-deep { syntax: '<color>'; inherits: true; initial-value: #05060f; }
+@property --glit { syntax: '<color>'; inherits: true; initial-value: transparent; }
+@property --gy { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --bird { syntax: '<color>'; inherits: true; initial-value: #140f26; }
+@property --hh { syntax: '<integer>'; inherits: false; initial-value: 5; }
+@property --mm { syntax: '<integer>'; inherits: false; initial-value: 42; }
+
+/* ---------- the colour script: night → first light → golden sunrise → morning (one animation, inherited by all) ---------- */
+@keyframes palette {
+  0% {
+    --s0: #0b0a22; --s1: #1c1644; --s2: #3a2463; --s3: #63356f;
+    --r1a: #2f2558; --r1b: #241c48; --r1h: rgba(120, 70, 140, 0);
+    --r2a: #231b47; --r2b: #1a1438; --r2h: rgba(120, 70, 140, 0);
+    --r3a: #191335; --r3b: #120e28; --r4a: #0f0b20; --r4b: #0a0716;
+    --l1: rgba(255, 160, 140, 0); --l2: rgba(255, 160, 140, 0); --l3: rgba(255, 160, 140, 0); --l4: rgba(255, 160, 140, 0);
+    --mist: rgba(150, 130, 215, .32); --mist-warm: rgba(255, 140, 110, 0);
+    --cloud: #241d48; --cloud-lit: rgba(120, 80, 150, .35);
+    --sun-core: #ff6a3d; --sun-edge: #e83a2a; --sun-halo: rgba(255, 90, 60, 0);
+    --glow-c: rgba(255, 90, 70, 0); --glow-r: 140px; --ray-c: rgba(255, 220, 180, 0); --ray-w: 2deg;
+    --w-near: rgba(20, 16, 50, .35); --w-deep: rgba(5, 5, 16, .92); --glit: rgba(255, 170, 120, 0);
+    --bird: #150f28;
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  18% {
+    --s0: #110e2d; --s1: #271b54; --s2: #50306f; --s3: #8d4677;
+    --r1a: #44336f; --r1b: #34285c; --r1h: rgba(170, 90, 140, .25);
+    --r2a: #2e2357; --r2b: #221a46; --r2h: rgba(150, 80, 130, .12);
+    --r3a: #20183f; --r3b: #17112f; --r4a: #120d25; --r4b: #0b0819;
+    --mist: rgba(190, 150, 220, .38); --cloud: #33285e; --cloud-lit: rgba(200, 110, 150, .55);
+    --glow-c: rgba(255, 100, 80, .18); --glow-r: 200px;
+    --w-near: rgba(30, 20, 60, .3);
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  36% {
+    --s0: #1e2560; --s1: #553f8a; --s2: #c0608a; --s3: #ff9a74;
+    --r1a: #9c6293; --r1b: #7f5287; --r1h: rgba(255, 150, 120, .55);
+    --r2a: #5f437f; --r2b: #4b3570; --r2h: rgba(255, 130, 110, .3);
+    --r3a: #3b2a5f; --r3b: #2d2049; --r4a: #21173a; --r4b: #170f2a;
+    --l1: rgba(255, 150, 120, .42); --l2: rgba(255, 140, 120, .36); --l3: rgba(255, 140, 120, .3); --l4: rgba(255, 150, 120, .35);
+    --mist: rgba(255, 170, 190, .5); --mist-warm: rgba(255, 130, 90, .35);
+    --cloud: #6a4a86; --cloud-lit: rgba(255, 140, 120, .9);
+    --sun-core: #ff7a3a; --sun-edge: #ff4a2a; --sun-halo: rgba(255, 90, 60, .55);
+    --glow-c: rgba(255, 110, 80, .55); --glow-r: 330px; --ray-c: rgba(255, 210, 170, .1); --ray-w: 2.6deg;
+    --w-near: rgba(60, 30, 80, .28); --glit: rgba(255, 150, 100, .55);
+    --bird: #2a1b3e;
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  52% {
+    --s0: #3a5aa6; --s1: #9a7cb6; --s2: #ffa58a; --s3: #ffd39a;
+    --r1a: #e0a0a0; --r1b: #c58c9c; --r1h: rgba(255, 210, 160, .62);
+    --r2a: #9d6c98; --r2b: #7f5888; --r2h: rgba(255, 190, 150, .38);
+    --r3a: #614a83; --r3b: #4a3a6c; --r4a: #2e2550; --r4b: #211b3d;
+    --l1: rgba(255, 196, 150, .62); --l2: rgba(255, 186, 140, .55); --l3: rgba(255, 180, 140, .48); --l4: rgba(255, 196, 150, .6);
+    --mist: rgba(255, 215, 200, .58); --mist-warm: rgba(255, 170, 110, .45);
+    --cloud: #b88aa8; --cloud-lit: rgba(255, 196, 150, .95);
+    --sun-core: #fff0c0; --sun-edge: #ffb04a; --sun-halo: rgba(255, 170, 90, .6);
+    --glow-c: rgba(255, 175, 115, .62); --glow-r: 620px; --ray-c: rgba(255, 232, 192, .24); --ray-w: 4deg;
+    --w-near: rgba(90, 50, 90, .2); --glit: rgba(255, 222, 165, .95);
+    --bird: #3a2a4c;
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  68% {
+    --s0: #3f7cc8; --s1: #8fb8e0; --s2: #ffd0b0; --s3: #fff0cc;
+    --r1a: #c6c4d6; --r1b: #a8b2cc; --r1h: rgba(255, 230, 190, .58);
+    --r2a: #8290bd; --r2b: #6a7aab; --r2h: rgba(255, 220, 180, .3);
+    --r3a: #4d6497; --r3b: #3d527f; --r4a: #26365e; --r4b: #1c2848;
+    --l1: rgba(255, 228, 185, .55); --l2: rgba(255, 222, 180, .5); --l3: rgba(255, 215, 175, .42); --l4: rgba(255, 230, 190, .55);
+    --mist: rgba(255, 242, 232, .55); --mist-warm: rgba(255, 200, 140, .35);
+    --cloud: #d8c8da; --cloud-lit: rgba(255, 232, 205, .92);
+    --sun-core: #fffbe6; --sun-edge: #ffd77a; --sun-halo: rgba(255, 220, 140, .55);
+    --glow-c: rgba(255, 222, 165, .5); --glow-r: 690px; --ray-c: rgba(255, 242, 212, .2); --ray-w: 4.4deg;
+    --w-near: rgba(40, 70, 120, .18); --glit: rgba(255, 244, 210, .9);
+    --bird: #2f3a5c;
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  85% {
+    --s0: #3d8fdc; --s1: #7dc0ee; --s2: #c6e6f3; --s3: #fff1d6;
+    --r1a: #a9cfe2; --r1b: #92bdd6; --r1h: rgba(255, 245, 220, .42);
+    --r2a: #6fa7cd; --r2b: #5b94be; --r2h: rgba(255, 240, 210, .2);
+    --r3a: #3f80b0; --r3b: #336f9e; --r4a: #1f4f7a; --r4b: #173f63;
+    --l1: rgba(255, 250, 228, .42); --l2: rgba(255, 248, 222, .4); --l3: rgba(255, 244, 215, .34); --l4: rgba(255, 246, 220, .45);
+    --mist: rgba(255, 255, 255, .5); --mist-warm: rgba(255, 230, 180, .22);
+    --cloud: #f4f7fb; --cloud-lit: rgba(255, 255, 255, .95);
+    --sun-core: #ffffff; --sun-edge: #ffe9a8; --sun-halo: rgba(255, 240, 190, .5);
+    --glow-c: rgba(255, 246, 215, .46); --glow-r: 560px; --ray-c: rgba(255, 250, 232, .13); --ray-w: 4deg;
+    --w-near: rgba(20, 80, 140, .16); --glit: rgba(255, 252, 235, .8);
+    --bird: #284567;
+    animation-timing-function: cubic-bezier(.45, 0, .55, 1);
+  }
+  100% {
+    --s0: #3a92e0; --s1: #7cc3ef; --s2: #c9e8f4; --s3: #fff3dc;
+    --r1a: #a6cfe3; --r1b: #8fbcd6; --r1h: rgba(255, 245, 220, .36);
+    --r2a: #6ba6ce; --r2b: #5893bf; --r2h: rgba(255, 240, 210, .16);
+    --r3a: #3c7fb1; --r3b: #306d9e; --r4a: #1d4e7a; --r4b: #163e63;
+    --l1: rgba(255, 250, 228, .38); --l2: rgba(255, 248, 222, .36); --l3: rgba(255, 244, 215, .3); --l4: rgba(255, 246, 220, .42);
+    --mist: rgba(255, 255, 255, .42); --mist-warm: rgba(255, 230, 180, .16);
+    --cloud: #f7f9fc; --cloud-lit: rgba(255, 255, 255, .95);
+    --sun-core: #ffffff; --sun-edge: #ffeeb8; --sun-halo: rgba(255, 244, 200, .48);
+    --glow-c: rgba(255, 248, 222, .42); --glow-r: 520px; --ray-c: rgba(255, 252, 238, .1); --ray-w: 3.6deg;
+    --w-near: rgba(20, 84, 146, .16); --glit: rgba(255, 252, 238, .72);
+    --bird: #284567;
+  }
+}
+
+/* ---------- layout ---------- */
+.sunrise { position: absolute; inset: 0; overflow: hidden; }
+.world { position: absolute; inset: 0; animation: palette 10s linear both; }
+.scene { position: absolute; left: 0; top: 0; width: 1080px; height: 1232px; isolation: isolate; }
+
+.sky { position: absolute; inset: 0;
+  background: linear-gradient(180deg, var(--s0) 0px, var(--s1) 420px, var(--s2) 820px, var(--s3) 1040px); }
+
+/* stars: one 2 px dot each, the rest of the field is its box-shadow list (written by main.js) */
+.stars { position: absolute; left: 0; top: 0; width: 1080px; height: 900px; animation: starsfade 10s linear both; }
+.stars i { position: absolute; left: 0; top: 0; width: 2px; height: 2px; border-radius: 50%; }
+.stars .a { animation: twinkle 1.9s ease-in-out infinite alternate; }
+.stars .b { animation: twinkle 2.7s ease-in-out infinite alternate; --phase: -1.3s; }
+@keyframes twinkle { from { opacity: 1; } to { opacity: .35; } }
+@keyframes starsfade { 0%, 20% { opacity: 1; } 46%, 100% { opacity: 0; } }
+
+/* a thin waning moon, setting as the sky brightens */
+.moon { position: absolute; left: 810px; top: 190px; width: 70px; height: 70px; border-radius: 50%;
+  box-shadow: inset -15px 7px 0 0 #f6eed6; filter: drop-shadow(0 0 14px rgba(255, 238, 200, .45)); animation: moonset 10s linear both; }
+@keyframes moonset { 0% { translate: 0 0; opacity: .95; } 44%, 100% { translate: 34px 46px; opacity: 0; } }
+
+/* long thin clouds catch the light before the land does */
+.cloud { position: absolute; animation: cloud-drift 10s linear both; }
+.cloud i { position: absolute; display: block; border-radius: 999px;
+  background: linear-gradient(180deg, var(--cloud) 15%, var(--cloud-lit) 100%); }
+.cloud.c2 { animation-name: cloud-drift-2; }
+@keyframes cloud-drift { from { translate: -10px 0; } to { translate: 46px 0; } }
+@keyframes cloud-drift-2 { from { translate: 20px 0; } to { translate: -30px 0; } }
+
+/* ---------- the sun rig: glow, conic rays and disc rise together ---------- */
+.sunrig { position: absolute; left: 540px; top: 0; width: 0; height: 0; animation: rise 10s linear both; }
+@keyframes rise {
+  0%, 25% { translate: 0 1190px; animation-timing-function: cubic-bezier(.36, 0, .24, 1); }
+  74% { translate: 0 640px; animation-timing-function: cubic-bezier(.3, 0, .6, 1); }
+  100% { translate: 0 596px; }
+}
+.glow { position: absolute; left: -720px; top: -720px; width: 1440px; height: 1440px; mix-blend-mode: screen;
+  background: radial-gradient(circle closest-side, var(--glow-c) 0px,
+    color-mix(in srgb, var(--glow-c) 42%, transparent) calc(var(--glow-r) * .42), transparent var(--glow-r)); }
+/* sun rays: two repeating conic gradients whose start angle is a registered <angle>, counter-rotating */
+.rays { position: absolute; left: -850px; top: -850px; width: 1700px; height: 1700px; mix-blend-mode: screen;
+  background:
+    repeating-conic-gradient(from var(--ray-rot), var(--ray-c) 0deg, transparent var(--ray-w), transparent calc(15deg - var(--ray-w)), var(--ray-c) 15deg),
+    repeating-conic-gradient(from calc(var(--ray-rot) * -0.62 + 4deg), color-mix(in srgb, var(--ray-c) 70%, transparent) 0deg, transparent calc(var(--ray-w) * .6), transparent calc(9deg - var(--ray-w) * .6), color-mix(in srgb, var(--ray-c) 70%, transparent) 9deg);
+  -webkit-mask-image: radial-gradient(circle closest-side, transparent 70px, #000 130px, rgba(0, 0, 0, .55) 46%, transparent 100%);
+  mask-image: radial-gradient(circle closest-side, transparent 70px, #000 130px, rgba(0, 0, 0, .55) 46%, transparent 100%);
+  animation: spin 10s linear both; }
+@keyframes spin { from { --ray-rot: -10deg; } to { --ray-rot: 50deg; } }
+.sun { position: absolute; left: -88px; top: -88px; width: 176px; height: 176px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, var(--sun-core) 0 40%, var(--sun-edge) 100%);
+  box-shadow: 0 0 46px 14px var(--sun-halo), 0 0 120px 40px color-mix(in srgb, var(--sun-halo) 45%, transparent);
+  animation: sunsize 10s linear both; }
+@keyframes sunsize { 0%, 25% { scale: 1.14; animation-timing-function: cubic-bezier(.36, 0, .24, 1); } 74%, 100% { scale: 1; } }
+
+/* ---------- ridges: clip-path polygons (keyframes ridge-N / lit-N come from ridges.js) ---------- */
+.ridge { position: absolute; left: 0; top: 0; width: 1080px; height: 1232px; }
+.ridge .lit { position: absolute; inset: 0; mix-blend-mode: screen; }
+.r1 { animation: ridge-1 10s linear both;
+  background: radial-gradient(560px 230px at 540px 980px, var(--r1h), transparent 75%), linear-gradient(180deg, var(--r1a) 800px, var(--r1b) 1232px); }
+.r2 { animation: ridge-2 10s linear both;
+  background: radial-gradient(620px 260px at 540px 1060px, var(--r2h), transparent 75%), linear-gradient(180deg, var(--r2a) 760px, var(--r2b) 1232px); }
+.r3 { animation: ridge-3 10s linear both; background: linear-gradient(180deg, var(--r3a) 980px, var(--r3b) 1232px); }
+.r4 { animation: ridge-4 10s linear both; background: linear-gradient(180deg, var(--r4a) 950px, var(--r4b) 1232px); }
+.l1 { animation: lit-1 10s linear both; background: linear-gradient(180deg, var(--l1) 800px, color-mix(in srgb, var(--l1) 25%, transparent) 1100px); }
+.l2 { animation: lit-2 10s linear both; background: linear-gradient(180deg, var(--l2) 760px, color-mix(in srgb, var(--l2) 25%, transparent) 1150px); }
+.l3 { animation: lit-3 10s linear both; background: linear-gradient(180deg, var(--l3) 980px, color-mix(in srgb, var(--l3) 30%, transparent) 1180px); }
+.l4 { animation: lit-4 10s linear both; background: var(--l4); }
+
+/* ---------- mist: soft blobs, blurred, screen / soft-light blended over the ridges behind ---------- */
+.mist { position: absolute; left: -310px; width: 1700px; }  /* soft radial blobs: no filter pass needed */
+.mist.m1 { top: 900px; height: 210px; mix-blend-mode: screen; animation: drift-1 10s linear both;
+  background: radial-gradient(30% 38% at 22% 58%, var(--mist), transparent 78%), radial-gradient(36% 34% at 58% 46%, var(--mist), transparent 76%),
+    radial-gradient(26% 44% at 86% 60%, var(--mist), transparent 78%); }
+.mist.m2 { top: 1000px; height: 200px; mix-blend-mode: screen; animation: drift-2 10s linear both;
+  background: radial-gradient(30% 36% at 34% 52%, var(--mist), transparent 72%), radial-gradient(26% 32% at 70% 60%, var(--mist), transparent 70%); }
+.mist.m3 { top: 1080px; height: 190px; mix-blend-mode: soft-light; animation: drift-3 10s linear both;
+  background: radial-gradient(40% 46% at 50% 55%, var(--mist-warm), transparent 75%), radial-gradient(30% 40% at 15% 50%, var(--mist-warm), transparent 70%),
+    radial-gradient(30% 40% at 85% 50%, var(--mist-warm), transparent 70%); }
+@keyframes drift-1 { 0% { translate: -50px 0; opacity: .85; } 50% { opacity: 1; } 100% { translate: 70px -16px; opacity: .7; } }
+@keyframes drift-2 { 0% { translate: 40px 0; opacity: .8; } 50% { opacity: 1; } 100% { translate: -60px -10px; opacity: .6; } }
+@keyframes drift-3 { 0% { translate: -30px 0; } 100% { translate: 40px -8px; } }
+
+/* ---------- the lake: a mirrored, blurred copy of the scene + water ---------- */
+.lake { position: absolute; left: 0; top: 1210px; width: 1080px; height: 710px; overflow: hidden; isolation: isolate; }
+/* the clone's box spans lake-y −1210…0; flipped about its bottom edge (the waterline) */
+.mirror { position: absolute; left: 0; top: -1210px; width: 1080px; height: 1210px; transform-origin: 50% 100%;
+  transform: scaleY(-1); filter: blur(2.6px) saturate(1.08); opacity: .94; }
+.water { position: absolute; inset: 0; background: linear-gradient(180deg, var(--w-near) 0px, color-mix(in srgb, var(--w-near) 70%, var(--w-deep)) 330px, var(--w-deep) 710px); }
+/* ripple streaks: a stripe plane tilted in 3-D toward the viewer, so the lines crowd toward the horizon */
+.ripples { position: absolute; inset: 0; perspective: 800px; perspective-origin: 50% 0; mix-blend-mode: soft-light; opacity: .9; }
+.ripples .plane { position: absolute; left: -110px; top: 0; width: 1300px; height: 620px; transform-origin: 50% 0; transform: rotateX(70deg); overflow: hidden; }
+.ripples .wave { position: absolute; left: 0; top: -116px; width: 100%; height: 760px; animation: swell 10s linear both;
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0) 0 11px, rgba(255, 255, 255, .7) 13px, rgba(255, 255, 255, 0) 16px 29px),
+    repeating-linear-gradient(180deg, rgba(0, 0, 20, 0) 0 5px, rgba(0, 0, 30, .55) 7px, rgba(0, 0, 20, 0) 10px 17px); }
+@keyframes swell { from { translate: 0 0; } to { translate: 0 116px; } }
+/* the sun's glitter path: short dashes in a perspective wedge, brightest at the sun's reflection (--gy) */
+.glitter { position: absolute; left: 300px; top: 0; width: 480px; height: 710px; mix-blend-mode: screen;
+  clip-path: polygon(46% 0, 54% 0, 100% 100%, 0 100%);
+  background:
+    repeating-linear-gradient(180deg, transparent 0 8px, var(--glit) 9px 11px, transparent 12px 21px),
+    repeating-linear-gradient(180deg, transparent 0 13px, var(--glit) 14px 15px, transparent 16px 34px);
+  -webkit-mask-image: radial-gradient(28% 42% at 50% var(--gy), #000 0%, rgba(0, 0, 0, .45) 55%, transparent 100%),
+    repeating-linear-gradient(90deg, #000 0 17px, transparent 17px 23px, #000 23px 31px, transparent 31px 34px);
+  -webkit-mask-composite: source-in;
+  mask-image: radial-gradient(28% 42% at 50% var(--gy), #000 0%, rgba(0, 0, 0, .45) 55%, transparent 100%),
+    repeating-linear-gradient(90deg, #000 0 17px, transparent 17px 23px, #000 23px 31px, transparent 31px 34px);
+  mask-composite: intersect;
+  animation: glitter 10s linear both, gy 10s linear both; }
+@keyframes glitter { from { background-position: 0 0, 0 0; } to { background-position: 0 168px, 0 -120px; } }
+@keyframes gy {
+  0%, 25% { --gy: 20px; animation-timing-function: cubic-bezier(.36, 0, .24, 1); }
+  74% { --gy: 570px; animation-timing-function: cubic-bezier(.3, 0, .6, 1); }
+  100% { --gy: 614px; }
+}
+.shore { position: absolute; left: 0; top: 0; width: 100%; height: 18px; background: linear-gradient(180deg, rgba(6, 5, 18, .6), rgba(6, 5, 18, 0)); }
+/* the caption sits on dark water whatever the hour */
+.deep { position: absolute; left: 0; right: 0; bottom: 0; height: 430px;
+  background: linear-gradient(180deg, rgba(4, 6, 18, 0), rgba(4, 6, 18, .6) 45%, rgba(3, 5, 14, .86)); }
+
+/* ---------- birds: CSS arcs flying along offset-path ---------- */
+.birds { position: absolute; inset: 0; }
+.bird { position: absolute; left: 0; top: 0; width: 0; height: 0; offset-anchor: 0 0; offset-rotate: auto;
+  animation: fly var(--dur) cubic-bezier(.32, .06, .66, .94) both; }
+@keyframes fly {
+  from { offset-distance: 0%; scale: var(--s0b); }
+  to { offset-distance: 100%; scale: var(--s1b); }
+}
+.bird::before, .bird::after { content: ''; position: absolute; top: -10px; width: 30px; height: 15px;
+  border-top: 4px solid var(--bird); border-radius: 50% 50% 0 0 / 100% 100% 0 0; --phase: var(--wing);
+  animation: var(--flap) ease-in-out infinite alternate; }
+.bird::before { left: -29px; transform-origin: 100% 100%; animation-name: flap-l; }
+.bird::after { left: -1px; transform-origin: 0 100%; animation-name: flap-r; }
+@keyframes flap-l { from { rotate: 24deg; } to { rotate: -20deg; } }
+@keyframes flap-r { from { rotate: -24deg; } to { rotate: 20deg; } }
+
+/* ---------- type ---------- */
+.line { position: absolute; left: 0; right: 0; top: 248px; text-align: center; white-space: nowrap;
+  font: 700 94px/1.2 "Gowun Batang", serif; letter-spacing: .05em; color: #fff;
+  text-shadow: 0 2px 28px rgba(40, 50, 110, .32); }
+.line .g { display: inline-block; animation: glyph 1.7s cubic-bezier(.2, .75, .25, 1) both; }
+.line .sp { display: inline-block; width: .32em; }
+@keyframes glyph {
+  from { opacity: 0; translate: 0 30px; filter: blur(12px); }
+  to { opacity: 1; translate: 0 0; filter: blur(0); }
+}
+.rule { position: absolute; left: 390px; width: 300px; top: 400px; height: 2px; transform-origin: 50% 50%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .85), transparent); animation: rule 10s linear both; }
+@keyframes rule { 0%, 76% { scale: 0 1; opacity: 0; animation-timing-function: cubic-bezier(.2, .7, .2, 1); } 92%, 100% { scale: 1 1; opacity: 1; } }
+
+/* a clock in the corner: two registered <integer> properties shown through CSS counters */
+.clock { position: absolute; left: 72px; top: 86px; font: 600 30px/1 "Pretendard Variable", sans-serif;
+  letter-spacing: .06em; color: rgba(255, 255, 255, .8); font-variant-numeric: tabular-nums;
+  counter-reset: hh var(--hh) mm var(--mm); animation: clock 10s linear both; }
+.clock::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 14px; border-radius: 50%;
+  vertical-align: 4px; background: #ffcf8a; box-shadow: 0 0 10px #ffb060; }
+.clock::after { content: '오전 ' counter(hh) ':' counter(mm, decimal-leading-zero); }
+@keyframes clock {
+  0% { --hh: 5; --mm: 42; }
+  29.3% { --hh: 5; --mm: 59; }
+  29.31% { --hh: 6; --mm: 0; }
+  100% { --hh: 6; --mm: 40; }
+}
+
+/* film grain: a static SVG noise tile, overlaid (no animation) */
+.grain { position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay; pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 2 -.5'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px; }
+
+/* browsers without @property: the scene still draws, frozen in its first state */
+.notice { position: absolute; left: 80px; right: 80px; top: 820px; padding: 28px 32px; border-radius: 18px;
+  background: rgba(0, 0, 0, .6); color: #fff; font: 500 32px/1.5 "Pretendard Variable", sans-serif; text-align: center; z-index: 50; }

@@ -1,0 +1,380 @@
+/*
+ * 85 · 스크롤로 읽는 이야기 — a magazine long-read inside a scroll container. Every moving thing is a CSS
+ * scroll-driven animation: the picture is a pure function of the reader's scrollTop (main.js sets it from t).
+ *
+ *   scroll(nearest block)     reading progress bar, hero parallax (ranges in px of scroll)
+ *   view()                    paragraphs fading up as they enter (anonymous, the element is its own subject)
+ *   view-timeline: --s1…--s5  each section names its own view timeline; its illustration, counter and sticky
+ *                             header underline run on it. Ranges are "cover Npx" offsets: a section top sits under
+ *                             the 110 px bar at cover 1490px (scrollport 1600 − 110), so 1150–1550px is "arriving
+ *                             and coming to rest" — the reveals finish as the reader pauses.
+ *   timeline-scope            hoists the section timelines to .coffee, so the dock (outside the scroller) and the
+ *                             nav ticker can follow them
+ *   @property <integer>       counters: an animated integer shown with counter-reset / counter()
+ * Every rule writes `animation` first and `animation-timeline` after it (the shorthand resets the timeline).
+ */
+
+@property --num { syntax: '<integer>'; inherits: false; initial-value: 0; }
+@property --kilo { syntax: '<integer>'; inherits: false; initial-value: 0; }
+@property --rest { syntax: '<integer>'; inherits: false; initial-value: 0; }
+@property --roast { syntax: '<color>'; inherits: true; initial-value: #9cb46a; }
+@counter-style pad3 { system: extends decimal; pad: 3 "0"; }
+
+.coffee { --cream: #f6efe1; --paper: #fbf7ee; --ink: #2d1e14; --brown: #7a5236; --green: #4e7a46; --accent: #e2492f; --gold: #d9a441;
+  position: absolute; inset: 0; background: var(--cream); color: var(--ink);
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  timeline-scope: --s1, --s2, --s3, --s4, --s5, --sum; }
+.coffee *, .coffee *::before, .coffee *::after { box-sizing: border-box; }
+
+/* the scroll container: hidden overflow (only scrollTop moves it — no wheel, no scrollbar), named scroll timeline */
+.reader { position: absolute; left: 0; top: 0; width: 1080px; height: 1600px; overflow: hidden; scroll-timeline: --article block; }
+.content { position: relative; }
+
+/* ---------------- sticky bar + progress ---------------- */
+.bar { position: sticky; top: 0; z-index: 20; height: 110px; display: flex; align-items: center; padding: 0 64px;
+  background: rgba(246, 239, 225, .95); border-bottom: 1px solid rgba(45, 30, 20, .12); }
+.mast { font: 900 36px/1 "Noto Serif KR", serif; letter-spacing: -.02em; }
+.issue { margin-left: auto; font: 600 24px/1 "Pretendard Variable", sans-serif; letter-spacing: .12em; color: var(--brown); }
+.chapters { position: relative; width: 560px; height: 44px; margin-left: 48px; overflow: hidden; }
+.ch { position: absolute; left: 0; top: 0; line-height: 44px; font-weight: 600; font-size: 26px; color: var(--brown); opacity: 0; white-space: nowrap; }
+.progress { position: absolute; left: 0; bottom: -1px; width: 100%; height: 7px; background: var(--accent); transform-origin: 0 50%;
+  animation: grow-x linear both; animation-timeline: scroll(nearest block); }
+@keyframes grow-x { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes shrink-x { from { transform: scaleX(1); } to { transform: scaleX(.2); } }
+
+/* the chapter ticker: each name slides in while its section is being read */
+@keyframes chapter { 0% { opacity: 0; translate: 0 34px; } 8%, 92% { opacity: 1; translate: 0 0; } 100% { opacity: 0; translate: 0 -34px; } }
+@keyframes chapter-out { from { opacity: 1; translate: 0 0; } to { opacity: 0; translate: 0 -34px; } }
+@keyframes chapter-in { from { opacity: 0; translate: 0 34px; } to { opacity: 1; translate: 0 0; } }
+.ch0 { opacity: 1; animation: chapter-out linear both; animation-timeline: --s1; animation-range: cover 1050px cover 1300px; }
+.ch1 { animation: chapter linear both; animation-timeline: --s1; animation-range: cover 1250px cover 2900px; }
+.ch2 { animation: chapter linear both; animation-timeline: --s2; animation-range: cover 1250px cover 2900px; }
+.ch3 { animation: chapter linear both; animation-timeline: --s3; animation-range: cover 1250px cover 2900px; }
+.ch4 { animation: chapter linear both; animation-timeline: --s4; animation-range: cover 1250px cover 2900px; }
+.ch5 { animation: chapter linear both; animation-timeline: --s5; animation-range: cover 1250px cover 2900px; }
+.ch6 { animation: chapter-in linear both; animation-timeline: --sum; animation-range: cover 1250px cover 1420px; }
+
+/* ---------------- hero (parallax on the scroll timeline, px of scroll) ---------------- */
+.hero { position: relative; height: 1490px; padding: 84px 80px 0; overflow: hidden; }
+.kicker { margin: 0; font: 700 26px/1 "Pretendard Variable", sans-serif; letter-spacing: .22em; color: var(--accent); }
+.hero h1 { margin: 34px 0 0; font: 900 128px/1.1 "Noto Serif KR", serif; letter-spacing: -.035em; position: relative; z-index: 2;
+  animation: hero-title linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1300px; }
+@keyframes hero-title { to { translate: 0 -160px; opacity: .2; } }
+.dek { margin: 36px 0 0; font: 400 36px/1.6 "Pretendard Variable", sans-serif; color: #4a3527; position: relative; z-index: 2;
+  animation: hero-dek linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1300px; }
+@keyframes hero-dek { to { translate: 0 -100px; opacity: 0; } }
+.byline { margin: 26px 0 0; font: 500 24px/1 "Pretendard Variable", sans-serif; letter-spacing: .06em; color: var(--brown); position: relative; z-index: 2; }
+.byline::before { content: ''; display: inline-block; width: 40px; height: 2px; margin-right: 14px; vertical-align: 7px; background: var(--brown); }
+.hero-sun { position: absolute; right: -200px; top: 380px; width: 900px; height: 900px; border-radius: 50%;
+  background: radial-gradient(circle, #f3d49c 0, #f3dcb0 45%, rgba(246, 239, 225, 0) 70%);
+  animation: hero-sun linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1500px; }
+@keyframes hero-sun { to { translate: 0 260px; scale: 1.15; } }
+.cue { position: absolute; left: 0; right: 0; bottom: 70px; text-align: center; font: 600 24px/1 "Pretendard Variable", sans-serif; letter-spacing: .14em; color: var(--brown);
+  animation: fade-out linear both; animation-timeline: scroll(nearest block); animation-range: 0px 110px; }
+.cue span { display: inline-block; margin-left: 8px; }
+@keyframes fade-out { to { opacity: 0; translate: 0 20px; } }
+
+/* coffee beans: an ellipse with a curved crease; three depths of parallax */
+.bean { position: absolute; width: 58px; height: 80px; border-radius: 50%;
+  background: radial-gradient(ellipse at 34% 28%, #a8703f, #6f3d1f 58%, #4b2613);
+  box-shadow: inset -5px -7px 12px rgba(0, 0, 0, .28), 0 10px 20px rgba(70, 35, 10, .16); }
+.bean::after { content: ''; position: absolute; left: 50%; top: 11%; width: 14px; height: 78%; margin-left: -9px;
+  border-left: 4px solid #3a1c0d; border-radius: 50%; }
+.hero .bean { animation: drift-1 linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1600px; }
+.hero .b1 { left: 820px; top: 150px; rotate: 24deg; }
+.hero .b2 { left: 930px; top: 560px; rotate: -40deg; scale: .8; animation-name: drift-2; }
+.hero .b3 { left: 70px; top: 760px; rotate: 64deg; scale: 1.15; animation-name: drift-3; }
+.hero .b4 { left: 190px; top: 1120px; rotate: -18deg; scale: .7; animation-name: drift-2; }
+.hero .b5 { left: 860px; top: 1040px; rotate: 120deg; scale: 1.3; animation-name: drift-3; }
+.hero .b6 { left: 300px; top: 900px; rotate: 30deg; scale: .55; animation-name: drift-1; }
+.hero .b7 { left: 980px; top: 330px; rotate: 80deg; scale: .5; animation-name: drift-1; }
+.hero .b8 { left: 100px; top: 1330px; rotate: -70deg; scale: .9; animation-name: drift-3; }
+@keyframes drift-1 { to { translate: 0 -260px; } }
+@keyframes drift-2 { to { translate: 0 -520px; rotate: 30deg; } }
+@keyframes drift-3 { to { translate: 0 -860px; } }
+
+/* the cup (CSS shapes), receding slower than the page; steam rises as the reader scrolls */
+.cup { position: absolute; left: 340px; top: 700px; width: 400px; height: 660px;
+  animation: cup-recede linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1500px; }
+@keyframes cup-recede { to { translate: 0 360px; } }
+.steam { position: absolute; left: 50px; top: 0; overflow: visible; }
+.steam path { fill: none; stroke: rgba(122, 82, 54, .32); stroke-width: 9; stroke-linecap: round; stroke-dasharray: .32 .68;
+  animation: steam linear both; animation-timeline: scroll(nearest block); animation-range: 0px 1200px; }
+.steam path:nth-child(2) { stroke-width: 11; animation-name: steam-2; }
+@keyframes steam { from { stroke-dashoffset: .1; } to { stroke-dashoffset: 1.5; } }
+@keyframes steam-2 { from { stroke-dashoffset: .45; } to { stroke-dashoffset: 1.75; } }
+.saucer { position: absolute; left: -90px; top: 520px; width: 580px; height: 120px; border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 40%, #fffdf8 0 52%, #efe4d3 53% 60%, #fbf6ec 61%);
+  box-shadow: 0 22px 40px rgba(80, 50, 25, .2); }
+.handle { position: absolute; left: 330px; top: 318px; width: 140px; height: 150px; border-radius: 50%; border: 28px solid #f2e7d6;
+  box-shadow: inset 4px 0 0 rgba(0, 0, 0, .04), 4px 6px 0 rgba(120, 90, 60, .12); }
+.cupbody { position: absolute; left: 0; top: 296px; width: 400px; height: 270px; border-radius: 0 0 200px 200px / 0 0 230px 230px;
+  background: linear-gradient(90deg, #eadcc6, #fffaf2 32%, #f8f0e3 62%, #ddcbb0); }
+.rim { position: absolute; left: 0; top: 252px; width: 400px; height: 92px; border-radius: 50%; background: #fffaf3;
+  box-shadow: inset 0 -3px 0 rgba(120, 90, 60, .15); }
+.coffee-top { position: absolute; inset: 12px 14px; border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 55%, #6a391c 0 30%, #9a5f33 58%, #c99560 74%, #6a3a1e 100%); }
+
+/* ---------------- sections ---------------- */
+.sec { position: relative; height: 1520px; }
+.s1 { view-timeline: --s1 block; } .s2 { view-timeline: --s2 block; } .s3 { view-timeline: --s3 block; }
+.s4 { view-timeline: --s4 block; } .s5 { view-timeline: --s5 block; }
+.s1 { --tl: --s1; } .s2 { --tl: --s2; } .s3 { --tl: --s3; } .s4 { --tl: --s4; } .s5 { --tl: --s5; }
+.s2 { background: #f2ead9; } .s4 { background: #f2ead9; }
+
+/* sticky section header (under the bar) with a per-section reading underline */
+.head { position: sticky; top: 110px; z-index: 10; display: grid; grid-template-columns: auto 1fr; column-gap: 26px; align-items: baseline;
+  padding: 34px 80px 26px; background: inherit; background-color: var(--cream); }
+.s2 .head, .s4 .head { background-color: #f2ead9; }
+.head .no { font: 900 84px/1 "Noto Serif KR", serif; color: var(--accent); letter-spacing: -.04em; }
+.head h2 { margin: 0; font: 900 72px/1 "Noto Serif KR", serif; letter-spacing: -.03em; }
+.head p { grid-column: 1 / -1; margin: 18px 0 0; font: 500 28px/1.2 "Pretendard Variable", sans-serif; color: var(--brown); }
+.head .read { position: absolute; left: 80px; right: 80px; bottom: 0; height: 3px; background: var(--ink); transform-origin: 0 50%;
+  animation: grow-x linear both; animation-timeline: var(--tl); animation-range: cover 1490px cover 2900px; }
+
+.body { margin: 30px 80px 0; font: 400 33px/1.68 "Pretendard Variable", sans-serif; color: #3a291d; word-break: keep-all; height: 168px; }
+/* paragraphs: an anonymous view() — the element is its own subject */
+.rv { animation: fade-up linear both; animation-timeline: view(); animation-range: entry 10% cover 52%; }
+@keyframes fade-up { from { opacity: 0; translate: 0 70px; } to { opacity: 1; translate: 0 0; } }
+
+.fig { position: relative; width: 920px; height: 640px; margin: 34px 80px 0; border-radius: 34px; overflow: hidden;
+  box-shadow: 0 1px 0 rgba(45, 30, 20, .08), 0 24px 50px rgba(80, 50, 25, .1); }
+.fig > svg { position: absolute; left: 0; top: 0; }
+.fig figcaption { position: absolute; right: 30px; bottom: 26px; font: 600 22px/1 "Pretendard Variable", sans-serif; letter-spacing: .02em; }
+
+/* stat block: a big counter (registered <integer> shown through a CSS counter), unit, label */
+.stat { position: relative; display: grid; grid-template-columns: auto auto 1fr; align-items: end; column-gap: 14px; margin: 40px 80px 0; height: 230px; }
+.num { font: 900 168px/1 "Noto Serif KR", serif; letter-spacing: -.04em; color: var(--ink); font-variant-numeric: tabular-nums;
+  animation: count linear both; animation-timeline: var(--tl); counter-reset: n var(--num); }
+.num::after { content: counter(n); }
+@keyframes count { from { --num: var(--from); } to { --num: var(--to); } }
+.unit { font: 700 54px/1 "Noto Serif KR", serif; margin-bottom: 22px; color: var(--accent); }
+.lbl { margin: 0 0 20px 26px; font: 600 28px/1.45 "Pretendard Variable", sans-serif; color: var(--ink); }
+.lbl small { font-weight: 400; font-size: 24px; color: var(--brown); }
+.n-years { --from: 0; --to: 3; animation-range: cover 1380px cover 1548px; }
+.n-alt { --from: 1000; --to: 2000; animation-range: cover 1380px cover 1548px;
+  --kilo: calc((var(--num) - 500) / 1000); --rest: calc(var(--num) - var(--kilo) * 1000); counter-reset: k var(--kilo) r var(--rest); }
+.n-alt::after { content: counter(k) "," counter(r, pad3); }
+.n-yield { --from: 100; --to: 20; animation-range: cover 1380px cover 1548px; }
+.n-temp { --from: 25; --to: 230; animation-range: cover 1300px cover 1548px; }
+.n-beans { --from: 0; --to: 70; animation-range: cover 1360px cover 1548px; }
+
+/* ---------------- 01 seed: roots and stem draw, the seed rides up, leaves unfold ---------------- */
+.fig-seed { background: linear-gradient(180deg, #fdf7ea, #f4e6c9 60%); }
+.fig-seed .soil { position: absolute; left: 0; right: 0; top: 382px; bottom: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(255, 235, 200, .1) 0 3px, transparent 4px) 0 0 / 46px 38px,
+    radial-gradient(circle at 70% 70%, rgba(30, 15, 5, .18) 0 4px, transparent 5px) 0 0 / 62px 52px,
+    linear-gradient(180deg, #8b5b3a 0, #75492d 45%, #5a3720); }
+.fig-seed .soil::before { content: ''; position: absolute; left: 0; right: 0; top: -10px; height: 18px; border-radius: 50%;
+  background: #8b5b3a; }
+.fig-seed .roots path { fill: none; stroke: #f0dcb8; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 1 1; opacity: .85;
+  animation: draw linear both; animation-timeline: var(--tl); animation-range: cover 1140px cover 1380px; }
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.fig-seed .stem { fill: none; stroke: #5f8f45; stroke-width: 11; stroke-linecap: round; stroke-dasharray: 1 1;
+  animation: draw linear both; animation-timeline: var(--tl); animation-range: cover 1240px cover 1440px; }
+.fig-seed .seed { transform-box: view-box; animation: seed-ride linear both; animation-timeline: var(--tl); animation-range: cover 1240px cover 1480px; }
+.fig-seed .seed ellipse { fill: #d6b47a; stroke: #8b6a3a; stroke-width: 3; }
+.fig-seed .seed path { fill: none; stroke: #8b6a3a; stroke-width: 3; }
+@keyframes seed-ride { 0% { translate: 0 0; } 83% { translate: 0 -262px; opacity: 1; } 100% { translate: 0 -268px; opacity: 0; scale: .7; } }
+.fig-seed .cotyledon ellipse { fill: #93c062; stroke: #5f8f45; stroke-width: 3; transform-box: fill-box; scale: 0;
+  animation: unfold linear both; animation-timeline: var(--tl); animation-range: cover 1395px cover 1485px; }
+.fig-seed .cl { transform-origin: 100% 50%; } .fig-seed .cr { transform-origin: 0 50%; }
+@keyframes unfold { from { scale: 0; } to { scale: 1; } }
+.fig-seed .trueleaf { transform-box: view-box; transform-origin: 460px 150px; scale: 0;
+  animation: unfold linear both; animation-timeline: var(--tl); animation-range: cover 1450px cover 1545px; }
+.fig-seed .trueleaf path { fill: #4c8a3c; stroke: #2f5f27; stroke-width: 2.5; }
+.fig-seed .trueleaf .vein { fill: none; stroke: #b8dc8e; stroke-width: 2.5; }
+.fig-seed .stages { position: absolute; left: 36px; bottom: 30px; display: flex; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.fig-seed .stages li { padding: 10px 20px; border-radius: 999px; font: 700 22px/1 "Pretendard Variable", sans-serif; color: rgba(255, 245, 225, .7);
+  border: 2px solid rgba(255, 245, 225, .35); animation: chip linear both; animation-timeline: var(--tl); }
+.fig-seed .stages .st1 { animation-range: cover 1150px cover 1240px; } .fig-seed .stages .st2 { animation-range: cover 1395px cover 1460px; }
+.fig-seed .stages .st3 { animation-range: cover 1460px cover 1530px; }
+@keyframes chip { to { background: #f6e2b8; color: #3c2616; border-color: #f6e2b8; } }
+.fig-seed figcaption { color: rgba(255, 240, 215, .85); bottom: 40px; }
+
+/* ---------------- 02 farm: hills in parallax, the arabica band on an altitude ruler ---------------- */
+.fig-farm .farm-sky { position: absolute; inset: 0; background: linear-gradient(180deg, #dfeae0, #f4eedd 70%); }
+.fig-farm .farm-sun { position: absolute; left: 560px; top: 70px; width: 130px; height: 130px; border-radius: 50%; background: #f7d58e;
+  box-shadow: 0 0 0 26px rgba(247, 213, 142, .25), 0 0 0 60px rgba(247, 213, 142, .12);
+  animation: sun-sink linear both; animation-timeline: var(--tl); animation-range: cover 0% cover 100%; }
+@keyframes sun-sink { from { translate: 0 -40px; } to { translate: 0 60px; } }
+.fig-farm .cloud { position: absolute; height: 34px; border-radius: 999px; background: rgba(255, 255, 255, .9);
+  animation: cloud-pass linear both; animation-timeline: var(--tl); animation-range: cover 0% cover 100%; }
+.fig-farm .cloud::before { content: ''; position: absolute; left: 30%; top: -24px; width: 44%; height: 50px; border-radius: 50%; background: inherit; }
+.fig-farm .c1 { left: 80px; top: 120px; width: 200px; } .fig-farm .c2 { left: 380px; top: 190px; width: 150px; animation-name: cloud-pass-2; }
+@keyframes cloud-pass { from { translate: -60px 0; } to { translate: 140px 0; } }
+@keyframes cloud-pass-2 { from { translate: 80px 0; } to { translate: -90px 0; } }
+.fig-farm .hill { position: absolute; left: 0; width: 920px; top: -60px; height: 760px;
+  animation: par-1 linear both; animation-timeline: var(--tl); animation-range: cover 0% cover 100%; }
+.fig-farm .far { background: linear-gradient(180deg, #a9c2ad, #c4d4bd); clip-path: polygon(0 390px, 120px 330px, 250px 356px, 390px 280px, 540px 336px, 690px 270px, 830px 318px, 920px 300px, 920px 760px, 0 760px); }
+.fig-farm .mid { background: linear-gradient(180deg, #86aa76, #a7c08f); animation-name: par-2;
+  clip-path: polygon(0 470px, 150px 410px, 320px 452px, 500px 380px, 680px 430px, 820px 400px, 920px 420px, 920px 760px, 0 760px); }
+.fig-farm .near { background: linear-gradient(180deg, #5f8c50, #4c7642); animation-name: par-3;
+  clip-path: polygon(0 500px, 200px 520px, 420px 566px, 640px 620px, 920px 690px, 920px 760px, 0 760px); }
+.fig-farm .rows { position: absolute; left: -100px; top: 480px; width: 1200px; height: 320px; rotate: 9deg; transform-origin: 0 0;
+  background: radial-gradient(circle at 50% 50%, #2f5a2c 0 12px, rgba(47, 90, 44, .0) 13px) 0 0 / 34px 34px,
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0) 0 26px, rgba(214, 196, 140, .35) 26px 34px); }
+@keyframes par-1 { from { translate: 0 30px; } to { translate: 0 -30px; } }
+@keyframes par-2 { from { translate: 0 70px; } to { translate: 0 -70px; } }
+@keyframes par-3 { from { translate: 0 130px; } to { translate: 0 -130px; } }
+.fig-farm .ruler { position: absolute; right: 36px; top: 60px; width: 150px; height: 500px; border-right: 3px solid var(--ink); }
+.fig-farm .ruler span { position: absolute; right: 16px; bottom: calc(var(--y) * 20% - 12px); font: 700 22px/24px "Pretendard Variable", sans-serif; color: var(--ink); }
+.fig-farm .ruler span::after { content: ''; position: absolute; right: -16px; top: 11px; width: 10px; height: 2px; background: var(--ink); }
+.fig-farm .zone { position: absolute; right: -3px; width: 18px; bottom: 40%; height: 40%; background: var(--accent); transform-origin: 50% 100%;
+  animation: grow-y linear both; animation-timeline: var(--tl); animation-range: cover 1250px cover 1530px; }
+@keyframes grow-y { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.fig-farm .marker { position: absolute; right: -30px; bottom: 40%; width: 0; height: 0; border: 14px solid transparent; border-right: 22px solid var(--ink);
+  translate: 0 14px; animation: climb linear both; animation-timeline: var(--tl); animation-range: cover 1380px cover 1548px; }
+@keyframes climb { from { translate: 0 14px; } to { translate: 0 -186px; } }
+.fig-farm figcaption { color: #f3ecd8; }
+
+/* ---------------- 03 harvest: cherries ripen one by one, a cherry opens ---------------- */
+.fig-harvest { background: linear-gradient(160deg, #f7efdc, #ecdfc0); }
+.fig-harvest .branch { fill: none; stroke: #6b4a33; stroke-width: 16; stroke-linecap: round; }
+.fig-harvest .twig { fill: none; stroke: #6b4a33; stroke-width: 7; stroke-linecap: round; }
+.fig-harvest .leaves path { fill: #4f7f45; stroke: #355c30; stroke-width: 2; }
+.fig-harvest .cherries circle { fill: #8fae4f; stroke: rgba(40, 20, 10, .25); stroke-width: 2;
+  animation: ripen linear both; animation-timeline: var(--tl);
+  animation-range: cover calc(1250px + var(--i) * 14px) cover calc(1370px + var(--i) * 14px); }
+@keyframes ripen { 0% { fill: #8fae4f; } 40% { fill: #e2b53e; } 75% { fill: #d9452b; } 100% { fill: #b0261c; } }
+.fig-harvest .xsec { position: absolute; left: 600px; top: 150px; width: 280px; height: 280px; }
+.fig-harvest .half { position: absolute; top: 0; width: 140px; height: 280px; overflow: hidden;
+  animation: split-l linear both; animation-timeline: var(--tl); animation-range: cover 1290px cover 1470px; }
+.fig-harvest .half.left { left: 0; } .fig-harvest .half.right { left: 140px; animation-name: split-r; }
+@keyframes split-l { to { translate: -34px 0; rotate: -6deg; } }
+@keyframes split-r { to { translate: 34px 0; rotate: 6deg; } }
+.fig-harvest .half > div { position: absolute; }
+.fig-harvest .half .skin { width: 280px; height: 280px; top: 0; border-radius: 50%; background: radial-gradient(circle at 36% 30%, #e8553c, #b4271b 70%); }
+.fig-harvest .half .pulp { width: 248px; height: 248px; top: 16px; border-radius: 50%; background: radial-gradient(circle, #f7e2b4, #edc98d); }
+.fig-harvest .half.left .skin { left: 0; } .fig-harvest .half.right .skin { left: -140px; }
+.fig-harvest .half.left .pulp { left: 16px; } .fig-harvest .half.right .pulp { left: -124px; }
+.fig-harvest .half .parch { width: 112px; height: 172px; top: 54px; background: #f3e8cc; border: 3px solid #cdb27c; }
+.fig-harvest .half .greenbean { width: 92px; height: 150px; top: 65px; background: radial-gradient(ellipse at 40% 35%, #c3cf9a, #8f9f62); }
+.fig-harvest .half.left .parch { left: 22px; border-radius: 60% 14% 14% 60% / 50% 22% 22% 50%; }
+.fig-harvest .half.left .greenbean { left: 34px; border-radius: 60% 12% 12% 60% / 50% 20% 20% 50%; }
+.fig-harvest .half.right .parch { left: 6px; border-radius: 14% 60% 60% 14% / 22% 50% 50% 22%; }
+.fig-harvest .half.right .greenbean { left: 14px; border-radius: 12% 60% 60% 12% / 20% 50% 50% 20%; }
+.fig-harvest .half .greenbean::after { content: ''; position: absolute; top: 20%; height: 60%; width: 12px; border-right: 3px solid #6f7d45; border-radius: 50%; }
+.fig-harvest .half.left .greenbean::after { right: 8px; } .fig-harvest .half.right .greenbean::after { left: 8px; rotate: 180deg; }
+.fig-harvest .tag { position: absolute; font: 700 21px/1 "Pretendard Variable", sans-serif; color: var(--ink); white-space: nowrap; opacity: 0;
+  animation: tag-in linear both; animation-timeline: var(--tl); }
+.fig-harvest .tag::before { content: ''; position: absolute; top: 10px; width: 34px; height: 2px; background: var(--ink); }
+.fig-harvest .t1 { left: -20px; top: -40px; animation-range: cover 1400px cover 1450px; }
+.fig-harvest .t2 { left: 220px; top: -40px; animation-range: cover 1420px cover 1470px; }
+.fig-harvest .t3 { left: -40px; top: 300px; animation-range: cover 1440px cover 1490px; }
+.fig-harvest .t4 { left: 170px; top: 300px; animation-range: cover 1460px cover 1510px; }
+.fig-harvest .tag::before { display: none; }
+@keyframes tag-in { from { opacity: 0; translate: 0 12px; } to { opacity: 1; translate: 0 0; } }
+.fig-harvest figcaption { color: var(--brown); }
+.yieldbar { position: absolute; left: 0; right: 0; bottom: -18px; height: 16px; border-radius: 8px; background: rgba(45, 30, 20, .1); overflow: hidden; }
+.yieldbar i { position: absolute; inset: 0; border-radius: 8px; background: linear-gradient(90deg, #8f9f62, #c3cf9a 18%, #d9452b 20%, #b0261c);
+  transform-origin: 0 50%; animation: shrink-x linear both; animation-timeline: --s3; animation-range: cover 1380px cover 1548px; }
+
+/* ---------------- 04 roast: the curve draws, a bean rides it and browns; the phases fill behind ---------------- */
+.fig-roast { background: #fbf6ea; }
+.fig-roast .phase { position: absolute; top: 70px; height: 490px; transform-origin: 0 50%;
+  animation: grow-x linear both; animation-timeline: var(--tl); }
+.fig-roast .phase span { position: absolute; right: 14px; bottom: 16px; font: 700 21px/1 "Pretendard Variable", sans-serif; color: rgba(45, 30, 20, .55); }
+.fig-roast .p1 { left: 110px; width: 253px; background: rgba(214, 214, 150, .32); animation-range: cover 1300px cover 1400px; }
+.fig-roast .p2 { left: 363px; width: 285px; background: rgba(226, 182, 110, .3); animation-range: cover 1400px cover 1488px; }
+.fig-roast .p3 { left: 648px; width: 222px; background: rgba(160, 100, 60, .26); animation-range: cover 1488px cover 1548px; }
+.fig-roast .grid path { fill: none; stroke: rgba(45, 30, 20, .1); stroke-width: 2; }
+.fig-roast .axis { fill: none; stroke: var(--ink); stroke-width: 3; }
+.fig-roast .tick { font: 600 20px "Pretendard Variable", sans-serif; fill: var(--brown); text-anchor: end; }
+.fig-roast .tick.start { text-anchor: start; } .fig-roast .tick.end { text-anchor: end; }
+.fig-roast .curve-bg { fill: none; stroke: rgba(45, 30, 20, .08); stroke-width: 6; stroke-dasharray: 4 10; }
+.fig-roast .curve { fill: none; stroke: var(--accent); stroke-width: 7; stroke-linecap: round; stroke-dasharray: 1 1;
+  animation: draw linear both; animation-timeline: var(--tl); animation-range: cover 1300px cover 1548px; }
+/* the rider follows the same path with offset-path, so the bean sits on the curve's drawn tip */
+.fig-roast .rider { position: absolute; left: 0; top: 0; width: 0; height: 0; offset-anchor: 0 0; offset-rotate: 0deg;
+  offset-path: path('M110 505C120.6 481.2 152.2 396.1 173.3 362C194.4 327.9 205 321.7 236.7 300.4C268.3 279.1 321.1 253.5 363.3 234.4C405.6 215.3 447.8 200.7 490 186C532.2 171.3 585 155.9 616.7 146.4C648.3 136.9 658.9 135 680 128.8C701.1 122.6 711.7 119.6 743.3 109C775 98.4 848.9 72.3 870 65');
+  animation: ride linear both, roast linear both; animation-timeline: var(--tl), var(--tl);
+  animation-range: cover 1300px cover 1548px, cover 1300px cover 1548px; }
+@keyframes ride { from { offset-distance: 0%; } to { offset-distance: 100%; } }
+@keyframes roast { 0% { --roast: #9cb46a; } 30% { --roast: #d8bf63; } 55% { --roast: #b88048; } 80% { --roast: #7a4526; } 100% { --roast: #4a2615; } }
+.fig-roast .roastbean { position: absolute; left: -22px; top: -30px; width: 44px; height: 60px; border-radius: 50%;
+  background: radial-gradient(ellipse at 34% 28%, color-mix(in srgb, var(--roast) 70%, white), var(--roast) 60%, color-mix(in srgb, var(--roast) 70%, black));
+  box-shadow: 0 0 0 5px var(--paper), 0 8px 18px rgba(60, 30, 10, .3); rotate: 20deg; }
+.fig-roast .roastbean::after { content: ''; position: absolute; left: 50%; top: 12%; width: 10px; height: 76%; margin-left: -7px;
+  border-left: 3px solid color-mix(in srgb, var(--roast) 50%, black); border-radius: 50%; }
+.fig-roast .crack { position: absolute; left: 680px; top: 129px; width: 0; height: 0; }
+.fig-roast .crack::before { content: ''; position: absolute; left: -11px; top: -11px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink);
+  scale: 0; animation: pop linear both; animation-timeline: --s4; animation-range: cover 1488px cover 1512px; }
+.fig-roast .crack b, .fig-roast .crack span { position: absolute; right: 14px; white-space: nowrap; opacity: 0;
+  animation: tag-in linear both; animation-timeline: --s4; animation-range: cover 1494px cover 1530px; }
+.fig-roast .crack b { bottom: 52px; font: 900 32px/1 "Noto Serif KR", serif; color: var(--ink); }
+.fig-roast .crack span { bottom: 18px; font: 600 24px/1 "Pretendard Variable", sans-serif; color: var(--accent); }
+@keyframes pop { 0% { scale: 0; } 70% { scale: 1.5; } 100% { scale: 1; } }
+.fig-roast .roastscale { position: absolute; left: 110px; right: 50px; bottom: 26px; height: 46px; display: flex; justify-content: space-between; align-items: flex-end;
+  padding-top: 18px; font: 600 19px/1 "Pretendard Variable", sans-serif; color: var(--brown);
+  background: linear-gradient(90deg, #9cb46a, #d8bf63 30%, #b88048 55%, #7a4526 80%, #4a2615) 0 0 / 100% 10px no-repeat; }
+.fig-roast .roastscale .pointer { position: absolute; left: 0; top: -12px; width: 4px; height: 34px; margin-left: -2px; background: var(--ink); border-radius: 2px;
+  animation: slide-scale linear both; animation-timeline: --s4; animation-range: cover 1300px cover 1548px; }
+@keyframes slide-scale { to { left: 100%; } }
+
+/* ---------------- 05 cup: latte art blooms; seventy beans fill a grid as the counter climbs ---------------- */
+.fig-cup { background: radial-gradient(circle at 25% 45%, #f6ead4, #e7d3b0 80%); }
+.fig-cup .topcup { position: absolute; left: 40px; top: 140px; width: 360px; height: 360px;
+  animation: settle linear both; animation-timeline: var(--tl); animation-range: entry 0% cover 50%; }
+@keyframes settle { from { rotate: -30deg; scale: .85; } to { rotate: 0deg; scale: 1; } }
+.fig-cup .plate { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle, #fffdf8 0 62%, #efe4d2 63% 66%, #fbf6ec 67%);
+  box-shadow: 0 18px 36px rgba(80, 50, 25, .2); }
+.fig-cup .mug { position: absolute; inset: 40px; border-radius: 50%; background: #fffaf3; box-shadow: inset 0 0 0 3px #eadfcc, 0 6px 14px rgba(80, 50, 25, .15); }
+.fig-cup .cup-handle { position: absolute; left: 296px; top: 160px; width: 72px; height: 40px; border-radius: 20px; background: #fffaf3; box-shadow: inset 0 0 0 3px #eadfcc, 0 4px 8px rgba(80, 50, 25, .14); }
+.fig-cup .crema { position: absolute; inset: 62px; border-radius: 50%; overflow: hidden;
+  background: radial-gradient(circle at 50% 50%, #d9a46c 0 34%, #b37440 58%, #7c4422 86%, #5e3218); }
+.fig-cup .heart { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; margin: -64px 0 0 -60px; scale: 0;
+  animation: bloom linear both; animation-timeline: var(--tl); animation-range: cover 1250px cover 1460px; }
+.fig-cup .heart::before, .fig-cup .heart::after { content: ''; position: absolute; top: 0; width: 70px; height: 108px; border-radius: 70px 70px 0 0; background: #f8ecd7; }
+.fig-cup .heart::before { left: 60px; transform: rotate(-45deg); transform-origin: 0 100%; }
+.fig-cup .heart::after { left: 0; transform: rotate(45deg); transform-origin: 100% 100%; }
+@keyframes bloom { 0% { scale: 0; rotate: -20deg; } 80% { scale: 1.06; } 100% { scale: 1; rotate: 0deg; } }
+.fig-cup .swirl { position: absolute; inset: 62px; border-radius: 50%; mix-blend-mode: soft-light;
+  background: repeating-conic-gradient(from 0deg, rgba(255, 255, 255, .0) 0 20deg, rgba(255, 255, 255, .35) 28deg, rgba(255, 255, 255, 0) 36deg);
+  -webkit-mask-image: radial-gradient(circle, transparent 30%, #000 60%, transparent 72%); mask-image: radial-gradient(circle, transparent 30%, #000 60%, transparent 72%);
+  animation: spin linear both; animation-timeline: var(--tl); animation-range: cover 0% cover 100%; }
+@keyframes spin { to { rotate: 220deg; } }
+.fig-cup .beans70 { position: absolute; left: 430px; top: 92px; width: 460px; display: grid; grid-template-columns: repeat(10, 46px); row-gap: 14px; }
+.fig-cup .beans70 i { display: block; width: 30px; height: 42px; margin: 0 auto; border-radius: 50%; position: relative; scale: 0;
+  background: radial-gradient(ellipse at 34% 28%, #a8703f, #6f3d1f 58%, #4b2613); rotate: calc(var(--i) * 37deg);
+  animation: bean-in linear both; animation-timeline: --s5;
+  animation-range: cover calc(1360px + var(--i) * 2.4px) cover calc(1390px + var(--i) * 2.4px); }
+.fig-cup .beans70 i::after { content: ''; position: absolute; left: 50%; top: 12%; width: 8px; height: 76%; margin-left: -5px; border-left: 2.5px solid #3a1c0d; border-radius: 50%; }
+@keyframes bean-in { 0% { scale: 0; } 70% { scale: 1.25; } 100% { scale: 1; } }
+.fig-cup figcaption { color: var(--brown); }
+
+/* ---------------- summary: the card sticks while its rows arrive (named view timeline of the section) ---------------- */
+.summary { position: relative; height: 2500px; view-timeline: --sum block; }
+.card { position: sticky; top: 150px; margin: 30px 80px 0; height: 1240px; padding: 84px 76px; border-radius: 40px; background: #2b1b11; color: #f4ead8;
+  box-shadow: 0 30px 60px rgba(45, 25, 10, .25);
+  animation: card-in linear both; animation-timeline: --sum; animation-range: cover 700px cover 1430px; }
+@keyframes card-in { from { scale: .9; opacity: .4; translate: 0 80px; } to { scale: 1; opacity: 1; translate: 0 0; } }
+.card-kicker { margin: 0; font: 700 26px/1 "Pretendard Variable", sans-serif; letter-spacing: .24em; color: var(--gold); }
+.card h3 { margin: 26px 0 50px; font: 900 92px/1 "Noto Serif KR", serif; letter-spacing: -.03em; }
+.card ol { margin: 0; padding: 0; list-style: none; }
+.card li { display: grid; grid-template-columns: 90px 1fr auto; align-items: baseline; height: 128px; padding-top: 36px; border-top: 1px solid rgba(244, 234, 216, .16);
+  opacity: 0; animation: row-in linear both; animation-timeline: --sum;
+  animation-range: cover calc(1560px + var(--k) * 150px) cover calc(1760px + var(--k) * 150px); }
+@keyframes row-in { from { opacity: 0; translate: 80px 0; } to { opacity: 1; translate: 0 0; } }
+.card .rn { font: 700 34px/1 "Noto Serif KR", serif; color: var(--gold); }
+.card .rt { font: 700 44px/1 "Pretendard Variable", sans-serif; }
+.card .rv2 { font: 700 40px/1 "Noto Serif KR", serif; color: #f7d9a6; }
+.coda { margin: 56px 0 0; font: 700 46px/1.5 "Noto Serif KR", serif; color: #f0c77d; opacity: 0;
+  animation: fade-up linear both; animation-timeline: --sum; animation-range: cover 2270px cover 2390px; }
+.foot { height: 200px; padding: 60px 80px; font: 600 22px/1 "Pretendard Variable", sans-serif; color: var(--brown); letter-spacing: .1em; }
+
+/* ---------------- the dock (outside the scroller): chapter progress through timeline-scope ---------------- */
+.dock { position: absolute; left: 0; top: 1600px; width: 1080px; height: 320px; background: #24170f; display: flex; gap: 16px; padding: 40px 64px 0;
+  border-top: 4px solid var(--accent); }
+.seg { flex: 1; }
+.seg b { display: block; font: 700 24px/1 "Pretendard Variable", sans-serif; color: rgba(245, 234, 216, .4); margin-bottom: 14px;
+  animation: seg-label linear both; animation-range: cover 1100px cover 3000px; }
+.seg i { display: block; height: 6px; border-radius: 3px; background: rgba(245, 234, 216, .14); overflow: hidden; }
+.seg em { display: block; height: 100%; background: var(--gold); transform-origin: 0 50%; animation: grow-x linear both; animation-range: cover 1100px cover 2900px; }
+@keyframes seg-label { 0% { color: rgba(245, 234, 216, .4); } 14%, 86% { color: #fff3dc; } 100% { color: rgba(245, 234, 216, .65); } }
+.d1 b, .d1 em { animation-timeline: --s1; } .d2 b, .d2 em { animation-timeline: --s2; } .d3 b, .d3 em { animation-timeline: --s3; }
+.d4 b, .d4 em { animation-timeline: --s4; } .d5 b, .d5 em { animation-timeline: --s5; }
+
+/* browsers without scroll-driven animations */
+.notice { position: absolute; left: 80px; right: 80px; top: 700px; z-index: 50; padding: 40px 44px; border-radius: 28px; background: #2b1b11; color: #f4ead8;
+  font: 600 34px/1.55 "Pretendard Variable", sans-serif; text-align: center; word-break: keep-all; }

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>72 · 카메라 안무</title>
+<link rel="stylesheet" href="../_lib/fonts.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/do-hyeon/index.css">
+<script type="importmap">
+{ "imports": {
+  "three": "../node_modules/three/build/three.module.js",
+  "three/addons/": "../node_modules/three/examples/jsm/"
+} }
+</script>
+<style>
+  /* the title card overlay (no CSS transitions/animations: GSAP writes its transform per frame) */
+  .isle-ui { pointer-events: none; }
+  .isle-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 420px;
+    background: linear-gradient(to bottom, rgba(34, 30, 70, 0), rgba(34, 30, 70, 0.34)); }
+  .isle-card { position: absolute; left: 64px; top: 118px; padding: 26px 42px 28px 40px; border-radius: 40px;
+    background: #fff8ec; box-shadow: 0 16px 44px rgba(70, 46, 110, 0.20), 0 3px 0 rgba(70, 46, 110, 0.08);
+    color: #2e3157; will-change: transform, opacity; }
+  .isle-title { font-family: "Do Hyeon", sans-serif; font-size: 80px; line-height: 1; letter-spacing: -0.01em; }
+  .isle-row { margin-top: 12px; display: flex; align-items: center; gap: 12px;
+    font-family: "Pretendard Variable", sans-serif; font-weight: 700; font-size: 30px; color: #6a6e9c; font-variant-numeric: tabular-nums; }
+  .isle-dot { width: 24px; height: 24px; border-radius: 50%; background: #ffc94a; box-shadow: 0 0 0 5px rgba(255, 201, 74, 0.25); }
+</style>
+</head>
+<body>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

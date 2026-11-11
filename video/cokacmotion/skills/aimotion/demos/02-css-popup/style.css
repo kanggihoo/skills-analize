@@ -1,0 +1,10 @@
+/* 02 · 펼쳐지는 종이 마을 — static styles only. Every animated value (transforms, the lighting filters,
+   opacities) is written by main.js from t; there are no CSS transitions or animations anywhere. */
+.cam { position: absolute; inset: 0; perspective: 1700px; overflow: hidden; }
+.world, .world .n { transform-style: preserve-3d; }
+.world { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+.n { position: absolute; left: 0; top: 0; }                 /* a hinge / group node: no paint of its own */
+/* a card's print never changes after setup: light arrives as a filter (brightness / saturate / sepia), which the
+   compositor applies to the already-rasterised card — so a frame never repaints a 3-D layer */
+.card { position: absolute; left: 0; top: 0; transform-style: flat; }
+.card.face { backface-visibility: hidden; }                  /* one side of a two-sided sheet */

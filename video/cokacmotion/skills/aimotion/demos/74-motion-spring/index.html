@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>74 · 스프링으로 사는 화면</title>
+<link rel="stylesheet" href="../_lib/fonts.css">
+<link rel="stylesheet" href="../node_modules/@fontsource-variable/jetbrains-mono/index.css">
+<style>
+  /* everything sits on the 1080×1920 stage in stage px; Motion writes transform / opacity / colour inline */
+  .ui, .ui * { box-sizing: border-box; }
+  .ui { font-family: "Pretendard Variable", Pretendard, sans-serif; color: #16182a; -webkit-font-smoothing: antialiased; }
+  .abs { position: absolute; }
+  .mono { font-family: "JetBrains Mono Variable", monospace; }
+
+  /* backdrop */
+  .bg { position: absolute; inset: 0; background:
+      radial-gradient(60% 38% at 12% 18%, rgba(255, 214, 196, .85), rgba(255, 214, 196, 0) 70%),
+      radial-gradient(55% 40% at 92% 46%, rgba(201, 214, 255, .9), rgba(201, 214, 255, 0) 70%),
+      radial-gradient(70% 45% at 30% 88%, rgba(196, 238, 226, .85), rgba(196, 238, 226, 0) 70%),
+      linear-gradient(165deg, #f7f1ec 0%, #eeeaf6 48%, #e6f1f0 100%); }
+
+  /* the spring inspector */
+  .insp { left: 60px; top: 56px; width: 960px; height: 344px; border-radius: 36px; background: rgba(255, 255, 255, .86);
+    box-shadow: 0 34px 70px -34px rgba(46, 42, 98, .30), 0 2px 6px rgba(46, 42, 98, .06), inset 0 0 0 1px rgba(255, 255, 255, .95); }
+  .insp .kicker { left: 36px; top: 26px; font-size: 15px; font-weight: 600; letter-spacing: .2em; color: #9a9fb4; }
+  .insp .law { right: 36px; top: 26px; font-size: 16px; font-weight: 500; color: #9a9fb4; letter-spacing: .02em; }
+  .insp .blk { left: 36px; top: 50px; width: 880px; height: 84px; }
+  .insp .blk .t { left: 0; top: 0; font-size: 34px; font-weight: 750; letter-spacing: -.02em; white-space: nowrap; }
+  .insp .blk .p { left: 2px; top: 52px; font-size: 18px; font-weight: 500; color: #6b7085; white-space: pre; }
+  .insp .blk .p b { font-weight: 700; }
+  .insp .blk .chips { left: 0; top: 54px; display: flex; gap: 18px; font-size: 18px; font-weight: 600; color: #4a4f66; white-space: nowrap; }
+  .insp .blk .chips span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; background: var(--c); vertical-align: 0; }
+  .insp svg { position: absolute; left: 0; top: 0; overflow: visible; }
+
+  /* the phone (generic: graphite frame, punch-hole camera) */
+  .phone { left: 240px; top: 436px; width: 600px; height: 1164px; }
+  .phone .frame { inset: 0; border-radius: 96px; background: linear-gradient(150deg, #43464f 0%, #1c1d22 34%, #111216 100%);
+    box-shadow: 0 80px 120px -50px rgba(46, 40, 110, .55), 0 26px 46px -28px rgba(18, 18, 40, .55), inset 0 0 0 2px rgba(255, 255, 255, .10), inset 0 0 0 7px #0b0c0f; }
+  .phone .key { width: 6px; border-radius: 3px; background: linear-gradient(90deg, #2c2e35, #1a1b20); }
+  .screen { left: 14px; top: 14px; width: 572px; height: 1136px; border-radius: 82px; overflow: hidden; background: #0e0f15; }
+  .content { inset: 0; border-radius: 60px; overflow: hidden; background: linear-gradient(180deg, #f2f1fb 0%, #f6f6fa 30%, #f5f6f9 100%); transform-origin: 50% 40%; }
+  .cam { left: 274px; top: 20px; width: 24px; height: 24px; border-radius: 50%; background: radial-gradient(circle at 40% 38%, #3a3f55 0 18%, #0a0b10 40%); box-shadow: 0 0 0 3px #050608; }
+
+  .status { left: 0; top: 18px; width: 572px; height: 30px; font-size: 22px; font-weight: 650; }
+  .status .time { left: 46px; top: 2px; }
+  .bars { right: 96px; top: 8px; width: 28px; height: 16px; }
+  .bars i { position: absolute; bottom: 0; width: 5px; border-radius: 1.5px; background: #16182a; }
+  .batt { right: 40px; top: 6px; width: 40px; height: 20px; border-radius: 6px; border: 2px solid rgba(22, 24, 42, .45); }
+  .batt::before { content: ""; position: absolute; left: 2px; top: 2px; width: 24px; height: 12px; border-radius: 3px; background: #16182a; }
+  .batt::after { content: ""; position: absolute; right: -6px; top: 5px; width: 3px; height: 6px; border-radius: 0 2px 2px 0; background: rgba(22, 24, 42, .45); }
+
+  .date { left: 32px; top: 76px; font-size: 21px; font-weight: 550; color: #8a8fa3; }
+  .hello { left: 32px; top: 104px; font-size: 42px; font-weight: 820; letter-spacing: -.03em; }
+  .avatar { right: 32px; top: 88px; width: 62px; height: 62px; border-radius: 50%; background: linear-gradient(140deg, #ffcfb4, #f08a8a); color: #fff;
+    font-size: 26px; font-weight: 750; display: grid; place-items: center; box-shadow: 0 8px 18px -8px rgba(240, 138, 138, .9); }
+
+  .card { background: #fff; border-radius: 28px; box-shadow: 0 14px 32px -18px rgba(36, 34, 80, .32), 0 1px 3px rgba(36, 34, 80, .06); }
+  .stack { left: 24px; top: 190px; width: 524px; height: 150px; }
+  .wrap { left: 0; top: 0; width: 524px; height: 116px; }
+  .ncard { left: 0; top: 0; width: 524px; height: 116px; }
+  .appicon { left: 18px; top: 20px; width: 56px; height: 56px; border-radius: 17px; background: linear-gradient(150deg, #8d98ff, #5b6cf0 60%, #4b55d6);
+    color: #fff; font-size: 52px; font-weight: 900; line-height: 40px; text-align: center; box-shadow: 0 6px 14px -6px rgba(91, 108, 240, .8); }
+  .ncard .app { left: 90px; top: 16px; font-size: 17px; font-weight: 650; color: #8a8fa3; }
+  .ncard .when { right: 22px; top: 16px; font-size: 17px; font-weight: 550; color: #a3a8ba; }
+  .ncard .ti { left: 90px; top: 40px; font-size: 23px; font-weight: 750; letter-spacing: -.02em; }
+  .ncard .bo { left: 90px; top: 74px; font-size: 19px; font-weight: 520; color: #6b7085; }
+
+  .dnd { left: 24px; top: 360px; width: 524px; height: 96px; }
+  .moon { left: 20px; top: 22px; width: 52px; height: 52px; border-radius: 16px; background: #eef0ff; }
+  .moon::before { content: ""; position: absolute; left: 14px; top: 13px; width: 24px; height: 24px; border-radius: 50%; background: #5b6cf0; }
+  .moon::after { content: ""; position: absolute; left: 22px; top: 9px; width: 22px; height: 22px; border-radius: 50%; background: inherit; }
+  .dnd .ti { left: 88px; top: 20px; font-size: 23px; font-weight: 750; }
+  .dnd .bo { left: 88px; top: 54px; font-size: 18px; font-weight: 520; color: #8a8fa3; }
+  .track { right: 22px; top: 22px; width: 92px; height: 52px; border-radius: 26px; background: #e3e4ea; }
+  .knob { left: 4px; top: 4px; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: 0 4px 10px rgba(20, 22, 40, .22), 0 1px 2px rgba(20, 22, 40, .2); transform-origin: 50% 50%; }
+
+  .routine { left: 24px; top: 474px; width: 524px; height: 330px; overflow: hidden; }
+  .routine .hd { left: 24px; top: 22px; font-size: 23px; font-weight: 750; }
+  .routine .cnt { right: 24px; top: 25px; font-size: 18px; font-weight: 650; color: #5b6cf0; white-space: nowrap; }
+  .rule { left: 74px; right: 0; height: 1px; background: #eef0f4; }
+  .row { left: 0; top: 0; width: 524px; height: 64px; background: #fff; }
+  .lift { left: 6px; top: 6px; right: 6px; bottom: 6px; border-radius: 16px; box-shadow: 0 18px 30px -14px rgba(36, 34, 80, .45); }
+  .chk { left: 24px; top: 15px; width: 34px; height: 34px; border-radius: 50%; border: 2.5px solid #cdd0db; background: #fff; }
+  .chk .fill { left: -2.5px; top: -2.5px; width: 34px; height: 34px; border-radius: 50%; background: #5b6cf0; }
+  .chk svg { position: absolute; left: -2.5px; top: -2.5px; }
+  .row .lb { left: 74px; top: 0; line-height: 64px; font-size: 22px; font-weight: 620; color: #23263a; }
+  .row .tm { right: 24px; top: 0; line-height: 64px; font-size: 17px; font-weight: 550; color: #a3a8ba; }
+  .row.done .lb { color: #a3a8ba; text-decoration: line-through; text-decoration-color: #c8cbd6; }
+
+  .quote { left: 24px; top: 822px; width: 524px; height: 186px; background: linear-gradient(140deg, #fff7f1, #ffe9e4); }
+  .quote .lb { left: 26px; top: 22px; font-size: 17px; font-weight: 700; color: #d06a5a; letter-spacing: .02em; }
+  .quote .q { left: 26px; top: 54px; font-size: 27px; font-weight: 720; line-height: 1.38; letter-spacing: -.02em; color: #2a2233; }
+  .heartbtn { right: 20px; bottom: 18px; width: 62px; height: 62px; border-radius: 50%; background: #fff; box-shadow: 0 8px 18px -10px rgba(244, 63, 94, .55); }
+  .heartbtn svg { position: absolute; left: 15px; top: 15px; overflow: visible; }
+  .ring { left: 1px; top: 1px; width: 60px; height: 60px; border-radius: 50%; border: 3px solid #f43f5e; }
+  .spark { left: 27px; top: 27px; width: 8px; height: 8px; border-radius: 50%; }
+  .likes { right: 94px; bottom: 36px; width: 60px; height: 26px; overflow: hidden; font-size: 19px; font-weight: 650; text-align: right; }
+  .likes span { position: absolute; right: 0; top: 0; }
+
+  .tabs { left: 0; top: 1050px; width: 572px; height: 86px; background: rgba(255, 255, 255, .94); border-top: 1px solid #eceef3; }
+  .tabs svg { position: absolute; top: 14px; }
+  .homebar { left: 216px; top: 1120px; width: 140px; height: 6px; border-radius: 3px; background: #1b1d2a; }
+
+  .dim { inset: 0; background: rgba(14, 16, 34, .38); }
+  .sheet { left: 0; top: 392px; width: 572px; height: 900px; border-radius: 44px 44px 0 0; background: #fff; box-shadow: 0 -24px 60px -20px rgba(20, 20, 60, .35); }
+  .grab { left: 260px; top: 14px; width: 52px; height: 6px; border-radius: 3px; background: #d5d7e0; }
+  .sheet .t { left: 36px; top: 44px; font-size: 40px; font-weight: 820; letter-spacing: -.03em; }
+  .sheet .s { left: 38px; top: 100px; font-size: 20px; font-weight: 550; color: #8a8fa3; }
+  .sheet .chips { left: 36px; top: 146px; display: flex; gap: 10px; }
+  .sheet .chips span { padding: 8px 16px; border-radius: 20px; background: #f0f1fd; color: #5b6cf0; font-size: 17px; font-weight: 700; }
+  .breath { left: 126px; top: 214px; width: 320px; height: 320px; }
+  .halo { inset: 0; border-radius: 50%; background: radial-gradient(circle, rgba(91, 108, 240, 0) 52%, rgba(91, 108, 240, .28) 62%, rgba(14, 165, 233, 0) 72%); }
+  .orb { left: 30px; top: 30px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle at 36% 30%, #c9d0ff 0%, #8d98ff 38%, #5b6cf0 70%, #3f8fe0 100%);
+    box-shadow: 0 30px 60px -24px rgba(91, 108, 240, .75), inset 0 -10px 30px rgba(20, 40, 140, .25); }
+  .orb span { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 28px; font-weight: 750; letter-spacing: .02em; }
+  .go { left: 36px; top: 574px; width: 500px; height: 78px; border-radius: 39px; background: #16182a; color: #fff; font-size: 24px; font-weight: 750; display: grid; place-items: center; }
+
+  .touch { width: 64px; height: 64px; margin: -32px 0 0 -32px; }
+  .touch i { position: absolute; inset: 0; border-radius: 50%; background: rgba(40, 44, 80, .20); box-shadow: 0 0 0 2px rgba(255, 255, 255, .85); }
+
+  /* the dark band under the caption: six chapters */
+  .band { left: 0; top: 1624px; width: 1080px; height: 296px; background: linear-gradient(180deg, rgba(18, 19, 30, 0) 0%, rgba(18, 19, 30, .94) 22%, #12131e 100%); }
+  .chap { top: 54px; height: 40px; border-radius: 20px; padding: 0 16px; font-size: 18px; font-weight: 650; line-height: 36px; border: 2px solid rgba(255, 255, 255, .22); color: rgba(255, 255, 255, .55); white-space: nowrap; }
+  .chap::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; background: var(--c); vertical-align: 1px; }
+</style>
+</head>
+<body>
+<script src="../node_modules/motion/dist/motion.js"></script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

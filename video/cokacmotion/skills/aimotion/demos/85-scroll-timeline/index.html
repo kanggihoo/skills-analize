@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>85 · 스크롤로 읽는 이야기</title>
+<link rel="stylesheet" href="../_lib/fonts.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/noto-serif-kr/700.css">
+<link rel="stylesheet" href="../node_modules/@fontsource/noto-serif-kr/900.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!--
+  The article. Everything that moves is a CSS scroll-driven animation (style.css); main.js only sets scrollTop.
+  Section geometry is fixed (1520 px sections under a 110 px sticky bar in a 1600 px scrollport), so the
+  animation ranges in style.css can be written as offsets from "the section has come to rest under the bar".
+-->
+<template id="article">
+<div class="coffee">
+  <div class="reader">
+    <div class="content">
+
+      <nav class="bar">
+        <div class="mast">커피 저널</div>
+        <div class="chapters">
+          <span class="ch ch0">한 잔의 커피가 오기까지</span>
+          <span class="ch ch1">01 · 씨앗</span><span class="ch ch2">02 · 농장</span><span class="ch ch3">03 · 수확</span>
+          <span class="ch ch4">04 · 로스팅</span><span class="ch ch5">05 · 한 잔</span><span class="ch ch6">한 잔의 여정</span>
+        </div>
+        <div class="issue">No. 07</div>
+        <div class="progress"></div>
+      </nav>
+
+      <!-- hero -->
+      <header class="hero">
+        <div class="hero-sun"></div>
+        <div class="bean b1"></div><div class="bean b2"></div><div class="bean b3"></div><div class="bean b4"></div>
+        <div class="bean b5"></div><div class="bean b6"></div><div class="bean b7"></div><div class="bean b8"></div>
+        <p class="kicker">롱리드 · 커피의 여정</p>
+        <h1>한 잔의 커피가<br>오기까지</h1>
+        <p class="dek">씨앗 한 알이 당신의 아침이 되기까지,<br>다섯 번의 변신과 몇 해의 기다림.</p>
+        <p class="byline">커피 저널 편집부 · 7분 읽기</p>
+        <div class="cup">
+          <svg class="steam" viewBox="0 0 300 260" width="300" height="260">
+            <path pathLength="1" d="M90 250C60 200 120 170 90 120S100 40 80 10"/>
+            <path pathLength="1" d="M150 250C120 195 180 165 150 110S160 30 140 0"/>
+            <path pathLength="1" d="M210 250C180 200 240 170 210 120S220 40 200 10"/>
+          </svg>
+          <div class="saucer"></div><div class="handle"></div><div class="cupbody"></div><div class="rim"><div class="coffee-top"></div></div>
+        </div>
+        <div class="cue">스크롤해서 읽기 <span>↓</span></div>
+      </header>
+
+      <!-- 01 씨앗 -->
+      <section class="sec s1">
+        <div class="head"><span class="no">01</span><h2>씨앗</h2><p>모든 원두는 체리 속 씨앗이었다</p><i class="read"></i></div>
+        <p class="body rv">우리가 원두라 부르는 것은 커피나무 열매, 곧 커피 체리의 씨앗이다. 흙에 묻힌 씨앗은 두어 달 뒤 싹을 틔우고, 떡잎과 본잎을 차례로 펼친다.</p>
+        <figure class="fig fig-seed">
+          <div class="soil"></div>
+          <svg viewBox="0 0 920 640" width="920" height="640">
+            <g class="roots">
+              <path pathLength="1" d="M460 440C455 480 470 520 450 580"/><path pathLength="1" d="M458 450C430 480 400 500 380 560"/>
+              <path pathLength="1" d="M462 452C490 480 520 492 548 548"/><path pathLength="1" d="M452 520C430 540 420 560 404 600"/>
+              <path pathLength="1" d="M465 500C485 520 500 548 506 600"/>
+            </g>
+            <path class="stem" pathLength="1" d="M460 438C452 380 470 320 462 260C458 228 462 196 460 176"/>
+            <g class="cotyledon"><ellipse class="cl" cx="410" cy="170" rx="54" ry="30"/><ellipse class="cr" cx="510" cy="170" rx="54" ry="30"/></g>
+            <g class="trueleaf"><path class="ll" d="M460 150C420 110 360 104 318 120C352 150 410 162 460 150Z"/><path class="lr" d="M460 150C500 110 560 104 602 120C568 150 510 162 460 150Z"/>
+              <path class="vein" d="M460 150C420 130 370 122 330 121M460 150C500 130 550 122 590 121"/></g>
+            <g class="seed"><ellipse cx="460" cy="430" rx="30" ry="40"/><path d="M460 396C448 416 472 444 460 466"/></g>
+          </svg>
+          <ol class="stages"><li class="st1">발아</li><li class="st2">떡잎</li><li class="st3">본잎</li></ol>
+          <figcaption>커피 새싹은 씨앗 껍질을 머리에 이고 올라온다</figcaption>
+        </figure>
+        <div class="stat"><div class="num n-years"></div><div class="unit">~4년</div><p class="lbl">첫 수확까지 걸리는 시간<br><small>열매를 맺기까지 보통 3~4년</small></p></div>
+      </section>
+
+      <!-- 02 농장 -->
+      <section class="sec s2">
+        <div class="head"><span class="no">02</span><h2>농장</h2><p>서늘한 고지대의 비탈</p><i class="read"></i></div>
+        <p class="body rv">커피는 남·북회귀선 사이 ‘커피 벨트’에서 자란다. 향이 섬세한 아라비카는 낮에는 따뜻하고 밤에는 서늘한 고지대 비탈을 좋아한다.</p>
+        <figure class="fig fig-farm">
+          <div class="farm-sky"></div><div class="farm-sun"></div>
+          <div class="cloud c1"></div><div class="cloud c2"></div>
+          <div class="hill far"></div><div class="hill mid"></div><div class="hill near"><div class="rows"></div></div>
+          <div class="ruler">
+            <div class="zone"></div>
+            <span style="--y:0">0</span><span style="--y:1">500</span><span style="--y:2">1,000</span><span style="--y:3">1,500</span><span style="--y:4">2,000</span><span style="--y:5">2,500m</span>
+            <div class="marker"></div>
+          </div>
+          <figcaption>아라비카 재배 고도</figcaption>
+        </figure>
+        <div class="stat"><div class="num n-alt"></div><div class="unit">m</div><p class="lbl">아라비카가 자라는 높이<br><small>해발 1,000~2,000m의 고지대</small></p></div>
+      </section>
+
+      <!-- 03 수확 -->
+      <section class="sec s3">
+        <div class="head"><span class="no">03</span><h2>수확</h2><p>붉게 익은 것만 손으로</p><i class="read"></i></div>
+        <p class="body rv">체리는 한 가지에서도 제각각 익는다. 잘 익은 붉은 열매만 골라 따고, 과육과 껍질을 벗겨 말리면 단단한 생두 두 알이 남는다.</p>
+        <figure class="fig fig-harvest">
+          <svg viewBox="0 0 920 640" width="920" height="640">
+            <path class="branch" d="M-30 560C120 470 260 380 380 300S560 150 620 90"/>
+            <path class="twig" d="M250 392C238 350 250 320 236 286"/><path class="twig" d="M430 262C452 232 452 200 480 178"/>
+            <g class="leaves">
+              <path d="M150 470C120 400 60 380 20 392C40 440 90 476 150 470Z"/><path d="M300 352C330 290 390 270 430 276C410 326 360 356 300 352Z"/>
+              <path d="M236 286C210 230 160 214 124 224C142 268 190 292 236 286Z"/><path d="M480 178C510 130 560 118 596 126C578 166 530 186 480 178Z"/>
+              <path d="M520 160C500 110 460 96 430 104C444 140 480 162 520 160Z"/>
+            </g>
+            <g class="cherries">
+              <circle style="--i:0" cx="196" cy="452" r="21"/><circle style="--i:1" cx="226" cy="470" r="19"/><circle style="--i:2" cx="206" cy="488" r="20"/>
+              <circle style="--i:3" cx="318" cy="368" r="22"/><circle style="--i:4" cx="350" cy="384" r="20"/><circle style="--i:5" cx="330" cy="404" r="19"/><circle style="--i:6" cx="296" cy="398" r="18"/>
+              <circle style="--i:7" cx="452" cy="270" r="21"/><circle style="--i:8" cx="482" cy="286" r="19"/><circle style="--i:9" cx="462" cy="304" r="18"/>
+              <circle style="--i:10" cx="560" cy="170" r="19"/><circle style="--i:11" cx="586" cy="190" r="18"/><circle style="--i:12" cx="560" cy="204" r="17"/>
+            </g>
+          </svg>
+          <div class="xsec">
+            <div class="half left"><div class="skin"></div><div class="pulp"></div><div class="parch"></div><div class="greenbean"></div></div>
+            <div class="half right"><div class="skin"></div><div class="pulp"></div><div class="parch"></div><div class="greenbean"></div></div>
+            <span class="tag t1">껍질</span><span class="tag t2">과육</span><span class="tag t3">파치먼트</span><span class="tag t4">생두 두 알</span>
+          </div>
+          <figcaption>체리 한 알 속에는 마주 보는 씨앗 두 개</figcaption>
+        </figure>
+        <div class="stat"><div class="num n-yield"></div><div class="unit">%</div><p class="lbl">체리 무게 가운데 생두로 남는 몫<br><small>체리 5kg에서 생두 약 1kg</small></p><div class="yieldbar"><i></i></div></div>
+      </section>
+
+      <!-- 04 로스팅 -->
+      <section class="sec s4">
+        <div class="head"><span class="no">04</span><h2>로스팅</h2><p>초록 씨앗이 갈색 향이 되기까지</p><i class="read"></i></div>
+        <p class="body rv">생두를 200℃ 넘게 볶으면 수분이 빠지고 당이 캐러멜화된다. 196℃ 무렵 ‘탁’ 하고 터지는 1차 크랙을 지나면 익숙한 커피 향이 피어난다.</p>
+        <figure class="fig fig-roast">
+          <div class="phase p1"><span>건조</span></div><div class="phase p2"><span>갈변</span></div><div class="phase p3"><span>발현</span></div>
+          <svg viewBox="0 0 920 640" width="920" height="640">
+            <g class="grid"><path d="M110 120H870M110 230H870M110 340H870M110 450H870"/></g>
+            <path class="axis" d="M110 70V560H880"/>
+            <text x="96" y="566" class="tick">0</text><text x="96" y="348" class="tick">100</text><text x="96" y="128" class="tick">200</text>
+            <text x="880" y="600" class="tick end">시간 →</text><text x="120" y="60" class="tick start">온도 ℃</text>
+            <path class="curve-bg" d="M110 505C120.6 481.2 152.2 396.1 173.3 362C194.4 327.9 205 321.7 236.7 300.4C268.3 279.1 321.1 253.5 363.3 234.4C405.6 215.3 447.8 200.7 490 186C532.2 171.3 585 155.9 616.7 146.4C648.3 136.9 658.9 135 680 128.8C701.1 122.6 711.7 119.6 743.3 109C775 98.4 848.9 72.3 870 65"/>
+            <path class="curve" pathLength="1" d="M110 505C120.6 481.2 152.2 396.1 173.3 362C194.4 327.9 205 321.7 236.7 300.4C268.3 279.1 321.1 253.5 363.3 234.4C405.6 215.3 447.8 200.7 490 186C532.2 171.3 585 155.9 616.7 146.4C648.3 136.9 658.9 135 680 128.8C701.1 122.6 711.7 119.6 743.3 109C775 98.4 848.9 72.3 870 65"/>
+          </svg>
+          <div class="crack"><b>1차 크랙</b><span>약 196℃</span></div>
+          <div class="rider"><div class="roastbean"></div></div>
+          <div class="roastscale"><i class="pointer"></i><span>생두</span><span>시나몬</span><span>미디엄</span><span>다크</span></div>
+        </figure>
+        <div class="stat"><div class="num n-temp"></div><div class="unit">℃</div><p class="lbl">로스팅을 마칠 무렵의 온도<br><small>보통 200~230℃ 사이에서 멈춘다</small></p></div>
+      </section>
+
+      <!-- 05 한 잔 -->
+      <section class="sec s5">
+        <div class="head"><span class="no">05</span><h2>한 잔</h2><p>약 70알의 원두</p><i class="read"></i></div>
+        <p class="body rv">곱게 간 원두 10g에 뜨거운 물이 지나가면 한 잔이 된다. 씨앗 하나하나가 몇 해를 건너 당신의 컵에 닿는 셈이다.</p>
+        <figure class="fig fig-cup">
+          <div class="topcup"><div class="plate"></div><div class="cup-handle"></div><div class="mug"></div><div class="crema"><div class="heart"></div></div><div class="swirl"></div></div>
+          <div class="beans70"></div>
+          <figcaption>에스프레소 한 잔 = 원두 약 10g</figcaption>
+        </figure>
+        <div class="stat"><div class="num n-beans"></div><div class="unit">알</div><p class="lbl">한 잔에 드는 원두<br><small>원두 한 알은 약 0.13g</small></p></div>
+      </section>
+
+      <!-- summary: the card sticks while its rows arrive -->
+      <section class="summary">
+        <div class="card">
+          <p class="card-kicker">정리</p>
+          <h3>한 잔의 여정</h3>
+          <ol>
+            <li style="--k:0"><span class="rn">01</span><span class="rt">씨앗</span><span class="rv2">첫 수확까지 3~4년</span></li>
+            <li style="--k:1"><span class="rn">02</span><span class="rt">농장</span><span class="rv2">해발 1,000~2,000m</span></li>
+            <li style="--k:2"><span class="rn">03</span><span class="rt">수확</span><span class="rv2">체리 5kg → 생두 1kg</span></li>
+            <li style="--k:3"><span class="rn">04</span><span class="rt">로스팅</span><span class="rv2">약 200~230℃</span></li>
+            <li style="--k:4"><span class="rn">05</span><span class="rt">한 잔</span><span class="rv2">원두 약 70알</span></li>
+          </ol>
+          <p class="coda">오늘 아침의 한 잔에는<br>몇 해의 시간이 담겨 있다.</p>
+        </div>
+      </section>
+      <footer class="foot">커피 저널 · 글 편집부</footer>
+    </div>
+  </div>
+
+  <!-- the reading dock (outside the scroller): reads the sections' named view timelines through timeline-scope -->
+  <div class="dock">
+    <div class="seg d1"><b>씨앗</b><i><em></em></i></div><div class="seg d2"><b>농장</b><i><em></em></i></div>
+    <div class="seg d3"><b>수확</b><i><em></em></i></div><div class="seg d4"><b>로스팅</b><i><em></em></i></div>
+    <div class="seg d5"><b>한 잔</b><i><em></em></i></div>
+  </div>
+</div>
+</template>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
