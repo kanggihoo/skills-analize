@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-11T13:26:27.567Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/candidate.archify.md",
+    "sha256": "c6f49aa390fedd218257df8484beacbc632713dbd56010f7a52a67d010734b0d",
+    "bytes": 21717
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+    "sha256": "a44a7273c4c899f81b960d1b1d2cbde55e37dbf9914fad4425bdcd87be21761d",
+    "bytes": 5673433
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "c6f49aa390fedd218257df8484beacbc632713dbd56010f7a52a67d010734b0d",
+          "bytes": 21717
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 2041,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "26690604-8a78-4108-8d75-ed19f446d67a",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+        "explainer": {
+          "preparedSha256": "de6769c7da07d77f1738a2dc87f91eb9421ce7f53b8fe56f6fd9933c8908d3fb",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "st-desc",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-hooks",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-intro",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-stop",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-world-box",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-tree",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-collab",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-handsoff",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-rate",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-look",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-nobox",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-crafted",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-listener",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-cushion",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-length",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-orig",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-fonts",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s1",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s2",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s3",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s4",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s5",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s6",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s6b",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s7",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s7b",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-s8",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-rev",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "st-cokac",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "st-cokac-lib",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "st-cokac-tool",
+              "path": "video/script-to-motion/scripts/cokacmotion.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "2e92ea6fa8a87545a4f1e22050c2ea3f933e2856299655854156d46a082a19f3",
+              "bytes": 8142
+            },
+            {
+              "kind": "repository",
+              "id": "st-cokac-run",
+              "path": "video/script-to-motion/scripts/cokacmotion.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "2e92ea6fa8a87545a4f1e22050c2ea3f933e2856299655854156d46a082a19f3",
+              "bytes": 8142
+            },
+            {
+              "kind": "repository",
+              "id": "st-tts-appr",
+              "path": "video/script-to-motion/scripts/tts.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "4f66553a0a129514dfacc74ff8bbe5911ba45d1ff095393b27566c40fbb1645e",
+              "bytes": 31251
+            },
+            {
+              "kind": "repository",
+              "id": "st-tts-key",
+              "path": "video/script-to-motion/scripts/tts.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "4f66553a0a129514dfacc74ff8bbe5911ba45d1ff095393b27566c40fbb1645e",
+              "bytes": 31251
+            },
+            {
+              "kind": "repository",
+              "id": "st-guard",
+              "path": "video/script-to-motion/scripts/hooks/look_guard.py",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "dd5db6796ab6a7f62378a9184ed9acf8603f40d18b391f336fa2af8b00cd29d0",
+              "bytes": 7453
+            },
+            {
+              "kind": "repository",
+              "id": "st-guard-run",
+              "path": "video/script-to-motion/scripts/hooks/look_guard.py",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "dd5db6796ab6a7f62378a9184ed9acf8603f40d18b391f336fa2af8b00cd29d0",
+              "bytes": 7453
+            },
+            {
+              "kind": "repository",
+              "id": "st-newproj",
+              "path": "video/script-to-motion/scripts/new_project.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "ddadbdb85863fafde9b780a8b7837c8942663ce4625448ff539273e86649565f",
+              "bytes": 9238
+            },
+            {
+              "kind": "repository",
+              "id": "st-blender",
+              "path": "video/script-to-motion/references/blender-mcp.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "42d93264a33ec4ea93091679857b9d3ccb1f35b095d1e925073cba10789f18bf",
+              "bytes": 16378
+            },
+            {
+              "kind": "repository",
+              "id": "st-blender-mcp",
+              "path": "video/script-to-motion/references/blender-mcp.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "42d93264a33ec4ea93091679857b9d3ccb1f35b095d1e925073cba10789f18bf",
+              "bytes": 16378
+            },
+            {
+              "kind": "repository",
+              "id": "st-browser",
+              "path": "video/script-to-motion/references/browser-setup.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "a9c6b9f16a70d5a93a9c43622f2f69009a6ef66b5c2253a7e32fdaaafbe84039",
+              "bytes": 5507
+            },
+            {
+              "kind": "repository",
+              "id": "st-elevate",
+              "path": "video/script-to-motion/references/elevate.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "61dd7028c6623a0dd82a8621a445a66edbf6e1bcc0fdd54c319f86a2160b49f3",
+              "bytes": 10813
+            },
+            {
+              "kind": "repository",
+              "id": "st-render-clear",
+              "path": "video/script-to-motion/references/render.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "bd192e80ea90052be0a341e403a3ea778e4cdfd87faab1d739ee1e4f282969c6",
+              "bytes": 14907
+            },
+            {
+              "kind": "repository",
+              "id": "st-sound-a",
+              "path": "video/script-to-motion/references/sound.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "d63834e0735c11773693242211d83bf8868444efd3a3a2b3241593a0d5336e4a",
+              "bytes": 12567
+            },
+            {
+              "kind": "repository",
+              "id": "st-sound-b",
+              "path": "video/script-to-motion/references/sound.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "d63834e0735c11773693242211d83bf8868444efd3a3a2b3241593a0d5336e4a",
+              "bytes": 12567
+            },
+            {
+              "kind": "repository",
+              "id": "st-fonts-w",
+              "path": "video/script-to-motion/references/fonts.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "2d7bd75d33aac547d310dc0797f1cc9bbf4124c0e56bce25ba8e9c5ad26563eb",
+              "bytes": 9160
+            },
+            {
+              "kind": "repository",
+              "id": "st-md-w",
+              "path": "video/script-to-motion/references/motion-design.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "8ad6b31fea0f59ead3509c6d783344ada8daa85876a595ac557e8e3da451e1f0",
+              "bytes": 35553
+            },
+            {
+              "kind": "repository",
+              "id": "st-fx-calm",
+              "path": "video/script-to-motion/references/fx-kit.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "367c65006e2c651d49d9496f14efe68bbf659a8e27c7d995d699a1b8ea351840",
+              "bytes": 11614
+            },
+            {
+              "kind": "repository",
+              "id": "st-fx-flash",
+              "path": "video/script-to-motion/references/fx-kit.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "367c65006e2c651d49d9496f14efe68bbf659a8e27c7d995d699a1b8ea351840",
+              "bytes": 11614
+            },
+            {
+              "kind": "repository",
+              "id": "st-readme",
+              "path": "video/script-to-motion/README.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "9dbc53d1acab306a72e8d7b2b8213e8715712eaf09f5efb4a6d17810c2d65db1",
+              "bytes": 33944
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "stm-flow",
+              "inline": true,
+              "sha256": "8cb6e73c2f62f98817e8ea6e62dd0268a0a95bf307233de6815f659bd4801865",
+              "bytes": 1909
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "stm-layout",
+              "inline": true,
+              "sha256": "6ae2c43829a00f29b0bc2362e054544f4385920e57060cef18aaa1d98cf31e11",
+              "bytes": 664
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "stm-position",
+              "inline": true,
+              "sha256": "a7e66e5e2d750f93b36dde90acf236c56143189513d6df6abe0a91dcc08f7be9",
+              "bytes": 706
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "c6f49aa390fedd218257df8484beacbc632713dbd56010f7a52a67d010734b0d",
+          "bytes": 21717
+        },
+        "artifact": {
+          "sha256": "a44a7273c4c899f81b960d1b1d2cbde55e37dbf9914fad4425bdcd87be21761d",
+          "bytes": 5673433
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 847,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "a44a7273c4c899f81b960d1b1d2cbde55e37dbf9914fad4425bdcd87be21761d",
+          "bytes": 5673433
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "163 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "52 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "stm-flow: pass",
+              "stm-layout: pass",
+              "stm-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "stm-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-y5JEeG/child.html",
+                "artifact": {
+                  "sha256": "f281839525e2167c88fa0460ce304846ef3eaa7ac61a0528ef33002549157573",
+                  "bytes": 842267
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 15,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 6,
+                    "shortEndpointSegmentCount": 6,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "approve-to-rec-1",
+                      "from": "approve",
+                      "to": "rec"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 14
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "stm-layout",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-8WKlbF/child.html",
+                "artifact": {
+                  "sha256": "49af70e1733ac03b1ddf809457fe9f4422b70fd9154dfc2cfa517a4daed23336",
+                  "bytes": 837757
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 13,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "idx"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 13,
+                    "semanticTextCount": 8
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "stm-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-fPgfhk/child.html",
+                "artifact": {
+                  "sha256": "c9d45462541329b831e30143d0c1e7b0b8d30d7ea87490750bd971f93ee67251",
+                  "bytes": 831244
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 161.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.301275760549558,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 46.8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "board-to-lib-1",
+                      "from": "board",
+                      "to": "lib"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.301275760549558,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "26690604-8a78-4108-8d75-ed19f446d67a"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/script-to-motion/script-to-motion.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-11T13:26:30.644Z",
+  "durationMs": 3077,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

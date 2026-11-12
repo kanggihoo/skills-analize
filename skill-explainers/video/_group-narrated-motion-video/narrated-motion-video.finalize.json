@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-11T13:26:13.835Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+    "sha256": "23ab808076d0bfac6beb1d3f639c0bd6ab881f87bead57bd38e2c67766c9d10c",
+    "bytes": 10128
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+    "sha256": "41056273cd6ff48f422631e992fb73fa58365e3f685c3a1d62641f573358913a",
+    "bytes": 1340811
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "23ab808076d0bfac6beb1d3f639c0bd6ab881f87bead57bd38e2c67766c9d10c",
+          "bytes": 10128
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 869,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "f56b8fbd-1e1b-4964-a9af-391bb896dc5b",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+        "explainer": {
+          "preparedSha256": "d2437137b21032a010fcf5ae064465bea917ede4306e735ac1cd862459094ed1",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "nm-st-board",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "nm-st-build",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "nm-st-orig",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "nm-st-hand",
+              "path": "video/script-to-motion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "667f2ecd459572e8df98ffdaa371bca111050f33ea0813717475c7b68ae4f80a",
+              "bytes": 97091
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-ref",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-rule",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-dl",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-lic",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-note",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-shader",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-cmd",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-intro",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-lib",
+              "path": "video/script-to-motion/references/cokacmotion.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "110337c94a084ef7a3078be8bbeb3eb263306573aea44e4aff044d8a73a23656",
+              "bytes": 12393
+            },
+            {
+              "kind": "repository",
+              "id": "nm-cokac-run",
+              "path": "video/script-to-motion/scripts/cokacmotion.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "2e92ea6fa8a87545a4f1e22050c2ea3f933e2856299655854156d46a082a19f3",
+              "bytes": 8142
+            },
+            {
+              "kind": "repository",
+              "id": "nm-am-rule",
+              "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+              "bytes": 9031
+            },
+            {
+              "kind": "repository",
+              "id": "nm-am-port",
+              "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+              "bytes": 9031
+            },
+            {
+              "kind": "repository",
+              "id": "nm-am-script",
+              "path": "video/cokacmotion/skills/aimotion/scripts/aimotion.mjs",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "fc703d4bb26f87a6d4b787c0358bbcefe149df17991fa398c902b999317dcf83",
+              "bytes": 5526
+            },
+            {
+              "kind": "repository",
+              "id": "nm-am-desc",
+              "path": "video/cokacmotion/skills/aimotion/SKILL.md",
+              "revision": "f415191a236e0230db370553888ff9699eb4440d",
+              "sha256": "8391d8afb7fe219a807f4eb937b8dffab0e0931a6a9ae41e5322a9638cb59025",
+              "bytes": 9031
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "nm-flow",
+              "inline": true,
+              "sha256": "537d757999e44b1220c8d812243ef6ef81805c4078384214edf9454368c4d246",
+              "bytes": 1045
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "23ab808076d0bfac6beb1d3f639c0bd6ab881f87bead57bd38e2c67766c9d10c",
+          "bytes": 10128
+        },
+        "artifact": {
+          "sha256": "41056273cd6ff48f422631e992fb73fa58365e3f685c3a1d62641f573358913a",
+          "bytes": 1340811
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 437,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "41056273cd6ff48f422631e992fb73fa58365e3f685c3a1d62641f573358913a",
+          "bytes": 1340811
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "73 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "19 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "nm-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "nm-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-eJ5VJr/child.html",
+                "artifact": {
+                  "sha256": "9c6005bf92194b11f1b1720af418c7202ca77baaacc688a41678713f0db527aa",
+                  "bytes": 834518
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 102.2,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.052132701421801,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "need-to-find-1",
+                      "from": "need",
+                      "to": "find"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.052132701421801,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "f56b8fbd-1e1b-4964-a9af-391bb896dc5b"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/video/_group-narrated-motion-video/narrated-motion-video.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-11T13:26:15.277Z",
+  "durationMs": 1442,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

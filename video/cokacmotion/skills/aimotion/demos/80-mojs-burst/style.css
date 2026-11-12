@@ -1,0 +1,22 @@
+/* mo.js sizes each shape's <svg> to its largest radius; elastic/back easings overshoot that box — never clip */
+.mo svg { overflow: visible; }
+.mo { pointer-events: none; }
+
+.ui-head { position: absolute; left: 0; width: 1080px; text-align: center; color: #2A1E3B;
+  font-family: "Pretendard Variable", Pretendard, sans-serif; }
+.ui-title { top: 262px; font-size: 68px; font-weight: 800; letter-spacing: -0.02em; line-height: 80px; }
+.ui-sub { top: 356px; font-size: 34px; font-weight: 500; line-height: 44px; opacity: 0.55; }
+.ui-label { position: absolute; left: 0; width: 1080px; top: 1168px; text-align: center; color: #2A1E3B;
+  font: 700 38px/48px "Pretendard Variable", Pretendard, sans-serif; letter-spacing: 0.02em; }
+.ui-label i { font-style: normal; opacity: 0.5; }
+.ui-bar { position: absolute; left: 0; top: 1588px; width: 1080px; height: 332px; background: #2A1E3B;
+  border-radius: 56px 56px 0 0; }
+.ui-bar::before { content: ""; position: absolute; left: 490px; top: 22px; width: 100px; height: 10px;
+  border-radius: 5px; background: rgba(255, 246, 234, 0.22); }
+
+.big { position: absolute; font-family: "Black Han Sans", sans-serif; font-weight: 400; white-space: nowrap;
+  text-align: center; transform-origin: 50% 50%; }
+.ink { color: #2A1E3B; }
+.gold { color: #FFD23F; text-shadow: 0 12px 0 #E8336E; }
+.white { color: #FFFFFF; text-shadow: 0 10px 0 #E8336E; }
+.stack { position: absolute; left: 0; top: 0; width: 100%; }
