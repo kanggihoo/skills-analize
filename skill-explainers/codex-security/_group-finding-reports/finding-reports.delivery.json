@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "27d470ff-085d-4e56-b1bd-25cd95fd4c57",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.html",
+  "specification": {
+    "sha256": "4700f21035810e8b5d9bd33d10fb4fc9ebf03bcfcdc1d7c240f6aafec9ea6148",
+    "bytes": 19617
+  },
+  "artifact": {
+    "sha256": "c6b554774592b25576661afe8a39380405504f687690585eea0858aa7c274cab",
+    "bytes": 469810
+  },
+  "explainer": {
+    "preparedSha256": "9bd3796f9e9524c7339b814a54ea9b45ece23945141af95d184bf75e086d7ce6",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "w-front",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-intro",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-storage",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-evid",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-draft",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-poc",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-deliv",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "repository",
+        "id": "w-fmt",
+        "path": "codex-security/vulnerability-writeup/references/report-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "68a1b4a293f0379ba5ae2c21a32d6618245f6de1b6dd977c5a2cf9d62a25c874",
+        "bytes": 4482
+      },
+      {
+        "kind": "repository",
+        "id": "w-fmt-pack",
+        "path": "codex-security/vulnerability-writeup/references/report-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "68a1b4a293f0379ba5ae2c21a32d6618245f6de1b6dd977c5a2cf9d62a25c874",
+        "bytes": 4482
+      },
+      {
+        "kind": "repository",
+        "id": "h-front",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-intro",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-scope",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-store",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-look",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-opts",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-out",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-auto",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-impl",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "h-fmt",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "x-diff",
+        "path": "codex-security/security-diff-scan/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "x-desktop",
+        "path": "codex-security/security-scan/references/desktop-scan.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "7e48dfbcd1d478bf0ca73de9d1a1a1d583face2d0755d7ba04d606e30b8aedfb",
+        "bytes": 580
+      },
+      {
+        "kind": "repository",
+        "id": "x-scan",
+        "path": "codex-security/security-scan/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+        "bytes": 2972
+      },
+      {
+        "kind": "repository",
+        "id": "x-fix",
+        "path": "codex-security/fix-finding/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      }
+    ]
+  }
+}

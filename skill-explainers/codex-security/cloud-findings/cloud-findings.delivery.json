@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "70f50d41-6cb3-4c23-b6ff-58423f422994",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/cloud-findings/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/cloud-findings/cloud-findings.html",
+  "specification": {
+    "sha256": "c589419467f8ca96b443fd3bbf7e83558154690ec2f4271ff8f4d9d45b483f7c",
+    "bytes": 20773
+  },
+  "artifact": {
+    "sha256": "3995c1aed54dbe3183f09023f24d8bb00b30179bc1f0c6053fad34c579a027f1",
+    "bytes": 1275984
+  },
+  "explainer": {
+    "preparedSha256": "bde9fdc241b0767817b31c20af821fcf7ebced3a1c00c619643a4366ffd5b96c",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "front",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "rules",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "boot",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "repo",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "link",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "list-v2",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "list-filters",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "list-page",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "records",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "evid-find",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "evid-page",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "evid-limit",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "scan-hist",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "scan-prog",
+        "path": "codex-security/cloud-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "rel-pub",
+        "path": "codex-security/publish-findings/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+        "bytes": 11118
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cloud-flow",
+        "inline": true,
+        "sha256": "89b3795768319d6481d23b05668a2fb595ada02a25ba87ea2813971acf6c0de7",
+        "bytes": 1715
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "a8505f97cd0f47b781adfa22a457095ac4dbbef8eb3acf5f06af239d31a8eb9c",
+        "bytes": 759
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "03707c74-bdb1-4b00-a780-5191c9129122",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/propose-security-hardening/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/propose-security-hardening/propose-security-hardening.html",
+  "specification": {
+    "sha256": "c929b1c8dd0d17d03784dae4a7297960c7796422b26ba08ac3419537b16e5ac8",
+    "bytes": 18882
+  },
+  "artifact": {
+    "sha256": "3dd836a84edf078b51c6e4730daaee718c6eff3037cffca3ed6a5a96fbefe6df",
+    "bytes": 1244537
+  },
+  "explainer": {
+    "preparedSha256": "c92c8c876737dc7453c96726795666a02410dfef8811ed48a4b5c474e1002161",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "front",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "intro",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "scanctx",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "evidence-limit",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "revision",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "storage",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "look",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp1",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp2",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp3",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp4",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp5",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "opp6",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "cite",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "output",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "auto",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "deliver",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "impl",
+        "path": "codex-security/propose-security-hardening/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+        "bytes": 5026
+      },
+      {
+        "kind": "repository",
+        "id": "pf-focus",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "pf-diagram",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "pf-multi",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "pf-struct",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "pf-plan",
+        "path": "codex-security/propose-security-hardening/references/proposal-format.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+        "bytes": 4144
+      },
+      {
+        "kind": "repository",
+        "id": "diffscan",
+        "path": "codex-security/security-diff-scan/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "fixf",
+        "path": "codex-security/fix-finding/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "writeup",
+        "path": "codex-security/vulnerability-writeup/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+        "bytes": 5571
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "hardening-flow",
+        "inline": true,
+        "sha256": "d1ffc24a284be3a2aeeb7dae8916fab0f0b60aae88f72958d892202b36bc55e1",
+        "bytes": 1242
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "314789aa1b9e3a8814b121581bbf1878bf05c3ed91c8526381dda7d0ae6d4ac6",
+        "bytes": 978
+      }
+    ]
+  }
+}

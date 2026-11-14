@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-14T15:04:34.407Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/candidate.archify.md",
+    "sha256": "c7661184b0a2a97b8d3cd1c8213037e7e9da989104c2f9dc8bfba0ceb9f09aa3",
+    "bytes": 23549
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+    "sha256": "64a6729f1bd5a2908b30e6c984eaf26a31e5af582ffe36a4db14ad27de1d4afb",
+    "bytes": 1657446
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "c7661184b0a2a97b8d3cd1c8213037e7e9da989104c2f9dc8bfba0ceb9f09aa3",
+          "bytes": 23549
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 683,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "94555271-240f-4ca6-bd08-7de41a4d5468",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+        "explainer": {
+          "preparedSha256": "2fb681a93050970c8feee06e570ac8578094c69f7ab0d51f3d0a8de22a40fb57",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "front",
+              "path": "codex-security/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "yamlsrc",
+              "path": "codex-security/security-scan/agents/openai.yaml",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0790c2851c5b595ed376954f34a22c04f346a0a32fff6dfe1d30b3d2dee1b66a",
+              "bytes": 245
+            },
+            {
+              "kind": "repository",
+              "id": "track-part",
+              "path": "codex-security/track-findings/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ef1cbf5e8b0240a78f32903540f6c1b500cd329c00bfcefc405fec1e382c46e9",
+              "bytes": 13459
+            },
+            {
+              "kind": "repository",
+              "id": "track-part2",
+              "path": "codex-security/track-findings/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ef1cbf5e8b0240a78f32903540f6c1b500cd329c00bfcefc405fec1e382c46e9",
+              "bytes": 13459
+            },
+            {
+              "kind": "repository",
+              "id": "vw-part",
+              "path": "codex-security/vulnerability-writeup/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "ecc-part",
+              "path": "ecc/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "74bc3006fb15eef9cea6bf70a4e9cc45ec118ef00733d1c8226c9dc428f8d658",
+              "bytes": 4592
+            },
+            {
+              "kind": "repository",
+              "id": "lock",
+              "path": "codex-security/skills-lock.json",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "e6be246bd87f1895bbb82802540f875bb98c410b6a1e1c9db87ca98e2f62a8c9",
+              "bytes": 6525
+            },
+            {
+              "kind": "repository",
+              "id": "core",
+              "path": "codex-security/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "bind",
+              "path": "codex-security/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "guard",
+              "path": "codex-security/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "start",
+              "path": "codex-security/security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "m-resume",
+              "path": "codex-security/security-scan/references/managed-scan.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b4680ddd79fab1d215c92696e1fbfb49db82ef0983f4d04680567f294bdd2c38",
+              "bytes": 1356
+            },
+            {
+              "kind": "repository",
+              "id": "m-phase",
+              "path": "codex-security/security-scan/references/managed-scan.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b4680ddd79fab1d215c92696e1fbfb49db82ef0983f4d04680567f294bdd2c38",
+              "bytes": 1356
+            },
+            {
+              "kind": "repository",
+              "id": "rs-sdk",
+              "path": "codex-security/security-scan/references/scan-results.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ddc6b6d1041b45de338c0f50849ec3f003a57c46e202c95d5c52e4cf18d3c522",
+              "bytes": 2871
+            },
+            {
+              "kind": "repository",
+              "id": "rs-draft",
+              "path": "codex-security/security-scan/references/scan-results.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ddc6b6d1041b45de338c0f50849ec3f003a57c46e202c95d5c52e4cf18d3c522",
+              "bytes": 2871
+            },
+            {
+              "kind": "repository",
+              "id": "rs-done",
+              "path": "codex-security/security-scan/references/scan-results.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ddc6b6d1041b45de338c0f50849ec3f003a57c46e202c95d5c52e4cf18d3c522",
+              "bytes": 2871
+            },
+            {
+              "kind": "repository",
+              "id": "rs-fail",
+              "path": "codex-security/security-scan/references/scan-results.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ddc6b6d1041b45de338c0f50849ec3f003a57c46e202c95d5c52e4cf18d3c522",
+              "bytes": 2871
+            },
+            {
+              "kind": "repository",
+              "id": "sc-all",
+              "path": "codex-security/security-scan/references/scoped-paths.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0d4f77b51276fc1541397c9dd387464493fb9bb2d451ac2d580d1f3f35195bc5",
+              "bytes": 2359
+            },
+            {
+              "kind": "repository",
+              "id": "sdk-all",
+              "path": "codex-security/security-scan/references/sdk-files.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5a6df47271bc1a9b4fd61024e3d389311be70f732759fb2439a32e5675fb05de",
+              "bytes": 2192
+            },
+            {
+              "kind": "repository",
+              "id": "sdk-end",
+              "path": "codex-security/security-scan/references/sdk-files.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5a6df47271bc1a9b4fd61024e3d389311be70f732759fb2439a32e5675fb05de",
+              "bytes": 2192
+            },
+            {
+              "kind": "repository",
+              "id": "d-write",
+              "path": "codex-security/security-scan/references/desktop-scan.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "7e48dfbcd1d478bf0ca73de9d1a1a1d583face2d0755d7ba04d606e30b8aedfb",
+              "bytes": 580
+            },
+            {
+              "kind": "repository",
+              "id": "ledger-head",
+              "path": "codex-security/security-scan/references/scan-artifacts-and-ledger.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "13678fd302742e5c728989912705765332e2b6ae5203562a9b549786f2819db9",
+              "bytes": 7021
+            },
+            {
+              "kind": "repository",
+              "id": "p-tm",
+              "path": "codex-security/threat-model/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "79a1b6282f80804227a28f9a1fae71bbfcd6928c1de5d2c84ab0ebf9c1f49226",
+              "bytes": 2986
+            },
+            {
+              "kind": "repository",
+              "id": "p-fd",
+              "path": "codex-security/finding-discovery/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+              "bytes": 5076
+            },
+            {
+              "kind": "repository",
+              "id": "p-val",
+              "path": "codex-security/validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "aac2d8598af99fc27c163c24204b264427100b89f15e203822b108262fcb7876",
+              "bytes": 4619
+            },
+            {
+              "kind": "repository",
+              "id": "p-ap",
+              "path": "codex-security/attack-path-analysis/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "cacb4a0dc7676db7346b8295e555cb515092528cdd6b07a1ebb7c22790241eed",
+              "bytes": 5355
+            },
+            {
+              "kind": "repository",
+              "id": "diff-desc",
+              "path": "codex-security/security-diff-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
+              "bytes": 5405
+            },
+            {
+              "kind": "repository",
+              "id": "deep-desc",
+              "path": "codex-security/deep-security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
+              "bytes": 3127
+            },
+            {
+              "kind": "repository",
+              "id": "deep-loop",
+              "path": "codex-security/deep-security-scan/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
+              "bytes": 3127
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "scan-choice",
+              "inline": true,
+              "sha256": "7c01203a6529568a2584350f74e7b50b979464e4d36679bedfb1500ded307dc7",
+              "bytes": 1233
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "scan-flow",
+              "inline": true,
+              "sha256": "e46bd0f45708255d7dba07c8c008eef0d22c8ccfe28aeaabc264e5fd028187b9",
+              "bytes": 1466
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "position-flow",
+              "inline": true,
+              "sha256": "a7d21d6cde60962d510959c657c0876a40b2269b42209bef1bead813fa278333",
+              "bytes": 1019
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "c7661184b0a2a97b8d3cd1c8213037e7e9da989104c2f9dc8bfba0ceb9f09aa3",
+          "bytes": 23549
+        },
+        "artifact": {
+          "sha256": "64a6729f1bd5a2908b30e6c984eaf26a31e5af582ffe36a4db14ad27de1d4afb",
+          "bytes": 1657446
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 371,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "64a6729f1bd5a2908b30e6c984eaf26a31e5af582ffe36a4db14ad27de1d4afb",
+          "bytes": 1657446
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "161 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "32 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "scan-choice: pass",
+              "scan-flow: pass",
+              "position-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "scan-choice",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-H72EIP/child.html",
+                "artifact": {
+                  "sha256": "e442b0ff63e7e9baac336941995ad7bb33e75715047fcec663f352bd53e172e6",
+                  "bytes": 836593
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.693898655635987,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "chg-to-diff-1",
+                      "from": "chg",
+                      "to": "diff"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.693898655635987,
+                    "semanticTextCount": 10
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "scan-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-D1Sd80/child.html",
+                "artifact": {
+                  "sha256": "918818d46ca82e2c391d5877171a3ef4aafcdab0550f9384e750cf6d710648d7",
+                  "bytes": 839140
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 59.8,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.788321167883212,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "bind-to-review-1",
+                      "from": "bind",
+                      "to": "review"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.788321167883212,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "position-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-w3wPiE/child.html",
+                "artifact": {
+                  "sha256": "e76e0bef729e1f981d18595e584e2e47548d81dbaa981c2bbc1c52300da15f18",
+                  "bytes": 833949
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "cur-to-deep-1",
+                      "from": "cur",
+                      "to": "deep"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "94555271-240f-4ca6-bd08-7de41a4d5468"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/security-scan/security-scan.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-14T15:04:35.557Z",
+  "durationMs": 1149,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

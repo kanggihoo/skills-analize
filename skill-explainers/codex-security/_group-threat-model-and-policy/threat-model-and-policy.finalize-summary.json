@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-threat-model-and-policy/candidate.archify.md",
+    "sha256": "bccdb8e6a6475a42f4e0618180cd68345278935995c3a16bf4d596b35c31072e",
+    "bytes": 19946
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-threat-model-and-policy/threat-model-and-policy.html",
+    "sha256": "3dd75c40662d783b5c4264fe0c584af24ba6688cc1c754e0dfc093bb32e41fe6",
+    "bytes": 987540
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-threat-model-and-policy/threat-model-and-policy.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-threat-model-and-policy/threat-model-and-policy.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 697,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-scan-vulnerabilities/candidate.archify.md",
+    "sha256": "fa121404b89b818969cd6faaf4b0d5834e3f932323fdc073ef352b6028edf10d",
+    "bytes": 30165
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-scan-vulnerabilities/scan-vulnerabilities.html",
+    "sha256": "43f6a66386272c6ba4e0f95d4e3b76b3f95f210224db939deea574f1de8a081a",
+    "bytes": 1574903
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-scan-vulnerabilities/scan-vulnerabilities.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-scan-vulnerabilities/scan-vulnerabilities.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 938,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

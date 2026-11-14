@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "46959142-ef25-4c02-a600-8db1511e59fa",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/word-list/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/word-list/word-list.html",
+  "specification": {
+    "sha256": "ef7e378c271b998e7e3139b29861401e4aedc3d38a7f8ecc6bcd3a4afd5628bb",
+    "bytes": 6786
+  },
+  "artifact": {
+    "sha256": "2160d7c9a95805d4148ddd2467965fc69ed81dcebc4c1e931a11eb0e3fc8548b",
+    "bytes": 223993
+  },
+  "explainer": {
+    "preparedSha256": "20e1b15a3e9979c73f7f53e6cbdab9cfe00f5335281436134a392ef9c7e2539e",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "front",
+        "path": "codex-security/word-list/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a0bac7de5d47b1b0d932369ce57d4d5191fdd11ee889940f899234154434ad6f",
+        "bytes": 306
+      },
+      {
+        "kind": "repository",
+        "id": "body",
+        "path": "codex-security/word-list/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "a0bac7de5d47b1b0d932369ce57d4d5191fdd11ee889940f899234154434ad6f",
+        "bytes": 306
+      },
+      {
+        "kind": "repository",
+        "id": "lock",
+        "path": "codex-security/skills-lock.json",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "e6be246bd87f1895bbb82802540f875bb98c410b6a1e1c9db87ca98e2f62a8c9",
+        "bytes": 6525
+      },
+      {
+        "kind": "repository",
+        "id": "cs-ext",
+        "path": "codex-security/check-skills/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-url",
+        "path": "codex-security/check-skills/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-pass",
+        "path": "codex-security/check-skills/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "ed",
+        "path": "codex-security/editorial-guide/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "e44b611b80c9e4428fcf77a07aa7437d62c22a072619dc95397206230f6558cc",
+        "bytes": 316
+      }
+    ]
+  }
+}
