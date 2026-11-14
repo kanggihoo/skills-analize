@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "skills": {
+    "assess-patch-risk": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+      "computedHash": "8962839c82a0f5459ac6bce1c5f5ee3b944134c044331993542f9270b7e8499c"
+    },
+    "attack-path-analysis": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/attack-path-analysis/SKILL.md",
+      "computedHash": "15d450ce03e32e21dc31767fb4eb29042339ca34bab11fe0c2a184a97d5c2f14"
+    },
+    "check-skills": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/check-skills/SKILL.md",
+      "computedHash": "0ecaab2eb4fb103f3c2d0fc751914159b125117f4294f0ace97a218945ee277c"
+    },
+    "cloud-findings": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/cloud-findings/SKILL.md",
+      "computedHash": "3c2262a3d531152feb6e7118d91fff41ec35fde5296271b20eff336ae0db3059"
+    },
+    "deep-security-scan": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/deep-security-scan/SKILL.md",
+      "computedHash": "d9381965840ab2e28ccd23ce81c78d078c987d28b2cf3bab9fce9abfb1a73230"
+    },
+    "define-security-policy": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/define-security-policy/SKILL.md",
+      "computedHash": "ad4078c88a738c42d344d476a204af329d928330d41affc9297115b3b0d49e44"
+    },
+    "editorial-guide": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "evals/check-skills/fixtures/editorial-guide/SKILL.md",
+      "computedHash": "61f849b75c92cdb8968c8b5520c2800950f2aab04eeb0cf149e83d7213f2ed0c"
+    },
+    "finding-discovery": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/finding-discovery/SKILL.md",
+      "computedHash": "8ebc7c1de6e2e3ffcde2bdf7a6d513da59bea700896a45b2cac7b991a7c6239c"
+    },
+    "fix-finding": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/fix-finding/SKILL.md",
+      "computedHash": "0b0242ec1a1b2bcdad0cde93deb04c2327a18b4a15dac2e2dfd177cb812b3ff2"
+    },
+    "propose-security-hardening": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+      "computedHash": "18d47a5b075c1fa8ad9c3fec04ec48713422e924ab610ae229112582364a9cab"
+    },
+    "publish-findings": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/publish-findings/SKILL.md",
+      "computedHash": "f2a8c8616825b0fded08afa73b7ac1bacc27d9084a08d40ffad5ca1bfaa0c5bd"
+    },
+    "resolve-dependency-alert": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+      "computedHash": "f0228eb090b35223a1009c21046e8fb6154ac7e273ec67a1ab7ef03a1ec8be62"
+    },
+    "security-diff-scan": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/security-diff-scan/SKILL.md",
+      "computedHash": "42ba5ab16efbea03340980f950231e95da77ac7bf7259f590f807e2a55647d56"
+    },
+    "security-scan": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/security-scan/SKILL.md",
+      "computedHash": "c0f77568a4cb523073f0b04e0caf495a61bc7b2420f8651a64903af2fbea1979"
+    },
+    "status-summary": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "evals/check-skills/fixtures/status-summary/SKILL.md",
+      "computedHash": "3b9f34539be716afc74ba62784de836ee0e4fb74ef3acf69bf4920801e0b9297"
+    },
+    "style-guide": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "evals/check-skills/fixtures/style-guide/SKILL.md",
+      "computedHash": "559f69a27bf9ac65ead9e57e1744739a05c11cfafe83bd82f9281d17f2c2cdae"
+    },
+    "threat-model": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/threat-model/SKILL.md",
+      "computedHash": "764c2444e25ac7af44632d3fdd31f9b50aa55b02152119fd7d7972073ac48f39"
+    },
+    "threat-model-visualize": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/threat-model-visualize/SKILL.md",
+      "computedHash": "babc94a3b9d44a3ee172c302a427263a6686cd90aad68547db3122a7f1508138"
+    },
+    "track-findings": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/track-findings/SKILL.md",
+      "computedHash": "9067d94179334931ddef5cc306aab0683261216499fb66411da8ac8a93fb79f2"
+    },
+    "triage-finding": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/triage-finding/SKILL.md",
+      "computedHash": "7cc5a97cc15b27bbb9125f9d9ee975862c5d9fbf128405cdc0f3fb56caaf3aa9"
+    },
+    "validation": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/validation/SKILL.md",
+      "computedHash": "96066cac54e38c0cace7345f450e4fcc5bcbeb1abda5a3c8c64c20a1070c84e1"
+    },
+    "verify-fix": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/verify-fix/SKILL.md",
+      "computedHash": "929a1986a7c161c066f97371f669cf4b9e3cfa100dd07d8ca07ddb94bceaec8e"
+    },
+    "vulnerability-writeup": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+      "computedHash": "fcc24580f198acba0392c66cb063349c391b8ff428be69a727e926a1ce2087bc"
+    },
+    "word-list": {
+      "source": "openai/codex-security",
+      "sourceType": "github",
+      "skillPath": "evals/check-skills/fixtures/word-list/SKILL.md",
+      "computedHash": "bdf9c18f4e9c21d310e6c0db2aac29528d817b348f6ef076c91861899c3c1a46"
+    }
+  }
+}
