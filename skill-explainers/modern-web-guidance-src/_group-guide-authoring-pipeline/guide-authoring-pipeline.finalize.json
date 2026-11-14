@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-14T15:04:04.460Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/candidate.archify.md",
+    "sha256": "8193b0039f93f7001e968d6455a727ac7d57df7c1ff752f26a56432b17123f2e",
+    "bytes": 21245
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+    "sha256": "bc63d79f6c8ef05e04e2ab5b68a046edbbe4cb6919a5ac0d1e879a5a8c71b978",
+    "bytes": 1390884
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "8193b0039f93f7001e968d6455a727ac7d57df7c1ff752f26a56432b17123f2e",
+          "bytes": 21245
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 433,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "0d7d11e2-21a8-4b4d-9050-6883aa0a4103",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+        "explainer": {
+          "preparedSha256": "1caeb0a000fb07f0ce4f3cf5ef1a03375ffac9f5ff0f922a2d7cc815f2e0c936",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "feat-intro",
+              "path": "modern-web-guidance-src/project-features/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "989b324e49c998222867fffae669ff444d93b3e3ea4d6027031f9e6fc735804d",
+              "bytes": 16922
+            },
+            {
+              "kind": "repository",
+              "id": "feat-after",
+              "path": "modern-web-guidance-src/project-features/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "989b324e49c998222867fffae669ff444d93b3e3ea4d6027031f9e6fc735804d",
+              "bytes": 16922
+            },
+            {
+              "kind": "repository",
+              "id": "feat-close",
+              "path": "modern-web-guidance-src/project-features/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "989b324e49c998222867fffae669ff444d93b3e3ea4d6027031f9e6fc735804d",
+              "bytes": 16922
+            },
+            {
+              "kind": "repository",
+              "id": "feat-steps",
+              "path": "modern-web-guidance-src/project-features/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "989b324e49c998222867fffae669ff444d93b3e3ea4d6027031f9e6fc735804d",
+              "bytes": 16922
+            },
+            {
+              "kind": "repository",
+              "id": "uc-stage",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-gov",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-desc",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-hub",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-ex",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-stub",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "uc-approve",
+              "path": "modern-web-guidance-src/project-use-cases/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "b9c178988dca5d96b937df075fa7366a0f656e3c9c194270f6703a5e13f2f5f5",
+              "bytes": 12896
+            },
+            {
+              "kind": "repository",
+              "id": "pg-stage",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pg-stage2",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pg-fm",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pg-exp",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pg-disc",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pg-val",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "repository",
+              "id": "pv-intro",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-list",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-qual",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-a11y",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-tok",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-exp",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pv-base",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "pe-stage",
+              "path": "modern-web-guidance-src/project-evals/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+              "bytes": 18630
+            },
+            {
+              "kind": "repository",
+              "id": "pe-red",
+              "path": "modern-web-guidance-src/project-evals/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+              "bytes": 18630
+            },
+            {
+              "kind": "repository",
+              "id": "pe-exp",
+              "path": "modern-web-guidance-src/project-evals/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+              "bytes": 18630
+            },
+            {
+              "kind": "repository",
+              "id": "dg-top",
+              "path": "modern-web-guidance-src/project-discipline-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "2d1cfa6dc38d98744e5e5279f8fb102244c59db245da3b0c4383d30e23b95644",
+              "bytes": 5288
+            },
+            {
+              "kind": "repository",
+              "id": "dg-flow",
+              "path": "modern-web-guidance-src/project-discipline-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "2d1cfa6dc38d98744e5e5279f8fb102244c59db245da3b0c4383d30e23b95644",
+              "bytes": 5288
+            },
+            {
+              "kind": "repository",
+              "id": "dg-cli",
+              "path": "modern-web-guidance-src/project-discipline-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "2d1cfa6dc38d98744e5e5279f8fb102244c59db245da3b0c4383d30e23b95644",
+              "bytes": 5288
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "pipeline-flow",
+              "inline": true,
+              "sha256": "ee5a64864b99e370d0cccc295f4f448f4d8e2232053ff04753e1c9b6c12faaba",
+              "bytes": 1804
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "8193b0039f93f7001e968d6455a727ac7d57df7c1ff752f26a56432b17123f2e",
+          "bytes": 21245
+        },
+        "artifact": {
+          "sha256": "bc63d79f6c8ef05e04e2ab5b68a046edbbe4cb6919a5ac0d1e879a5a8c71b978",
+          "bytes": 1390884
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 224,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "bc63d79f6c8ef05e04e2ab5b68a046edbbe4cb6919a5ac0d1e879a5a8c71b978",
+          "bytes": 1390884
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "109 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "31 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "pipeline-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "pipeline-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-er5DfC/child.html",
+                "artifact": {
+                  "sha256": "246f6d0db547126246699130266e219bcd9eff4df116a85c0e57f9edc11c90f1",
+                  "bytes": 841314
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.66069829901522,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 8,
+                    "shortEndpointSegmentCount": 8,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "atl-to-guides-1",
+                      "from": "atl",
+                      "to": "guides"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.66069829901522,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "0d7d11e2-21a8-4b4d-9050-6883aa0a4103"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-guide-authoring-pipeline/guide-authoring-pipeline.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-14T15:04:05.203Z",
+  "durationMs": 743,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "315e1a18-4d1b-438a-afc4-c272ad498eb1",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/baseline-status.html",
+  "specification": {
+    "sha256": "2fb0f0dc74534c717545c287b233fb93354408cdb75e0e1026e88a2e6ac06cce",
+    "bytes": 7864
+  },
+  "artifact": {
+    "sha256": "95e245d4d5a63613f67446375e5dea3520af97a3388547595dac018fa47e4631",
+    "bytes": 608704
+  },
+  "explainer": {
+    "preparedSha256": "f67d23fb5e2669261656f93f8135412daf50642b8c181344adbd054600dee612",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "bs-front",
+        "path": "modern-web-guidance-src/baseline-status/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "971ded5d51e5440de522f04ed5459879ba682b430b3e666c14cbbd191a2b77a4",
+        "bytes": 899
+      },
+      {
+        "kind": "repository",
+        "id": "bs-use",
+        "path": "modern-web-guidance-src/baseline-status/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "971ded5d51e5440de522f04ed5459879ba682b430b3e666c14cbbd191a2b77a4",
+        "bytes": 899
+      },
+      {
+        "kind": "repository",
+        "id": "bs-cmd",
+        "path": "modern-web-guidance-src/baseline-status/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "971ded5d51e5440de522f04ed5459879ba682b430b3e666c14cbbd191a2b77a4",
+        "bytes": 899
+      },
+      {
+        "kind": "repository",
+        "id": "bs-map",
+        "path": "modern-web-guidance-src/baseline-status/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "971ded5d51e5440de522f04ed5459879ba682b430b3e666c14cbbd191a2b77a4",
+        "bytes": 899
+      },
+      {
+        "kind": "repository",
+        "id": "pgv-base",
+        "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+        "bytes": 14156
+      },
+      {
+        "kind": "repository",
+        "id": "pgv-unsup",
+        "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+        "bytes": 14156
+      },
+      {
+        "kind": "repository",
+        "id": "lock-bs",
+        "path": "modern-web-guidance-src/skills-lock.json",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "872ee0492c804ed553c5e850d68e740db5f134e107a1d280251e302e03fe5645",
+        "bytes": 3621
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "2bbdb1887ef4b0fd7ec4938c4008a7ec8893e0924964a5caf06c83b48e68e295",
+        "bytes": 561
+      }
+    ]
+  }
+}

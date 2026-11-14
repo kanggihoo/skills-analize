@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b5ecfa98-6fcd-4d06-a92c-757ba18c0f7d",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/dev-prompt-canary/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/dev-prompt-canary/dev-prompt-canary.html",
+  "specification": {
+    "sha256": "11a5c677aa32a754dcb2ea80d18284bf8a8819779b78359897f433ff13636812",
+    "bytes": 15446
+  },
+  "artifact": {
+    "sha256": "0eb710fd3d2feeae6fc9b3ccfd384f2a8de17272316e4d10f3c2cc5f2170e1f0",
+    "bytes": 1191442
+  },
+  "explainer": {
+    "preparedSha256": "bbd18824c5bab3babaae727a20c13d015189730ffedc5563c6f0159fb578e914",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "front",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "why",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "mech",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "wt",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "sub",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "expa",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "b1",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "b2",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "clean",
+        "path": "modern-web-guidance-src/dev-prompt-canary/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "293ae956cc72fb60ccf2bea6244c23f25dc1203ee0ab915ef8650678b1d5a15a",
+        "bytes": 5781
+      },
+      {
+        "kind": "repository",
+        "id": "pe-hub",
+        "path": "modern-web-guidance-src/project-evals/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+        "bytes": 18630
+      },
+      {
+        "kind": "repository",
+        "id": "pe-bar",
+        "path": "modern-web-guidance-src/project-evals/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+        "bytes": 18630
+      },
+      {
+        "kind": "repository",
+        "id": "pe-task",
+        "path": "modern-web-guidance-src/project-evals/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+        "bytes": 18630
+      },
+      {
+        "kind": "repository",
+        "id": "gr-desc",
+        "path": "modern-web-guidance-src/grader-replay/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "bc435e1d1f546cd3b2d6f09b56b9ed6dba8446cb7081cfc7f970b7e01fae6959",
+        "bytes": 5300
+      },
+      {
+        "kind": "repository",
+        "id": "gr-rel",
+        "path": "modern-web-guidance-src/grader-replay/SKILL.md",
+        "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+        "sha256": "bc435e1d1f546cd3b2d6f09b56b9ed6dba8446cb7081cfc7f970b7e01fae6959",
+        "bytes": 5300
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "canary-flow",
+        "inline": true,
+        "sha256": "64e911754fce7c3ba1f1a5b38a8d2a9c9786154ad4731c2651a050a4c9007dec",
+        "bytes": 1086
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "8c66ce34e0508dd8efffc842ec16170d2275144600d9097be1c3ce9d356d7680",
+        "bytes": 1010
+      }
+    ]
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-14T15:06:30.525Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/candidate.archify.md",
+    "sha256": "a4cd76c9c03ed7072c5a52065a57fe0243ef51d6d9e1408e5546d2960c9a6d11",
+    "bytes": 14230
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+    "sha256": "e6287285addb8327d995ee86f158d36e8697c832944b15e319aae54409137caf",
+    "bytes": 826826
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a4cd76c9c03ed7072c5a52065a57fe0243ef51d6d9e1408e5546d2960c9a6d11",
+          "bytes": 14230
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 437,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "5ad04f10-8a28-458a-a387-70f4f92ad067",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+        "explainer": {
+          "preparedSha256": "95ba141c5e41d9bf0678d19882d72cdff11b2bd6f4d5303e5ac71da48e38fda0",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "pm-top",
+              "path": "modern-web-guidance-src/project-maintenance/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "c93c3f19abc96ccb8e2e8707db3ba32e0a92d66956c03f691600a70906fbd3e4",
+              "bytes": 1267
+            },
+            {
+              "kind": "repository",
+              "id": "pm-items",
+              "path": "modern-web-guidance-src/project-maintenance/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "c93c3f19abc96ccb8e2e8707db3ba32e0a92d66956c03f691600a70906fbd3e4",
+              "bytes": 1267
+            },
+            {
+              "kind": "repository",
+              "id": "pm-audit",
+              "path": "modern-web-guidance-src/project-maintenance/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "c93c3f19abc96ccb8e2e8707db3ba32e0a92d66956c03f691600a70906fbd3e4",
+              "bytes": 1267
+            },
+            {
+              "kind": "repository",
+              "id": "pm-feat",
+              "path": "modern-web-guidance-src/project-maintenance/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "c93c3f19abc96ccb8e2e8707db3ba32e0a92d66956c03f691600a70906fbd3e4",
+              "bytes": 1267
+            },
+            {
+              "kind": "repository",
+              "id": "ca-top",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-flow",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-def",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-script",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-checks",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-pre",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-inst",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-after",
+              "path": "modern-web-guidance-src/coherence-auditor/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "5cbde93c8600c6fbf03a71a5ff3ef3aed4e8914d04013fc0fc713e110edd7362",
+              "bytes": 3454
+            },
+            {
+              "kind": "repository",
+              "id": "ca-ts",
+              "path": "modern-web-guidance-src/coherence-auditor/scripts/coherence-audit.ts",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "19c70df2ddcb3b42f3135ab557e5b6764362750f283d732cc8c65bdb1b33f308",
+              "bytes": 4457
+            },
+            {
+              "kind": "repository",
+              "id": "cs-top",
+              "path": "modern-web-guidance-src/project-coding-standards/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d6047993ec13fb23f2ee2984a0ddeffd30cebddfa81dd070e1e20ccfcc060be7",
+              "bytes": 7793
+            },
+            {
+              "kind": "repository",
+              "id": "cs-gates",
+              "path": "modern-web-guidance-src/project-coding-standards/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d6047993ec13fb23f2ee2984a0ddeffd30cebddfa81dd070e1e20ccfcc060be7",
+              "bytes": 7793
+            },
+            {
+              "kind": "repository",
+              "id": "gr-pre",
+              "path": "modern-web-guidance-src/grader-replay/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "bc435e1d1f546cd3b2d6f09b56b9ed6dba8446cb7081cfc7f970b7e01fae6959",
+              "bytes": 5300
+            },
+            {
+              "kind": "repository",
+              "id": "gr-end",
+              "path": "modern-web-guidance-src/grader-replay/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "bc435e1d1f546cd3b2d6f09b56b9ed6dba8446cb7081cfc7f970b7e01fae6959",
+              "bytes": 5300
+            },
+            {
+              "kind": "repository",
+              "id": "pe-calib",
+              "path": "modern-web-guidance-src/project-evals/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "d2bf2a4a876b48d20185456bd9f88a1860a07ca0f6b91a260f3f638bf737ad5e",
+              "bytes": 18630
+            },
+            {
+              "kind": "repository",
+              "id": "pgv-test",
+              "path": "modern-web-guidance-src/project-guide-validation/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "0e98bff5c63c06a2055d97bec545360cd56af513787482f02de72eb41ac95f2b",
+              "bytes": 14156
+            },
+            {
+              "kind": "repository",
+              "id": "feat-tmp",
+              "path": "modern-web-guidance-src/project-features/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "989b324e49c998222867fffae669ff444d93b3e3ea4d6027031f9e6fc735804d",
+              "bytes": 16922
+            },
+            {
+              "kind": "repository",
+              "id": "pg-tmp",
+              "path": "modern-web-guidance-src/project-guides/SKILL.md",
+              "revision": "a1d836f93ec897c67870ac042622e8aec36e5f6b",
+              "sha256": "20a7d6110b70a3fdce537ae3f9cf88a5a90b5bcbf759ccbc05c74ce15694f83c",
+              "bytes": 26181
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "audit-delegation",
+              "inline": true,
+              "sha256": "9ea2ead1355650caa024830c82c30cc6cf9c8fb1c1d944c4cc3c687d188f3d80",
+              "bytes": 1207
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a4cd76c9c03ed7072c5a52065a57fe0243ef51d6d9e1408e5546d2960c9a6d11",
+          "bytes": 14230
+        },
+        "artifact": {
+          "sha256": "e6287285addb8327d995ee86f158d36e8697c832944b15e319aae54409137caf",
+          "bytes": 826826
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 201,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "e6287285addb8327d995ee86f158d36e8697c832944b15e319aae54409137caf",
+          "bytes": 826826
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "79 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "22 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "audit-delegation: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "audit-delegation",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-8oyxVT/child.html",
+                "artifact": {
+                  "sha256": "2decdafef18c21634150c6aa0b9c14984b9c2a09012bdb0c0b60c149a2d2ff8d",
+                  "bytes": 833406
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 28,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 10.7,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 200.3,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "sequenceColumnSpace": {
+                    "measured": true,
+                    "columnFit": "spread",
+                    "participantCount": 4,
+                    "occupiedRight": 880,
+                    "viewBoxLeft": 0,
+                    "canvasWidth": 920,
+                    "emptyRightPx": 40,
+                    "emptyRightRatio": 0.043,
+                    "typicalParticipantWidth": 175,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "sub"
+                    },
+                    "minimumSourceTextPx": 10.7,
+                    "minimumProjectedTextPx": 10.7,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "5ad04f10-8a28-458a-a387-70f4f92ad067"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/_group-repo-upkeep/repo-upkeep.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-14T15:06:31.246Z",
+  "durationMs": 720,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

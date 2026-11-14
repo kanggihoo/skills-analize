@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/candidate.archify.md",
+    "sha256": "2fb0f0dc74534c717545c287b233fb93354408cdb75e0e1026e88a2e6ac06cce",
+    "bytes": 7864
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/baseline-status.html",
+    "sha256": "95e245d4d5a63613f67446375e5dea3520af97a3388547595dac018fa47e4631",
+    "bytes": 608704
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/baseline-status.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/modern-web-guidance-src/baseline-status/baseline-status.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 677,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}
