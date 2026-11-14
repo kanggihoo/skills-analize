@@ -332,3 +332,45 @@
 | part (OPC) | part | 파트, 부품 | OOXML 패키지 안의 파일 단위 |
 | denylist | denylist | 거부 목록 | 알려진 오류만 막는 방식. 처음만 `denylist(알려진 오류만 막는 목록)` |
 | frontmatter | frontmatter | 머리말 | `SKILL.md` 상단 YAML |
+| finding (security) | finding | 발견 사항 | codex-security. 위 `finding`(지적, 리뷰어 출력 단위)과 뜻이 다르다. 취약점 후보가 검증을 거친 보고 단위. 이 컬렉션에서는 영어 유지 |
+| workbench (Codex Security) | workbench | 작업대, 워크벤치 | codex-security. 호스트가 scan 상태와 canonical artifacts를 기록하는 도구. 위 `workbench`(state-machine)와 뜻이 다르다 |
+| handoff (skill-to-skill) | handoff | 핸드오프, 인수인계 | codex-security. 한 스킬이 다음 스킬에 넘기는 요약. 위 `handoff document`(인계 문서)와 구분 |
+| handoff token | handoff token | 인계 토큰 | codex-security. scan 정체성을 묶는 값 |
+| sealed scan | 봉인된 scan | 실링된 스캔 | codex-security. 위 `seal / sealed`와 같은 뜻. `scan-manifest.json`과 `findings.json`이 확정된 scan |
+| fixture (eval) | 검토용 표본 | 픽스처 | codex-security `check-skills`의 검토 대상 파일. 위 `fixture`(break-ui)와 뜻이 다르다 |
+| instructed behavior | 지시상 동작 | | 실행 증거 없이 파일에 적힌 동작만 서술할 때 |
+| receipt | receipt | 영수증 | codex-security. `check-skills`에서는 `PASS` 기록(correctness-review), `track-findings`에서는 쓰기가 받아들여졌다는 기록. 뜻이 다르니 처음만 풀이 |
+| host | host | 호스트 프로그램 | codex-security. scan을 실행하는 바깥 도구. 위 `host agent`와 구분 |
+| worker | worker | 작업자 | codex-security. Deep scan 안에서 배정된 검토를 맡는 서브에이전트 |
+| phase skill | 단계 스킬 | 페이즈 스킬 | codex-security. `finding-discovery`, `validation`, `attack-path-analysis`, `threat-model` |
+| disposition | 처분 | 판정, 배치 | codex-security `validation`의 `reportable`·`suppressed`·`not_applicable`·`deferred`. 위 `verdict`(판정 결과)와 구분 |
+| attack path | 공격 경로 | 공격 루트 | codex-security |
+| threat model | 위협 모델 | 위협 모형 | codex-security |
+| proof gap | 증명 간극(proof gap) | 증명 공백 | codex-security `triage-finding`의 `proof_gaps`. 처음만 풀이 |
+| counterevidence | 반증 | | codex-security |
+| likelihood | 가능성 | | codex-security. `confidence`(확신도)와 구분 |
+| exposure vector | 노출 벡터 | | codex-security. 값(`remote`, `local_network`, `localhost`, `none`)은 원어 유지 |
+| verification mode | verification mode(`standard`, `static`) | 검증 모드 | codex-security `fix-finding`, `verify-fix`. `static`은 소스와 diff만 보고 실행하지 않는 모드 |
+| immutable patch | 변하지 않는 patch | 불변 패치 | codex-security `assess-patch-risk`의 입력 조건 |
+| policy chain | policy chain | 정책 체인 | codex-security. root부터 leaf까지 합쳐지는 `SECURITY.md` 묶음. 가까운 정책이 우선 |
+| write-up / disclosure | write-up / disclosure(처음만 "보고서") | 작성글, 공시 | codex-security `vulnerability-writeup` |
+| PoC | PoC(처음만 "개념 증명 코드") | 개념증명 | codex-security |
+| dry-run | dry-run | 드라이런, 모의 실행 | codex-security. 쓰기 없이 미리 보는 실행 |
+| imported finding | imported finding | 가져온 발견 | codex-security. 외부 scanner에서 가져온 finding |
+| red line | red line(처음만 "평가가 틀렸다고 보는 8가지 기준") | 레드라인 | modern-web-guidance-src `project-evals`. 위험 신호(red flag)와 구분 |
+| golden patch | golden patch(처음만 "채점기가 만점을 줘야 하는 정답 diff") | 골든 패치, 황금 해답 | modern-web-guidance-src. `zero-passrate.patch`(0점이어야 하는 기준)와 짝 |
+| calibration (grader) | grader 보정 | 캘리브레이션, 교정 | modern-web-guidance-src. golden 100%, zero-passrate 0% 확인 |
+| grader | grader | 채점기 | modern-web-guidance-src. 채점 코드 |
+| canary (prompt) | canary(처음만 "프롬프트 변경을 일부만 다시 돌려 퇴행을 보는 실험") | 카나리아 | modern-web-guidance-src `dev-prompt-canary` |
+| replay (grader) | replay(처음만 "과거 결과에 오늘의 grader를 다시 적용") | 재생, 리플레이 | modern-web-guidance-src `grader-replay` |
+| held-out | held-out | 보류 | modern-web-guidance-src. grader를 쓸 때 보지 못한 풀이 |
+| guided / unguided | guided / unguided | 안내됨 / 안내 없음 | modern-web-guidance-src. guide를 쓴 평가 실행과 쓰지 않은 실행 |
+| nightly | nightly | 야간 | modern-web-guidance-src. `nightly-<날짜>-<agent>` 폴더 |
+| run (eval) | run | 런, 실행 | modern-web-guidance-src. 평가에서 task를 반복 실행한 한 번. 위 `run (w:r)`과 뜻이 다르다 |
+| use case (guidance) | use case(처음만 "개발자가 하려는 일") | 유스케이스, 사용 사례 | modern-web-guidance-src. 기능 설명이 아니라 동사로 시작하는 작업 |
+| discipline guide | discipline guide(처음만 "분야 전체를 안내하는 허브 guide") | 규율 가이드 | modern-web-guidance-src |
+| mirror (knowledge) | mirror(처음만 "모델이 이미 아는 내용을 적은 비교 문서") | 거울 | modern-web-guidance-src `project-discipline-guides`. 위 `mirror (RTL)`과 뜻이 다르다 |
+| ATL | ATL(처음만 "영역 기술 책임자") | 아틀 | modern-web-guidance-src. Content ATL이 use case와 guide를 승인한다. SME는 "분야 전문가" |
+| Baseline (web) | Baseline(`Widely`, `Newly`, `Limited`) | 베이스라인 | modern-web-guidance-src `baseline-status`. 위 `baseline (--original)`(기준선)과 뜻이 다르다 |
+| fallback | fallback(처음만 "대체 구현") | 폴백 | modern-web-guidance-src |
+| vendored | vendored(처음만 "저장소 안에 복사해 둔 외부 코드") | | modern-web-guidance-src |
