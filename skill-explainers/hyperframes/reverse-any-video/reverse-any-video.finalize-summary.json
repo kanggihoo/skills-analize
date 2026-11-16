@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-    "sha256": "c984a726b4eef206fed930ba01df3b3e16b88a3127a032475060155e2a6d30df",
-    "bytes": 23900
+    "sha256": "f0c78a7a1158f44ecfbdc184ac9b92cc30b27a4eab141375c27e3b312cd21195",
+    "bytes": 48910
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.html",
-    "sha256": "36b69d9426d914c7c61d0d5b7075a62b1c0658798dbed3bbd05ea92a356e9573",
-    "bytes": 1327997
+    "sha256": "614905564959bf0249802f5359647f7ec5b49b0e893bea7561aa928628b1795f",
+    "bytes": 1978965
   },
   "gates": {
     "validate": "pass",
@@ -21,95 +21,10 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 84,
-        "component": "prose",
-        "panelId": "rules"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 13,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 86,
-        "component": "prose",
-        "panelId": "rules"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 4,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 154,
-        "component": "prose",
-        "panelId": "people"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 2,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 156,
-        "component": "prose",
-        "panelId": "people"
-      },
-      "evidence": {
-        "reason": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 7,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    }
-  ],
+  "diagnostics": [],
   "diagnosticSummary": {
-    "total": 4,
-    "shown": 4,
+    "total": 0,
+    "shown": 0,
     "truncated": false
   },
   "evidence": {
@@ -127,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1806,
+  "durationMs": 2229,
   "browserCheck": {
     "requested": false,
     "ran": false

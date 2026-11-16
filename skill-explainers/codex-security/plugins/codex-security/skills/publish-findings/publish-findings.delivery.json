@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "receiptId": "7b582739-189e-4855-99e0-7994ef85bf79",
+  "receiptId": "4d0bdd61-0bc8-4563-b6ee-7feca51b8407",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/publish-findings.html",
   "specification": {
-    "sha256": "2fa752172a9bd6d9b455c391873c16ceefad4588e15b5ef82cba17d426123699",
-    "bytes": 38449
+    "sha256": "525c6a09b24c599e10dccf7d0124b11c31ef723176f758f37078528422a97523",
+    "bytes": 47328
   },
   "artifact": {
-    "sha256": "51b28b8eab0be90fe98f19786afaa04b8a0421f306bd931fae4f2bc3d6db4f92",
-    "bytes": 2442813
+    "sha256": "149c02ffb79116d754ae86cf4882986d1dbce266e8ee743c634a82c9bcba0948",
+    "bytes": 2529000
   },
   "explainer": {
-    "preparedSha256": "3694acd46713b74ab7402b56a847899e855528243a4405fc7fdf8138f386270a",
+    "preparedSha256": "d62bb8dd09b9e74cd315a27e8251a376771b799df3d8c1522c8521e39b5b1b59",
     "dependencies": [
       {
         "kind": "repository",
-        "id": "p-front",
+        "id": "sk-fm",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -27,7 +27,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-yaml",
+        "id": "oy",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/agents/openai.yaml",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "d3c61dcec1b7d800bc2d12d0d2330c00535cb1685ecad2252838f8942ffc0a9c",
@@ -35,7 +35,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-intent",
+        "id": "sk-intent",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -43,7 +43,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-ev",
+        "id": "sk-select",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -51,7 +51,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-acq",
+        "id": "sk-access",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -59,7 +59,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-trivy",
+        "id": "sk-trivy",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -67,7 +67,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-semgrep",
+        "id": "sk-semgrep",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -75,7 +75,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-github",
+        "id": "sk-github",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -83,7 +83,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-snyk",
+        "id": "sk-snyk",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -91,7 +91,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-cont",
+        "id": "sk-cont",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -99,7 +99,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-cx",
+        "id": "sk-cx",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -107,7 +107,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-wiz",
+        "id": "sk-wiz",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -115,7 +115,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-cpatch",
+        "id": "sk-cpatch",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -123,7 +123,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-fcs",
+        "id": "sk-fcs",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -131,7 +131,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-other",
+        "id": "sk-other",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -139,7 +139,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-sonar",
+        "id": "sk-sonar",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -147,7 +147,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-local",
+        "id": "sk-local",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -155,7 +155,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-unfam",
+        "id": "sk-parser",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -163,7 +163,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-pub",
+        "id": "sk-pub",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -171,7 +171,7 @@
       },
       {
         "kind": "repository",
-        "id": "p-retry",
+        "id": "sk-retry",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -323,6 +323,22 @@
       },
       {
         "kind": "repository",
+        "id": "col-main",
+        "path": "codex-security/plugins/codex-security/skills/publish-findings/scripts/collect_checkmarx.py",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "06d0638171f1b10ec3b2dc1fb810dd5935c2fcc73f300d3ad875ecd6b17b6892",
+        "bytes": 17126
+      },
+      {
+        "kind": "repository",
+        "id": "cp-root",
+        "path": "codex-security/plugins/codex-security/skills/publish-findings/scripts/collector_paths.py",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f74939f2435a62c85432028d16b404aa3d24f5bc33759b24b12682e1e2a428ed",
+        "bytes": 2210
+      },
+      {
+        "kind": "repository",
         "id": "cp-in",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/scripts/collector_paths.py",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
@@ -347,7 +363,7 @@
       },
       {
         "kind": "repository",
-        "id": "ef-start",
+        "id": "ef-state",
         "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-findings.ts",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "0e0abf53fcd6816f84b39eac5f83bcbee4d814c2c523673f10465977ad5046b1",
@@ -363,7 +379,7 @@
       },
       {
         "kind": "repository",
-        "id": "ef-count",
+        "id": "ef-write",
         "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-findings.ts",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "0e0abf53fcd6816f84b39eac5f83bcbee4d814c2c523673f10465977ad5046b1",
@@ -371,15 +387,7 @@
       },
       {
         "kind": "repository",
-        "id": "ef-member",
-        "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-findings.ts",
-        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-        "sha256": "0e0abf53fcd6816f84b39eac5f83bcbee4d814c2c523673f10465977ad5046b1",
-        "bytes": 11530
-      },
-      {
-        "kind": "repository",
-        "id": "ef-state",
+        "id": "ef-list",
         "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-findings.ts",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "0e0abf53fcd6816f84b39eac5f83bcbee4d814c2c523673f10465977ad5046b1",
@@ -404,6 +412,14 @@
       {
         "kind": "repository",
         "id": "pr-rec",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-finding-publications.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "64b70c8cb3afa563963e2211375f2a6e1842e9379d4a6dbf16a107f09ebbd218",
+        "bytes": 3624
+      },
+      {
+        "kind": "repository",
+        "id": "pr-list",
         "path": "codex-security/plugins/codex-security/mcp-app/src/workbench/external-finding-publications.ts",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "64b70c8cb3afa563963e2211375f2a6e1842e9379d4a6dbf16a107f09ebbd218",
@@ -467,24 +483,24 @@
       },
       {
         "kind": "diagram-spec",
-        "id": "publish-flow",
+        "id": "import-flow",
         "inline": true,
-        "sha256": "887fb2622b1d78012e01331dd206663824e2f6e6c19d3f0f95260289f68bd6bb",
-        "bytes": 1578
+        "sha256": "925d402ca33026e51e37d7a51706413d9180708780684ca2642abcd6cb7a6ad7",
+        "bytes": 1467
       },
       {
         "kind": "diagram-spec",
-        "id": "checkmarx-collect",
+        "id": "publish-flow",
         "inline": true,
-        "sha256": "c431f6eaf52cb838f6f708819139419ef492a8c0dddd7b3c6cccfd79b3f311d6",
-        "bytes": 1163
+        "sha256": "1f1ebd084a2b9eaae8dfde5dfe23f1806fa5381050c13aa747dee0eb057860f8",
+        "bytes": 1745
       },
       {
         "kind": "diagram-spec",
         "id": "publish-position",
         "inline": true,
-        "sha256": "3944d0e2d0e64426e96f531cfe3b5852c16ad4684b0773544ec3d069635bb7cd",
-        "bytes": 1117
+        "sha256": "794df6062d03b1fd4bda15046a0c4762bbe5d0c18eec413d022e7ae4162aa419",
+        "bytes": 1082
       }
     ]
   }

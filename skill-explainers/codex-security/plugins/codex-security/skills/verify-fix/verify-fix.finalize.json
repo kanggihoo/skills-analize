@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T08:44:09.053Z",
+  "startedAt": "2026-11-16T04:06:27.172Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/candidate.archify.md",
-    "sha256": "f6310667188ae6bb895de22b2d2c5963086a3a5eadfc9ba090e8a5349439e91f",
-    "bytes": 18009
+    "sha256": "e54ec10cb1fff5e8f6089547e42dc5e9231d4b148238ab71695a385326747be9",
+    "bytes": 27600
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/verify-fix.html",
-    "sha256": "83603d283dd563acbf6aaf30b1b383de84f54fed7ad697f134a9216362c17db7",
-    "bytes": 1223461
+    "sha256": "8d4cc4ec021fa882f70cdc202cb22691eb0aad3d6c2b78589fdf1a0565fc1754",
+    "bytes": 1314758
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "f6310667188ae6bb895de22b2d2c5963086a3a5eadfc9ba090e8a5349439e91f",
-          "bytes": 18009
+          "sha256": "e54ec10cb1fff5e8f6089547e42dc5e9231d4b148238ab71695a385326747be9",
+          "bytes": 27600
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1079,
+      "durationMs": 1096,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,18 +76,26 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "fa0af0e7-ff8b-4186-978b-d395a2aa0d3b",
+        "receiptId": "ec3bd4f2-bb75-4cd5-aecd-f732697c4a71",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/verify-fix.html",
         "explainer": {
-          "preparedSha256": "83e91a6a2e45af966813a1643d36c7deceb5a04556a4153766ee3593786ee4d5",
+          "preparedSha256": "68af58a8a47c58d37ea7d83b977c4e22338009c4fca2be241d5c7e1fefaf5aab",
           "dependencies": [
             {
               "kind": "repository",
               "id": "v-front",
+              "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
+              "bytes": 4193
+            },
+            {
+              "kind": "repository",
+              "id": "v-jsonblk",
               "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
@@ -168,14 +176,6 @@
             {
               "kind": "repository",
               "id": "v-result",
-              "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
-              "bytes": 4193
-            },
-            {
-              "kind": "repository",
-              "id": "v-json",
               "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
@@ -281,25 +281,25 @@
               "kind": "diagram-spec",
               "id": "verify-flow",
               "inline": true,
-              "sha256": "a81104dbd50b8e4f654fc5f648e93b75c235a5c9d92a3b5c6c098759f7d8b38a",
-              "bytes": 1209
+              "sha256": "fcef33684d3303ef60b30c86fd5ebeb6d9ab5c4cf604eb981c6085370cf18270",
+              "bytes": 2409
             },
             {
               "kind": "diagram-spec",
               "id": "position-flow",
               "inline": true,
-              "sha256": "0d12067d6f6835d865236fa3277fbdadf79ea7d3c62aa87c74101fc00d5c650e",
-              "bytes": 755
+              "sha256": "02c3a81072e94c359f63872e50033555c8708ff611583f6a3cd395be9a564ff6",
+              "bytes": 687
             }
           ]
         },
         "specification": {
-          "sha256": "f6310667188ae6bb895de22b2d2c5963086a3a5eadfc9ba090e8a5349439e91f",
-          "bytes": 18009
+          "sha256": "e54ec10cb1fff5e8f6089547e42dc5e9231d4b148238ab71695a385326747be9",
+          "bytes": 27600
         },
         "artifact": {
-          "sha256": "83603d283dd563acbf6aaf30b1b383de84f54fed7ad697f134a9216362c17db7",
-          "bytes": 1223461
+          "sha256": "8d4cc4ec021fa882f70cdc202cb22691eb0aad3d6c2b78589fdf1a0565fc1754",
+          "bytes": 1314758
         },
         "validation": {
           "checksPassed": 4,
@@ -325,7 +325,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 960,
+      "durationMs": 582,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -338,15 +338,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/verify-fix.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "83603d283dd563acbf6aaf30b1b383de84f54fed7ad697f134a9216362c17db7",
-          "bytes": 1223461
+          "sha256": "8d4cc4ec021fa882f70cdc202cb22691eb0aad3d6c2b78589fdf1a0565fc1754",
+          "bytes": 1314758
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "121 unique DOM IDs"
+              "146 unique DOM IDs"
             ]
           },
           {
@@ -384,10 +384,10 @@
               "id": "verify-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Vj55t0/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-ht0kpH/child.html",
                 "artifact": {
-                  "sha256": "1e9a5648746db956b80540bdd20185ba1813c388901c35263f9563f94cc43885",
-                  "bytes": 835243
+                  "sha256": "012ca6e0676ff0c7333469457c2025a1399f8938afdc12b124f41b36ae6c0cf9",
+                  "bytes": 847551
                 },
                 "checks": [
                   {
@@ -454,18 +454,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 22,
+                    "minLabelRouteClearance": 13,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.322834645669292,
+                    "minProjectedNodeTextPx": 7.9064824654622745,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 2,
-                    "shortEndpointSegmentCount": 2,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -495,13 +495,13 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "mode-to-runtime-1",
-                      "from": "mode",
-                      "to": "runtime"
+                      "id": "ask-to-origin-1",
+                      "from": "ask",
+                      "to": "origin"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.322834645669292,
-                    "semanticTextCount": 8
+                    "minimumProjectedTextPx": 7.9064824654622745,
+                    "semanticTextCount": 20
                   },
                   "issues": []
                 }
@@ -511,10 +511,10 @@
               "id": "position-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-V2grH9/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Ijg6DI/child.html",
                 "artifact": {
-                  "sha256": "2f12c341ca0c53ddbcb90033b526335d1be0283093b7189c9ce0a058a1c330d4",
-                  "bytes": 831393
+                  "sha256": "0f7aa036dcc17c6a94fa738a8630552a1fb492f326fa78c7c9ba6d6aa99eeca9",
+                  "bytes": 831653
                 },
                 "checks": [
                   {
@@ -581,15 +581,15 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 64.5,
+                    "minLabelRouteClearance": 108.2,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 7.88135593220339,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 80.4,
+                    "minSegmentPx": 70.8,
                     "minInteriorSegmentPx": null,
                     "shortSegmentCount": 0,
                     "shortEndpointSegmentCount": 0,
@@ -622,12 +622,12 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "fix-to-current-1",
+                      "id": "fix-to-me-1",
                       "from": "fix",
-                      "to": "current"
+                      "to": "me"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 8,
+                    "minimumProjectedTextPx": 7.88135593220339,
                     "semanticTextCount": 5
                   },
                   "issues": []
@@ -638,7 +638,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "fa0af0e7-ff8b-4186-978b-d395a2aa0d3b"
+        "deliveryReceiptId": "ec3bd4f2-bb75-4cd5-aecd-f732697c4a71"
       }
     }
   },
@@ -652,8 +652,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/verify-fix/verify-fix.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T08:44:11.388Z",
-  "durationMs": 2334,
+  "finishedAt": "2026-11-16T04:06:29.028Z",
+  "durationMs": 1855,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

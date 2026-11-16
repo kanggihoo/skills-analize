@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/candidate.archify.md",
-    "sha256": "2fa752172a9bd6d9b455c391873c16ceefad4588e15b5ef82cba17d426123699",
-    "bytes": 38449
+    "sha256": "525c6a09b24c599e10dccf7d0124b11c31ef723176f758f37078528422a97523",
+    "bytes": 47328
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/publish-findings.html",
-    "sha256": "51b28b8eab0be90fe98f19786afaa04b8a0421f306bd931fae4f2bc3d6db4f92",
-    "bytes": 2442813
+    "sha256": "149c02ffb79116d754ae86cf4882986d1dbce266e8ee743c634a82c9bcba0948",
+    "bytes": 2529000
   },
   "gates": {
     "validate": "pass",
@@ -21,10 +21,53 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/candidate.archify.md",
+        "line": 142,
+        "component": "prose",
+        "panelId": "activation"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 4,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 10 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/publish-findings/candidate.archify.md",
+        "line": 251,
+        "component": "prose",
+        "panelId": "workbench"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 10 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 10,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    }
+  ],
   "diagnosticSummary": {
-    "total": 0,
-    "shown": 0,
+    "total": 2,
+    "shown": 2,
     "truncated": false
   },
   "evidence": {
@@ -42,7 +85,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 2378,
+  "durationMs": 2355,
   "browserCheck": {
     "requested": false,
     "ran": false

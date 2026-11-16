@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T08:43:57.817Z",
+  "startedAt": "2026-11-16T04:10:15.091Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
-    "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
-    "bytes": 20730
+    "sha256": "e2abbdb55642f5a966d4bb422fff54dadd9c3fddc817a565fc24e928ebe2fb59",
+    "bytes": 36048
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
-    "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
-    "bytes": 1425986
+    "sha256": "86f185f29d52a0fca83f1fa066dd2a1a81ebe4f7394b9f92ae3cfe90c36d98c9",
+    "bytes": 2311308
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
-          "bytes": 20730
+          "sha256": "e2abbdb55642f5a966d4bb422fff54dadd9c3fddc817a565fc24e928ebe2fb59",
+          "bytes": 36048
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1939,
+      "durationMs": 2215,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "18d5bd9b-ef3c-4f12-9426-ad095c768885",
+        "receiptId": "ba49408a-8136-47e6-b6aa-62bf4301acef",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
         "explainer": {
-          "preparedSha256": "2f631ca5d2a9ba68ed3dd35aca744a76480cc6721e3caace16aa239146ff0f26",
+          "preparedSha256": "ffc2bf5d6043f0e7c1b8167c7e5d6169a25be37dc5d2c79ea15c13079736d006",
           "dependencies": [
             {
               "kind": "repository",
@@ -92,6 +92,14 @@
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
               "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-yaml",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/agents/openai.yaml",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "0e6d5ebea26253ea7113bbe6570ee308e7f1393872fbdf28b747b9ccc90272c1",
+              "bytes": 250
             },
             {
               "kind": "repository",
@@ -223,39 +231,15 @@
             },
             {
               "kind": "repository",
-              "id": "fx-desc",
-              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
-              "bytes": 18461
-            },
-            {
-              "kind": "repository",
-              "id": "fx-mode",
-              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
-              "bytes": 18461
-            },
-            {
-              "kind": "repository",
-              "id": "fx-obj",
-              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
-              "bytes": 18461
-            },
-            {
-              "kind": "repository",
-              "id": "fx-out",
-              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
-              "bytes": 18461
-            },
-            {
-              "kind": "repository",
               "id": "pf-desc",
+              "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+              "bytes": 11118
+            },
+            {
+              "kind": "repository",
+              "id": "pf-use",
               "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -271,7 +255,7 @@
             },
             {
               "kind": "repository",
-              "id": "pf-dry",
+              "id": "pf-local",
               "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -279,7 +263,39 @@
             },
             {
               "kind": "repository",
-              "id": "rm-rda",
+              "id": "fx-desc",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-obj",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-mode",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-out",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "rm-list",
               "path": "codex-security/plugins/codex-security/skills/README.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
@@ -287,27 +303,41 @@
             },
             {
               "kind": "diagram-spec",
-              "id": "dependency-flow",
+              "id": "request-routing",
               "inline": true,
-              "sha256": "02bfb1d31f95650df49a9bff1d1ba5b16900fab2dba9289bb255f48418e05eca",
-              "bytes": 1558
+              "sha256": "7b6f22bb9e8cab46e1da55bb938932620a3fa543a91de97dff78b1c16daf67c5",
+              "bytes": 1621
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "judge-and-hand-off",
+              "inline": true,
+              "sha256": "fdb4d6bf9e5e2c1c8675429e048ad96bb98db60b3a296c1dc345e8941a0f0721",
+              "bytes": 1736
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "evidence-and-dismissal",
+              "inline": true,
+              "sha256": "274f0a5c4edbb6ca36cf575dc6bb57ec3456343efa6dbacda46ce8bdda017bb3",
+              "bytes": 1217
             },
             {
               "kind": "diagram-spec",
               "id": "dependency-position",
               "inline": true,
-              "sha256": "ed12d78739f7b0660a2b3da0f517404f0b4641ef14536a3e1f0356e2b37e5554",
-              "bytes": 1013
+              "sha256": "e95650345d38cf57cd12342f43bd7b5d48568297c90078a58ac9119dd1701fca",
+              "bytes": 981
             }
           ]
         },
         "specification": {
-          "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
-          "bytes": 20730
+          "sha256": "e2abbdb55642f5a966d4bb422fff54dadd9c3fddc817a565fc24e928ebe2fb59",
+          "bytes": 36048
         },
         "artifact": {
-          "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
-          "bytes": 1425986
+          "sha256": "86f185f29d52a0fca83f1fa066dd2a1a81ebe4f7394b9f92ae3cfe90c36d98c9",
+          "bytes": 2311308
         },
         "validation": {
           "checksPassed": 4,
@@ -333,7 +363,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 649,
+      "durationMs": 1009,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -346,15 +376,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
-          "bytes": 1425986
+          "sha256": "86f185f29d52a0fca83f1fa066dd2a1a81ebe4f7394b9f92ae3cfe90c36d98c9",
+          "bytes": 2311308
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "136 unique DOM IDs"
+              "183 unique DOM IDs"
             ]
           },
           {
@@ -366,14 +396,16 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "27 frozen dependencies"
+              "31 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "dependency-flow: pass",
+              "request-routing: pass",
+              "judge-and-hand-off: pass",
+              "evidence-and-dismissal: pass",
               "dependency-position: pass"
             ]
           }
@@ -389,13 +421,13 @@
           "issues": [],
           "nativeDiagrams": [
             {
-              "id": "dependency-flow",
+              "id": "request-routing",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-SnmWMb/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-mF1D0O/child.html",
                 "artifact": {
-                  "sha256": "a2b1f99053e0488d7fc9d4b814d419debc19ed433358394840c363c595448ce5",
-                  "bytes": 839815
+                  "sha256": "2f0a917422c74be57e4d38e900f119505dc1f51bdad94c3479bd5d596ba0487e",
+                  "bytes": 840897
                 },
                 "checks": [
                   {
@@ -462,18 +494,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 16,
+                    "minLabelRouteClearance": 22,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 6.532045654082529,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 4,
-                    "shortEndpointSegmentCount": 4,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -503,13 +535,267 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "ask-to-hand-1",
-                      "from": "ask",
-                      "to": "hand"
+                      "id": "disc-to-gh-1",
+                      "from": "disc",
+                      "to": "gh"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 11
+                    "minimumProjectedTextPx": 6.532045654082529,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "judge-and-hand-off",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-IgyXzm/child.html",
+                "artifact": {
+                  "sha256": "47fd2c4d976f505194a54daf6056626466ec9b9fc55b28bd1c750935d9c8a6ec",
+                  "bytes": 841644
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 22,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.330049261083744,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "cd-to-hold-1",
+                      "from": "cd",
+                      "to": "hold"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.330049261083744,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "evidence-and-dismissal",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-RwCKF7/child.html",
+                "artifact": {
+                  "sha256": "67287ea95ad25c670820a0b619d120a082233d6ca971480871418f30b5530112",
+                  "bytes": 837011
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.790575916230367,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "dis-to-end-1",
+                      "from": "dis",
+                      "to": "end"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.790575916230367,
+                    "semanticTextCount": 10
                   },
                   "issues": []
                 }
@@ -519,10 +805,10 @@
               "id": "dependency-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jFlv9u/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-unUcsY/child.html",
                 "artifact": {
-                  "sha256": "b2ba0da63b233b1f38daeb9e4b43083bcf82172d497b3e68403789a588e0a985",
-                  "bytes": 834138
+                  "sha256": "ce7ed480dfcc9dde319fffe9886cb9a9abda895a817ee8fd76f5a95241ef1e25",
+                  "bytes": 833687
                 },
                 "checks": [
                   {
@@ -646,7 +932,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "18d5bd9b-ef3c-4f12-9426-ad095c768885"
+        "deliveryReceiptId": "ba49408a-8136-47e6-b6aa-62bf4301acef"
       }
     }
   },
@@ -660,17 +946,16 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T08:44:00.666Z",
-  "durationMs": 2848,
+  "finishedAt": "2026-11-16T04:10:18.515Z",
+  "durationMs": 3423,
   "update": {
-    "status": "unavailable",
-    "installedVersion": null,
-    "availableVersion": null,
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
     "releaseNotes": null,
-    "checkedAt": null,
-    "source": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
     "noticeRequired": false,
-    "noticeText": null,
-    "reason": "timeout"
+    "noticeText": null
   }
 }

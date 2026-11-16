@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-14T06:03:31.463Z",
+  "startedAt": "2026-11-16T03:55:53.671Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-    "sha256": "c984a726b4eef206fed930ba01df3b3e16b88a3127a032475060155e2a6d30df",
-    "bytes": 23900
+    "sha256": "f0c78a7a1158f44ecfbdc184ac9b92cc30b27a4eab141375c27e3b312cd21195",
+    "bytes": 48910
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.html",
-    "sha256": "36b69d9426d914c7c61d0d5b7075a62b1c0658798dbed3bbd05ea92a356e9573",
-    "bytes": 1327997
+    "sha256": "614905564959bf0249802f5359647f7ec5b49b0e893bea7561aa928628b1795f",
+    "bytes": 1978965
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "c984a726b4eef206fed930ba01df3b3e16b88a3127a032475060155e2a6d30df",
-          "bytes": 23900
+          "sha256": "f0c78a7a1158f44ecfbdc184ac9b92cc30b27a4eab141375c27e3b312cd21195",
+          "bytes": 48910
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1088,
+      "durationMs": 1356,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "7130a07d-eac5-4c27-b213-d55d632a880a",
+        "receiptId": "6ed01020-9c4f-45fd-ac69-89d7e2abc601",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.html",
         "explainer": {
-          "preparedSha256": "224420d1eb6d9b4b89e9a4e3379e01215c2b20d1707e32f055d9c5628b33d5cf",
+          "preparedSha256": "4dcc0b4059376ba799181202449e1f56aa0ec93653f19ab35812f86a7dea03be",
           "dependencies": [
             {
               "kind": "repository",
               "id": "front",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -97,7 +97,15 @@
               "kind": "repository",
               "id": "plugin",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "beacon",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -105,7 +113,7 @@
               "kind": "repository",
               "id": "intro",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -113,7 +121,7 @@
               "kind": "repository",
               "id": "pro",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -121,7 +129,7 @@
               "kind": "repository",
               "id": "frame",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -129,15 +137,31 @@
               "kind": "repository",
               "id": "layers",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
             {
               "kind": "repository",
-              "id": "check",
+              "id": "midcheck",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "final",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "fix",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
@@ -145,15 +169,23 @@
               "kind": "repository",
               "id": "alone",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
             {
               "kind": "repository",
-              "id": "start-intro",
+              "id": "start-voice",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
+              "bytes": 6988
+            },
+            {
+              "kind": "repository",
+              "id": "start-event",
+              "path": "hyperframes/reverse-any-video/references/start.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -161,7 +193,7 @@
               "kind": "repository",
               "id": "start-probe",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -169,7 +201,7 @@
               "kind": "repository",
               "id": "login",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -177,7 +209,7 @@
               "kind": "repository",
               "id": "free",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -185,7 +217,7 @@
               "kind": "repository",
               "id": "prosign",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -193,7 +225,7 @@
               "kind": "repository",
               "id": "credits",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -201,7 +233,7 @@
               "kind": "repository",
               "id": "handover",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
@@ -209,55 +241,15 @@
               "kind": "repository",
               "id": "time",
               "path": "hyperframes/reverse-any-video/references/start.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
               "bytes": 6988
             },
             {
               "kind": "repository",
-              "id": "people-intro",
-              "path": "hyperframes/reverse-any-video/references/people.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
-              "bytes": 4057
-            },
-            {
-              "kind": "repository",
-              "id": "people-shot",
-              "path": "hyperframes/reverse-any-video/references/people.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
-              "bytes": 4057
-            },
-            {
-              "kind": "repository",
-              "id": "people-gen",
-              "path": "hyperframes/reverse-any-video/references/people.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
-              "bytes": 4057
-            },
-            {
-              "kind": "repository",
-              "id": "people-check",
-              "path": "hyperframes/reverse-any-video/references/people.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
-              "bytes": 4057
-            },
-            {
-              "kind": "repository",
-              "id": "people-end",
-              "path": "hyperframes/reverse-any-video/references/people.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
-              "bytes": 4057
-            },
-            {
-              "kind": "repository",
               "id": "match-time",
               "path": "hyperframes/reverse-any-video/references/match.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "be8b2100b0a50c0f4a770d58b43b7e46538d472f9e87e0847b2d2f1f6700e5df",
               "bytes": 4292
             },
@@ -265,7 +257,7 @@
               "kind": "repository",
               "id": "match-size",
               "path": "hyperframes/reverse-any-video/references/match.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "be8b2100b0a50c0f4a770d58b43b7e46538d472f9e87e0847b2d2f1f6700e5df",
               "bytes": 4292
             },
@@ -273,7 +265,15 @@
               "kind": "repository",
               "id": "match-look",
               "path": "hyperframes/reverse-any-video/references/match.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "be8b2100b0a50c0f4a770d58b43b7e46538d472f9e87e0847b2d2f1f6700e5df",
+              "bytes": 4292
+            },
+            {
+              "kind": "repository",
+              "id": "match-word",
+              "path": "hyperframes/reverse-any-video/references/match.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "be8b2100b0a50c0f4a770d58b43b7e46538d472f9e87e0847b2d2f1f6700e5df",
               "bytes": 4292
             },
@@ -281,49 +281,192 @@
               "kind": "repository",
               "id": "match-recipe",
               "path": "hyperframes/reverse-any-video/references/match.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "be8b2100b0a50c0f4a770d58b43b7e46538d472f9e87e0847b2d2f1f6700e5df",
               "bytes": 4292
             },
             {
               "kind": "repository",
-              "id": "anim-split",
+              "id": "people-intro",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-cuts",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-plate",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-gen",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-credit",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-check",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-frame",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-behind",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-end",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "anim-intro",
               "path": "hyperframes/reverse-any-video/references/animated.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
               "bytes": 2599
             },
             {
               "kind": "repository",
-              "id": "anim-recipe",
+              "id": "anim-split",
               "path": "hyperframes/reverse-any-video/references/animated.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
               "bytes": 2599
             },
             {
+              "kind": "repository",
+              "id": "anim-cuts",
+              "path": "hyperframes/reverse-any-video/references/animated.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
+              "bytes": 2599
+            },
+            {
+              "kind": "repository",
+              "id": "anim-gen",
+              "path": "hyperframes/reverse-any-video/references/animated.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
+              "bytes": 2599
+            },
+            {
+              "kind": "repository",
+              "id": "anim-frame",
+              "path": "hyperframes/reverse-any-video/references/animated.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
+              "bytes": 2599
+            },
+            {
+              "kind": "repository",
+              "id": "hf-contract",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "hf-route",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "sty-desc",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-route",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "media-logo",
+              "path": "hyperframes/media-use/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+              "bytes": 5311
+            },
+            {
               "kind": "diagram-spec",
-              "id": "start-flow",
+              "id": "reverse-flow",
               "inline": true,
-              "sha256": "f39d27611697f3d879efaebe5ab914c389edca3464f2cc6735b765b9ff04bfe6",
-              "bytes": 2102
+              "sha256": "b34d504f0811a6315a1d5364751059004987f94b78db8da2bc34669341033616",
+              "bytes": 2084
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "people-flow",
+              "inline": true,
+              "sha256": "1c0d5a395c0307921773a17b82098f4f26da3c76948c5be6d7dc41bc2af020d2",
+              "bytes": 1920
             },
             {
               "kind": "diagram-spec",
               "id": "position-flow",
               "inline": true,
-              "sha256": "ec1199ddd40dd4648cd1f0f329a0f631a6f8a78104aa0431bd102554d4b29f81",
-              "bytes": 911
+              "sha256": "9a24ea4bb37d58e9964d1cd01c407c7bb1159909f13f6a5f6fa3cdbb4d6659d1",
+              "bytes": 1156
             }
           ]
         },
         "specification": {
-          "sha256": "c984a726b4eef206fed930ba01df3b3e16b88a3127a032475060155e2a6d30df",
-          "bytes": 23900
+          "sha256": "f0c78a7a1158f44ecfbdc184ac9b92cc30b27a4eab141375c27e3b312cd21195",
+          "bytes": 48910
         },
         "artifact": {
-          "sha256": "36b69d9426d914c7c61d0d5b7075a62b1c0658798dbed3bbd05ea92a356e9573",
-          "bytes": 1327997
+          "sha256": "614905564959bf0249802f5359647f7ec5b49b0e893bea7561aa928628b1795f",
+          "bytes": 1978965
         },
         "validation": {
           "checksPassed": 4,
@@ -333,92 +476,6 @@
           "errors": 0,
           "warnings": 0
         },
-        "diagnostics": [
-          {
-            "code": "explainer/writing-paragraph-length",
-            "severity": "warning",
-            "message": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-            "subject": {
-              "line": 84,
-              "component": "prose",
-              "panelId": "rules",
-              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md"
-            },
-            "evidence": {
-              "rule": "paragraph-length",
-              "reason": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-              "units": 13,
-              "limit": 120
-            },
-            "supportedFixes": [
-              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-            ]
-          },
-          {
-            "code": "explainer/writing-paragraph-length",
-            "severity": "warning",
-            "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-            "subject": {
-              "line": 86,
-              "component": "prose",
-              "panelId": "rules",
-              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md"
-            },
-            "evidence": {
-              "rule": "paragraph-length",
-              "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-              "units": 4,
-              "limit": 120
-            },
-            "supportedFixes": [
-              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-            ]
-          },
-          {
-            "code": "explainer/writing-paragraph-length",
-            "severity": "warning",
-            "message": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-            "subject": {
-              "line": 154,
-              "component": "prose",
-              "panelId": "people",
-              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md"
-            },
-            "evidence": {
-              "rule": "paragraph-length",
-              "reason": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-              "units": 2,
-              "limit": 120
-            },
-            "supportedFixes": [
-              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-            ]
-          },
-          {
-            "code": "explainer/writing-paragraph-length",
-            "severity": "warning",
-            "message": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-            "subject": {
-              "line": 156,
-              "component": "prose",
-              "panelId": "people",
-              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md"
-            },
-            "evidence": {
-              "rule": "paragraph-length",
-              "reason": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-              "units": 7,
-              "limit": 120
-            },
-            "supportedFixes": [
-              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-            ]
-          }
-        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -430,13 +487,12 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      },
-      "stderr": "archify: This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace."
+      }
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 573,
+      "durationMs": 728,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -449,15 +505,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "36b69d9426d914c7c61d0d5b7075a62b1c0658798dbed3bbd05ea92a356e9573",
-          "bytes": 1327997
+          "sha256": "614905564959bf0249802f5359647f7ec5b49b0e893bea7561aa928628b1795f",
+          "bytes": 1978965
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "141 unique DOM IDs"
+              "205 unique DOM IDs"
             ]
           },
           {
@@ -469,14 +525,15 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "29 frozen dependencies"
+              "47 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "start-flow: pass",
+              "reverse-flow: pass",
+              "people-flow: pass",
               "position-flow: pass"
             ]
           }
@@ -492,13 +549,13 @@
           "issues": [],
           "nativeDiagrams": [
             {
-              "id": "start-flow",
+              "id": "reverse-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-s2cm8X/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jD6fvf/child.html",
                 "artifact": {
-                  "sha256": "951703eaa7ecce7457c71cb2422d1a5a3573e03891c6444f6c9acabe8522e564",
-                  "bytes": 845092
+                  "sha256": "e1ab1866075ec0c43a24a9d94f03200dcbc8258b8e40bf0b0e33a67ba10b3b86",
+                  "bytes": 843860
                 },
                 "checks": [
                   {
@@ -565,10 +622,10 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 9,
+                    "minLabelRouteClearance": 60,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.469879518072289,
+                    "minProjectedNodeTextPx": 8,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
@@ -606,26 +663,26 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "creditq-to-done-1",
-                      "from": "creditq",
-                      "to": "done"
+                      "id": "build-to-final-1",
+                      "from": "build",
+                      "to": "final"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.469879518072289,
-                    "semanticTextCount": 17
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 14
                   },
                   "issues": []
                 }
               }
             },
             {
-              "id": "position-flow",
+              "id": "people-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-WGYCoE/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6r59Vl/child.html",
                 "artifact": {
-                  "sha256": "19eb59cf5d5fa10b064525c43b2669b7d55f4597ace834ba72442cc88fd495dd",
-                  "bytes": 833410
+                  "sha256": "12100d610563de8d802b3ac5bbac3228926d72e79b4f5d28c24e0c27668e7b20",
+                  "bytes": 842334
                 },
                 "checks": [
                   {
@@ -692,15 +749,142 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 85.7,
+                    "minLabelRouteClearance": 15,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 6.5148861646234675,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 38,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "behind-to-cutout-1",
+                      "from": "behind",
+                      "to": "cutout"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.5148861646234675,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "position-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-aShxBO/child.html",
+                "artifact": {
+                  "sha256": "90e14301c25706b24f0960b18bea40678cc25c5026c3c52e7ac14c182a22a19c",
+                  "bytes": 835544
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 63,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 6.901669758812616,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 90,
                     "minInteriorSegmentPx": null,
                     "shortSegmentCount": 0,
                     "shortEndpointSegmentCount": 0,
@@ -738,8 +922,8 @@
                       "to": "contract"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 7
+                    "minimumProjectedTextPx": 6.901669758812616,
+                    "semanticTextCount": 9
                   },
                   "issues": []
                 }
@@ -749,7 +933,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "7130a07d-eac5-4c27-b213-d55d632a880a"
+        "deliveryReceiptId": "6ed01020-9c4f-45fd-ac69-89d7e2abc601"
       }
     }
   },
@@ -757,99 +941,14 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 84,
-        "component": "prose",
-        "panelId": "rules"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 13 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 13,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 86,
-        "component": "prose",
-        "panelId": "rules"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 4,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 154,
-        "component": "prose",
-        "panelId": "people"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 2 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 2,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    },
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/candidate.archify.md",
-        "line": 156,
-        "component": "prose",
-        "panelId": "people"
-      },
-      "evidence": {
-        "reason": "This paragraph has 7 sentences and 7 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 7,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    }
-  ],
+  "diagnostics": [],
   "evidence": {
     "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.finalize.json",
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/reverse-any-video/reverse-any-video.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-14T06:03:33.269Z",
-  "durationMs": 1806,
+  "finishedAt": "2026-11-16T03:55:55.900Z",
+  "durationMs": 2229,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

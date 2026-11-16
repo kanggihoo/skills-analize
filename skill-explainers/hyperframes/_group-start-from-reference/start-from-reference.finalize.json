@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-14T06:12:17.381Z",
+  "startedAt": "2026-11-16T04:15:38.388Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
-    "sha256": "c68093815ca2dc8c5f7b9ff6396ef68e2443533cf81309c032d29d609b9ea66d",
-    "bytes": 7546
+    "sha256": "1d5f0772d66fb35bd1c886555dda7c36697d367abc25c32fa9ab553416252cd5",
+    "bytes": 40271
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/start-from-reference.html",
-    "sha256": "f816f592f3957f08ee27b2147cad43a1f8cf5341c2e45c8da91b1987da40a3c4",
-    "bytes": 634414
+    "sha256": "dff7307cd7b9611932a50e660b25a26baaa9a3872d47b2d59d7e50dccabe931b",
+    "bytes": 1756651
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "c68093815ca2dc8c5f7b9ff6396ef68e2443533cf81309c032d29d609b9ea66d",
-          "bytes": 7546
+          "sha256": "1d5f0772d66fb35bd1c886555dda7c36697d367abc25c32fa9ab553416252cd5",
+          "bytes": 40271
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 782,
+      "durationMs": 1148,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,36 +76,244 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "6a5ad37f-d3e4-4624-8730-8281d93516c1",
+        "receiptId": "957a5017-9d87-4f73-ac5c-a07423de5504",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/start-from-reference.html",
         "explainer": {
-          "preparedSha256": "e9ce01086fc8399200c20d1bca4f37cc902b21b85de21965d2fe54b53a1e3721",
+          "preparedSha256": "dfff3801f67c37c43dea2c1e72899c21d5ec5b166d9ee4aa1461f2184c19fa76",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "hf-route",
+              "id": "hf-desc",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "rev-intro",
+              "id": "hf-plugin",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "hf-intro",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "hf-contract",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "hf-loop",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "hf-route",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "repository",
+              "id": "look-intro",
+              "path": "hyperframes/hyperframes/references/look.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+              "bytes": 6031
+            },
+            {
+              "kind": "repository",
+              "id": "look-ref",
+              "path": "hyperframes/hyperframes/references/look.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+              "bytes": 6031
+            },
+            {
+              "kind": "repository",
+              "id": "look-line",
+              "path": "hyperframes/hyperframes/references/look.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+              "bytes": 6031
+            },
+            {
+              "kind": "repository",
+              "id": "life-set",
+              "path": "hyperframes/hyperframes/references/skill-lifecycle.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "094f8bc2d2ec3db9f306d9ab2a2d9a60a65e00bbeeb2f1aa4760d92b1f438b6d",
+              "bytes": 4926
+            },
+            {
+              "kind": "repository",
+              "id": "rev-desc",
               "path": "hyperframes/reverse-any-video/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
               "bytes": 5289
             },
             {
               "kind": "repository",
+              "id": "rev-plugin",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-goal",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-pro",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-frame",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-layers",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-check",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-alone",
+              "path": "hyperframes/reverse-any-video/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe9d3ec0a9a6821207a25860d7653aa9c4cf4cfed5543f560fe426ed56ce5e1e",
+              "bytes": 5289
+            },
+            {
+              "kind": "repository",
+              "id": "rev-probe",
+              "path": "hyperframes/reverse-any-video/references/start.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
+              "bytes": 6988
+            },
+            {
+              "kind": "repository",
+              "id": "rev-free",
+              "path": "hyperframes/reverse-any-video/references/start.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
+              "bytes": 6988
+            },
+            {
+              "kind": "repository",
+              "id": "rev-credit",
+              "path": "hyperframes/reverse-any-video/references/start.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
+              "bytes": 6988
+            },
+            {
+              "kind": "repository",
+              "id": "rev-hand",
+              "path": "hyperframes/reverse-any-video/references/start.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "86e0f55fe09d6a0e360284b30088fe2aa997494b03c7e2574c3925e52c38f862",
+              "bytes": 6988
+            },
+            {
+              "kind": "repository",
+              "id": "people-intro",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-credit",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "people-gen",
+              "path": "hyperframes/reverse-any-video/references/people.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8a6468815e339dca6a9a24b72d95e2ac478f4598ceb226080dbae5e9e7c57870",
+              "bytes": 4057
+            },
+            {
+              "kind": "repository",
+              "id": "anim-gen",
+              "path": "hyperframes/reverse-any-video/references/animated.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "98fac6e20f30a0c8b0f5ab22475e7305808e64839876273142f8d1d860f296f2",
+              "bytes": 2599
+            },
+            {
+              "kind": "repository",
+              "id": "rem-desc",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
+              "id": "rem-plugin",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
               "id": "rem-levels",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -113,23 +321,127 @@
               "kind": "repository",
               "id": "rem-native",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
             {
               "kind": "repository",
-              "id": "sty-pick",
+              "id": "rem-catalog",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
+              "id": "rem-hosted",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
+              "id": "rem-media",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
+              "id": "rem-escape",
+              "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
+              "bytes": 5403
+            },
+            {
+              "kind": "repository",
+              "id": "rem-escape-both",
+              "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
+              "bytes": 5403
+            },
+            {
+              "kind": "repository",
+              "id": "rem-ramp",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "rem-never",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "rem-eval",
+              "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
+              "bytes": 4409
+            },
+            {
+              "kind": "repository",
+              "id": "rem-media-ramp",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "sty-desc",
               "path": "hyperframes/style-sampling/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
               "bytes": 5113
             },
             {
               "kind": "repository",
-              "id": "sty-outside",
+              "id": "sty-plugin",
               "path": "hyperframes/style-sampling/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-goal",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-table",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-which",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-none",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
               "bytes": 5113
             },
@@ -137,7 +449,23 @@
               "kind": "repository",
               "id": "sty-start",
               "path": "hyperframes/style-sampling/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-pull",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
+              "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "sty-make",
+              "path": "hyperframes/style-sampling/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
               "bytes": 5113
             },
@@ -145,26 +473,105 @@
               "kind": "repository",
               "id": "sty-credit",
               "path": "hyperframes/style-sampling/SKILL.md",
-              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
               "bytes": 5113
+            },
+            {
+              "kind": "repository",
+              "id": "remix-order",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-read",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-ask",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-stop1",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-foot",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-check",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "remix-reply",
+              "path": "hyperframes/style-sampling/references/remix.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
+              "bytes": 11074
+            },
+            {
+              "kind": "repository",
+              "id": "media-logo",
+              "path": "hyperframes/media-use/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+              "bytes": 5311
+            },
+            {
+              "kind": "repository",
+              "id": "media-credit",
+              "path": "hyperframes/media-use/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+              "bytes": 5311
             },
             {
               "kind": "diagram-spec",
               "id": "start-flow",
               "inline": true,
-              "sha256": "d3e50d3e611e7f7c4a97fd8fc97d6f83cf520cafe19809ee9b85087ac0ca1d77",
-              "bytes": 1038
+              "sha256": "1939ce851f015517288cdd4db8a8a6e698f52d7689ebd50f64a839735a07836b",
+              "bytes": 1248
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "style-flow",
+              "inline": true,
+              "sha256": "cb59be7ea3e8e5ac4419a525531c11eae0afce8bc2a0faf582b748c094bfa8f6",
+              "bytes": 1185
             }
           ]
         },
         "specification": {
-          "sha256": "c68093815ca2dc8c5f7b9ff6396ef68e2443533cf81309c032d29d609b9ea66d",
-          "bytes": 7546
+          "sha256": "1d5f0772d66fb35bd1c886555dda7c36697d367abc25c32fa9ab553416252cd5",
+          "bytes": 40271
         },
         "artifact": {
-          "sha256": "f816f592f3957f08ee27b2147cad43a1f8cf5341c2e45c8da91b1987da40a3c4",
-          "bytes": 634414
+          "sha256": "dff7307cd7b9611932a50e660b25a26baaa9a3872d47b2d59d7e50dccabe931b",
+          "bytes": 1756651
         },
         "validation": {
           "checksPassed": 4,
@@ -174,6 +581,92 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 6 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 90,
+              "component": "prose",
+              "panelId": "behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 6 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 6,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 9 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 133,
+              "component": "prose",
+              "panelId": "guide",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 9 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 9,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 156,
+              "component": "prose",
+              "panelId": "relations",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 3,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 189,
+              "component": "prose",
+              "panelId": "audit",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 4,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -185,12 +678,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: This paragraph has 5 sentences and 6 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 9 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 415,
+      "durationMs": 608,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -203,15 +697,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/start-from-reference.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "f816f592f3957f08ee27b2147cad43a1f8cf5341c2e45c8da91b1987da40a3c4",
-          "bytes": 634414
+          "sha256": "dff7307cd7b9611932a50e660b25a26baaa9a3872d47b2d59d7e50dccabe931b",
+          "bytes": 1756651
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "54 unique DOM IDs"
+              "178 unique DOM IDs"
             ]
           },
           {
@@ -223,14 +717,15 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "9 frozen dependencies"
+              "60 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "start-flow: pass"
+              "start-flow: pass",
+              "style-flow: pass"
             ]
           }
         ],
@@ -248,10 +743,10 @@
               "id": "start-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-9h7Dyg/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-levbXw/child.html",
                 "artifact": {
-                  "sha256": "12c99747b963d2ea69e7930f750376f266370a0dfb4d21c2a012aa1a302e4ca5",
-                  "bytes": 834676
+                  "sha256": "160604981a51efed627024a2123122aca58f46451fdabbb3c0ce75a07e7f8e0e",
+                  "bytes": 836092
                 },
                 "checks": [
                   {
@@ -318,18 +813,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 48.1,
+                    "minLabelRouteClearance": 6,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.507568113017155,
+                    "minProjectedNodeTextPx": 8,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 19,
+                    "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 0,
-                    "shortEndpointSegmentCount": 0,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -359,13 +854,140 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "hf-to-rem-1",
-                      "from": "hf",
-                      "to": "rem"
+                      "id": "route-to-look-1",
+                      "from": "route",
+                      "to": "look"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.507568113017155,
-                    "semanticTextCount": 8
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "style-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6qHyl4/child.html",
+                "artifact": {
+                  "sha256": "dea674f3a2ba9533373ebfcd96a67736d251b2260db1b53bc483ea24af6dbde8",
+                  "bytes": 836036
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 56.9,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.167630057803469,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 13,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "fit-to-make-1",
+                      "from": "fit",
+                      "to": "make"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.167630057803469,
+                    "semanticTextCount": 9
                   },
                   "issues": []
                 }
@@ -375,7 +997,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "6a5ad37f-d3e4-4624-8730-8281d93516c1"
+        "deliveryReceiptId": "957a5017-9d87-4f73-ac5c-a07423de5504"
       }
     }
   },
@@ -383,14 +1005,99 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 6 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
+        "line": 90,
+        "component": "prose",
+        "panelId": "behavior"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 6 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 6,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 9 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
+        "line": 133,
+        "component": "prose",
+        "panelId": "guide"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 9 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 9,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
+        "line": 156,
+        "component": "prose",
+        "panelId": "relations"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 3,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/candidate.archify.md",
+        "line": 189,
+        "component": "prose",
+        "panelId": "audit"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 4 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 4,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/start-from-reference.finalize.json",
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-start-from-reference/start-from-reference.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-14T06:12:18.699Z",
-  "durationMs": 1318,
+  "finishedAt": "2026-11-16T04:15:40.298Z",
+  "durationMs": 1909,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

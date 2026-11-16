@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T08:47:43.422Z",
+  "startedAt": "2026-11-16T04:09:30.436Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/candidate.archify.md",
-    "sha256": "250553186c9dec68783185e6d7514ddb8fb3b73ceda835ac3f1f1c61aae1832d",
-    "bytes": 26312
+    "sha256": "52d358644fc1754469a89f553a7090e3bfe2ede28f985836a4626d4777ce3cc9",
+    "bytes": 32631
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/propose-security-hardening.html",
-    "sha256": "b563cb2992eb1c33b6ce4b484dc1e86f64881a649f58438586b199e73bbb65f5",
-    "bytes": 2484608
+    "sha256": "37c5a4e7df1189cd6cb96c4a40385a69b9c305edb4ea500401607a2a98fd0fca",
+    "bytes": 2676853
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "250553186c9dec68783185e6d7514ddb8fb3b73ceda835ac3f1f1c61aae1832d",
-          "bytes": 26312
+          "sha256": "52d358644fc1754469a89f553a7090e3bfe2ede28f985836a4626d4777ce3cc9",
+          "bytes": 32631
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1466,
+      "durationMs": 1219,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,44 +76,52 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "0a5ce14e-5aee-43c4-ac94-c9206728f992",
+        "receiptId": "efa002d9-f7d7-4286-a29e-1301fd723ef7",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/propose-security-hardening.html",
         "explainer": {
-          "preparedSha256": "c7e2c8dc91970450db29a310fdd5dbd41f2d0308ec94aaf3e42060ef25da8352",
+          "preparedSha256": "0aa9c3193b8145dbd529a156b33c730a619d74610344f2bb063ecefba4c8d8bc",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "front",
+              "id": "fm",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
             {
               "kind": "repository",
-              "id": "policy",
-              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/agents/openai.yaml",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "1bcab19d48eb4b768c0dc435bd2e738f1471c2345cce5865bb31bdca5be0b134",
-              "bytes": 293
-            },
-            {
-              "kind": "repository",
-              "id": "intro",
+              "id": "purpose",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
             {
               "kind": "repository",
-              "id": "evidence",
+              "id": "ev-use",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "ev-trust",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "ev-rev",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -121,7 +129,7 @@
               "kind": "repository",
               "id": "storage",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -129,15 +137,15 @@
               "kind": "repository",
               "id": "develop",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
             {
               "kind": "repository",
-              "id": "options",
+              "id": "opts",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -145,15 +153,15 @@
               "kind": "repository",
               "id": "cite",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
             {
               "kind": "repository",
-              "id": "diagrams",
+              "id": "visual",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -161,7 +169,7 @@
               "kind": "repository",
               "id": "output",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -169,7 +177,7 @@
               "kind": "repository",
               "id": "auto",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -177,7 +185,7 @@
               "kind": "repository",
               "id": "deliver",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
@@ -185,15 +193,23 @@
               "kind": "repository",
               "id": "impl",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
               "bytes": 5026
             },
             {
               "kind": "repository",
+              "id": "pf-intro",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+              "bytes": 4144
+            },
+            {
+              "kind": "repository",
               "id": "pf-focus",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
               "bytes": 4144
             },
@@ -201,7 +217,7 @@
               "kind": "repository",
               "id": "pf-diag",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
               "bytes": 4144
             },
@@ -209,7 +225,7 @@
               "kind": "repository",
               "id": "pf-multi",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
               "bytes": 4144
             },
@@ -217,7 +233,7 @@
               "kind": "repository",
               "id": "pf-struct",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
               "bytes": 4144
             },
@@ -225,23 +241,39 @@
               "kind": "repository",
               "id": "pf-plan",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
               "bytes": 4144
             },
             {
               "kind": "repository",
-              "id": "as-supp",
+              "id": "as-scope",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
             {
               "kind": "repository",
-              "id": "as-id",
+              "id": "as-supp",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-owner",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-store",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
@@ -249,7 +281,7 @@
               "kind": "repository",
               "id": "as-path",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
@@ -257,7 +289,7 @@
               "kind": "repository",
               "id": "as-done",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
@@ -265,31 +297,15 @@
               "kind": "repository",
               "id": "fr-opt",
               "path": "codex-security/plugins/codex-security/references/final-report.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "f742994e8c9109cf6072c578104f75a7353bd562614ee7288a30105c53717c89",
               "bytes": 12135
             },
             {
               "kind": "repository",
-              "id": "sa-paths",
-              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
-              "bytes": 11701
-            },
-            {
-              "kind": "repository",
-              "id": "sa-place",
-              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
-              "bytes": 11701
-            },
-            {
-              "kind": "repository",
-              "id": "schema-manifest",
+              "id": "sch-hard",
               "path": "codex-security/plugins/codex-security/schemas/scan-manifest.schema.json",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "4bac4a5b898ebe72d9bf1128f3a8530979159b3c3bfe2c37ccd3c651f47ce234",
               "bytes": 7815
             },
@@ -297,7 +313,7 @@
               "kind": "repository",
               "id": "draft-attach",
               "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-scan-draft.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "b13d031d021cadbab0e73843b725ac5854e6b8ff1696d7741fb7193b69e12c8f",
               "bytes": 118549
             },
@@ -305,15 +321,23 @@
               "kind": "repository",
               "id": "draft-read",
               "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-scan-draft.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "b13d031d021cadbab0e73843b725ac5854e6b8ff1696d7741fb7193b69e12c8f",
               "bytes": 118549
             },
             {
               "kind": "repository",
+              "id": "fin-local",
+              "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
+              "bytes": 147094
+            },
+            {
+              "kind": "repository",
               "id": "fin-req",
               "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
               "bytes": 147094
             },
@@ -321,7 +345,7 @@
               "kind": "repository",
               "id": "fin-call",
               "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
               "bytes": 147094
             },
@@ -329,39 +353,23 @@
               "kind": "repository",
               "id": "fin-recover",
               "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
               "bytes": 147094
             },
             {
               "kind": "repository",
-              "id": "sc-hard",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/sealed-contract.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "9f961f835cb6ba0394374504a73adc56196df38f828f0c34f65b5c631f496d82",
-              "bytes": 36923
-            },
-            {
-              "kind": "repository",
               "id": "ctx-tool",
               "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
               "bytes": 84254
             },
             {
               "kind": "repository",
-              "id": "save-tool",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
-              "bytes": 15421
-            },
-            {
-              "kind": "repository",
               "id": "rel-diff",
               "path": "codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
               "bytes": 5405
             },
@@ -369,7 +377,7 @@
               "kind": "repository",
               "id": "rel-fix",
               "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
               "bytes": 18461
             },
@@ -377,7 +385,7 @@
               "kind": "repository",
               "id": "rel-writeup",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
               "bytes": 5571
             },
@@ -385,25 +393,25 @@
               "kind": "diagram-spec",
               "id": "hardening-flow",
               "inline": true,
-              "sha256": "a6113b0e28f1101e9637d4a21d47bb9ae0154378a0d7a41dffbed0fda8729f0a",
-              "bytes": 1682
+              "sha256": "69e6db128631896a3788434b30afb0145c889328888982e3e453ea84e3f1a02b",
+              "bytes": 2590
             },
             {
               "kind": "diagram-spec",
               "id": "position-flow",
               "inline": true,
-              "sha256": "90dae2dc418622e67854d677161e8b5324ad4f297b836db5d5a6d4a293bb995a",
-              "bytes": 955
+              "sha256": "0bbdeb2bceb6f327a155d7e170a17bcbc0ed64f391a60b941e677a984e8af317",
+              "bytes": 760
             }
           ]
         },
         "specification": {
-          "sha256": "250553186c9dec68783185e6d7514ddb8fb3b73ceda835ac3f1f1c61aae1832d",
-          "bytes": 26312
+          "sha256": "52d358644fc1754469a89f553a7090e3bfe2ede28f985836a4626d4777ce3cc9",
+          "bytes": 32631
         },
         "artifact": {
-          "sha256": "b563cb2992eb1c33b6ce4b484dc1e86f64881a649f58438586b199e73bbb65f5",
-          "bytes": 2484608
+          "sha256": "37c5a4e7df1189cd6cb96c4a40385a69b9c305edb4ea500401607a2a98fd0fca",
+          "bytes": 2676853
         },
         "validation": {
           "checksPassed": 4,
@@ -429,7 +437,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 786,
+      "durationMs": 643,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -442,15 +450,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/propose-security-hardening.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "b563cb2992eb1c33b6ce4b484dc1e86f64881a649f58438586b199e73bbb65f5",
-          "bytes": 2484608
+          "sha256": "37c5a4e7df1189cd6cb96c4a40385a69b9c305edb4ea500401607a2a98fd0fca",
+          "bytes": 2676853
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "146 unique DOM IDs"
+              "161 unique DOM IDs"
             ]
           },
           {
@@ -462,7 +470,7 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "39 frozen dependencies"
+              "40 frozen dependencies"
             ]
           },
           {
@@ -488,10 +496,10 @@
               "id": "hardening-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-S2MwSH/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-vKmeMI/child.html",
                 "artifact": {
-                  "sha256": "a8b6828df2cbd23bd0f4f3b5aafaad0cd7ccf66823d6ea3cc4841e44fbc9c7cb",
-                  "bytes": 840197
+                  "sha256": "00255747d48ad8bc13b57ae099dafd01d86d7144ef445035fa9f4079fd6781ee",
+                  "bytes": 848502
                 },
                 "checks": [
                   {
@@ -558,18 +566,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 59,
+                    "minLabelRouteClearance": 33,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 6.726943942133816,
+                    "minProjectedNodeTextPx": 7.373637264618434,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 2,
-                    "shortEndpointSegmentCount": 2,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -599,13 +607,13 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "impl-to-build-1",
-                      "from": "impl",
-                      "to": "build"
+                      "id": "found-to-compare-1",
+                      "from": "found",
+                      "to": "compare"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 6.726943942133816,
-                    "semanticTextCount": 11
+                    "minimumProjectedTextPx": 7.373637264618434,
+                    "semanticTextCount": 18
                   },
                   "issues": []
                 }
@@ -615,10 +623,10 @@
               "id": "position-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-xgcDI0/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-hlhbOs/child.html",
                 "artifact": {
-                  "sha256": "0b6e84e2863c2ef12130ed180f3be2f2265d1d8c19d0d29584a42fa1154322e2",
-                  "bytes": 833131
+                  "sha256": "8c490f238376ab19fabe194e6f179fa94a4c768ba668ad81eaa164f7373ed810",
+                  "bytes": 832571
                 },
                 "checks": [
                   {
@@ -685,15 +693,15 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 106.6,
+                    "minLabelRouteClearance": 214.1,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.507568113017155,
+                    "minProjectedNodeTextPx": 6.424870466321243,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 38,
+                    "minSegmentPx": 70.8,
                     "minInteriorSegmentPx": null,
                     "shortSegmentCount": 0,
                     "shortEndpointSegmentCount": 0,
@@ -726,13 +734,13 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "current-to-fix-1",
-                      "from": "current",
-                      "to": "fix"
+                      "id": "caller-to-me-1",
+                      "from": "caller",
+                      "to": "me"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.507568113017155,
-                    "semanticTextCount": 7
+                    "minimumProjectedTextPx": 6.424870466321243,
+                    "semanticTextCount": 5
                   },
                   "issues": []
                 }
@@ -742,7 +750,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "0a5ce14e-5aee-43c4-ac94-c9206728f992"
+        "deliveryReceiptId": "efa002d9-f7d7-4286-a29e-1301fd723ef7"
       }
     }
   },
@@ -756,8 +764,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/propose-security-hardening/propose-security-hardening.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T08:47:45.865Z",
-  "durationMs": 2443,
+  "finishedAt": "2026-11-16T04:09:32.477Z",
+  "durationMs": 2040,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

@@ -1,25 +1,25 @@
 {
   "schemaVersion": 1,
-  "receiptId": "23721fb4-0e63-4147-b755-cf2ebba411b1",
+  "receiptId": "9d956e98-d2fa-4e2a-af68-c53335a7599d",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/slideshow.html",
   "specification": {
-    "sha256": "9c390224e573615e2486c515d123ca7537348c08930b19fd88fbf000668eed9c",
-    "bytes": 21470
+    "sha256": "bd80c8362103db23ac9ff3e383c7f726fc72cc22f261ba78b277e4d425d4638d",
+    "bytes": 36555
   },
   "artifact": {
-    "sha256": "7ed688b508059fcc1118a0ccd053744af50b9ee9ce82514bf8ea9849e2052c85",
-    "bytes": 1652827
+    "sha256": "bc3175690cd9a16bfdd8c361438e5bc3ee5ea78edb4c367c37f93318a1d9dd34",
+    "bytes": 2314405
   },
   "explainer": {
-    "preparedSha256": "7425655ec4c1649fddd1274f43b9e7cad55990e1ff5f431b7b9777f0d7ca4db9",
+    "preparedSha256": "6dfacc55b42534888b9e614ad7091147b9db2f6a4557542ebe95d0caecac75ea",
     "dependencies": [
       {
         "kind": "repository",
-        "id": "front",
+        "id": "s-front",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -27,7 +27,7 @@
       },
       {
         "kind": "repository",
-        "id": "plugin",
+        "id": "s-plugin",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -35,7 +35,7 @@
       },
       {
         "kind": "repository",
-        "id": "beacon",
+        "id": "s-beacon",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -43,7 +43,7 @@
       },
       {
         "kind": "repository",
-        "id": "intro",
+        "id": "s-intro",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -51,7 +51,7 @@
       },
       {
         "kind": "repository",
-        "id": "scene",
+        "id": "s-scene",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -59,7 +59,7 @@
       },
       {
         "kind": "repository",
-        "id": "island-rule",
+        "id": "s-island-rule",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -67,7 +67,7 @@
       },
       {
         "kind": "repository",
-        "id": "island-ex",
+        "id": "s-island-ex",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -75,7 +75,7 @@
       },
       {
         "kind": "repository",
-        "id": "fields",
+        "id": "s-fields",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -83,7 +83,7 @@
       },
       {
         "kind": "repository",
-        "id": "fragments",
+        "id": "s-fragments",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -91,7 +91,7 @@
       },
       {
         "kind": "repository",
-        "id": "branch",
+        "id": "s-branch",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -99,7 +99,7 @@
       },
       {
         "kind": "repository",
-        "id": "text40",
+        "id": "s-legible",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -107,7 +107,7 @@
       },
       {
         "kind": "repository",
-        "id": "port",
+        "id": "s-port",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -115,7 +115,7 @@
       },
       {
         "kind": "repository",
-        "id": "never",
+        "id": "s-never",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -123,7 +123,7 @@
       },
       {
         "kind": "repository",
-        "id": "check",
+        "id": "s-check",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -131,7 +131,7 @@
       },
       {
         "kind": "repository",
-        "id": "serve",
+        "id": "s-serve",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -139,7 +139,7 @@
       },
       {
         "kind": "repository",
-        "id": "rootindex",
+        "id": "s-root",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -147,7 +147,7 @@
       },
       {
         "kind": "repository",
-        "id": "share",
+        "id": "s-share",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -155,7 +155,7 @@
       },
       {
         "kind": "repository",
-        "id": "bare",
+        "id": "s-bare",
         "path": "hyperframes/slideshow/SKILL.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -195,6 +195,14 @@
       },
       {
         "kind": "repository",
+        "id": "h-bridge-code",
+        "path": "hyperframes/slideshow/references/standalone-harness.md",
+        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+        "bytes": 44277
+      },
+      {
+        "kind": "repository",
         "id": "h-viz",
         "path": "hyperframes/slideshow/references/standalone-harness.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
@@ -227,6 +235,14 @@
       },
       {
         "kind": "repository",
+        "id": "h-scenes",
+        "path": "hyperframes/slideshow/references/standalone-harness.md",
+        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+        "bytes": 44277
+      },
+      {
+        "kind": "repository",
         "id": "h-entr",
         "path": "hyperframes/slideshow/references/standalone-harness.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
@@ -243,7 +259,15 @@
       },
       {
         "kind": "repository",
-        "id": "h-audio",
+        "id": "h-audio-media",
+        "path": "hyperframes/slideshow/references/standalone-harness.md",
+        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+        "bytes": 44277
+      },
+      {
+        "kind": "repository",
+        "id": "h-sfx",
         "path": "hyperframes/slideshow/references/standalone-harness.md",
         "revision": "f85af643f25876081562e9820cd87fb45a478480",
         "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
@@ -269,8 +293,15 @@
         "kind": "diagram-spec",
         "id": "deck-flow",
         "inline": true,
-        "sha256": "8af03c509c7e7f548f6b92b6f6a849065186c90ff5ef634242bf92395e0e918c",
-        "bytes": 1353
+        "sha256": "6df023805b3d1321ec624f0eab0dc19f1c5447aca8dc04acd760406fdc090cc6",
+        "bytes": 2038
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "harness-map",
+        "inline": true,
+        "sha256": "de6abe5b15eaa6c57d2573ccf562ea8ea2c33adbb417b764581aea2cbdf54040",
+        "bytes": 1171
       }
     ]
   }

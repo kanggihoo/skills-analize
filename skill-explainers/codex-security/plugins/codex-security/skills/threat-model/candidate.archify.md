@@ -1,223 +1,265 @@
-# threat-model은 언제 켜지고 위협 모델을 어떻게 고르고 저장하나? {#threat-model-page}
+# threat-model은 무엇을 위한 스킬이고, 켜지면 위협 모델을 어떻게 고르고 만들고 저장하나? {#threat-model-page}
 
-`threat-model`은 저장소의 실제 구조, 공격자 능력, 신뢰 경계로 위협 모델을 만들거나 재사용하는 단계 스킬이다.[](source:purpose) scan이 이미 위협 모델 단계에 있거나, 사용자가 `$threat-model`을 직접 부르거나, 저장소 위협 모델의 작성·갱신·저장을 명시적으로 요청할 때 쓴다. 전체 PR, commit, branch, patch, 저장소 scan을 시작하는 1차 트리거로는 쓰지 않는다.[](source:fm)
+`threat-model`은 저장소가 실제로 어떻게 동작하고 공격자가 어디로 들어올 수 있는지를 정리한 위협 모델 문서를 만들거나, 이미 있는 모델을 골라 쓰게 하는 스킬이다.[](source:purpose)
 
-- 모델 선택에는 순서가 있다. 받은 모델과 사용자가 지정한 권위 있는 지침은 갱신 요청이 없으면 그대로 둔다. 맥락이나 좁은 범위가 붙은 scan은 공유 캐시를 읽지도 바꾸지도 않는다.[](source:select)
-- 공유 모델은 끝의 `Repository`와 `Version` 줄이 현재 대상과 같고 사용자가 새로 만들라고 하지 않았을 때만 재사용한다.[](source:select)[](source:cache)
-- 읽기 전용·오프라인으로 만든다. 모델 안의 시나리오는 가설이고, 코드로 확인한 사실과 가정·모르는 것을 나눠 적는다.[](source:ref-ro)[](source:ref-cite)
-- Standard scan과 Deep worker는 이 스킬을 부르지 않는다. 자기 workflow 안에서 같은 `threat-model.md` 지침을 직접 읽는다.[](source:purpose)[](source:core11)
+- 누가 언제 쓰나: scan이 이미 위협 모델 단계에 있을 때, 사용자가 `$threat-model`을 직접 부를 때, 사용자가 저장소 위협 모델의 작성·갱신·저장을 명시적으로 요청할 때 쓴다. 전체 PR, commit, branch, patch, 저장소 scan의 1차 트리거는 아니다.[](source:fm)
+- 에이전트가 내놓는 것: 실행 중인 scan에서는 모델 본문을 `{ "format": "markdown", "content": "<exact model text>" }`로 호출자에게 돌려주고 `complete: false` checkpoint를 저장한다. 단독 요청에서는 `threatmodel.md`를 저장하거나 유효한 캐시 문서의 경로를 돌려준다.[](source:retain)[](source:standalone)
+- 하지 않는 것: 소스 검토는 읽기 전용·오프라인이고, 모델 안의 시나리오는 확인된 finding이 아니라 가설이다.[](source:tmr-ro) Standard scan과 Deep worker는 이 스킬을 부르지 않고 자기 workflow 안에서 모델을 만든다.[](source:purpose)
+- 모델을 고르는 순서: 받은 모델 보존, 조건을 채운 공유 캐시 재사용, 새로 생성이다. 캐시는 문서 끝의 `Repository`와 `Version` 줄이 현재 대상과 같을 때만 쓴다.[](source:cachecond)
 
-@answer scope="로컬 원본 분석 · 스킬·도구 실행 없음 · 커밋 cd5035b 기준"
+@answer scope="로컬 원본 분석 · 스킬·도구·MCP 실행 없음 · 커밋 cd5035b 기준"
 @meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=cd5035b88386f2e309c89f5af2814e7f3d7d8343
-@source fm title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · frontmatter" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=1:4
-@source purpose title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 목적과 Standard·Deep 제외" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=8:8
-@source inputs title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 읽을 문서와 필수 입력" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=10:10
-@source select title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 모델 선택 4규칙" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=14:17
-@source policy title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 정책 해석" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=19:19
-@source gen title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 생성·갱신" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=21:21
-@source retain title="codex-security/plugins/codex-security/skills/threat-model/SKILL.md · 2986B · 결과 보관" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=25:27
-@source yaml title="codex-security/plugins/codex-security/skills/threat-model/agents/openai.yaml · 171B · 표시 이름과 기본 prompt" path=codex-security/plugins/codex-security/skills/threat-model/agents/openai.yaml
-@source ref-ro title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 읽기 전용·오프라인, 허가 아님" path=codex-security/plugins/codex-security/references/threat-model.md lines=3:3
-@source ref-arch title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 구조와 경계" path=codex-security/plugins/codex-security/references/threat-model.md lines=7:12
-@source ref-cite title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 인용·검증·secret" path=codex-security/plugins/codex-security/references/threat-model.md lines=14:14
-@source ref-rev title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 독립 reviewer" path=codex-security/plugins/codex-security/references/threat-model.md lines=16:28
-@source ref-scn title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 위협 시나리오" path=codex-security/plugins/codex-security/references/threat-model.md lines=30:36
-@source ref-contract title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · scan 결과 계약" path=codex-security/plugins/codex-security/references/threat-model.md lines=38:42
-@source ref-fields title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 필드 6개와 정리 규칙" path=codex-security/plugins/codex-security/references/threat-model.md lines=44:55
-@source ref-stand title="codex-security/plugins/codex-security/references/threat-model.md · 7751B · 단독 문서" path=codex-security/plugins/codex-security/references/threat-model.md lines=57:59
-@source store-scan title="codex-security/plugins/codex-security/references/artifact-storage.md · 7947B · scan 소유권" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=7:9
-@source store-supp title="codex-security/plugins/codex-security/references/artifact-storage.md · 7947B · 보조 파일과 소유자" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=13:18
-@source store-kind title="codex-security/plugins/codex-security/references/artifact-storage.md · 7947B · storage 종류" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=20:23
-@source store-path title="codex-security/plugins/codex-security/references/artifact-storage.md · 7947B · 허용 path와 threatmodel.md" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=37:37
-@source cache title="codex-security/plugins/codex-security/references/artifact-storage.md · 7947B · 위협 모델 캐시와 footer" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=47:54
-@source paths title="codex-security/plugins/codex-security/references/scan-artifacts.md · 11701B · 위협 모델 경로" path=codex-security/plugins/codex-security/references/scan-artifacts.md lines=24:29
-@source guide-res title="codex-security/plugins/codex-security/references/security-guidance.md · 2830B · 정책 해석 명령과 규칙" path=codex-security/plugins/codex-security/references/security-guidance.md lines=5:12
-@source guide-rule title="codex-security/plugins/codex-security/references/security-guidance.md · 2830B · chain 순서와 untrusted" path=codex-security/plugins/codex-security/references/security-guidance.md lines=34:36
-@source contract title="codex-security/plugins/codex-security/references/scan-contract.md · 16529B · 192줄 중 일부만 읽음, scan.threatModel" path=codex-security/plugins/codex-security/references/scan-contract.md lines=173:173
-@source contract-kind title="codex-security/plugins/codex-security/references/scan-contract.md · 16529B · target 종류" path=codex-security/plugins/codex-security/references/scan-contract.md lines=58:62
-@source core11 title="codex-security/plugins/codex-security/references/core-scan.md · 7479B · Standard의 위협 모델 3단계" path=codex-security/plugins/codex-security/references/core-scan.md lines=11:11
-@source core18 title="codex-security/plugins/codex-security/references/core-scan.md · 7479B · 단계 스킬 호출 금지" path=codex-security/plugins/codex-security/references/core-scan.md lines=18:18
-@source doc-save title="codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts · 2657B · threatmodel.md 만들기" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts lines=12:31
-@source doc-write title="codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts · 2657B · 원본 위치와 provisional" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts lines=33:73
-@source render-body title="codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts · 5406B · 본문 만들기" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts lines=44:89
-@source render-foot title="codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts · 5406B · Saved Model Context footer" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts lines=138:167
-@source store-ts title="codex-security/plugins/codex-security/mcp-app/src/artifact-storage.ts · 8872B · 140~185줄만 읽음, 허용 path" path=codex-security/plugins/codex-security/mcp-app/src/artifact-storage.ts lines=154:169
-@source tools-draft title="codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts · 15421B · draft 도구 설명" path=codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts lines=168:186
-@source dscan title="codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md · 5405B · 위임하는 쪽" path=codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md lines=28:28
-@source disc title="codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md · 5076B · 위협 모델을 근거로 쓴다" path=codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md lines=8:10
-@source atk title="codex-security/plugins/codex-security/skills/attack-path-analysis/SKILL.md · 5355B · 위협 모델을 쓰는 곳" path=codex-security/plugins/codex-security/skills/attack-path-analysis/SKILL.md lines=12:14
-@source vis title="codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md · 19102B · 83줄 중 1~16줄과 72줄만 읽음" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=10:10
-@source vis72 title="codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md · 19102B · --assessment 명령" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=70:74
-@source pol8 title="codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md · 5982B · 93줄 중 1~40줄만 읽음, SECURITY.md는 정책 맥락" path=codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md lines=8:8
-@source pol36 title="codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md · 5982B · 경계 확인용으로 읽는 자료" path=codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md lines=36:36
-@source scan10 title="codex-security/plugins/codex-security/skills/security-scan/SKILL.md · 2972B · 1~21줄만 읽음, core audit 사용" path=codex-security/plugins/codex-security/skills/security-scan/SKILL.md lines=10:10
-@source readme title="codex-security/plugins/codex-security/skills/README.md · 3752B · threat-model 안내 줄" path=codex-security/plugins/codex-security/skills/README.md lines=19:19
-@source readme-scan title="codex-security/plugins/codex-security/skills/README.md · 3752B · scan 선택 안내" path=codex-security/plugins/codex-security/skills/README.md lines=5:9
-@source mcpjson title="codex-security/plugins/codex-security/.mcp.json · 2078B · MCP 서버 codex-security" path=codex-security/plugins/codex-security/.mcp.json lines=1:6
-@source pluginjson title="codex-security/plugins/codex-security/.codex-plugin/plugin.json · 1682B · skills 폴더 선언" path=codex-security/plugins/codex-security/.codex-plugin/plugin.json lines=18:20
+@source fm title="frontmatter(name, description)" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=1:4
+@source purpose title="목적과 Standard·Deep 제외" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=6:8
+@source inputs title="읽을 문서와 명시 입력" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=10:10
+@source select title="모델 선택 규칙 4개" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=12:17
+@source cachecond title="캐시 재사용 조건" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=16:16
+@source policy title="정책 해석과 분석 데이터 원칙" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=19:19
+@source gen title="생성·수정 지시" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=21:21
+@source retain title="실행 중인 scan의 결과 보관" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=23:27
+@source standalone title="단독 요청의 결과 보관" path=codex-security/plugins/codex-security/skills/threat-model/SKILL.md lines=27:27
+@source yaml title="표시 이름과 기본 prompt" path=codex-security/plugins/codex-security/skills/threat-model/agents/openai.yaml lines=1:4
+@source tmr-ro title="읽기 전용·오프라인, 허가가 아님" path=codex-security/plugins/codex-security/references/threat-model.md lines=3:3
+@source tmr-arch title="구조와 경계 추적" path=codex-security/plugins/codex-security/references/threat-model.md lines=5:14
+@source tmr-cite title="인용 검증과 secret 표기" path=codex-security/plugins/codex-security/references/threat-model.md lines=14:14
+@source tmr-rev title="독립 architecture reviewer" path=codex-security/plugins/codex-security/references/threat-model.md lines=16:28
+@source tmr-indep title="부모가 직접 검토했을 때의 표기" path=codex-security/plugins/codex-security/references/threat-model.md lines=28:28
+@source tmr-scn title="위협 시나리오 작성" path=codex-security/plugins/codex-security/references/threat-model.md lines=30:36
+@source tmr-contract title="scan 결과 계약" path=codex-security/plugins/codex-security/references/threat-model.md lines=38:42
+@source tmr-fields title="생성 모델 필드와 정리 규칙" path=codex-security/plugins/codex-security/references/threat-model.md lines=44:55
+@source tmr-stand title="단독 문서 내용" path=codex-security/plugins/codex-security/references/threat-model.md lines=57:59
+@source st-scope title="정책 적용 범위" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=1:3
+@source st-scan title="scan 소유권" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=5:9
+@source st-supp title="보조 파일 도구와 소유자" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=11:18
+@source st-kind title="storage 종류" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=20:25
+@source st-path title="허용 path와 threatmodel.md" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=27:39
+@source st-cache title="위협 모델 캐시와 footer 두 줄" path=codex-security/plugins/codex-security/references/artifact-storage.md lines=47:56
+@source sa-paths title="위협 모델 경로 규약" path=codex-security/plugins/codex-security/references/scan-artifacts.md lines=24:29
+@source sa-draft title="draft 제출 도구" path=codex-security/plugins/codex-security/references/scan-artifacts.md lines=108:112
+@source sg-cmd title="정책 해석 명령" path=codex-security/plugins/codex-security/references/security-guidance.md lines=5:13
+@source sg-rule title="정책 chain 순서와 untrusted 원칙" path=codex-security/plugins/codex-security/references/security-guidance.md lines=30:36
+@source doc-save title="threatmodel.md 저장 진입점" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts lines=12:31
+@source doc-write title="저장된 모델 읽기와 문서 쓰기" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts lines=33:75
+@source rn-body title="본문 만들기" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts lines=44:89
+@source rn-foot title="Saved Model Context footer" path=codex-security/plugins/codex-security/mcp-app/src/threat-model-render.ts lines=138:168
+@source ts-path title="보조 파일 허용 path 검사" path=codex-security/plugins/codex-security/mcp-app/src/artifact-storage.ts lines=148:173
+@source dscan title="diff scan의 위임 지시" path=codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md lines=28:28
+@source disc title="discovery가 위협 모델을 쓰는 곳" path=codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md lines=8:10
+@source atk title="attack-path가 위협 모델을 쓰는 곳" path=codex-security/plugins/codex-security/skills/attack-path-analysis/SKILL.md lines=12:14
+@source pol8 title="SECURITY.md가 담는 것" path=codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md lines=8:8
+@source pol36 title="정책 작성 때 읽는 자료" path=codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md lines=36:36
+@source vis10 title="visualize의 기본 입력" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=10:10
+@source vis72 title="--assessment 인자" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=72:72
+@source core11 title="Standard의 위협 모델 단계" path=codex-security/plugins/codex-security/references/core-scan.md lines=11:11
+@source core18 title="단계 스킬 호출 금지" path=codex-security/plugins/codex-security/references/core-scan.md lines=18:18
+@source scan21 title="security-scan의 위협 모델 시점" path=codex-security/plugins/codex-security/skills/security-scan/SKILL.md lines=21:21
+@source contract173 title="scan.threatModel 필드" path=codex-security/plugins/codex-security/references/scan-contract.md lines=173:173
+@source readme19 title="threat-model 안내 줄" path=codex-security/plugins/codex-security/skills/README.md lines=19:19
 
-## 언제 켜지고 언제 쓰면 안 되나? {#activation}
+## 켜지면 에이전트는 무엇을 읽고 어떻게 판단하나? {#behavior span=12}
 
-description은 모델이 호출 여부를 판단할 때 참고하는 설명이다. 특정 문구와 정확히 일치해야 켜진다는 뜻은 아니다.
+이 스킬은 두 부분으로 움직인다. 먼저 어떤 모델을 쓸지 고르고(그림 1), 새로 만들어야 하면 모델을 만들어 보관한다(그림 2).
 
-`disable-model-invocation` 같은 호출 제한 필드는 원문에 명시 없음이다. `agents/openai.yaml`에도 `policy`가 없고 표시 이름과 기본 prompt만 있다.[](source:fm)[](source:yaml)
+원문은 단계 번호를 붙이지 않았다. 그림의 순서는 SKILL.md의 절 순서와 `threat-model.md`의 절 순서를 따라 분석자가 이은 것이다(판정).[](source:select)[](source:gen)[](source:retain)
+
+@workflow id=model-selection title="그림 1. 어떤 모델을 쓸지 고른다"
+| trigger | 호출 | external | source:fm |
+| inputs | 규칙 문서 읽기 | backend | source:inputs |
+| supplied | 받은 모델·지침이 있나? | backend | source:select |
+| keep | 받은 모델·지침 보존 | backend | source:select |
+| cache | 공유 캐시를 읽나? | backend | source:cachecond |
+| reuse | 캐시 문서 반환 | backend | source:standalone |
+| policy | 정책 해석 | security | source:policy |
+| trigger > inputs | |
+| inputs > supplied | 필수 입력 있음 |
+| supplied > keep | 수정 요청 없음 |
+| supplied > policy | 수정 요청 |
+| supplied > cache | 없음 |
+| cache > reuse | 조건 충족 |
+| cache > policy | 아니오 |
+
+그림은 핵심 경로만 그린다. 보존한 모델과 캐시 문서가 그림 2의 `실행 중인 scan인가?`를 거치는지는 원문에 명시 없음이라 그리지 않았고, 아래 `받은 모델·지침 보존`과 `캐시 문서 반환` 설명에서 풀었다. 저장소 `AGENTS.md`·`SECURITY.md`의 대체 규칙은 판정 순서가 원문에 없어 노드로 만들지 않았다.
+
+@steps id=model-selection-steps
+| trigger | 호출 | 이 노드는 스킬이 켜지는 입구다. 켜지는 경우는 세 가지다. scan이 이미 위협 모델 단계에 있을 때, 사용자가 `$threat-model`을 직접 부를 때, 사용자가 저장소 위협 모델의 작성·갱신·저장을 명시적으로 요청할 때다.[](source:fm) 전체 PR, commit, branch, patch, 저장소 scan을 시작하는 1차 트리거로는 쓰지 않는다.[](source:fm) description은 모델이 판단할 때 참고하는 설명이라 특정 단어가 있어야 켜진다는 뜻이 아니다. 에이전트가 이 시점에 쥘 수 있는 입력은 대상 저장소, 받은 모델이나 지침, 비어 있지 않은 `userContext`, 권위 있는 knowledge base, 좁혀진 scope, 명시된 경로다. 이 목록은 아래 선택 규칙이 언급하는 입력을 모은 것이다.[](source:select)[](source:inputs) 갈림 없이 다음 노드로 넘어간다. | model-selection | trigger |
+| inputs | 규칙 문서 읽기 | 에이전트는 `artifact-storage.md`(저장 방식과 캐시 소유 규칙)와 `scan-artifacts.md`(대상 정체성, source version, 출력 경로)를 읽는다.[](source:inputs) 사용자가 명시한 경로는 그대로 따른다. 명시적으로 필요하다고 한 입력이 없으면 생성한 모델로 대신하지 않고 그 입력을 사용자에게 요청한다.[](source:inputs) 그래서 이 노드의 갈림은 하나다. 필수 입력이 빠졌으면 여기서 묻고, 있으면 다음 노드로 간다. `scan-artifacts.md`는 위협 모델 경로를 세 가지로 정한다. 공유 캐시는 `artifact-storage.md` 규칙을 따르고, scan 안의 정식 모델은 `scan-manifest.json`의 `scan.threatModel`이며, 사람이 읽는 파일은 host가 만드는 `<scan_dir>/threatmodel.md`다.[](source:sa-paths) 다음 노드로 넘기는 것은 이 경로 규약과 scan 소유권 규칙이다. | model-selection | inputs |
+| supplied | 받은 모델·지침이 있나? | 에이전트는 받은 모델이나 사용자가 권위 있다고 지정한 보안 지침이 있는지 본다. 있으면 수정을 요청받지 않은 한 그대로 둔다.[](source:select) scan에 받은 모델, 비어 있지 않은 `userContext`, 권위 있는 knowledge base, 더 좁은 scope 중 하나라도 있으면 받은 모델을 보존하거나 이번 scan 전용 모델을 새로 만든다. 이때 공유 캐시는 읽지도 바꾸지도 않는다.[](source:select) 둘 중 무엇을 고르는지는 원문에 명시 없음. 갈림은 세 가지다. 받은 것이 있고 수정 요청이 없으면 `받은 모델·지침 보존`으로 간다. 수정을 요청받았으면 `정책 해석`을 거쳐 새로 만든다. 받은 것이 없으면 `공유 캐시를 읽나?`로 간다. 두 번째 갈림은 "수정 요청이 없을 때만 보존한다"는 문장과 "생성 또는 수정은 `threat-model.md`를 따른다"는 문장을 이은 판정이다.[](source:select)[](source:gen) | model-selection | supplied |
+| keep | 받은 모델·지침 보존 | 에이전트는 받은 모델을 고치지 않고 쓴다. 받은 것이 schema에 맞는 구조 객체면 그대로 보존하고, 받은 것이 텍스트면 `{ "format": "markdown", "content": "<original supplied text>", "origin": "provided" }`로 감싸 보존한다. 선언된 scope를 알면 같이 기록한다. 받았거나 회수한 worker 모델이 부모의 scope를 자동으로 덮는다고 보지 않는다.[](source:tmr-contract) 저장소별 `AGENTS.md`나 해석된 `SECURITY.md`가 필요한 경계를 설명하고 새 모델이나 맥락 특화 모델이 필요 없으면 이 지침이 모델을 대신할 수 있다.[](source:select) 이 대체가 캐시 재사용보다 먼저인지는 원문에 명시 없음. 정책은 분석 데이터일 뿐 workflow를 바꿀 권한이 없다.[](source:policy) 이 노드는 소스를 새로 검토하지 않는다. 다음으로 넘기는 것은 보존한 모델 텍스트이고, 이 텍스트가 scan 반환 규칙을 거치는지는 원문에 명시 없다. 선택한 텍스트를 이후 단계에 보존하라는 문장을 이 경로에도 적용하는 것은 판정이다.[](source:retain) | model-selection | keep |
+| cache | 공유 캐시를 읽나? | 에이전트는 공유 캐시를 읽을지 정한다. 규칙은 둘이다. 받은 모델, 비어 있지 않은 `userContext`, 권위 있는 knowledge base, 좁은 scope 중 하나가 붙은 scan이면 읽지 않는다.[](source:select) 그 밖에는 문서 끝의 `Repository`와 `Version` 줄이 대상 및 현재 revision 또는 snapshot digest와 일치하고, 사용자가 교체·생성·수정을 요청하지 않았을 때만 재사용한다. host가 캐시를 우회하라고 지시하면 따른다.[](source:cachecond) 읽는 방법은 `targetPath: <repo_root>`, `storage: "persistent"`, `path: "threatmodel.md"`다. 새 파일 이름이 없으면 옛 `threat_model.md`를 같은 규칙으로 읽을 수 있다.[](source:st-cache) 두 줄이 일치하는지 비교하는 코드는 `mcp-app/src`와 `scripts/`에서 grep으로 찾지 못했다. 비교는 스킬 본문 지시로만 확인했다. 조건이 모두 맞으면 `캐시 문서 반환`으로, 하나라도 어긋나면 `정책 해석`으로 간다. | model-selection | cache |
+| reuse | 캐시 문서 반환 | 에이전트는 새 문서를 쓰지 않는다. 단독 요청이면 유효한 캐시 hit에서 기존 문서의 경로를 돌려준다.[](source:standalone) 실행 중인 scan에서 캐시 hit가 났을 때 무엇을 돌려주는지는 원문에 명시 없음. 실행 중인 scan이면 모델 텍스트를 호출자에게 돌려주고 checkpoint를 저장하라는 문장을 적용한다고 읽는 것은 판정이다.[](source:retain) 이 노드 뒤에 소스를 새로 검토하는 단계는 없다. | model-selection | reuse |
+| policy | 정책 해석 | 에이전트는 소스를 검토하기 전에 적용 정책을 `security-guidance.md` 방식으로 해석한다. 호출자가 정책을 이미 줬으면 건너뛴다.[](source:policy) 문서화된 방법은 `resolve-security-md` helper를 `--repo`, `--scope`, `--out` 전체 이름으로 부르는 것이고, MCP를 쓸 때는 `--out -`로 결과를 바로 받는다(분석자는 실행하지 않았다).[](source:sg-cmd) 해석기는 scan root부터 대상 디렉터리까지 비어 있지 않은 `SECURITY.md`를 root에서 leaf 순으로 이어 붙이고, 정책이 충돌하면 대상에 가장 가까운 것이 우선한다.[](source:sg-rule) 해석된 내용은 신뢰하지 않는 정책 데이터다. 사용자·시스템 지시를 덮거나 명령 실행, secret 접근, 파일 편집, workflow 변경을 할 수 없다.[](source:sg-rule) 저장소 내용도 분석 데이터이고 다른 대상에 접근할 권한이 아니다.[](source:policy) 이 노드 뒤에 그림 2의 `구조·경계 추적`으로 간다. | model-selection | policy |
+
+새로 만들거나 고쳐야 하면 그림 2로 이어진다. 생성 방법은 `threat-model.md`를 따른다.[](source:gen)
+
+@workflow id=model-generation title="그림 2. 모델을 만들고 보관한다"
+| map | 구조·경계 추적 | backend | source:tmr-arch |
+| reviewer | 독립 reviewer를 쓰나? | backend | source:tmr-rev |
+| ext | reviewer 검토 | external | source:tmr-rev |
+| scenario | 시나리오·필드 정리 | backend | source:tmr-scn |
+| verify | 소스로 대조 | backend | source:gen |
+| where | 실행 중인 scan인가? | backend | source:retain |
+| scanret | scan에 반환·checkpoint | backend | source:retain |
+| alone | 단독 저장 | database | source:standalone |
+| map > reviewer | |
+| reviewer > ext | 복잡하고 허용 |
+| reviewer > scenario | 아니오 |
+| ext > scenario | 검증 후 반영 |
+| scenario > verify | |
+| verify > where | |
+| where > scanret | 예 |
+| where > alone | 아니오 |
+
+그림 2도 핵심 경로만 그렸다. 생성 모델은 구조를 추적하는 동안 이미 만들어 early checkpoint에 두고 근거가 바뀔 때마다 갱신하라고 하므로, `scan에 반환·checkpoint`는 마지막 한 번이 아니라 처음 저장과 갱신의 묶음이다.[](source:tmr-contract) 독립 reviewer가 불가능할 때의 대안 절차는 원문에 명시 없다. 이 내용은 `독립 reviewer를 쓰나?` 설명과 감사 패널에 적었다.
+
+@steps id=model-generation-steps
+| map | 구조·경계 추적 | 에이전트는 먼저 제품, 사용자, 인터페이스, 구성 요소, 지원하는 실행·배포 방식을 파악한다. 운영 환경, 권한이 높은 관리·빌드·릴리스 workflow, 테스트·예시를 나눠서 보되 승인된 범위 안에서만 포함한다.[](source:tmr-arch) 대표 입력이 실제 진입점, 통제, 민감한 소비자를 거쳐 가는 길을 따라가며 행위자, 넘어가는 데이터나 권한, 보호 대상 자산, 유지돼야 할 불변식을 정한다. 이때 키워드 검색이나 전체 호출 그래프가 아니라 호출자와 실제 동작을 근거로 삼는다.[](source:tmr-arch) 라이브러리 API는 기본으로 막아 주는 것과 호출자가 켜야 하는 것을 나눈다. worker, extension, native binding, tool API는 "쓸 수 있는 동작"과 "강제되는 호출자 권한"을 나누고, 같은 권한의 행위자 사이에 격리를 지어내지 않는다.[](source:tmr-arch) 설정이나 배포가 경계를 바꾸면 소비자에서 시작해 helper 반환값, 경로 계산, 설정 우선순위, mount까지 실질적으로 다른 경로를 추적하고, 디렉터리 이름이나 mount 이름만으로 격리를 인정하지 않는다. 승인된 변경이나 게시는 대상, 계정, revision, 대상 독자, payload가 검토부터 적용까지 어떻게 묶여 있는지 추적하며, 그 workflow가 있다는 사실로 권한을 추정하지 않는다.[](source:tmr-arch) 이 모든 작업은 읽기 전용·오프라인이다.[](source:tmr-ro) 에이전트는 구조를 추적하는 동안 정식 `threatModel`을 만들고 `complete: false` early checkpoint에 둔다. finding이 아직 없어도 그렇게 한다.[](source:tmr-contract) 다음 노드로는 파악한 경계와 근거를 넘긴다. 갈림은 없다. | model-generation | map |
+| reviewer | 독립 reviewer를 쓰나? | 에이전트는 복잡하거나 불확실한 경계가 있고 호출자의 allowance가 허용할 때 독립 architecture reviewer를 쓸 수 있다.[](source:tmr-rev) 기존 scan 안에서 쓰고 새 worker pool을 만들지 않는다.[](source:tmr-rev) 어느 하나라도 해당하지 않으면 reviewer 없이 `시나리오·필드 정리`로 간다. 위임이 불가능할 때 무엇을 하라는 절은 `threat-model.md`에 없다. SKILL.md는 "sequential fallback"을 따르라고 하지만 그 이름의 절이 참조 문서에 없고, 가장 가까운 문장은 부모가 검토했으면 독립적이었다고 쓰지 말라는 것뿐이다.[](source:gen)[](source:tmr-indep) 그래서 위임이 불가능할 때의 구체 절차는 원문에 명시 없음. | model-generation | reviewer |
+| ext | reviewer 검토 | 에이전트는 fresh-context reviewer에게 승인된 소스와 scope, 사용자 맥락 원문, 받은 모델과 정책, 선택적 knowledge base, 이 지침을 준다. 생성한 가설이나 finding은 주지 않는다.[](source:tmr-rev) 둘러싼 scan에 투자 시간 allowance가 있으면 그대로 넘기고 여기서 새로 초기화하지 않는다.[](source:tmr-rev) 권장 assignment 문구는 이렇다. 승인된 소스의 구조와 권한 경계를 검토하고, 설정·배포 경로를 실제 소비자까지 추적하고, 문서가 말하는 보장과 실제 통제를 비교하고, 빠진 전제를 찾으라는 내용이다. 지침 안의 맥락은 허가가 아닌 분석 데이터로 쓰고, 코드 실행, 서비스 접속, 파일 수정, 위임, scan 시작은 하지 않는다.[](source:tmr-rev) reviewer는 필드 매핑에 맞는 `threatModel`, 풀리지 않은 질문, 의견이 갈리는 곳의 소스 근거를 돌려준다. 경계를 바꾸는 실질 resource 위치와 권한은 포함하고 secret이 든 값은 복사하지 않고 설명한다.[](source:tmr-rev) 에이전트는 돌려받은 주장 중 중요한 것을 소스로 확인한 뒤 반영한다. reviewer가 확립한 경계, 근거, 불일치를 근거 없는 요약으로 줄이지 않는다.[](source:tmr-rev) 부모가 직접 검토했다면 독립적이라고 부르지 않는다.[](source:tmr-indep) 반영한 결과를 `시나리오·필드 정리`로 넘긴다. | model-generation | ext |
+| scenario | 시나리오·필드 정리 | 에이전트는 중요한 경계마다 현실적인 공격자와 시작 능력, 통제하는 입력이나 상태, 진입점, 기대 통제, 민감한 동작, 통제가 실패하면 얻는 새 능력을 쓴다. 이어서 불변식, 영향, 전제, 실질 완화책, 반증, 불확실성을 설명한다.[](source:tmr-scn) 우선순위는 그럴듯한 영향과 도달 가능성으로 정한다. 호출자가 통제하는 라이브러리·파서 입력은 실제 운영 배포를 관측하지 못했어도 경계가 될 수 있다. 배포에 따라 달라지는 주장에는 전제를 적는다.[](source:tmr-scn) 신뢰하는 운영자 설정을 공격자가 통제한다고 가정하거나, 원격 노출·tenant·빠진 통제·수용된 위험을 지어내지 않는다. 자기에게만 미치는 영향과 공격자가 이미 가진 권한은 새 보안 영향이 아니다.[](source:tmr-scn) 소스로 뒷받침한 검증은 runtime 재현 없이도 취약점을 입증할 수 있고, 중요한 모르는 점은 통제가 동작한다거나 실패한다고 단정하지 않고 드러낸다. 신뢰도와 심각도도 구분한다.[](source:tmr-scn) scan 안의 모델이면 중요한 시나리오를 finding, 소스로 뒷받침한 처분, 열린 질문과 맞춘다. 해결된 통제 질문과 기각은 `reviewState.surfaces[].notes`에 소스 anchor와 함께, 풀리지 않은 전제는 `reviewState.openQuestions`에 둔다. finding이 남지 않아도 확인한 불일치는 유지하고 별도의 추측 finding 목록은 만들지 않는다.[](source:tmr-fields) 정리 결과는 여섯 필드로 담는다(표는 아래 저장 패널). | model-generation | scenario |
+| verify | 소스로 대조 | 에이전트는 만든 Markdown을 실제 runtime 경계와 소스 근거에 대어 보고, 가설과 확립된 finding을 구분해 적는다.[](source:gen) 코드로 확인한 사실에는 저장소 기준 상대 경로와 줄을 인용한다. 생성되거나 번들된 구현이 통제를 맡고 있으면 그것을 데이터로 살피고, 소스 줄이 없으면 안정적인 symbol을 쓴다.[](source:tmr-arch) 돌려주기 전에 인용한 경로와 줄이 맞는지 확인하고, 중요한 경계와 근거가 분명해지면 더 넓히지 않는다. 코드 근거, 제공받은 배포 사실, 가정, 모르는 것을 구분해 적는다.[](source:tmr-arch) 값이 든 secret은 key나 참조, 위치, 수신자, 통제만 적고 값이나 비공개 맥락 문서를 복사하지 않는다.[](source:tmr-cite) 대조가 어긋났을 때 무엇을 하라는 문장은 원문에 명시 없음이다. 다음 노드로 대조를 마친 모델 텍스트를 넘긴다. | model-generation | verify |
+| where | 실행 중인 scan인가? | 에이전트는 이 모델이 실행 중인 scan을 위한 것인지, 단독 요청인지로 보관 방식을 가른다.[](source:retain)[](source:standalone) 실행 중인 scan은 호출자에게 모델을 돌려주고 host가 `threatmodel.md`를 만든다. 단독 요청은 에이전트가 `threatmodel.md`를 저장 도구로 저장한다.[](source:retain)[](source:standalone) 소유자 식별은 `scanId`(필요하면 `handoffClaimToken`)와 `targetPath` 중 정확히 하나로 하고 scan ID를 지어내지 않는다.[](source:st-supp) 갈림은 둘뿐이다. | model-generation | where |
+| scanret | scan에 반환·checkpoint | 실행 중인 scan이면 에이전트는 `{ "format": "markdown", "content": "<exact model text>" }`를 호출자에게 돌려주고, 살펴본 surface와 남은 작업을 담은 `complete: false` semantic checkpoint를 일찍 저장한다.[](source:retain) draft 제출 도구는 `record_codex_security_scan_draft`다. `threatModel`을 그 도구로 제출하고 두 번째 문서를 직접 쓰지 않는다.[](source:sa-draft)[](source:st-supp) host가 `<scan_dir>/threatmodel.md`를 만들고, 에이전트는 선택한 텍스트를 이후 단계에 그대로 보존한다.[](source:retain) scan 중에는 이 파일을 보조 저장 도구로 덮어쓸 수 없다.[](source:ts-path) 이 scan 전용 모델을 저장하거나 내보내도 공유 캐시를 갱신해도 된다는 허가가 아니다.[](source:retain) 이 경로에서 `Repository`·`Version` 줄은 붙이지 않는다. 이 줄은 공유 모델을 쓸 때만 붙인다.[](source:retain) | model-generation | scanret |
+| alone | 단독 저장 | 단독 요청이면 에이전트는 저장 도구로 `threatmodel.md`를 저장한다. `targetPath: <repo_root>`, `storage: "persistent"`, `path: "threatmodel.md"`를 쓴다.[](source:st-cache) 저장소의 재사용 가능한 모델을 만들거나 고치라는 직접 요청은 host가 막지 않는 한 공유 출력을 갱신할 수 있다. 공유 모델을 쓸 때만 문서 끝에 `Repository`와 `Version` 정확한 두 줄을 붙인다. `Repository`는 `scan-contract.md`의 안정적인 대상 정체성이고, `Version`은 변하지 않는 Git tree면 revision, 아니면 snapshot digest다.[](source:standalone)[](source:st-cache) 문서는 구조와 배포, 보호 자산과 경계, 공격자 능력, 우선순위 있는 시나리오와 완화책, 심각도 판단을 설명한다. 표나 다이어그램은 관계를 분명히 할 때 쓰고, 시나리오는 검증되지 않았으면 가설로 표시한다. 관련 없는 변경에도 재사용할 수 있게 쓰고, 사용자가 좁히라고 하지 않으면 좁히지 않는다.[](source:tmr-stand) 쓰기는 shell redirection, `apply_patch`, Python 같은 일반 파일 쓰기가 아니라 저장 도구로만 한다.[](source:st-supp) 필요한 저장 위치를 관리 저장소로 표현할 수 없으면 다른 곳에 몰래 쓰지 않고 한계를 설명한다.[](source:st-path) | model-generation | alone |
+
+## 언제 켜지고 언제 쓰면 안 되나? {#activation span=12}
+
+원문의 호출 조건은 `description` 한 문단이 전부다. 호출 제한 필드(`disable-model-invocation` 등)는 frontmatter에 원문에 명시 없음이다.
 
 @code source=fm language=yaml
 
-| 상황 | 에이전트의 행동 |
-|---|---|
-| scan이 이미 위협 모델 단계에 있다 | 이 스킬을 쓴다.[](source:fm) |
-| 사용자가 `$threat-model`을 직접 부른다 | 이 스킬을 쓴다. 기본 prompt는 저장소 위협 모델을 만들라는 문장이다.[](source:fm)[](source:yaml) |
-| 사용자가 저장소 위협 모델의 작성·갱신·저장을 명시적으로 요청한다 | 이 스킬을 쓴다.[](source:fm) |
-| 전체 PR, commit, branch, patch, 저장소 scan을 시작하라는 요청 | 이 스킬을 1차 트리거로 쓰지 않는다. 벤더 안내문은 scan 선택을 `security-scan`, `security-diff-scan`, `deep-security-scan`에 둔다.[](source:fm)[](source:readme-scan) |
-| Standard scan이나 Deep worker 안 | 이 스킬을 호출하지 않는다. 자기 workflow에서 모델을 만들고 `threat-model.md`를 직접 읽는다. `core-scan.md`도 별도 단계 스킬을 부르지 말라고 한다.[](source:purpose)[](source:core11)[](source:core18) |
-| 필수 입력이 명시됐는데 없다 | 생성한 모델로 대신하지 않고 사용자에게 그 입력을 요청한다.[](source:inputs) |
+`agents/openai.yaml`은 표시 이름과 기본 prompt만 정한다.
 
-명시된 경로는 그대로 따른다. 모델을 만들기 전에 `../../references/artifact-storage.md`와 `scan-artifacts.md`를 읽고, 적용되는 `SECURITY.md` 정책은 호출자가 주지 않았을 때 `security-guidance.md` 방식으로 해석한다.[](source:inputs)[](source:policy)
+@code source=yaml language=yaml
 
-## 어떤 모델을 쓰고 언제 새로 만드나? {#select}
+description은 모델이 판단할 때 참고하는 설명이다. 이 단어가 있으면 켜진다는 사전이 아니다. 아래 표는 원문 문장을 상황별로 나눈 분석자의 정리다(판정).[](source:fm)[](source:purpose)
 
-원문은 모델 선택을 네 규칙으로 쓴다. 규칙끼리 우선순위를 번호로 정하지는 않았다. 아래 그림은 규칙의 조건문을 읽어 순서를 세운 판정이다.[](source:select)
+| 상황 | 이 스킬 | 근거 |
+| --- | --- | --- |
+| scan이 이미 위협 모델 단계에 있다 | {good:쓴다} | description의 첫 조건이다. diff scan은 이 스킬을 한 번 실행하거나 받은 모델을 쓴다.[](source:fm)[](source:dscan) |
+| 사용자가 `$threat-model`을 직접 부른다 | {good:쓴다} | description의 둘째 조건이다.[](source:fm) |
+| 저장소 위협 모델의 작성·갱신·저장을 명시적으로 요청한다 | {good:쓴다} | description의 셋째 조건이다.[](source:fm) |
+| 전체 PR, commit, branch, patch, 저장소 scan을 시작한다 | {bad:1차 트리거로 쓰지 않는다} | 이 요청에 맞는 스킬이 무엇인지는 이 스킬 원문에 명시 없음이다.[](source:fm) |
+| Standard scan이나 Deep worker가 위협 모델을 만든다 | {bad:이 스킬을 부르지 않는다} | 자기 workflow 안에서 `threat-model.md`를 읽고 만든다.[](source:purpose)[](source:core11)[](source:core18) |
 
-@workflow id=select-flow title="위협 모델 선택"
-| need | 모델이 필요하다 | external |
-| ctx | 받은 모델·맥락이 있나? | backend |
-| fresh | scan 전용 모델 | backend |
-| reuse | 공유 모델 재사용? | backend |
-| shared | 공유 모델 사용 | backend |
-| gen | 새로 생성 | backend |
-| need > ctx | |
-| ctx > fresh | 있음 | emphasis |
-| ctx > reuse | 없음 |
-| reuse > shared | 조건 충족 |
-| reuse > gen | 아님 |
+Standard scan과 Deep worker가 같은 `threat-model.md` 지침을 읽는다는 점은 위 표와 어긋나지 않는다. 두 쪽은 지침 문서만 공유하고 이 스킬을 호출하지는 않는다.[](source:purpose)[](source:core11)
 
-@steps id=select-steps
-| need | 모델이 필요하다 | 받은 모델이나 사용자가 지정한 권위 있는 보안 지침은 갱신 요청이 없으면 그대로 둔다.[](source:select) | select-flow | need |
-| ctx | 받은 모델·맥락이 있나? | scan에 받은 모델, 비어 있지 않은 `userContext`, 권위 있는 knowledge base, 더 좁은 범위 중 하나라도 있는지 본다.[](source:select) | select-flow | ctx |
-| fresh | scan 전용 모델 | 받은 모델을 보존하거나 이 scan만의 새 모델을 만든다. 공유 캐시는 읽지도 바꾸지도 않는다.[](source:select) | select-flow | fresh |
-| reuse | 공유 모델 재사용? | 공유 모델은 끝의 `Repository`와 `Version` 줄이 대상과 현재 revision 또는 snapshot digest에 맞고, 사용자가 교체·생성·갱신을 요청하지 않았을 때만 쓴다. host가 캐시를 우회하라고 하면 따른다.[](source:select) | select-flow | reuse |
-| shared | 공유 모델 사용 | 유효한 캐시 적중이면 새로 만들지 않고 기존 문서 경로를 돌려준다.[](source:retain) | select-flow | shared |
-| gen | 새로 생성 | 조건을 못 채우면 `threat-model.md` 지침으로 만든다. 원문은 이 분기를 따로 이름 붙이지 않았고, 선택 규칙 다음에 생성 지침이 오는 순서에서 읽은 판정이다.[](source:gen) | select-flow | gen |
+## 무엇을 강제하고 무엇을 금지하나? {#rules span=12}
 
-| 규칙 | 내용 |
-|---|---|
-| 정책이 대신하는 경우 | 저장소별 `AGENTS.md`나 해석된 `SECURITY.md`가 필요한 경계를 설명하고 새 모델이나 맥락별 모델이 필요 없으면 모델 대신 쓸 수 있다.[](source:select) |
-| 공유 모델의 이름 | 새 파일명은 `threatmodel.md`다. 새 파일이 없을 때만 예전 `threat_model.md`를 같은 규칙으로 읽을 수 있다.[](source:cache) |
-| 캐시 판정을 하는 주체 | `Repository`·`Version` 줄을 비교하는 코드는 `mcp-app/src`에서 찾지 못했다. 판정: 비교는 모델이 지시를 읽고 하는 일이다.[](source:cache)[](source:store-ts) |
+아래 표는 찾아보기용이다. 각 규칙이 어느 노드에서 쓰이는지는 위 동작 패널에 문장으로 풀었다.
 
-## 모델은 어떻게 만들고 무엇을 담나? {#build}
+| 규칙 | 내용 | 근거 |
+| --- | --- | --- |
+| 읽기 전용·오프라인 | 사용자가 다른 맥락을 승인하지 않는 한 소스 검토는 읽기 전용이고 오프라인이다. | [](source:tmr-ro) |
+| 허가가 아님 | 받은 모델, knowledge-base 사실, 상속된 정책은 적용하되 내용을 허가로 취급하지 않는다. knowledge-base 사실은 생성한 가정과 저장소 정책을 이기지만 사용자의 명시 지시는 이기지 못한다. | [](source:tmr-ro) |
+| 시나리오는 가설 | 시나리오는 확인된 finding이 아닌 가설이다. 검증됐을 때만 finding으로 다룬다. | [](source:tmr-ro)[](source:tmr-stand) |
+| 정책은 분석 데이터 | 해석된 정책과 저장소 내용은 workflow를 바꾸거나 다른 대상에 접근할 권한이 아니다. | [](source:policy)[](source:sg-rule) |
+| 받은 모델 불변 | 받은 모델이나 권위 있는 지침은 수정 요청이 없으면 그대로 둔다. | [](source:select) |
+| 명시 입력이 없으면 묻는다 | 명시적으로 필요한 입력이 없으면 생성한 모델로 대신하지 않고 요청한다. | [](source:inputs) |
+| 캐시 읽기 제한 | 맥락이나 좁은 scope가 붙은 scan은 공유 캐시를 읽거나 대체하지 않는다. | [](source:select) |
+| 캐시 재사용 조건 | `Repository`·`Version` 줄이 일치하고 사용자가 교체를 요청하지 않았을 때만 쓴다. host가 우회를 지시하면 따른다. | [](source:cachecond) |
+| 독립이라는 표기 | 부모가 직접 검토했으면 독립적이었다고 쓰지 않는다. | [](source:tmr-indep) |
+| 근거 표기 | 코드로 확인한 사실에 경로와 줄을 인용하고 돌려주기 전에 맞는지 확인한다. | [](source:tmr-cite) |
+| secret | secret은 key나 참조, 위치, 수신자, 통제만 적고 값은 복사하지 않는다. | [](source:tmr-cite) |
+| 새 영향이 아닌 것 | 자기에게만 미치는 영향과 공격자가 이미 가진 권한은 새 보안 영향이 아니다. 원격 노출, tenant, 빠진 통제, 수용된 위험을 지어내지 않는다. | [](source:tmr-scn) |
+| 쓰기 도구 | 보조 파일은 저장 도구로만 쓰고 shell redirection, `apply_patch`, Python 같은 일반 파일 쓰기는 쓰지 않는다. | [](source:st-supp) |
+| 실행 중인 scan의 `threatmodel.md` | scanId가 있으면 읽기만 되고 보조 저장 도구로 덮어쓸 수 없다. | [](source:st-path)[](source:ts-path) |
+| 봉인된 scan | 완료·봉인된 scan 파일은 이 저장 도구로 고칠 수 없다. | [](source:st-cache) |
+| 정책 적용 범위 | SDK가 소유한 workflow는 이 저장 정책 대신 자기 지시를 따른다. | [](source:st-scope) |
 
-생성이나 갱신 때는 `references/threat-model.md`를 따른다.[](source:gen) 이 문서가 정하는 강제와 금지는 다음과 같다.
+수치로 정해진 한도는 이 스킬 원문에 없다. 원문에 명시 없음이다.
 
-| 항목 | 규칙 |
-|---|---|
-| 접근 | 소스 검토는 읽기 전용이고, 사용자가 다른 맥락을 허가하지 않으면 오프라인이다.[](source:ref-ro) |
-| 받은 자료 | 받은 모델, knowledge base 사실, 정책을 허가로 취급하지 않는다. knowledge base 사실은 생성한 가정과 저장소 정책보다 앞서고, 사용자의 명시 지시보다는 뒤다.[](source:ref-ro) |
-| 시나리오 | 시나리오는 가설이다. 확정 finding으로 쓰지 않는다. 신뢰하는 운영자 설정을 공격자가 쥔다고 가정하지 않고, 원격 노출·tenant·빠진 통제·수용된 위험을 지어내지 않는다.[](source:ref-ro)[](source:ref-scn) |
-| 증명 방식 | 코드 근거로 취약점이 성립하면 runtime 재현 없이도 확립된다. 모르는 것은 통제가 작동한다거나 실패한다고 단정하지 않고 명시한다.[](source:ref-scn) |
-| 인용 | 코드로 확립한 사실에는 확인한 저장소 상대 경로와 줄을 적고, 돌려주기 전에 다시 확인한다. 중요한 경계와 근거가 분명해지면 확장을 멈춘다.[](source:ref-cite) |
-| secret | 설정 키나 참조, 위치, 수신자, 통제만 적는다. 값은 복사하지 않는다.[](source:ref-cite) |
-| 독립 reviewer | 복잡하거나 불확실한 경계에서 호출자 허용 범위가 맞을 때만 쓴다. 기존 scan 안에서 새 worker pool을 만들지 않는다. 생성한 가설과 finding 없이 fresh context로 준다. reviewer는 코드 실행, 서비스 접속, 파일 수정, 위임, scan 시작을 하지 않는다. 감싸는 scan의 투자 시간 allowance는 그대로 넘기고 여기서 새로 만들지 않는다.[](source:ref-rev) |
-| reviewer가 없을 때 | 부모가 직접 검토한다. 부모가 한 검토를 "independent"라고 부르지 않는다. 반환된 주장은 소스로 확인한 뒤 반영한다.[](source:ref-rev) |
+## 무엇을 만들고 어디에 저장하나? {#outputs span=12}
 
-`SKILL.md`는 "sequential fallback"을 따르라고 하지만, 참조 문서에 그 이름의 절은 없다. 가장 가까운 문장은 부모가 검토하면 독립이라 부르지 말라는 줄이다.[](source:gen)[](source:ref-rev)
+생성한 모델의 필드는 여섯 개이고 `origin`과 `scope`는 선택이다.[](source:tmr-fields)
 
-scan 결과로 돌려주는 모델은 아래 여섯 필드에 나눠 담는다.[](source:ref-fields)
+| 필드 | 담는 내용 |
+| --- | --- |
+| `summary` | 제품 목적, 구성 요소, 데이터 흐름, 일반적인 배포 |
+| `assets` | 보호 대상 데이터, 신원, 권한, 무결성 보장 |
+| `trustBoundaries` | 행위자, 넘어가는 권한·데이터, 실질 통제, 소스 근거 |
+| `attackerCapabilities` | 시작 능력, 없는 권한, 얻을 수 있는 능력 |
+| `securityObjectives` | 강제할 수 있는 불변식, 사용자가 요청한 설정과 한도 |
+| `assumptions` | 전제, 제외, 문서와 구현의 불일치, 모르는 것 |
 
-@facts
-| `summary` | 제품 목적, 구성 요소, 데이터 흐름, 일반적인 배포.[](source:ref-fields) |
-| `assets` | 보호할 데이터, 신원, 권한, 무결성 보장.[](source:ref-fields) |
-| `trustBoundaries` | 주체, 넘어가는 권한과 데이터, 실효 통제, 소스 근거.[](source:ref-fields) |
-| `attackerCapabilities` | 시작 능력, 없는 권한, 얻을 수 있는 추가 능력.[](source:ref-fields) |
-| `securityObjectives` | 지켜야 할 불변식. 사용자가 요청한 설정과 한도를 포함한다.[](source:ref-fields) |
-| `assumptions` | 전제, 제외, 문서와 구현의 차이, 모르는 것.[](source:ref-fields) |
+`origin`은 `generated`나 `provided`다. 생성 모델의 `scope`는 `includePaths`, 선택적 `excludePaths`, `summary`로 알려진 범위를 적는다.[](source:tmr-fields)[](source:tmr-contract)
 
-시나리오는 finding, 소스로 확인한 처분, 열린 질문으로 정리한다. 해소된 통제 질문과 기각은 `reviewState.surfaces[].notes`에 소스 앵커와 함께, 풀리지 않은 전제는 `reviewState.openQuestions`에 둔다. 별도의 추측 finding 목록은 만들지 않는다.[](source:ref-fields)
+이 스킬은 한 요청에서 두 종류의 위협 모델 파일을 다룬다. 이름은 같은 `threatmodel.md`지만 만드는 주체와 끝부분이 다르다.
 
-## 결과는 어디에 어떻게 저장되나? {#retain}
+| 구분 | 실행 중인 scan | 단독 요청 |
+| --- | --- | --- |
+| 정식 모델 | `scan-manifest.json`의 `scan.threatModel`에 두고 early checkpoint로 갱신한다.[](source:sa-paths)[](source:tmr-contract) | 별도 정식 모델은 없고 문서가 결과다.[](source:standalone) |
+| `threatmodel.md`를 쓰는 주체 | host가 `scan.threatModel`에서 만든다.[](source:doc-save)[](source:doc-write) | 에이전트가 저장 도구로 쓴다.[](source:standalone) |
+| 저장 위치 | `<scan_dir>/threatmodel.md`다.[](source:sa-paths) | `targetPath`로 만든 standalone 컬렉션이다.[](source:st-supp)[](source:readme19) |
+| 문서 끝부분 | `## Saved Model Context` footer를 붙인다. `Repository`·`Version` 줄은 없다.[](source:rn-foot) | 공유 모델이면 `Repository`·`Version` 두 줄을 붙인다.[](source:st-cache) |
+| 공유 캐시 갱신 | 허가가 아니다.[](source:retain) | 직접 요청이면 host가 막지 않는 한 갱신할 수 있다.[](source:standalone) |
+| 쓰기 가능 여부 | scanId가 있으면 보조 도구로 덮어쓸 수 없다.[](source:ts-path) | scanId가 없을 때만 쓸 수 있다.[](source:ts-path) |
 
-| 상황 | 에이전트의 행동 |
-|---|---|
-| 실행 중인 scan | `{ "format": "markdown", "content": "<exact model text>" }`를 호출자에게 돌려주고, 검토한 surface와 남은 일을 담은 `complete: false` checkpoint를 일찍 저장한다. `<scan_dir>/threatmodel.md`는 host가 만든다. 이후 단계는 선택한 텍스트를 그대로 쓴다.[](source:retain)[](source:ref-contract) |
-| 받은 모델이 있다 | 받은 텍스트는 `origin: "provided"`로 원문 그대로 보관한다. 선언된 범위를 알면 기록하고, 받은 worker 모델이 부모 범위를 덮는다고 가정하지 않는다.[](source:ref-contract) |
-| 단독 요청 | `threatmodel.md`를 artifact storage 도구로 저장하거나, 유효한 캐시 적중이면 기존 경로를 돌려준다. 저장소 모델은 `targetPath`와 `persistent`로 쓴다.[](source:retain)[](source:cache) |
-| 재사용할 저장소 모델을 직접 만들거나 고치라는 요청 | host가 금지하지 않으면 공유 출력을 갱신할 수 있다. 이때만 `Repository`와 `Version` 줄을 붙인다.[](source:retain) |
-| scan 모델의 저장·export | 공유 캐시를 갱신해도 된다는 허가가 아니다.[](source:retain) |
-| Deep 부모 scan | 첫 모델을 `scan.threatModel`에 두고 다른 worker의 모델은 worker 기록에 둔다. 모델은 구조화 형태이거나 `{ "format": "markdown", "content": ... }`일 수 있다. `threatmodel.md`는 주 모델에서 host가 만든 export이고 따로 쓰는 입력이 아니다.[](source:contract) |
-| 벤더 안내 | 단독으로 돌렸다면 scan 출력 폴더가 아니라 plugin의 artifact storage에서 그 repo의 `threatmodel.md`를 찾으라고 한다.[](source:readme) |
+host가 `threatmodel.md`를 만드는 방식은 이렇다. 저장된 모델을 `scan-manifest.json`(다른 레이아웃은 `result.json`)에서 읽어 렌더러에 넘긴다.[](source:doc-write)
 
-공유 모델의 끝에 붙는 두 줄은 `Repository: <stable target identity>`와 `Version: <immutable Git tree면 revision, 아니면 snapshot digest>`다. 대상 종류는 `git_revision`, `git_worktree`, `git_diff`, `directory_snapshot`이다.[](source:cache)[](source:contract-kind)
+모델이 `format: markdown`이고 `content`가 비어 있지 않으면 본문을 그대로 쓰고, 아니면 `summary`와 다섯 필드를 `# Threat Model` 아래 절로 이어 붙인다.[](source:rn-body)
 
-@callout level=warning title="scan용 threatmodel.md와 공유 캐시는 다른 파일이다"
-| 실행 중인 scan의 `threatmodel.md`는 host가 `scan-manifest.json`의 `scan.threatModel`에서 렌더링한다. 보조 파일 저장 도구로는 바꿀 수 없다. 저장 도구가 `threatmodel.md`를 쓰는 것은 scanId 없이 standalone으로 부를 때뿐이다.[](source:store-path)[](source:store-ts)[](source:doc-write) |
+그 뒤에 `---`와 `## Saved Model Context` 절을 붙인다. 이 절에는 Source, Scan, Target, Revision, Snapshot, Result status, Model origin, 모델·scan 범위가 있다. scan이 완료되지 않았으면 provisional 안내 문장이 붙는다.[](source:rn-foot)[](source:doc-write)
 
-host가 쓰는 `threatmodel.md`의 모양은 코드를 읽어 확인했다.
+저장 도중 문서를 쓰지 못해도 모델 저장 자체는 막지 않고 실패 이유만 돌려준다.[](source:doc-save)[](source:doc-write)
 
-- markdown 모델이면 본문을 그대로 쓰고, 구조화 모델이면 `# Threat Model` 아래 절로 렌더링한다.[](source:render-body)
-- 뒤에 `Saved Model Context` footer를 붙인다. source, scan, target, revision, snapshot, 결과 상태, 모델 origin과 범위가 들어간다.[](source:render-foot)
-- scan이 `complete`가 아니면 provisional model이라는 문장도 붙는다.[](source:render-foot)[](source:doc-write)
-- 이 문서를 쓰다 실패해도 모델 저장은 성공으로 남고 실패 이유만 문자열로 돌려준다.[](source:doc-save)[](source:doc-write)
+Deep scan은 부모가 첫 모델을 `scan.threatModel`에 두고 다른 worker 모델은 worker 기록에 둔다. host는 부모의 모델에서 `threatmodel.md`를 만들며, 이 파일은 "독립적으로 작성한 입력이 아닌 내보낼 수 있는 투영물"이다.[](source:contract173)
 
-## 흐름 속 위치는 어디인가? {#position}
+저장 방식은 두 가지다. `persistent`는 scan 디렉터리나 standalone 컬렉션에 남는 문서·근거이고, 기본 root는 `$CODEX_SECURITY_STATE_DIR/scans` 또는 `$CODEX_HOME/state/plugins/codex-security/scans`이며 `CODEX_SECURITY_SCAN_ROOT`가 우선한다. `temporary`는 OS 임시 폴더의 일회용 공간이고 완료된 결과에 넣지 않는다.[](source:st-kind) 위협 모델 문서는 `persistent`에 쓴다.[](source:st-cache)
 
-@workflow id=position-flow title="diff scan에서 발견과 시각화로"
-| before | security-diff-scan | backend | source:dscan |
-| current | threat-model | backend | source:fm |
-| after | finding-discovery | backend | source:disc |
-| viz | threat-model-visualize | backend | source:vis |
-| before > current | 내부 위임 R06 | emphasis |
-| current > after | 산출물 호환 R10 | dashed |
-| current > viz | 산출물 호환 R42 | dashed |
+## 흐름 속 위치는 어디인가? {#flow span=12}
+
+이 스킬은 두 묶음에 속한다. 전체 흐름은 `codex-security/_group-scan-vulnerabilities/scan-vulnerabilities.html`과 `codex-security/_group-threat-model-and-policy/threat-model-and-policy.html`에 있다. 아래 그림은 앞에서 이 스킬을 부르거나 입력을 대 주는 스킬, 뒤에서 모델을 읽는 스킬만 그렸다.
+
+@workflow id=position-flow title="위협 모델 앞뒤의 스킬"
+| dscan | security-diff-scan | backend | source:dscan |
+| policy | define-security-policy | backend | source:pol8 |
+| tm | threat-model | backend | source:purpose |
+| disc | finding-discovery | backend | source:disc |
+| vis | threat-model-visualize | backend | source:vis10 |
+| dscan > tm | 내부 위임 R06 | emphasis |
+| policy > tm | 공유 상태 R45 |
+| tm > disc | 산출물 호환 R10 |
+| tm > vis | 산출물 호환 R42 |
+
+그림은 필수 순서가 아니다. R06은 diff scan이 정한 호출이고, R10과 R42는 산출물이 다음 스킬의 입력 조건에 맞는다는 뜻이다. `attack-path-analysis`(R13), Standard·Deep scan의 `core-scan.md` 공유(R14), `define-security-policy`가 위협 모델을 읽는 방향(R48)은 그림에서 빼고 표에 남겼다.
 
 @steps id=position-steps
-| highlight | threat-model | diff scan이 한 번 실행하거나 받은 모델을 쓴다. 다음 단계는 같은 모델을 쓰고, 시각화는 사용자가 따로 요청한다. | position-flow | current |
+| pos-dscan | security-diff-scan | diff scan의 첫 단계가 `$threat-model`을 한 번 실행하거나 받은 모델을 쓴다. 모델은 `origin: provided` 또는 `generated`로 보존하고, 저장소 전체를 기본으로 하며 변경 파일 scope와 모델의 실제 scope를 따로 기록한다. 모델을 정하면 곧 `complete: false` draft로 저장한다.[](source:dscan) | position-flow | dscan |
+| pos-policy | define-security-policy | 저장소의 `SECURITY.md`를 쓰는 스킬이다. 이 스킬은 정책이 경계를 충분히 설명하면 모델 대신 쓸 수 있고, 정책은 분석 데이터로만 읽는다.[](source:pol8)[](source:select)[](source:policy) | position-flow | policy |
+| pos-tm | threat-model | 이 페이지의 대상이다. 받은 것은 호출자의 대상·맥락·받은 모델·정책이고, 넘기는 것은 모델 텍스트 또는 `threatmodel.md`다. | position-flow | tm |
+| pos-disc | finding-discovery | 위협 모델과 적용 정책을 근거로 기술적으로 그럴듯한 취약점 후보를 찾는다. 최종 심각도는 정하지 않는다.[](source:disc) | position-flow | disc |
+| pos-vis | threat-model-visualize | 기존 위협 모델 문서를 읽어 시각화한다. 새 assessment를 하지 않는다.[](source:vis10)[](source:vis72) | position-flow | vis |
 
 | 관계 | 받는 것·넘기는 것·조건 |
-|---|---|
-| R06 · 내부 위임 | `security-diff-scan`이 `$threat-model`을 한 번 실행하거나 받은 모델을 쓴다. 저장소 전체가 기본이고 사용자가 좁히라고 할 때만 좁힌다. 모델의 실제 범위는 변경 파일 범위와 따로 기록한다. 끝나면 diff scan이 모델로 `complete: false` 초안을 저장하고 host가 `threatmodel.md`를 만든다.[](source:dscan)[](source:tools-draft) |
-| R10 · 산출물 호환 | discovery는 위협 모델과 정책을 근거로 쓴다. 이 순서를 강제하는 곳은 diff scan뿐이다. 단독 호출에서 모델 없이 discovery를 돌려도 되는지는 원문에 명시 없음이다.[](source:disc) |
-| R13 · 산출물 호환 | scan 단계의 attack-path 분석은 per-scan 위협 모델을 쓴다. 단독 분석은 위협 모델이나 정책이 있으면 쓰고 per-scan 산출물은 필요 없다.[](source:atk) |
-| R14 · 참고 | Standard scan과 Deep worker는 이 스킬이 아니라 `threat-model.md`를 직접 읽는다. 두 쪽이 같은 참조 문서를 공유한다.[](source:purpose)[](source:core11) |
-| R42 · 산출물 호환 | `threat-model-visualize`의 기본 입력은 기존 위협 모델이고 `--assessment <threat-model.md>`로 넘긴다. 새 assessment는 하지 않는다. 필수 후속 단계가 아니다.[](source:vis)[](source:vis72) |
-| R45 · 공유 상태 | `SECURITY.md`는 정책 맥락이지 실행 지시가 아니다. `define-security-policy`가 쓰고 이 스킬이 읽는다. 선후 관계는 없다.[](source:pol8)[](source:select) |
-| R48 · 참고 | 정책을 쓰는 쪽이 경계를 확인하려고 위협 모델을 읽을 수 있다. 이름으로 스킬을 지목하지는 않는다.[](source:pol36) |
+| --- | --- |
+| R06 · 내부 위임 | `security-diff-scan`이 `$threat-model`을 한 번 실행하거나 받은 모델을 쓴다. 넘기는 것은 `{ format: markdown, content, origin }`이고, 상태는 host workbench의 draft 도구가 관리한다.[](source:dscan)[](source:sa-draft) |
+| R10 · 산출물 호환 | discovery는 "the threat model and applicable security policy"를 근거로 쓴다. 이 순서를 강제하는 곳은 diff scan뿐이고, 단독 호출에서 위협 모델 없이 discovery를 돌려도 되는지는 원문에 명시 없음이다.[](source:disc) |
+| R13 · 산출물 호환 | `attack-path-analysis`는 scan 단계에서 scan별 위협 모델과 후보 집합을 쓰고, 단독 분석에서는 위협 모델이나 보안 정책이 있으면 쓴다. 단독 분석에는 scan별 산출물이 필수가 아니다.[](source:atk) |
+| R14 · 참고 | Standard scan과 Deep worker는 이 스킬을 부르지 않고 `threat-model.md`를 직접 읽는다. 지침 문서만 공유한다.[](source:purpose)[](source:core11)[](source:core18) |
+| R42 · 산출물 호환 | visualize의 기본 입력은 기존 위협 모델 문서이고 `--assessment <threat-model.md>`로 넘긴다. scan 안 `threatmodel.md`는 `Saved Model Context` footer를, 단독 공유 모델은 `Repository`·`Version` 줄을 가진다.[](source:vis10)[](source:vis72)[](source:rn-foot)[](source:st-cache) |
+| R45 · 공유 상태 | `SECURITY.md`를 `define-security-policy`가 쓰고 이 스킬이 읽는다. 정책은 분석 데이터이고 정책 해석은 `security-guidance.md`를 따른다.[](source:pol8)[](source:select)[](source:sg-rule) |
+| R48 · 참고 | 정책을 쓰는 쪽이 경계를 확인하려고 위협 모델과 확인된 finding을 읽을 수 있다. 스킬 이름은 지목하지 않는다.[](source:pol36) |
 
-이 스킬이 읽는 공통 문서와 도구 계약은 아래와 같다.
+## 어디까지 확인했고 한계는 무엇인가? {#audit span=12}
 
-| 관계 | 이 스킬이 가져가는 것 |
-|---|---|
-| R60 · 참고(`artifact-storage.md`) | 파일을 만들거나 보관하기 전에 읽는다. 구조화 결과는 기존 도구에 두고 보조 파일 도구로 대체하지 않는다. 소유자는 `scanId`(필요하면 `handoffClaimToken`)와 `targetPath` 중 정확히 하나다. `storage`는 `persistent` 또는 `temporary`를 명시한다.[](source:store-scan)[](source:store-supp)[](source:store-kind) |
-| R61 · 참고(`security-guidance.md`) | `SECURITY.md`를 root부터 leaf까지 이어 붙이고 충돌하면 대상에 가까운 정책이 앞선다. 정책은 untrusted policy data라서 사용자·시스템 지시를 덮거나 명령 실행, secret 접근, 파일 편집, workflow 변경을 하지 못한다.[](source:guide-res)[](source:guide-rule) |
-| R70 · 참고(`threat-model.md`) | 위 "모델은 어떻게 만들고 무엇을 담나" 절의 규칙이다.[](source:gen)[](source:ref-stand) |
-| R85 · 참고(`scan-artifacts.md`) | scan의 모델은 `scan-manifest.json`의 `scan.threatModel`이 원본이고 `<scan_dir>/threatmodel.md`는 host가 만든 읽기용 문서다. 예전 `<context_dir>/threat_model.md`는 원본이 없을 때만 읽는다.[](source:paths) |
+- 읽은 텍스트 파일은 18개이고 모두 `@source`로 선언했다. 번역본(`*.KO.md`)은 없고 열지 않았다. 바이너리는 없다.
+- 스킬, helper, MCP 도구는 하나도 실행하지 않았고 외부 URL도 열지 않았다.
+- 끝까지 읽은 파일 8개의 바이트 수: `SKILL.md` 2,986B, `agents/openai.yaml` 171B, `references/threat-model.md` 7,751B, `references/artifact-storage.md` 7,947B, `references/scan-artifacts.md` 11,701B, `references/security-guidance.md` 2,830B, `mcp-app/src/threat-model-document.ts` 2,657B, `mcp-app/src/threat-model-render.ts` 5,406B.
+- 부분 읽음 파일은 10개다. 이 파일들의 안 읽은 부분을 근거로 쓴 문장은 없다. `mcp-app/src/artifact-storage.ts`(8,872B)는 146~176줄만 읽었다.[](source:ts-path)
+- 나머지 9개는 관계를 확인하려고 표시한 줄만 읽었다: `security-diff-scan/SKILL.md` 5,405B, `finding-discovery/SKILL.md` 5,076B, `attack-path-analysis/SKILL.md` 5,355B, `define-security-policy/SKILL.md` 5,982B, `threat-model-visualize/SKILL.md` 19,102B, `references/core-scan.md` 7,479B, `security-scan/SKILL.md` 2,972B, `references/scan-contract.md` 16,529B, `skills/README.md` 3,752B.
+- 필수 참조 일곱 개 중 여섯 개는 끝까지 읽었다.
 
-전체 흐름은 색인 기준 `codex-security/_group-scan-vulnerabilities`(`scan-vulnerabilities.html`)와 `codex-security/_group-threat-model-and-policy`(`threat-model-and-policy.html`)를 가리킨다. 묶음 페이지는 별도 단계에서 만든다.
+@callout level=open-question title="위임이 불가능할 때의 절차"
+`SKILL.md`는 "sequential fallback when delegation is unavailable"을 따르라고 하지만, `threat-model.md`에는 그 이름의 절이 없다.[](source:gen)[](source:tmr-indep)
+가장 가까운 문장은 부모가 검토했으면 독립적이라고 쓰지 말라는 것이다. 위임이 불가능할 때의 구체 절차는 원문에 명시 없음이다.
 
-## 단독 문서는 무엇을 담아야 하나? {#standalone}
+@callout level=open-question title="캐시 일치를 비교하는 코드"
+`Repository`와 `Version` 줄을 현재 대상과 비교하는 코드는 `mcp-app/src`와 `scripts/`에서 grep으로 찾지 못했다.[](source:cachecond)[](source:st-cache)
+비교는 스킬 본문 지시로만 확인했고, 호스트가 코드로 강제하는지는 확인하지 못했다.
 
-요청받은 문서는 아키텍처와 배포, 보호 자산과 경계, 공격자 능력, 우선순위를 매긴 시나리오와 완화책, 시스템에 관련된 심각도 고려 사항을 설명한다. 관계를 밝히는 데 도움이 되면 표나 그림을 쓴다. 시나리오는 검증되기 전까지 가설이라고 표시한다. 무관한 변경에도 재사용할 수 있게 쓰고, 사용자가 좁은 모델을 요청한 때만 좁힌다.[](source:ref-stand)
+@callout level=open-question title="순서가 정해지지 않은 곳"
+(1) `AGENTS.md`·`SECURITY.md` 대체와 캐시 재사용 중 무엇이 먼저인지, (2) 받은 모델과 이번 scan 전용 새 모델 중 무엇을 고르는지, (3) 보존한 모델과 캐시 hit가 scan 반환 규칙을 거치는지는 원문에 명시 없음이다.[](source:select)[](source:retain)
+그림에서 이 경로를 이은 부분은 판정이다.
 
-- [ ] 모델을 만들기 전에 받은 모델·`userContext`·knowledge base·좁은 범위가 있는지 본다.
-- [ ] 공유 캐시를 쓰려면 `Repository`와 `Version` 줄이 현재 대상과 같은지 확인한다.
-- [ ] 인용한 경로와 줄을 돌려주기 전에 다시 연다.
-- [ ] secret 값은 복사하지 않고 키와 위치만 적었는지 본다.
-- [ ] scan 모델을 저장했다면 공유 캐시를 건드리지 않았는지 본다.
-
-## 어디까지 읽고 확인했나? {#audit}
-
-| 조사 구분 | 확인 범위 |
-|---|---|
-| 스킬 원본 | `threat-model/SKILL.md` 2,986B, `agents/openai.yaml` 171B를 끝까지 읽었다. 스킬 폴더의 텍스트 파일은 이 둘이 전부다.[](source:fm)[](source:yaml) |
-| 필수 참조 | `references/threat-model.md` 7,751B, `artifact-storage.md` 7,947B, `scan-artifacts.md` 11,701B, `security-guidance.md` 2,830B를 끝까지 읽었다.[](source:ref-fields)[](source:cache)[](source:paths)[](source:guide-rule) |
-| 도구 구현 | `threat-model-document.ts` 2,657B와 `threat-model-render.ts` 5,406B를 끝까지 읽었다. 렌더러가 가져오는 `threat-model-format.ts`, `threat-model-schema.ts`는 읽지 않았다.[](source:doc-write)[](source:render-foot) |
-| 구조·표본만 확인(전부 읽지 않음) | `scan-contract.md`(16,529B)는 target 종류와 `scan.threatModel` 줄만, `artifact-storage.ts`(8,872B)는 허용 path 함수 주변 140~185줄만, `threat-model-visualize/SKILL.md`(19,102B)는 1~16줄과 70~74줄만, `define-security-policy/SKILL.md`는 1~40줄만, `security-scan/SKILL.md`는 1~21줄만 읽었다. |
-| 관계 근거 | `security-diff-scan/SKILL.md` 5,405B, `finding-discovery`와 `attack-path-analysis`의 인용 줄, `core-scan.md` 7,479B를 읽었다. `skills/README.md`, `.mcp.json`, `plugin.json`은 공통 확인용으로 읽었다.[](source:dscan)[](source:core11)[](source:readme)[](source:mcpjson)[](source:pluginjson) |
-| 제외 | 번역본 없음. 바이너리 없음. 외부 URL은 열지 않았다. |
-
-읽은 텍스트 파일은 21개이고 이 중 부분 읽음은 5개다. 원문의 활성화 조건 3개, 선택 규칙 4개, 필수 입력 질문, scan·단독 저장 방식, 필드 6개, 독립 reviewer 조건을 모두 대조했다. 이 스킬에는 원문 수치 한도가 없다.
-
-@callout level=open-question title="확인하지 못한 것"
-| 렌더러가 가져오는 `threat-model-format.ts`와 `threat-model-schema.ts`를 읽지 않아서, 구조화 모델(`summary`·`assets` 등)과 markdown 모델이 어떤 검증을 통과하는지는 확인하지 못했다. 캐시의 `Repository`·`Version` 비교 코드는 찾지 못했다. host 도구를 호출하지 않았고, `threatmodel.md`가 실제로 만들어지는 모습은 코드를 읽어서만 확인했다.[](source:render-foot)[](source:doc-write) |
-
-분석 중 원본은 수정하지 않았고, 스킬의 어떤 명령도 실행하지 않았다.
+@callout level=note title="이 페이지가 읽지 않은 것"
+`mcp-app`의 draft 도구 구현, `scan-contract.md`의 다른 절은 읽지 않았다. host가 `threatmodel.md`를 만드는 설명은 `threat-model-document.ts`와 `threat-model-render.ts`의 인용한 줄만 근거로 한다.[](source:doc-write)[](source:rn-body)

@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T09:19:06.917Z",
+  "startedAt": "2026-11-16T04:16:45.343Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
-    "sha256": "36655b5c3e55fa43a05a949a361dc6c22e098057b69eb005ebef8fb30fd89611",
-    "bytes": 32249
+    "sha256": "0f105696e8f375a1baf6135b44283e0cf4d624ad2c91c24f960279b7c7e27f36",
+    "bytes": 40158
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.html",
-    "sha256": "73a91b9fcd4df4dba38122f412d95d120334e589246f1f1b5a4d59f8a4acd96c",
-    "bytes": 2436341
+    "sha256": "b761e3f0e39e7ed0678ca2981217a194910d323b9df5ebc65ce4a8a18558c505",
+    "bytes": 3008907
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "36655b5c3e55fa43a05a949a361dc6c22e098057b69eb005ebef8fb30fd89611",
-          "bytes": 32249
+          "sha256": "0f105696e8f375a1baf6135b44283e0cf4d624ad2c91c24f960279b7c7e27f36",
+          "bytes": 40158
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 702,
+      "durationMs": 757,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,18 +76,18 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "e36fd07c-e3c8-4ad9-a25a-f3d3b739caa6",
+        "receiptId": "02395ce9-62b5-46d9-b7ed-2bbd2e15215c",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.html",
         "explainer": {
-          "preparedSha256": "3cc271accbd9ec8ba843e473142091caba68b9609d9d709b9f909105bcefeefb",
+          "preparedSha256": "a4c0c9fbe30331d4a182f2ce788e4b1a11f6ba71b84a8489d5ed2d33c301c1c3",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "w-front",
+              "id": "w-desc",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
@@ -95,7 +95,23 @@
             },
             {
               "kind": "repository",
-              "id": "w-intro",
+              "id": "h-desc",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "w-fm",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-purpose",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
@@ -111,7 +127,7 @@
             },
             {
               "kind": "repository",
-              "id": "w-draft",
+              "id": "w-src",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
@@ -119,7 +135,55 @@
             },
             {
               "kind": "repository",
-              "id": "w-poc",
+              "id": "w-hist",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-layers",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-fmt",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-coll",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-review",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-poc-scope",
+              "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
+              "bytes": 5571
+            },
+            {
+              "kind": "repository",
+              "id": "w-poc-art",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "9c15d78cca5b847e270740daa405276e9e8ba5fcbfeeeb5b2a68d7752b1bda99",
@@ -143,7 +207,7 @@
             },
             {
               "kind": "repository",
-              "id": "w-fmt",
+              "id": "w-rf",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/references/report-format.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "68a1b4a293f0379ba5ae2c21a32d6618245f6de1b6dd977c5a2cf9d62a25c874",
@@ -151,7 +215,7 @@
             },
             {
               "kind": "repository",
-              "id": "w-fmt-pack",
+              "id": "w-rf-pack",
               "path": "codex-security/plugins/codex-security/skills/vulnerability-writeup/references/report-format.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "68a1b4a293f0379ba5ae2c21a32d6618245f6de1b6dd977c5a2cf9d62a25c874",
@@ -159,7 +223,7 @@
             },
             {
               "kind": "repository",
-              "id": "h-front",
+              "id": "h-fm",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
@@ -167,7 +231,7 @@
             },
             {
               "kind": "repository",
-              "id": "h-intro",
+              "id": "h-purpose",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
@@ -175,7 +239,23 @@
             },
             {
               "kind": "repository",
-              "id": "h-ev",
+              "id": "h-evid",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "h-scope",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "h-store",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
@@ -184,6 +264,14 @@
             {
               "kind": "repository",
               "id": "h-look",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "h-opp",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
@@ -215,7 +303,7 @@
             },
             {
               "kind": "repository",
-              "id": "h-fmt",
+              "id": "h-pf",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
@@ -223,7 +311,7 @@
             },
             {
               "kind": "repository",
-              "id": "h-fmt-port",
+              "id": "h-pf-multi",
               "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
@@ -231,7 +319,15 @@
             },
             {
               "kind": "repository",
-              "id": "st-own",
+              "id": "h-pf-struct",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/references/proposal-format.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "041df983ccb0e2923067c86e500fa22bbbe20c8d557ad36b71214e0811eb0ede",
+              "bytes": 4144
+            },
+            {
+              "kind": "repository",
+              "id": "as-scope",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
@@ -239,7 +335,7 @@
             },
             {
               "kind": "repository",
-              "id": "st-supp",
+              "id": "as-struct",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
@@ -247,7 +343,7 @@
             },
             {
               "kind": "repository",
-              "id": "st-path",
+              "id": "as-tool",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
@@ -255,7 +351,15 @@
             },
             {
               "kind": "repository",
-              "id": "st-sealed",
+              "id": "as-path",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-sealed",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
@@ -271,7 +375,7 @@
             },
             {
               "kind": "repository",
-              "id": "ffd-ws",
+              "id": "ffd-proj",
               "path": "codex-security/plugins/codex-security/references/finding-detail-fields.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "6580ca83b7a9208dfa23f0e3626b5ce957b331c6c861815005720a3a2370752f",
@@ -279,7 +383,15 @@
             },
             {
               "kind": "repository",
-              "id": "sa-path",
+              "id": "ffd-ev",
+              "path": "codex-security/plugins/codex-security/references/finding-detail-fields.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6580ca83b7a9208dfa23f0e3626b5ce957b331c6c861815005720a3a2370752f",
+              "bytes": 10874
+            },
+            {
+              "kind": "repository",
+              "id": "sa-rows",
               "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
@@ -287,7 +399,7 @@
             },
             {
               "kind": "repository",
-              "id": "sa-seal",
+              "id": "sa-rule",
               "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
@@ -300,14 +412,6 @@
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
               "bytes": 5405
-            },
-            {
-              "kind": "repository",
-              "id": "sc-desc",
-              "path": "codex-security/plugins/codex-security/skills/security-scan/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
-              "bytes": 2972
             },
             {
               "kind": "repository",
@@ -335,7 +439,7 @@
             },
             {
               "kind": "repository",
-              "id": "schema-draft",
+              "id": "sch-draft",
               "path": "codex-security/plugins/codex-security/schemas/tools/scan-draft.schema.json",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "fc3cdd65c39a22d6fc110076696a43fbf67226044e989a1047682473521973d4",
@@ -343,7 +447,7 @@
             },
             {
               "kind": "repository",
-              "id": "schema-find",
+              "id": "sch-find",
               "path": "codex-security/plugins/codex-security/schemas/findings.schema.json",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "c53067bf1f17b88de5b555ed4d074f7d17975294345b40f16c7a9f91019c9f67",
@@ -351,7 +455,7 @@
             },
             {
               "kind": "repository",
-              "id": "schema-man",
+              "id": "sch-man",
               "path": "codex-security/plugins/codex-security/schemas/scan-manifest.schema.json",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "4bac4a5b898ebe72d9bf1128f3a8530979159b3c3bfe2c37ccd3c651f47ce234",
@@ -383,6 +487,14 @@
             },
             {
               "kind": "repository",
+              "id": "py-miss",
+              "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
+              "bytes": 147094
+            },
+            {
+              "kind": "repository",
               "id": "py-wr",
               "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
@@ -408,6 +520,14 @@
             {
               "kind": "repository",
               "id": "py-rec-hard",
+              "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
+              "bytes": 147094
+            },
+            {
+              "kind": "repository",
+              "id": "py-fin-hard",
               "path": "codex-security/plugins/codex-security/scripts/finalize_scan_contract.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "339d9f2068634e65147373fe87b4a88c44d4f17d3e36fa06c0fcb3e97b66f8da",
@@ -448,12 +568,12 @@
           ]
         },
         "specification": {
-          "sha256": "36655b5c3e55fa43a05a949a361dc6c22e098057b69eb005ebef8fb30fd89611",
-          "bytes": 32249
+          "sha256": "0f105696e8f375a1baf6135b44283e0cf4d624ad2c91c24f960279b7c7e27f36",
+          "bytes": 40158
         },
         "artifact": {
-          "sha256": "73a91b9fcd4df4dba38122f412d95d120334e589246f1f1b5a4d59f8a4acd96c",
-          "bytes": 2436341
+          "sha256": "b761e3f0e39e7ed0678ca2981217a194910d323b9df5ebc65ce4a8a18558c505",
+          "bytes": 3008907
         },
         "validation": {
           "checksPassed": 4,
@@ -463,6 +583,92 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 86,
+              "component": "prose",
+              "panelId": "behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 3,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 7 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 92,
+              "component": "prose",
+              "panelId": "behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 7 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 7,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 104,
+              "component": "prose",
+              "panelId": "behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 3,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          },
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 34 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 120,
+              "component": "prose",
+              "panelId": "behavior",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 34 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 34,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -474,12 +680,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 7 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.\narchify: This paragraph has 5 sentences and 34 reading units; long paragraphs are what the page should replace."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 313,
+      "durationMs": 346,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -492,15 +699,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "73a91b9fcd4df4dba38122f412d95d120334e589246f1f1b5a4d59f8a4acd96c",
-          "bytes": 2436341
+          "sha256": "b761e3f0e39e7ed0678ca2981217a194910d323b9df5ebc65ce4a8a18558c505",
+          "bytes": 3008907
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "122 unique DOM IDs"
+              "170 unique DOM IDs"
             ]
           },
           {
@@ -512,7 +719,7 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "45 frozen dependencies"
+              "60 frozen dependencies"
             ]
           },
           {
@@ -534,7 +741,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "e36fd07c-e3c8-4ad9-a25a-f3d3b739caa6"
+        "deliveryReceiptId": "02395ce9-62b5-46d9-b7ed-2bbd2e15215c"
       }
     }
   },
@@ -542,14 +749,99 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
+        "line": 86,
+        "component": "prose",
+        "panelId": "behavior"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 3,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 7 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
+        "line": 92,
+        "component": "prose",
+        "panelId": "behavior"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 7 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 7,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
+        "line": 104,
+        "component": "prose",
+        "panelId": "behavior"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 3 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 3,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    },
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 34 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/candidate.archify.md",
+        "line": 120,
+        "component": "prose",
+        "panelId": "behavior"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 34 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 34,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.finalize.json",
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/_group-finding-reports/finding-reports.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T09:19:08.080Z",
-  "durationMs": 1163,
+  "finishedAt": "2026-11-16T04:16:46.592Z",
+  "durationMs": 1248,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

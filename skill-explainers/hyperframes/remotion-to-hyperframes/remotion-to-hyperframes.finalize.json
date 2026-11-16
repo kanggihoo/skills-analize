@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-14T06:06:26.064Z",
+  "startedAt": "2026-11-16T04:00:54.066Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md",
-    "sha256": "6354f7daa72c0fef337bfb06af2cd906e13ec5e2844566128e0842a1d12be7e0",
-    "bytes": 33011
+    "sha256": "72f9ffa6f2542eac684c04e11e3daf6d329160552d6adf9053f266f722a07d70",
+    "bytes": 65575
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.html",
-    "sha256": "5d5fd307099c11e67ed2aa6e90dcaa19889260b75e7e3d32a2d39a984add0327",
-    "bytes": 1695641
+    "sha256": "508493344f146a3cc04c7d8f6a97910d2d15952c3298de74f395ef48e2f44a84",
+    "bytes": 3162857
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "6354f7daa72c0fef337bfb06af2cd906e13ec5e2844566128e0842a1d12be7e0",
-          "bytes": 33011
+          "sha256": "72f9ffa6f2542eac684c04e11e3daf6d329160552d6adf9053f266f722a07d70",
+          "bytes": 65575
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1102,
+      "durationMs": 1774,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "647c87a0-580e-4cc9-be94-fa773124d01c",
+        "receiptId": "58721b44-b0a2-4066-83c1-fc1352aac5d6",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.html",
         "explainer": {
-          "preparedSha256": "7f1cd0698c4d4afa08e8e1b2cacdf28c582abd04b1a94ec9c85e2fdb39d45d0f",
+          "preparedSha256": "9176a83e9aad78dd6b8849e0860e7e37638e6c8b4d58a59fc9c5bb862234da54",
           "dependencies": [
             {
               "kind": "repository",
               "id": "fm",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "plugin",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "beacon",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "levels",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "n1",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "n2",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -137,7 +137,7 @@
               "kind": "repository",
               "id": "n3",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -145,7 +145,7 @@
               "kind": "repository",
               "id": "n4",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -153,7 +153,7 @@
               "kind": "repository",
               "id": "n5",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -161,7 +161,15 @@
               "kind": "repository",
               "id": "maptable",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
+              "bytes": 5188
+            },
+            {
+              "kind": "repository",
+              "id": "catalog",
+              "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -169,7 +177,7 @@
               "kind": "repository",
               "id": "hosted",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -177,7 +185,7 @@
               "kind": "repository",
               "id": "media",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -185,7 +193,7 @@
               "kind": "repository",
               "id": "final",
               "path": "hyperframes/remotion-to-hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "8efa3dfedb1e591f7c2f86321faafd390848fb77d95ae8d55791df0544ca6036",
               "bytes": 5188
             },
@@ -193,47 +201,55 @@
               "kind": "repository",
               "id": "hf-route",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "esc-rules",
+              "id": "hf-lifecycle",
+              "path": "hyperframes/hyperframes/references/skill-lifecycle.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "094f8bc2d2ec3db9f306d9ab2a2d9a60a65e00bbeeb2f1aa4760d92b1f438b6d",
+              "bytes": 4926
+            },
+            {
+              "kind": "repository",
+              "id": "e-block",
               "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
               "bytes": 5403
             },
             {
               "kind": "repository",
-              "id": "esc-interop",
+              "id": "e-interop",
               "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
               "bytes": 5403
             },
             {
               "kind": "repository",
-              "id": "esc-msg",
+              "id": "e-msg",
               "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
               "bytes": 5403
             },
             {
               "kind": "repository",
-              "id": "esc-warn",
+              "id": "e-warn",
               "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
               "bytes": 5403
             },
             {
               "kind": "repository",
-              "id": "esc-both",
+              "id": "e-both",
               "path": "hyperframes/remotion-to-hyperframes/references/escape-hatch.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "047472599b5f38502f8419839740e3fcb2198ddba96211d70331c4ad3b6774c7",
               "bytes": 5403
             },
@@ -241,15 +257,47 @@
               "kind": "repository",
               "id": "lim-refuse",
               "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
               "bytes": 5042
             },
             {
               "kind": "repository",
-              "id": "lim-caveats",
+              "id": "lim-vol",
               "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "lim-loop",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "lim-img",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "lim-pres",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
+              "bytes": 5042
+            },
+            {
+              "kind": "repository",
+              "id": "lim-lazy",
+              "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
               "bytes": 5042
             },
@@ -257,7 +305,7 @@
               "kind": "repository",
               "id": "lim-works",
               "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
               "bytes": 5042
             },
@@ -265,7 +313,7 @@
               "kind": "repository",
               "id": "lim-never",
               "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
               "bytes": 5042
             },
@@ -273,7 +321,7 @@
               "kind": "repository",
               "id": "lim-notes",
               "path": "hyperframes/remotion-to-hyperframes/references/limitations.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "fe5f721523952b454ca5a7bc7bc0579d81f1cd4a1dfb3d010b327f3d1963f4bc",
               "bytes": 5042
             },
@@ -281,7 +329,7 @@
               "kind": "repository",
               "id": "lint-doc",
               "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
               "bytes": 12978
             },
@@ -289,7 +337,31 @@
               "kind": "repository",
               "id": "lint-pkg",
               "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
+              "bytes": 12978
+            },
+            {
+              "kind": "repository",
+              "id": "lint-effect",
+              "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
+              "bytes": 12978
+            },
+            {
+              "kind": "repository",
+              "id": "lint-hook",
+              "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
+              "bytes": 12978
+            },
+            {
+              "kind": "repository",
+              "id": "lint-ui",
+              "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
               "bytes": 12978
             },
@@ -297,7 +369,15 @@
               "kind": "repository",
               "id": "lint-rules",
               "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
+              "bytes": 12978
+            },
+            {
+              "kind": "repository",
+              "id": "lint-paren",
+              "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
               "bytes": 12978
             },
@@ -305,7 +385,7 @@
               "kind": "repository",
               "id": "lint-main",
               "path": "hyperframes/remotion-to-hyperframes/scripts/lint_source.py",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "6043611ad04ce16d2ef5596822eb2887e865ed9759c8e528471b994dff7d88b1",
               "bytes": 12978
             },
@@ -313,7 +393,7 @@
               "kind": "repository",
               "id": "eval-tools",
               "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
               "bytes": 4409
             },
@@ -321,7 +401,15 @@
               "kind": "repository",
               "id": "eval-flow",
               "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
+              "bytes": 4409
+            },
+            {
+              "kind": "repository",
+              "id": "eval-read",
+              "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
               "bytes": 4409
             },
@@ -329,7 +417,15 @@
               "kind": "repository",
               "id": "eval-thr",
               "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
+              "bytes": 4409
+            },
+            {
+              "kind": "repository",
+              "id": "eval-fail",
+              "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
               "bytes": 4409
             },
@@ -337,47 +433,23 @@
               "kind": "repository",
               "id": "eval-ci",
               "path": "hyperframes/remotion-to-hyperframes/references/eval.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "036b11e1b959381e7d21753c89669f53253c03924d58a531f885739c771b3bd7",
               "bytes": 4409
             },
             {
               "kind": "repository",
-              "id": "fonts-noise",
-              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
-              "bytes": 3246
-            },
-            {
-              "kind": "repository",
-              "id": "fonts-inter",
-              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
-              "bytes": 3246
-            },
-            {
-              "kind": "repository",
-              "id": "med-video",
-              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
-              "bytes": 4528
-            },
-            {
-              "kind": "repository",
-              "id": "med-nofile",
-              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
-              "bytes": 4528
-            },
-            {
-              "kind": "repository",
               "id": "tim-conv",
               "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
+              "bytes": 7021
+            },
+            {
+              "kind": "repository",
+              "id": "tim-interp",
+              "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
               "bytes": 7021
             },
@@ -385,7 +457,7 @@
               "kind": "repository",
               "id": "tim-spring",
               "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
               "bytes": 7021
             },
@@ -393,7 +465,15 @@
               "kind": "repository",
               "id": "tim-ease",
               "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
+              "bytes": 7021
+            },
+            {
+              "kind": "repository",
+              "id": "tim-color",
+              "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
               "bytes": 7021
             },
@@ -401,15 +481,63 @@
               "kind": "repository",
               "id": "tim-count",
               "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
               "bytes": 7021
             },
             {
               "kind": "repository",
+              "id": "tim-stagger",
+              "path": "hyperframes/remotion-to-hyperframes/references/timing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "597bad21c9229ef790c2e122879cdbf6e7fc11aa1e3694d5ede0014a1e734192",
+              "bytes": 7021
+            },
+            {
+              "kind": "repository",
+              "id": "seq-core",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "seq-root",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "seq-seq",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "seq-nest",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "seq-series",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
               "id": "seq-fade",
               "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
               "bytes": 6992
             },
@@ -417,15 +545,111 @@
               "kind": "repository",
               "id": "seq-loop",
               "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
               "bytes": 6992
             },
             {
               "kind": "repository",
+              "id": "seq-freeze",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "seq-tracks",
+              "path": "hyperframes/remotion-to-hyperframes/references/sequencing.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5b916e26efcd4d100d097ff25886df463c7d6934bb9bdec1da5ed7189afd13ae",
+              "bytes": 6992
+            },
+            {
+              "kind": "repository",
+              "id": "med-path",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-audio",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-video",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-img",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-iframe",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-delay",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "med-nofile",
+              "path": "hyperframes/remotion-to-hyperframes/references/media.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "0e9861f959298f7171ec709399a236b4575e9530d095a87224bca3365bfb0947",
+              "bytes": 4528
+            },
+            {
+              "kind": "repository",
+              "id": "tr-series",
+              "path": "hyperframes/remotion-to-hyperframes/references/transitions.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
               "id": "tr-table",
               "path": "hyperframes/remotion-to-hyperframes/references/transitions.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "tr-timing",
+              "path": "hyperframes/remotion-to-hyperframes/references/transitions.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "tr-shader",
+              "path": "hyperframes/remotion-to-hyperframes/references/transitions.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
               "bytes": 4500
             },
@@ -433,31 +657,15 @@
               "kind": "repository",
               "id": "tr-custom",
               "path": "hyperframes/remotion-to-hyperframes/references/transitions.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "4d32d654ba5872fc8e55f0559415f61feafcdf20f1918ae724e4d14b76486873",
               "bytes": 4500
             },
             {
               "kind": "repository",
-              "id": "par-async",
-              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
-              "bytes": 4916
-            },
-            {
-              "kind": "repository",
-              "id": "par-arr",
-              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
-              "bytes": 4916
-            },
-            {
-              "kind": "repository",
-              "id": "lot-ae",
+              "id": "lot-pattern",
               "path": "hyperframes/remotion-to-hyperframes/references/lottie.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "1f6b46fb926e07e2a2e629f902da0ec9385a4fdf956660013805f470f5bfafde",
               "bytes": 5044
             },
@@ -465,15 +673,143 @@
               "kind": "repository",
               "id": "lot-dot",
               "path": "hyperframes/remotion-to-hyperframes/references/lottie.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "1f6b46fb926e07e2a2e629f902da0ec9385a4fdf956660013805f470f5bfafde",
               "bytes": 5044
             },
             {
               "kind": "repository",
+              "id": "lot-ae",
+              "path": "hyperframes/remotion-to-hyperframes/references/lottie.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "1f6b46fb926e07e2a2e629f902da0ec9385a4fdf956660013805f470f5bfafde",
+              "bytes": 5044
+            },
+            {
+              "kind": "repository",
+              "id": "lot-loop",
+              "path": "hyperframes/remotion-to-hyperframes/references/lottie.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "1f6b46fb926e07e2a2e629f902da0ec9385a4fdf956660013805f470f5bfafde",
+              "bytes": 5044
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-noise",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-google",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-local",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-sys",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-inter",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "fonts-weights",
+              "path": "hyperframes/remotion-to-hyperframes/references/fonts.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "c7f59567c1f6d560c8c6f95577a86fabfafdc7517a5d7eaebb73d564ad955ad6",
+              "bytes": 3246
+            },
+            {
+              "kind": "repository",
+              "id": "par-sync",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-async",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-default",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-array",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-num",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-zod",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "par-derived",
+              "path": "hyperframes/remotion-to-hyperframes/references/parameters.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "eabfa937f1613fb5d14e6e1d160d48864682c04edd5ff843d179fa9e786f362a",
+              "bytes": 4916
+            },
+            {
+              "kind": "repository",
+              "id": "api-trans",
+              "path": "hyperframes/remotion-to-hyperframes/references/api-map.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "9f92de58615a32e45032e6d06edd1027bec3bc098a5f9f7cf67e76b24a4950f5",
+              "bytes": 16476
+            },
+            {
+              "kind": "repository",
               "id": "api-box",
               "path": "hyperframes/remotion-to-hyperframes/references/api-map.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "9f92de58615a32e45032e6d06edd1027bec3bc098a5f9f7cf67e76b24a4950f5",
               "bytes": 16476
             },
@@ -481,41 +817,87 @@
               "kind": "repository",
               "id": "api-react",
               "path": "hyperframes/remotion-to-hyperframes/references/api-map.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "9f92de58615a32e45032e6d06edd1027bec3bc098a5f9f7cf67e76b24a4950f5",
               "bytes": 16476
             },
             {
               "kind": "repository",
-              "id": "api-bow",
+              "id": "api-dist",
               "path": "hyperframes/remotion-to-hyperframes/references/api-map.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "9f92de58615a32e45032e6d06edd1027bec3bc098a5f9f7cf67e76b24a4950f5",
               "bytes": 16476
+            },
+            {
+              "kind": "repository",
+              "id": "run-diff",
+              "path": "hyperframes/remotion-to-hyperframes/assets/test-corpus/run.sh",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "ca2f56842f286b27348e40bc04bd0c10cee2d1f7b884c09a03cd3520ce9d55fb",
+              "bytes": 8598
+            },
+            {
+              "kind": "repository",
+              "id": "run-agg",
+              "path": "hyperframes/remotion-to-hyperframes/assets/test-corpus/run.sh",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "ca2f56842f286b27348e40bc04bd0c10cee2d1f7b884c09a03cd3520ce9d55fb",
+              "bytes": 8598
+            },
+            {
+              "kind": "repository",
+              "id": "t3-stage",
+              "path": "hyperframes/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/hf-src/index.html",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "340d555c8ea9637fa5b30f55e42edba4264e92cdb3b22a5cd1c083a54711f038",
+              "bytes": 1757
+            },
+            {
+              "kind": "repository",
+              "id": "t4-validate",
+              "path": "hyperframes/remotion-to-hyperframes/assets/test-corpus/tier-4-escape-hatch/validate.sh",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "75abb2f5a9d39591e75712113fd2a9ebe6bcae911b7bda33a1209aff101446b7",
+              "bytes": 3534
             },
             {
               "kind": "diagram-spec",
               "id": "level-choice",
               "inline": true,
-              "sha256": "dcd94014afdd99f900b53b86105bab62fd56e3cdad500d4ffaa9d8a0433ae7b1",
-              "bytes": 1483
+              "sha256": "1c61cdf149cb5fad9a054d7b0f94de2cb959249c2e2fff081d33f43ff3e02380",
+              "bytes": 1500
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "blocker-gate",
+              "inline": true,
+              "sha256": "141dd1242504df86082d4b9852e4d6a201f85297f96a19b2eedc0a3d079bf561",
+              "bytes": 1422
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "native-flow",
+              "inline": true,
+              "sha256": "e2e7df7e03baf861a7373315e07a9c536d785bd6dfec4e9fedef43ae3be78f16",
+              "bytes": 1621
             },
             {
               "kind": "diagram-spec",
               "id": "position-flow",
               "inline": true,
-              "sha256": "4338a82b33c6954288dba13ce70f7af8e26e841d19da0e690dde555813575aca",
-              "bytes": 938
+              "sha256": "4c80b76147f0cdfcaa24c245933a28b1e25671420a57c58437fdf3fa762c5c78",
+              "bytes": 883
             }
           ]
         },
         "specification": {
-          "sha256": "6354f7daa72c0fef337bfb06af2cd906e13ec5e2844566128e0842a1d12be7e0",
-          "bytes": 33011
+          "sha256": "72f9ffa6f2542eac684c04e11e3daf6d329160552d6adf9053f266f722a07d70",
+          "bytes": 65575
         },
         "artifact": {
-          "sha256": "5d5fd307099c11e67ed2aa6e90dcaa19889260b75e7e3d32a2d39a984add0327",
-          "bytes": 1695641
+          "sha256": "508493344f146a3cc04c7d8f6a97910d2d15952c3298de74f395ef48e2f44a84",
+          "bytes": 3162857
         },
         "validation": {
           "checksPassed": 4,
@@ -525,6 +907,29 @@
           "errors": 0,
           "warnings": 0
         },
+        "diagnostics": [
+          {
+            "code": "explainer/writing-paragraph-length",
+            "severity": "warning",
+            "message": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+            "subject": {
+              "line": 239,
+              "component": "prose",
+              "panelId": "activation",
+              "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md"
+            },
+            "evidence": {
+              "rule": "paragraph-length",
+              "reason": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+              "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+              "units": 18,
+              "limit": 120
+            },
+            "supportedFixes": [
+              "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+            ]
+          }
+        ],
         "update": {
           "status": "unavailable",
           "installedVersion": null,
@@ -536,12 +941,13 @@
           "noticeText": null,
           "reason": "disabled"
         }
-      }
+      },
+      "stderr": "archify: This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace."
     },
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 572,
+      "durationMs": 966,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -554,15 +960,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "5d5fd307099c11e67ed2aa6e90dcaa19889260b75e7e3d32a2d39a984add0327",
-          "bytes": 1695641
+          "sha256": "508493344f146a3cc04c7d8f6a97910d2d15952c3298de74f395ef48e2f44a84",
+          "bytes": 3162857
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "196 unique DOM IDs"
+              "377 unique DOM IDs"
             ]
           },
           {
@@ -574,7 +980,7 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "53 frozen dependencies"
+              "101 frozen dependencies"
             ]
           },
           {
@@ -582,6 +988,8 @@
             "ok": true,
             "details": [
               "level-choice: pass",
+              "blocker-gate: pass",
+              "native-flow: pass",
               "position-flow: pass"
             ]
           }
@@ -600,10 +1008,10 @@
               "id": "level-choice",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-3UssVh/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-xAuV1x/child.html",
                 "artifact": {
-                  "sha256": "1f3618c4c179228fa0f5bf5d8386c2ed5f54459e792874a04f64e906369072f0",
-                  "bytes": 838965
+                  "sha256": "dc376dd2a68cc487d92bab923d85676f44ef18c7485852719a253674715d855c",
+                  "bytes": 838994
                 },
                 "checks": [
                   {
@@ -673,7 +1081,7 @@
                     "minLabelRouteClearance": 27,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 7.078972407231208,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
@@ -711,13 +1119,267 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "blk-to-hosted-1",
+                      "id": "clock-to-html-1",
+                      "from": "clock",
+                      "to": "html"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.078972407231208,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "blocker-gate",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-VWrgr7/child.html",
+                "artifact": {
+                  "sha256": "468216eedc54b516a8547132c759d249d667cc90b3fa1d7fc4d719cf63d1deac",
+                  "bytes": 838664
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 13,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 11.6,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "blk-to-stop-1",
                       "from": "blk",
-                      "to": "hosted"
+                      "to": "stop"
                     },
                     "minimumSourceTextPx": 8,
                     "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 13
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "native-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-sa9vjk/child.html",
+                "artifact": {
+                  "sha256": "50caa0a3cc8be30975c965576ed4fffb92b543ac0d103a58b2d8b5de67773f20",
+                  "bytes": 838642
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 16.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 2,
+                    "shortEndpointSegmentCount": 2,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "diagnose-to-translate-1",
+                      "from": "diagnose",
+                      "to": "translate"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 10
                   },
                   "issues": []
                 }
@@ -727,10 +1389,10 @@
               "id": "position-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-mfMVH1/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-LiBtaH/child.html",
                 "artifact": {
-                  "sha256": "c5610bb9cd8f1eb6ce8586e2b7e20539ce99ef39ec832dc351022747fddf0975",
-                  "bytes": 833034
+                  "sha256": "b7f28564e20a8b5a78332ed0ad5ea35e3b117cee097f162a93e551fb026a1582",
+                  "bytes": 832938
                 },
                 "checks": [
                   {
@@ -800,7 +1462,7 @@
                     "minLabelRouteClearance": 104,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 6.560846560846561,
+                    "minProjectedNodeTextPx": 6.7574931880108995,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
@@ -843,7 +1505,7 @@
                       "to": "self"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 6.560846560846561,
+                    "minimumProjectedTextPx": 6.7574931880108995,
                     "semanticTextCount": 7
                   },
                   "issues": []
@@ -854,7 +1516,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "647c87a0-580e-4cc9-be94-fa773124d01c"
+        "deliveryReceiptId": "58721b44-b0a2-4066-83c1-fc1352aac5d6"
       }
     }
   },
@@ -862,14 +1524,36 @@
     "requested": false,
     "ran": false
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md",
+        "line": 239,
+        "component": "prose",
+        "panelId": "activation"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 18,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    }
+  ],
   "evidence": {
     "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.finalize.json",
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-14T06:06:27.879Z",
-  "durationMs": 1814,
+  "finishedAt": "2026-11-16T04:00:56.961Z",
+  "durationMs": 2895,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-14T06:03:18.387Z",
+  "startedAt": "2026-11-16T03:54:45.521Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/candidate.archify.md",
-    "sha256": "9c390224e573615e2486c515d123ca7537348c08930b19fd88fbf000668eed9c",
-    "bytes": 21470
+    "sha256": "bd80c8362103db23ac9ff3e383c7f726fc72cc22f261ba78b277e4d425d4638d",
+    "bytes": 36555
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/slideshow.html",
-    "sha256": "7ed688b508059fcc1118a0ccd053744af50b9ee9ce82514bf8ea9849e2052c85",
-    "bytes": 1652827
+    "sha256": "bc3175690cd9a16bfdd8c361438e5bc3ee5ea78edb4c367c37f93318a1d9dd34",
+    "bytes": 2314405
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "9c390224e573615e2486c515d123ca7537348c08930b19fd88fbf000668eed9c",
-          "bytes": 21470
+          "sha256": "bd80c8362103db23ac9ff3e383c7f726fc72cc22f261ba78b277e4d425d4638d",
+          "bytes": 36555
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 3644,
+      "durationMs": 1180,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,18 +76,18 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "23721fb4-0e63-4147-b755-cf2ebba411b1",
+        "receiptId": "9d956e98-d2fa-4e2a-af68-c53335a7599d",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/slideshow.html",
         "explainer": {
-          "preparedSha256": "7425655ec4c1649fddd1274f43b9e7cad55990e1ff5f431b7b9777f0d7ca4db9",
+          "preparedSha256": "6dfacc55b42534888b9e614ad7091147b9db2f6a4557542ebe95d0caecac75ea",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "front",
+              "id": "s-front",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -95,7 +95,7 @@
             },
             {
               "kind": "repository",
-              "id": "plugin",
+              "id": "s-plugin",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -103,7 +103,7 @@
             },
             {
               "kind": "repository",
-              "id": "beacon",
+              "id": "s-beacon",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -111,7 +111,7 @@
             },
             {
               "kind": "repository",
-              "id": "intro",
+              "id": "s-intro",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -119,7 +119,7 @@
             },
             {
               "kind": "repository",
-              "id": "scene",
+              "id": "s-scene",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -127,7 +127,7 @@
             },
             {
               "kind": "repository",
-              "id": "island-rule",
+              "id": "s-island-rule",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -135,7 +135,7 @@
             },
             {
               "kind": "repository",
-              "id": "island-ex",
+              "id": "s-island-ex",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -143,7 +143,7 @@
             },
             {
               "kind": "repository",
-              "id": "fields",
+              "id": "s-fields",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -151,7 +151,7 @@
             },
             {
               "kind": "repository",
-              "id": "fragments",
+              "id": "s-fragments",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -159,7 +159,7 @@
             },
             {
               "kind": "repository",
-              "id": "branch",
+              "id": "s-branch",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -167,7 +167,7 @@
             },
             {
               "kind": "repository",
-              "id": "text40",
+              "id": "s-legible",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -175,7 +175,7 @@
             },
             {
               "kind": "repository",
-              "id": "port",
+              "id": "s-port",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -183,7 +183,7 @@
             },
             {
               "kind": "repository",
-              "id": "never",
+              "id": "s-never",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -191,7 +191,7 @@
             },
             {
               "kind": "repository",
-              "id": "check",
+              "id": "s-check",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -199,7 +199,7 @@
             },
             {
               "kind": "repository",
-              "id": "serve",
+              "id": "s-serve",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -207,7 +207,7 @@
             },
             {
               "kind": "repository",
-              "id": "rootindex",
+              "id": "s-root",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -215,7 +215,7 @@
             },
             {
               "kind": "repository",
-              "id": "share",
+              "id": "s-share",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -223,7 +223,7 @@
             },
             {
               "kind": "repository",
-              "id": "bare",
+              "id": "s-bare",
               "path": "hyperframes/slideshow/SKILL.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "f4d67791536d8c4689e2cd1aa25330cde43cd924f7ca47e6877ac6bbb280dfe8",
@@ -263,6 +263,14 @@
             },
             {
               "kind": "repository",
+              "id": "h-bridge-code",
+              "path": "hyperframes/slideshow/references/standalone-harness.md",
+              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+              "bytes": 44277
+            },
+            {
+              "kind": "repository",
               "id": "h-viz",
               "path": "hyperframes/slideshow/references/standalone-harness.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
@@ -295,6 +303,14 @@
             },
             {
               "kind": "repository",
+              "id": "h-scenes",
+              "path": "hyperframes/slideshow/references/standalone-harness.md",
+              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+              "bytes": 44277
+            },
+            {
+              "kind": "repository",
               "id": "h-entr",
               "path": "hyperframes/slideshow/references/standalone-harness.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
@@ -311,7 +327,15 @@
             },
             {
               "kind": "repository",
-              "id": "h-audio",
+              "id": "h-audio-media",
+              "path": "hyperframes/slideshow/references/standalone-harness.md",
+              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
+              "bytes": 44277
+            },
+            {
+              "kind": "repository",
+              "id": "h-sfx",
               "path": "hyperframes/slideshow/references/standalone-harness.md",
               "revision": "f85af643f25876081562e9820cd87fb45a478480",
               "sha256": "0f12d69a9c05a801291d923c7b1dbe666b29f3b68f6bb73d7c80681ae09df7e9",
@@ -337,18 +361,25 @@
               "kind": "diagram-spec",
               "id": "deck-flow",
               "inline": true,
-              "sha256": "8af03c509c7e7f548f6b92b6f6a849065186c90ff5ef634242bf92395e0e918c",
-              "bytes": 1353
+              "sha256": "6df023805b3d1321ec624f0eab0dc19f1c5447aca8dc04acd760406fdc090cc6",
+              "bytes": 2038
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "harness-map",
+              "inline": true,
+              "sha256": "de6abe5b15eaa6c57d2573ccf562ea8ea2c33adbb417b764581aea2cbdf54040",
+              "bytes": 1171
             }
           ]
         },
         "specification": {
-          "sha256": "9c390224e573615e2486c515d123ca7537348c08930b19fd88fbf000668eed9c",
-          "bytes": 21470
+          "sha256": "bd80c8362103db23ac9ff3e383c7f726fc72cc22f261ba78b277e4d425d4638d",
+          "bytes": 36555
         },
         "artifact": {
-          "sha256": "7ed688b508059fcc1118a0ccd053744af50b9ee9ce82514bf8ea9849e2052c85",
-          "bytes": 1652827
+          "sha256": "bc3175690cd9a16bfdd8c361438e5bc3ee5ea78edb4c367c37f93318a1d9dd34",
+          "bytes": 2314405
         },
         "validation": {
           "checksPassed": 4,
@@ -374,7 +405,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 500,
+      "durationMs": 621,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -387,15 +418,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/slideshow.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "7ed688b508059fcc1118a0ccd053744af50b9ee9ce82514bf8ea9849e2052c85",
-          "bytes": 1652827
+          "sha256": "bc3175690cd9a16bfdd8c361438e5bc3ee5ea78edb4c367c37f93318a1d9dd34",
+          "bytes": 2314405
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "131 unique DOM IDs"
+              "158 unique DOM IDs"
             ]
           },
           {
@@ -407,14 +438,15 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "32 frozen dependencies"
+              "36 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "deck-flow: pass"
+              "deck-flow: pass",
+              "harness-map: pass"
             ]
           }
         ],
@@ -432,10 +464,10 @@
               "id": "deck-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-n3WhLj/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-dm1ARH/child.html",
                 "artifact": {
-                  "sha256": "bd0f1b8f192715ef654b2e2f603bd59f7b9ebf356a66943b9ecba1bf3cd0b02f",
-                  "bytes": 837792
+                  "sha256": "37033eb4fe87fb20fa1149ad759c5749376c58f4c526dd636f25e667a34ca226",
+                  "bytes": 844350
                 },
                 "checks": [
                   {
@@ -502,18 +534,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 20.2,
+                    "minLabelRouteClearance": 20,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 7.251461988304094,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 4,
-                    "shortEndpointSegmentCount": 4,
+                    "shortSegmentCount": 6,
+                    "shortEndpointSegmentCount": 6,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -548,8 +580,271 @@
                       "to": "lint"
                     },
                     "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.251461988304094,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "harness-map",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-zfwxer/child.html",
+                "artifact": {
+                  "sha256": "ab78516322b5780152c6c18f9749020f72794acdf94a04894aa7c11dc0fc21de",
+                  "bytes": 839174
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 4,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 4,
+                    "routesOverSuggestedBends": 3,
+                    "maxStretch": 1.364,
+                    "routesOverSuggestedStretch": 1,
+                    "minSegmentPx": 24,
+                    "minInteriorSegmentPx": 42,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [
+                      {
+                        "left": {
+                          "id": "parent-to-player-1",
+                          "from": "parent",
+                          "to": "player",
+                          "label": "감싼다",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "right": {
+                          "id": "comp-to-parent-1",
+                          "from": "comp",
+                          "to": "parent",
+                          "label": "postMessage",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "point": [
+                          79,
+                          164
+                        ],
+                        "sharedNode": "parent"
+                      },
+                      {
+                        "left": {
+                          "id": "parent-to-player-1",
+                          "from": "parent",
+                          "to": "player",
+                          "label": "감싼다",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "right": {
+                          "id": "parent-to-audience-1",
+                          "from": "parent",
+                          "to": "audience",
+                          "label": "BroadcastChannel",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "point": [
+                          79,
+                          189.5
+                        ],
+                        "sharedNode": "parent"
+                      },
+                      {
+                        "left": {
+                          "id": "player-to-comp-1",
+                          "from": "player",
+                          "to": "comp",
+                          "label": "iframe",
+                          "collectionIndex": 2,
+                          "artifactIndex": 3
+                        },
+                        "right": {
+                          "id": "comp-to-parent-1",
+                          "from": "comp",
+                          "to": "parent",
+                          "label": "postMessage",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "point": [
+                          112.95000000000003,
+                          563
+                        ],
+                        "sharedNode": "comp"
+                      },
+                      {
+                        "left": {
+                          "id": "comp-to-parent-1",
+                          "from": "comp",
+                          "to": "parent",
+                          "label": "postMessage",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "right": {
+                          "id": "parent-to-audience-1",
+                          "from": "parent",
+                          "to": "audience",
+                          "label": "BroadcastChannel",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "point": [
+                          93,
+                          164
+                        ],
+                        "sharedNode": "parent"
+                      }
+                    ],
+                    "detours": [
+                      {
+                        "relationship": {
+                          "id": "parent-to-player-1",
+                          "from": "parent",
+                          "to": "player",
+                          "label": "감싼다",
+                          "collectionIndex": 1,
+                          "artifactIndex": 2
+                        },
+                        "bends": 4,
+                        "stretch": 1.247
+                      },
+                      {
+                        "relationship": {
+                          "id": "comp-to-parent-1",
+                          "from": "comp",
+                          "to": "parent",
+                          "label": "postMessage",
+                          "collectionIndex": 3,
+                          "artifactIndex": 4
+                        },
+                        "bends": 4,
+                        "stretch": 1.364
+                      },
+                      {
+                        "relationship": {
+                          "id": "parent-to-audience-1",
+                          "from": "parent",
+                          "to": "audience",
+                          "label": "BroadcastChannel",
+                          "collectionIndex": 4,
+                          "artifactIndex": 5
+                        },
+                        "bends": 4,
+                        "stretch": 1.208
+                      }
+                    ]
+                  },
+                  "leadingSpace": {
+                    "measured": true,
+                    "emptyTopPx": 80,
+                    "emptyTopRatio": 0.079,
+                    "occupiedTop": 80,
+                    "viewBoxTop": 0,
+                    "canvasHeight": 1018,
+                    "typicalNodeHeight": 60,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "parent-to-island-1",
+                      "from": "parent",
+                      "to": "island"
+                    },
+                    "minimumSourceTextPx": 8,
                     "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 9
+                    "semanticTextCount": 10
                   },
                   "issues": []
                 }
@@ -559,7 +854,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "23721fb4-0e63-4147-b755-cf2ebba411b1"
+        "deliveryReceiptId": "9d956e98-d2fa-4e2a-af68-c53335a7599d"
       }
     }
   },
@@ -573,8 +868,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/slideshow/slideshow.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-14T06:03:22.779Z",
-  "durationMs": 4392,
+  "finishedAt": "2026-11-16T03:54:47.477Z",
+  "durationMs": 1955,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

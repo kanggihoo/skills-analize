@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T08:44:20.374Z",
+  "startedAt": "2026-11-16T04:12:32.943Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/candidate.archify.md",
-    "sha256": "c16657e8160a35ea2ff2a7f071607c87066691dc5446d7b07388670a1aece233",
-    "bytes": 37244
+    "sha256": "2b5401b784cbb10ddce4852be787f335f93ff3b07b0e21c97b40c8762383a706",
+    "bytes": 50311
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/threat-model-visualize.html",
-    "sha256": "910dd3da4bd41d1b292bea4e68787f16faa747099fdcf3604c24e20a656f678c",
-    "bytes": 2610020
+    "sha256": "c451572fe8ab4baf3fe9459068f64e749b571699a2ab545d1f0245988a38fa89",
+    "bytes": 3015901
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "c16657e8160a35ea2ff2a7f071607c87066691dc5446d7b07388670a1aece233",
-          "bytes": 37244
+          "sha256": "2b5401b784cbb10ddce4852be787f335f93ff3b07b0e21c97b40c8762383a706",
+          "bytes": 50311
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1191,
+      "durationMs": 1459,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,20 +76,20 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "7866c780-6e03-4425-b101-b87e81a70a22",
+        "receiptId": "0a6346eb-21e6-439a-ba6e-be3f35d8d000",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/threat-model-visualize.html",
         "explainer": {
-          "preparedSha256": "36f26db0d42afe196be1e864a07bd4336f26098dcb9f4c13b15edce2c2dbe2d0",
+          "preparedSha256": "7cdd504c08a214eac6db2789922aff31905dea2be039b2fd187fc028c5a48f24",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "fm",
+              "id": "skill-md",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -97,7 +97,7 @@
               "kind": "repository",
               "id": "purpose",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -105,7 +105,7 @@
               "kind": "repository",
               "id": "req",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -113,7 +113,7 @@
               "kind": "repository",
               "id": "regen",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -121,7 +121,7 @@
               "kind": "repository",
               "id": "inv-when",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -129,7 +129,7 @@
               "kind": "repository",
               "id": "inv-rec",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
@@ -137,143 +137,127 @@
               "kind": "repository",
               "id": "inv-rev",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "compose-arch",
+              "id": "c-arch",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "compose-cover",
+              "id": "c-cover",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "compose-bind",
+              "id": "c-bind",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "compose-ctrl",
+              "id": "c-ctrl",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "rev-when",
+              "id": "rv-when",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "rev-obl",
+              "id": "rv-obl",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "rev-modes",
+              "id": "rv-modes",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "rev-find",
+              "id": "rv-find",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "rev-receipt",
+              "id": "rv-receipt",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "build",
+              "id": "b-cmd",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "browser",
+              "id": "b-browser",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "warn",
+              "id": "b-warn",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "qa",
+              "id": "b-qa",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "deliver",
+              "id": "b-deliver",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "96e1a7517575ee419284d219f5a6e75d9a7825ae499480bd78b7393b544b106a",
               "bytes": 19102
             },
             {
               "kind": "repository",
-              "id": "readme-call",
-              "path": "codex-security/plugins/codex-security/skills/README.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
-              "bytes": 3752
-            },
-            {
-              "kind": "repository",
-              "id": "readme-tmv",
-              "path": "codex-security/plugins/codex-security/skills/README.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
-              "bytes": 3752
-            },
-            {
-              "kind": "repository",
-              "id": "vm-head",
+              "id": "vm-intro",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -281,7 +265,7 @@
               "kind": "repository",
               "id": "vm-map",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -289,7 +273,7 @@
               "kind": "repository",
               "id": "vm-route",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -297,7 +281,7 @@
               "kind": "repository",
               "id": "vm-src",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -305,7 +289,7 @@
               "kind": "repository",
               "id": "vm-ctrl",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -313,7 +297,7 @@
               "kind": "repository",
               "id": "vm-evid",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/view-model.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "05c81e732bca0b64b182329e68d47900d18da5b3c22354b11f2a0183d890b019",
               "bytes": 12062
             },
@@ -321,7 +305,15 @@
               "kind": "repository",
               "id": "ce-pal",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/context-explorer.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "2ec94ffc33589100cead235eacdb6ce80596272c12285532ae4a682b064fbed9",
+              "bytes": 5636
+            },
+            {
+              "kind": "repository",
+              "id": "ce-arch",
+              "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/context-explorer.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "2ec94ffc33589100cead235eacdb6ce80596272c12285532ae4a682b064fbed9",
               "bytes": 5636
             },
@@ -329,7 +321,7 @@
               "kind": "repository",
               "id": "ce-prop",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/context-explorer.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "2ec94ffc33589100cead235eacdb6ce80596272c12285532ae4a682b064fbed9",
               "bytes": 5636
             },
@@ -337,7 +329,7 @@
               "kind": "repository",
               "id": "ce-geo",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/context-explorer.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "2ec94ffc33589100cead235eacdb6ce80596272c12285532ae4a682b064fbed9",
               "bytes": 5636
             },
@@ -345,7 +337,7 @@
               "kind": "repository",
               "id": "ce-qa",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/references/context-explorer.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "2ec94ffc33589100cead235eacdb6ce80596272c12285532ae4a682b064fbed9",
               "bytes": 5636
             },
@@ -353,23 +345,23 @@
               "kind": "repository",
               "id": "py-top",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
             {
               "kind": "repository",
-              "id": "py-val",
+              "id": "py-graph",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
             {
               "kind": "repository",
-              "id": "py-route",
+              "id": "py-routes",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
@@ -377,15 +369,15 @@
               "kind": "repository",
               "id": "py-ctrl",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
             {
               "kind": "repository",
-              "id": "py-evid",
+              "id": "py-quote",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
@@ -393,7 +385,7 @@
               "kind": "repository",
               "id": "py-warn",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
@@ -401,15 +393,23 @@
               "kind": "repository",
               "id": "py-main",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/scripts/build_explorer.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "d2036f1d8783b6d3b5a7673412b80ba6f9d2e63112f8fd8802fee1395964c90f",
               "bytes": 27557
             },
             {
               "kind": "repository",
-              "id": "fx",
+              "id": "fx-scope",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/control-effects.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "667abbdc09dbe20428db6eda6d12c46d1b6630ed981bf6a7eefc4fb02c671763",
+              "bytes": 4005
+            },
+            {
+              "kind": "repository",
+              "id": "fx-caption",
+              "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/control-effects.js",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "667abbdc09dbe20428db6eda6d12c46d1b6630ed981bf6a7eefc4fb02c671763",
               "bytes": 4005
             },
@@ -417,7 +417,7 @@
               "kind": "repository",
               "id": "rp",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/route-paths.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "54edff9691a35a118653fcf5e128f9402fb3cc602bf25c0875514dbf328a40ae",
               "bytes": 3648
             },
@@ -425,7 +425,7 @@
               "kind": "repository",
               "id": "sr",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/source-roles.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "a304027486857462974783c12d6bfd8f09dadc7cabd2e7ed0e8fe2b7862c1ece",
               "bytes": 2762
             },
@@ -433,15 +433,15 @@
               "kind": "repository",
               "id": "ex-hash",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/explorer.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "117c772583d29a504137e5fefeb62bd996050175f3da5d40f214b471d072481f",
               "bytes": 42283
             },
             {
               "kind": "repository",
-              "id": "ex-layout",
+              "id": "ex-map",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/explorer.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "117c772583d29a504137e5fefeb62bd996050175f3da5d40f214b471d072481f",
               "bytes": 42283
             },
@@ -449,15 +449,15 @@
               "kind": "repository",
               "id": "ex-evid",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/explorer.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "117c772583d29a504137e5fefeb62bd996050175f3da5d40f214b471d072481f",
               "bytes": 42283
             },
             {
               "kind": "repository",
-              "id": "ex-down",
+              "id": "ex-export",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/explorer.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "117c772583d29a504137e5fefeb62bd996050175f3da5d40f214b471d072481f",
               "bytes": 42283
             },
@@ -465,23 +465,15 @@
               "kind": "repository",
               "id": "sl-node",
               "path": "codex-security/plugins/codex-security/skills/threat-model-visualize/assets/svg-layout.js",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "9404259952ae08a80e4877b1ac28781d453974c0d1828fb46bbec172c50f42cf",
               "bytes": 11530
             },
             {
               "kind": "repository",
-              "id": "test-readme",
-              "path": "codex-security/plugins/codex-security/tests/threat-model-visualize/browser/README.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5ed0b55b3e22c9f3175b1bbfa0318584ef93e82ab07bb5feb23c08178f1aed73",
-              "bytes": 1754
-            },
-            {
-              "kind": "repository",
               "id": "art-model",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
@@ -489,39 +481,23 @@
               "kind": "repository",
               "id": "art-supp",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
             },
             {
               "kind": "repository",
-              "id": "tm-ret",
-              "path": "codex-security/plugins/codex-security/skills/threat-model/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "79a1b6282f80804227a28f9a1fae71bbfcd6928c1de5d2c84ab0ebf9c1f49226",
-              "bytes": 2986
-            },
-            {
-              "kind": "repository",
               "id": "sa-doc",
               "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
               "bytes": 11701
             },
             {
               "kind": "repository",
-              "id": "tmd",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/threat-model-document.ts",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5f7fdecb62f4cb1436272abae4e927123f7f0a89b396853e7405a806dddfa031",
-              "bytes": 2657
-            },
-            {
-              "kind": "repository",
               "id": "ds-model",
               "path": "codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
               "bytes": 5405
             },
@@ -529,49 +505,40 @@
               "kind": "repository",
               "id": "sc-model",
               "path": "codex-security/plugins/codex-security/references/scan-contract.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
               "bytes": 16529
             },
             {
-              "kind": "repository",
-              "id": "fork-core",
-              "path": "codex-security/plugins/codex-security/references/core-scan.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
-              "bytes": 7479
-            },
-            {
-              "kind": "repository",
-              "id": "lock",
-              "path": "codex-security/skills-lock.json",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "e6be246bd87f1895bbb82802540f875bb98c410b6a1e1c9db87ca98e2f62a8c9",
-              "bytes": 6525
+              "kind": "diagram-spec",
+              "id": "prepare-flow",
+              "inline": true,
+              "sha256": "d295f1fc1f8830dc97af83976d62291d44dac19f3dd1bc558c5b878809cb0ad9",
+              "bytes": 1287
             },
             {
               "kind": "diagram-spec",
-              "id": "phase-flow",
+              "id": "review-flow",
               "inline": true,
-              "sha256": "66a604991cf36b4886130c7daa9bd7e26a2729d3802dd74f522ec0b4b99b7966",
-              "bytes": 1825
+              "sha256": "20fef878cefd5fc592c1e6f4f0fa9a9b22bed3f626780fecba454ed7bc2af165",
+              "bytes": 1437
             },
             {
               "kind": "diagram-spec",
               "id": "position-flow",
               "inline": true,
-              "sha256": "b494ebecee82ab7eabd0da2b1728aae3222235e8db8780150ce783e7fa90af79",
-              "bytes": 958
+              "sha256": "2be8a06e0c529ac12260689f82945f1d5c6a8de550c51b26401aefda1af21def",
+              "bytes": 985
             }
           ]
         },
         "specification": {
-          "sha256": "c16657e8160a35ea2ff2a7f071607c87066691dc5446d7b07388670a1aece233",
-          "bytes": 37244
+          "sha256": "2b5401b784cbb10ddce4852be787f335f93ff3b07b0e21c97b40c8762383a706",
+          "bytes": 50311
         },
         "artifact": {
-          "sha256": "910dd3da4bd41d1b292bea4e68787f16faa747099fdcf3604c24e20a656f678c",
-          "bytes": 2610020
+          "sha256": "c451572fe8ab4baf3fe9459068f64e749b571699a2ab545d1f0245988a38fa89",
+          "bytes": 3015901
         },
         "validation": {
           "checksPassed": 4,
@@ -597,7 +564,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 620,
+      "durationMs": 769,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -610,15 +577,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/threat-model-visualize.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "910dd3da4bd41d1b292bea4e68787f16faa747099fdcf3604c24e20a656f678c",
-          "bytes": 2610020
+          "sha256": "c451572fe8ab4baf3fe9459068f64e749b571699a2ab545d1f0245988a38fa89",
+          "bytes": 3015901
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "195 unique DOM IDs"
+              "211 unique DOM IDs"
             ]
           },
           {
@@ -630,14 +597,15 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "60 frozen dependencies"
+              "56 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "phase-flow: pass",
+              "prepare-flow: pass",
+              "review-flow: pass",
               "position-flow: pass"
             ]
           }
@@ -653,13 +621,13 @@
           "issues": [],
           "nativeDiagrams": [
             {
-              "id": "phase-flow",
+              "id": "prepare-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-paW08w/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-j2bR0Y/child.html",
                 "artifact": {
-                  "sha256": "de911c09759d8db1603732e55fb8b5653e3cc4021d44e3bfc2c73ad37b4a03e7",
-                  "bytes": 842866
+                  "sha256": "8090b952a05f6ff544558445af22527ec3c9ef55ef6e896b09a917fb73b10500",
+                  "bytes": 836595
                 },
                 "checks": [
                   {
@@ -726,18 +694,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 22,
+                    "minLabelRouteClearance": 59,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 6.940298507462686,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 8,
+                    "minSegmentPx": 19,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 7,
-                    "shortEndpointSegmentCount": 7,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -767,13 +735,140 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "pass-to-build-1",
-                      "from": "pass",
-                      "to": "build"
+                      "id": "found-to-inv-1",
+                      "from": "found",
+                      "to": "inv"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 6.940298507462686,
+                    "semanticTextCount": 9
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "review-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-igTi08/child.html",
+                "artifact": {
+                  "sha256": "b822ff4a1f06b7c1a3ed5c87f6c1d6cf2af15144224b68f66c6334ad6f925bb8",
+                  "bytes": 839444
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 28.6,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 8,
+                    "shortEndpointSegmentCount": 8,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "fix-to-review-1",
+                      "from": "fix",
+                      "to": "review"
                     },
                     "minimumSourceTextPx": 8,
                     "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 14
+                    "semanticTextCount": 10
                   },
                   "issues": []
                 }
@@ -783,10 +878,10 @@
               "id": "position-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-eIr4mQ/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-RlO5Lq/child.html",
                 "artifact": {
-                  "sha256": "3a92fdd560c914f121123dcb0927a4e42f0cf55486a3c05a3163766de0d03be8",
-                  "bytes": 834311
+                  "sha256": "d438691bc2914392e07adcfa9acb58ad5a59a913a6c29fa025128a73b986847a",
+                  "bytes": 834505
                 },
                 "checks": [
                   {
@@ -856,12 +951,12 @@
                     "minLabelRouteClearance": 101.2,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.790575916230367,
+                    "minProjectedNodeTextPx": 7.230320699708455,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 38,
+                    "minSegmentPx": 61.2,
                     "minInteriorSegmentPx": null,
                     "shortSegmentCount": 0,
                     "shortEndpointSegmentCount": 0,
@@ -894,12 +989,12 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "current-to-sites-1",
+                      "id": "current-to-out-1",
                       "from": "current",
-                      "to": "sites"
+                      "to": "out"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.790575916230367,
+                    "minimumProjectedTextPx": 7.230320699708455,
                     "semanticTextCount": 7
                   },
                   "issues": []
@@ -910,7 +1005,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "7866c780-6e03-4425-b101-b87e81a70a22"
+        "deliveryReceiptId": "0a6346eb-21e6-439a-ba6e-be3f35d8d000"
       }
     }
   },
@@ -924,8 +1019,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/threat-model-visualize/threat-model-visualize.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T08:44:22.347Z",
-  "durationMs": 1973,
+  "finishedAt": "2026-11-16T04:12:35.353Z",
+  "durationMs": 2410,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

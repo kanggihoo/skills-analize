@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-14T06:08:02.794Z",
+  "startedAt": "2026-11-16T04:04:03.062Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/candidate.archify.md",
-    "sha256": "b86d8502b3ac00956b86cc9aca323504aa162f00e2b1e2def2517d44052a34d3",
-    "bytes": 42907
+    "sha256": "da05d8540667425dd77867a4ae5db95444666fe4f1fa0b2eb8b99340139ebde7",
+    "bytes": 62672
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/hyperframes.html",
-    "sha256": "26ba99819acf91dcb67a4e43ea4482ba9d80d62c9fc0b813202debba9d682230",
-    "bytes": 1660431
+    "sha256": "c142c2a66514fbe59608c3c2fc0973585627ecba4756738c07524ab6ab7fdcdc",
+    "bytes": 2338447
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "b86d8502b3ac00956b86cc9aca323504aa162f00e2b1e2def2517d44052a34d3",
-          "bytes": 42907
+          "sha256": "da05d8540667425dd77867a4ae5db95444666fe4f1fa0b2eb8b99340139ebde7",
+          "bytes": 62672
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 1146,
+      "durationMs": 1650,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,294 +76,172 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "b2a0316e-f587-4d36-b4af-49443867046b",
+        "receiptId": "86836824-7ba5-4cab-a100-37451d381957",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/hyperframes.html",
         "explainer": {
-          "preparedSha256": "fb778ea88488cc4697dcd2b72ccf4b705ce8cec87c28d9ee1d80fc4405e7d33c",
+          "preparedSha256": "1e46ca22a439472892e8f74ea12473476a1ecc6a2c9db6781536b2699e218767",
           "dependencies": [
             {
               "kind": "repository",
-              "id": "s-front",
+              "id": "sk-fm",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-plugin",
+              "id": "sk-start",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-beacon",
+              "id": "sk-intro",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-engine",
+              "id": "sk-contract",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-layout",
+              "id": "sk-edit",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-build",
+              "id": "sk-loop",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-check",
+              "id": "sk-app",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-c01",
+              "id": "sk-read",
               "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
               "bytes": 7481
             },
             {
               "kind": "repository",
-              "id": "s-c02",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c03",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c04",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c05",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c06",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c07",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c08",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c09",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c10",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c11",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-c12",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-edit",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-loop1",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-loop2",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-loop3",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-loop4",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-app",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-read",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "s-tail",
-              "path": "hyperframes/hyperframes/SKILL.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-              "bytes": 7481
-            },
-            {
-              "kind": "repository",
-              "id": "r-story-pick",
+              "id": "r-story-skip",
               "path": "hyperframes/hyperframes/references/story.md",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
               "sha256": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22",
               "bytes": 11486
             },
             {
               "kind": "repository",
-              "id": "x-bake",
-              "path": "hyperframes/hyperframes/scripts/bake-basemap.mjs",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "fea86ab2e2aab59fa81e4b26d77c0edcaadaf4c41b4455cf359c06047088c40c",
-              "bytes": 18197
+              "id": "r-story-pick",
+              "path": "hyperframes/hyperframes/references/story.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22",
+              "bytes": 11486
             },
             {
               "kind": "repository",
-              "id": "x-locate",
-              "path": "hyperframes/hyperframes/scripts/locate.mjs",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248",
-              "bytes": 8273
+              "id": "r-spec-ban",
+              "path": "hyperframes/hyperframes/references/spec.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0",
+              "bytes": 6055
             },
             {
               "kind": "repository",
-              "id": "x-locate-auto",
-              "path": "hyperframes/hyperframes/scripts/locate.mjs",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248",
-              "bytes": 8273
+              "id": "r-spec-num",
+              "path": "hyperframes/hyperframes/references/spec.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0",
+              "bytes": 6055
             },
             {
               "kind": "repository",
-              "id": "f-cap",
-              "path": "hyperframes/hyperframes/assets/frame-presets/biennale-yellow/caption-skin.html",
-              "revision": "f85af643f25876081562e9820cd87fb45a478480",
-              "sha256": "b0e4812d9cb5852969be276f8a98ffa2b293ba8cc902fababae3f3f6340088c3",
-              "bytes": 8131
+              "id": "r-review-measure",
+              "path": "hyperframes/hyperframes/references/review.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "90886b58db02aaa53e6b91c433748629eda061b18465804b56ebbbab92508e56",
+              "bytes": 5327
+            },
+            {
+              "kind": "repository",
+              "id": "r-format-lint",
+              "path": "hyperframes/hyperframes/references/format.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "1eae5b314fab5e36e7ff5f41e9a3f95db4b5efb179ad8ef7cc74ef9235d49d62",
+              "bytes": 13196
+            },
+            {
+              "kind": "repository",
+              "id": "r-look-presets",
+              "path": "hyperframes/hyperframes/references/look.md",
+              "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+              "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+              "bytes": 6031
             },
             {
               "kind": "diagram-spec",
-              "id": "work-loop",
+              "id": "intake-flow",
               "inline": true,
-              "sha256": "fdcf852ca14b97fc1d2a451c6a30cd0d7b3986e25aae5f78b0296011f2260710",
-              "bytes": 2668
+              "sha256": "5770b9efaecf7c434268ebd822cb3708f6a2c35ccf18e0d60f9ad607784b3cae",
+              "bytes": 2152
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "build-flow",
+              "inline": true,
+              "sha256": "1511322a5589f04b133a26460148ee409942057924dbd59134d8829019e87238",
+              "bytes": 1927
             },
             {
               "kind": "diagram-spec",
               "id": "hub-position",
               "inline": true,
-              "sha256": "15fa80344c9a22cbed07b3497959e5786d6001048eb185cd6fce272e1f857beb",
-              "bytes": 1858
+              "sha256": "09385fb2fdd5e1ed0731d8e6266951e0021c7e25150d47632ca6ec091df7e70f",
+              "bytes": 1770
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "project-layout",
+              "inline": true,
+              "sha256": "96d8148606337e870f19e89bbcd630a508a664a722016c7527462a0b6a4e82ba",
+              "bytes": 817
             }
           ]
         },
         "specification": {
-          "sha256": "b86d8502b3ac00956b86cc9aca323504aa162f00e2b1e2def2517d44052a34d3",
-          "bytes": 42907
+          "sha256": "da05d8540667425dd77867a4ae5db95444666fe4f1fa0b2eb8b99340139ebde7",
+          "bytes": 62672
         },
         "artifact": {
-          "sha256": "26ba99819acf91dcb67a4e43ea4482ba9d80d62c9fc0b813202debba9d682230",
-          "bytes": 1660431
+          "sha256": "c142c2a66514fbe59608c3c2fc0973585627ecba4756738c07524ab6ab7fdcdc",
+          "bytes": 2338447
         },
         "validation": {
           "checksPassed": 4,
@@ -389,7 +267,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 610,
+      "durationMs": 904,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -402,15 +280,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/hyperframes.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "26ba99819acf91dcb67a4e43ea4482ba9d80d62c9fc0b813202debba9d682230",
-          "bytes": 1660431
+          "sha256": "c142c2a66514fbe59608c3c2fc0973585627ecba4756738c07524ab6ab7fdcdc",
+          "bytes": 2338447
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "246 unique DOM IDs"
+              "318 unique DOM IDs"
             ]
           },
           {
@@ -422,15 +300,17 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "34 frozen dependencies"
+              "19 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "work-loop: pass",
-              "hub-position: pass"
+              "intake-flow: pass",
+              "build-flow: pass",
+              "hub-position: pass",
+              "project-layout: pass"
             ]
           }
         ],
@@ -445,13 +325,13 @@
           "issues": [],
           "nativeDiagrams": [
             {
-              "id": "work-loop",
+              "id": "intake-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-eXUuLl/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-9LUqgG/child.html",
                 "artifact": {
-                  "sha256": "6f7bf6a4d972ed5e922c5a2ff273f5508d8d9ff26bd979c3d25db9d1bce0ad1b",
-                  "bytes": 850340
+                  "sha256": "d4f3120aed3f96632e9e181187eca3a02a7e224655978bae4417ee3bcba75daa",
+                  "bytes": 844688
                 },
                 "checks": [
                   {
@@ -518,18 +398,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 9,
+                    "minLabelRouteClearance": 53,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.965738758029978,
+                    "minProjectedNodeTextPx": 6.788321167883212,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 6,
-                    "shortEndpointSegmentCount": 6,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -559,13 +439,140 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "ask-to-answer-1",
-                      "from": "ask",
+                      "id": "edit-to-answer-1",
+                      "from": "edit",
                       "to": "answer"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.965738758029978,
-                    "semanticTextCount": 23
+                    "minimumProjectedTextPx": 6.788321167883212,
+                    "semanticTextCount": 16
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "build-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-mVHqwR/child.html",
+                "artifact": {
+                  "sha256": "222cf20c424bb149802e35651533e6bdffb7d5d19c21af845e3f862ee16854a0",
+                  "bytes": 841606
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 61.8,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 11,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "clean-to-build-1",
+                      "from": "clean",
+                      "to": "build"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 14
                   },
                   "issues": []
                 }
@@ -575,10 +582,10 @@
               "id": "hub-position",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-GYZsWz/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-mgGS6W/child.html",
                 "artifact": {
-                  "sha256": "a20ea8ed430404beaca9bac18efc84d3769a56d987c10d4af56bbff278304da5",
-                  "bytes": 843430
+                  "sha256": "1d0cac71899de9d10ef3ab64605394adc189bc7232e72dfdf297efe285df345b",
+                  "bytes": 842698
                 },
                 "checks": [
                   {
@@ -645,18 +652,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 6,
+                    "minLabelRouteClearance": 15.4,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 8,
+                    "minProjectedNodeTextPx": 7.948717948717949,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 4,
-                    "shortEndpointSegmentCount": 4,
+                    "shortSegmentCount": 5,
+                    "shortEndpointSegmentCount": 5,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -686,13 +693,143 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "hub-to-cli-1",
+                      "id": "hub-to-media-1",
                       "from": "hub",
-                      "to": "cli"
+                      "to": "media"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 16
+                    "minimumProjectedTextPx": 7.948717948717949,
+                    "semanticTextCount": 15
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "project-layout",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-iRzLpE/child.html",
+                "artifact": {
+                  "sha256": "07be211a6f50a85b83797e87707dacd474d39a29c385878375d7d448f1742b58",
+                  "bytes": 845353
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": [
+                      "no legend marker found"
+                    ]
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": null,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8.496134926212228,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": null,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": null,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "recognized-declared-wide",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "actualReaderWidth": 960,
+                    "desiredReaderWidth": 960,
+                    "viewportCap": 1376,
+                    "limit": "source-size",
+                    "requestedTargetPx": 7.5,
+                    "requestedTargetMet": true,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "node",
+                      "id": "index"
+                    },
+                    "minimumSourceTextPx": 13,
+                    "minimumProjectedTextPx": 8.496134926212228,
+                    "semanticTextCount": 13
                   },
                   "issues": []
                 }
@@ -702,7 +839,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "b2a0316e-f587-4d36-b4af-49443867046b"
+        "deliveryReceiptId": "86836824-7ba5-4cab-a100-37451d381957"
       }
     }
   },
@@ -716,8 +853,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/hyperframes.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-14T06:08:04.698Z",
-  "durationMs": 1903,
+  "finishedAt": "2026-11-16T04:04:05.766Z",
+  "durationMs": 2703,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",

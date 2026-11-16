@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md",
-    "sha256": "6354f7daa72c0fef337bfb06af2cd906e13ec5e2844566128e0842a1d12be7e0",
-    "bytes": 33011
+    "sha256": "72f9ffa6f2542eac684c04e11e3daf6d329160552d6adf9053f266f722a07d70",
+    "bytes": 65575
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/remotion-to-hyperframes.html",
-    "sha256": "5d5fd307099c11e67ed2aa6e90dcaa19889260b75e7e3d32a2d39a984add0327",
-    "bytes": 1695641
+    "sha256": "508493344f146a3cc04c7d8f6a97910d2d15952c3298de74f395ef48e2f44a84",
+    "bytes": 3162857
   },
   "gates": {
     "validate": "pass",
@@ -21,10 +21,32 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [],
+  "diagnostics": [
+    {
+      "code": "explainer/writing-paragraph-length",
+      "severity": "warning",
+      "message": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+      "subject": {
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/remotion-to-hyperframes/candidate.archify.md",
+        "line": 239,
+        "component": "prose",
+        "panelId": "activation"
+      },
+      "evidence": {
+        "reason": "This paragraph has 5 sentences and 18 reading units; long paragraphs are what the page should replace.",
+        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
+        "rule": "paragraph-length",
+        "units": 18,
+        "limit": 120
+      },
+      "supportedFixes": [
+        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
+      ]
+    }
+  ],
   "diagnosticSummary": {
-    "total": 0,
-    "shown": 0,
+    "total": 1,
+    "shown": 1,
     "truncated": false
   },
   "evidence": {
@@ -42,7 +64,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 1814,
+  "durationMs": 2895,
   "browserCheck": {
     "requested": false,
     "ran": false

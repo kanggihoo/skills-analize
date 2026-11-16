@@ -1,572 +1,793 @@
 {
   "schemaVersion": 1,
-  "receiptId": "2fc868a2-2bda-4f68-ab98-0bea8e42954f",
+  "receiptId": "b23f7a86-6b25-485e-b861-5325d637bb13",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/media-use/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/media-use/media-use.html",
   "specification": {
-    "sha256": "f57d61bd1b342b8e44b7876ed9e7474be98bbdc7222cc87210ba53dfdc2b561f",
-    "bytes": 37864
+    "sha256": "c99fa6b984e984fad96ac78cea0a3d824dc8084223073b7f9a7c0cbbc7c274f7",
+    "bytes": 67781
   },
   "artifact": {
-    "sha256": "1088d7a8cd39a165b74c7c45e8424d0427c95b80959a8b2a018284edcdd4f0cd",
-    "bytes": 1752288
+    "sha256": "e61b981dae1ed284eb63a6db4805ddd850f7a31ded974a752a59f25db6d372d6",
+    "bytes": 3721804
   },
   "explainer": {
-    "preparedSha256": "0cb4fb26b4ee5a0ae3347d5e6ae29b6c564abb639fce73804e4c02b56d6f1f65",
+    "preparedSha256": "631c5fa376b1d6e7d1ff5777fddb673233682a3f000f6b6a7743e317a3adfb84",
     "dependencies": [
       {
         "kind": "repository",
-        "id": "front",
+        "id": "sk-front",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "beacon",
+        "id": "sk-plugin",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "verb",
+        "id": "sk-verb",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "need",
+        "id": "sk-where",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "signin",
+        "id": "sk-signin",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "host",
+        "id": "sk-credits",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "heygen",
+        "id": "sk-looks",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "credits",
+        "id": "sk-offer",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "looks",
+        "id": "sk-ref",
         "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
         "bytes": 5311
       },
       {
         "kind": "repository",
-        "id": "offer",
-        "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
-        "bytes": 5311
-      },
-      {
-        "kind": "repository",
-        "id": "where",
-        "path": "hyperframes/media-use/SKILL.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
-        "bytes": 5311
-      },
-      {
-        "kind": "repository",
-        "id": "resolve-types",
+        "id": "rs-weak",
         "path": "hyperframes/media-use/references/resolve.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
         "bytes": 10100
       },
       {
         "kind": "repository",
-        "id": "resolve-weak",
+        "id": "rs-types",
         "path": "hyperframes/media-use/references/resolve.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
         "bytes": 10100
       },
       {
         "kind": "repository",
-        "id": "reuse-judge",
+        "id": "rs-ex",
         "path": "hyperframes/media-use/references/resolve.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
         "bytes": 10100
       },
       {
         "kind": "repository",
-        "id": "guardrail",
+        "id": "rs-flags",
         "path": "hyperframes/media-use/references/resolve.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
         "bytes": 10100
       },
       {
         "kind": "repository",
-        "id": "floor",
+        "id": "rs-reuse",
         "path": "hyperframes/media-use/references/resolve.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
         "bytes": 10100
       },
       {
         "kind": "repository",
-        "id": "setup-auth",
+        "id": "rs-floor",
+        "path": "hyperframes/media-use/references/resolve.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
+        "bytes": 10100
+      },
+      {
+        "kind": "repository",
+        "id": "rs-prov",
+        "path": "hyperframes/media-use/references/resolve.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
+        "bytes": 10100
+      },
+      {
+        "kind": "repository",
+        "id": "rs-inv",
+        "path": "hyperframes/media-use/references/resolve.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "676115ab007793b127ab535c7b26ea1bd3a0a10c21806ceaf595b92eb15b3c2c",
+        "bytes": 10100
+      },
+      {
+        "kind": "repository",
+        "id": "sp-auth",
         "path": "hyperframes/media-use/references/setup-providers.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "5cc3c135398435afa6a06e3ba533da871c07d7c5aa2a4dd4d4d5520c119f284b",
         "bytes": 9331
       },
       {
         "kind": "repository",
-        "id": "setup-host",
+        "id": "sp-prov",
         "path": "hyperframes/media-use/references/setup-providers.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "5cc3c135398435afa6a06e3ba533da871c07d7c5aa2a4dd4d4d5520c119f284b",
         "bytes": 9331
       },
       {
         "kind": "repository",
-        "id": "setup-local",
+        "id": "sp-tools",
         "path": "hyperframes/media-use/references/setup-providers.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "5cc3c135398435afa6a06e3ba533da871c07d7c5aa2a4dd4d4d5520c119f284b",
         "bytes": 9331
       },
       {
         "kind": "repository",
-        "id": "heygen-auth",
+        "id": "hg-cred",
         "path": "hyperframes/media-use/references/heygen.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "7b26aee01560af1f37d94ae9956a2aa51bf95411fc50db04b6ddfe1ec1e54d08",
         "bytes": 11846
       },
       {
         "kind": "repository",
-        "id": "heygen-rules",
+        "id": "hg-gen",
         "path": "hyperframes/media-use/references/heygen.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "7b26aee01560af1f37d94ae9956a2aa51bf95411fc50db04b6ddfe1ec1e54d08",
         "bytes": 11846
       },
       {
         "kind": "repository",
-        "id": "heygen-prices",
+        "id": "hg-cmds",
         "path": "hyperframes/media-use/references/heygen.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "7b26aee01560af1f37d94ae9956a2aa51bf95411fc50db04b6ddfe1ec1e54d08",
         "bytes": 11846
       },
       {
         "kind": "repository",
-        "id": "treat-scope",
+        "id": "hg-prices",
+        "path": "hyperframes/media-use/references/heygen.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "7b26aee01560af1f37d94ae9956a2aa51bf95411fc50db04b6ddfe1ec1e54d08",
+        "bytes": 11846
+      },
+      {
+        "kind": "repository",
+        "id": "hg-trans",
+        "path": "hyperframes/media-use/references/heygen.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "7b26aee01560af1f37d94ae9956a2aa51bf95411fc50db04b6ddfe1ec1e54d08",
+        "bytes": 11846
+      },
+      {
+        "kind": "repository",
+        "id": "tr-scope",
         "path": "hyperframes/media-use/references/media-treatments.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "32b9b3bb6fb3838829ff08dc5650b2eb065086b4bd5db9c431e9629a38e93385",
         "bytes": 14151
       },
       {
         "kind": "repository",
-        "id": "treat-lane",
+        "id": "tr-lane",
         "path": "hyperframes/media-use/references/media-treatments.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "32b9b3bb6fb3838829ff08dc5650b2eb065086b4bd5db9c431e9629a38e93385",
         "bytes": 14151
       },
       {
         "kind": "repository",
-        "id": "treat-two",
+        "id": "tr-vague",
         "path": "hyperframes/media-use/references/media-treatments.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "32b9b3bb6fb3838829ff08dc5650b2eb065086b4bd5db9c431e9629a38e93385",
         "bytes": 14151
       },
       {
         "kind": "repository",
-        "id": "treat-cost",
+        "id": "tr-seed",
         "path": "hyperframes/media-use/references/media-treatments.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "32b9b3bb6fb3838829ff08dc5650b2eb065086b4bd5db9c431e9629a38e93385",
         "bytes": 14151
       },
       {
         "kind": "repository",
-        "id": "treat-flow",
+        "id": "tr-flow",
         "path": "hyperframes/media-use/references/media-treatments.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "32b9b3bb6fb3838829ff08dc5650b2eb065086b4bd5db9c431e9629a38e93385",
         "bytes": 14151
       },
       {
         "kind": "repository",
-        "id": "recipe-ui",
+        "id": "rc-portrait",
         "path": "hyperframes/media-use/references/media-treatment-recipes.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5",
         "bytes": 35868
       },
       {
         "kind": "repository",
-        "id": "recipe-flash",
+        "id": "rc-polish",
         "path": "hyperframes/media-use/references/media-treatment-recipes.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5",
         "bytes": 35868
       },
       {
         "kind": "repository",
-        "id": "grade-first",
+        "id": "rc-ui",
+        "path": "hyperframes/media-use/references/media-treatment-recipes.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5",
+        "bytes": 35868
+      },
+      {
+        "kind": "repository",
+        "id": "rc-flash-use",
+        "path": "hyperframes/media-use/references/media-treatment-recipes.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5",
+        "bytes": 35868
+      },
+      {
+        "kind": "repository",
+        "id": "rc-flash-num",
+        "path": "hyperframes/media-use/references/media-treatment-recipes.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "852e7e978af56c9e99ba14f19009da974cd78f99b399ca194dc416c31c49bda5",
+        "bytes": 35868
+      },
+      {
+        "kind": "repository",
+        "id": "gr-first",
         "path": "hyperframes/media-use/references/grading.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "430e2b57dfb64c3acfbdd02317ba967ebb580d42b348686ccffbc175d3de8392",
         "bytes": 7150
       },
       {
         "kind": "repository",
-        "id": "grade-cube",
+        "id": "gr-apply",
         "path": "hyperframes/media-use/references/grading.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "430e2b57dfb64c3acfbdd02317ba967ebb580d42b348686ccffbc175d3de8392",
         "bytes": 7150
       },
       {
         "kind": "repository",
-        "id": "grade-css",
+        "id": "gr-css",
         "path": "hyperframes/media-use/references/grading.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "430e2b57dfb64c3acfbdd02317ba967ebb580d42b348686ccffbc175d3de8392",
         "bytes": 7150
       },
       {
         "kind": "repository",
-        "id": "local-sound",
+        "id": "lc-cut",
         "path": "hyperframes/media-use/references/local.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "659271d787fe3bdd39f0bc32b1eeb03860b9c76c2672cb71b6bb8d4a88fe4385",
         "bytes": 2626
       },
       {
         "kind": "repository",
-        "id": "local-cut",
+        "id": "lc-sound",
         "path": "hyperframes/media-use/references/local.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "659271d787fe3bdd39f0bc32b1eeb03860b9c76c2672cb71b6bb8d4a88fe4385",
         "bytes": 2626
       },
       {
         "kind": "repository",
-        "id": "memory-prefs",
+        "id": "mm-prefs",
         "path": "hyperframes/media-use/references/memory.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "55477edafb7f9c8294cafd3f1633b7a1820d538695c0868f9c3ddb6b418dadbc",
         "bytes": 3828
       },
       {
         "kind": "repository",
-        "id": "memory-recipe",
+        "id": "mm-recipe",
         "path": "hyperframes/media-use/references/memory.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "55477edafb7f9c8294cafd3f1633b7a1820d538695c0868f9c3ddb6b418dadbc",
         "bytes": 3828
       },
       {
         "kind": "repository",
-        "id": "meta-tele",
+        "id": "mt-tele",
         "path": "hyperframes/media-use/references/meta.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "3651b66e86874b21e9636de65be5a4581f4f394f3c8fc02ddc9128f4dcfa107c",
         "bytes": 6545
       },
       {
         "kind": "repository",
-        "id": "mix-levels",
+        "id": "mx-level",
         "path": "hyperframes/media-use/references/mixing.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "0ac67d3230cf1a6e31ca9355371ea133557d7e2fdb541742a02f086eac20a574",
         "bytes": 4636
       },
       {
         "kind": "repository",
-        "id": "mix-fx",
+        "id": "mx-fx",
         "path": "hyperframes/media-use/references/mixing.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "0ac67d3230cf1a6e31ca9355371ea133557d7e2fdb541742a02f086eac20a574",
         "bytes": 4636
       },
       {
         "kind": "repository",
-        "id": "mix-duck",
+        "id": "mx-duck",
         "path": "hyperframes/media-use/references/mixing.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "0ac67d3230cf1a6e31ca9355371ea133557d7e2fdb541742a02f086eac20a574",
         "bytes": 4636
       },
       {
         "kind": "repository",
-        "id": "ops-parakeet",
+        "id": "op-intro",
         "path": "hyperframes/media-use/references/operations.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
         "bytes": 16153
       },
       {
         "kind": "repository",
-        "id": "ops-loud",
+        "id": "op-tools",
         "path": "hyperframes/media-use/references/operations.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
         "bytes": 16153
       },
       {
         "kind": "repository",
-        "id": "ops-ram",
+        "id": "op-dither",
         "path": "hyperframes/media-use/references/operations.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
         "bytes": 16153
       },
       {
         "kind": "repository",
-        "id": "ops-dither",
+        "id": "op-tx",
         "path": "hyperframes/media-use/references/operations.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
         "bytes": 16153
       },
       {
         "kind": "repository",
-        "id": "bgm-pre",
+        "id": "op-cut",
+        "path": "hyperframes/media-use/references/operations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
+        "bytes": 16153
+      },
+      {
+        "kind": "repository",
+        "id": "op-duck",
+        "path": "hyperframes/media-use/references/operations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
+        "bytes": 16153
+      },
+      {
+        "kind": "repository",
+        "id": "op-loud",
+        "path": "hyperframes/media-use/references/operations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
+        "bytes": 16153
+      },
+      {
+        "kind": "repository",
+        "id": "op-img",
+        "path": "hyperframes/media-use/references/operations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
+        "bytes": 16153
+      },
+      {
+        "kind": "repository",
+        "id": "op-video",
+        "path": "hyperframes/media-use/references/operations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e5a52fe98376a1215680dec8c6393f6d5b55055ecdcfb7d07db356904c518603",
+        "bytes": 16153
+      },
+      {
+        "kind": "repository",
+        "id": "au-eng",
+        "path": "hyperframes/media-use/references/audio.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "4823c3b244a5c26c593dc32c2ffdb2da7e6373e70237be6bf14d8091196413ca",
+        "bytes": 3362
+      },
+      {
+        "kind": "repository",
+        "id": "bg-route",
         "path": "hyperframes/media-use/audio/references/bgm.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "49c9d4d8b733e9c0d80e084be35c99432e2accc1c57266b3f01c3155e0acc47e",
         "bytes": 8128
       },
       {
         "kind": "repository",
-        "id": "bgm-fail",
+        "id": "bg-ret",
         "path": "hyperframes/media-use/audio/references/bgm.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "49c9d4d8b733e9c0d80e084be35c99432e2accc1c57266b3f01c3155e0acc47e",
         "bytes": 8128
       },
       {
         "kind": "repository",
-        "id": "sfx-lic",
-        "path": "hyperframes/media-use/audio/references/sfx.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "b89b14e4d819594d07cf2899e3ca59ceafe743e77e7df46dafdbebe4effebe75",
-        "bytes": 4137
+        "id": "bg-gen",
+        "path": "hyperframes/media-use/audio/references/bgm.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "49c9d4d8b733e9c0d80e084be35c99432e2accc1c57266b3f01c3155e0acc47e",
+        "bytes": 8128
       },
       {
         "kind": "repository",
-        "id": "sfx-lib",
-        "path": "hyperframes/media-use/audio/references/sfx.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "b89b14e4d819594d07cf2899e3ca59ceafe743e77e7df46dafdbebe4effebe75",
-        "bytes": 4137
+        "id": "bg-fail",
+        "path": "hyperframes/media-use/audio/references/bgm.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "49c9d4d8b733e9c0d80e084be35c99432e2accc1c57266b3f01c3155e0acc47e",
+        "bytes": 8128
       },
       {
         "kind": "repository",
-        "id": "tts-pre",
+        "id": "tt-pre",
         "path": "hyperframes/media-use/audio/references/tts.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e7490d588d4ecc6fc0091e44ee698797c623bbb31f921ec06b6efe30ab2b4ba2",
         "bytes": 14005
       },
       {
         "kind": "repository",
-        "id": "tts-docs",
+        "id": "tt-river",
         "path": "hyperframes/media-use/audio/references/tts.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "e7490d588d4ecc6fc0091e44ee698797c623bbb31f921ec06b6efe30ab2b4ba2",
         "bytes": 14005
       },
       {
         "kind": "repository",
-        "id": "transcribe-rule",
+        "id": "tt-routes",
+        "path": "hyperframes/media-use/audio/references/tts.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e7490d588d4ecc6fc0091e44ee698797c623bbb31f921ec06b6efe30ab2b4ba2",
+        "bytes": 14005
+      },
+      {
+        "kind": "repository",
+        "id": "tt-heygen",
+        "path": "hyperframes/media-use/audio/references/tts.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e7490d588d4ecc6fc0091e44ee698797c623bbb31f921ec06b6efe30ab2b4ba2",
+        "bytes": 14005
+      },
+      {
+        "kind": "repository",
+        "id": "tt-gemini",
+        "path": "hyperframes/media-use/audio/references/tts.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e7490d588d4ecc6fc0091e44ee698797c623bbb31f921ec06b6efe30ab2b4ba2",
+        "bytes": 14005
+      },
+      {
+        "kind": "repository",
+        "id": "sf-lic",
+        "path": "hyperframes/media-use/audio/references/sfx.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b89b14e4d819594d07cf2899e3ca59ceafe743e77e7df46dafdbebe4effebe75",
+        "bytes": 4137
+      },
+      {
+        "kind": "repository",
+        "id": "sf-ov",
+        "path": "hyperframes/media-use/audio/references/sfx.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b89b14e4d819594d07cf2899e3ca59ceafe743e77e7df46dafdbebe4effebe75",
+        "bytes": 4137
+      },
+      {
+        "kind": "repository",
+        "id": "rq-cred",
+        "path": "hyperframes/media-use/audio/references/requirements.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "50b48c6de19617a385cff8dcbfbca0b5187aacd9cc67f8a9ad3c8fa8922f02af",
+        "bytes": 4482
+      },
+      {
+        "kind": "repository",
+        "id": "tx-rule",
         "path": "hyperframes/media-use/audio/references/transcribe.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "5525a555f5356766a5e3333a945b5f90af51f63b2b98210d23e3a605a5de8703",
         "bytes": 2847
       },
       {
         "kind": "repository",
-        "id": "transcript-qc",
-        "path": "hyperframes/media-use/audio/references/captions/transcript-handling.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "84c4d5181749022c00b6de62ffe95fe257598fb5f9111d9e8541d25a13836287",
-        "bytes": 5439
-      },
-      {
-        "kind": "repository",
-        "id": "caption-mandatory",
-        "path": "hyperframes/media-use/audio/references/captions/motion.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "ee1b89fc53e7433e1c1192c24e09365a3894bae653d8061c2bbc4202c097250f",
-        "bytes": 5480
-      },
-      {
-        "kind": "repository",
-        "id": "caption-rules",
-        "path": "hyperframes/media-use/audio/references/captions/authoring.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "c1f159e6a99b5ed65812fbc777fabdbf8cb82dec7fcb2e970b9524653d96bb59",
-        "bytes": 9422
-      },
-      {
-        "kind": "repository",
-        "id": "rmbg-quality",
+        "id": "rb-pat",
         "path": "hyperframes/media-use/audio/references/remove-background.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "fb6b38a25c6535c57a461bbe2ca681b38f18e5f09b1e904e4a0b5f6eca7a5b98",
         "bytes": 8472
       },
       {
         "kind": "repository",
-        "id": "credit-code",
-        "path": "hyperframes/media-use/scripts/lib/credit-limit.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "1699e9136a4f5fbe8e019d5c57932c3d41b880c72f0ebb88c2ad6a50eb9a1e9b",
-        "bytes": 2044
+        "id": "rb-rule",
+        "path": "hyperframes/media-use/audio/references/remove-background.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "fb6b38a25c6535c57a461bbe2ca681b38f18e5f09b1e904e4a0b5f6eca7a5b98",
+        "bytes": 8472
       },
       {
         "kind": "repository",
-        "id": "fetch-code",
-        "path": "hyperframes/media-use/scripts/lib/media-fetch.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "6a90740eee3e4765b83b4c9726676b2935a7fbc9990f61ad5b166f9263188366",
-        "bytes": 2838
+        "id": "rb-clean",
+        "path": "hyperframes/media-use/audio/references/remove-background.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "fb6b38a25c6535c57a461bbe2ca681b38f18e5f09b1e904e4a0b5f6eca7a5b98",
+        "bytes": 8472
       },
       {
         "kind": "repository",
-        "id": "bgm-vol",
-        "path": "hyperframes/media-use/audio/scripts/lib/bgm-volume.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "bb9debebdbd09724f6d07cd10b3982a076639664420ff8caf5f5a36ae7429a8c",
-        "bytes": 236
+        "id": "ca-exit",
+        "path": "hyperframes/media-use/audio/references/captions/authoring.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "c1f159e6a99b5ed65812fbc777fabdbf8cb82dec7fcb2e970b9524653d96bb59",
+        "bytes": 9422
       },
       {
         "kind": "repository",
-        "id": "duck-code",
-        "path": "hyperframes/media-use/scripts/audio-duck.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "6beac3c1c6c0e0375e67a04c184406ced3740cc832bb3ba9a09c796bbe16d40e",
-        "bytes": 4069
+        "id": "ca-const",
+        "path": "hyperframes/media-use/audio/references/captions/authoring.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "c1f159e6a99b5ed65812fbc777fabdbf8cb82dec7fcb2e970b9524653d96bb59",
+        "bytes": 9422
       },
       {
         "kind": "repository",
-        "id": "ov-code",
-        "path": "hyperframes/media-use/audio/scripts/lib/openverse.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "e2b176ed6e0b91231debab84ef6633a1a4885e400b9511a39f11e97acef261bd",
-        "bytes": 4999
+        "id": "cm-music",
+        "path": "hyperframes/media-use/audio/references/captions/motion.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "ee1b89fc53e7433e1c1192c24e09365a3894bae653d8061c2bbc4202c097250f",
+        "bytes": 5480
       },
       {
         "kind": "repository",
-        "id": "sfx-code",
+        "id": "cm-subtle",
+        "path": "hyperframes/media-use/audio/references/captions/motion.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "ee1b89fc53e7433e1c1192c24e09365a3894bae653d8061c2bbc4202c097250f",
+        "bytes": 5480
+      },
+      {
+        "kind": "repository",
+        "id": "ct-qc",
+        "path": "hyperframes/media-use/audio/references/captions/transcript-handling.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "84c4d5181749022c00b6de62ffe95fe257598fb5f9111d9e8541d25a13836287",
+        "bytes": 5439
+      },
+      {
+        "kind": "repository",
+        "id": "ac-hdr",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "ac-in",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "ac-tts",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "ac-bgm",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "ac-sfx",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "ac-out",
+        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
+        "bytes": 14563
+      },
+      {
+        "kind": "repository",
+        "id": "wb-code",
+        "path": "hyperframes/media-use/audio/scripts/wait-bgm.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "bb9cf35cae4342ca1b03c1c129df199d6e389b67a8d5be9d4973a3bc20d585e3",
+        "bytes": 5813
+      },
+      {
+        "kind": "repository",
+        "id": "sx-code",
         "path": "hyperframes/media-use/audio/scripts/lib/sfx.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "5c443cdf72bf14552f23a468e311b273e1448b49aeca385f2484995217f75d3f",
         "bytes": 7372
       },
       {
         "kind": "repository",
-        "id": "ref-audio-out",
-        "path": "hyperframes/media-use/references/audio.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "4823c3b244a5c26c593dc32c2ffdb2da7e6373e70237be6bf14d8091196413ca",
-        "bytes": 3362
+        "id": "ov-code",
+        "path": "hyperframes/media-use/audio/scripts/lib/openverse.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e2b176ed6e0b91231debab84ef6633a1a4885e400b9511a39f11e97acef261bd",
+        "bytes": 4999
       },
       {
         "kind": "repository",
-        "id": "ref-audio-rec",
-        "path": "hyperframes/media-use/references/audio.md",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "4823c3b244a5c26c593dc32c2ffdb2da7e6373e70237be6bf14d8091196413ca",
-        "bytes": 3362
+        "id": "bv-code",
+        "path": "hyperframes/media-use/audio/scripts/lib/bgm-volume.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "bb9debebdbd09724f6d07cd10b3982a076639664420ff8caf5f5a36ae7429a8c",
+        "bytes": 236
       },
       {
         "kind": "repository",
-        "id": "rec-code",
-        "path": "hyperframes/media-use/audio/scripts/lib/media-record.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "959bc6b444b35cee55ce9374c36e227caeaa561ac56fadfddf3f82e79aa045db",
-        "bytes": 4284
+        "id": "cl-code",
+        "path": "hyperframes/media-use/scripts/lib/credit-limit.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1699e9136a4f5fbe8e019d5c57932c3d41b880c72f0ebb88c2ad6a50eb9a1e9b",
+        "bytes": 2044
       },
       {
         "kind": "repository",
-        "id": "bgm-code",
-        "path": "hyperframes/media-use/audio/scripts/lib/bgm.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "4cbfdbdfe4f62f1a2cdd4cfd541d10312f0a9aae501874eb33badf78d8331641",
-        "bytes": 11612
+        "id": "ad-opts",
+        "path": "hyperframes/media-use/scripts/audio-duck.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "6beac3c1c6c0e0375e67a04c184406ced3740cc832bb3ba9a09c796bbe16d40e",
+        "bytes": 4069
       },
       {
         "kind": "repository",
-        "id": "lock-code",
-        "path": "hyperframes/media-use/scripts/lib/manifest.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "67f827f7591241c170fd92eb7fa789df2f1756b2cd4889907141936179f5d00f",
-        "bytes": 9424
+        "id": "cu-code",
+        "path": "hyperframes/media-use/scripts/lib/cutlist.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "c395f49bdb602b29dfc1ea98b7f6d0d5d8781f00eca1c16d009d10e7ef0205be",
+        "bytes": 6381
       },
       {
         "kind": "repository",
-        "id": "audio-code",
-        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
-        "bytes": 14563
+        "id": "tf-code",
+        "path": "hyperframes/media-use/scripts/lib/transcriptCutFade.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "ee9c7ec28650cf0f6a0f1f21f1c6a1faa5e152337163cccc0cc9a109b3c99805",
+        "bytes": 911
       },
       {
         "kind": "repository",
-        "id": "audio-mode",
-        "path": "hyperframes/media-use/audio/scripts/audio.mjs",
-        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
-        "sha256": "1219440e848b0e899a3c3a010a8a57dfd72efe2b321ccfc7f5745413e75b992f",
-        "bytes": 14563
+        "id": "tl-code",
+        "path": "hyperframes/media-use/scripts/lib/telemetry.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b817e192cb6a676db4de3a47058edd858815a0e7fb8d9fb80c150085e9284330",
+        "bytes": 8976
+      },
+      {
+        "kind": "repository",
+        "id": "rs-shim",
+        "path": "hyperframes/media-use/scripts/resolve.mjs",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "e4e78ab49d6006c7deae9030d520a7a4238dfbef1976ce219e219b64f8e4247b",
+        "bytes": 1400
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "resolve-flow",
+        "inline": true,
+        "sha256": "44bfe73c917a3ceed750f276f3d9fd4205d4511ed9e42b6520c6c912547d017f",
+        "bytes": 2242
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "audio-flow",
+        "inline": true,
+        "sha256": "81fd6bd3e9f95bf11d8534921a6eee1c6158de74ec5d62d08d9fbe1ec1181b75",
+        "bytes": 1297
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "treatment-flow",
+        "inline": true,
+        "sha256": "b798c82a4f8f69dd2c9503539a12ded83c05b5e920d0e9a7a7647dfa01fe53d1",
+        "bytes": 2125
       },
       {
         "kind": "diagram-spec",
         "id": "position-flow",
         "inline": true,
-        "sha256": "ec2b74624163793b5400dca9b9b887f01456009aac87a333ff003af0e1f49586",
-        "bytes": 878
+        "sha256": "6c59076e352001cc76cfd8ca295878f7fb65ab816d12ad26508576707c9210fc",
+        "bytes": 849
       }
     ]
   }

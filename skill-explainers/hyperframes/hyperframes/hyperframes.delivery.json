@@ -1,291 +1,169 @@
 {
   "schemaVersion": 1,
-  "receiptId": "b2a0316e-f587-4d36-b4af-49443867046b",
+  "receiptId": "86836824-7ba5-4cab-a100-37451d381957",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes/hyperframes.html",
   "specification": {
-    "sha256": "b86d8502b3ac00956b86cc9aca323504aa162f00e2b1e2def2517d44052a34d3",
-    "bytes": 42907
+    "sha256": "da05d8540667425dd77867a4ae5db95444666fe4f1fa0b2eb8b99340139ebde7",
+    "bytes": 62672
   },
   "artifact": {
-    "sha256": "26ba99819acf91dcb67a4e43ea4482ba9d80d62c9fc0b813202debba9d682230",
-    "bytes": 1660431
+    "sha256": "c142c2a66514fbe59608c3c2fc0973585627ecba4756738c07524ab6ab7fdcdc",
+    "bytes": 2338447
   },
   "explainer": {
-    "preparedSha256": "fb778ea88488cc4697dcd2b72ccf4b705ce8cec87c28d9ee1d80fc4405e7d33c",
+    "preparedSha256": "1e46ca22a439472892e8f74ea12473476a1ecc6a2c9db6781536b2699e218767",
     "dependencies": [
       {
         "kind": "repository",
-        "id": "s-front",
+        "id": "sk-fm",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-plugin",
+        "id": "sk-start",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-beacon",
+        "id": "sk-intro",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-engine",
+        "id": "sk-contract",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-layout",
+        "id": "sk-edit",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-build",
+        "id": "sk-loop",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-check",
+        "id": "sk-app",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-c01",
+        "id": "sk-read",
         "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
         "bytes": 7481
       },
       {
         "kind": "repository",
-        "id": "s-c02",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c03",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c04",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c05",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c06",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c07",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c08",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c09",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c10",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c11",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-c12",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-edit",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-loop1",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-loop2",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-loop3",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-loop4",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-app",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-read",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "s-tail",
-        "path": "hyperframes/hyperframes/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
-        "bytes": 7481
-      },
-      {
-        "kind": "repository",
-        "id": "r-story-pick",
+        "id": "r-story-skip",
         "path": "hyperframes/hyperframes/references/story.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22",
         "bytes": 11486
       },
       {
         "kind": "repository",
-        "id": "x-bake",
-        "path": "hyperframes/hyperframes/scripts/bake-basemap.mjs",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "fea86ab2e2aab59fa81e4b26d77c0edcaadaf4c41b4455cf359c06047088c40c",
-        "bytes": 18197
+        "id": "r-story-pick",
+        "path": "hyperframes/hyperframes/references/story.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "3c2b96bb7f262652f4bf5efdef1ae806b47fd259c6704cb131938c5254965f22",
+        "bytes": 11486
       },
       {
         "kind": "repository",
-        "id": "x-locate",
-        "path": "hyperframes/hyperframes/scripts/locate.mjs",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248",
-        "bytes": 8273
+        "id": "r-spec-ban",
+        "path": "hyperframes/hyperframes/references/spec.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0",
+        "bytes": 6055
       },
       {
         "kind": "repository",
-        "id": "x-locate-auto",
-        "path": "hyperframes/hyperframes/scripts/locate.mjs",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "c6583d7867b32a2f6f0c144f79b9abd27b9792c4bffa1256547d58cbcf5c0248",
-        "bytes": 8273
+        "id": "r-spec-num",
+        "path": "hyperframes/hyperframes/references/spec.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "6fa0658c5cf5c23058f70a6549cc952d683979052a0934760ba748bbec88fbc0",
+        "bytes": 6055
       },
       {
         "kind": "repository",
-        "id": "f-cap",
-        "path": "hyperframes/hyperframes/assets/frame-presets/biennale-yellow/caption-skin.html",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "b0e4812d9cb5852969be276f8a98ffa2b293ba8cc902fababae3f3f6340088c3",
-        "bytes": 8131
+        "id": "r-review-measure",
+        "path": "hyperframes/hyperframes/references/review.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "90886b58db02aaa53e6b91c433748629eda061b18465804b56ebbbab92508e56",
+        "bytes": 5327
+      },
+      {
+        "kind": "repository",
+        "id": "r-format-lint",
+        "path": "hyperframes/hyperframes/references/format.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "1eae5b314fab5e36e7ff5f41e9a3f95db4b5efb179ad8ef7cc74ef9235d49d62",
+        "bytes": 13196
+      },
+      {
+        "kind": "repository",
+        "id": "r-look-presets",
+        "path": "hyperframes/hyperframes/references/look.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "5128a54cdb75bca2f627170e4a3a9667f4f11cf1579301fc16c53862c29c3ad3",
+        "bytes": 6031
       },
       {
         "kind": "diagram-spec",
-        "id": "work-loop",
+        "id": "intake-flow",
         "inline": true,
-        "sha256": "fdcf852ca14b97fc1d2a451c6a30cd0d7b3986e25aae5f78b0296011f2260710",
-        "bytes": 2668
+        "sha256": "5770b9efaecf7c434268ebd822cb3708f6a2c35ccf18e0d60f9ad607784b3cae",
+        "bytes": 2152
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "build-flow",
+        "inline": true,
+        "sha256": "1511322a5589f04b133a26460148ee409942057924dbd59134d8829019e87238",
+        "bytes": 1927
       },
       {
         "kind": "diagram-spec",
         "id": "hub-position",
         "inline": true,
-        "sha256": "15fa80344c9a22cbed07b3497959e5786d6001048eb185cd6fce272e1f857beb",
-        "bytes": 1858
+        "sha256": "09385fb2fdd5e1ed0731d8e6266951e0021c7e25150d47632ca6ec091df7e70f",
+        "bytes": 1770
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "project-layout",
+        "inline": true,
+        "sha256": "96d8148606337e870f19e89bbcd630a508a664a722016c7527462a0b6a4e82ba",
+        "bytes": 817
       }
     ]
   }

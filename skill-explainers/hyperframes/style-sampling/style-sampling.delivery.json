@@ -1,290 +1,330 @@
 {
   "schemaVersion": 1,
-  "receiptId": "a6f4116f-4e47-4813-89c9-a743e7457565",
+  "receiptId": "70e3d620-cb96-4b0a-8930-a8cbb77419c5",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/style-sampling/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/style-sampling/style-sampling.html",
   "specification": {
-    "sha256": "ea6c110b06ebcf471ad0f0d690419ea259698c08eacebed6dd7131f390760613",
-    "bytes": 25167
+    "sha256": "907d0277ca019d364bbe1dfb4c61324ac3216d16af7398ee12b79fbc52648e4a",
+    "bytes": 44533
   },
   "artifact": {
-    "sha256": "c69e63477c6d1eb57f8cff0c3f13accb4ce7416be3ac2e3368f7f9c71f97e1d3",
-    "bytes": 1876133
+    "sha256": "5dd747e072305babba829cb348f702176aeba036d132761547711f0c50d0d4a7",
+    "bytes": 2156574
   },
   "explainer": {
-    "preparedSha256": "d05fba56681e2f04567676ce4172511ceb4dd032ecf61d8037a661c898d15b05",
+    "preparedSha256": "fd514754c330708ffb13d22b9fcccb258eb548d88b6ef67c1f8d98f66ab6bb13",
     "dependencies": [
       {
         "kind": "repository",
-        "id": "skill-front",
+        "id": "sk-front",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-intro",
+        "id": "sk-plugin",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-plugin",
+        "id": "sk-beacon",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-beacon",
+        "id": "sk-goal",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-pro",
+        "id": "sk-pro",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-table",
+        "id": "sk-table",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-which",
+        "id": "sk-which",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-nofit",
+        "id": "sk-nofit",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-start",
+        "id": "sk-start",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-pull",
+        "id": "sk-pull",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-make",
+        "id": "sk-make",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "skill-credits",
+        "id": "sk-credits",
         "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
         "bytes": 5113
       },
       {
         "kind": "repository",
-        "id": "remix-prec",
+        "id": "rx-order",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-order",
+        "id": "rx-tpl",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-tpl",
+        "id": "rx-read",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-read",
+        "id": "rx-ask",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-ask",
+        "id": "rx-never",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-never",
+        "id": "rx-presenter",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-presenter",
+        "id": "rx-voice",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-voice",
+        "id": "rx-coming",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-coming",
+        "id": "rx-length",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-length",
+        "id": "rx-names",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-credits-names",
+        "id": "rx-facts",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-facts",
+        "id": "rx-stop1",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-stop1",
+        "id": "rx-audio",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-audition",
+        "id": "rx-footage",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-footage",
+        "id": "rx-checks",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-checks",
+        "id": "rx-stop2",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-stop2",
+        "id": "rx-reply",
         "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
         "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
         "bytes": 11074
       },
       {
         "kind": "repository",
-        "id": "remix-reply",
-        "path": "hyperframes/style-sampling/references/remix.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "36573cfa9455e6850af147fa58c7bf3de5d8da00e5003983253f9cc7bcb1d2cc",
-        "bytes": 11074
+        "id": "rel-skill",
+        "path": "skill-explainers/hyperframes/relations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b8415ca0c6ab7c02bb706c7c79aa67b0e8cc962fa1e289f20a141dca1f0c9bf6",
+        "bytes": 15234
       },
       {
         "kind": "repository",
-        "id": "skill-end",
-        "path": "hyperframes/style-sampling/SKILL.md",
-        "revision": "f85af643f25876081562e9820cd87fb45a478480",
-        "sha256": "88dfb15673fadf63e6f4cc99a2f17ba595a358ee79021e628078ebb912c73efe",
-        "bytes": 5113
+        "id": "rel-r05",
+        "path": "skill-explainers/hyperframes/relations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b8415ca0c6ab7c02bb706c7c79aa67b0e8cc962fa1e289f20a141dca1f0c9bf6",
+        "bytes": 15234
+      },
+      {
+        "kind": "repository",
+        "id": "rel-r13",
+        "path": "skill-explainers/hyperframes/relations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b8415ca0c6ab7c02bb706c7c79aa67b0e8cc962fa1e289f20a141dca1f0c9bf6",
+        "bytes": 15234
+      },
+      {
+        "kind": "repository",
+        "id": "rel-r21",
+        "path": "skill-explainers/hyperframes/relations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b8415ca0c6ab7c02bb706c7c79aa67b0e8cc962fa1e289f20a141dca1f0c9bf6",
+        "bytes": 15234
+      },
+      {
+        "kind": "repository",
+        "id": "rel-group",
+        "path": "skill-explainers/hyperframes/relations.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "b8415ca0c6ab7c02bb706c7c79aa67b0e8cc962fa1e289f20a141dca1f0c9bf6",
+        "bytes": 15234
+      },
+      {
+        "kind": "repository",
+        "id": "hf-route",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "mu-credits",
+        "path": "hyperframes/media-use/SKILL.md",
+        "revision": "243a9028dc78fe13c6f64b1a5c199bc9939ccc06",
+        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+        "bytes": 5311
       },
       {
         "kind": "diagram-spec",
-        "id": "start-gate",
+        "id": "pull-flow",
         "inline": true,
-        "sha256": "5d76741d7091b86809627631a5e76a9b4965a62b598db9e17e8bab0ee5a186e5",
-        "bytes": 1210
+        "sha256": "dc6ed3e2685b8181f933f97f745e90538512cf0946a219eebd6c3b242aab723b",
+        "bytes": 3038
       },
       {
         "kind": "diagram-spec",
         "id": "episode-flow",
         "inline": true,
-        "sha256": "e7e4aed66b8e01aae0c00d346cf986aa8f3f5ff8c4c8d2a886c25287f5a8b16d",
-        "bytes": 1814
+        "sha256": "c2792ee99b69b2d9acd622d55d4ebf2d9bbcddf7f5e1a3aa3cef3613b9baa702",
+        "bytes": 2480
       },
       {
         "kind": "diagram-spec",
         "id": "position-flow",
         "inline": true,
-        "sha256": "b0fde6110ec9d3ccea84ecf3f24a1b3f64a15c0c61eaa9bd69801d128b08aa96",
-        "bytes": 677
+        "sha256": "e6f5b7ba71d29b09404f4dbe8edbafaffa8dea9737dfac7e70bb5ca19fe9031a",
+        "bytes": 866
       }
     ]
   }

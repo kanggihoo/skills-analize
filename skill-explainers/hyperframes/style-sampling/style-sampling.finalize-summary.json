@@ -7,13 +7,13 @@
   "quality": "showcase",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/style-sampling/candidate.archify.md",
-    "sha256": "ea6c110b06ebcf471ad0f0d690419ea259698c08eacebed6dd7131f390760613",
-    "bytes": 25167
+    "sha256": "907d0277ca019d364bbe1dfb4c61324ac3216d16af7398ee12b79fbc52648e4a",
+    "bytes": 44533
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/style-sampling/style-sampling.html",
-    "sha256": "c69e63477c6d1eb57f8cff0c3f13accb4ce7416be3ac2e3368f7f9c71f97e1d3",
-    "bytes": 1876133
+    "sha256": "5dd747e072305babba829cb348f702176aeba036d132761547711f0c50d0d4a7",
+    "bytes": 2156574
   },
   "gates": {
     "validate": "pass",
@@ -21,32 +21,10 @@
     "check": "pass",
     "browser-check": "not-run"
   },
-  "diagnostics": [
-    {
-      "code": "explainer/writing-paragraph-length",
-      "severity": "warning",
-      "message": "This paragraph has 5 sentences and 5 reading units; long paragraphs are what the page should replace.",
-      "subject": {
-        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/style-sampling/candidate.archify.md",
-        "line": 73,
-        "component": "prose",
-        "panelId": "activation"
-      },
-      "evidence": {
-        "reason": "This paragraph has 5 sentences and 5 reading units; long paragraphs are what the page should replace.",
-        "example": "把并列要点写成列表，把先后动作写成 @steps，把方案差异写成对比表。 / Turn parallel points into a list, ordered actions into @steps and option differences into a comparison.",
-        "rule": "paragraph-length",
-        "units": 5,
-        "limit": 120
-      },
-      "supportedFixes": [
-        "Split the paragraph into a list, steps or a comparison; keep at most two or three short sentences of prose."
-      ]
-    }
-  ],
+  "diagnostics": [],
   "diagnosticSummary": {
-    "total": 1,
-    "shown": 1,
+    "total": 0,
+    "shown": 0,
     "truncated": false
   },
   "evidence": {
@@ -64,7 +42,7 @@
     "noticeText": null
   },
   "visualReview": "not-requested",
-  "durationMs": 5288,
+  "durationMs": 2398,
   "browserCheck": {
     "requested": false,
     "ran": false

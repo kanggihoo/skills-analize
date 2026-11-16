@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "receiptId": "bec5dd35-4787-4c63-a649-42293f929004",
+  "receiptId": "b1f1b073-e084-4a0c-a465-444d834b4150",
   "status": "current",
   "command": "deliver",
   "type": "explainer",
   "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/cloud-findings/candidate.archify.md",
   "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/cloud-findings/cloud-findings.html",
   "specification": {
-    "sha256": "096acf2b22e43919c28b19eeb26c5fcd71a0e603ace8995be2a2d21503372569",
-    "bytes": 24537
+    "sha256": "8e177bb7b15f888ed0972cd98234d5e5ac5968e27dcb660367576c73fde136c0",
+    "bytes": 33353
   },
   "artifact": {
-    "sha256": "33ad907fede23e08acdb74a7617ec7a39b669bd1595fc75d438ccf3077469c5f",
-    "bytes": 1370529
+    "sha256": "ca99137f65cbef29c848b2c4e03f2be2f00d745893b0928772027d7d3a358ad5",
+    "bytes": 1834170
   },
   "explainer": {
-    "preparedSha256": "ed6ec210a1aff60bf55b38b9958fc3b56977c4cef5a326f8bc0248e9bdb5fb7b",
+    "preparedSha256": "7abdb23f05b46d16dc6d39326a8baa63117ee02f84e22fa8e6fdf319a0296a53",
     "dependencies": [
       {
         "kind": "repository",
@@ -35,7 +35,15 @@
       },
       {
         "kind": "repository",
-        "id": "ro",
+        "id": "app-cloud",
+        "path": "codex-security/plugins/codex-security/.app.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "c76ff05463dcb4b7992a010773ccd4d5bb456786de9cd3dc2138d9a28c8a9fb0",
+        "bytes": 717
+      },
+      {
+        "kind": "repository",
+        "id": "scope",
         "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
@@ -59,7 +67,23 @@
       },
       {
         "kind": "repository",
-        "id": "access",
+        "id": "acc-stop",
+        "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "acc-github",
+        "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "acc-auth",
         "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
@@ -115,7 +139,7 @@
       },
       {
         "kind": "repository",
-        "id": "evidence",
+        "id": "evid-read",
         "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
@@ -139,7 +163,7 @@
       },
       {
         "kind": "repository",
-        "id": "scan",
+        "id": "scan-hist",
         "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
@@ -147,11 +171,19 @@
       },
       {
         "kind": "repository",
-        "id": "app-cloud",
-        "path": "codex-security/plugins/codex-security/.app.json",
+        "id": "scan-state",
+        "path": "codex-security/plugins/codex-security/skills/cloud-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-        "sha256": "c76ff05463dcb4b7992a010773ccd4d5bb456786de9cd3dc2138d9a28c8a9fb0",
-        "bytes": 717
+        "sha256": "a534ce50f358a1076b4d4c186a22675a0d23f6dd97564009ea66a08813497e64",
+        "bytes": 10563
+      },
+      {
+        "kind": "repository",
+        "id": "mcp-src",
+        "path": "codex-security/plugins/codex-security/.mcp.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "69bbc0f86c92397eb7540ff09c17d69d429b0dc45dc1de3e02b16d101adfe7c0",
+        "bytes": 2078
       },
       {
         "kind": "repository",
@@ -179,7 +211,7 @@
       },
       {
         "kind": "repository",
-        "id": "rel-pf-desc",
+        "id": "pf-desc",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -187,7 +219,7 @@
       },
       {
         "kind": "repository",
-        "id": "rel-pf-cloud",
+        "id": "pf-cloud",
         "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
         "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
         "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
@@ -195,17 +227,24 @@
       },
       {
         "kind": "diagram-spec",
-        "id": "cloud-flow",
+        "id": "cloud-prepare",
         "inline": true,
-        "sha256": "de475ca801a2e0ec736b1d93c7a85d14b3012bac6a085a0bfa213d7b80bf039c",
-        "bytes": 2153
+        "sha256": "902e61ef210acb8944f0919a01061a4410b4ce4a2af6923340d90a2753916b8b",
+        "bytes": 1202
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "cloud-read",
+        "inline": true,
+        "sha256": "66dfdc76ff4ed53574d02160cac89dd54b45bee8b834201970fb920338023e64",
+        "bytes": 1427
       },
       {
         "kind": "diagram-spec",
         "id": "position-flow",
         "inline": true,
-        "sha256": "e9ff05f5f9d53538b7273eb5fc8e0712130f45e7b04656193a679fc2946ca2d1",
-        "bytes": 531
+        "sha256": "ddc87e667f51e11103df96d3fa6236598acda99c192ff09ed0925a87a3dc1650",
+        "bytes": 496
       }
     ]
   }

@@ -5,16 +5,16 @@
   "status": "pass",
   "type": "explainer",
   "quality": "showcase",
-  "startedAt": "2026-11-15T08:56:22.659Z",
+  "startedAt": "2026-11-16T04:12:29.565Z",
   "specification": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/candidate.archify.md",
-    "sha256": "29bbdada6a1fad95e7f035956b9db197becfe7fca0448fd7125bc7dd553d7ee1",
-    "bytes": 46908
+    "sha256": "d835597b96c31e95d55f3cfee95099e6e77f5a35cc4e5410ebe505e35f8f7a85",
+    "bytes": 60210
   },
   "artifact": {
     "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/deep-security-scan.html",
-    "sha256": "747d4bec90b9a5b5d9796c76e4a69d91d8c8e9af016c7a22af71ac8a37f7ebb2",
-    "bytes": 3495580
+    "sha256": "5f34c294aadb990c8a2e27bb1143e0bc1586d38a454ce5cce01e6c4c6367a4d3",
+    "bytes": 4526363
   },
   "stages": {
     "browser-check": {
@@ -44,8 +44,8 @@
         "ok": true,
         "command": "validate",
         "specification": {
-          "sha256": "29bbdada6a1fad95e7f035956b9db197becfe7fca0448fd7125bc7dd553d7ee1",
-          "bytes": 46908
+          "sha256": "d835597b96c31e95d55f3cfee95099e6e77f5a35cc4e5410ebe505e35f8f7a85",
+          "bytes": 60210
         },
         "validation": {
           "checksPassed": 4,
@@ -60,7 +60,7 @@
     "deliver": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 2102,
+      "durationMs": 1796,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -76,14 +76,14 @@
       ],
       "receipt": {
         "schemaVersion": 1,
-        "receiptId": "27adfbe9-ad11-4455-965b-91fb42a2c437",
+        "receiptId": "c983e3d0-c4b4-471b-91a0-d0e22da48338",
         "ok": true,
         "command": "deliver",
         "type": "explainer",
         "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/candidate.archify.md",
         "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/deep-security-scan.html",
         "explainer": {
-          "preparedSha256": "a87e07fee3fc8ae5f0339f0701cbdc19ccc224d69e1727cc4a757ae63f0c8fab",
+          "preparedSha256": "3612299372e8232a9501171ca271c152288ffde82176155c0571d85f8ce54755",
           "dependencies": [
             {
               "kind": "repository",
@@ -95,15 +95,7 @@
             },
             {
               "kind": "repository",
-              "id": "yaml",
-              "path": "codex-security/plugins/codex-security/skills/deep-security-scan/agents/openai.yaml",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "3f8d781bf372b0d053a017eabaebf947d5d48d9be2b82cb67da211128924c3f1",
-              "bytes": 192
-            },
-            {
-              "kind": "repository",
-              "id": "d-intro",
+              "id": "sk-intro",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -111,7 +103,7 @@
             },
             {
               "kind": "repository",
-              "id": "d-1",
+              "id": "sk-1",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -119,7 +111,7 @@
             },
             {
               "kind": "repository",
-              "id": "d-2",
+              "id": "sk-2",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -127,7 +119,7 @@
             },
             {
               "kind": "repository",
-              "id": "d-3",
+              "id": "sk-3",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -135,7 +127,7 @@
             },
             {
               "kind": "repository",
-              "id": "d-4",
+              "id": "sk-4",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -143,7 +135,7 @@
             },
             {
               "kind": "repository",
-              "id": "d-5",
+              "id": "sk-5",
               "path": "codex-security/plugins/codex-security/skills/deep-security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1d8328232b225b50526b2aaec54b253e4018956531ef22860c70789ae0410fe8",
@@ -159,7 +151,7 @@
             },
             {
               "kind": "repository",
-              "id": "sc-front",
+              "id": "ss-desc",
               "path": "codex-security/plugins/codex-security/skills/security-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
@@ -167,7 +159,15 @@
             },
             {
               "kind": "repository",
-              "id": "diff-desc",
+              "id": "ss-core",
+              "path": "codex-security/plugins/codex-security/skills/security-scan/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+              "bytes": 2972
+            },
+            {
+              "kind": "repository",
+              "id": "ds-desc",
               "path": "codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
@@ -175,7 +175,7 @@
             },
             {
               "kind": "repository",
-              "id": "track-8",
+              "id": "tr-8",
               "path": "codex-security/plugins/codex-security/skills/track-findings/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "ef1cbf5e8b0240a78f32903540f6c1b500cd329c00bfcefc405fec1e382c46e9",
@@ -183,7 +183,7 @@
             },
             {
               "kind": "repository",
-              "id": "track-24",
+              "id": "tr-24",
               "path": "codex-security/plugins/codex-security/skills/track-findings/SKILL.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "ef1cbf5e8b0240a78f32903540f6c1b500cd329c00bfcefc405fec1e382c46e9",
@@ -271,6 +271,22 @@
             },
             {
               "kind": "repository",
+              "id": "fr-info",
+              "path": "codex-security/plugins/codex-security/references/final-report.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f742994e8c9109cf6072c578104f75a7353bd562614ee7288a30105c53717c89",
+              "bytes": 12135
+            },
+            {
+              "kind": "repository",
+              "id": "fr-err",
+              "path": "codex-security/plugins/codex-security/references/final-report.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f742994e8c9109cf6072c578104f75a7353bd562614ee7288a30105c53717c89",
+              "bytes": 12135
+            },
+            {
+              "kind": "repository",
               "id": "fr-resp",
               "path": "codex-security/plugins/codex-security/references/final-report.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
@@ -279,11 +295,43 @@
             },
             {
               "kind": "repository",
-              "id": "as-3",
+              "id": "as-own",
               "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
               "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-supp",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-store",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "cs-intro",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-ctx",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
             },
             {
               "kind": "repository",
@@ -295,7 +343,7 @@
             },
             {
               "kind": "repository",
-              "id": "cs-noskill",
+              "id": "cs-tm",
               "path": "codex-security/plugins/codex-security/references/core-scan.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
@@ -303,7 +351,79 @@
             },
             {
               "kind": "repository",
-              "id": "ba-rules",
+              "id": "cs-pk",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-inv",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-ck",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-val",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-asm",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-end",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-src",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-sec",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "cs-sev",
+              "path": "codex-security/plugins/codex-security/references/core-scan.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+              "bytes": 7479
+            },
+            {
+              "kind": "repository",
+              "id": "ba-chk",
               "path": "codex-security/plugins/codex-security/references/baseline-auditor.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "717ad7cdcda32fe212e7f930ea5c1cb301eae005833490808dce35d49314a74b",
@@ -311,7 +431,15 @@
             },
             {
               "kind": "repository",
-              "id": "fi-rules",
+              "id": "ba-lim",
+              "path": "codex-security/plugins/codex-security/references/baseline-auditor.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "717ad7cdcda32fe212e7f930ea5c1cb301eae005833490808dce35d49314a74b",
+              "bytes": 2839
+            },
+            {
+              "kind": "repository",
+              "id": "fi-inv",
               "path": "codex-security/plugins/codex-security/references/focused-investigator.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "5624cca98860204c50ac3f281486594b690a04a4979144fd608769a50aadfc18",
@@ -319,31 +447,15 @@
             },
             {
               "kind": "repository",
-              "id": "sc-modes",
-              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
+              "id": "fi-lim",
+              "path": "codex-security/plugins/codex-security/references/focused-investigator.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
-              "bytes": 16529
+              "sha256": "5624cca98860204c50ac3f281486594b690a04a4979144fd608769a50aadfc18",
+              "bytes": 2548
             },
             {
               "kind": "repository",
-              "id": "sc-inv",
-              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
-              "bytes": 16529
-            },
-            {
-              "kind": "repository",
-              "id": "sc-rev",
-              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
-              "bytes": 16529
-            },
-            {
-              "kind": "repository",
-              "id": "sc-tm",
+              "id": "sc-docs",
               "path": "codex-security/plugins/codex-security/references/scan-contract.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
@@ -359,23 +471,39 @@
             },
             {
               "kind": "repository",
-              "id": "sa-deep",
-              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+              "id": "sc-deep",
+              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
-              "bytes": 11701
+              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
+              "bytes": 16529
             },
             {
               "kind": "repository",
-              "id": "tb-3",
-              "path": "codex-security/plugins/codex-security/references/investigation-time-budget.md",
+              "id": "sc-modes",
+              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "3216d053bd2e4ede72d3a64ef38974d293dfb54a000a40782d73357070b0f1e9",
-              "bytes": 1749
+              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
+              "bytes": 16529
             },
             {
               "kind": "repository",
-              "id": "dd-1",
+              "id": "sc-dm",
+              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
+              "bytes": 16529
+            },
+            {
+              "kind": "repository",
+              "id": "sc-tm",
+              "path": "codex-security/plugins/codex-security/references/scan-contract.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "ba4e01a4c3c753f41d1ffd69d6bb10c51fb12b9a6a8904c42e6e66e3fbe2a13c",
+              "bytes": 16529
+            },
+            {
+              "kind": "repository",
+              "id": "dd-cfg",
               "path": "codex-security/plugins/codex-security/mcp-app/templates/deep-scan/discovery.md",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "46593c1c4499712add28e382d5a73efe3b66e6e3f53f5e97b106f9f36c1d0572",
@@ -423,6 +551,14 @@
             },
             {
               "kind": "repository",
+              "id": "tpl-ctx",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/templates.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "eb1ab655cef38bc51b8fe401bfb590363023ced9ac8d6451e8fbddfd13588571",
+              "bytes": 1768
+            },
+            {
+              "kind": "repository",
               "id": "tpl-prev",
               "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/templates.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
@@ -455,7 +591,31 @@
             },
             {
               "kind": "repository",
-              "id": "co-streak",
+              "id": "co-dl-stop",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
+              "bytes": 40348
+            },
+            {
+              "kind": "repository",
+              "id": "co-init",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
+              "bytes": 40348
+            },
+            {
+              "kind": "repository",
+              "id": "co-replay",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
+              "bytes": 40348
+            },
+            {
+              "kind": "repository",
+              "id": "co-merge",
               "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
@@ -487,7 +647,31 @@
             },
             {
               "kind": "repository",
-              "id": "ex-483",
+              "id": "co-out",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
+              "bytes": 40348
+            },
+            {
+              "kind": "repository",
+              "id": "co-mrg",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/coordinator.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "b7352c3a1f9c2e4f2f4808d77aaadb3bc62e051148b6b014127d8e1b22a1e8e1",
+              "bytes": 40348
+            },
+            {
+              "kind": "repository",
+              "id": "ct-peer",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
+              "bytes": 15421
+            },
+            {
+              "kind": "repository",
+              "id": "ex-spawn",
               "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/executor.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "927b10816e4c0d3238e29654186d58ca242d88a0b104b32c7e72172f22ed2016",
@@ -495,35 +679,11 @@
             },
             {
               "kind": "repository",
-              "id": "cfg-def",
-              "path": "codex-security/plugins/codex-security/scripts/deep_scan_defaults.json",
+              "id": "ex-input",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/executor.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "89bdb96ff721f0f1d509f3c5c83f5fc89022f14406d0a84df781b7e0e42cde66",
-              "bytes": 143
-            },
-            {
-              "kind": "repository",
-              "id": "cfg-path",
-              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
-              "bytes": 6510
-            },
-            {
-              "kind": "repository",
-              "id": "cfg-keys",
-              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
-              "bytes": 6510
-            },
-            {
-              "kind": "repository",
-              "id": "cfg-res",
-              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
-              "bytes": 6510
+              "sha256": "927b10816e4c0d3238e29654186d58ca242d88a0b104b32c7e72172f22ed2016",
+              "bytes": 48414
             },
             {
               "kind": "repository",
@@ -551,6 +711,14 @@
             },
             {
               "kind": "repository",
+              "id": "pre-id",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/permission-profile-preflight.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "d03e439424a4babeb71595988cd9666f082b745ca5d38bb9f89ddbbcea10019d",
+              "bytes": 32222
+            },
+            {
+              "kind": "repository",
               "id": "srv-insp",
               "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
@@ -559,7 +727,15 @@
             },
             {
               "kind": "repository",
-              "id": "srv-start",
+              "id": "srv-ui",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "srv-desc",
               "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
@@ -599,39 +775,39 @@
             },
             {
               "kind": "repository",
-              "id": "srv-ui",
-              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "id": "cfg-def",
+              "path": "codex-security/plugins/codex-security/scripts/deep_scan_defaults.json",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
-              "bytes": 84254
+              "sha256": "89bdb96ff721f0f1d509f3c5c83f5fc89022f14406d0a84df781b7e0e42cde66",
+              "bytes": 143
             },
             {
               "kind": "repository",
-              "id": "ct-peer",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+              "id": "cfg-path",
+              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
-              "bytes": 15421
+              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
+              "bytes": 6510
             },
             {
               "kind": "repository",
-              "id": "ct-wdraft",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+              "id": "cfg-res",
+              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
-              "bytes": 15421
+              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
+              "bytes": 6510
             },
             {
               "kind": "repository",
-              "id": "pre-id",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/permission-profile-preflight.ts",
+              "id": "cfg-req",
+              "path": "codex-security/plugins/codex-security/scripts/deep_scan_config.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "d03e439424a4babeb71595988cd9666f082b745ca5d38bb9f89ddbbcea10019d",
-              "bytes": 32222
+              "sha256": "f9e384daa017afa553ef4fb99fdff5cbec93cb22bfd76b722d962bf32534f49d",
+              "bytes": 6510
             },
             {
               "kind": "repository",
-              "id": "cdt",
+              "id": "cdt-path",
               "path": "codex-security/plugins/codex-security/scripts/check_deep_scan_target.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
               "sha256": "165230b549343af0ad28cc5397459441506e2dfc4978ba00d717f9eb964a34c5",
@@ -639,11 +815,19 @@
             },
             {
               "kind": "repository",
-              "id": "eng",
-              "path": "codex-security/plugins/codex-security/mcp-app/src/deep-scan/engine.ts",
+              "id": "cdt-empty",
+              "path": "codex-security/plugins/codex-security/scripts/check_deep_scan_target.py",
               "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "dad0b8642ffaee74a0ff37c1e39db9879fd26eab7ba760e18adfaa5729f3d727",
-              "bytes": 4065
+              "sha256": "165230b549343af0ad28cc5397459441506e2dfc4978ba00d717f9eb964a34c5",
+              "bytes": 3538
+            },
+            {
+              "kind": "repository",
+              "id": "mcp-t",
+              "path": "codex-security/plugins/codex-security/.mcp.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "69bbc0f86c92397eb7540ff09c17d69d429b0dc45dc1de3e02b16d101adfe7c0",
+              "bytes": 2078
             },
             {
               "kind": "repository",
@@ -662,43 +846,42 @@
               "bytes": 2613
             },
             {
-              "kind": "repository",
-              "id": "mcp",
-              "path": "codex-security/plugins/codex-security/.mcp.json",
-              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
-              "sha256": "69bbc0f86c92397eb7540ff09c17d69d429b0dc45dc1de3e02b16d101adfe7c0",
-              "bytes": 2078
+              "kind": "diagram-spec",
+              "id": "agent-start",
+              "inline": true,
+              "sha256": "ac9f3416ce568650e4ff73c2ec2ce70e0d1350d7d7ec058e408d8da4ab5b4f4e",
+              "bytes": 2482
             },
             {
               "kind": "diagram-spec",
-              "id": "deep-start",
+              "id": "coordinator-loop",
               "inline": true,
-              "sha256": "2ccaaeccbf5ebe909421b01fd3c0f2dae63f105375d9172d3d1b69513ea8ca21",
-              "bytes": 1727
+              "sha256": "8d6b5345acdc24ea9485de93f37f134440531cc3956b4491501ca0292eaa3c9e",
+              "bytes": 1662
             },
             {
               "kind": "diagram-spec",
-              "id": "deep-loop",
+              "id": "worker-audit-flow",
               "inline": true,
-              "sha256": "e3b50718a2c1fed7bef8802387231648bf4afedd05e1c1159643f1459b8ac86d",
-              "bytes": 1490
+              "sha256": "61f776a1233bb67a40ef03cbd3a05efeae1d3675fb9b1a94ad4a904551ba08e7",
+              "bytes": 1860
             },
             {
               "kind": "diagram-spec",
-              "id": "position-flow",
+              "id": "deep-scan-position",
               "inline": true,
-              "sha256": "3cb79f0673e94ec6f88bd1c2b136f4e6b93dba9f4bb5df707c1945905837423b",
-              "bytes": 1399
+              "sha256": "248fa74fbd7980ceb183c27e0438b305378cd1b12a2d20393463cac6226c8702",
+              "bytes": 910
             }
           ]
         },
         "specification": {
-          "sha256": "29bbdada6a1fad95e7f035956b9db197becfe7fca0448fd7125bc7dd553d7ee1",
-          "bytes": 46908
+          "sha256": "d835597b96c31e95d55f3cfee95099e6e77f5a35cc4e5410ebe505e35f8f7a85",
+          "bytes": 60210
         },
         "artifact": {
-          "sha256": "747d4bec90b9a5b5d9796c76e4a69d91d8c8e9af016c7a22af71ac8a37f7ebb2",
-          "bytes": 3495580
+          "sha256": "5f34c294aadb990c8a2e27bb1143e0bc1586d38a454ce5cce01e6c4c6367a4d3",
+          "bytes": 4526363
         },
         "validation": {
           "checksPassed": 4,
@@ -724,7 +907,7 @@
     "check": {
       "status": "pass",
       "exitCode": 0,
-      "durationMs": 962,
+      "durationMs": 1022,
       "command": [
         "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
         "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
@@ -737,15 +920,15 @@
         "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/deep-security-scan.html",
         "family": "explainer",
         "artifact": {
-          "sha256": "747d4bec90b9a5b5d9796c76e4a69d91d8c8e9af016c7a22af71ac8a37f7ebb2",
-          "bytes": 3495580
+          "sha256": "5f34c294aadb990c8a2e27bb1143e0bc1586d38a454ce5cce01e6c4c6367a4d3",
+          "bytes": 4526363
         },
         "checks": [
           {
             "name": "explainer_structure",
             "ok": true,
             "details": [
-              "238 unique DOM IDs"
+              "274 unique DOM IDs"
             ]
           },
           {
@@ -757,16 +940,17 @@
             "name": "explainer_dependencies",
             "ok": true,
             "details": [
-              "76 frozen dependencies"
+              "99 frozen dependencies"
             ]
           },
           {
             "name": "explainer_native_diagrams",
             "ok": true,
             "details": [
-              "deep-start: pass",
-              "deep-loop: pass",
-              "position-flow: pass"
+              "agent-start: pass",
+              "coordinator-loop: pass",
+              "worker-audit-flow: pass",
+              "deep-scan-position: pass"
             ]
           }
         ],
@@ -781,13 +965,13 @@
           "issues": [],
           "nativeDiagrams": [
             {
-              "id": "deep-start",
+              "id": "agent-start",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-DSEy9c/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-Mv4dzc/child.html",
                 "artifact": {
-                  "sha256": "d53483427cab942c032be194f0d42fa4ed83d632a4dad65884e6c3e046973d7b",
-                  "bytes": 842010
+                  "sha256": "f82923f752be91acf31a66f0e9e9578dd1b2120412c539d5afc3cd5f27bb2983",
+                  "bytes": 848969
                 },
                 "checks": [
                   {
@@ -854,10 +1038,10 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 22,
+                    "minLabelRouteClearance": 13,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 6.927374301675978,
+                    "minProjectedNodeTextPx": 7.106017191977077,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
@@ -900,21 +1084,21 @@
                       "to": "adv"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 6.927374301675978,
-                    "semanticTextCount": 14
+                    "minimumProjectedTextPx": 7.106017191977077,
+                    "semanticTextCount": 21
                   },
                   "issues": []
                 }
               }
             },
             {
-              "id": "deep-loop",
+              "id": "coordinator-loop",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-p58TRQ/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-atBRI0/child.html",
                 "artifact": {
-                  "sha256": "1940041131c7018aab447dadc47f7fa8857cf18b4e09a72058e46e957830c01a",
-                  "bytes": 839199
+                  "sha256": "45d446456dd54666376aa9705e49376d96c4ad2e29b54d2dcbbe8d701f439527",
+                  "bytes": 840973
                 },
                 "checks": [
                   {
@@ -981,7 +1165,7 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 69.6,
+                    "minLabelRouteClearance": 10,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
                     "minProjectedNodeTextPx": 8,
@@ -991,8 +1175,8 @@
                     "routesOverSuggestedStretch": 0,
                     "minSegmentPx": 8,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 1,
-                    "shortEndpointSegmentCount": 1,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -1022,26 +1206,26 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "chk-to-out-1",
-                      "from": "chk",
-                      "to": "out"
+                      "id": "errq-to-fail-1",
+                      "from": "errq",
+                      "to": "fail"
                     },
                     "minimumSourceTextPx": 8,
                     "minimumProjectedTextPx": 8,
-                    "semanticTextCount": 10
+                    "semanticTextCount": 12
                   },
                   "issues": []
                 }
               }
             },
             {
-              "id": "position-flow",
+              "id": "worker-audit-flow",
               "receipt": {
                 "ok": true,
-                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-FcUInX/child.html",
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-GWmAxT/child.html",
                 "artifact": {
-                  "sha256": "e281f3f379598dc7f3868083e2be8f215afb9245ef958d9e2935f1ccbe518a6d",
-                  "bytes": 838121
+                  "sha256": "8a4cb03b3ea847f52b925935a133e71478a7cd624d7bdb2330043d2bb4f2d470",
+                  "bytes": 842510
                 },
                 "checks": [
                   {
@@ -1108,18 +1292,18 @@
                     "containerBorderRuns": 0,
                     "labelRouteClearanceIssues": 0,
                     "labelCanvasOverflowIssues": 0,
-                    "minLabelRouteClearance": 19,
+                    "minLabelRouteClearance": 59,
                     "desktopReadabilityIssues": 0,
                     "viewportHeightIssues": 0,
-                    "minProjectedNodeTextPx": 7.425149700598802,
+                    "minProjectedNodeTextPx": 7.607361963190184,
                     "maxBends": 0,
                     "routesOverSuggestedBends": 0,
                     "maxStretch": 1,
                     "routesOverSuggestedStretch": 0,
-                    "minSegmentPx": 8,
+                    "minSegmentPx": 19,
                     "minInteriorSegmentPx": null,
-                    "shortSegmentCount": 1,
-                    "shortEndpointSegmentCount": 1,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
                     "shortInteriorSegmentCount": 0,
                     "microSegmentCount": 0
                   },
@@ -1149,13 +1333,140 @@
                     "hardFloorMet": true,
                     "minimumOwner": {
                       "kind": "edge",
-                      "id": "cur-to-diff-1",
-                      "from": "cur",
-                      "to": "diff"
+                      "id": "deleg-to-base-1",
+                      "from": "deleg",
+                      "to": "base"
                     },
                     "minimumSourceTextPx": 8,
-                    "minimumProjectedTextPx": 7.425149700598802,
-                    "semanticTextCount": 11
+                    "minimumProjectedTextPx": 7.607361963190184,
+                    "semanticTextCount": 13
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "deep-scan-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-dcaV9J/child.html",
+                "artifact": {
+                  "sha256": "2d44895308ffeb5d0770f1fb56b6225bce6d87db5f0b9444de854ad3cad30f50",
+                  "bytes": 833527
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 88.5,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.741935483870968,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 61.2,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "dp-to-tf-1",
+                      "from": "dp",
+                      "to": "tf"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.741935483870968,
+                    "semanticTextCount": 7
                   },
                   "issues": []
                 }
@@ -1165,7 +1476,7 @@
         },
         "diagnostics": [],
         "provenance": "current",
-        "deliveryReceiptId": "27adfbe9-ad11-4455-965b-91fb42a2c437"
+        "deliveryReceiptId": "c983e3d0-c4b4-471b-91a0-d0e22da48338"
       }
     }
   },
@@ -1179,8 +1490,8 @@
     "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/deep-security-scan/deep-security-scan.finalize-summary.json"
   },
   "visualReview": "not-requested",
-  "finishedAt": "2026-11-15T08:56:25.960Z",
-  "durationMs": 3301,
+  "finishedAt": "2026-11-16T04:12:32.582Z",
+  "durationMs": 3016,
   "update": {
     "status": "current",
     "installedVersion": "3.2.0",
