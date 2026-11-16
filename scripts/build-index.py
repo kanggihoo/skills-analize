@@ -102,19 +102,20 @@ def collection_index(ledger):
         by_origin = {}
         for m in alone:
             by_origin.setdefault(origin(m), []).append(m)
-        body.append('<h2>독립 스킬</h2><div class="cards">')
+        body.append('<h2>묶음 없는 스킬</h2><div class="cards">')
         for o, ms in by_origin.items():
             head = f"<h3>{esc(o)}</h3>" if o else ""
             body.append(f'<div class="card">{head}<ul>{"".join(li(m) for m in ms)}</ul></div>')
         body.append("</div>")
     has_origin = any(origin(s["경로 ID"]) for s in skills)
-    cols = ["스킬"] + (["출처"] if has_origin else []) + ["한 줄 요약", "역할", "묶음", "원문 비교"]
+    cols = ["스킬"] + (["출처"] if has_origin else []) + ["한 줄 요약", "묶음 내 역할", "묶음", "원문 비교"]
     body.append('<h2>전체 스킬</h2><div class="wrap"><table><tr>' + "".join(f"<th>{c}</th>" for c in cols) + "</tr>")
     for s in skills:
         href, ok, name = skill_link(col_dir, s["경로 ID"])
         cells = [f'<a href="{href}">{esc(name)}</a>' if ok else esc(name)]
         cells += [esc(origin(s["경로 ID"]))] if has_origin else []
-        cells += [esc(s.get(k, "")) for k in ("한 줄 요약", "역할", "소속 묶음", "원문 비교")]
+        s.setdefault("묶음 내 역할", s.get("역할", ""))  # 옛 원장은 열 이름이 `역할`
+        cells += [esc(s.get(k, "")) for k in ("한 줄 요약", "묶음 내 역할", "소속 묶음", "원문 비교")]
         body.append("<tr>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
     body.append("</table></div>")
     for kind in ("같은 계열", "참고"):
