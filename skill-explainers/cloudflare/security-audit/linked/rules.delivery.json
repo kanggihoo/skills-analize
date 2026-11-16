@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "3e7125fd-6733-491a-90bb-1b435940ee57",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\rules.archify.md",
+  "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\rules.html",
+  "specification": {
+    "sha256": "ec595548811453d918e9b45bf066acb99a089812e4fe4a4758ced4e75e1dee86",
+    "bytes": 10983
+  },
+  "artifact": {
+    "sha256": "06e3dd2711ed6d476e4d02660c093313625c27363adbc6c95957e986e67eca75",
+    "bytes": 573920
+  },
+  "explainer": {
+    "preparedSha256": "bbb45fe653065707078a0a0525aa3836ba49fe3d879ff8b3c7cf4835a788c6ea",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "skm-purpose",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-modes",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-safety",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-promote",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-boundary",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-local",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-visibility",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-priority",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-fix",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "skm-anti",
+        "path": "cloudflare/security-audit/SKILL.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+        "bytes": 22026
+      },
+      {
+        "kind": "repository",
+        "id": "hun-promote",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "val-promote",
+        "path": "cloudflare/security-audit/VALIDATION-AND-REPORTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "b892470cb89bb31f33403e050d4bdfbe2cdaef940ade1496fa65e32b2e129449",
+        "bytes": 17843
+      }
+    ]
+  }
+}

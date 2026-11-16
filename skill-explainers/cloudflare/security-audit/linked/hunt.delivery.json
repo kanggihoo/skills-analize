@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "a44643f1-218b-43a4-9bf4-302f6f16763d",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\hunt.archify.md",
+  "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\hunt.html",
+  "specification": {
+    "sha256": "b4e85996fb9c5de686fc87b4613dcd58062ca0814db10dbd329652e198b634d4",
+    "bytes": 9210
+  },
+  "artifact": {
+    "sha256": "5b6ee906e128385f1be940bbc11f01559eeb146f381ec718efad65d95413d2aa",
+    "bytes": 925000
+  },
+  "explainer": {
+    "preparedSha256": "04fd70454233c12f12463e69f345b81580d440654d58097292d18d800ecb2b87",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "hun-assign",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-prompt",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-method",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-gate",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-local",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-result",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-critic",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "hun-loop",
+        "path": "cloudflare/security-audit/HUNTING.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "71c121decea1322c47c718f6e110f1a892980bb4266bd7ac55ef043a213ade09",
+        "bytes": 22446
+      },
+      {
+        "kind": "repository",
+        "id": "atk-intro",
+        "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+        "bytes": 15695
+      },
+      {
+        "kind": "repository",
+        "id": "atk-core",
+        "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+        "bytes": 15695
+      },
+      {
+        "kind": "repository",
+        "id": "atk-wild",
+        "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+        "bytes": 15695
+      },
+      {
+        "kind": "repository",
+        "id": "atk-obvious",
+        "path": "cloudflare/security-audit/ATTACK-CLASSES.md",
+        "revision": "7ebc8e12b12a3c890a37457241cbfd7f027f759d",
+        "sha256": "3ee4f00c6e8c9dcf6dd02dd5ac2a4ceb322e2085f3e9fbe79cf0c6330bc7ef83",
+        "bytes": 15695
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "hunt-flow",
+        "inline": true,
+        "sha256": "da061daf011661cb063c62fd9fc42566c9dc64a4403a5295d6ce4baa8a8cc76d",
+        "bytes": 853
+      }
+    ]
+  }
+}

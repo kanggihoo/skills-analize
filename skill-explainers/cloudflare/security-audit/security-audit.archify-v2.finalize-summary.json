@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\candidate.v2.archify.md",
+    "sha256": "81bae0c1d7a40407b37c9a5e46c9dbff1f87b4769e247988a4e8a25d107242e2",
+    "bytes": 54392
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.archify-v2.html",
+    "sha256": "b618cc295da3a9f3d0b88e9a3ce51ba779507d236e9ec3bb176815ad221153d8",
+    "bytes": 3868630
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.archify-v2.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.archify-v2.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "durationMs": 5755,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}

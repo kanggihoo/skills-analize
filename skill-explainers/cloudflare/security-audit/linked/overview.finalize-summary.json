@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\overview.archify.md",
+    "sha256": "73d125fbf6886374e632a4cfa2fdd2ff43c9f5426269a28c3ae8e13caa6ba8a6",
+    "bytes": 26189
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\overview.html",
+    "sha256": "04407ed5364262e1f7cfaa630d432461e0ccd65d67129c5f00e4cde1e0bf3b59",
+    "bytes": 2288236
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\overview.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\linked\\overview.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-10T05:47:30.095Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 4571,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}
