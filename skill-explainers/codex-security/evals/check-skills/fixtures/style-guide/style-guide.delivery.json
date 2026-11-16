@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "f92fe78b-9468-49f9-a953-bcdef069e8e3",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/style-guide/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/style-guide/style-guide.html",
+  "specification": {
+    "sha256": "ff6f37dac80f6f19369286ddeaad19796e78935d6ae650c11e1e8311a62a60f6",
+    "bytes": 10397
+  },
+  "artifact": {
+    "sha256": "a839a9d74bb711ffb48dd4da59001dab701e8444a0a48134d6b70f8db4cbda39",
+    "bytes": 651451
+  },
+  "explainer": {
+    "preparedSha256": "ecb3dda1404e640f05acd6fc10adac4b36e708ce2ccb5e06fb0e16562929ac9c",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "sg-front",
+        "path": "codex-security/evals/check-skills/fixtures/style-guide/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3feceab90417b41425c099ad61a1adfeba95aa79757c183c79827becb204ca18",
+        "bytes": 329
+      },
+      {
+        "kind": "repository",
+        "id": "sg",
+        "path": "codex-security/evals/check-skills/fixtures/style-guide/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3feceab90417b41425c099ad61a1adfeba95aa79757c183c79827becb204ca18",
+        "bytes": 329
+      },
+      {
+        "kind": "repository",
+        "id": "sg-fence",
+        "path": "codex-security/evals/check-skills/fixtures/style-guide/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3feceab90417b41425c099ad61a1adfeba95aa79757c183c79827becb204ca18",
+        "bytes": 329
+      },
+      {
+        "kind": "repository",
+        "id": "sg-ret",
+        "path": "codex-security/evals/check-skills/fixtures/style-guide/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3feceab90417b41425c099ad61a1adfeba95aa79757c183c79827becb204ca18",
+        "bytes": 329
+      },
+      {
+        "kind": "repository",
+        "id": "cs-clean",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-untrusted",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-ext",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-dyn",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-nofind",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "cs-pass",
+        "path": "codex-security/plugins/codex-security/skills/check-skills/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "790204df7e162d44b4ea509bb67aaa1b61ffb1f602f6f01cad0ae89e085c16fb",
+        "bytes": 5844
+      },
+      {
+        "kind": "repository",
+        "id": "lock-sg",
+        "path": "codex-security/skills-lock.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e6be246bd87f1895bbb82802540f875bb98c410b6a1e1c9db87ca98e2f62a8c9",
+        "bytes": 6525
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "style-guide-position",
+        "inline": true,
+        "sha256": "cf393affab6d78e661cfb4389da2ad6f5cbede5bdcd6676fffc2ca60a02f77f1",
+        "bytes": 857
+      }
+    ]
+  }
+}

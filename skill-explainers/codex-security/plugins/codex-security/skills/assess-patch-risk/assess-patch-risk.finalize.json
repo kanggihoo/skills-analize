@@ -1,0 +1,907 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-15T08:41:46.174Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/candidate.archify.md",
+    "sha256": "a5993be4f44991ccf2ad0e9bf8b14481cf3627a8bd35745a5d50e5775889f9db",
+    "bytes": 37636
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+    "sha256": "7810e84f73c4d029325234a1117ae3acbc59892d7114b68a209975795f551ccf",
+    "bytes": 1903187
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "a5993be4f44991ccf2ad0e9bf8b14481cf3627a8bd35745a5d50e5775889f9db",
+          "bytes": 37636
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1275,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "7245b9ed-1954-4e63-b44a-ca78ae63298f",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+        "explainer": {
+          "preparedSha256": "1aced3b32ae719565f9cf26a4ca3e6a44dfe4a3a73899720108875b22d14c8ec",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "a-front",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-storage",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-concepts",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-rubric-ptr",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-bind",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-data",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-keep",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-sem",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-map",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-bound",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-falsify",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-protect",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-recover",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-unknown",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-rec",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-label",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-output",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-valid",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-evid",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "a-hard",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "rb-impact",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-like",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-prot",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-rec",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-conf",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-chal",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-enum",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-trig",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-gate",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "rb-end",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+              "bytes": 5049
+            },
+            {
+              "kind": "repository",
+              "id": "win",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/windows-validation.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "9a7d12e493497b2aa7135493e3d23ec35da05f687f6513266a5c45ffb67dad94",
+              "bytes": 1173
+            },
+            {
+              "kind": "repository",
+              "id": "st-owner",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "st-limit",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "sch-sha",
+              "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+              "bytes": 6858
+            },
+            {
+              "kind": "repository",
+              "id": "sch-val",
+              "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+              "bytes": 6858
+            },
+            {
+              "kind": "repository",
+              "id": "sch-plan",
+              "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+              "bytes": 6858
+            },
+            {
+              "kind": "repository",
+              "id": "sch-req",
+              "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+              "bytes": 6858
+            },
+            {
+              "kind": "repository",
+              "id": "sch-opt",
+              "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+              "bytes": 6858
+            },
+            {
+              "kind": "repository",
+              "id": "val-fail",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-merge",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-hold",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-noop",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-revise",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-gate",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "val-cli",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+              "bytes": 6621
+            },
+            {
+              "kind": "repository",
+              "id": "hm-route",
+              "path": "codex-security/plugins/codex-security/mcp-app/helpers-main.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "4130f25e3f104b20638f73dbb54a0d2bdf0b41a021fc19bd20fbe2c292f08e4b",
+              "bytes": 8642
+            },
+            {
+              "kind": "repository",
+              "id": "lc-helper",
+              "path": "codex-security/plugins/codex-security/scripts/launch_codex_security_mcp",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "497680a7ecc2163da04338d2f7ec26549362b0f098b810ed57ee64c56dea3665",
+              "bytes": 4646
+            },
+            {
+              "kind": "repository",
+              "id": "prs-note",
+              "path": "codex-security/plugins/codex-security/mcp-app/src/patch-risk-schema.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "4a17112710e54df590dc76de9b286b1c7169a995606f5b89ac143ef22ce203bc",
+              "bytes": 3353
+            },
+            {
+              "kind": "repository",
+              "id": "rd-apr",
+              "path": "codex-security/plugins/codex-security/skills/README.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+              "bytes": 3752
+            },
+            {
+              "kind": "repository",
+              "id": "rd-fix",
+              "path": "codex-security/plugins/codex-security/skills/README.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+              "bytes": 3752
+            },
+            {
+              "kind": "repository",
+              "id": "fx-desc",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-gen",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-digest",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "vf-ro",
+              "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
+              "bytes": 4193
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "patch-risk-flow",
+              "inline": true,
+              "sha256": "e939e22e839d73409cf25d5c089070801a10b2cdbc7ccb2356912c53429be559",
+              "bytes": 2297
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "patch-risk-position",
+              "inline": true,
+              "sha256": "13005cbdc9f4e428b58bcb35da45641a4292e51ea16ab812650fcabd14046072",
+              "bytes": 700
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "a5993be4f44991ccf2ad0e9bf8b14481cf3627a8bd35745a5d50e5775889f9db",
+          "bytes": 37636
+        },
+        "artifact": {
+          "sha256": "7810e84f73c4d029325234a1117ae3acbc59892d7114b68a209975795f551ccf",
+          "bytes": 1903187
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 607,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "7810e84f73c4d029325234a1117ae3acbc59892d7114b68a209975795f551ccf",
+          "bytes": 1903187
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "202 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "56 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "patch-risk-flow: pass",
+              "patch-risk-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "patch-risk-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-cc7Zna/child.html",
+                "artifact": {
+                  "sha256": "45b4e9537eb91405450a05aa6c587df2e84668fb27fb0f1234df28baef76a2d6",
+                  "bytes": 846045
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 23,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.560975609756097,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "bind-to-hold-1",
+                      "from": "bind",
+                      "to": "hold"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.560975609756097,
+                    "semanticTextCount": 16
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "patch-risk-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-sWvjmJ/child.html",
+                "artifact": {
+                  "sha256": "51c14e1cd479ebaddda6639936707fce083fa13211dbcefcf7d76ce09e8ed795",
+                  "bytes": 832001
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 155.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.741935483870968,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 80.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "apr-to-caller-1",
+                      "from": "apr",
+                      "to": "caller"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.741935483870968,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "7245b9ed-1954-4e63-b44a-ca78ae63298f"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-15T08:41:48.228Z",
+  "durationMs": 2053,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

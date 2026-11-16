@@ -1,0 +1,524 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e141ac83-d3b1-4759-aa02-256fb6b84459",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/finding-discovery/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/finding-discovery/finding-discovery.html",
+  "specification": {
+    "sha256": "8eb9b4046abd807ec94885384e01564047474148632c56cf47a855e7533a5be9",
+    "bytes": 35476
+  },
+  "artifact": {
+    "sha256": "a83a7d616a48dcf481601b1fbcf4f1716856c75df3a1094dd20bd13fda31f1da",
+    "bytes": 1763277
+  },
+  "explainer": {
+    "preparedSha256": "706e30063126034ca95ab93e2382d0655edb1b333080528ce26e2f1d1be988d0",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "fm",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "purpose",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "reads",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "select",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "sel-wd",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "sel-a",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "sel-b",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "sel-c",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "diffscope",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e1",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e2",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e3",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e4",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e5",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "e6",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "delegate",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "out-id",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "out-ev",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "out-cwe",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "finish",
+        "path": "codex-security/plugins/codex-security/skills/finding-discovery/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "ca30309e330daddc0caf2dd6ff6529dbb67e83084cb3e6387029305ea194de99",
+        "bytes": 5076
+      },
+      {
+        "kind": "repository",
+        "id": "store9",
+        "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+        "bytes": 7947
+      },
+      {
+        "kind": "repository",
+        "id": "store-supp",
+        "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+        "bytes": 7947
+      },
+      {
+        "kind": "repository",
+        "id": "store-legacy",
+        "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+        "bytes": 7947
+      },
+      {
+        "kind": "repository",
+        "id": "guide",
+        "path": "codex-security/plugins/codex-security/references/security-guidance.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f52e88c85634c0a3b254f9a0f2ed0aa6652c63c34453bd0a87a73c20c990459f",
+        "bytes": 2830
+      },
+      {
+        "kind": "repository",
+        "id": "guide-rule",
+        "path": "codex-security/plugins/codex-security/references/security-guidance.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f52e88c85634c0a3b254f9a0f2ed0aa6652c63c34453bd0a87a73c20c990459f",
+        "bytes": 2830
+      },
+      {
+        "kind": "repository",
+        "id": "sa-compact",
+        "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
+        "bytes": 11701
+      },
+      {
+        "kind": "repository",
+        "id": "sa-legacy",
+        "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
+        "bytes": 11701
+      },
+      {
+        "kind": "repository",
+        "id": "led-use",
+        "path": "codex-security/plugins/codex-security/skills/security-scan/references/scan-artifacts-and-ledger.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "13678fd302742e5c728989912705765332e2b6ae5203562a9b549786f2819db9",
+        "bytes": 7021
+      },
+      {
+        "kind": "repository",
+        "id": "led-work",
+        "path": "codex-security/plugins/codex-security/skills/security-scan/references/scan-artifacts-and-ledger.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "13678fd302742e5c728989912705765332e2b6ae5203562a9b549786f2819db9",
+        "bytes": 7021
+      },
+      {
+        "kind": "repository",
+        "id": "led-deep",
+        "path": "codex-security/plugins/codex-security/skills/security-scan/references/scan-artifacts-and-ledger.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "13678fd302742e5c728989912705765332e2b6ae5203562a9b549786f2819db9",
+        "bytes": 7021
+      },
+      {
+        "kind": "repository",
+        "id": "led-cov",
+        "path": "codex-security/plugins/codex-security/skills/security-scan/references/scan-artifacts-and-ledger.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "13678fd302742e5c728989912705765332e2b6ae5203562a9b549786f2819db9",
+        "bytes": 7021
+      },
+      {
+        "kind": "repository",
+        "id": "tool-prep",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
+        "bytes": 15421
+      },
+      {
+        "kind": "repository",
+        "id": "tool-rec",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
+        "bytes": 15421
+      },
+      {
+        "kind": "repository",
+        "id": "tool-ctx",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/server/compact-artifact-tools.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5c6591da74888203d0513aa0b196640ea8a031daebe9dd09e28877e113a2d81c",
+        "bytes": 15421
+      },
+      {
+        "kind": "repository",
+        "id": "inv-prep",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-inventory.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "1f1a0ee631bb871b1387439b5041be063c681ff4e5c2d6af33c9ba36f991359d",
+        "bytes": 5370
+      },
+      {
+        "kind": "repository",
+        "id": "inv-list",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-inventory.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "1f1a0ee631bb871b1387439b5041be063c681ff4e5c2d6af33c9ba36f991359d",
+        "bytes": 5370
+      },
+      {
+        "kind": "repository",
+        "id": "disc-rec",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-discovery.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4e1f26388fa33c3ce030406fb3ced3fad9122fb2a7f54ad2221bd6e0b0a0ba2e",
+        "bytes": 6305
+      },
+      {
+        "kind": "repository",
+        "id": "disc-diff",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-discovery.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4e1f26388fa33c3ce030406fb3ced3fad9122fb2a7f54ad2221bd6e0b0a0ba2e",
+        "bytes": 6305
+      },
+      {
+        "kind": "repository",
+        "id": "disc-list",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-discovery.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4e1f26388fa33c3ce030406fb3ced3fad9122fb2a7f54ad2221bd6e0b0a0ba2e",
+        "bytes": 6305
+      },
+      {
+        "kind": "repository",
+        "id": "norm-scope",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/normalize-candidates.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "7223fa3ebf8bd63e9f02e38e1a57aa6b7f233ba2444bfa5291eb8d50ec9fa8f2",
+        "bytes": 18523
+      },
+      {
+        "kind": "repository",
+        "id": "norm-merge",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/normalize-candidates.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "7223fa3ebf8bd63e9f02e38e1a57aa6b7f233ba2444bfa5291eb8d50ec9fa8f2",
+        "bytes": 18523
+      },
+      {
+        "kind": "repository",
+        "id": "contracts",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/artifact-contracts.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "23caf668d419fdd342ca36a6181b069fe41528d1b984dbbdf2b626c8ac3cffd2",
+        "bytes": 15569
+      },
+      {
+        "kind": "repository",
+        "id": "roles",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/discovery-location-roles.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4ec121b3370d4f3e46f29fa3291646c7c537a20523e2bb3c8323fca26e92b812",
+        "bytes": 175
+      },
+      {
+        "kind": "repository",
+        "id": "sch-cand",
+        "path": "codex-security/plugins/codex-security/schemas/definitions/discovery-candidate.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "1fc379a8c79c57d9889a7a3d278f4f3e31fd8337dd0aa0a59ff171ecf817624d",
+        "bytes": 4203
+      },
+      {
+        "kind": "repository",
+        "id": "sch-in",
+        "path": "codex-security/plugins/codex-security/schemas/tools/discovery-candidates.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5ebffa84b6a60e6e15c2eecb08f05353af2a239f6f463883efe954b482997d7c",
+        "bytes": 1152
+      },
+      {
+        "kind": "repository",
+        "id": "sch-rev",
+        "path": "codex-security/plugins/codex-security/schemas/tools/review-items.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f7c4522e9e6faf736347b40a42a0839df5fe6818ad1cfd377ef1d452a233a87b",
+        "bytes": 1431
+      },
+      {
+        "kind": "repository",
+        "id": "dscan30",
+        "path": "codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "dscan24",
+        "path": "codex-security/plugins/codex-security/skills/security-diff-scan/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "09232fd5d96cfed2a5bdccd176c09b7e9ca53ebd7ac136d283bec884fde94b0d",
+        "bytes": 5405
+      },
+      {
+        "kind": "repository",
+        "id": "tm",
+        "path": "codex-security/plugins/codex-security/skills/threat-model/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "79a1b6282f80804227a28f9a1fae71bbfcd6928c1de5d2c84ab0ebf9c1f49226",
+        "bytes": 2986
+      },
+      {
+        "kind": "repository",
+        "id": "val",
+        "path": "codex-security/plugins/codex-security/skills/validation/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "aac2d8598af99fc27c163c24204b264427100b89f15e203822b108262fcb7876",
+        "bytes": 4619
+      },
+      {
+        "kind": "repository",
+        "id": "val21",
+        "path": "codex-security/plugins/codex-security/skills/validation/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "aac2d8598af99fc27c163c24204b264427100b89f15e203822b108262fcb7876",
+        "bytes": 4619
+      },
+      {
+        "kind": "repository",
+        "id": "val28",
+        "path": "codex-security/plugins/codex-security/skills/validation/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "aac2d8598af99fc27c163c24204b264427100b89f15e203822b108262fcb7876",
+        "bytes": 4619
+      },
+      {
+        "kind": "repository",
+        "id": "pol8",
+        "path": "codex-security/plugins/codex-security/skills/define-security-policy/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "8a63f6af4570ed2e152155d1891f61948fa66678d354930e6e7922e568af866a",
+        "bytes": 5982
+      },
+      {
+        "kind": "repository",
+        "id": "scan10",
+        "path": "codex-security/plugins/codex-security/skills/security-scan/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "1e678be7315aefe1c101baf6ef6c01c4002ea3e5297f029589244554c31fd78b",
+        "bytes": 2972
+      },
+      {
+        "kind": "repository",
+        "id": "core18",
+        "path": "codex-security/plugins/codex-security/references/core-scan.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "6954c9a971611b79dcf03b4c62991e70cfd437fe249627249af6dc2709517868",
+        "bytes": 7479
+      },
+      {
+        "kind": "repository",
+        "id": "base16",
+        "path": "codex-security/plugins/codex-security/references/baseline-auditor.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "717ad7cdcda32fe212e7f930ea5c1cb301eae005833490808dce35d49314a74b",
+        "bytes": 2839
+      },
+      {
+        "kind": "repository",
+        "id": "focus11",
+        "path": "codex-security/plugins/codex-security/references/focused-investigator.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5624cca98860204c50ac3f281486594b690a04a4979144fd608769a50aadfc18",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "readme",
+        "path": "codex-security/plugins/codex-security/skills/README.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+        "bytes": 3752
+      },
+      {
+        "kind": "repository",
+        "id": "readme-scan",
+        "path": "codex-security/plugins/codex-security/skills/README.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+        "bytes": 3752
+      },
+      {
+        "kind": "repository",
+        "id": "mcpjson",
+        "path": "codex-security/plugins/codex-security/.mcp.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "69bbc0f86c92397eb7540ff09c17d69d429b0dc45dc1de3e02b16d101adfe7c0",
+        "bytes": 2078
+      },
+      {
+        "kind": "repository",
+        "id": "pluginjson",
+        "path": "codex-security/plugins/codex-security/.codex-plugin/plugin.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "744e52b95530a2708c40deee2c846662f01d8ca3685acdeca97c4fba887457e5",
+        "bytes": 1682
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "mode-flow",
+        "inline": true,
+        "sha256": "c8340bc5bcae5d7ec25df45e7d7232bdb666df8b314701b9785abb41bc9e83bd",
+        "bytes": 1235
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "position-flow",
+        "inline": true,
+        "sha256": "693f42ac5a17e2838e52ade06626544eab6d7b1faebca18c8f0eb6d74776614b",
+        "bytes": 987
+      }
+    ]
+  }
+}

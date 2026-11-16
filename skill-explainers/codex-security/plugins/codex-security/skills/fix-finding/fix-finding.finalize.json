@@ -1,0 +1,1042 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-15T08:42:51.803Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/candidate.archify.md",
+    "sha256": "172e9a459a22bdf42ab2bff31334e314036b517cd7c4b4ad02b204f1f4554b2b",
+    "bytes": 40930
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+    "sha256": "98c8aed084883d6e2fc64aa5006a568ee340f5eeb6dfdb0ff8012a463fefe503",
+    "bytes": 3509122
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "172e9a459a22bdf42ab2bff31334e314036b517cd7c4b4ad02b204f1f4554b2b",
+          "bytes": 40930
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1518,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "8b9386c8-ed3a-4101-89cc-0e2a6ec53795",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+        "explainer": {
+          "preparedSha256": "8a093dbc972a32789ada503f3a9ee60f2c5349bbc483f909effe27dd05a36f3b",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "f-front",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-storage",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-obj",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-mode",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-contract",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wf1",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wf2",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wf3",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wf4",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wf5",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-blocked",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-review",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-wbintro",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-tools",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-filters",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-gen",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-genprivate",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-patchsend",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-apply",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-verify",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-failed",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-out",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-report",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "f-hard",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "as-owner",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-supp",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-temp",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-edit",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "as-sealed",
+              "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+              "bytes": 7947
+            },
+            {
+              "kind": "repository",
+              "id": "sa-fix",
+              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
+              "bytes": 11701
+            },
+            {
+              "kind": "repository",
+              "id": "sa-place",
+              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
+              "bytes": 11701
+            },
+            {
+              "kind": "repository",
+              "id": "sa-base",
+              "path": "codex-security/plugins/codex-security/references/scan-artifacts.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "30a83f78ed066b1b4cfec3486b9f87952fb3c188fe16d16f654e025c6d3737e6",
+              "bytes": 11701
+            },
+            {
+              "kind": "repository",
+              "id": "sv-schema",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "sv-ctx",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "sv-app",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "sv-set",
+              "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+              "bytes": 84254
+            },
+            {
+              "kind": "repository",
+              "id": "py-trans",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_remediation.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "8e3a6e766edb0649d913af24562e8cdbe29455f742adfdb3f1c31536df5d814b",
+              "bytes": 35923
+            },
+            {
+              "kind": "repository",
+              "id": "py-git",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_target.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "ccefc18e546174426276f99f9ea09e1f55eaa533a77e652185391bf1bffa3a1c",
+              "bytes": 71863
+            },
+            {
+              "kind": "repository",
+              "id": "py-cmd",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_target.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "ccefc18e546174426276f99f9ea09e1f55eaa533a77e652185391bf1bffa3a1c",
+              "bytes": 71863
+            },
+            {
+              "kind": "repository",
+              "id": "py-ctx",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_target.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "ccefc18e546174426276f99f9ea09e1f55eaa533a77e652185391bf1bffa3a1c",
+              "bytes": 71863
+            },
+            {
+              "kind": "repository",
+              "id": "py-off",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_source_scopes.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2ecd66dc35c390cecbacbb8c92a444e3f2d5ce49284581fcea036a0c11450529",
+              "bytes": 15576
+            },
+            {
+              "kind": "repository",
+              "id": "py-open",
+              "path": "codex-security/plugins/codex-security/scripts/workbench_db.py",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "95e263bca1c718e444ddd2afe43d661264014192b4cf8cfbc157391b42920a27",
+              "bytes": 149908
+            },
+            {
+              "kind": "repository",
+              "id": "readme",
+              "path": "codex-security/plugins/codex-security/skills/README.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+              "bytes": 3752
+            },
+            {
+              "kind": "repository",
+              "id": "tri-hand",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2c71d6a89ef0c61ed2f5f1f6af9d05de43e38547eec777937774fd1054b0afaa",
+              "bytes": 8394
+            },
+            {
+              "kind": "repository",
+              "id": "tri-con",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/triage-result-contract.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "709c1d803c001a47c884ba10ac97f8c1434c3ce06a75033778343a662b25729b",
+              "bytes": 4447
+            },
+            {
+              "kind": "repository",
+              "id": "tri-null",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/triage-result-contract.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "709c1d803c001a47c884ba10ac97f8c1434c3ce06a75033778343a662b25729b",
+              "bytes": 4447
+            },
+            {
+              "kind": "repository",
+              "id": "rda-fix",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "apr-desc",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "apr-bind",
+              "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+              "bytes": 8299
+            },
+            {
+              "kind": "repository",
+              "id": "vf-when",
+              "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
+              "bytes": 4193
+            },
+            {
+              "kind": "repository",
+              "id": "vf-static",
+              "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
+              "bytes": 4193
+            },
+            {
+              "kind": "repository",
+              "id": "psh-local",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "psh-tactical",
+              "path": "codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "815d626877332e5178afedc2ef6ee267faa9d3b3ecfe411f09c7a16290406043",
+              "bytes": 5026
+            },
+            {
+              "kind": "repository",
+              "id": "pf-cont",
+              "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+              "bytes": 11118
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "fix-flow",
+              "inline": true,
+              "sha256": "b4b774b6302821202849cdc9f366892e4bda64f1d45242b997777b71d0117b3e",
+              "bytes": 2266
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "remediation-states",
+              "inline": true,
+              "sha256": "05eeb2403ee7494c3d9076f43684ebd6c2c4b72f6658798d82152cda736b21f1",
+              "bytes": 1496
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "fix-position",
+              "inline": true,
+              "sha256": "bf43793b34b772d64d102f62ebec740fa9c85b179a5a3a4f096f002f0a53dfb4",
+              "bytes": 1403
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "172e9a459a22bdf42ab2bff31334e314036b517cd7c4b4ad02b204f1f4554b2b",
+          "bytes": 40930
+        },
+        "artifact": {
+          "sha256": "98c8aed084883d6e2fc64aa5006a568ee340f5eeb6dfdb0ff8012a463fefe503",
+          "bytes": 3509122
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 809,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "98c8aed084883d6e2fc64aa5006a568ee340f5eeb6dfdb0ff8012a463fefe503",
+          "bytes": 3509122
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "230 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "57 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "fix-flow: pass",
+              "remediation-states: pass",
+              "fix-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "fix-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6GIDuE/child.html",
+                "artifact": {
+                  "sha256": "ebe0989846d912b6e5313773d75edbd83ed63eba4120fc940cfcfb5abe91398d",
+                  "bytes": 846223
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 12,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.469879518072289,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 8,
+                    "shortEndpointSegmentCount": 8,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "gates-to-blocked-1",
+                      "from": "gates",
+                      "to": "blocked"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.469879518072289,
+                    "semanticTextCount": 18
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "remediation-states",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-XfHkS6/child.html",
+                "artifact": {
+                  "sha256": "eda86b6cb04f4dd38efbf013df40426f53786c01b9ecdb40629778cde76a21c6",
+                  "bytes": 839464
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 7,
+                    "shortEndpointSegmentCount": 7,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "applied-to-verifying-1",
+                      "from": "applied",
+                      "to": "verifying"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 12
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "fix-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-2TAn4g/child.html",
+                "artifact": {
+                  "sha256": "af95aab34435269f0e9e44111f202a324fae13cc442401c1aeae790667c6c77c",
+                  "bytes": 837216
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 27,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.733887733887734,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 3,
+                    "shortEndpointSegmentCount": 3,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "current-to-apr-1",
+                      "from": "current",
+                      "to": "apr"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.733887733887734,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "8b9386c8-ed3a-4101-89cc-0e2a6ec53795"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/fix-finding/fix-finding.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-15T08:42:54.293Z",
+  "durationMs": 2490,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "18d5bd9b-ef3c-4f12-9426-ad095c768885",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+  "specification": {
+    "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
+    "bytes": 20730
+  },
+  "artifact": {
+    "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
+    "bytes": 1425986
+  },
+  "explainer": {
+    "preparedSha256": "2f631ca5d2a9ba68ed3dd35aca744a76480cc6721e3caace16aa239146ff0f26",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "r-front",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-untrusted",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-route",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-s1",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-s2",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-s3",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-report",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "r-open",
+        "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+        "bytes": 2548
+      },
+      {
+        "kind": "repository",
+        "id": "gi-top",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-detect",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-rev",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-src",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-cred",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-dep",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-mal",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-page",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "gi-status",
+        "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+        "bytes": 12277
+      },
+      {
+        "kind": "repository",
+        "id": "fx-desc",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "fx-mode",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "fx-obj",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "fx-out",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "pf-desc",
+        "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+        "bytes": 11118
+      },
+      {
+        "kind": "repository",
+        "id": "pf-gh",
+        "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+        "bytes": 11118
+      },
+      {
+        "kind": "repository",
+        "id": "pf-dry",
+        "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+        "bytes": 11118
+      },
+      {
+        "kind": "repository",
+        "id": "rm-rda",
+        "path": "codex-security/plugins/codex-security/skills/README.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+        "bytes": 3752
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "dependency-flow",
+        "inline": true,
+        "sha256": "02bfb1d31f95650df49a9bff1d1ba5b16900fab2dba9289bb255f48418e05eca",
+        "bytes": 1558
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "dependency-position",
+        "inline": true,
+        "sha256": "ed12d78739f7b0660a2b3da0f517404f0b4641ef14536a3e1f0356e2b37e5554",
+        "bytes": 1013
+      }
+    ]
+  }
+}

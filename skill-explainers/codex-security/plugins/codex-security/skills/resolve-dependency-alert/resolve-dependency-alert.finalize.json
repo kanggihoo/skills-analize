@@ -1,0 +1,676 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-15T08:43:57.817Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
+    "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
+    "bytes": 20730
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+    "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
+    "bytes": 1425986
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
+          "bytes": 20730
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1939,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "18d5bd9b-ef3c-4f12-9426-ad095c768885",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+        "explainer": {
+          "preparedSha256": "2f631ca5d2a9ba68ed3dd35aca744a76480cc6721e3caace16aa239146ff0f26",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "r-front",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-untrusted",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-route",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-s1",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-s2",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-s3",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-report",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "r-open",
+              "path": "codex-security/plugins/codex-security/skills/resolve-dependency-alert/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "2a0e0a68e7dba39cebb5a810a9d15d10282638c6ad2c1b2f5f8ce219d3e78f23",
+              "bytes": 2548
+            },
+            {
+              "kind": "repository",
+              "id": "gi-top",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-detect",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-rev",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-src",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-cred",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-dep",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-mal",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-page",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "gi-status",
+              "path": "codex-security/plugins/codex-security/skills/triage-finding/references/github-rest-intake.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3ff78c08946b3731d2672c08817ad654724df8573ae8bc1d7560c2850e17a832",
+              "bytes": 12277
+            },
+            {
+              "kind": "repository",
+              "id": "fx-desc",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-mode",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-obj",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "fx-out",
+              "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+              "bytes": 18461
+            },
+            {
+              "kind": "repository",
+              "id": "pf-desc",
+              "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+              "bytes": 11118
+            },
+            {
+              "kind": "repository",
+              "id": "pf-gh",
+              "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+              "bytes": 11118
+            },
+            {
+              "kind": "repository",
+              "id": "pf-dry",
+              "path": "codex-security/plugins/codex-security/skills/publish-findings/SKILL.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "3e233cde046fea1161417e5757393fe40de9ff234762636ed559c608bae38d69",
+              "bytes": 11118
+            },
+            {
+              "kind": "repository",
+              "id": "rm-rda",
+              "path": "codex-security/plugins/codex-security/skills/README.md",
+              "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+              "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+              "bytes": 3752
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "dependency-flow",
+              "inline": true,
+              "sha256": "02bfb1d31f95650df49a9bff1d1ba5b16900fab2dba9289bb255f48418e05eca",
+              "bytes": 1558
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "dependency-position",
+              "inline": true,
+              "sha256": "ed12d78739f7b0660a2b3da0f517404f0b4641ef14536a3e1f0356e2b37e5554",
+              "bytes": 1013
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "041b17a6923181077cf66562909be7f8b23334fc6928df71f740c1672490fd8c",
+          "bytes": 20730
+        },
+        "artifact": {
+          "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
+          "bytes": 1425986
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 649,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "91f3648dccc4dba6c1386fafe0d3d94ace09758f22ffe4c40b20f785f43a55b4",
+          "bytes": 1425986
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "136 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "27 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "dependency-flow: pass",
+              "dependency-position: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "dependency-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-SnmWMb/child.html",
+                "artifact": {
+                  "sha256": "a2b1f99053e0488d7fc9d4b814d419debc19ed433358394840c363c595448ce5",
+                  "bytes": 839815
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 16,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 8,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 4,
+                    "shortEndpointSegmentCount": 4,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "ask-to-hand-1",
+                      "from": "ask",
+                      "to": "hand"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 8,
+                    "semanticTextCount": 11
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "dependency-position",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-jFlv9u/child.html",
+                "artifact": {
+                  "sha256": "b2ba0da63b233b1f38daeb9e4b43083bcf82172d497b3e68403789a588e0a985",
+                  "bytes": 834138
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 19,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.717842323651452,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 8,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 1,
+                    "shortEndpointSegmentCount": 1,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "rda-to-fix-1",
+                      "from": "rda",
+                      "to": "fix"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.717842323651452,
+                    "semanticTextCount": 7
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "18d5bd9b-ef3c-4f12-9426-ad095c768885"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/resolve-dependency-alert/resolve-dependency-alert.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-15T08:44:00.666Z",
+  "durationMs": 2848,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "timeout"
+  }
+}

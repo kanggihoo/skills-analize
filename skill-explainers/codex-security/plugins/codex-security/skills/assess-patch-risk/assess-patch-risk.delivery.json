@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "7245b9ed-1954-4e63-b44a-ca78ae63298f",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/plugins/codex-security/skills/assess-patch-risk/assess-patch-risk.html",
+  "specification": {
+    "sha256": "a5993be4f44991ccf2ad0e9bf8b14481cf3627a8bd35745a5d50e5775889f9db",
+    "bytes": 37636
+  },
+  "artifact": {
+    "sha256": "7810e84f73c4d029325234a1117ae3acbc59892d7114b68a209975795f551ccf",
+    "bytes": 1903187
+  },
+  "explainer": {
+    "preparedSha256": "1aced3b32ae719565f9cf26a4ca3e6a44dfe4a3a73899720108875b22d14c8ec",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "a-front",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-storage",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-concepts",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-rubric-ptr",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-bind",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-data",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-keep",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-sem",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-map",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-bound",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-falsify",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-protect",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-recover",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-unknown",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-rec",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-label",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-output",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-valid",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-evid",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "a-hard",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5e115b0ba2f346e52efd2033a191da4aa40f1ff3f7b1ff5e2bde586e48eabf0d",
+        "bytes": 8299
+      },
+      {
+        "kind": "repository",
+        "id": "rb-impact",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-like",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-prot",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-rec",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-conf",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-chal",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-enum",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-trig",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-gate",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "rb-end",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/risk-rubric.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "078a71175191580791685808980cb1815dc97265cfee8c0ddad1f4d3b8203b4a",
+        "bytes": 5049
+      },
+      {
+        "kind": "repository",
+        "id": "win",
+        "path": "codex-security/plugins/codex-security/skills/assess-patch-risk/references/windows-validation.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "9a7d12e493497b2aa7135493e3d23ec35da05f687f6513266a5c45ffb67dad94",
+        "bytes": 1173
+      },
+      {
+        "kind": "repository",
+        "id": "st-owner",
+        "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+        "bytes": 7947
+      },
+      {
+        "kind": "repository",
+        "id": "st-limit",
+        "path": "codex-security/plugins/codex-security/references/artifact-storage.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "e8c173d1e89ec7b930953bf04220905a6ab35c3798c8e66799ded3b06c1a87d2",
+        "bytes": 7947
+      },
+      {
+        "kind": "repository",
+        "id": "sch-sha",
+        "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+        "bytes": 6858
+      },
+      {
+        "kind": "repository",
+        "id": "sch-val",
+        "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+        "bytes": 6858
+      },
+      {
+        "kind": "repository",
+        "id": "sch-plan",
+        "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+        "bytes": 6858
+      },
+      {
+        "kind": "repository",
+        "id": "sch-req",
+        "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+        "bytes": 6858
+      },
+      {
+        "kind": "repository",
+        "id": "sch-opt",
+        "path": "codex-security/plugins/codex-security/schemas/patch-risk-assessment.schema.json",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "f36759528740edd9c6c86e76b034cf59a3c6796b143f2ed0d8bbfd011f02811d",
+        "bytes": 6858
+      },
+      {
+        "kind": "repository",
+        "id": "val-fail",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-merge",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-hold",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-noop",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-revise",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-gate",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "val-cli",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/helpers/validate-patch-risk-assessment.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "67888e8b06474ea2151316bd4457baceb5586f2d44d138e4a2e1064c3915f161",
+        "bytes": 6621
+      },
+      {
+        "kind": "repository",
+        "id": "hm-route",
+        "path": "codex-security/plugins/codex-security/mcp-app/helpers-main.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4130f25e3f104b20638f73dbb54a0d2bdf0b41a021fc19bd20fbe2c292f08e4b",
+        "bytes": 8642
+      },
+      {
+        "kind": "repository",
+        "id": "lc-helper",
+        "path": "codex-security/plugins/codex-security/scripts/launch_codex_security_mcp",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "497680a7ecc2163da04338d2f7ec26549362b0f098b810ed57ee64c56dea3665",
+        "bytes": 4646
+      },
+      {
+        "kind": "repository",
+        "id": "prs-note",
+        "path": "codex-security/plugins/codex-security/mcp-app/src/patch-risk-schema.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "4a17112710e54df590dc76de9b286b1c7169a995606f5b89ac143ef22ce203bc",
+        "bytes": 3353
+      },
+      {
+        "kind": "repository",
+        "id": "rd-apr",
+        "path": "codex-security/plugins/codex-security/skills/README.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+        "bytes": 3752
+      },
+      {
+        "kind": "repository",
+        "id": "rd-fix",
+        "path": "codex-security/plugins/codex-security/skills/README.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "0703ac2e80070a77ec755b9c4f657a52475d88b9407b307bd0100313de2deb95",
+        "bytes": 3752
+      },
+      {
+        "kind": "repository",
+        "id": "fx-desc",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "fx-gen",
+        "path": "codex-security/plugins/codex-security/skills/fix-finding/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "5182ad87bd342a7785bb6ef1800abfe59af5d98662522f6fa43c53f4d7c5cf3e",
+        "bytes": 18461
+      },
+      {
+        "kind": "repository",
+        "id": "fx-digest",
+        "path": "codex-security/plugins/codex-security/mcp-app/server.ts",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "898e117056581d2f543a18c97c35cd9854194a8540259994cba422d5a011b522",
+        "bytes": 84254
+      },
+      {
+        "kind": "repository",
+        "id": "vf-ro",
+        "path": "codex-security/plugins/codex-security/skills/verify-fix/SKILL.md",
+        "revision": "cd5035b88386f2e309c89f5af2814e7f3d7d8343",
+        "sha256": "3569c165dffeae015ede1ab1c0dbfd03164673f5b6a54c263b4941ed9a9703a5",
+        "bytes": 4193
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "patch-risk-flow",
+        "inline": true,
+        "sha256": "e939e22e839d73409cf25d5c089070801a10b2cdbc7ccb2356912c53429be559",
+        "bytes": 2297
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "patch-risk-position",
+        "inline": true,
+        "sha256": "13005cbdc9f4e428b58bcb35da45641a4292e51ea16ab812650fcabd14046072",
+        "bytes": 700
+      }
+    ]
+  }
+}

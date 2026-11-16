@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/editorial-guide/candidate.archify.md",
+    "sha256": "746a77d12064d44a478f0c4ef0bd08574111310cb9c3a9a14951e8a5fafac154",
+    "bytes": 11899
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/editorial-guide/editorial-guide.html",
+    "sha256": "f292f9e283f6f8036a22798c921688bbd5c44e2be486ab0e1bd79e3f0112d651",
+    "bytes": 694564
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/editorial-guide/editorial-guide.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/codex-security/evals/check-skills/fixtures/editorial-guide/editorial-guide.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1408,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}
