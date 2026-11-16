@@ -29,7 +29,7 @@
 | evidence | 근거 | 증거(법정 뉘앙스일 때만) | |
 | gate (테스트·검사) | 통과 조건 | 게이트 | 테스트나 CI가 막는 지점 |
 | gate (사람 승인) | 사람 승인 지점 | 게이트 | 사람이 확인해야 넘어가는 지점 |
-| checkpoint | 중간 확인 | 체크포인트 | `architect with checkpoint` |
+| checkpoint | 중간 확인 | 체크포인트 | `architect with checkpoint`. codex-security scan draft의 저장 지점은 아래 `checkpoint (scan draft)`와 구분 |
 | sign-off | 승인 | 사인오프 | |
 | predicate | 완료 조건 | 술어 | "통과/실패가 갈리는 검사" |
 | decision trail / decision log | 결정 기록 | 결정 흔적 | `show-me-your-work` |
@@ -65,8 +65,8 @@
 | model slug | 모델 이름 | 슬러그 | 처음만 `모델 이름(slug)` |
 | alias | 별칭 | 앨리어스 | `inherit-parent`, `auto` |
 | judge / cross-judge | 판정 담당 / 교차 심사 담당 | 심판, 크로스 저지 | figure-it-out, arena |
-| verdict | 판정 결과 | 평결 | `PASS`·`FAIL` 같은 값. 분석자 `판정` 표시와 구분 |
-| rubric | 채점 기준 | 루브릭 | arena, interrogate |
+| verdict | 판정 결과 | 평결 | `PASS`·`FAIL` 같은 값. 분석자 `판정` 표시와 구분. codex-security `fix-finding`의 `outcome`(`fixed`, `no_change`, `blocked`)과도 구분 |
+| rubric | 채점 기준 | 루브릭 | arena, interrogate. codex-security `attack-path-analysis`의 severity 채점 기준도 같은 뜻이다. schema 필드 `rubric`은 백틱 원문 |
 | finding | 지적 | 발견 사항 | 리뷰어 출력 단위 |
 | lead reviewer | 선임 리뷰어 | 리드 | interrogate |
 | sketch | 스케치 | 초안 | architect의 타입·시그니처 설계 |
@@ -143,7 +143,7 @@
 | chain-of-thought leakage | 추론 흔적 | 추론 유출, CoT 누출 | dsh-trim-cot-leakage. 작성 세션 시점으로 쓴 글 |
 | vantage | 시점 | 관점 | dsh-trim-cot-leakage. `HEAD` 시점과 작성 세션 시점 |
 | recall batteries | 검색식 묶음 | 리콜 배터리 | dsh-trim-cot-leakage |
-| contract (prose) | 계약 | | 의무·불변식·사전·사후 조건·호환 약속. dsh-prose-standard |
+| contract (prose) | 계약 | | 의무·불변식·사전·사후 조건·호환 약속. dsh-prose-standard. codex-security `fix-finding`의 `patch contract`와 구분 |
 | complete proposition | 완전 명제 | 완전한 명제 | dsh-prose-standard |
 | bilingual pair | 이중 언어 쌍 | 번역 짝, 페어 | deepseek-harness의 `foo.md` ↔ `foo.zh.md` |
 | sidecar (`*.i18n.yaml`) | sidecar | 짝 기록 파일, 사이드카 | 이중 언어 쌍의 절별 해시를 적는 파일 |
@@ -333,27 +333,27 @@
 | denylist | denylist | 거부 목록 | 알려진 오류만 막는 방식. 처음만 `denylist(알려진 오류만 막는 목록)` |
 | frontmatter | frontmatter | 머리말 | `SKILL.md` 상단 YAML |
 | finding (security) | finding | 발견 사항 | codex-security. 위 `finding`(지적, 리뷰어 출력 단위)과 뜻이 다르다. 취약점 후보가 검증을 거친 보고 단위. 이 컬렉션에서는 영어 유지 |
-| workbench (Codex Security) | workbench | 작업대, 워크벤치 | codex-security. 호스트가 scan 상태와 canonical artifacts를 기록하는 도구. 위 `workbench`(state-machine)와 뜻이 다르다 |
+| workbench (Codex Security) | workbench | 작업대, 워크벤치 | codex-security. 호스트가 scan 상태와 canonical artifacts를 기록하는 도구. 위 `workbench`(state-machine)와 뜻이 다르다. `publish-findings`의 `local workbench`도 같은 뜻이므로 이 행에 합친다 |
 | handoff (skill-to-skill) | handoff | 핸드오프, 인수인계 | codex-security. 한 스킬이 다음 스킬에 넘기는 요약. 위 `handoff document`(인계 문서)와 구분 |
 | handoff token | handoff token | 인계 토큰 | codex-security. scan 정체성을 묶는 값 |
-| sealed scan | 봉인된 scan | 실링된 스캔 | codex-security. 위 `seal / sealed`와 같은 뜻. `scan-manifest.json`과 `findings.json`이 확정된 scan |
-| fixture (eval) | 검토용 표본 | 픽스처 | codex-security `check-skills`의 검토 대상 파일. 위 `fixture`(break-ui)와 뜻이 다르다 |
-| instructed behavior | 지시상 동작 | | 실행 증거 없이 파일에 적힌 동작만 서술할 때 |
-| receipt | receipt | 영수증 | codex-security. `check-skills`에서는 `PASS` 기록(correctness-review), `track-findings`에서는 쓰기가 받아들여졌다는 기록. 뜻이 다르니 처음만 풀이 |
+| sealed scan | 봉인된 scan | 실링된 스캔 | codex-security. 위 `seal / sealed`와 같은 뜻. `scan-manifest.json`과 `findings.json`이 확정된 scan. `scan-manifest.json`의 digest로 고정되며 `report.md`는 봉인에 들지 않는 투영물 |
+| fixture (eval) | 검토용 표본 | 픽스처 | codex-security `check-skills`의 검토 대상 파일. 위 `fixture`(break-ui)와 뜻이 다르다. 제안 용어 `evaluation input`(평가 입력)과 같은 대상이므로 새 행을 만들지 않고 이 표기 "검토용 표본"으로 통일한다 |
+| instructed behavior | 지시상 동작 | | 실행 증거 없이 파일에 적힌 동작만 서술할 때. 경로 쪽은 아래 `instructed path`(지시상 경로) |
+| receipt | receipt | 영수증 | codex-security. `check-skills`에서는 `PASS` 기록(correctness-review), `track-findings`에서는 쓰기가 받아들여졌다는 기록. 뜻이 다르니 처음만 풀이. `correctness-review.md`의 receipt는 시각과 hash가 든 `PASS`/`REVISION REQUIRED`(리뷰 기록), `track-findings`의 receipt는 provider 쓰기 직후 local history에 남기는 기록이며 봉인 digest와 다르다. 한 행에 두 뜻을 모아 둔 기존 표기를 유지한다 |
 | host | host | 호스트 프로그램 | codex-security. scan을 실행하는 바깥 도구. 위 `host agent`와 구분 |
 | worker | worker | 작업자 | codex-security. Deep scan 안에서 배정된 검토를 맡는 서브에이전트 |
 | phase skill | 단계 스킬 | 페이즈 스킬 | codex-security. `finding-discovery`, `validation`, `attack-path-analysis`, `threat-model` |
 | disposition | 처분 | 판정, 배치 | codex-security `validation`의 `reportable`·`suppressed`·`not_applicable`·`deferred`. 위 `verdict`(판정 결과)와 구분 |
 | attack path | 공격 경로 | 공격 루트 | codex-security |
 | threat model | 위협 모델 | 위협 모형 | codex-security |
-| proof gap | 증명 간극(proof gap) | 증명 공백 | codex-security `triage-finding`의 `proof_gaps`. 처음만 풀이 |
+| proof gap | 증명 간극(proof gap) | 증명 공백 | codex-security `triage-finding`의 `proof_gaps`. 처음만 풀이. `deferred`의 `proof_gap` 필드는 백틱 원문 |
 | counterevidence | 반증 | | codex-security |
 | likelihood | 가능성 | | codex-security. `confidence`(확신도)와 구분 |
 | exposure vector | 노출 벡터 | | codex-security. 값(`remote`, `local_network`, `localhost`, `none`)은 원어 유지 |
 | verification mode | verification mode(`standard`, `static`) | 검증 모드 | codex-security `fix-finding`, `verify-fix`. `static`은 소스와 diff만 보고 실행하지 않는 모드 |
 | immutable patch | 변하지 않는 patch | 불변 패치 | codex-security `assess-patch-risk`의 입력 조건 |
-| policy chain | policy chain | 정책 체인 | codex-security. root부터 leaf까지 합쳐지는 `SECURITY.md` 묶음. 가까운 정책이 우선 |
-| write-up / disclosure | write-up / disclosure(처음만 "보고서") | 작성글, 공시 | codex-security `vulnerability-writeup` |
+| policy chain | policy chain | 정책 체인 | codex-security. root부터 leaf까지 합쳐지는 `SECURITY.md` 묶음. 가까운 정책이 우선. `resolve-security-md` helper(`resolver`)가 만든다 |
+| write-up / disclosure | write-up / disclosure(처음만 "보고서") | 작성글, 공시 | codex-security `vulnerability-writeup`. write-up은 이 스킬이 내는 산출 보고서 |
 | PoC | PoC(처음만 "개념 증명 코드") | 개념증명 | codex-security |
 | dry-run | dry-run | 드라이런, 모의 실행 | codex-security. 쓰기 없이 미리 보는 실행 |
 | imported finding | imported finding | 가져온 발견 | codex-security. 외부 scanner에서 가져온 finding |
@@ -374,3 +374,43 @@
 | Baseline (web) | Baseline(`Widely`, `Newly`, `Limited`) | 베이스라인 | modern-web-guidance-src `baseline-status`. 위 `baseline (--original)`(기준선)과 뜻이 다르다 |
 | fallback | fallback(처음만 "대체 구현") | 폴백 | modern-web-guidance-src |
 | vendored | vendored(처음만 "저장소 안에 복사해 둔 외부 코드") | | modern-web-guidance-src |
+| coverage gap | coverage gap(처음만 "검토하지 못한 범위") | 커버리지 갭, 검토 빈틈 | codex-security `check-skills`. symlink, archive, 열 수 없는 binary, 범위 밖 참조 |
+| dynamic shell context | dynamic shell context(원어 유지) | 동적 셸 컨텍스트 | codex-security `check-skills`. 렌더링할 때 모델이 보기 전에 실행될 수 있는 호스트별 기능 |
+| instructed path | 지시상 경로 | 정적 경로가 실행됐다 | codex-security. 위 `instructed behavior`(지시상 동작) 계열 |
+| outcome (fix-finding) | outcome(`fixed`, `no_change`, `blocked`) | 결과 상태, 결과물 | codex-security `fix-finding`. 위 `verdict`(판정 결과)와 구분 |
+| patch contract | patch contract(처음만 "고치기 전에 세우는 경계 조건") | 패치 계약서 | codex-security `fix-finding`. 위 `contract (prose)`(계약)와 구분 |
+| remediation state | remediation 상태 | 복구 상태 | codex-security. `requested`, `generated`, `applied`, `verifying`, `verified`, `failed` |
+| App-only tool | App 전용 도구 | 앱 전용 툴 | codex-security. workbench UI만 부르는 MCP 도구 |
+| intake | intake(처음만 "입력 가져오기") | 인테이크 | codex-security `triage-finding`. Jira, Linear, GitHub에서 finding을 읽는 단계 |
+| writeback | writeback(처음만 "원본 ticket에 쓰기") | 되쓰기 | codex-security `triage-finding`. 기본은 금지 |
+| rank queue | rank queue(`confirmed` queue, `needs_review` queue) | 순위 큐 | codex-security `triage-finding`. 두 queue를 따로 1부터 매긴다 |
+| owner hint | owner hint | 소유자 힌트 | codex-security `triage-finding`. CODEOWNERS 같은 로컬 근거가 있을 때만 적고 판정에는 영향 없음. 위 `owner (skill)`과 뜻이 다르다 |
+| shared boundary | 공유 경계 | 공통 경계 | codex-security `fix-finding`. 같은 취약 경로가 모두 지나는 가장 좁은 enforcement 지점 |
+| view model | view model | 뷰 모델, 보기 모델 | codex-security `threat-model-visualize`의 모델 JSON |
+| resolver | resolver | 해석기, 리졸버 | codex-security. `resolve-security-md` helper. 위 `policy chain`을 만든다 |
+| provisional | provisional(threat model·scan: "scan이 complete 전" 표시) | 잠정, 임시, 잠정본 | codex-security. define/visualize 쪽 `provisional`과 threat-model 쪽 `임시(provisional)` 두 제안이 있어 `provisional` 원어 유지로 통일 |
+| readback | readback | 재읽기, 되읽기 | codex-security. 쓴 객체를 같은 transport로 다시 읽어 확인하는 단계 |
+| duplicate outcome | 중복 검색 결과(`create`/`reuse`/`update`/`blocked`) | 중복 판정 | codex-security `track-findings`. 식별자는 백틱 원문 |
+| hardening (codex-security) | hardening | 강화, 하드닝 | codex-security. 구조적 보안 보강. 개별 patch인 `tactical fix`와 구분. 위 `hardening`(보강 권고)과 뜻이 다르다 |
+| tactical fix | tactical fix | 전술적 수정 | codex-security. 개별 patch 수준의 국소 수정. 위 `hardening (codex-security)`와 구분 |
+| bootstrap (Cloud) | bootstrap | 부트스트랩 | codex-security. `defense_factory_bootstrap`. 계정 context와 접근 상태를 정하는 첫 호출 |
+| cooldown | cooldown(처음만 "새 release를 일정 기간 쓰지 않는 대기 기간") | 쿨다운 | codex-security `resolve-dependency-alert`. 정의는 원문에 없어 풀이는 분석자 해석 |
+| exact-head check | exact-head check(처음만 "평가한 head commit에서 실제로 돈 check") | 정확한 head 검사 | codex-security `assess-patch-risk` |
+| regression protection | 회귀 보호 | 회귀 방어 | codex-security `assess-patch-risk`. `strong`, `partial`, `none`, `unknown` |
+| recoverability | 복구성 | 회복성 | codex-security `assess-patch-risk`. `easy`, `managed`, `hard` |
+| status-quo risk | status-quo risk(처음만 "merge하지 않을 때의 위험") | 현상 유지 위험 | codex-security `assess-patch-risk` |
+| occurrence ID | occurrence ID(처음만 "vendor가 개별 발견에 붙인 ID") | 발생 ID | codex-security `publish-findings`, Wiz |
+| import ID | import ID | 가져오기 ID | codex-security `publish-findings`. 가져온 선택 전체를 가리키는 ID |
+| source key | source key | 소스 키 | codex-security `publish-findings`. 반복 가져오기 때 같아야 하는 선택 식별자 |
+| review ID | review ID | 리뷰 ID | codex-security `publish-findings`. Cloud 게시 미리보기의 ID. "리뷰어"와 구분 |
+| root control | root control | 루트 통제 | codex-security `finding-discovery` 위치 role. 값(`root_control`, `entrypoint/wrapper`, `sink`, `concrete_implementation`)은 원어 유지 |
+| closure table | closure table | 종결표 | codex-security `validation`. 저장소 전체 scan에서 후보 처분을 정리하는 표 |
+| inventory (scan) | inventory | 인벤토리, 목록 | codex-security. diff scan의 변경 파일 목록(`in_scope_files.txt`) |
+| baseline audit | 독립 baseline 감사 | 기준선 감사 | codex-security `core-scan.md`. 부모 가설 없이 `fork_turns: "none"`으로 시작하는 감사. 위 `baseline (--original)`(기준선)과 뜻이 다르다 |
+| compact diff | compact diff | 압축 diff | codex-security. 후보 ledger 하나로 끝나는 diff scan 방식 |
+| checkpoint (scan draft) | checkpoint(`complete: false` 저장) | 체크포인트 | codex-security. 위 `checkpoint`(중간 확인)와 뜻이 다르다 |
+| scan phase | phase | 단계, 페이즈 | codex-security. `preflight`~`reporting` 6개 진행 상태. 위 `phase skill`(단계 스킬)과 구분 |
+| coordinator (Deep) | 코디네이터 | 조정자 | codex-security. Deep scan의 반복·병합·중단을 맡는 host 구성요소 |
+| saturated / capped | `saturated`(연속 무발견으로 중지) / `capped`(횟수 상한이나 마감으로 중지) | 포화 / 상한 | codex-security. Deep 중단 이유 라벨. 원어 유지, 처음만 풀이 |
+| peer note | peer note | 동료 메모 | codex-security. Deep worker끼리 단서를 공유하는 메모 |
+| investigation allowance | investigation allowance(조사 시간 권고치) | 시간 허용량 | codex-security. 하드 타임아웃이 아닌 권고 |
