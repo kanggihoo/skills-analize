@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "d65effa9-a304-4572-a1d0-4122132f0309",
+  "status": "current",
+  "command": "deliver",
+  "type": "explainer",
+  "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-build-video/candidate.archify.md",
+  "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/_group-build-video/build-video.html",
+  "specification": {
+    "sha256": "07e84cb4b0b9255ca76e2477ec1eb562b31767688f40e73be6d7765333d23af5",
+    "bytes": 9577
+  },
+  "artifact": {
+    "sha256": "b47d26e5573759ea2b3b013d5e46c33199994176548c87f1e4764909f6391a90",
+    "bytes": 719400
+  },
+  "explainer": {
+    "preparedSha256": "8239e0b13a506a1f03855ca1261d5b41ac310ec53967b71bdbb4fc317adf53ad",
+    "dependencies": [
+      {
+        "kind": "repository",
+        "id": "hf-intro",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "hf-build",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "hf-contract",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "media-signin",
+        "path": "hyperframes/media-use/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+        "bytes": 5311
+      },
+      {
+        "kind": "repository",
+        "id": "hf-loop",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "hf-route",
+        "path": "hyperframes/hyperframes/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+        "bytes": 7481
+      },
+      {
+        "kind": "repository",
+        "id": "cli-table",
+        "path": "hyperframes/hyperframes-cli/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "781e76ee191fdffbaccf3575b44db5872c965103a8864f438170967052ddb89d",
+        "bytes": 7573
+      },
+      {
+        "kind": "repository",
+        "id": "cli-loop",
+        "path": "hyperframes/hyperframes-cli/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "781e76ee191fdffbaccf3575b44db5872c965103a8864f438170967052ddb89d",
+        "bytes": 7573
+      },
+      {
+        "kind": "repository",
+        "id": "cli-history",
+        "path": "hyperframes/hyperframes-cli/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "781e76ee191fdffbaccf3575b44db5872c965103a8864f438170967052ddb89d",
+        "bytes": 7573
+      },
+      {
+        "kind": "repository",
+        "id": "reg-find",
+        "path": "hyperframes/hyperframes-registry/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+        "bytes": 4500
+      },
+      {
+        "kind": "repository",
+        "id": "reg-wiring",
+        "path": "hyperframes/hyperframes-registry/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+        "bytes": 4500
+      },
+      {
+        "kind": "repository",
+        "id": "media-assets",
+        "path": "hyperframes/media-use/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+        "bytes": 5311
+      },
+      {
+        "kind": "repository",
+        "id": "media-credit",
+        "path": "hyperframes/media-use/SKILL.md",
+        "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+        "sha256": "c9321425f06dbfab8cfa71fd3eda0dde13ca848e626b74512d6d4ebb8ac88f0d",
+        "bytes": 5311
+      },
+      {
+        "kind": "diagram-spec",
+        "id": "build-flow",
+        "inline": true,
+        "sha256": "feb0787ab503da8eb9b02b7b708a42880a66af16a30f4fe9371246b66486e921",
+        "bytes": 1094
+      }
+    ]
+  }
+}

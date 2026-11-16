@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-14T06:03:39.931Z",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/candidate.archify.md",
+    "sha256": "e55b142b92e791105c1d4b857c21a1ef2f113ab7eb19885e53f35b6cee684d85",
+    "bytes": 22975
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+    "sha256": "bf57a0249a563129cee353981336003e9815b3bb171a16105688789a44142178",
+    "bytes": 1246118
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "e55b142b92e791105c1d4b857c21a1ef2f113ab7eb19885e53f35b6cee684d85",
+          "bytes": 22975
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1107,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "explainer",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/candidate.archify.md",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/kkh/Desktop/skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "36dfa175-6054-4c56-bda2-a110ffa9fec4",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/candidate.archify.md",
+        "output": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+        "explainer": {
+          "preparedSha256": "af0d34e2b38cf82eed67c9385f82b0d7dc199ccb7ba6673638a63448be36e594",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "front",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "lead",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "beacon",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "plugin",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "find",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "ondevice",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "whatsin",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "wiring",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "contrib-ptr",
+              "path": "hyperframes/hyperframes-registry/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "843f9459912d464e84aa9cdeb21ec3d2628d444d252e1db13c2f947582792b70",
+              "bytes": 4500
+            },
+            {
+              "kind": "repository",
+              "id": "search-intro",
+              "path": "hyperframes/hyperframes-registry/references/search.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "3da7b42d2a0d8d9e2cbcdd8591da5a83203c424de9f46a995950d374a74531ee",
+              "bytes": 9416
+            },
+            {
+              "kind": "repository",
+              "id": "english",
+              "path": "hyperframes/hyperframes-registry/references/search.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "3da7b42d2a0d8d9e2cbcdd8591da5a83203c424de9f46a995950d374a74531ee",
+              "bytes": 9416
+            },
+            {
+              "kind": "repository",
+              "id": "gapreport",
+              "path": "hyperframes/hyperframes-registry/references/search.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "3da7b42d2a0d8d9e2cbcdd8591da5a83203c424de9f46a995950d374a74531ee",
+              "bytes": 9416
+            },
+            {
+              "kind": "repository",
+              "id": "offline",
+              "path": "hyperframes/hyperframes-registry/references/search.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "3da7b42d2a0d8d9e2cbcdd8591da5a83203c424de9f46a995950d374a74531ee",
+              "bytes": 9416
+            },
+            {
+              "kind": "repository",
+              "id": "tiers",
+              "path": "hyperframes/hyperframes-registry/references/search.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "3da7b42d2a0d8d9e2cbcdd8591da5a83203c424de9f46a995950d374a74531ee",
+              "bytes": 9416
+            },
+            {
+              "kind": "repository",
+              "id": "discovery-head",
+              "path": "hyperframes/hyperframes-registry/references/discovery.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "ca82fcc1e0b2d824b72a8bda99b60d257b23d493fa1d28adbb0548a762cacd04",
+              "bytes": 16593
+            },
+            {
+              "kind": "repository",
+              "id": "discovery-glass",
+              "path": "hyperframes/hyperframes-registry/references/discovery.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "ca82fcc1e0b2d824b72a8bda99b60d257b23d493fa1d28adbb0548a762cacd04",
+              "bytes": 16593
+            },
+            {
+              "kind": "repository",
+              "id": "r26-install",
+              "path": "hyperframes/hyperframes/SKILL.md",
+              "revision": "3a759297764c8a3d0993ac558b0502acfccd81f9",
+              "sha256": "85afaf987ee74bdb022bb952857695ccaabf2137f3a3924bbfa9aad81a436243",
+              "bytes": 7481
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "find-install-flow",
+              "inline": true,
+              "sha256": "405f1e4afbbc8d9354762253d3ee4e913933e213eb42eccd45111b0dc09b6357",
+              "bytes": 1202
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "position-flow",
+              "inline": true,
+              "sha256": "a698082f8cbd6eaa0f012fb322cc5f018c4770de681c2dd1e7d9d787bdf4a1ce",
+              "bytes": 711
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "e55b142b92e791105c1d4b857c21a1ef2f113ab7eb19885e53f35b6cee684d85",
+          "bytes": 22975
+        },
+        "artifact": {
+          "sha256": "bf57a0249a563129cee353981336003e9815b3bb171a16105688789a44142178",
+          "bytes": 1246118
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 568,
+      "command": [
+        "/opt/homebrew/Cellar/node/26.10.0_2/bin/node",
+        "/Users/kkh/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "bf57a0249a563129cee353981336003e9815b3bb171a16105688789a44142178",
+          "bytes": 1246118
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "132 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "19 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "find-install-flow: pass",
+              "position-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "find-install-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-xkfbLX/child.html",
+                "artifact": {
+                  "sha256": "158df403af7700b204fc165e1c1503536a34d877033d3aac4b1f9ecd4a9a2423",
+                  "bytes": 835758
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 70.7,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.286973555337904,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "fit-to-add-1",
+                      "from": "fit",
+                      "to": "add"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.286973555337904,
+                    "semanticTextCount": 8
+                  },
+                  "issues": []
+                }
+              }
+            },
+            {
+              "id": "position-flow",
+              "receipt": {
+                "ok": true,
+                "file": "/var/folders/x4/q3lx4m6543l0cy_032mqjpsw0000gn/T/archify-explainer-check-6LuXVM/child.html",
+                "artifact": {
+                  "sha256": "788721cdfba04d4e84d4c8e27ae4b084a37bf4d36b97d6e6fd09a32770ef6373",
+                  "bytes": 831542
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 174.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.085714285714285,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 104.4,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "before-to-current-1",
+                      "from": "before",
+                      "to": "current"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.085714285714285,
+                    "semanticTextCount": 5
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "36dfa175-6054-4c56-bda2-a110ffa9fec4"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-14T06:03:41.755Z",
+  "durationMs": 1823,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

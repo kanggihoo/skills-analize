@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/candidate.archify.md",
+    "sha256": "e55b142b92e791105c1d4b857c21a1ef2f113ab7eb19885e53f35b6cee684d85",
+    "bytes": 22975
+  },
+  "artifact": {
+    "path": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.html",
+    "sha256": "bf57a0249a563129cee353981336003e9815b3bb171a16105688789a44142178",
+    "bytes": 1246118
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "not-run"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.finalize.json",
+    "summaryReceipt": "/Users/kkh/Desktop/skills-analize/skill-explainers/hyperframes/hyperframes-registry/hyperframes-registry.finalize-summary.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-02T11:08:04.190Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 1823,
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  }
+}
