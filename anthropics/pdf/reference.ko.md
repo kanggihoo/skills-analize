@@ -5,24 +5,24 @@
 ## pypdfium2 라이브러리 (Apache/BSD 라이선스)
 
 ### 개요
-pypdfium2는 PDFium(Chromium의 PDF 라이브러리)용 Python 바인딩입니다. 빠른 PDF 렌더링과 이미지 생성에 적합하며, PyMuPDF를 대체해 쓸 수 있습니다.
+pypdfium2는 PDFium(Chromium의 PDF 라이브러리)을 Python에서 쓸 수 있게 감싼 바인딩입니다. PDF를 빠르게 렌더링해 이미지를 만들 때 좋고, PyMuPDF를 대체하는 용도로도 쓸 수 있습니다.
 
 ### PDF를 이미지로 렌더링
 ```python
 import pypdfium2 as pdfium
 from PIL import Image
 
-# 문서 로드
+# PDF 로드
 pdf = pdfium.PdfDocument("document.pdf")
 
 # 페이지를 이미지로 렌더링
 page = pdf[0]  # 첫 페이지
 bitmap = page.render(
-    scale=2.0,  # 고해상도
-    rotation=0  # 회전 없음
+    scale=2.0,  # 해상도를 높입니다
+    rotation=0  # 회전하지 않습니다
 )
 
-# PIL 이미지로 변환
+# PIL Image로 변환
 img = bitmap.to_pil()
 img.save("page_1.png", "PNG")
 
@@ -47,9 +47,9 @@ for i, page in enumerate(pdf):
 
 ### pdf-lib (MIT 라이선스)
 
-pdf-lib는 어떤 JavaScript 환경에서든 PDF 문서를 생성하고 수정할 수 있는 강력한 JavaScript 라이브러리입니다.
+pdf-lib는 어떤 JavaScript 환경에서든 PDF 문서를 새로 만들거나 수정할 수 있는 라이브러리입니다.
 
-#### 기존 PDF 로드 및 조작
+#### 기존 PDF 불러와서 수정하기
 ```javascript
 import { PDFDocument } from 'pdf-lib';
 import fs from 'fs';
@@ -77,7 +77,7 @@ async function manipulatePDF() {
 }
 ```
 
-#### 처음부터 복잡한 PDF 생성
+#### 처음부터 복잡한 PDF 만들기
 ```javascript
 import { PDFDocument, rgb, StandardFonts } from 'pdf-lib';
 import fs from 'fs';
@@ -138,7 +138,7 @@ async function createPDF() {
 }
 ```
 
-#### 고급 병합 및 분할
+#### 고급 병합 및 분할 작업
 ```javascript
 import { PDFDocument } from 'pdf-lib';
 import fs from 'fs';
@@ -154,11 +154,11 @@ async function mergePDFs() {
     const pdf1 = await PDFDocument.load(pdf1Bytes);
     const pdf2 = await PDFDocument.load(pdf2Bytes);
 
-    // 첫 번째 PDF의 페이지 복사
+    // 첫 번째 PDF의 모든 페이지 복사
     const pdf1Pages = await mergedPdf.copyPages(pdf1, pdf1.getPageIndices());
     pdf1Pages.forEach(page => mergedPdf.addPage(page));
 
-    // 두 번째 PDF의 특정 페이지 복사 (0, 2, 4 페이지)
+    // 두 번째 PDF에서 특정 페이지(0, 2, 4)만 복사
     const pdf2Pages = await mergedPdf.copyPages(pdf2, [0, 2, 4]);
     pdf2Pages.forEach(page => mergedPdf.addPage(page));
 
@@ -169,13 +169,13 @@ async function mergePDFs() {
 
 ### pdfjs-dist (Apache 라이선스)
 
-PDF.js는 브라우저에서 PDF를 렌더링하기 위한 Mozilla의 JavaScript 라이브러리입니다.
+PDF.js는 Mozilla가 만든 JavaScript 라이브러리로, 브라우저에서 PDF를 렌더링합니다.
 
-#### 기본 PDF 로드 및 렌더링
+#### 기본 PDF 로딩과 렌더링
 ```javascript
 import * as pdfjsLib from 'pdfjs-dist';
 
-// 워커 설정 (성능에 중요)
+// worker 설정 (성능에 중요)
 pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.js';
 
 async function renderPDF() {
@@ -189,7 +189,7 @@ async function renderPDF() {
     const page = await pdf.getPage(1);
     const viewport = page.getViewport({ scale: 1.5 });
 
-    // 캔버스에 렌더링
+    // canvas에 렌더링
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
     canvas.height = viewport.height;
@@ -241,7 +241,7 @@ async function extractText() {
 }
 ```
 
-#### 주석 및 폼 추출
+#### 주석(annotation)과 폼 추출
 ```javascript
 import * as pdfjsLib from 'pdfjs-dist';
 
@@ -262,7 +262,7 @@ async function extractAnnotations() {
 }
 ```
 
-## 고급 명령줄 작업
+## 고급 커맨드라인 작업
 
 ### poppler-utils 고급 기능
 
@@ -271,7 +271,7 @@ async function extractAnnotations() {
 # 바운딩 박스 좌표와 함께 텍스트 추출 (구조화된 데이터에 필수)
 pdftotext -bbox-layout document.pdf output.xml
 
-# XML 출력에 각 텍스트 요소의 정확한 좌표가 포함됩니다
+# XML 출력에는 각 텍스트 요소의 정확한 좌표가 들어 있습니다
 ```
 
 #### 고급 이미지 변환
@@ -282,7 +282,7 @@ pdftoppm -png -r 300 document.pdf output_prefix
 # 특정 페이지 범위를 고해상도로 변환
 pdftoppm -png -r 600 -f 1 -l 3 document.pdf high_res_pages
 
-# JPEG 품질 설정으로 변환
+# 품질을 지정해 JPEG로 변환
 pdftoppm -jpeg -jpegopt quality=85 -r 200 document.pdf jpeg_output
 ```
 
@@ -291,10 +291,10 @@ pdftoppm -jpeg -jpegopt quality=85 -r 200 document.pdf jpeg_output
 # 메타데이터와 함께 내장 이미지 전부 추출
 pdfimages -j -p document.pdf page_images
 
-# 추출하지 않고 이미지 정보만 출력
+# 추출하지 않고 이미지 정보만 확인
 pdfimages -list document.pdf
 
-# 원본 형식으로 이미지 추출
+# 원본 포맷 그대로 이미지 추출
 pdfimages -all document.pdf images/img
 ```
 
@@ -302,35 +302,35 @@ pdfimages -all document.pdf images/img
 
 #### 복잡한 페이지 조작
 ```bash
-# PDF를 페이지 그룹 단위로 분할
+# PDF를 페이지 묶음 단위로 분할
 qpdf --split-pages=3 input.pdf output_group_%02d.pdf
 
 # 복잡한 범위로 특정 페이지 추출
 qpdf input.pdf --pages input.pdf 1,3-5,8,10-end -- extracted.pdf
 
-# 여러 PDF에서 특정 페이지 병합
+# 여러 PDF에서 특정 페이지만 병합
 qpdf --empty --pages doc1.pdf 1-3 doc2.pdf 5-7 doc3.pdf 2,4 -- combined.pdf
 ```
 
-#### PDF 최적화 및 복구
+#### PDF 최적화와 복구
 ```bash
-# 웹용 최적화 (스트리밍을 위해 linearize)
+# 웹용으로 최적화 (스트리밍을 위해 linearize)
 qpdf --linearize input.pdf optimized.pdf
 
-# 사용되지 않는 객체 제거 및 압축
+# 사용되지 않는 객체를 제거하고 압축
 qpdf --optimize-level=all input.pdf compressed.pdf
 
 # 손상된 PDF 구조 복구 시도
 qpdf --check input.pdf
 qpdf --fix-qdf damaged.pdf repaired.pdf
 
-# 디버깅을 위해 상세 PDF 구조 출력
+# 디버깅용으로 상세한 PDF 구조 출력
 qpdf --show-all-pages input.pdf > structure.txt
 ```
 
 #### 고급 암호화
 ```bash
-# 특정 권한과 함께 비밀번호 보호 추가
+# 세부 권한을 지정해 비밀번호 보호 추가
 qpdf --encrypt user_pass owner_pass 256 --print=none --modify=none -- input.pdf encrypted.pdf
 
 # 암호화 상태 확인
@@ -344,7 +344,7 @@ qpdf --password=secret123 --decrypt encrypted.pdf decrypted.pdf
 
 ### pdfplumber 고급 기능
 
-#### 정확한 좌표와 함께 텍스트 추출
+#### 정밀한 좌표와 함께 텍스트 추출
 ```python
 import pdfplumber
 
@@ -353,14 +353,14 @@ with pdfplumber.open("document.pdf") as pdf:
     
     # 좌표와 함께 모든 텍스트 추출
     chars = page.chars
-    for char in chars[:10]:  # 처음 10개 문자
+    for char in chars[:10]:  # 앞의 10개 문자만
         print(f"Char: '{char['text']}' at x:{char['x0']:.1f} y:{char['y0']:.1f}")
     
-    # 바운딩 박스로 텍스트 추출 (left, top, right, bottom)
+    # 바운딩 박스(왼쪽, 위, 오른쪽, 아래)로 텍스트 추출
     bbox_text = page.within_bbox((100, 100, 400, 200)).extract_text()
 ```
 
-#### 커스텀 설정으로 고급 표 추출
+#### 사용자 설정으로 고급 표 추출
 ```python
 import pdfplumber
 import pandas as pd
@@ -368,7 +368,7 @@ import pandas as pd
 with pdfplumber.open("complex_table.pdf") as pdf:
     page = pdf.pages[0]
     
-    # 복잡한 레이아웃을 위한 커스텀 설정으로 표 추출
+    # 복잡한 레이아웃을 위해 사용자 설정으로 표 추출
     table_settings = {
         "vertical_strategy": "lines",
         "horizontal_strategy": "lines",
@@ -377,14 +377,14 @@ with pdfplumber.open("complex_table.pdf") as pdf:
     }
     tables = page.extract_tables(table_settings)
     
-    # 표 추출 시각적 디버깅
+    # 표 추출 과정을 시각적으로 디버깅
     img = page.to_image(resolution=150)
     img.save("debug_layout.png")
 ```
 
 ### reportlab 고급 기능
 
-#### 표가 있는 전문 보고서 생성
+#### 표가 들어간 보고서 만들기
 ```python
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
@@ -397,7 +397,7 @@ data = [
     ['Gadgets', '85', '92', '98', '105']
 ]
 
-# 표가 포함된 PDF 생성
+# 표가 들어간 PDF 생성
 doc = SimpleDocTemplate("report.pdf")
 elements = []
 
@@ -454,13 +454,13 @@ def extract_figures(pdf_path, output_dir):
         mask = np.any(img_array != [255, 255, 255], axis=2)
         
         # 윤곽선을 찾고 바운딩 박스 추출
-        # (단순화된 예시입니다. 실제 구현에는 더 정교한 감지가 필요합니다)
+        # (단순화한 예시입니다. 실제 구현에는 더 정교한 감지가 필요합니다)
         
         # 감지된 그림 저장
-        # ... 구현은 구체적인 요구사항에 따라 다릅니다
+        # ... 구현은 실제 요구사항에 따라 달라집니다
 ```
 
-### 오류 처리를 포함한 일괄 PDF 처리
+### 오류 처리를 포함한 PDF 일괄 처리
 ```python
 import os
 import glob
@@ -513,7 +513,7 @@ from pypdf import PdfWriter, PdfReader
 reader = PdfReader("input.pdf")
 writer = PdfWriter()
 
-# 자르기 (left, bottom, right, top, 단위: pt)
+# 페이지 자르기 (왼쪽, 아래, 오른쪽, 위, 단위: point)
 page = reader.pages[0]
 page.mediabox.left = 50
 page.mediabox.bottom = 50
@@ -528,22 +528,22 @@ with open("cropped.pdf", "wb") as output:
 ## 성능 최적화 팁
 
 ### 1. 대용량 PDF의 경우
-- 전체 PDF를 메모리에 올리는 대신 스트리밍 방식을 사용하세요
-- 큰 파일을 나눌 때는 `qpdf --split-pages`를 사용하세요
-- pypdfium2로 페이지를 하나씩 처리하세요
+- PDF 전체를 메모리에 올리는 대신 스트리밍 방식을 씁니다
+- 큰 파일을 나눌 때는 `qpdf --split-pages`를 씁니다
+- pypdfium2로 페이지를 하나씩 처리합니다
 
 ### 2. 텍스트 추출의 경우
-- 일반 텍스트 추출에는 `pdftotext -bbox-layout`이 가장 빠릅니다
-- 구조화된 데이터와 표에는 pdfplumber를 사용하세요
-- 매우 큰 문서에서는 `pypdf.extract_text()` 사용을 피하세요
+- 일반 텍스트만 뽑는다면 `pdftotext -bbox-layout`이 가장 빠릅니다
+- 구조화된 데이터와 표에는 pdfplumber를 씁니다
+- 아주 큰 문서에서는 `pypdf.extract_text()` 사용을 피합니다
 
 ### 3. 이미지 추출의 경우
 - `pdfimages`는 페이지를 렌더링하는 것보다 훨씬 빠릅니다
-- 미리보기에는 낮은 해상도를, 최종 결과물에는 높은 해상도를 사용하세요
+- 미리보기에는 낮은 해상도를, 최종 출력에는 높은 해상도를 씁니다
 
-### 4. 폼 채우기의 경우
+### 4. 폼 작성의 경우
 - pdf-lib는 대부분의 대안보다 폼 구조를 잘 유지합니다
-- 처리하기 전에 폼 필드를 미리 검증하세요
+- 처리 전에 폼 필드를 미리 검증합니다
 
 ### 5. 메모리 관리
 ```python
@@ -568,7 +568,7 @@ def process_large_pdf(pdf_path, chunk_size=10):
 
 ### 암호화된 PDF
 ```python
-# 비밀번호가 걸린 PDF 처리
+# 비밀번호로 보호된 PDF 처리
 from pypdf import PdfReader
 
 try:
