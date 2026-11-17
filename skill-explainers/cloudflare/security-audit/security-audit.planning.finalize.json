@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-17T00:49:36.132Z",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-planning.archify.md",
+    "sha256": "9fe6b3d5121a18ca3d1a115eac913ca98ab8d1d6773cadd971466db7c35a95e2",
+    "bytes": 10306
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+    "sha256": "f08207e728865dab4c20b66e1f3eafe9b266c1af408a669af693607a60721d86",
+    "bytes": 477111
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-planning.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "9fe6b3d5121a18ca3d1a115eac913ca98ab8d1d6773cadd971466db7c35a95e2",
+          "bytes": 10306
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 891,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-planning.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "2aca82d1-3546-45be-b69e-ef3a7815e669",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-planning.archify.md",
+        "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+        "explainer": {
+          "preparedSha256": "e4a0f7327141daa6f643faebf0ac276500e0611059b8129781b9649d2c4c79f2",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "skm-plan-scope",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-cov",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-prior",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-profiles",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-budget-def",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-budget-gate",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-budget-order",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-budget-est",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            },
+            {
+              "kind": "repository",
+              "id": "skm-budget-over",
+              "path": "cloudflare/security-audit/SKILL.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "5e3e96a1e438d8f35fef0a1e38f02d4f00e2bdf910401b7dfe00e6779c6dac85",
+              "bytes": 22026
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "9fe6b3d5121a18ca3d1a115eac913ca98ab8d1d6773cadd971466db7c35a95e2",
+          "bytes": 10306
+        },
+        "artifact": {
+          "sha256": "f08207e728865dab4c20b66e1f3eafe9b266c1af408a669af693607a60721d86",
+          "bytes": 477111
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 305,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "f08207e728865dab4c20b66e1f3eafe9b266c1af408a669af693607a60721d86",
+          "bytes": 477111
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "54 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "9 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": []
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "2aca82d1-3546-45be-b69e-ef3a7815e669"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.planning.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-17T00:49:38.068Z",
+  "durationMs": 1936,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-10T05:47:30.095Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

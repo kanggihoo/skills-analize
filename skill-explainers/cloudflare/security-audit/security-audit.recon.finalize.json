@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "explainer",
+  "quality": "showcase",
+  "startedAt": "2026-11-17T01:04:11.148Z",
+  "specification": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-recon.archify.md",
+    "sha256": "f222f00a7befd84ec0b63477d683a3c728aea1daca8aba129be774200564465a",
+    "bytes": 16413
+  },
+  "artifact": {
+    "path": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+    "sha256": "742f9d02d957f7b139eedeabcabf41030889c994c0e1743663e173f220e89490",
+    "bytes": 1064761
+  },
+  "stages": {
+    "browser-check": {
+      "status": "not-run",
+      "execution": "not-requested"
+    },
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-recon.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "f222f00a7befd84ec0b63477d683a3c728aea1daca8aba129be774200564465a",
+          "bytes": 16413
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 1733,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "deliver",
+        "explainer",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-recon.archify.md",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "4c260976-91d9-443d-92af-f5192a5cdc33",
+        "ok": true,
+        "command": "deliver",
+        "type": "explainer",
+        "input": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\detail-recon.archify.md",
+        "output": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+        "explainer": {
+          "preparedSha256": "fb14d19671267dfeb7a083fe99e544d5f41093ba148c8d6bd1948a5ba341f399",
+          "dependencies": [
+            {
+              "kind": "repository",
+              "id": "rec-p1",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-a1a",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-a1b",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-a1c",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-a1d",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-focus",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-prior",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-arch",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-ledger",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-id",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-unit",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-state",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "rec-run",
+              "path": "cloudflare/security-audit/RECONNAISSANCE.md",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "02ca887aca84de8ae137f1891bd2f0a54f28d3fa6da92a27f54734382b3381a2",
+              "bytes": 15902
+            },
+            {
+              "kind": "repository",
+              "id": "vl-limits",
+              "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
+              "bytes": 33522
+            },
+            {
+              "kind": "repository",
+              "id": "vl-id",
+              "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
+              "bytes": 33522
+            },
+            {
+              "kind": "repository",
+              "id": "vl-run",
+              "path": "cloudflare/security-audit/validate-coverage-ledger.cjs",
+              "revision": "da3be34f22adbe6a3095252847b21c5f2e13b661",
+              "sha256": "2eb280bd2e33c002916f86db9b29f9edfedb6454e5db973c766290465b868ac8",
+              "bytes": 33522
+            },
+            {
+              "kind": "diagram-spec",
+              "id": "recon-flow",
+              "inline": true,
+              "sha256": "3bd34948d47d9eee48323d54df76f0fc17c9fc8db68ad11e6fe855155114fc37",
+              "bytes": 1062
+            }
+          ]
+        },
+        "specification": {
+          "sha256": "f222f00a7befd84ec0b63477d683a3c728aea1daca8aba129be774200564465a",
+          "bytes": 16413
+        },
+        "artifact": {
+          "sha256": "742f9d02d957f7b139eedeabcabf41030889c994c0e1743663e173f220e89490",
+          "bytes": 1064761
+        },
+        "validation": {
+          "checksPassed": 4,
+          "checkCount": 4,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 735,
+      "command": [
+        "C:\\Users\\SSAFY\\AppData\\Local\\fnm_multishells\\11552_1794873339128\\node.exe",
+        "C:\\Users\\SSAFY\\.agents\\skills\\archify\\bin\\archify.mjs",
+        "check",
+        "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.html",
+        "family": "explainer",
+        "artifact": {
+          "sha256": "742f9d02d957f7b139eedeabcabf41030889c994c0e1743663e173f220e89490",
+          "bytes": 1064761
+        },
+        "checks": [
+          {
+            "name": "explainer_structure",
+            "ok": true,
+            "details": [
+              "88 unique DOM IDs"
+            ]
+          },
+          {
+            "name": "explainer_payload_identity",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "explainer_dependencies",
+            "ok": true,
+            "details": [
+              "17 frozen dependencies"
+            ]
+          },
+          {
+            "name": "explainer_native_diagrams",
+            "ok": true,
+            "details": [
+              "recon-flow: pass"
+            ]
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "issues": [],
+          "nativeDiagrams": [
+            {
+              "id": "recon-flow",
+              "receipt": {
+                "ok": true,
+                "file": "C:\\Users\\SSAFY\\AppData\\Local\\Temp\\archify-explainer-check-Ea127h\\child.html",
+                "artifact": {
+                  "sha256": "ac56db7b63fc191602da586bad64e76fa9f0ec9835d68144d4e641deff3a29cc",
+                  "bytes": 835035
+                },
+                "checks": [
+                  {
+                    "name": "single_svg",
+                    "ok": true,
+                    "details": [
+                      "found 1 <svg> block(s)"
+                    ]
+                  },
+                  {
+                    "name": "finite_svg",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "orthogonal_arrows",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "label_route_clearance",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_crossings",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "relationship_corridors",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "container_border_runs",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "route_rhythm",
+                    "ok": true,
+                    "details": []
+                  },
+                  {
+                    "name": "legend_clearance",
+                    "ok": true,
+                    "details": []
+                  }
+                ],
+                "composition": {
+                  "schemaVersion": 1,
+                  "profile": "showcase",
+                  "status": "pass",
+                  "summary": {
+                    "errors": 0,
+                    "warnings": 0
+                  },
+                  "metrics": {
+                    "properCrossings": 0,
+                    "resolvedCrossovers": 0,
+                    "ambiguousCorridors": 0,
+                    "arrowheadCollisions": 0,
+                    "containerBorderRuns": 0,
+                    "labelRouteClearanceIssues": 0,
+                    "labelCanvasOverflowIssues": 0,
+                    "minLabelRouteClearance": 148.1,
+                    "desktopReadabilityIssues": 0,
+                    "viewportHeightIssues": 0,
+                    "minProjectedNodeTextPx": 7.898089171974522,
+                    "maxBends": 0,
+                    "routesOverSuggestedBends": 0,
+                    "maxStretch": 1,
+                    "routesOverSuggestedStretch": 0,
+                    "minSegmentPx": 32,
+                    "minInteriorSegmentPx": null,
+                    "shortSegmentCount": 0,
+                    "shortEndpointSegmentCount": 0,
+                    "shortInteriorSegmentCount": 0,
+                    "microSegmentCount": 0
+                  },
+                  "suggestedLimits": {
+                    "bendsPerRelationship": 2,
+                    "stretch": 1.35,
+                    "segmentPx": 16,
+                    "microSegmentPx": 8
+                  },
+                  "routeReview": {
+                    "crossings": [],
+                    "detours": []
+                  },
+                  "leadingSpace": {
+                    "measured": false,
+                    "reviewSuggested": false
+                  },
+                  "desktopReadability": {
+                    "budgetBasis": "legacy-930",
+                    "readerContract": "declared-wide-v1",
+                    "availableDiagramWidth": 930,
+                    "actualBudgetPx": 930,
+                    "limit": "legacy",
+                    "requestedTargetPx": null,
+                    "requestedTargetMet": null,
+                    "hardFloorPx": 6,
+                    "hardFloorMet": true,
+                    "minimumOwner": {
+                      "kind": "edge",
+                      "id": "gate-to-agents-1",
+                      "from": "gate",
+                      "to": "agents"
+                    },
+                    "minimumSourceTextPx": 8,
+                    "minimumProjectedTextPx": 7.898089171974522,
+                    "semanticTextCount": 6
+                  },
+                  "issues": []
+                }
+              }
+            }
+          ]
+        },
+        "diagnostics": [],
+        "provenance": "current",
+        "deliveryReceiptId": "4c260976-91d9-443d-92af-f5192a5cdc33"
+      }
+    }
+  },
+  "browserCheck": {
+    "requested": false,
+    "ran": false
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.finalize.json",
+    "summaryReceipt": "C:\\Users\\SSAFY\\Desktop\\skills-analize\\skill-explainers\\cloudflare\\security-audit\\security-audit.recon.finalize-summary.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-11-17T01:04:14.411Z",
+  "durationMs": 3262,
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-10T05:47:30.095Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  }
+}

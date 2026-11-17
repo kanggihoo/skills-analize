@@ -80,11 +80,23 @@ def collection_index(ledger):
         mid = skill_link(col_dir, path_id)[0].split("/")[:-2]
         return "/".join(mid)
 
+    def details(path_id):
+        """스킬 폴더의 detail-<id>.archify.md마다 만들어진 <이름>.<id>.html 상세 페이지 링크."""
+        href, _, name = skill_link(col_dir, path_id)
+        folder = href.rsplit("/", 1)[0]
+        out = []
+        for ms in sorted((col_dir / folder).glob("detail-*.archify.md")):
+            did = ms.name[len("detail-"):-len(".archify.md")]
+            if (col_dir / folder / f"{name}.{did}.html").exists():
+                out.append(f'<a href="{folder}/{name}.{did}.html">{esc(did)}</a>')
+        return out
+
     def li(path_id):
         href, ok, name = skill_link(col_dir, path_id)
         link = f'<a href="{href}">{esc(name)}</a>' if ok else f'{esc(name)} <span class="muted">(페이지 없음)</span>'
         tip = f' <span class="muted">{esc(summary[path_id])}</span>' if summary.get(path_id) else ""
-        return f"<li>{link}{tip}</li>"
+        det = f' <span class="muted">상세: {" · ".join(details(path_id))}</span>' if details(path_id) else ""
+        return f"<li>{link}{tip}{det}</li>"
 
     body = [f"<h1>{esc(col_dir.relative_to(ROOT).as_posix())} 스킬 분석</h1>",
             f'<p class="muted">스킬 {len(skills)}개 · 묶음 {len(groups)}개 · 분석 커밋 <code>{esc(commit[1][:7]) if commit else "?"}</code> · '
@@ -112,7 +124,8 @@ def collection_index(ledger):
     body.append('<h2>전체 스킬</h2><div class="wrap"><table><tr>' + "".join(f"<th>{c}</th>" for c in cols) + "</tr>")
     for s in skills:
         href, ok, name = skill_link(col_dir, s["경로 ID"])
-        cells = [f'<a href="{href}">{esc(name)}</a>' if ok else esc(name)]
+        cells = [(f'<a href="{href}">{esc(name)}</a>' if ok else esc(name))
+                 + (f'<br><span class="muted">상세: {" · ".join(details(s["경로 ID"]))}</span>' if details(s["경로 ID"]) else "")]
         cells += [esc(origin(s["경로 ID"]))] if has_origin else []
         s.setdefault("묶음 내 역할", s.get("역할", ""))  # 옛 원장은 열 이름이 `역할`
         cells += [esc(s.get(k, "")) for k in ("한 줄 요약", "묶음 내 역할", "소속 묶음", "원문 비교")]
