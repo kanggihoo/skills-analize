@@ -1,5 +1,5 @@
 # modern-web-guidance-src 관계 원장
-분석 커밋: a1d836f93ec897c67870ac042622e8aec36e5f6b
+분석 커밋: 3098961a8768980c88b0f52a476209e63154c4d1
 
 - 범위: `modern-web-guidance-src/` 아래 `SKILL.md` 13개. 번역본은 이 컬렉션에 없고(1-1단계 생략) 열지 않았다. 출처 줄 번호는 모두 이 컬렉션 안의 파일 기준이다(`폴더/파일:시작:끝`).
 - 이 컬렉션은 GoogleChrome/modern-web-guidance-src(guidance) 저장소를 유지보수하는 내부용 스킬 모음이다. 본문이 `guides/`, `src/`, `docs/`, `GOVERNANCE.md`, `.github/` 같은 원본 저장소 파일을 전제하는데, 이 컬렉션에는 그 파일이 없다. 그래서 그런 참조는 `범위 밖`으로 적었고 끊긴 참조로 보지 않는다.

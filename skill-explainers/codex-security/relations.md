@@ -1,5 +1,5 @@
 # codex-security 관계 원장
-분석 커밋: cd5035b88386f2e309c89f5af2814e7f3d7d8343
+분석 커밋: 3098961a8768980c88b0f52a476209e63154c4d1
 
 - **이전 원장**: 분석 커밋 `a1d836f`. 그때는 `npx skills add`가 복사한 SKILL.md 폴더만 있어서 스킬이 읽으라는 플러그인 루트 `references/`, `schemas/`, MCP 도구 구현, `scripts/`를 읽지 못했다(R60~R66, R70을 "범위 밖·읽지 못했다"로 적음). 이번 분석 커밋 `cd5035b`는 플러그인 전체(`codex-security/plugins/codex-security/`)를 담는다. 20개 스킬의 `SKILL.md`, `agents/openai.yaml`, 스킬 폴더 안 `references/`, `scripts/`는 `git diff -M --name-status a1d836f cd5035b`에서 모두 R100(내용 동일 이동)이다. 그래서 기존 SKILL.md 줄 번호는 그대로 유효하다.
 - **경로 약어(출처 열에서만 쓴다)**: `S/` = `codex-security/plugins/codex-security/skills/`, `P/` = `codex-security/plugins/codex-security/`, `E/` = `codex-security/evals/check-skills/fixtures/`, `L` = `codex-security/skills-lock.json`. 출처 형식은 `경로:시작줄:끝줄`이다. 스킬 경로 ID와 관계 표의 from/to는 약어 없이 저장소 루트 기준 전체 경로를 쓴다.

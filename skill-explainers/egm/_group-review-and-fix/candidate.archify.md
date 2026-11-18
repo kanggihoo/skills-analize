@@ -7,8 +7,8 @@
 - 반복에는 상한이 있다. review-loop은 최대 5라운드이고 깨끗한 라운드 2회 연속이면 수렴으로 본다.[](source:r-lp-iter)
 - 이 묶음의 조사 상태는 **부분 분석**이다. 리뷰어 정의 파일과 기준 문서가 저장소에 없어서 리뷰어가 실제로 무엇을 보는지는 확인하지 못했다.
 
-@answer scope="egm · review · review-loop · resolve · 커밋 d494974 · 지시상 동작 · 리뷰어 정의와 기준 문서는 확인하지 못함(부분 분석)"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
+@answer scope="egm · review · review-loop · resolve · 커밋 3098961 · 지시상 동작 · 리뷰어 정의와 기준 문서는 확인하지 못함(부분 분석)"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source r-rv-off title="egm/egm-review/SKILL.md · 호출 제한" path=egm/egm-review/SKILL.md lines=4:4
 @source r-lp-off title="egm/egm-review-loop/SKILL.md · 호출 제한" path=egm/egm-review-loop/SKILL.md lines=4:4
 @source r-rs-off title="egm/egm-resolve/SKILL.md · 호출 제한" path=egm/egm-resolve/SKILL.md lines=4:4
@@ -161,15 +161,15 @@
 
 | rel-id | 종류 | 그림에 있나 | 내용 |
 | --- | --- | --- | --- |
-| r08 | 내부 위임 | 있음 | review → review-loop |
-| r09 | 내부 위임 | 표 | review가 `Resolve findings with agent` 선택 때 `egm-resolve`를 직접 부른다[](source:r-rv-gates) |
-| r10 | 내부 위임 | 있음 | review-loop ↔ resolve |
-| r11 | 내부 위임 | 표 | review가 `egm-synthesizer`를 부른다. 정의 파일은 범위 밖이다[](source:r-rv-uninter) |
-| r12 | 내부 위임 | 생략 | Stage 6은 synthesizer를 거치지 않고 `egm-comprehension`을 직접 띄운다. 보고서에 paraphrase가 남게 하려는 것이다[](source:r-rv-comp) |
-| r13 | 내부 위임 | 생략 | Stage 5·8은 `egm-zoom-out`. 범위 밖이다[](source:r-rv-zoom) |
-| r14 | 내부 위임 | 있음 | review-loop → synthesizer → Goldfish |
-| r18 | 공유 상태 | 표 | `goldfish_review_report.md`. resolve가 쓰고 끝에 `Status: resolved`를 붙인다[](source:r-rs-report)[](source:r-rs-exit) |
-| r19 | 공유 상태 | 생략 | 아래 미확인 항목 |
+| r08 | 호출 | 있음 | review → review-loop |
+| r09 | 호출 | 표 | review가 `Resolve findings with agent` 선택 때 `egm-resolve`를 직접 부른다[](source:r-rv-gates) |
+| r10 | 호출 | 있음 | review-loop ↔ resolve |
+| r11 | 호출 | 표 | review가 `egm-synthesizer`를 부른다. 정의 파일은 범위 밖이다[](source:r-rv-uninter) |
+| r12 | 호출 | 생략 | Stage 6은 synthesizer를 거치지 않고 `egm-comprehension`을 직접 띄운다. 보고서에 paraphrase가 남게 하려는 것이다[](source:r-rv-comp) |
+| r13 | 호출 | 생략 | Stage 5·8은 `egm-zoom-out`. 범위 밖이다[](source:r-rv-zoom) |
+| r14 | 호출 | 있음 | review-loop → synthesizer → Goldfish |
+| r18 | 같은 파일 | 표 | `goldfish_review_report.md`. resolve가 쓰고 맨 위에 `Status: resolved`를 붙인다[](source:r-rs-report)[](source:r-rs-exit) |
+| r19 | 같은 파일 | 생략 | 아래 미확인 항목 |
 | r25 | 참고 | 생략 | 기준 문서 `resources/document_standards/*.md`. 파일이 없어 `불명`이다[](source:r-lp-names) |
 
 @callout level=open-question title="확인하지 못한 것"

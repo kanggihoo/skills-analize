@@ -1,147 +1,101 @@
-# project-coding-standards는 PR 전에 무엇을 지키게 하나? {#project-coding-standards-page}
+# project-coding-standards — TypeScript·CLI·dashboard 코드 규칙과 PR 검증 순서 {#overview}
 
-`project-coding-standards`는 `modern-web-guidance-src` 저장소의 TypeScript·JavaScript·CLI·harness·server endpoint·dashboard 코드를 쓰거나 PR로 올리기 전에 쓰는 규칙집이다. 핵심은 PR 하나에 목적 하나, 기존 abstraction과 정본 데이터 재사용, 공유 설정 약화 금지, `pnpm run preflight` 통과다.[](source:overview)[](source:scope)[](source:tiers)
+`project-coding-standards`는 에이전트가 이 저장소의 TypeScript, JavaScript, CLI, harness, server endpoint, dashboard 코드를 쓰거나 PR을 준비할 때 따를 구조 원칙, 코딩 규칙, 검증 단계를 정해 주는 스킬이다.[](source:cs-intro)
 
-- PR은 data layer, CLI, UI 순으로 작게 쪼갠다. 백엔드·CLI·frontend를 한 PR에 묶지 않는다.[](source:scope)
-- agent 이름은 `Agents` enum으로, 속성은 `evals.json` 같은 정본에서 읽는다. 문자열 상수와 경로 추측은 금지다.[](source:enums)
-- `tsconfig.json`, `.oxlintignore`, `package.json`을 고쳐 typecheck나 lint 실패를 피하지 않는다.[](source:config)
-- dashboard나 `src/dashboard/` 변경은 `pnpm run preflight`에 더해 `pnpm run test:e2e`도 통과해야 한다.[](source:tiers)
+- 쓰는 때: 새 코드 작성, feature 리팩터링, CLI 도구, server endpoint 추가, PR 준비 때다.[](source:cs-front)
+- 결과: 규칙에 맞는 코드와 PR이다. 이 스킬이 쓰는 파일은 없다. 마지막에 `pnpm run preflight`를 통과해야 한다.[](source:cs-gate)[](source:cs-list)
+- 다른 스킬과의 관계: `project-evals`와 같은 `gd dev <guide> --test-grader` 검증을 쓴다(대안). 다른 스킬로 넘기는 문장은 없다.[](source:cs-domain)
+- 하지 않는 것: 공유 설정(`tsconfig.json`, `.oxlintignore`, `package.json`)을 수정해 타입 검사나 lint 실패를 피하지 않는다.[](source:cs-config)
 
-@answer scope="로컬 원본 분석 · 코드 작성과 명령 실행 없음 · 원본 저장소의 src 파일 미확인"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=a1d836f93ec897c67870ac042622e8aec36e5f6b
-@source full title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md
-@source front title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=1:4
-@source overview title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=8:11
-@source scope title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=15:23
-@source reuse title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=29:31
-@source enums title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=33:37
-@source prompts title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=39:41
-@source config title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=47:49
-@source remote title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=51:53
-@source clean title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=55:57
-@source dual title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=63:65
-@source multi title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=67:69
-@source url title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=71:72
-@source ui title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=74:75
-@source tiers title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=81:95
-@source domain title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=97:100
-@source hygiene title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=102:104
-@source check title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 원본" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=108:118
-@source replay-cmd title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/grader-replay/SKILL.md lines=23:23
-@source replay-end title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/grader-replay/SKILL.md lines=75:75
-@source coh-pre title="modern-web-guidance-src/coherence-auditor/SKILL.md · 3454B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/coherence-auditor/SKILL.md lines=37:39
-@source coh-glob title="modern-web-guidance-src/coherence-auditor/SKILL.md · 3454B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/coherence-auditor/SKILL.md lines=34:34
-@source coh-read title="modern-web-guidance-src/coherence-auditor/SKILL.md · 3454B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/coherence-auditor/SKILL.md lines=45:48
-@source coh-script title="modern-web-guidance-src/coherence-auditor/scripts/coherence-audit.ts · 4457B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/coherence-auditor/scripts/coherence-audit.ts lines=87:99
-@source ev-cal title="modern-web-guidance-src/project-evals/SKILL.md · 18630B · 원본(관계 확인용 일부)" path=modern-web-guidance-src/project-evals/SKILL.md lines=124:125
-@source lock title="modern-web-guidance-src/skills-lock.json · 설치 출처" path=modern-web-guidance-src/skills-lock.json
+@answer scope="modern-web-guidance-src/project-coding-standards · 원본 파일 1개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source cs-front title="이름과 description" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=1:4
+@source cs-intro title="개요" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=6:11
+@source cs-pr title="PR 범위와 모듈성" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=15:23
+@source cs-arch title="구조 원칙" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=27:41
+@source cs-config title="설정을 약화하지 않는다" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=45:49
+@source cs-io title="원격 I/O와 캐시" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=51:53
+@source cs-clean title="생성물을 저장소에 두지 않는다" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=55:57
+@source cs-ui title="frontend와 dashboard 규칙" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=61:75
+@source cs-gate title="단계별 preflight" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=79:95
+@source cs-domain title="분야별 검증" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=97:100
+@source cs-hyg title="코드 위생" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=102:104
+@source cs-list title="PR 전 점검표" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=108:118
+@source pe-cal title="project-evals의 보정 검증 명령" path=modern-web-guidance-src/project-evals/SKILL.md lines=124:125
+@source gr-pre title="grader-replay의 preflight 지시" path=modern-web-guidance-src/grader-replay/SKILL.md lines=75:75
+@source ca-pre title="coherence-auditor의 preflight 옵션" path=modern-web-guidance-src/coherence-auditor/SKILL.md lines=37:40
 
-## 언제 켜지고 어떤 코드에 적용되나? {#activation}
+## 어떻게 동작하나 {#flow span=12}
 
-description은 모델이 호출 여부를 판단할 때 참고하는 설명이다. 특정 단어와 정확히 일치해야 켜진다는 뜻은 아니다. `disable-model-invocation` 같은 호출 제한 필드는 원문에 명시되어 있지 않다.[](source:front)
+원문은 순서를 정하지 않고 판단 기준과 금지를 나열한다. 그래서 주제별로 한 행씩 적는다. 검증 단계(fast check, preflight, E2E)만 실행 조건이 갈린다.
 
-@code source=front language=yaml
+| 적용 상황 | 참조 파일 | 바뀌는 판단 | 출력 사례 |
+| --- | --- | --- | --- |
+| PR 범위. 여러 구성요소를 건드리는 feature | PR 전체 | backend data model, CLI, frontend UI를 한 PR에 묶지 않는다. 데이터 층, CLI, UI 순서로 작은 PR이나 stack으로 나눈다 | 데이터 층 PR 다음에 CLI PR, 그다음 dashboard PR[](source:cs-pr) |
+| 공용 추상화. LLM이나 agent workflow를 실행하는 코드 | `config.environment`, `src/harness/config.ts` | `config.environment.antigravityCliBin` 같은 저장소의 runner를 쓰고, 직접 만든 REST client나 fetch 반복을 쓰지 않는다. 에이전트 이름은 `Agents` enum으로 쓴다 | `Agents.CLAUDE_CODE` 같은 enum 값. 문자열을 직접 쓰지 않는다[](source:cs-arch) |
+| 메타데이터. `targetFile`, `agent` 같은 속성이 필요한 코드 | `evals.json` | 경로 heuristic이나 정규식으로 추정하지 않고, 부모 폴더에 있는 `evals.json`에서 읽는다 | `evals.json`에서 읽은 `targetFile`[](source:cs-arch) |
+| 프롬프트 | `*-prompts.ts` | 긴 프롬프트 템플릿과 system instruction을 runner 파일에 넣지 않고 별도 모듈에 둔다 | `dev-prompts.ts` 같은 파일[](source:cs-arch) |
+| 공유 설정 | `tsconfig.json`, `.oxlintignore`, `package.json` | 타입 검사나 lint 실패를 피하려고 수정하지 않는다. 타입을 고치거나 JSDoc을 쓴다 | 의도한 경우가 아니면 그대로 둔다[](source:cs-config) |
+| 원격 저장소 I/O. GCS 같은 곳에서 받는 코드 | `results/suites/`, `out/` | 필요한 prefix와 하위 폴더만 받고, 로컬에 이미 있는지 먼저 확인한다 | 버킷 전체를 받지 않는다[](source:cs-io) |
+| 생성물. test 출력, debug 파일, cache | `.gitignore` | commit하지 않고 표준 출력 위치에 두며 `.gitignore`가 임시 파일을 제외하게 한다 | `results/suites/`와 `out/`[](source:cs-clean) |
+| dashboard·UI. 정적 hosted와 로컬 서버 모두에서 도는 화면 | `src/dashboard/` | 로컬 Node 서버가 필요한 기능은 정적 모드에서 숨기거나 끈다. 로컬 서버에 `?source=local`을 넘긴다. run index와 시각으로 여러 run을 구분한다. URL을 만들 때 `//`로 시작하지 않게 slash를 정리한다 | `gd dashboard`는 로컬, GitHub Pages는 정적[](source:cs-ui) |
+| 코드 위생 | JSON 파싱, 정규식 | `eval()`로 data를 파싱하지 않고 `JSON.parse()`를 쓴다. 정규식에 제어 문자를 그대로 넣지 않고 `[\u001b\u009b]`처럼 쓴다 | `JSON.parse()`[](source:cs-hyg) |
+| 검증 단계. PR을 올리기 전 | `package.json` script | 모든 변경은 lint, typecheck, test를 통과한다. 모든 PR은 `pnpm run preflight`를 통과하고, `src/dashboard/` 변경은 `pnpm run test:e2e`도 돌린다. skills packaging은 `pnpm run publish-skills --dry-run`, 평가 capsule은 `gd dev <guide> --test-grader`로 확인한다. `git status`는 깨끗해야 한다 | `pnpm typecheck && pnpm lint`가 빠른 확인이다[](source:cs-gate)[](source:cs-domain) |
 
-원문은 TypeScript, JavaScript, CLI 명령, harness 유틸리티, server endpoint, dashboard 코드를 쓸 때 이 지침을 따르라고 한다.[](source:overview) 호출 맥락으로는 새 코드 작성, feature refactoring, CLI 도구, server endpoint 추가, PR 준비를 든다.[](source:front) 사람 승인이나 종료 조건은 원문에 명시되어 있지 않다. 끝나는 기준은 아래 통과 조건이다.
+원칙마다 이유는 원문에 있다. PR을 작게 나누는 이유는 review, test, 되돌리기가 쉬워서이고, 설정을 약화하지 않는 이유는 엄격한 type safety가 협상 대상이 아니어서다.[](source:cs-pr)[](source:cs-config)
 
-## 코드를 쓸 때 무엇을 강제하고 금지하나? {#rules}
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
 
-| 영역 | 해야 하는 것 | 금지 |
-|---|---|---|
-| PR 범위 | data layer(parsing·normalization·abstraction), CLI 흐름, UI·dashboard 순서로 작은 PR이나 stack으로 나눈다. 작아야 리뷰, 테스트, 되돌리기가 쉽다.[](source:scope) | 백엔드 data model, CLI 도구, frontend UI를 한 PR에 합치기 |
-| LLM·agent 실행 | `config.environment`의 `antigravityCliBin`, `jetskiCliBin` 같은 공용 abstraction을 쓴다. `GD_DEV_USE_JETSKI === '1'` 같은 표준 환경 toggle을 따른다. 비대화형·진단 작업에서는 `--yolo` 같은 불필요한 flag를 뺀다.[](source:reuse) | 직접 만든 REST client, fetch loop, token 검증기 |
-| agent 이름 | `src/harness/config.ts`의 `Agents`(`ANTIGRAVITY_CLI`, `JETSKI_CLI`, `CLAUDE_CODE`, `CODEX_CLI`)를 쓴다.[](source:enums) | agent 이름 문자열 하드코딩 |
-| 메타데이터 | 상위 폴더에 `evals.json` 같은 정본이 있으면 `targetFile`, `agent`를 거기서 꺼낸다.[](source:enums) | 취약한 경로 추측이나 regex로 속성 유추 |
-| 프롬프트 | 긴 prompt template, system 지시, markdown synthesizer 템플릿을 `*-prompts.ts` 같은 전용 모듈에 둔다.[](source:prompts) | runner 파일 안에 템플릿 넣기 |
-| 공유 설정 | 타입 오류는 interface와 type으로 고치고 `.js`는 JSDoc 주석을 단다. 원문은 strict 타입 안전을 "non-negotiable"이라 부른다.[](source:config) | 루트 `tsconfig.json`, `.oxlintignore`, `package.json`을 고쳐 typecheck·lint 우회 |
-| 원격 I/O | GCS 같은 저장소에서는 필요한 prefix와 하위 폴더만 조회·다운로드한다. 내려받기 전에 로컬에 이미 있는지 먼저 본다.[](source:remote) | bucket 전체나 무관한 폴더 가져오기 |
-| 생성물 | 임시 데이터는 `results/suites/`, `out/` 같은 표준 위치에 두고 `.gitignore`가 임시 파일을 제외하는지 확인한다.[](source:clean) | 테스트 출력, debug 파일, 로컬 cache, 작업 폴더 commit |
-| 코드 위생 | 데이터와 JSON은 `JSON.parse()`나 전용 parser로 읽는다. regex의 제어 문자는 `[\u001b\u009b]`처럼 명시적 Unicode escape로 쓴다.[](source:hygiene) | `eval()`로 데이터 parsing, regex에 날 제어 문자 |
+@facts
+| 직접 켜는 방법 | 사용자 명령은 원문에 명시 없음. 모델이 description을 보고 켠다. 호출 제한 필드는 없다[](source:cs-front) |
+| 성격 | 코드와 PR의 규칙을 정하는 원칙형 스킬. 다른 스킬로 넘기는 문장이 없다 |
 
-dashboard와 UI에는 별도 규칙이 있다.
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| **이 스킬** {#r28} | `project-evals` | 대안 | 평가 capsule을 쓰거나 고칠 때 `gd dev <guide> --test-grader`로 grader 보정을 확인하라는 점이 `project-evals`의 보정 검증 명령과 같다. 직접 링크는 없다.[](source:cs-domain)[](source:pe-cal) |
+| `grader-replay` {#r26} | **이 스킬** | 대안 | 둘 다 마지막 검증으로 `pnpm run preflight`를 요구한다. 연결을 지시한 문장은 없다.[](source:gr-pre)[](source:cs-gate) |
+| `coherence-auditor` {#r27} | **이 스킬** | 대안 | `--preflight` 옵션이 `pnpm run preflight`를 실행하고, 이 스킬은 모든 PR에 그 통과를 요구한다. 연결을 지시한 문장은 없다.[](source:ca-pre)[](source:cs-gate) |
 
-| 주제 | 강제 규칙 |
-|---|---|
-| 실행 환경 | dashboard는 정적 호스팅(GitHub Pages)과 로컬 서버(`gd dashboard`) 양쪽에서 돈다. 로컬 Node 서버가 필요한 기능과 endpoint는 정적 모드를 감지해 숨기거나 끈다. 로컬 endpoint에는 `?source=local` 같은 데이터 출처를 넘겨 로컬 파일 작업과 원격 streaming을 구분한다.[](source:dual) |
-| 다중 run | 하루나 task당 run이 하나라고 가정하지 않는다. run index와 timestamp로 구분해 데이터가 덮어쓰이거나 합쳐지지 않게 한다. URL query parameter는 안전하게 parsing하고 기본값을 둬서 이동 사이에 상태를 유지한다.[](source:multi) |
-| URL 구성 | path 변수로 URL을 만들 때 슬래시를 정리해 맨 앞 `//`가 생기지 않게 한다. 브라우저가 `//...`를 protocol-relative host로 읽는다.[](source:url) |
-| 정렬 | 차트 marker, badge, indicator, tooltip을 대상 요소의 수평·수직 중앙에 둔다.[](source:ui) |
+@architecture id=relation-map title="project-coding-standards와 이어지는 스킬"
+| gr | grader-replay | backend |
+| ca | coherence-auditor | backend |
+| self | project-coding-standards(이 스킬) | backend |
+| pe | project-evals | backend |
+| gr > self | 대안 | dashed |
+| ca > self | 대안 | dashed |
+| self > pe | 대안 | dashed |
 
-판정 · 원문 규칙 대부분은 "무엇을 하지 마라"가 아니라 "대신 이것을 써라" 형태라서, 리뷰할 때 위반 여부를 파일 단위로 판단할 수 있다. 이 저장소에는 대상 코드가 없어 실제 위반 사례는 확인하지 못했다.[](source:full)
+@code source=cs-front language=yaml
 
-## PR 전에 어떤 통과 조건을 거치나? {#gates}
+## 어떤 파일로 이루어지나 {#files span=12}
 
-모든 변경은 PR 제출 전에 lint, typecheck, 테스트를 통과해야 한다.[](source:tiers)
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | 구조 원칙, 코딩 규칙, preflight 단계, PR 점검표를 담은 유일한 파일이다 | 코드를 쓰거나 PR을 준비할 때 읽는다 | PR 범위, 공용 추상화, 메타데이터, 프롬프트, 공유 설정, 원격 저장소 I/O, 생성물, dashboard·UI, 코드 위생, 검증 단계 |
 
-@workflow id=gate-flow title="PR 제출 전 통과 조건"
-| change | 코드 변경 | external |
-| fast | typecheck와 lint | backend |
-| pre | preflight | backend |
-| ui | dashboard·endpoint 변경? | backend |
-| e2e | test:e2e | backend |
-| done | PR 제출 | external |
-| change > fast | |
-| fast > pre | |
-| pre > ui | |
-| ui > e2e | yes | emphasis |
-| ui > done | no |
-| e2e > done | |
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-@steps
-| fast | typecheck와 lint | 빠른 개발 중 확인. `pnpm typecheck && pnpm lint`.[](source:tiers) | gate-flow | fast |
-| pre | preflight | 모든 PR에 필요하다. build, typecheck, lint, 모든 workspace의 병렬 unit test를 묶는다. `pnpm run preflight`.[](source:tiers) | gate-flow | pre |
-| ui | dashboard·endpoint 변경? | Playwright browser 테스트는 preflight에 없다. frontend visualizer, dashboard 코드, `src/dashboard/`의 server endpoint를 건드릴 때 직접 돌린다.[](source:tiers) | gate-flow | ui |
-| e2e | test:e2e | `pnpm run test:e2e`. browser 바이너리가 없으면 먼저 `pnpm run setup:playwright`를 돌린다.[](source:tiers) | gate-flow | e2e |
+| 조건 | 결과 | 출처 |
+| --- | --- | --- |
+| 모든 PR | `pnpm run preflight`(build, typecheck, lint, 모든 workspace의 병렬 unit test)를 통과해야 한다 | [](source:cs-gate) |
+| `src/dashboard/`의 frontend, visualizer, server endpoint를 건드린다 | `pnpm run test:e2e`를 돌린다. preflight에 포함되지 않는다. browser binary가 없으면 `pnpm run setup:playwright`를 먼저 돌린다 | [](source:cs-gate) |
+| 공유 설정을 수정해 검사를 피한다 | 금지(Never). 타입을 고친다 | [](source:cs-config) |
+| 원격 저장소에서 받는다 | 필요한 prefix만, 로컬에 있으면 받지 않는다 | [](source:cs-io) |
+| build 뒤 `git status` | 변경이나 untracked 파일이 없어야 한다 | [](source:cs-domain) |
+| 사람 승인 | 원문에 명시 없음 | [](source:cs-intro) |
 
-판정 · 그림의 순서(typecheck와 lint, preflight, e2e)는 원문이 "Tiered"라고 부르는 목록 순서에서 읽은 것이다. 원문이 이 순서를 지키라고 명시한 문장은 없다.[](source:tiers)
+## 더 자세히 읽으려면 {#more span=12}
 
-변경 종류에 따라 더하는 검증은 다음과 같다.
+공개된 상세:
 
-| 변경 | 추가 검증 |
-|---|---|
-| skills packaging | `pnpm run publish-skills --dry-run`[](source:domain) |
-| evaluation capsule의 guide·grader | `gd dev <guide> --test-grader`로 grader 보정 확인[](source:domain) |
-| 모든 build | 커밋되지 않은 부작용이나 untracked 산출물이 없어야 한다. `git status`가 깨끗해야 한다[](source:domain) |
+- 아직 없음
 
-제출 전 점검표(원문 9개)는 다음과 같다.[](source:check)
+상세 후보(요청하면 만든다):
 
-- [ ] PR 범위: 기능, 라이브러리, UI component 하나에 집중한다. 여러 component를 한 PR에 넣지 않는다.
-- [ ] abstraction: 저장소 CLI runner(`config.environment`)를 쓰고 직접 만든 API client를 피한다.
-- [ ] enum: 원시 문자열 대신 `src/harness/config.ts`의 `Agents`를 쓴다.
-- [ ] 메타데이터: 경로 추측 대신 `evals.json` 같은 정본에서 속성을 읽는다.
-- [ ] prompt: `*-prompts.ts`나 상수 모듈로 뺀다.
-- [ ] 설정: 루트 `tsconfig.json`, `package.json`, `.oxlintignore`는 의도한 경우가 아니면 건드리지 않는다.
-- [ ] 원격 I/O와 git: 원격 fetch를 범위 안에서 cache하고, 임시 debug 산출물을 commit하지 않는다.
-- [ ] dashboard·UI: 정적·로컬 서버 모드를 처리하고 URL parameter를 안전하게 parsing한다.
-- [ ] 검증: `pnpm run preflight`가 오류 0건으로 통과한다. `src/dashboard/` 변경이면 `pnpm run test:e2e`도 통과한다.
+- dashboard·UI 규칙 — dashboard·UI · 개요에는 요지만 담았고 규칙 8개는 상세로 보냈다.
+- PR 전 점검표 9개 — 검증 단계 · 규칙 본문과 겹쳐서 개요에 넣지 않았다.
 
-## 다른 스킬과 어디에서 이어지나? {#position}
+@callout level=open-question title="확인하지 못한 것"
+| `src/harness/config.ts`, `config.environment`, `package.json`의 script와 `src/dashboard/`는 이 컬렉션에 없다. 규칙이 실제 코드와 맞는지, `GD_DEV_USE_JETSKI`와 `--yolo` 같은 환경 토글이 어떻게 동작하는지는 확인하지 못했다. 명령은 모두 지시상 동작이고 실행하지 않았다.[](source:cs-arch) |
 
-이 스킬은 다른 스킬이 호출하거나 이 스킬이 다른 스킬을 호출하는 직접 연결이 없다. 아래 관계는 모두 같은 명령을 쓰거나 목록에서 지목하는 것이어서 순서 그림은 그리지 않았다.
-
-| 관계 | 내용 |
-|---|---|
-| R26 · 같은 계열(`grader-replay`) | 둘 다 마지막 검증으로 `pnpm run preflight`를 요구하고 grader 검증에 `gd dev <guide> --test-grader`를 쓴다. 연결을 지시한 문장은 없다.[](source:replay-cmd)[](source:replay-end)[](source:tiers)[](source:domain) |
-| R27 · 같은 계열(`coherence-auditor`) | `--preflight` 옵션이 `pnpm run preflight`를 실행한다. 이 스킬은 모든 PR에 같은 통과 조건을 요구한다. 연결을 지시한 문장은 없다.[](source:coh-pre)[](source:coh-script)[](source:tiers) |
-| R28 · 같은 계열(`project-evals`) | grader 보정에 `gd dev --test-grader`를 쓰는 점이 같다. 직접 링크는 없다.[](source:ev-cal)[](source:domain) |
-| R31 · 참고(`coherence-auditor`가 이 스킬을 읽음) | glob `.agents/skills/project-*/SKILL.md`로 `project-*` 스킬을 지정하고, 그 단계·checkpoint·역할·기술 요구가 서로 모순되지 않는지 읽고 확인한다. 이 스킬도 그 대상이다.[](source:coh-glob)[](source:coh-read) |
-
-전체 관계는 색인 기준 `_group-repo-upkeep/repo-upkeep.html`에 있다.
-
-## 어디까지 읽고 확인했나? {#audit}
-
-| 조사 구분 | 확인 범위 |
-|---|---|
-| 스킬 원본 | `modern-web-guidance-src/project-coding-standards/SKILL.md` 1개, 7,793B(118줄)를 끝까지 읽었다.[](source:full) |
-| 관계 확인 | 관계 행 R26·R27·R28·R31 4개를 이웃 파일의 인용 줄과 대조했다. 이웃 파일 4개는 해당 줄만 읽었다. |
-| 설치 출처 | `skills-lock.json`의 항목을 확인했다. 원격 경로는 `.agents/skills/project-coding-standards/SKILL.md`다.[](source:lock) |
-| 제외 | 번역본은 이 컬렉션에 없다. 바이너리는 없다. 부분 읽음 파일은 이 스킬 기준 0개다. |
-
-원문의 활성화 설명, 규칙 영역 9개와 dashboard 규칙 4개, 통과 조건 3단계와 도메인별 검증 3개, 점검표 9개를 모두 대조했다. 원문에 종료 조건과 사람 승인은 명시되어 있지 않다.
-
-@callout level=open-question title="확인하지 못한 부분"
-| `src/harness/config.ts`, `evals.json`, `src/dashboard/`, `.gitignore` 등 원문이 가리키는 저장소 파일은 이 저장소에 없어 읽지 못했다. 규칙이 실제 코드에서 지켜지는지는 확인하지 못했다. |
-| `pnpm`, `gd`, Playwright 명령은 실행하지 않았다. 통과 조건이 실제로 어떻게 동작하는지는 직접 확인하지 않았다. |
-| 호스트가 실제로 이 스킬을 활성화하는 조건은 실행으로 확인하지 않았다. |
-
-분석 중 원본은 수정하지 않았다. 원문의 명령과 설치·설정 변경은 실행하지 않았다.
+읽은 원본: 텍스트 파일 1개. 제외: 없음.

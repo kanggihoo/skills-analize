@@ -1,10 +1,10 @@
 # cloudflare 관계 원장
-분석 커밋: da3be34f22adbe6a3095252847b21c5f2e13b661
+분석 커밋: 3098961a8768980c88b0f52a476209e63154c4d1
 
 - 범위: `cloudflare/` 아래 `SKILL.md` 1개.
-- 최신화: 2026-11-04에 `scripts/update-skill.py cloudflare/skills-lock.json`으로 원격(`cloudflare/security-audit-skill`, `skills/security-audit/SKILL.md`)과 비교했다. 내용 해시가 lock과 같아 바뀐 파일이 없다. 2026-11-17 재분석에서는 `git diff --stat 5760176 HEAD`로 원본 파일(`.ko.md` 제외)이 이전 분석 커밋 이후 바뀌지 않았음을 확인했다.
-- 번역본: `*.ko.md` 15개가 같은 폴더에 있다(commit `19e6137`). 분석 입력으로 열지 않았다.
-- 커밋 여부: `git ls-files cloudflare`가 36개를 돌려준다. 모두 커밋돼 있다.
+- 최신화: 2026-11-04에 `scripts/update-skill.py cloudflare/skills-lock.json`으로 원격(`cloudflare/security-audit-skill`, `skills/security-audit/SKILL.md`)과 비교했고 내용 해시가 lock과 같았다. 이번 재작성에서는 원본 파일을 다시 읽었다.
+- 번역본: `*.ko.md` 15개가 같은 폴더에 있다. 분석 입력으로 열지 않았다. 줄 수가 같은 것만 인용 번역본으로 바꿨다.
+- 커밋 여부: `git ls-files cloudflare`로 모두 commit되어 있음을 확인했다(작업 트리 clean).
 
 ## 스킬
 

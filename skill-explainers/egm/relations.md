@@ -1,9 +1,9 @@
 # egm 관계 원장
-분석 커밋: d494974308338f864c9e91e94067a31d33d3543e
+분석 커밋: 3098961a8768980c88b0f52a476209e63154c4d1
 
 - 범위: `egm/` 아래 `SKILL.md` 7개. 원격 출처는 모두 `google/elephant-goldfish-model`(ref `main`)이고, lock은 `egm/skills-lock.json`이다. 읽은 텍스트 파일은 38개다(스킬마다 `SKILL.md`, `test_scenarios.yaml`, `TEST.md`, `agents/openai.yaml`, `assets/icon.svg`, 그리고 `egm-bootstrap`의 `references/` 2개, `egm-draft`의 `references/design_doc.md`). 바이너리는 없다.
 - **최신화와 커밋**: 분석을 시작할 때 `scripts/update-skill.py egm/skills-lock.json`으로 7개를 최신본으로 받았다. 6개가 바뀌었고 `egm-drift-report`만 그대로였다(14개 파일, +251/−54줄). `@source path=`가 커밋된 원문을 요구해서, 사용자 승인을 받아 `egm/`만 local commit(`d494974`)했다. push는 하지 않았다.
-- 번역본: 이 컬렉션에는 없다(`SKILL.KO.md`, `README.ko.md` 같은 파일 없음).
+- 번역본: `SKILL.ko.md`, `TEST.ko.md` 등이 있으나 분석 근거로 쓰지 않았다. 원본만 읽었다.
 - 원문 비교: 이 7개와 이름이 같은 스킬은 다른 컬렉션에 없다(`find`로 확인). 그래서 원문 비교 칸은 모두 `-`다.
 - 분석 대상에서 뺀 것: `egm/.archify/explainer-egm-skill-map-20261031-085659/`는 예전 형식으로 만든 산출물이다. 스킬 파일이 아니라서 읽지 않았다.
 - 외부 의존(저장소에 없음): 일곱 스킬 모두 첫머리에서 `docs/codex.md`(`../../docs/codex.md`), `${CLAUDE_PLUGIN_ROOT}/docs/claude.md`를 먼저 읽으라고 한다. 세 스킬은 `docs/harnesses.md`도 가리킨다. 서브에이전트 정의는 `agents/<파일>.md`(예: `agents/synthesizer.md`)에 있다고 하는데, 스킬 폴더의 `agents/`에는 `openai.yaml`만 있다. `egm-draft`의 `resources/execution_instructions.md`와 `egm-review-loop`의 `resources/document_standards/*.md`도 폴더에 없다. 원문이 적은 경로 그대로 해석했을 때 없는 파일이라 `불명`으로 둔다. upstream 저장소에 있는지는 확인하지 않았다.
@@ -25,7 +25,7 @@
 
 ## 관계
 
-출처 표기는 `스킬폴더/파일:줄`이다. 파일을 생략하면 그 스킬의 `SKILL.md`다. 줄 번호는 커밋 `d494974` 기준이다. 해석 상태가 `범위 밖`이면 대상이 컬렉션 밖의 에이전트 정의나 문서라는 뜻이고, `불명`이면 원문이 적은 경로에 파일이 없다는 뜻이다.
+출처 표기는 `스킬폴더/파일:줄`이다. 파일을 생략하면 그 스킬의 `SKILL.md`다. 줄 번호는 커밋 `3098961` 기준이다(`d494974` 이후 `egm/`의 원본 파일은 바뀌지 않았고 번역본만 추가되었다). 해석 상태가 `범위 밖`이면 대상이 컬렉션 밖의 에이전트 정의나 문서라는 뜻이고, `불명`이면 원문이 적은 경로에 파일이 없다는 뜻이다.
 
 ### 아이디어에서 설계 문서까지
 
@@ -53,7 +53,7 @@
 | r12 | egm-review | egm-comprehension | 호출 | 명시-이름 | Stage 6에서 synthesizer를 거치지 않고 직접 띄운다. synthesizer 보고서는 지적만 남겨서 저자가 봐야 할 paraphrase(리뷰어가 문서를 자기 말로 다시 쓴 글)가 사라지기 때문이다. 문서 기준(standard)은 적용하지 않는다 | `comprehension_report.md` | - | 범위 밖 | egm-review:349-358 |
 | r13 | egm-review | egm-zoom-out | 호출 | 명시-이름 | Stage 5·8에서 `egm-synthesizer` 또는 `agents/zoom_out.md`의 `egm-zoom-out`을 전체 파일에 대해 띄운다. 기준은 `resources/document_standards/zoom-out-standard.md`다 | `zoom_out_report.md`, `intermediate_zoom_out_report.md` | - | 범위 밖 | egm-review:317-325 |
 | r14 | egm-review-loop | egm-synthesizer | 호출 | 명시-이름 | 기본 경로는 synthesizer를 띄워 리뷰어를 병렬로 돌리고 지적을 합쳐 보고서를 쓰게 하는 것이다. 대안은 리뷰어를 직접 띄우는 것이다. 요청한 리뷰어마다 `completed`/`not run` 상태를 받아야 한다 | 지적 목록, 상태 요약 | - | 범위 밖 | egm-review-loop:117-135 |
-| r18 | egm-resolve | egm-review | 같은 파일 | 명시-이름 | resolve가 `goldfish_review_report.md`를 쓰고 끝에 `Status: resolved`를 붙인다. review는 resolve에 지적을 넘길 때 `critic_report.md`(또는 `goldfish_review_report.md`)에서 가져온다고 적는다 | `goldfish_review_report.md` | - | 범위 내 | egm-resolve:84-88,180-184; egm-review:387-390 |
+| r18 | egm-resolve | egm-review | 같은 파일 | 명시-이름 | resolve가 `goldfish_review_report.md`를 쓰고 맨 위에 `Status: resolved`를 붙인다. review는 resolve에 지적을 넘길 때 `critic_report.md`(또는 `goldfish_review_report.md`)에서 가져온다고 적는다 | `goldfish_review_report.md` | - | 범위 내 | egm-resolve:84-88,180-184; egm-review:387-390 |
 | r19 | egm-review-loop | egm-review | 같은 파일 | 미확인 | review-loop은 synthesizer가 보고서를 쓴다고만 하고 파일 이름을 정하지 않는다. review는 같은 일을 `critic_report.md`, `implementation_readiness_report.md`로 부른다. 둘이 같은 파일인지 원문에 명시 없음 | `critic_report.md`, `implementation_readiness_report.md` | - | 범위 내 | egm-review-loop:119-123; egm-review:371-376 |
 | r23 | egm-draft | egm-review | 대안 | 추론 | 두 스킬의 Execution Constraints가 같은 규칙 묶음이다. 두 본문을 비교해 판단했다 | - | - | 범위 내 | egm-draft:20-71; egm-review:30-69 |
 | r25 | egm-review-loop | resources/document_standards/*.md | 참고 | 명시-이름 | 리뷰어에 붙이는 기준 문서(`feature-spec-standard`, `implementation-readiness-standard`, `zoom-out-standard`, `heilmeier-standard`, `re-implementation-standard`)가 이 폴더에 있다고 적는다. 파일이 스킬 폴더에 없어서 내용을 확인하지 못했다 | - | - | 불명 | egm-review-loop:74-78 |

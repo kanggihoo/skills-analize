@@ -1,9 +1,13 @@
-# 후보 검증 — 그 후보를 사냥하지 않은 verifier가 반박해 본다 {#verify-detail}
+# 후보 검증 — 그 후보를 사냥하지 않은 verifier가 반박해 본다 {#detail-verify}
 
-이 페이지는 개요의 `후보 검증` 노드, 곧 Phase 3을 맡는다. 시작 입력은 Phase 2가 통합한 후보와 같은 소스의 이전 `confirmed` 중 carry한 record다. 끝 출력은 fingerprint마다 하나의 최종 record와 ledger에 기록된 판정이다. 이후 개요의 `findings 작성`으로 이어진다. 예산이 후보를 다 덮지 못하면 `incomplete`로 끝난다.[](source:val-p3)
+[개요](page:security-audit.html)의 `후보 검증` 노드, 곧 Phase 3을 자세히 본다. 시작 입력은 Phase 2가 통합한 후보와 carry한 이전 `confirmed` record이고 끝 출력은 fingerprint마다 하나의 최종 record와 ledger에 기록된 판정이다. 이후 개요의 `findings 작성`으로 간다.[](source:val-p3)
+
+- verifier는 그 후보를 사냥하지 않은 새 `general` agent다.[](source:val-p3)
+- verifier는 다른 verifier의 결론을 받지 않는다.[](source:val-p3)
+- `needs_validation`은 추측을 맡겨 두는 곳이 아니다. 소스가 반박하면 `rejected`다.[](source:val-decide)
 
 @answer scope="cloudflare/security-audit · VALIDATION-AND-REPORTING.md 3~93줄 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source val-p3 title="Phase 3 배정" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=3:7
 @source val-quick title="quick 프로필은 Phase 3과 5를 합친다" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=124:124
 @source val-pre title="verifier 지시문 서문" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=11:22
@@ -14,7 +18,7 @@
 @source val-ledger title="ledger check 갱신" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=91:91
 @source val-budget title="예산 부족 시" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=93:93
 
-## 후보 하나는 어떤 순서로 검증되나 {#flow span=12}
+## 어떻게 동작하나 {#detail span=12}
 
 그림은 후보 하나가 지나는 경로다. 후보는 서로 독립이라 verifier를 후보마다 따로 띄운다.[](source:val-p3) 그림에서 생략한 것이 둘 있다.
 
@@ -36,7 +40,7 @@
 | v-refute | verifier 반박 | **입력** 지시문 · **참조** 인용된 현재 소스 위치 · **실행** 샌드박스 안의 local check(재현 가능할 때만) · **출력** `{"decision": "confirmed\|needs_validation\|rejected", "record": ...}` 하나. **처리** verifier가 이 후보를 쓰지 않은 입장에서 소스와 제한된 local 증거로 반박해 본다. `scratch/`에만 쓴다.[](source:val-pre)[](source:val-items) | verify-flow | refute |
 | v-merge | 판정 병합 | **입력** verifier 결과 · **출력** fingerprint당 최종 record 하나, 연결된 모든 unit의 판정 기록. **처리** parent가 먼저 결과가 JSON 객체 하나인지 본다. 앞뒤 설명이 붙었거나 형식이 깨졌으면 고치지 않고 버리고, 예산이 되면 새 verifier로 그 후보를 다시 돌린다. 안 되면 후보는 검증되지 않은 ledger 후보로 남는다.[](source:val-parent) 채택한 결과에서는 verifier가 같은 fingerprint를 돌려줬는지 확인한다(진짜로 다른 root cause를 찾은 경우만 예외). 교정은 병합하고 판정을 연결된 모든 coverage unit에 기록한다.[](source:val-parent) **다음** 개요의 `findings 작성`으로 간다. | verify-flow | merge |
 
-## verifier는 무엇을 확인하고 어떻게 판정하나 {#prompt span=12}
+**verifier는 무엇을 확인하고 어떻게 판정하나**
 
 지시문은 서문으로 시작한다. 서문의 뜻은 "이 후보는 네가 쓰지 않았다. repository 소스와 제한된 local 증거로 반박해 보라"이다.[](source:val-pre) 서문이 정하는 경계는 이렇다.
 
@@ -65,7 +69,7 @@ verifier는 앞뒤 설명 없이 JSON 객체 하나, `{"decision": "confirmed|ne
 | `rejected` | 소스, local 동작, 보이는 통제, 의미 있는 영향 없음, 불가능한 선행 조건이 주장을 반박할 때 |
 | 그 밖 | `needs_validation`은 추측성 아이디어를 두는 곳이 아니다 |
 
-## 판정은 ledger에 어떻게 반영되나 {#ledger-update span=12}
+**판정은 ledger에 어떻게 반영되나**
 
 verifier의 증거가 ledger check를 갱신할 때 규칙은 이렇다.[](source:val-ledger)
 
@@ -76,13 +80,9 @@ verifier의 증거가 ledger check를 갱신할 때 규칙은 이렇다.[](sourc
 
 strict 총 agent budget이 모든 후보를 덮지 못하면 run 상태를 incomplete로 두고 `SKILL.md`의 결정적 예산 규칙을 따른다. 검증되지 않은 후보는 ledger에만 남고 어떤 verdict로도 `findings.json`에 들어가지 않는다.[](source:val-budget)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.hunt.html` | 후보를 만드는 Phase 2와 후보 통과 조건 |
-| `security-audit.rules.html` | 지시문에 붙는 도메인 `Validation rules` |
-| `security-audit.setup.html` | 지시문에 복사하는 승격 절차 |
-| `security-audit.records.html` | 판정된 record를 담는 `findings.json`과 schema |
-| `security-audit.final.html` | 이후의 Phase 5 최종 검증 |
+- [개요](page:security-audit.html)
+- [사냥](page:security-audit.hunt.html)
+- [핵심 원칙과 심각도 기준](page:security-audit.principles.html)
+- [findings.json과 검증기](page:security-audit.records.html)

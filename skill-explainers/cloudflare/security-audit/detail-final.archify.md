@@ -1,9 +1,14 @@
-# 최종 검증과 보고서 — 기록을 새 눈으로 다시 확인하고 보고서 세 개를 파생한다 {#final-detail}
+# 최종 검증과 보고서 — 기록을 새 눈으로 다시 확인하고 보고서 세 개를 파생한다 {#detail-final}
 
-이 페이지는 개요의 `최종 검증`과 `보고서` 노드, 곧 Phase 5와 Phase 6을 맡는다. 시작 입력은 `findings.json`의 `confirmed`·`needs_validation` record와 ledger다. 끝 출력은 `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`다. 별개의 root cause가 나오면 개요의 `후보 검증`으로 돌아가고, 감사는 종료 상태 둘 중 하나로 끝난다.[](source:val-p5-after)
+[개요](page:security-audit.html)의 `최종 검증`과 `보고서` 노드, 곧 Phase 5와 Phase 6을 자세히 본다. 시작 입력은 `findings.json`의 `confirmed`·`needs_validation` record와 ledger이고 끝 출력은 `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`다. 별개의 root cause가 나오면 개요의 `후보 검증`으로 돌아간다.[](source:val-p5-after)
+
+- `needs_validation`도 최종 검증 대상이다.[](source:val-p5-all)
+- `confirmed` record의 독립 검증은 어떤 profile에서도 건너뛰지 않는다.[](source:val-p5-intro)
+- 더 강한 verdict로 올리는 교체는 그대로 최종이 될 수 없고 새 verifier가 다시 검증한다.[](source:val-p5-mat)
+- 감사는 보고서와 검증기가 모두 통과하거나 `incomplete`와 이유를 기록하는 두 상태 중 하나로만 끝난다.[](source:skm-end)
 
 @answer scope="cloudflare/security-audit · VALIDATION-AND-REPORTING.md 120~186줄 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source val-p5-intro title="Phase 5 배정과 quick 병합" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=122:124
 @source val-p5-conf title="confirmed 확인 항목" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=126:133
 @source val-p5-nv title="needs_validation 확인 항목" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=135:141
@@ -16,9 +21,9 @@
 @source val-detail title="FINDINGS-DETAIL.md" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=169:178
 @source val-nvmd title="NEEDS-VALIDATION.md" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=180:182
 @source val-native title="native 인터페이스와 보고서 분량" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=184:186
-@source skm-end title="종료 상태 둘" path=cloudflare/security-audit/SKILL.md lines=179:179
+@source skm-end title="종료 상태 둘" path=cloudflare/security-audit/SKILL.ko.md lines=179:179
 
-## 최종 검증은 어떤 순서로 돌고 보고서로 이어지나 {#flow span=12}
+## 어떻게 동작하나 {#detail span=12}
 
 record마다 새 `research` verifier를 병렬로 하나씩 띄운다. 이 verifier는 hunter의 설명이 아니라 구조화된 record를 검사하고 소스·local 경계를 지킨다.[](source:val-p5-intro) 그림에서 생략한 것이 셋 있다.
 
@@ -50,7 +55,7 @@ record마다 새 `research` verifier를 병렬로 하나씩 띄운다. 이 verif
 | f-apply | 교체 적용 | **입력** 검증을 통과한 교체 · **실행** `node <skill-dir>/validate-findings.cjs <output-dir>/findings.json`, `node <skill-dir>/validate-coverage-ledger.cjs <output-dir>/coverage-ledger.json` · **출력** 갱신된 `findings.json`, ledger 판정. **처리** 교체를 적용할 때마다 검증기 두 개를 다시 돌리고 연결된 ledger 판정을 갱신한다.[](source:val-p5-after) **다음** 모든 ledger 후보가 독립적인 최종 판정을 갖고 남은 모든 record가 Phase 5를 통과해야 `run_status`를 `complete`로 둔다.[](source:val-p5-after) | final-flow | apply |
 | f-report | 보고서 세 개 | **입력** Phase 5를 통과한 모든 record·ledger·hunter의 `hardening` 노트 · **출력** `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`. **처리** parent가 최종 record, ledger, ledger bookkeeping에 보관한 hardening 노트로 산문을 쓴다. 산문은 verdict, severity, blocker, 증명된 영향을 바꾸지 않는다.[](source:val-p6-intro) **다음** 종료 상태는 보고서가 모두 쓰이고 검증기가 둘 다 통과했거나, `incomplete`와 이유를 기록하고 빈틈을 보고서에 밝힌 것 둘뿐이다.[](source:skm-end) | final-flow | report |
 
-## 최종 verifier는 무엇을 확인하나 {#checks span=12}
+**최종 verifier는 무엇을 확인하나**
 
 record 종류에 따라 확인 항목이 다르다.
 
@@ -61,7 +66,7 @@ record 종류에 따라 확인 항목이 다르다.
 
 원문은 `confirmed`만 검증해서는 안 된다고 못박는다. 오해를 부르는 `needs_validation` 인계는 소유자의 시간을 쓰게 하고 틀린 전제를 보존할 수 있기 때문이다.[](source:val-p5-all)
 
-## 보고서 세 개에는 무엇이 들어가나 {#reports span=12}
+**보고서 세 개에는 무엇이 들어가나**
 
 보고서는 Phase 5가 모든 record에서 통과한 뒤에만 쓴다. incomplete 실행은 독립 검증을 마친 record만 보고할 수 있고, 미해결 ledger 후보를 하나씩 밝히며 finding으로 제시하지 않는다.[](source:val-p6-intro)
 
@@ -90,11 +95,8 @@ record 종류에 따라 확인 항목이 다르다.
 - HTTP는 가능한 native 인터페이스 중 하나일 뿐 기본값이 아니다. library는 함수 호출, parser는 fixture, CLI는 명령, 데스크톱 앱은 IPC나 파일 동작, 인프라는 로컬로 렌더한 policy를 쓸 수 있다. target에 없는 endpoint, 외부 계정, live 환경을 요구하지 않는다.[](source:val-native)
 - 보고서는 증거에 비례한다. 깨끗한 실행은 `confirmed`가 0개일 수 있고, 남은 coverage·검증 한계를 밝히면 되며 `LOW` finding을 만들어 채우지 않는다.[](source:val-native)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.verify.html` | 첫 번째 독립 검증인 Phase 3 |
-| `security-audit.records.html` | 이 단계 앞의 `findings.json`과 검증기 |
-| `security-audit.planning.html` | incomplete 이유 값과 budget 규칙 |
+- [개요](page:security-audit.html)
+- [findings.json과 검증기](page:security-audit.records.html)
+- [후보 검증](page:security-audit.verify.html)

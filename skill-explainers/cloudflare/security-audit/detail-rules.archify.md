@@ -1,9 +1,12 @@
-# attack class와 도메인 지침 — hunter가 무엇을 어떤 기준으로 찾는지 정하는 규칙 {#rules-detail}
+# attack class와 도메인 지침 — hunter가 무엇을 어떤 기준으로 찾는지 정하는 규칙 {#detail-rules}
 
-이 페이지는 `ATTACK-CLASSES.md`와 도메인 지침 열 개를 맡는다. 개요의 `정찰`이 어떤 파일을 고를지 정하고 `사냥`의 hunter 지시문이 그 원문을 복사한다. 원칙형이라 순서를 만들지 않고 규칙표와 선택 조건으로 보인다. 시작 입력은 정찰이 찾은 trust boundary이고, 끝 출력은 ledger unit의 `selected_companion_blocks`와 hunter 지시문 4번 부분이다.[](source:atk-route)
+[개요](page:security-audit.html)의 `정찰`이 고르는 attack class와 도메인 지침 규칙 주제를 자세히 본다. `사냥`의 hunter 지시문이 그 원문 블록을 복사한다. 시작 입력은 정찰이 찾은 trust boundary이고 끝 출력은 ledger unit의 `selected_companion_blocks`와 hunter 지시문 4번 부분이다.[](source:atk-route)
+
+- 도메인 지침은 언어나 의존성 이름이 보인다고 고르지 않는다. 정찰이 사용 조건에 맞는 trust boundary를 찾았을 때 고른다.[](source:rec-sel)
+- hunter 지시문에는 블록 이름이 아니라 원문을 복사해 넣는다.[](source:hun-blocks)
 
 @answer scope="cloudflare/security-audit · ATTACK-CLASSES.md와 도메인 지침 10개 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source atk-intro title="attack class 사용 원칙" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=3:7
 @source atk-route title="도메인 지침 연결" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=9:27
 @source atk-inj title="Injection" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=29:37
@@ -18,20 +21,22 @@
 @source rec-sel title="companion 선택 기준" path=cloudflare/security-audit/RECONNAISSANCE.md lines=88:88
 @source rec-blockref title="block 참조 형식" path=cloudflare/security-audit/RECONNAISSANCE.md lines=94:94
 @source hun-blocks title="지시문에 복사하는 block" path=cloudflare/security-audit/HUNTING.md lines=18:18
-@source ai-top title="AI·LLM 사용 조건과 핵심 원칙" path=cloudflare/security-audit/AI-AND-LLM.md lines=3:18
-@source ai-out title="model 출력 rendering" path=cloudflare/security-audit/AI-AND-LLM.md lines=64:65
-@source ai-val title="AI·LLM 검증 규칙" path=cloudflare/security-audit/AI-AND-LLM.md lines=76:83
-@source wp-top title="HTTP·인증 사용 조건과 핵심 원칙" path=cloudflare/security-audit/WEB-PROTOCOL-AND-AUTH.md lines=3:17
-@source cs-top title="클라이언트 사용 조건과 핵심 원칙" path=cloudflare/security-audit/CLIENT-SIDE.md lines=3:17
-@source ms-top title="메모리 안전 사용 조건과 핵심 원칙" path=cloudflare/security-audit/MEMORY-SAFETY-AND-BINARY.md lines=3:17
-@source cd-top title="cloud 사용 조건과 핵심 원칙" path=cloudflare/security-audit/CLOUD-AND-DEPLOYMENT.md lines=3:17
-@source pr-top title="프로토콜 사용 조건과 핵심 원칙" path=cloudflare/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md lines=3:17
-@source re-top title="자원 고갈 사용 조건과 핵심 원칙" path=cloudflare/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md lines=3:17
-@source di-top title="데이터 격리 사용 조건과 핵심 원칙" path=cloudflare/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md lines=3:17
-@source dm-top title="데스크톱·모바일 사용 조건과 핵심 원칙" path=cloudflare/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md lines=3:17
-@source sc-top title="공급망 사용 조건과 핵심 원칙" path=cloudflare/security-audit/SUPPLY-CHAIN-AND-RELEASE.md lines=3:17
+@source ai-top title="AI·LLM 사용 조건과 핵심 원칙" path=cloudflare/security-audit/AI-AND-LLM.ko.md lines=3:18
+@source ai-out title="model 출력 rendering" path=cloudflare/security-audit/AI-AND-LLM.ko.md lines=64:65
+@source ai-val title="AI·LLM 검증 규칙" path=cloudflare/security-audit/AI-AND-LLM.ko.md lines=76:83
+@source wp-top title="HTTP·인증 사용 조건과 핵심 원칙" path=cloudflare/security-audit/WEB-PROTOCOL-AND-AUTH.ko.md lines=3:17
+@source cs-top title="클라이언트 사용 조건과 핵심 원칙" path=cloudflare/security-audit/CLIENT-SIDE.ko.md lines=3:17
+@source ms-top title="메모리 안전 사용 조건과 핵심 원칙" path=cloudflare/security-audit/MEMORY-SAFETY-AND-BINARY.ko.md lines=3:17
+@source cd-top title="cloud 사용 조건과 핵심 원칙" path=cloudflare/security-audit/CLOUD-AND-DEPLOYMENT.ko.md lines=3:17
+@source pr-top title="프로토콜 사용 조건과 핵심 원칙" path=cloudflare/security-audit/PROTOCOLS-RPC-AND-MESSAGING.ko.md lines=3:17
+@source re-top title="자원 고갈 사용 조건과 핵심 원칙" path=cloudflare/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.ko.md lines=3:17
+@source di-top title="데이터 격리 사용 조건과 핵심 원칙" path=cloudflare/security-audit/DATA-ISOLATION-AND-LIFECYCLE.ko.md lines=3:17
+@source dm-top title="데스크톱·모바일 사용 조건과 핵심 원칙" path=cloudflare/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.ko.md lines=3:17
+@source sc-top title="공급망 사용 조건과 핵심 원칙" path=cloudflare/security-audit/SUPPLY-CHAIN-AND-RELEASE.ko.md lines=3:17
 
-## 일반 attack class 아홉 개는 무엇을 보나 {#core-classes span=12}
+## 어떻게 동작하나 {#detail span=12}
+
+**일반 attack class 아홉 개는 무엇을 보나**
 
 `ATTACK-CLASSES.md`의 일반 class는 시작점이다. 모든 class가 모든 codebase에 맞지는 않으므로 정찰이 앱 유형에 맞는 것을 고르고, 큰 codebase는 subsystem별로 나누며, 앱에 특화된 class를 더한다. 작업은 취약점을 찾고 검증하고 고치고 우선순위를 매기는 것으로 틀을 잡고, 검증은 소스 검토와 제한된 local fixture에 한정한다. payload 체인 개발, live 서비스 availability 시험, 공유 환경 조치는 하지 않는다.[](source:atk-intro)
 
@@ -47,7 +52,7 @@
 | Wildcard | 표준 class 밖의 취약점. 지루하거나 보안과 무관해 보이는 코드, 미완성·실험·호환·fallback 기능, frontend가 안 쓰는 API 사용법, 숨은 endpoint, 섞어 쓰도록 설계되지 않은 기능 조합, git 이력, 테스트가 다루지 않는 것 | 이상한 부분은 안전 여부를 말할 수 있을 때까지 읽는다. 안전하다는 주석이 있으면 그 설명을 검증한다. 같은 구체적 경계와 검증 요건은 다른 class와 같다 | [](source:atk-wild) |
 | Obvious things | 기본 노출. 하드코딩된 secret, 보안 관련 TODO, debug·dev mode 게이트, 운영에서 통하는 test·seed credential, 보호 안 된 `/debug`·`/admin` 류 endpoint, 저장소에 들어간 `.env`·키 파일, `.gitignore`, 의존성 pin과 알려진 CVE, 동적 입력 `eval`·`exec`, CORS·cookie 속성, open redirect, TLS, 운영 오류의 stack trace | 창의적일 필요 없이 철저하고 문자 그대로 항목을 모두 확인하고 결과를 보고한다. 단, 보고하는 finding마다 전체 코드 경로를 확인해야 한다. flag는 finding이 아니고 영향을 추적해야 한다 | [](source:atk-obv) |
 
-## 도메인 지침 열 개는 언제 고르나 {#companions span=12}
+**도메인 지침 열 개는 언제 고르나**
 
 도메인 지침은 언어나 의존성 이름이 보인다고 고르지 않는다. 정찰이 각 파일의 `When to use this file` 절에 적힌 trust-sensitive boundary를 실제로 찾았을 때 고르고, 보이는 boundary를 다른 agent가 볼 것이라는 이유로 제외하지 않는다.[](source:rec-sel) 대상별 사용 조건은 `ATTACK-CLASSES.md`가 아래처럼 연결한다.[](source:atk-route)
 
@@ -66,7 +71,7 @@
 
 class 수는 각 파일에서 굵은 제목으로 선 class의 개수를 센 값이다.
 
-## 겹치는 영역은 어느 파일이 맡나 {#overlap span=12}
+**겹치는 영역은 어느 파일이 맡나**
 
 도메인 파일은 `ATTACK-CLASSES.md`를 대체하지 않고 함께 쓴다. 일반 trust boundary(전송, access control, query 구성, 파일 시스템, 출력 rendering)는 그대로 일반 class가 맡고, 도메인 파일은 그 위의 영역별 층을 맡는다. 파일끼리 겹치는 곳은 각 파일이 서로를 가리켜 나눈다.
 
@@ -83,7 +88,7 @@ class 수는 각 파일에서 굵은 제목으로 선 class의 개수를 센 값
 | `DESKTOP-MOBILE-AND-LOCAL-IPC.md` | 로컬·원격 콘텐츠 공격자, local IPC, 권한 있는 helper, 기기 lifecycle[](source:dm-top) | browser 쪽 webview는 `CLIENT-SIDE.md`, native memory·loader는 `MEMORY-SAFETY-AND-BINARY.md`, 업데이트 진위는 `SUPPLY-CHAIN-AND-RELEASE.md`[](source:dm-top) |
 | `SUPPLY-CHAIN-AND-RELEASE.md` | source·의존성에서 사용자가 실행하는 artifact까지의 신뢰 인계[](source:sc-top) | 로컬 binary loader 내부 결함은 `MEMORY-SAFETY-AND-BINARY.md`, runtime workload 권한은 `CLOUD-AND-DEPLOYMENT.md`[](source:sc-top) |
 
-## 선택한 파일에서 hunter 지시문에 무엇이 복사되나 {#blocks span=12}
+**선택한 파일에서 hunter 지시문에 무엇이 복사되나**
 
 도메인 파일은 같은 뼈대를 가진다. `When to use this file`은 정찰이 파일을 고르는 근거이고, `Core discipline`은 영역의 핵심 원칙을 담은 코드 블록이다. 그 뒤로 영역별 attack class 묶음, `Universal moves`, `Validation rules`가 온다.[](source:ai-top)
 
@@ -93,11 +98,8 @@ ledger unit이 이 block을 가리키는 형식은 `FILE.md#` 뒤에 그 파일�
 
 모든 도메인 파일의 `Validation rules`는 마지막 항목에서 같은 선택을 요구한다. 완전한 소스 trace와 의미 있는 결과가 있을 때만 `confirmed`를 돌려주고, 풀리지 않은 구체적 사실이 있으면 그 사실과 그것을 풀 제한된 local 또는 소유자 관찰 확인을 적어 `needs_validation`을 돌려준다. 예로 `AI-AND-LLM.md`의 여섯째 규칙이 이렇게 쓴다.[](source:ai-val)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.recon.html` | companion을 고르는 단계와 ledger의 block 필드 |
-| `security-audit.hunt.html` | block이 복사되는 hunter 지시문 |
-| `security-audit.verify.html` | verifier가 받는 관련 companion `Validation rules` |
+- [개요](page:security-audit.html)
+- [정찰과 coverage ledger](page:security-audit.recon.html)
+- [사냥](page:security-audit.hunt.html)
