@@ -8,7 +8,7 @@
 - 확장 번역 스킬(`dsh-translate-docs`)은 자동 리뷰에 들어가지 않는다. 사용자가 이름으로 부를 때만 돈다(r07).[](source:cr-bi)
 
 @answer scope="deepseek-harness/review 묶음 · 스킬 7개의 원본 SKILL.md · 커밋 475505c · 관계는 relations.md의 rel-id 기준 · 지시상 동작이며 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source cr-fm title="deepseek-harness/dsh-code-review/SKILL.md · 11550B · frontmatter" path=deepseek-harness/dsh-code-review/SKILL.md lines=1:4
 @source cr-guide title="deepseek-harness/dsh-code-review/SKILL.md · 안내서 선언과 change-scope" path=deepseek-harness/dsh-code-review/SKILL.md lines=8:8
 @source cr-list title="deepseek-harness/dsh-code-review/SKILL.md · 읽을 자료 목록의 스킬 5개" path=deepseek-harness/dsh-code-review/SKILL.md lines=22:26

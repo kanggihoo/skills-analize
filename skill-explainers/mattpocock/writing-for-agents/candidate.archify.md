@@ -8,7 +8,7 @@
 - 금지보다 원하는 행동을 쓰고, 행동을 바꾸지 못하는 문장은 통째로 지운다.[](source:wfa-neg)[](source:wfa-noop)
 
 @answer scope="mattpocock/writing-for-agents · 원본 텍스트 파일 3개 · 커밋 0f0d1b0 · 실행하지 않음, 지시상 동작만"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source wfa-fm title="mattpocock/writing-for-agents/SKILL.md · 10886B · frontmatter" path=mattpocock/writing-for-agents/SKILL.md lines=1:4
 @source wfa-yaml title="mattpocock/writing-for-agents/agents/openai.yaml · 102B · 표시 정보" path=mattpocock/writing-for-agents/agents/openai.yaml lines=1:3
 @source wfa-intro title="mattpocock/writing-for-agents/SKILL.md · 도입과 SKILL-MECHANICS 안내" path=mattpocock/writing-for-agents/SKILL.md lines=6:8

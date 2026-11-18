@@ -8,7 +8,7 @@
 - 긴 결과는 채팅에 붙이지 않고 보고서 파일에 쓴 뒤 경로만 알린다.[](source:rv-art)
 
 @answer scope="egm/egm-review · 텍스트 5개 35617B · 커밋 d494974 · 실행 안 함 · 지시상 동작 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source rv-fm title="egm/egm-review/SKILL.md · 24113B · frontmatter" path=egm/egm-review/SKILL.md lines=2:9
 @source rv-intro title="SKILL.md · 시작 안내와 목적" path=egm/egm-review/SKILL.md lines=14:17
 @source rv-deleg title="SKILL.md · Delegation" path=egm/egm-review/SKILL.md lines=21:28

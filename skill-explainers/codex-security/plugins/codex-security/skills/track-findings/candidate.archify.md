@@ -8,7 +8,7 @@
 - 이 분석은 SKILL.md, 참고 파일 둘, 호출 정책, 필수 참조 소스를 읽었다. helper, 도구, provider는 실행하지 않았다.
 
 @answer scope="필수 참조 파일까지 읽음 · 실행 없음 · provider 도구 동작은 범위 밖"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source skill-front title="frontmatter" path=codex-security/plugins/codex-security/skills/track-findings/SKILL.md lines=1:4
 @source skill-scope title="범위, 승인 전제, 접근 수단" path=codex-security/plugins/codex-security/skills/track-findings/SKILL.md lines=8:12
 @source skill-validate title="1단계 source 검증" path=codex-security/plugins/codex-security/skills/track-findings/SKILL.md lines=14:26

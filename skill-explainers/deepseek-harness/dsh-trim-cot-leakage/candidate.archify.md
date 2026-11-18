@@ -8,7 +8,7 @@
 - 검색식은 후보를 찾는 도구일 뿐 정의가 아니다. 가장 빽빽한 글은 에이전트가 검색식 없이도 직접 읽는다.[](source:tc-workflow)
 
 @answer scope="deepseek-harness/dsh-trim-cot-leakage · 원본 텍스트 3개 · 커밋 475505c · 범위 밖 링크 미확인(부분 분석) · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source tc-fm title="deepseek-harness/dsh-trim-cot-leakage/SKILL.md · 7699B · frontmatter" path=deepseek-harness/dsh-trim-cot-leakage/SKILL.md lines=1:4
 @source tc-intro title="SKILL.md · 정의와 수정 원칙" path=deepseek-harness/dsh-trim-cot-leakage/SKILL.md lines=8:8
 @source tc-test title="SKILL.md · The one test" path=deepseek-harness/dsh-trim-cot-leakage/SKILL.md lines=10:12

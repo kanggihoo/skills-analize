@@ -7,7 +7,7 @@
 - 에이전트는 `billing` 명령을 실행하지 않고, 원본 프레임을 통째로 재생하지 않고, subagent에 나누지 않는다.[](source:free)[](source:layers)[](source:alone)
 
 @answer scope="이 스킬 폴더 텍스트 5개 전부 · 폴더 밖 3개 파일은 줄 범위만 · 관계 원장 1개 · CLI 실행 없음 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source front title="frontmatter" path=hyperframes/reverse-any-video/SKILL.md lines=1:4
 @source plugin title="plugin 규칙" path=hyperframes/reverse-any-video/SKILL.md lines=6:6
 @source beacon title="사용 beacon" path=hyperframes/reverse-any-video/SKILL.md lines=8:8

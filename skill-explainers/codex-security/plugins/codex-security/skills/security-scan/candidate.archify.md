@@ -8,7 +8,7 @@
 - 감사 본체는 `core-scan.md`다. 이 스킬은 `threat-model`, `finding-discovery`, `validation`, `attack-path-analysis` 같은 단계 스킬을 부르지 않는다.[](source:cs-noskill)
 
 @answer scope="Standard scan · 코드와 도구는 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source sk-fm title="스킬 frontmatter(description)" path=codex-security/plugins/codex-security/skills/security-scan/SKILL.md lines=1:4
 @source sk-purpose title="감사 목적과 core audit 지시" path=codex-security/plugins/codex-security/skills/security-scan/SKILL.md lines=8:10
 @source sk-bind title="scan 묶기 선행 조건" path=codex-security/plugins/codex-security/skills/security-scan/SKILL.md lines=14:14

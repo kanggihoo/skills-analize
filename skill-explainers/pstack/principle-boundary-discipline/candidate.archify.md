@@ -8,7 +8,7 @@
 - 판단 질문은 둘이다. "이 데이터가 지금 경계를 넘는가?" "셸이 부르기만 하는 순수 함수로 만들 수 있는가?" 여기서 셸은 순수 함수를 부르는 쪽이고, 원문은 셸을 얇고 기계적으로 두라고 한다.[](source:tests)[](source:rule)
 
 @answer scope="pstack/principle-boundary-discipline · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-boundary-discipline/SKILL.md · 1883B · 원칙 본문(frontmatter)" path=pstack/principle-boundary-discipline/SKILL.md lines=1:5
 @source rule title="pstack/principle-boundary-discipline/SKILL.md · 규칙" path=pstack/principle-boundary-discipline/SKILL.md lines=9:9
 @source why title="pstack/principle-boundary-discipline/SKILL.md · 이유" path=pstack/principle-boundary-discipline/SKILL.md lines=11:11

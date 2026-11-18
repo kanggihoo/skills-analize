@@ -8,7 +8,7 @@
 - 설계 문서에 구현 코드를 쓰지 않는다. pseudocode, API, schema는 허용한다.[](source:dr-s5-nocode)
 
 @answer scope="egm/egm-draft · 읽은 텍스트 6개 · 커밋 d494974 · 지시상 동작 · 실행 안 함 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source dr-fm title="egm/egm-draft/SKILL.md · 17479B · frontmatter" path=egm/egm-draft/SKILL.md lines=1:10
 @source dr-ptr title="SKILL.md · host 통합 문서 먼저 읽기" path=egm/egm-draft/SKILL.md lines=14:15
 @source dr-intro title="SKILL.md · 스킬 소개" path=egm/egm-draft/SKILL.md lines=17:18

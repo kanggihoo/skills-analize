@@ -8,7 +8,7 @@
 - **부분 분석**이다. 스킬 본문, 두 계약 문서, builder, renderer 코드 대부분은 읽었지만 SVG 예시 2개와 CSS와 일부 test는 표본만 봤고 아무것도 실행하지 않았다. 범위는 마지막 패널에 있다.
 
 @answer scope="스킬·계약·builder·renderer 코드 읽음 · 실행 없음 · SVG 예시 2개와 CSS와 test 일부는 표본만 확인한 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source skill-md title="스킬 본문 frontmatter" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=1:4
 @source purpose title="스킬 목적과 금지" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=6:8
 @source req title="요청 해석, 입력, 배포 맥락, 다중 artifact" path=codex-security/plugins/codex-security/skills/threat-model-visualize/SKILL.md lines=10:12

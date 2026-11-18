@@ -8,7 +8,7 @@
 - 색보정은 CSS, SVG, `.cube`로 흉내 내지 않고 `media-treatment`로 저장한다. 얼굴처럼 일부 영역만 가리는 일은 실시간 효과로 하지 않는다.[](source:sk-looks)[](source:tr-scope)
 
 @answer scope="원본 106개 읽음 · 일부는 앞부분만 · 실행 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source sk-front title="frontmatter" path=hyperframes/media-use/SKILL.md lines=1:4
 @source sk-plugin title="plugin 규칙과 usage beacon" path=hyperframes/media-use/SKILL.md lines=6:8
 @source sk-verb title="저장 위치와 resolve 한 명령" path=hyperframes/media-use/SKILL.md lines=10:18

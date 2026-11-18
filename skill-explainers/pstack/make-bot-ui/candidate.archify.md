@@ -8,7 +8,7 @@
 - 에이전트는 페이지를 Tailscale 망(tailnet)에 HTTP 주소로 공개한다. 이미 켜진 노드가 있으면, 새로 만들지 않는다.[](source:skill-tail-reuse)
 
 @answer scope="pstack/make-bot-ui · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/make-bot-ui/SKILL.md · 4649B · frontmatter" path=pstack/make-bot-ui/SKILL.md lines=1:8
 @source skill-intro title="pstack/make-bot-ui/SKILL.md · 전체 구조와 키 원칙" path=pstack/make-bot-ui/SKILL.md lines=11:11
 @source skill-routine title="pstack/make-bot-ui/SKILL.md · 웹훅 루틴 만들기" path=pstack/make-bot-ui/SKILL.md lines=13:23

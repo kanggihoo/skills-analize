@@ -8,7 +8,7 @@
 - `poteto-mode`와 `refactoring` 플레이북이 API 모양을 바꿀 때 이 원칙을 꺼낸다.[](source:pm-line)[](source:pb-refactoring)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md · 1146B · frontmatter" path=pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md lines=1:5
 @source skill-intro title="SKILL.md · 도입부" path=pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md lines=9:9
 @source skill-rule title="SKILL.md · Rule" path=pstack/principle-migrate-callers-then-delete-legacy-apis/SKILL.md lines=11:15

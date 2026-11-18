@@ -8,7 +8,7 @@
 - 길거나 자율적인 작업이면, `show-me-your-work`로 결정 기록을 남긴다.[](source:pm-smyw)
 
 @answer scope="pstack/run 묶음 · 스킬 5개의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source pm-fm title="pstack/poteto-mode/SKILL.md · 20559B · frontmatter" path=pstack/poteto-mode/SKILL.md lines=1:9
 @source pm-cite title="pstack/poteto-mode/SKILL.md · 원칙 인용 규칙" path=pstack/poteto-mode/SKILL.md lines=13:15
 @source pm-triggers title="pstack/poteto-mode/SKILL.md · Non-negotiables 트리거 목록" path=pstack/poteto-mode/SKILL.md lines=17:36

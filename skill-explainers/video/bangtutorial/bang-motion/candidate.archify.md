@@ -8,7 +8,7 @@
 - 쓰면 안 되는 경우를 못 박은 문장은 원문에 명시 없음. 이 스킬이 스스로 접는 경우(사진을 못 구한 사진 컨셉, 결과물이 시각적이지 않은 컨셉 15)는 있다. 결과 영상이 실제로 영화처럼 보이는지는 확인하지 못했다.[](source:ok-ph)[](source:ok-c15)
 
 @answer scope="1.19.0 · 텍스트 31개 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source fm title="SKILL.md · 39343B · frontmatter" path=video/bangtutorial/bang-motion/SKILL.md lines=1:11
 @source pre title="SKILL.md · 선행 조건(브라우저만, ffmpeg 선택)" path=video/bangtutorial/bang-motion/SKILL.md lines=22:45
 @source pl title="SKILL.md · 플레이어 없음, 자동 재생, 반복" path=video/bangtutorial/bang-motion/SKILL.md lines=47:56

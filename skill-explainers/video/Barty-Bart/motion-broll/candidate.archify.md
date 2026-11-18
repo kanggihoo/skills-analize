@@ -8,7 +8,7 @@
 - 산출물은 편집기에 넣을 클립이다. 함께 만드는 `preview.mp4`는 검토용이며 최종본이 아니다.[](source:mb-deliver)
 
 @answer scope="motion-broll · 텍스트 23개 · 커밋 23e8047 · 실행 안 함 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source mb-fm title="video/Barty-Bart/motion-broll/SKILL.md · 8941B · frontmatter" path=video/Barty-Bart/motion-broll/SKILL.md lines=1:4
 @source mb-intro title="SKILL.md · 만드는 것과 폴더 구성" path=video/Barty-Bart/motion-broll/SKILL.md lines=6:19
 @source mb-setup title="SKILL.md · 1단계 준비" path=video/Barty-Bart/motion-broll/SKILL.md lines=21:27

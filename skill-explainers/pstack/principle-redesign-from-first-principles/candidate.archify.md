@@ -8,7 +8,7 @@
 - 재설계는 통째로 생각하되, 전달은 조금씩 한다.[](source:skill-steps)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/principle-redesign-from-first-principles/SKILL.md · 844B · frontmatter" path=pstack/principle-redesign-from-first-principles/SKILL.md lines=1:5
 @source skill-intro title="SKILL.md · 도입부" path=pstack/principle-redesign-from-first-principles/SKILL.md lines=9:9
 @source skill-steps title="SKILL.md · 규칙 목록" path=pstack/principle-redesign-from-first-principles/SKILL.md lines=11:14

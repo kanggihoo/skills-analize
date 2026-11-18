@@ -8,7 +8,7 @@
 - 줄인 글의 단어 수가 적다는 이유만으로는 개선이 아니다. 모든 사실 절이 살아 있고 더 명확해야 개선이다.[](source:ps-propositions)
 
 @answer scope="deepseek-harness/dsh-prose-standard · 원본 텍스트 2개 · 커밋 475505c · 범위 밖 링크 미확인(부분 분석) · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source ps-fm title="deepseek-harness/dsh-prose-standard/SKILL.md · 9899B · frontmatter" path=deepseek-harness/dsh-prose-standard/SKILL.md lines=1:4
 @source ps-intro title="SKILL.md · 목적과 책임 나눔" path=deepseek-harness/dsh-prose-standard/SKILL.md lines=8:12
 @source ps-inputs title="SKILL.md · scope 입력" path=deepseek-harness/dsh-prose-standard/SKILL.md lines=16:16

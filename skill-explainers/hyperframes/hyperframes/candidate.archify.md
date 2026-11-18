@@ -8,7 +8,7 @@
 - 이 페이지는 **부분 분석**이다. 하위 스킬 본문과 CLI의 실제 동작은 폴더 밖이라 읽지 않았고, preset 13종 중 12종은 구조와 표본만 확인했다.
 
 @answer scope="hyperframes/hyperframes 원본 · 부분 분석 · CLI 동작은 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source sk-fm title="스킬 frontmatter" path=hyperframes/hyperframes/SKILL.md lines=1:4
 @source sk-start title="시작 시 plugin·beacon 지시" path=hyperframes/hyperframes/SKILL.md lines=6:8
 @source sk-intro title="스킬 개요와 기본 방침" path=hyperframes/hyperframes/SKILL.md lines=10:16

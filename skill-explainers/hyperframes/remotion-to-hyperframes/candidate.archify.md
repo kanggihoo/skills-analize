@@ -8,7 +8,7 @@
 - 이 폴더의 텍스트 파일 74개를 끝까지 읽었다. Hosted의 seek 규약이 든 `runtimes.md`는 다른 스킬 소속이라 열지 않았으므로 **부분 분석**이다.[](source:hosted)
 
 @answer scope="부분 분석 · 폴더 안 텍스트 74개 · 실행 없이 읽기만"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source fm title="frontmatter" path=hyperframes/remotion-to-hyperframes/SKILL.md lines=1:4
 @source plugin title="plugin 안내" path=hyperframes/remotion-to-hyperframes/SKILL.md lines=6:6
 @source beacon title="usage beacon" path=hyperframes/remotion-to-hyperframes/SKILL.md lines=8:8

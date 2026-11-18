@@ -8,7 +8,7 @@
 - 코드 예는 `references/patterns.md`에 있다. 규칙 16개 가운데 14개에 예가 있다.[](source:examples)[](source:pat-intro)
 
 @answer scope="pstack/typescript-best-practices · 원본 텍스트 파일 2개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/typescript-best-practices/SKILL.md · 2684B · 본문(frontmatter)" path=pstack/typescript-best-practices/SKILL.md lines=1:6
 @source first title="pstack/typescript-best-practices/SKILL.md · 원칙 먼저" path=pstack/typescript-best-practices/SKILL.md lines=10:10
 @source table title="pstack/typescript-best-practices/SKILL.md · 규칙표" path=pstack/typescript-best-practices/SKILL.md lines=12:29

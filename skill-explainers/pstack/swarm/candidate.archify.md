@@ -8,7 +8,7 @@
 - 에이전트는 결과가 없는 slice를 빈칸(gap)으로 남긴다. 빈칸은 통과로 세지 않는다.[](source:skill-c)
 
 @answer scope="pstack/swarm · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/swarm/SKILL.md · 2949B · 본문(frontmatter)" path=pstack/swarm/SKILL.md lines=1:5
 @source skill-intro title="pstack/swarm/SKILL.md · 목적" path=pstack/swarm/SKILL.md lines=9:9
 @source skill-start title="pstack/swarm/SKILL.md · Start" path=pstack/swarm/SKILL.md lines=11:18

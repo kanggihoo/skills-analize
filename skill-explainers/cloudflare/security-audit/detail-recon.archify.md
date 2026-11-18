@@ -3,7 +3,7 @@
 이 페이지는 개요의 `정찰` 노드, 곧 Phase 1을 맡는다. 시작 입력은 `run-metadata.json`과 target 소스, 이전 실행 기록이다. 끝 출력은 `architecture.md`와 `coverage-ledger.json`이고, ledger의 unit은 모두 `planned`로 시작한다. 이후 개요의 `사냥`으로 이어진다. budget gate에서 막히면 agent 없이 `incomplete`로 끝난다.[](source:rec-p1)
 
 @answer scope="cloudflare/security-audit · RECONNAISSANCE.md 전체, validate-coverage-ledger.cjs 일부 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source rec-p1 title="정찰 시작 조건" path=cloudflare/security-audit/RECONNAISSANCE.md lines=3:7
 @source rec-a1a title="정찰 agent 1a" path=cloudflare/security-audit/RECONNAISSANCE.md lines=9:20
 @source rec-a1b title="정찰 agent 1b" path=cloudflare/security-audit/RECONNAISSANCE.md lines=22:33

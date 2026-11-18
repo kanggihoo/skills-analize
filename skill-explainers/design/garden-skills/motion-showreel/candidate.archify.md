@@ -8,7 +8,7 @@
 - 이번 최신화: 모든 영상이 편집기 미리보기를 거치고, 사용자가 내보내기를 승인해야 렌더한다. 사용자가 원하면 진행 페이지로 제작 과정을 단계마다 보여 준다.[](source:ms-preview)[](source:ms-progress)
 
 @answer scope="design/garden-skills/motion-showreel · 원본 텍스트 113개(정독 64개 551,862B, 구조·표본만 49개 524,053B) · 커밋 4e3fc89 · 스크립트·테스트 실행 안 함 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ms-fm title="design/garden-skills/motion-showreel/SKILL.md · 32386B · frontmatter(중국어 원본)" path=design/garden-skills/motion-showreel/SKILL.md lines=1:4
 @source ms-principle title="SKILL.md · 원리: render(t)와 timeline.js" path=design/garden-skills/motion-showreel/SKILL.md lines=10:10
 @source ms-preview title="SKILL.md · 먼저 미리보기, 그다음 내보내기" path=design/garden-skills/motion-showreel/SKILL.md lines=12:12

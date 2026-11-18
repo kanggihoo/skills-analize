@@ -8,7 +8,7 @@
 - 이 묶음의 조사 상태는 **부분 분석**이다. `egm-bootstrap`이 띄우는 하위 오케스트레이터의 정의 파일이 저장소에 없다.
 
 @answer scope="egm · bootstrap · drift-report · 커밋 d494974 · 지시상 동작 · 하위 오케스트레이터 정의는 확인하지 못함(부분 분석)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source c-bs-off title="egm/egm-bootstrap/SKILL.md · 호출 제한" path=egm/egm-bootstrap/SKILL.md lines=4:4
 @source c-dr-off title="egm/egm-drift-report/SKILL.md · 호출 제한" path=egm/egm-drift-report/SKILL.md lines=4:4
 @source c-bs-over title="egm-bootstrap/SKILL.md · 개요와 Peanuts·Hay" path=egm/egm-bootstrap/SKILL.md lines=13:24

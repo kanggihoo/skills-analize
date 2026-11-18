@@ -3,7 +3,7 @@
 이 페이지는 개요의 `후보 검증` 노드, 곧 Phase 3을 맡는다. 시작 입력은 Phase 2가 통합한 후보와 같은 소스의 이전 `confirmed` 중 carry한 record다. 끝 출력은 fingerprint마다 하나의 최종 record와 ledger에 기록된 판정이다. 이후 개요의 `findings 작성`으로 이어진다. 예산이 후보를 다 덮지 못하면 `incomplete`로 끝난다.[](source:val-p3)
 
 @answer scope="cloudflare/security-audit · VALIDATION-AND-REPORTING.md 3~93줄 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source val-p3 title="Phase 3 배정" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=3:7
 @source val-quick title="quick 프로필은 Phase 3과 5를 합친다" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=124:124
 @source val-pre title="verifier 지시문 서문" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=11:22

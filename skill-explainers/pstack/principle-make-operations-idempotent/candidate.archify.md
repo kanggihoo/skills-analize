@@ -8,7 +8,7 @@
 - 세 질문 중 하나라도 답이 "남은 상태에 따라 다르다"이면, 그 작업에는 상태 맞추기(reconciliation) 단계가 필요하다.[](source:verdict)
 
 @answer scope="pstack/principle-make-operations-idempotent · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-make-operations-idempotent/SKILL.md · 1390B · 원칙 본문(frontmatter)" path=pstack/principle-make-operations-idempotent/SKILL.md lines=1:5
 @source rule title="pstack/principle-make-operations-idempotent/SKILL.md · 규칙" path=pstack/principle-make-operations-idempotent/SKILL.md lines=9:9
 @source why title="pstack/principle-make-operations-idempotent/SKILL.md · 이유" path=pstack/principle-make-operations-idempotent/SKILL.md lines=11:11

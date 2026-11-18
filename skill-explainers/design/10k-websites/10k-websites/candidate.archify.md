@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: framework나 build step이 있는 사이트를 원할 때다. 판정: ChatGPT(Codex)용으로 쓰여 있어 Claude에서는 모델 정책 부분이 맞지 않는다.[](source:sk-pipe)[](source:htu)
 
 @answer scope="design/10k-websites/10k-websites · 텍스트 52개 497,217B · 커밋 4e3fc89 · 코드는 읽기만 함 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source sk-fm title="design/10k-websites/10k-websites/SKILL.md · 21728B · frontmatter" path=design/10k-websites/10k-websites/SKILL.md lines=1:4
 @source sk-intro title="SKILL.md · 사용자와 에이전트의 몫" path=design/10k-websites/10k-websites/SKILL.md lines=8:8
 @source sk-start title="SKILL.md · 시작과 재개" path=design/10k-websites/10k-websites/SKILL.md lines=12:15

@@ -7,7 +7,7 @@
 - 다른 스킬이 이 스킬을 부르는 곳은 없다. 사용자가 직접 입력할 때만 쓰인다.
 
 @answer scope="pstack/bro · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/bro/SKILL.md · 267B · 본문(frontmatter)" path=pstack/bro/SKILL.md lines=1:5
 @source body title="pstack/bro/SKILL.md · 지시 본문" path=pstack/bro/SKILL.md lines=7:7
 @source help-bro title="pstack/poteto-help/SKILL.md · 상황별 스킬 표" path=pstack/poteto-help/SKILL.md lines=75:75

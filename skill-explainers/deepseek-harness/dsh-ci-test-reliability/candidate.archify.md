@@ -8,7 +8,7 @@
 - 이미 flaky한 CI 실패는 증거 고정, 분류, 가장 작은 구조에서 재현의 순서로 진단한다. 진단만 요청받으면 읽기 전용이다.[](source:skill-diag)[](source:ref-scope)
 
 @answer scope="deepseek-harness/dsh-ci-test-reliability · 원본 텍스트 파일 2개 · 커밋 475505c · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-ci-test-reliability/SKILL.md · 9442B · frontmatter" path=deepseek-harness/dsh-ci-test-reliability/SKILL.md lines=1:4
 @source skill-intro title="SKILL.md · 목적과 범위" path=deepseek-harness/dsh-ci-test-reliability/SKILL.md lines=8:8
 @source skill-read title="SKILL.md · 먼저 읽을 규칙" path=deepseek-harness/dsh-ci-test-reliability/SKILL.md lines=12:16

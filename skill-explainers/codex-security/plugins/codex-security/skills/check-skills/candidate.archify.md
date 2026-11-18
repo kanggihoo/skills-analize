@@ -8,7 +8,7 @@
 - 세션이 대상 checkout 안에서 시작됐거나 대상이 이 세션에서 스킬로 발견될 수 있으면 대상을 열기 전에 멈추고 새 세션을 요청한다.[](source:cs-clean)
 
 @answer scope="원본 텍스트를 읽은 분석 · check-skills를 실행하지 않음 · 대상 스킬의 지시와 script 미실행 · 외부 URL 미접속 · 부분 분석 아님(스킬 폴더 파일 2개 전부, 폴더 밖 필수 참조 없음)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source cs-front title="frontmatter" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=1:4
 @source cs-intro title="목적과 MCP 불필요" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=6:8
 @source cs-clean title="신뢰할 workspace 조건" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=12:12

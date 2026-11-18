@@ -8,7 +8,7 @@
 - 보관 개수의 할당량은 없다. 보관된 노트의 바깥 링크가 유효하다고 주장하지 않는다.[](source:an-quota)[](source:an-report)
 
 @answer scope="dsh-archive-agent-notes · 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source an-fm title="deepseek-harness/dsh-archive-agent-notes/SKILL.md · 6721B · frontmatter" path=deepseek-harness/dsh-archive-agent-notes/SKILL.md lines=1:4
 @source an-intro title="SKILL.md · 목적과 판단 원칙" path=deepseek-harness/dsh-archive-agent-notes/SKILL.md lines=8:8
 @source an-read title="SKILL.md · 먼저 읽을 계약" path=deepseek-harness/dsh-archive-agent-notes/SKILL.md lines=12:12

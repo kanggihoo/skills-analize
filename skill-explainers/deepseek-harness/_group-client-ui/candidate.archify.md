@@ -8,7 +8,7 @@
 - `dsh-official-plugin-artwork`는 그림 작업이 GUI PR이면 `record-browser-gif`를 따른다(r34). `dsh-client-ui-ux` 원문에는 GIF 언급이 없다.[](source:art-gif)[](source:ux-fm)
 
 @answer scope="deepseek-harness client-ui 묶음 · 스킬 5개와 경계 스킬 원본 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source ux-fm title="deepseek-harness/dsh-client-ui-ux/SKILL.md · 9486B · frontmatter" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=1:4
 @source ux-intro title="dsh-client-ui-ux/SKILL.md · 성격과 문구 소관" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=8:8
 @source ux-err title="dsh-client-ui-ux/SKILL.md · 오류 보고 절 적용과 자리 고르기" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=34:34

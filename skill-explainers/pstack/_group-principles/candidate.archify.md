@@ -8,7 +8,7 @@
 - 원칙끼리 서로를 가리키기도 한다. 대부분 "자세한 건 저쪽" 또는 "저쪽과 이렇게 다르다"는 참고다.[](source:attack-refs)[](source:lever-refs)
 
 @answer scope="pstack/principles 묶음 · 원칙 스킬 24개와 poteto-mode 등 SKILL.md 29개 · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source pm-cite title="pstack/poteto-mode/SKILL.md · 20559B · 원칙 인용 규칙" path=pstack/poteto-mode/SKILL.md lines=13:15
 @source pm-model title="pstack/poteto-mode/SKILL.md · 데이터 모양 트리거" path=pstack/poteto-mode/SKILL.md lines=21:21
 @source pm-head title="pstack/poteto-mode/SKILL.md · Principles 절 머리" path=pstack/poteto-mode/SKILL.md lines=38:40

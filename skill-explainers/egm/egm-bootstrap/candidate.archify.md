@@ -8,7 +8,7 @@
 - 서술은 `[파일:심볼]` 근거를 붙이고, 근거가 없으면 `["None"]`으로 쓴다. 끝나면 만든 계약 파일을 전부 다시 읽는다.[](source:bs-scout-reg)[](source:bs-final)
 
 @answer scope="egm/egm-bootstrap · 텍스트 7개 · 커밋 d494974 · 실행 안 함 · 지시상 동작 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source bs-fm title="egm/egm-bootstrap/SKILL.md · 23764B · frontmatter" path=egm/egm-bootstrap/SKILL.md lines=1:6
 @source bs-docs title="SKILL.md · 첫머리 안내(host 통합 문서)" path=egm/egm-bootstrap/SKILL.md lines=10:11
 @source bs-overview title="SKILL.md · 개요와 Peanuts·Hay" path=egm/egm-bootstrap/SKILL.md lines=15:24

@@ -8,7 +8,7 @@
 - 소스가 깨끗해 보여도, 에이전트는 실제 조작 단계를 반드시 한다.[](source:skill-live)
 
 @answer scope="pstack/maintain-verification-skill · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/maintain-verification-skill/SKILL.md · 4922B · frontmatter" path=pstack/maintain-verification-skill/SKILL.md lines=1:5
 @source skill-intro title="pstack/maintain-verification-skill/SKILL.md · 목적과 엄밀함의 단위" path=pstack/maintain-verification-skill/SKILL.md lines=9:9
 @source skill-outcomes title="pstack/maintain-verification-skill/SKILL.md · 결과 세 가지" path=pstack/maintain-verification-skill/SKILL.md lines=11:17

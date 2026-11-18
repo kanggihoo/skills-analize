@@ -3,7 +3,7 @@
 이 페이지는 개요의 `감사 설정` 노드 중 계획 규칙을 맡는다. 시작 입력은 사용자의 요청(profile, 범위, budget)과 이전 실행의 ledger·findings다. 끝 출력은 `run-metadata.json`의 `profile`, `scope_paths`, `budget`과 현재 실행의 시작 조건이다. 이후 개요의 `정찰`로 이어지고, budget이 최소 비용을 못 대면 agent 없이 `incomplete`로 끝난다. 이 규칙은 전체 감사 모드에만 적용된다.[](source:skm-plan-scope)
 
 @answer scope="cloudflare/security-audit · SKILL.md 88~134줄 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source skm-plan-scope title="전체 감사 모드에만 적용" path=cloudflare/security-audit/SKILL.md lines=90:90
 @source skm-cov title="deterministic coverage plan" path=cloudflare/security-audit/SKILL.md lines=94:94
 @source skm-prior title="이전 실행 활용 여섯 규칙" path=cloudflare/security-audit/SKILL.md lines=96:105

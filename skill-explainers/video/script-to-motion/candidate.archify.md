@@ -8,7 +8,7 @@
 - 이미지·음악·아이콘 같은 외부 소재는 쓰지 않는다. 사용자가 준 파일만 예외다.[](source:st-orig)
 
 @answer scope="script-to-motion · 커밋 f415191 · 지시상 동작 · 결과 영상은 확인하지 못함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=f415191a236e0230db370553888ff9699eb4440d
 @source st-desc title="video/script-to-motion/SKILL.md · 97091B · frontmatter" path=video/script-to-motion/SKILL.md lines=2:3
 @source st-hooks title="script-to-motion/SKILL.md · frontmatter hooks" path=video/script-to-motion/SKILL.md lines=4:9
 @source st-intro title="script-to-motion/SKILL.md · 개요" path=video/script-to-motion/SKILL.md lines=12:23

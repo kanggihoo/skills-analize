@@ -3,7 +3,7 @@
 이 페이지는 개요의 `최종 검증`과 `보고서` 노드, 곧 Phase 5와 Phase 6을 맡는다. 시작 입력은 `findings.json`의 `confirmed`·`needs_validation` record와 ledger다. 끝 출력은 `REPORT.md`, `FINDINGS-DETAIL.md`, `NEEDS-VALIDATION.md`다. 별개의 root cause가 나오면 개요의 `후보 검증`으로 돌아가고, 감사는 종료 상태 둘 중 하나로 끝난다.[](source:val-p5-after)
 
 @answer scope="cloudflare/security-audit · VALIDATION-AND-REPORTING.md 120~186줄 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source val-p5-intro title="Phase 5 배정과 quick 병합" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=122:124
 @source val-p5-conf title="confirmed 확인 항목" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=126:133
 @source val-p5-nv title="needs_validation 확인 항목" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=135:141

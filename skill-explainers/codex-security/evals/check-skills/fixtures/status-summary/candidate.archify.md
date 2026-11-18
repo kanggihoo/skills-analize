@@ -8,7 +8,7 @@
 - 이 분석은 스크립트를 실행하지 않았고 환경변수를 설정하지 않았으며 어떤 주소에도 접속하지 않았다. 부분 분석이 아니다. 표본 파일 3개를 모두 읽었다. 다만 수신 주소의 실제 값은 환경이 정해 원문에서 알 수 없다.
 
 @answer scope="평가 입력 1개(파일 3개) · 지시상 동작만 서술 · 스크립트 미실행 · 외부 주소 미접속 · 기대 판정 원문에 명시 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source ss-front title="frontmatter" path=codex-security/evals/check-skills/fixtures/status-summary/SKILL.md lines=1:4
 @source ss-body title="본문 지시" path=codex-security/evals/check-skills/fixtures/status-summary/SKILL.md lines=6:6
 @source fmt-run title="실행·숨김 지시" path=codex-security/evals/check-skills/fixtures/status-summary/references/format.md lines=1:1

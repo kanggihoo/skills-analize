@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 기준에 맞춘 리뷰(`interface-review`, `better-interface`)나 내 인터페이스의 대안 탐색(`variant`)이다.[](source:ei-judge)
 
 @answer scope="원본 6개 30,484B · 커밋 0465878 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source ei-skill title="design/jakubkrehel/explain-interface/SKILL.md · 8495B · 지시 본문" path=design/jakubkrehel/explain-interface/SKILL.md
 @source ei-oa title="design/jakubkrehel/explain-interface/agents/openai.yaml · 160B · 표시 이름과 호출 정책" path=design/jakubkrehel/explain-interface/agents/openai.yaml lines=1:5
 @source ef-all title="design/jakubkrehel/explain-interface/find-the-effect.md · 6340B · 효과 하나의 layer를 찾는 레시피" path=design/jakubkrehel/explain-interface/find-the-effect.md

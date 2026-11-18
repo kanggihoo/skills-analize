@@ -8,7 +8,7 @@
 - 결과가 불확실하면 에이전트는 성공·롤백·안전한 재시도를 주장하지 않는다.[](source:eh-visible)
 
 @answer scope="deepseek-harness/dsh-error-handling · 원본 텍스트 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source eh-fm title="deepseek-harness/dsh-error-handling/SKILL.md · 2389B · frontmatter" path=deepseek-harness/dsh-error-handling/SKILL.md lines=1:4
 @source eh-intro title="SKILL.md · 목적" path=deepseek-harness/dsh-error-handling/SKILL.md lines=8:8
 @source eh-typed title="SKILL.md · 타입 있는 구조적 실패" path=deepseek-harness/dsh-error-handling/SKILL.md lines=12:12

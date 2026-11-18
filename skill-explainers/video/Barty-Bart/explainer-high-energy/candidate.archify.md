@@ -8,7 +8,7 @@
 - 큰 변화는 박자에, 글자 움직임은 1/8이나 1/16 음표에 맞춘다. 최종 렌더는 서브프레임 8개로 오래 돌린다.[](source:h-grid)[](source:h-final)
 
 @answer scope="video/Barty-Bart/explainer-high-energy · 원본 텍스트 2개 · 커밋 23e8047 · 렌더 결과 미확인 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source h-fm title="video/Barty-Bart/explainer-high-energy/SKILL.md · 20756B · frontmatter" path=video/Barty-Bart/explainer-high-energy/SKILL.md lines=1:4
 @source h-intro title="SKILL.md · 목적" path=video/Barty-Bart/explainer-high-energy/SKILL.md lines=8:10
 @source h-ask title="SKILL.md · 질문은 한 메시지" path=video/Barty-Bart/explainer-high-energy/SKILL.md lines=14:14

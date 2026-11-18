@@ -8,7 +8,7 @@
 - 근거에 실행 횟수, 편차, 이름 붙은 한계 요인 중 하나라도 없으면 이 원칙을 건너뛴 것이다.[](source:skipped)
 
 @answer scope="pstack/principle-explain-the-number · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-explain-the-number/SKILL.md · 2109B · 원칙 본문(frontmatter)" path=pstack/principle-explain-the-number/SKILL.md lines=1:5
 @source rule title="pstack/principle-explain-the-number/SKILL.md · 규칙" path=pstack/principle-explain-the-number/SKILL.md lines=9:9
 @source why title="pstack/principle-explain-the-number/SKILL.md · 이유" path=pstack/principle-explain-the-number/SKILL.md lines=11:11

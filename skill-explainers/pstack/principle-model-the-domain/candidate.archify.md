@@ -8,7 +8,7 @@
 - `poteto-mode`는 에이전트가 코드를 쓸 때마다 데이터 모양을 먼저 정하고, 그 구조를 이 원칙으로 고르게 한다.[](source:pm-code)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/principle-model-the-domain/SKILL.md · 2082B · frontmatter" path=pstack/principle-model-the-domain/SKILL.md lines=1:5
 @source skill-intro title="SKILL.md · 도입부" path=pstack/principle-model-the-domain/SKILL.md lines=9:9
 @source skill-why title="SKILL.md · Why" path=pstack/principle-model-the-domain/SKILL.md lines=11:11

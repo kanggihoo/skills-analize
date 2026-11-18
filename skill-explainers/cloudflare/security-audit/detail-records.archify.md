@@ -3,7 +3,7 @@
 이 페이지는 개요의 `findings 작성` 노드, 곧 Phase 4를 맡는다. 시작 입력은 verifier가 판정한 record와 coverage ledger다. 끝 출력은 fingerprint 순으로 정렬한 `findings.json`이고, 검증기 두 개가 통과해야 한다. 이후 개요의 `최종 검증`으로 이어진다.[](source:val-p4-write)
 
 @answer scope="cloudflare/security-audit · VALIDATION-AND-REPORTING.md 95~118줄, report-schema.json, 검증기 두 개 · 지시상 동작과 코드 확인"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source val-p4-write title="findings.json 작성" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=97:101
 @source val-p4-schema title="verdict별 계약" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=103:109
 @source val-p4-run title="검증기 실행과 한도" path=cloudflare/security-audit/VALIDATION-AND-REPORTING.md lines=111:118

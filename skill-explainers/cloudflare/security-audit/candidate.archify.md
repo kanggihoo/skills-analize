@@ -8,7 +8,7 @@
 - 대상 소스를 고치지 않고, 배포된 endpoint에 접속하지 않으며, 샌드박스 통제를 모두 걸 수 없으면 대상 코드를 실행하지 않는다.[](source:skm-fix)[](source:skm-safety)
 
 @answer scope="cloudflare/security-audit · 원본 파일 20개 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source skm-fm title="frontmatter" path=cloudflare/security-audit/SKILL.md lines=1:4
 @source skm-purpose title="목적 정의" path=cloudflare/security-audit/SKILL.md lines=6:8
 @source skm-modes title="운영 모드 선택" path=cloudflare/security-audit/SKILL.md lines=10:17

@@ -8,7 +8,7 @@
 - 에이전트는 모든 지적을 네 칸(Act on, Consider, Noted, Dismissed)으로 나누고, 버린 지적도 이유와 함께 보여 준다.[](source:skill-judge)[](source:lead-calib)
 
 @answer scope="pstack/interrogate · 원본 텍스트 파일 5개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/interrogate/SKILL.md · 5054B · 본문(frontmatter)" path=pstack/interrogate/SKILL.md lines=1:5
 @source skill-intro title="pstack/interrogate/SKILL.md · 목적" path=pstack/interrogate/SKILL.md lines=9:11
 @source skill-scope title="pstack/interrogate/SKILL.md · Step 1" path=pstack/interrogate/SKILL.md lines=13:21

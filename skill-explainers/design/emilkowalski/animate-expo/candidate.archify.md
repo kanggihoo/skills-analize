@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 웹 애니메이션이다. description이 그때는 `animate`를 쓰라고 한다.[](source:ex-fm)
 
 @answer scope="design/emilkowalski/animate-expo · 원본 텍스트 2개 34,699B · 커밋 4e3fc89 · 지시상 동작 · 설치 명령과 레시피 코드는 읽기만 하고 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ex-fm title="design/emilkowalski/animate-expo/SKILL.md · 17891B · frontmatter" path=design/emilkowalski/animate-expo/SKILL.md lines=1:4
 @source ex-init title="SKILL.md · 첫 응답" path=design/emilkowalski/animate-expo/SKILL.md lines=8:14
 @source ex-why title="SKILL.md · 모바일이 바꾸는 세 가지" path=design/emilkowalski/animate-expo/SKILL.md lines=16:22

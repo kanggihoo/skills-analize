@@ -8,7 +8,7 @@
 - 부르지 않는 경우: Standard scan과 Deep Scan worker는 자기 workflow 안에서 validation을 직접 하고 이 스킬을 호출하지 않는다.[](source:integ)
 
 @answer scope="로컬 원본 분석 · 스킬·도구·스크립트 실행 없음 · 사람 검토 미실시"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source fm title="frontmatter와 description" path=codex-security/plugins/codex-security/skills/validation/SKILL.md lines=1:4
 @source purpose title="목적과 읽을 reference" path=codex-security/plugins/codex-security/skills/validation/SKILL.md lines=8:8
 @source st1 title="후보 주장 분해" path=codex-security/plugins/codex-security/skills/validation/SKILL.md lines=12:12

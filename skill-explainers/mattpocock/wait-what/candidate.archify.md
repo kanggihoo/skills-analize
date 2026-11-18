@@ -7,7 +7,7 @@
 - 용어는 저장소의 `GLOSSARY.md`에 있는 공용어를 쓴다. 저장소에 용어집이 여럿이면 `GLOSSARY-MAP.md`를 따라 맞는 것을 고른다.[](source:skill-body)
 
 @answer scope="mattpocock/wait-what · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0f0d1b0403587dece9a32f5ca561cffc7e823a74
 @source skill-fm title="mattpocock/wait-what/SKILL.md · 396B · frontmatter" path=mattpocock/wait-what/SKILL.md lines=1:5
 @source skill-body title="SKILL.md · 본문" path=mattpocock/wait-what/SKILL.md lines=7:7
 @source oa-yaml title="mattpocock/wait-what/agents/openai.yaml · 158B · 호출 정책" path=mattpocock/wait-what/agents/openai.yaml lines=1:5

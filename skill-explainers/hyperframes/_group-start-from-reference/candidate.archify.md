@@ -8,7 +8,7 @@
 - 판정: 안내표는 요청마다 읽을 곳을 하나씩 가리키는 표이고, 세 스킬을 이어서 쓰라는 문장은 원문에 없다.[](source:hf-route)
 
 @answer scope="스킬 4개 · 읽은 파일 17개 · CLI 실행 없음 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source hf-desc title="description" path=hyperframes/hyperframes/SKILL.md lines=1:4
 @source hf-plugin title="plugin 규칙과 사용 beacon" path=hyperframes/hyperframes/SKILL.md lines=6:8
 @source hf-intro title="HyperFrames의 렌더 방식" path=hyperframes/hyperframes/SKILL.md lines=10:12

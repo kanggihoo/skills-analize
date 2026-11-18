@@ -8,7 +8,7 @@
 - `blast-radius`는 `why` 2단계를 써서 PR과 commit을 가져오고, 변경이 크거나 넓으면 `arena`를 돌린다.[](source:br-why)[](source:br-arena)
 
 @answer scope="pstack/understand 묶음 · 스킬 5개와 호출 대상의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source how-fm title="pstack/how/SKILL.md · 3077B · frontmatter" path=pstack/how/SKILL.md lines=1:5
 @source how-model title="pstack/how/SKILL.md · 모델 규칙" path=pstack/how/SKILL.md lines=11:11
 @source why-fm title="pstack/why/SKILL.md · 10360B · frontmatter" path=pstack/why/SKILL.md lines=1:5

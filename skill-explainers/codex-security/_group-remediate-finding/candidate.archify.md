@@ -8,7 +8,7 @@
 - 원문이 서로 다르게 말하는 곳이 두 군데 있다: 상태 전이(R83)와 `verify-fix`·`fix-finding`의 검증 중복(R30). 어느 쪽이 우선인지 원문에 명시가 없어 아래 표에 둘 다 보여 준다.
 
 @answer scope="스킬 5개 · R27~R31, R75, R83 · 실행 없음 · 구현 파일은 줄 범위만"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source t-front title="활성화 설명(frontmatter)" path=codex-security/plugins/codex-security/skills/triage-finding/SKILL.md lines=1:4
 @source t-core title="목적과 실행 경계" path=codex-security/plugins/codex-security/skills/triage-finding/SKILL.md lines=8:10
 @source t-intake title="입력 종류와 finding이 없을 때" path=codex-security/plugins/codex-security/skills/triage-finding/SKILL.md lines=12:14

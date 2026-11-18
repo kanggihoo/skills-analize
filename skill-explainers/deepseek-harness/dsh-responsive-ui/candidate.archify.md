@@ -8,7 +8,7 @@
 - 모바일 텍스트 칸은 `(pointer: coarse)`에서 글자 크기 16px 이상이다.[](source:in-coarse)
 
 @answer scope="dsh-responsive-ui · 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-responsive-ui/SKILL.md · 4423B · frontmatter" path=deepseek-harness/dsh-responsive-ui/SKILL.md lines=1:4
 @source min-vp title="SKILL.md · 1. Minimum viewport" path=deepseek-harness/dsh-responsive-ui/SKILL.md lines=10:10
 @source ord-seq title="SKILL.md · 2-1 조정 순서" path=deepseek-harness/dsh-responsive-ui/SKILL.md lines=14:14

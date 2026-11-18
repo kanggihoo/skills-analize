@@ -8,7 +8,7 @@
 - 표본별 기대 판정은 원문에 명시 없음. 평가 실행기와 기대 판정 파일은 이 저장소에 없다(R90). 부분 분석은 아니다. 스킬 폴더와 표본 파일은 모두 읽었다.
 
 @answer scope="스킬 1개 · 표본 4개 · 기대 판정 원문에 명시 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source cs-front title="frontmatter" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=1:4
 @source cs-purpose title="목적과 MCP 불필요" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=8:8
 @source cs-clean title="신뢰할 workspace 조건" path=codex-security/plugins/codex-security/skills/check-skills/SKILL.md lines=12:12

@@ -8,7 +8,7 @@
 - 사람 개입: 질문 없이 스킬만 부르면 에이전트는 준비됐다는 한 문장만 답하고 사용자의 질문을 기다린다.[](source:ad-init)
 
 @answer scope="design/emilkowalski/apple-design · 원본 텍스트 1개(SKILL.md 23,036B) · 커밋 4e3fc89 · 번역본 제외 · 원칙형이라 실행 절차 없음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ad-fm title="design/emilkowalski/apple-design/SKILL.md · 23036B · frontmatter" path=design/emilkowalski/apple-design/SKILL.md lines=1:4
 @source ad-init title="SKILL.md · 첫 응답 규칙" path=design/emilkowalski/apple-design/SKILL.md lines=8:14
 @source ad-thru title="SKILL.md · 출처와 관통하는 원칙" path=design/emilkowalski/apple-design/SKILL.md lines=16:18

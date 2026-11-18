@@ -8,7 +8,7 @@
 - 답은 결론부터 쓴다. 예시 프롬프트는 하나까지만 주고, 사용자가 전체 지도를 요청하지 않았으면 답을 짧게 끝낸다.[](source:reply)
 
 @answer scope="pstack/poteto-help · 원본 텍스트 파일 3개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/poteto-help/SKILL.md · 12884B · 본문(frontmatter)" path=pstack/poteto-help/SKILL.md lines=1:5
 @source purpose title="pstack/poteto-help/SKILL.md · 목적" path=pstack/poteto-help/SKILL.md lines=9:9
 @source work-msg title="pstack/poteto-help/SKILL.md · 일 요청 처리" path=pstack/poteto-help/SKILL.md lines=11:11

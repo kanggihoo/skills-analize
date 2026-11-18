@@ -8,7 +8,7 @@
 - 스크립트 코드를 읽었지만 실행해 보지는 않았다. 아래 동작은 모두 지시상 동작이고, 코드에서 어긋난 곳은 판정으로 표시했다.
 
 @answer scope="텍스트 22개 · XSD 39개 표본 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=b825733a707f8debae1a9b5d6e4e796c343b8ae1
 @source fm title="SKILL.md · 6897B · frontmatter(name, description, license)" path=anthropics/docx/SKILL.md lines=1:5
 @source tbl title="SKILL.md · 작업별 접근 표" path=anthropics/docx/SKILL.md lines=9:15
 @source npm title="SKILL.md · docx는 사전 설치, npm install 먼저 금지" path=anthropics/docx/SKILL.md lines=21:21

@@ -8,7 +8,7 @@
 - 이 스킬은 `disable-model-invocation: true`라서 모델이 `description`만 보고 스스로 켜지 못한다고 판정한다.[](source:rs-fm)
 
 @answer scope="egm/egm-resolve · 텍스트 5개 · 커밋 d494974 · 실행 안 함 · 지시상 동작 · 조사 상태 완료"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source rs-fm title="egm/egm-resolve/SKILL.md · 8541B · frontmatter" path=egm/egm-resolve/SKILL.md lines=1:10
 @source rs-docs title="egm/egm-resolve/SKILL.md · 먼저 읽으라는 docs 안내" path=egm/egm-resolve/SKILL.md lines=14:15
 @source rs-overview title="egm/egm-resolve/SKILL.md · 개요" path=egm/egm-resolve/SKILL.md lines=17:22

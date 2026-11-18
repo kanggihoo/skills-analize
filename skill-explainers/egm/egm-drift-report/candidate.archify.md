@@ -8,7 +8,7 @@
 - 산출물은 `{YYYY-MM-DD}_DRIFT_REPORT.md` 하나다. 코드나 문서를 고치라는 지시는 원문에 명시 없음.[](source:dr-report)
 
 @answer scope="egm/egm-drift-report · 텍스트 5개 · 커밋 d494974 · 실행 안 함 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source dr-fm title="egm/egm-drift-report/SKILL.md · 3169B · frontmatter" path=egm/egm-drift-report/SKILL.md lines=2:9
 @source dr-ptr title="SKILL.md · 첫머리 host 문서 안내" path=egm/egm-drift-report/SKILL.md lines=14:15
 @source dr-goal title="SKILL.md · 목표" path=egm/egm-drift-report/SKILL.md lines=17:19

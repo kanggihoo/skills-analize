@@ -8,7 +8,7 @@
 - 이 묶음의 조사 상태는 **부분 분석**이다. 리뷰어 정의 파일과 기준 문서가 저장소에 없어서 리뷰어가 실제로 무엇을 보는지는 확인하지 못했다.
 
 @answer scope="egm · review · review-loop · resolve · 커밋 d494974 · 지시상 동작 · 리뷰어 정의와 기준 문서는 확인하지 못함(부분 분석)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source r-rv-off title="egm/egm-review/SKILL.md · 호출 제한" path=egm/egm-review/SKILL.md lines=4:4
 @source r-lp-off title="egm/egm-review-loop/SKILL.md · 호출 제한" path=egm/egm-review-loop/SKILL.md lines=4:4
 @source r-rs-off title="egm/egm-resolve/SKILL.md · 호출 제한" path=egm/egm-resolve/SKILL.md lines=4:4

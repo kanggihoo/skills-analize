@@ -8,7 +8,7 @@
 - 리뷰 단계의 내부 규칙과 수치는 `egm/_group-review-and-fix/review-and-fix.html`과 `egm/egm-review/egm-review.html`에 있다.
 
 @answer scope="egm · brainstorm · draft · review · 커밋 d494974 · 지시상 동작 · 서브에이전트 정의와 기준 문서는 확인하지 못함(부분 분석)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source i-bs-off title="egm/egm-brainstorm/SKILL.md · 호출 제한" path=egm/egm-brainstorm/SKILL.md lines=4:4
 @source i-dr-off title="egm/egm-draft/SKILL.md · 호출 제한" path=egm/egm-draft/SKILL.md lines=4:4
 @source i-rv-off title="egm/egm-review/SKILL.md · 호출 제한" path=egm/egm-review/SKILL.md lines=4:4

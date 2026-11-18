@@ -3,7 +3,7 @@
 이 페이지는 개요의 `모드 판단?`, `안내 답변`, `감사 설정` 노드를 맡는다. 시작 입력은 사용자 요청과 target 경로다. 끝 출력은 출력 폴더와 `run-metadata.json`이고, 그 뒤에는 개요의 `정찰`로 이어진다. 안내 모드로 가면 `안내 답변`에서 끝난다.
 
 @answer scope="cloudflare/security-audit · SKILL.md 10~86줄 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source skm-modes title="운영 모드 선택" path=cloudflare/security-audit/SKILL.md lines=10:17
 @source skm-safety title="실행 안전 규칙" path=cloudflare/security-audit/SKILL.md lines=31:42
 @source skm-setup title="전체 감사 설정값" path=cloudflare/security-audit/SKILL.md lines=44:52

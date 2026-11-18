@@ -7,7 +7,7 @@
 - 판정: `motion-broll`이 만드는 `preview.mp4`를 `sound-effects`의 입력으로 쓴다는 말은 원문에 명시 없음이다. 쓰면 코드가 입력 영상의 오디오를 버린다.[](source:th-se-map)
 
 @answer scope="video/Barty-Bart motion-broll · sound-effects · object-separation · 커밋 23e8047 · 지시상 동작 · 영상·소리 결과는 확인하지 못함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source th-mb-fm title="video/Barty-Bart/motion-broll/SKILL.md · 8941B · frontmatter" path=video/Barty-Bart/motion-broll/SKILL.md lines=1:4
 @source th-mb-interview title="motion-broll/SKILL.md · 2단계 인터뷰" path=video/Barty-Bart/motion-broll/SKILL.md lines=29:44
 @source th-mb-approve title="motion-broll/SKILL.md · 계획 승인" path=video/Barty-Bart/motion-broll/SKILL.md lines=60:84

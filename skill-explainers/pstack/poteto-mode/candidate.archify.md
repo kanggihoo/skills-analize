@@ -8,7 +8,7 @@
 - PR 상태 확인, 장기 프로그램 장부, 계획서 검사, worktree 감사에는 각각 전용 스크립트를 쓴다.[](source:pb-babysit-watch)[](source:orch-store)
 
 @answer scope="pstack/poteto-mode · 원본 텍스트 파일 44개(326,154B) · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/poteto-mode/SKILL.md · 20559B · frontmatter" path=pstack/poteto-mode/SKILL.md lines=1:9
 @source nn-head title="SKILL.md · Non-negotiables 도입" path=pstack/poteto-mode/SKILL.md lines=13:17
 @source nn-how title="SKILL.md · how 트리거" path=pstack/poteto-mode/SKILL.md lines=19:19

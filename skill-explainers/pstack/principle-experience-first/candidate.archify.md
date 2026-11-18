@@ -8,7 +8,7 @@
 - 이 원칙은 일의 목표를 정한다. 일의 순서는 기초 설계 원칙(`principle-foundational-thinking`)이 정한다.[](source:target)
 
 @answer scope="pstack/principle-experience-first · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-experience-first/SKILL.md · 1184B · 원칙 본문(frontmatter)" path=pstack/principle-experience-first/SKILL.md lines=1:5
 @source rule title="pstack/principle-experience-first/SKILL.md · 규칙" path=pstack/principle-experience-first/SKILL.md lines=9:9
 @source list title="pstack/principle-experience-first/SKILL.md · 다섯 가지 지침" path=pstack/principle-experience-first/SKILL.md lines=11:15

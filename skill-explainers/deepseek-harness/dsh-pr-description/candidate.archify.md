@@ -8,7 +8,7 @@
 - 설명은 PR을 만들 때 완성하고, 이후에는 PR과 어긋난 절만 고쳐 쓴다.[](source:pd-scope)
 
 @answer scope="deepseek-harness/dsh-pr-description · 원본 텍스트 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source pd-fm title="deepseek-harness/dsh-pr-description/SKILL.md · 18973B · frontmatter" path=deepseek-harness/dsh-pr-description/SKILL.md lines=1:5
 @source pd-intro title="SKILL.md · 목적과 템플릿 관계" path=deepseek-harness/dsh-pr-description/SKILL.md lines=9:9
 @source pd-scope title="SKILL.md · Scope" path=deepseek-harness/dsh-pr-description/SKILL.md lines=13:15

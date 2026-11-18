@@ -8,7 +8,7 @@
 - 판정: 사용자에게 묻거나 commit 전에 확인받는 단계가 없다.[](source:skill-intro)[](source:skill-workflow)
 
 @answer scope="mattpocock/scaffold-exercises · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/scaffold-exercises/SKILL.md · 3589B · frontmatter" path=mattpocock/scaffold-exercises/SKILL.md lines=1:4
 @source skill-intro title="SKILL.md · 목표(린트와 커밋)" path=mattpocock/scaffold-exercises/SKILL.md lines=8:8
 @source skill-naming title="SKILL.md · 폴더 이름 규칙" path=mattpocock/scaffold-exercises/SKILL.md lines=10:15

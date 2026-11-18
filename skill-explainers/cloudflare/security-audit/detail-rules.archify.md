@@ -3,7 +3,7 @@
 이 페이지는 `ATTACK-CLASSES.md`와 도메인 지침 열 개를 맡는다. 개요의 `정찰`이 어떤 파일을 고를지 정하고 `사냥`의 hunter 지시문이 그 원문을 복사한다. 원칙형이라 순서를 만들지 않고 규칙표와 선택 조건으로 보인다. 시작 입력은 정찰이 찾은 trust boundary이고, 끝 출력은 ledger unit의 `selected_companion_blocks`와 hunter 지시문 4번 부분이다.[](source:atk-route)
 
 @answer scope="cloudflare/security-audit · ATTACK-CLASSES.md와 도메인 지침 10개 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source atk-intro title="attack class 사용 원칙" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=3:7
 @source atk-route title="도메인 지침 연결" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=9:27
 @source atk-inj title="Injection" path=cloudflare/security-audit/ATTACK-CLASSES.md lines=29:37

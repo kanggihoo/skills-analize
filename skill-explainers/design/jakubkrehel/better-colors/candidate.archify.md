@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 그 쌍이 통과해야 하는지의 판단은 `better-accessibility`, 표면·shadow·아이콘 색은 `better-ui` 몫이다. 표기법, tinted neutral, gradient 보간 공간은 프로젝트의 선택이지 발견이 아니다.[](source:bc-bound)[](source:bc-intro)
 
 @answer scope="design/jakubkrehel/better-colors · 원본 텍스트 8개 38,486B · 커밋 0465878 · 관계 확인용으로 다른 스킬 줄만 읽음 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source bc-fm title="design/jakubkrehel/better-colors/SKILL.md · 7698B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-colors/SKILL.md lines=1:4
 @source bc-intro title="SKILL.md · 하는 일과 발견이 아닌 것" path=design/jakubkrehel/better-colors/SKILL.md lines=8:10
 @source bc-bound title="SKILL.md · 다른 스킬의 몫" path=design/jakubkrehel/better-colors/SKILL.md lines=12:12

@@ -7,7 +7,7 @@ emilkowalski의 모션 스킬 여섯 개는 한 줄로 이어진 파이프라인
 - 그런데 `review-animations`는 `disable-model-invocation: true`라 모델이 스스로 켜지 못한다. 리뷰를 받으려면 사용자가 직접 불러야 한다.[](source:rv-fm)
 
 @answer scope="design/emilkowalski 모션 스킬 여섯 개 · 커밋 4e3fc89 · 지시상 동작 · 스킬 간 관계는 원장 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source an-fm title="design/emilkowalski/animate/SKILL.md · frontmatter" path=design/emilkowalski/animate/SKILL.md lines=1:4
 @source an-16 title="animate/SKILL.md · 하는 일 하나와 다른 스킬의 몫" path=design/emilkowalski/animate/SKILL.md lines=16:16
 @source an-20 title="animate/SKILL.md · review-animations와 같은 기준" path=design/emilkowalski/animate/SKILL.md lines=20:20

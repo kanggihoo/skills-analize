@@ -8,7 +8,7 @@
 - 에이전트는 큰 수정, `description` 조정, 새 스킬 만들기를 Cursor 내장 `create-skill`에 넘긴다.[](source:apply)
 
 @answer scope="pstack/reflect · 원본 텍스트 파일 5개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/reflect/SKILL.md · 4982B · 본문(frontmatter)" path=pstack/reflect/SKILL.md lines=1:5
 @source purpose title="pstack/reflect/SKILL.md · 목적" path=pstack/reflect/SKILL.md lines=9:9
 @source when title="pstack/reflect/SKILL.md · When to invoke" path=pstack/reflect/SKILL.md lines=11:13

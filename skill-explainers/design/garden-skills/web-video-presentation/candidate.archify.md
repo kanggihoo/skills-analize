@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 원문은 사용 금지 작업을 따로 적지 않는다. 소재 없이 "X 주제 영상 만들어 줘"라고만 하면 에이전트가 소재를 먼저 달라고 되묻는다. 스킬이 내용을 대신 구상하지 않는다.[](source:sk-input)
 
 @answer scope="design/garden-skills/web-video-presentation v1.2.2 · 원본 텍스트 94개 중 41개 정독, 53개 구조·표본 · 커밋 4e3fc89 · 지시상 동작 · 스크립트·TTS 실행 안 함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source sk-fm title="design/garden-skills/web-video-presentation/SKILL.md · 23239B · frontmatter(중국어 원본)" path=design/garden-skills/web-video-presentation/SKILL.md lines=1:4
 @source sk-scope title="SKILL.md · 적용 장면과 결과물" path=design/garden-skills/web-video-presentation/SKILL.md lines=8:21
 @source sk-flow title="SKILL.md · 작업 흐름 개요" path=design/garden-skills/web-video-presentation/SKILL.md lines=25:49

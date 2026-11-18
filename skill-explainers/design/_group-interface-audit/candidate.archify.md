@@ -8,7 +8,7 @@ jakubkrehel의 리뷰 스킬 여덟 개는 `better-interface`가 중심이다. �
 - 도메인 스킬 여섯 개는 서로 "이건 저 스킬의 몫"이라고 경계를 적을 뿐, 서로 실행하라는 지시는 없다(r75~r99).[](source:acc-own)[](source:lay-own)
 
 @answer scope="design/jakubkrehel 리뷰 스킬 8개 · 커밋 0465878 · 지시상 동작 · 스킬 간 관계는 원장 rel-id 기준 · 스킬을 실행해 확인하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source bi-fm title="design/jakubkrehel/better-interface/SKILL.md · frontmatter(호출 제한 없음)" path=design/jakubkrehel/better-interface/SKILL.md lines=1:4
 @source bi-own title="better-interface/SKILL.md · 오케스트레이션만 소유한다" path=design/jakubkrehel/better-interface/SKILL.md lines=8:12
 @source bi-ir title="better-interface/SKILL.md · 변경은 interface-review로 보낸다" path=design/jakubkrehel/better-interface/SKILL.md lines=28:32

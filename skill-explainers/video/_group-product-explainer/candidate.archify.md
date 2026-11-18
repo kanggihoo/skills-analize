@@ -7,7 +7,7 @@
 - 세 스킬은 서로를 부르지 않는다. 앞뒤 순서도 없다.
 
 @answer scope="video/Barty-Bart explainer 3종 · 커밋 23e8047 · 지시상 동작 · 렌더 결과는 확인하지 못함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source pe-def-fm title="video/Barty-Bart/explainer-default/SKILL.md · 21739B · frontmatter" path=video/Barty-Bart/explainer-default/SKILL.md lines=1:4
 @source pe-def-page title="explainer-default/SKILL.md · 페이지 구성 한 줄" path=video/Barty-Bart/explainer-default/SKILL.md lines=10:10
 @source pe-q-def title="explainer-default/SKILL.md · 1단계 질문 일곱 개" path=video/Barty-Bart/explainer-default/SKILL.md lines=14:22

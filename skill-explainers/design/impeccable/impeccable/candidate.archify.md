@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 백엔드 전용이나 UI가 아닌 작업이다. `live`·`generate`·`detect`는 웹 전용이라 native 프로젝트에는 쓰지 않는다.[](source:sm-fm)[](source:rt-menu)
 
 @answer scope="design/impeccable/impeccable v4.8.0 · 엔진 0.1.18 · 커밋 4e3fc89 · 원본 텍스트 57개 537,328B 전부 읽음 · 큰 번들 6개는 구조·표본만 · 엔진 바이너리는 저장소에 없어 지시상 동작만 서술 · 스크립트는 읽기만 하고 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source sm-fm title="design/impeccable/impeccable/SKILL.md · 11762B · 진입점과 명령 표" path=design/impeccable/impeccable/SKILL.md lines=1:6
 @source sm-principles title="SKILL.md · 핵심 원칙" path=design/impeccable/impeccable/SKILL.md lines=8:13
 @source sm-setup title="SKILL.md · `Setup`과 launcher 실패 처리" path=design/impeccable/impeccable/SKILL.md lines=15:21

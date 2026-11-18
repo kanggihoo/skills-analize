@@ -8,7 +8,7 @@
 - 이 분석은 예시 명령을 실행하지 않았고 URL에 접속하지 않았다. 부분 분석이 아니다. 표본 파일 하나를 모두 읽었다.
 
 @answer scope="평가 입력 1개(SKILL.md 1개) · 지시상 동작만 서술 · 명령 미실행 · 외부 URL 미접속 · 기대 판정 원문에 명시 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source sg-front title="frontmatter" path=codex-security/evals/check-skills/fixtures/style-guide/SKILL.md lines=1:4
 @source sg-body title="본문 지시" path=codex-security/evals/check-skills/fixtures/style-guide/SKILL.md lines=6:12
 @source sg-cmd title="예시 명령 코드 블록" path=codex-security/evals/check-skills/fixtures/style-guide/SKILL.md lines=8:10

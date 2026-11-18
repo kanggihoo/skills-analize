@@ -3,7 +3,7 @@
 이 페이지는 개요의 `사냥`과 `범위 점검?` 노드, 곧 Phase 2를 맡는다. 시작 입력은 `planned` 상태의 ledger unit과 `architecture.md`다. 끝 출력은 갱신된 ledger와 fingerprint가 붙은 후보다. critic이 수락할 작업이 없고 `planned` unit도 없으면 개요의 `후보 검증`으로 이어진다. quick 프로필은 정해진 한도에서, 예산이 모자라면 `deferred`로 일을 미루고 끝난다.[](source:hun-critic)
 
 @answer scope="cloudflare/security-audit · HUNTING.md 전체 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source hun-assign title="hunter 배정" path=cloudflare/security-audit/HUNTING.md lines=3:9
 @source hun-prompt title="hunter 지시문 아홉 부분" path=cloudflare/security-audit/HUNTING.md lines=11:25
 @source hun-m-read title="사냥 방법: 깊이 읽기와 invariant" path=cloudflare/security-audit/HUNTING.md lines=37:56

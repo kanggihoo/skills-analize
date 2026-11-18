@@ -7,7 +7,7 @@
 - `scripts/office/` 폴더는 세 스킬에서 파일 단위로 동일하다. 하지만 SKILL.md가 쓰라고 지시하는 범위는 스킬마다 다르다.[](source:d-val)[](source:p-tools)[](source:x-dep)
 
 @answer scope="anthropics 묶음 office-ooxml · 커밋 b825733 · 스킬 페이지 3개와 원장 r01~r06을 대조 · 실행하지 않음(지시상 동작)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=b825733a707f8debae1a9b5d6e4e796c343b8ae1
 @source d-top title="anthropics/docx/SKILL.md · 방식 선택 표" path=anthropics/docx/SKILL.md lines=7:17
 @source d-val title="anthropics/docx/SKILL.md · 렌더링과 validate.py" path=anthropics/docx/SKILL.md lines=37:57
 @source p-top title="anthropics/pptx/SKILL.md · 방식 선택 표" path=anthropics/pptx/SKILL.md lines=7:19

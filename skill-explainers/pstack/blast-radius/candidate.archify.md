@@ -8,7 +8,7 @@
 - 에이전트는 증명하지 못한 안전 사실을 "증명 안 됨(unproven)"으로 표시해 돌려준다.[](source:out)
 
 @answer scope="pstack/blast-radius · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/blast-radius/SKILL.md · 3851B · 본문(frontmatter)" path=pstack/blast-radius/SKILL.md lines=1:5
 @source core title="pstack/blast-radius/SKILL.md · 목적, how·why 관계" path=pstack/blast-radius/SKILL.md lines=9:13
 @source writeup title="pstack/blast-radius/SKILL.md · 글을 믿지 마라" path=pstack/blast-radius/SKILL.md lines=15:17

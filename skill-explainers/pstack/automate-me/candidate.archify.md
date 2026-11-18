@@ -8,7 +8,7 @@
 - 에이전트는 결과를 `main`에 직접 push하지 않는다. worktree에서 commit하고 PR을 연다.[](source:step6)
 
 @answer scope="pstack/automate-me · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/automate-me/SKILL.md · 7164B · 본문(frontmatter)" path=pstack/automate-me/SKILL.md lines=1:5
 @source intro title="pstack/automate-me/SKILL.md · 목적과 엮는 스킬" path=pstack/automate-me/SKILL.md lines=9:11
 @source step0 title="pstack/automate-me/SKILL.md · 0. 기존 스킬 확인" path=pstack/automate-me/SKILL.md lines=15:25

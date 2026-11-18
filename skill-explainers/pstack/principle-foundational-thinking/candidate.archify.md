@@ -8,7 +8,7 @@
 - 골격보다 빼기가 먼저다. 죽은 코드를 먼저 지우고 기초를 놓는다.[](source:subtract)
 
 @answer scope="pstack/principle-foundational-thinking · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-foundational-thinking/SKILL.md · 1530B · 원칙 본문(frontmatter)" path=pstack/principle-foundational-thinking/SKILL.md lines=1:5
 @source layers title="pstack/principle-foundational-thinking/SKILL.md · 두 층의 결정" path=pstack/principle-foundational-thinking/SKILL.md lines=9:9
 @source data title="pstack/principle-foundational-thinking/SKILL.md · 데이터 구조 먼저" path=pstack/principle-foundational-thinking/SKILL.md lines=11:11

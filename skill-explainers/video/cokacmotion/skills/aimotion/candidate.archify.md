@@ -8,7 +8,7 @@
 - 영상을 본 사람이 데모의 장면을 알아보면 실패다. 그러면 대본에서 다시 시작한다.[](source:am-rule)
 
 @answer scope="aimotion · 커밋 f415191 · 지시상 동작 · 데모는 표본만 확인"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=f415191a236e0230db370553888ff9699eb4440d
 @source am-desc title="video/cokacmotion/skills/aimotion/SKILL.md · 9031B · frontmatter" path=video/cokacmotion/skills/aimotion/SKILL.md lines=2:3
 @source am-intro title="aimotion/SKILL.md · 소개" path=video/cokacmotion/skills/aimotion/SKILL.md lines=6:10
 @source am-rule title="aimotion/SKILL.md · 가장 중요한 규칙" path=video/cokacmotion/skills/aimotion/SKILL.md lines=12:35

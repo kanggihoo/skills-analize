@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 기존 UI 리뷰, 기존 UI 수정 계획, 의존성 고르기다. 각각 `review-animations`, `improve-animations`, `pick-ui-library`의 몫이다.[](source:pr-scope)
 
 @answer scope="design/emilkowalski/prototype · 원본 텍스트 2개 15,378B · 커밋 4e3fc89 · 지시상 동작이며 실행해 보지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source pr-fm title="design/emilkowalski/prototype/SKILL.md · 7830B · 지시 본문과 frontmatter" path=design/emilkowalski/prototype/SKILL.md lines=1:5
 @source pr-init title="SKILL.md · 첫 응답" path=design/emilkowalski/prototype/SKILL.md lines=9:15
 @source pr-scope title="SKILL.md · 하는 일과 하지 않는 일" path=design/emilkowalski/prototype/SKILL.md lines=17:17

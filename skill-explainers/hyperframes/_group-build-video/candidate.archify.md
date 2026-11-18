@@ -8,7 +8,7 @@
 - 이 페이지는 **부분 분석**이다. 네 `SKILL.md`는 전체를 읽었고 reference는 인용한 줄만 읽었으며, CLI의 실제 동작은 실행하지 않았다.
 
 @answer scope="hyperframes 컬렉션 · 스킬 4개 · 부분 분석 · CLI 동작은 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source hf-fm title="스킬 frontmatter" path=hyperframes/hyperframes/SKILL.md lines=1:4
 @source hf-cli title="CLI 실행 방식" path=hyperframes/hyperframes/SKILL.md lines=12:12
 @source hf-layout title="프로젝트 구조와 시작 명령" path=hyperframes/hyperframes/SKILL.md lines=14:14

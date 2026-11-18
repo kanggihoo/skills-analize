@@ -7,7 +7,7 @@
 - `prototype`(여러 버전 만들기)과 `break-ui`(최악 데이터로 깨 보기)는 다른 스킬로 넘기지 않는다. 서로를 역할 구분으로만 가리킨다(r16, r21).[](source:br-16)[](source:pr-17)
 
 @answer scope="design/emilkowalski 다섯 스킬 · 커밋 4e3fc89 · 지시상 동작 · 스킬 간 순서는 원장 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source an-fm title="design/emilkowalski/animate/SKILL.md · frontmatter" path=design/emilkowalski/animate/SKILL.md lines=1:4
 @source an-81 title="animate/SKILL.md · 컴포넌트가 필요하면 pick-ui-library 호출" path=design/emilkowalski/animate/SKILL.md lines=81:81
 @source pk-fm title="design/emilkowalski/pick-ui-library/SKILL.md · frontmatter(호출 제한)" path=design/emilkowalski/pick-ui-library/SKILL.md lines=1:5

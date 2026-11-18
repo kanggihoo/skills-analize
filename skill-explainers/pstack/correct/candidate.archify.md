@@ -8,7 +8,7 @@
 - 에이전트는 지시 파일에 규칙과 그 규칙을 강제하는 장치를 짝지은 표를 남긴다.[](source:skill-table)
 
 @answer scope="pstack/correct · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/correct/SKILL.md · 2445B · frontmatter" path=pstack/correct/SKILL.md lines=1:5
 @source skill-goal title="pstack/correct/SKILL.md · 목적과 전제" path=pstack/correct/SKILL.md lines=9:11
 @source skill-find title="pstack/correct/SKILL.md · 실수 묶음 찾기" path=pstack/correct/SKILL.md lines=13:15

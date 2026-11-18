@@ -8,7 +8,7 @@
 - 서브에이전트 세션 약 5개 중 1개는 `retro` 절차로 돌아본다. 이 절차는 `../retro/SKILL.md` 파일을 읽어 따른다.[](source:cos-retro)
 
 @answer scope="mattpocock/chief-of-staff · 원본 텍스트 파일 2개 · 커밋 0f0d1b0 · 실행하지 않음, 지시상 동작만"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source cos-fm title="mattpocock/chief-of-staff/SKILL.md · 4729B · frontmatter" path=mattpocock/chief-of-staff/SKILL.md lines=1:5
 @source cos-yaml title="mattpocock/chief-of-staff/agents/openai.yaml · 184B · 호출 정책" path=mattpocock/chief-of-staff/agents/openai.yaml lines=1:5
 @source cos-role title="mattpocock/chief-of-staff/SKILL.md · 역할과 두 갈래" path=mattpocock/chief-of-staff/SKILL.md lines=7:12

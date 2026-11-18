@@ -8,7 +8,7 @@
 - `NOTES.md`가 비었거나 빈약하면 명세보다 먼저 사용자의 일과 도구를 인터뷰한다.[](source:skill-workspace)
 
 @answer scope="mattpocock/loop-me · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/loop-me/SKILL.md · 2522B · frontmatter" path=mattpocock/loop-me/SKILL.md lines=1:6
 @source skill-run title="SKILL.md · grilling 세션 지시" path=mattpocock/loop-me/SKILL.md lines=8:8
 @source skill-lens title="SKILL.md · 루프 관점" path=mattpocock/loop-me/SKILL.md lines=10:14

@@ -8,7 +8,7 @@
 - 에이전트는 실제로 실행한 명령만 보고한다.[](source:fs-report)
 
 @answer scope="dsh-find-simplifications · 파일 2개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source rel-doc title="dsh-doc/SKILL.md · r47 상대 줄" path=deepseek-harness/dsh-doc/SKILL.md lines=93:93
 @source fs-fm title="deepseek-harness/dsh-find-simplifications/SKILL.md · 11425B · frontmatter" path=deepseek-harness/dsh-find-simplifications/SKILL.md lines=1:4
 @source fs-intro title="SKILL.md · 목적과 범위" path=deepseek-harness/dsh-find-simplifications/SKILL.md lines=8:8

@@ -8,7 +8,7 @@
 - 전부 지울 수 있게 가상환경 폴더 하나에 설치하고, 끝나면 지우는 법을 알려 준다.[](source:os-setup)[](source:os-clean)
 
 @answer scope="object-separation · 텍스트 2개 · 커밋 23e8047 · 실행 안 함 · 영상 결과 미확인 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source os-fm title="video/Barty-Bart/object-separation/SKILL.md · 9414B · frontmatter" path=video/Barty-Bart/object-separation/SKILL.md lines=1:4
 @source os-intro title="SKILL.md · 목적과 코드 블록 안내" path=video/Barty-Bart/object-separation/SKILL.md lines=6:10
 @source os-setup title="SKILL.md · 1단계 가상환경 설치" path=video/Barty-Bart/object-separation/SKILL.md lines=12:21

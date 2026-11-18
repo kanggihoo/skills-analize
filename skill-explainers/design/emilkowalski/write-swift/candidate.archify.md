@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 프로젝트가 Swift 6.1 이하면 `async`·`@concurrent` 규칙이 맞지 않는다. 6.3 이하를 쓰는 프로젝트에 ⚠ 문법을 쓰면 안 된다.[](source:ws-base)[](source:ws-modern-note)
 
 @answer scope="design/emilkowalski/write-swift · 원본 텍스트 1개 42,445B · 커밋 4e3fc89 · 원칙형 스킬이라 규칙표와 원문의 전후 쌍으로 정리 · 코드 예시는 컴파일하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ws-fm title="design/emilkowalski/write-swift/SKILL.md · 42445B · 지시 본문과 frontmatter" path=design/emilkowalski/write-swift/SKILL.md lines=1:4
 @source ws-init title="SKILL.md · 처음 호출될 때의 응답" path=design/emilkowalski/write-swift/SKILL.md lines=8:14
 @source ws-base title="SKILL.md · 툴체인 기준 Swift 6.3과 ⚠ 표시" path=design/emilkowalski/write-swift/SKILL.md lines=16:18

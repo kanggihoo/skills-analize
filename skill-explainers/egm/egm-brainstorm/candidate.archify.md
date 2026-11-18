@@ -8,7 +8,7 @@
 - 칭찬, 맞장구, 사과를 하지 않고, 약점과 반론을 먼저 말한다.[](source:bs-c-stress)
 
 @answer scope="egm/egm-brainstorm · 텍스트 5개 23,580B · 커밋 d494974 · 실행 안 함 · 지시상 동작 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source bs-fm title="egm/egm-brainstorm/SKILL.md · 14769B · frontmatter" path=egm/egm-brainstorm/SKILL.md lines=2:10
 @source bs-ptr title="SKILL.md · 호스트별 먼저 읽을 문서" path=egm/egm-brainstorm/SKILL.md lines=15:16
 @source bs-overview title="SKILL.md · 개요" path=egm/egm-brainstorm/SKILL.md lines=20:25

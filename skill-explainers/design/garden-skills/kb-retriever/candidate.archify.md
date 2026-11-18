@@ -8,7 +8,7 @@
 - 끝나는 때: 답할 근거를 찾았거나, 5회를 채웠는데 못 찾았을 때다. 못 찾으면 없다고 말하고 가장 가까운 정보와 불확실성을 함께 준다.[](source:kb-iter)
 
 @answer scope="design/garden-skills/kb-retriever · 원본 텍스트 7개 36,875B · 커밋 4e3fc89 · SKILL.md는 중국어 원본 · 지시상 동작 · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source kb-fm title="design/garden-skills/kb-retriever/SKILL.md · 13984B · frontmatter(중국어 원본)" path=design/garden-skills/kb-retriever/SKILL.md lines=1:4
 @source kb-root title="SKILL.md · 지식 폴더 구조와 기본 경로" path=design/garden-skills/kb-retriever/SKILL.md lines=8:21
 @source kb-locate title="SKILL.md · knowledge 루트 찾기" path=design/garden-skills/kb-retriever/SKILL.md lines=23:32

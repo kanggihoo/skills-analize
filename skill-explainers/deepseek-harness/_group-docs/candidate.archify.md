@@ -8,7 +8,7 @@
 - 영어·중국어 쌍을 고치는 스킬은 모두, 고친 뒤에 `verify-translation-pairing --write`로 sidecar 기록(번역 쌍의 해시)을 다시 남긴다(r43).[](source:doc-pair)[](source:ug-prose)[](source:td-step5)
 
 @answer scope="deepseek-harness docs 묶음 · 스킬 6개와 경계 스킬 원본 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source doc-fm title="deepseek-harness/dsh-doc/SKILL.md · 18418B · frontmatter" path=deepseek-harness/dsh-doc/SKILL.md lines=1:4
 @source doc-pair title="dsh-doc/SKILL.md · 사실 확인 4~5단계(sidecar 기록)" path=deepseek-harness/dsh-doc/SKILL.md lines=46:47
 @source doc-kind-ug title="dsh-doc/SKILL.md · upgrade-guide 종류" path=deepseek-harness/dsh-doc/SKILL.md lines=60:60

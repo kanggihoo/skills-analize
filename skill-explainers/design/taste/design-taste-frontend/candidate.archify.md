@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: Node 22 이상과 Chrome·Edge·Chromium이 없는 환경이다. 대시보드·앱 화면은 이번 판 description에서 빠졌다.[](source:intro)[](source:fm)
 
 @answer scope="design/taste/design-taste-frontend · 커밋 4e3fc89 · SKILL.md와 references 17개는 전부, scripts는 검사 기준 위주로 읽음 · assets 1,587개는 구조·표본만 · 스크립트는 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source fm title="design/taste/design-taste-frontend/SKILL.md · 21111B · frontmatter" path=design/taste/design-taste-frontend/SKILL.md lines=1:12
 @source intro title="SKILL.md · 목표와 실행 조건(Node 22+, Chrome)" path=design/taste/design-taste-frontend/SKILL.md lines=16:21
 @source hr title="SKILL.md · House rules 머리말" path=design/taste/design-taste-frontend/SKILL.md lines=23:25

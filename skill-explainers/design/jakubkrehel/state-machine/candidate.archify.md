@@ -8,7 +8,7 @@
 - 사람이 개입하는 곳: 범위가 여럿이면 어느 것인지 묻는다. 컴포넌트를 고쳐야만 데이터가 들어가면 seam(데이터를 끼워 넣는 자리)을 더하기 전에 묻는다. 삭제는 사용자가 말한 뒤에 한다.[](source:sm-s1)[](source:sm-s4b)[](source:sm-remove)
 
 @answer scope="design/jakubkrehel/state-machine · 텍스트 3개 13,450B · 커밋 0465878 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source sm-fm title="design/jakubkrehel/state-machine/SKILL.md · 6295B · 지시 본문과 frontmatter" path=design/jakubkrehel/state-machine/SKILL.md lines=1:5
 @source sm-what title="SKILL.md · 하는 일 한 가지" path=design/jakubkrehel/state-machine/SKILL.md lines=9:9
 @source sm-split title="SKILL.md · 워크벤치이고 리뷰가 아니라는 구분과 다른 스킬의 몫" path=design/jakubkrehel/state-machine/SKILL.md lines=11:11

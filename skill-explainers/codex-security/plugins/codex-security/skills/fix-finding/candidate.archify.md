@@ -8,7 +8,7 @@
 - 하지 않는 것은 무관한 정리와 재설계, 사용자의 로컬 변경 삭제, 인증·인가·입력 검증·sandbox·logging을 약하게 만드는 수정이다.[](source:s-hard3)[](source:s-hard4)[](source:s-hard5)
 
 @answer scope="SKILL.md 전체 · 도구 구현은 계약 줄만 · 실행 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source s-front title="frontmatter" path=codex-security/plugins/codex-security/skills/fix-finding/SKILL.md lines=1:4
 @source s-store title="저장 정책 먼저 읽기" path=codex-security/plugins/codex-security/skills/fix-finding/SKILL.md lines=8:8
 @source s-obj title="목적" path=codex-security/plugins/codex-security/skills/fix-finding/SKILL.md lines=10:14

@@ -8,7 +8,7 @@
 - 새 item을 upstream에 기여하는 절차와 item 품질 기준도 이 스킬에 들어 있다. 설치해 쓰는 사용자에게는 필요 없다.[](source:contribptr)
 
 @answer scope="스킬 폴더 텍스트 13개 전부 읽음 · CLI 실행 안 함 · 부분 분석(폴더 밖 참조 미확인)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source front title="frontmatter(name, description)" path=hyperframes/hyperframes-registry/SKILL.md lines=1:4
 @source plugin title="plugin 설치 안내" path=hyperframes/hyperframes-registry/SKILL.md lines=6:6
 @source beacon title="usage beacon" path=hyperframes/hyperframes-registry/SKILL.md lines=8:8

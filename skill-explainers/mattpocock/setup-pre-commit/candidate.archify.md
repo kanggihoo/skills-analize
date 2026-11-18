@@ -8,7 +8,7 @@
 - 판정: commit 전에 사용자 확인을 받으라는 말이 없어서, 이 스킬이 켜지면 commit까지 한 번에 간다.[](source:skill-commit)
 
 @answer scope="mattpocock/setup-pre-commit · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/setup-pre-commit/SKILL.md · 2258B · frontmatter" path=mattpocock/setup-pre-commit/SKILL.md lines=1:4
 @source skill-what title="SKILL.md · 설치하는 것" path=mattpocock/setup-pre-commit/SKILL.md lines=8:13
 @source skill-detect title="SKILL.md · 1단계 패키지 관리자 감지" path=mattpocock/setup-pre-commit/SKILL.md lines=17:19

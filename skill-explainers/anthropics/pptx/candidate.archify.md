@@ -8,7 +8,7 @@
 - 이 스킬은 활성화 제외 조건을 적지 않았다. 그래서 읽기만 하는 요청에도 켜진다.[](source:sk-fm)
 
 @answer scope="anthropics/pptx · 텍스트 파일 56개 중 16개 전부 읽음, 40개 부분 읽음(files.md) · 커밋 b825733"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=b825733a707f8debae1a9b5d6e4e796c343b8ae1
 @source sk-fm title="anthropics/pptx/SKILL.md · 20782B · frontmatter" path=anthropics/pptx/SKILL.md lines=1:5
 @source sk-route title="SKILL.md · 작업별 접근 표" path=anthropics/pptx/SKILL.md lines=9:15
 @source sk-scripts title="SKILL.md · Scripts 표" path=anthropics/pptx/SKILL.md lines=17:27

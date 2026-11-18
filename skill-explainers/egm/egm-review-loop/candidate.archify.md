@@ -8,7 +8,7 @@
 - `egm-resolve`가 사람 결정을 기다리는 동안 루프도 멈춘다. 사용자가 확인해야 다음 라운드로 돌아간다.[](source:rl-turn)
 
 @answer scope="egm-review-loop · 커밋 d494974 · 지시상 동작 · 부분 분석"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=d494974308338f864c9e91e94067a31d33d3543e
 @source rl-fm title="egm/egm-review-loop/SKILL.md · 10325B · frontmatter" path=egm/egm-review-loop/SKILL.md lines=1:12
 @source rl-def title="SKILL.md · Goldfish와 Elephant 정의" path=egm/egm-review-loop/SKILL.md lines=24:27
 @source rl-driver title="SKILL.md · 드라이버가 하는 일" path=egm/egm-review-loop/SKILL.md lines=29:32

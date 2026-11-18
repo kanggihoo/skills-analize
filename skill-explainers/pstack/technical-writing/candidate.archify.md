@@ -8,7 +8,7 @@
 - 에이전트는 손대는 모든 문서에 `unslop`도 적용한다. AI 티 나는 표현 목록은 `unslop`이 맡는다.[](source:voice)
 
 @answer scope="pstack/technical-writing · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/technical-writing/SKILL.md · 9792B · 본문(frontmatter)" path=pstack/technical-writing/SKILL.md lines=1:5
 @source goal title="pstack/technical-writing/SKILL.md · 목표와 네 겹" path=pstack/technical-writing/SKILL.md lines=9:9
 @source over title="pstack/technical-writing/SKILL.md · 네 겹 위의 세 규칙" path=pstack/technical-writing/SKILL.md lines=11:15

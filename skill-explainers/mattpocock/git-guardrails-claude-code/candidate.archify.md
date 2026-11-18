@@ -8,7 +8,7 @@
 - 완료 확인은 가짜 `git push` 입력을 스크립트에 넣어 종료 코드 2와 `BLOCKED` 메시지를 보는 것이다.[](source:skill-verify)
 
 @answer scope="mattpocock/git-guardrails-claude-code · 원본 텍스트 파일 3개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/git-guardrails-claude-code/SKILL.md · 2313B · frontmatter" path=mattpocock/git-guardrails-claude-code/SKILL.md lines=1:4
 @source skill-intro title="SKILL.md · 목적과 차단 목록" path=mattpocock/git-guardrails-claude-code/SKILL.md lines=8:18
 @source skill-scope title="SKILL.md · 1단계 범위 질문" path=mattpocock/git-guardrails-claude-code/SKILL.md lines=22:24

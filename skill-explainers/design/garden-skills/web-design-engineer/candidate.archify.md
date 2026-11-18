@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 백엔드 API, CLI, 데이터 처리 스크립트, 순수 로직이다. 소재를 장문 기사로 바꾸는 일과 원고 박자로 녹화용 웹 영상 발표를 만드는 일은 전용 스킬로 넘긴다.[](source:wd-scope)
 
 @answer scope="design/garden-skills/web-design-engineer v1.3.0 · 원본 텍스트 38개 208,026B · 커밋 4e3fc89 · 지시상 동작 · 실행 안 함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source wd-fm title="design/garden-skills/web-design-engineer/SKILL.md · 35406B · frontmatter" path=design/garden-skills/web-design-engineer/SKILL.md lines=1:4
 @source wd-role title="SKILL.md · 역할과 핵심 철학" path=design/garden-skills/web-design-engineer/SKILL.md lines=8:10
 @source wd-scope title="SKILL.md · Scope(적용·비적용)" path=design/garden-skills/web-design-engineer/SKILL.md lines=14:18

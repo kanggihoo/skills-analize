@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 한 화면의 리뷰(`better-interface`), diff 리뷰(`interface-review`), 한 컴포넌트의 대안 탐색(`variant`)이나 스트레스 테스트(`break`)가 목적일 때다. 원문이 그 일을 각 스킬의 몫으로 가른다.[](source:af-intro)
 
 @answer scope="design/jakubkrehel/afk · 원본 텍스트 2개 8,179B · 커밋 0465878 · 관계 확인용으로 다른 스킬 frontmatter 4개 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source af-fm title="design/jakubkrehel/afk/SKILL.md · 8025B · 지시 본문과 frontmatter" path=design/jakubkrehel/afk/SKILL.md lines=1:5
 @source af-intro title="SKILL.md · 하는 일과 다른 스킬의 몫" path=design/jakubkrehel/afk/SKILL.md lines=9:11
 @source af-hours title="SKILL.md · 몇 시간의 넓은 탐색과 종료 조건" path=design/jakubkrehel/afk/SKILL.md lines=13:19

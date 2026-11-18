@@ -8,7 +8,7 @@
 - 메인 에이전트는 종합 결과를 전할 때 확신도 표현을 고쳐 쓰지 않는다.[](source:present)
 
 @answer scope="pstack/why · 원본 텍스트 파일 13개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/why/SKILL.md · 10360B · 본문(frontmatter)" path=pstack/why/SKILL.md lines=1:5
 @source skill-body title="pstack/why/SKILL.md · 목적, how와의 구분" path=pstack/why/SKILL.md lines=9:11
 @source models title="pstack/why/SKILL.md · 모델 규칙" path=pstack/why/SKILL.md lines=13:13

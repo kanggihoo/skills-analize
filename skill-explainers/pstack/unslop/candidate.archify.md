@@ -8,7 +8,7 @@
 - 이 스킬은 모델이 스스로 켜지 않는다. 대신 `pstack`의 다른 스킬 7개가 글을 쓸 때 이 스킬을 적용하라고 지시한다.
 
 @answer scope="pstack/unslop · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/unslop/SKILL.md · 6015B · 본문(frontmatter)" path=pstack/unslop/SKILL.md lines=1:5
 @source proc title="pstack/unslop/SKILL.md · 목적과 절차" path=pstack/unslop/SKILL.md lines=9:14
 @source ids title="pstack/unslop/SKILL.md · 규칙 번호 규칙" path=pstack/unslop/SKILL.md lines=18:18

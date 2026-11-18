@@ -3,7 +3,7 @@
 이 페이지는 `SKILL.md`의 `Core principles`와 `Anti-patterns`를 맡는다. 개요의 어느 한 노드에 묶이지 않고 사냥, 후보 검증, 최종 검증, 보고서 전체에 적용되는 판단 기준이다. 시작 입력은 hunter나 verifier가 본 후보 하나이고, 끝 출력은 그 후보를 `confirmed`, `needs_validation`, 기각 중 어디에 둘지에 대한 판단이다. 원칙형이라 순서를 만들지 않는다.
 
 @answer scope="cloudflare/security-audit · SKILL.md 136~192줄 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=da3be34f22adbe6a3095252847b21c5f2e13b661
 @source skm-pr-boundary title="경계와 결과 요구" path=cloudflare/security-audit/SKILL.md lines=138:140
 @source skm-pr-local title="제한된 local 증거" path=cloudflare/security-audit/SKILL.md lines=142:144
 @source skm-pr-vis title="소스 가시성" path=cloudflare/security-audit/SKILL.md lines=146:148

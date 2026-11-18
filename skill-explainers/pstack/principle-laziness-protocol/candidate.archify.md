@@ -8,7 +8,7 @@
 - 판단 기준: 사람 개발자가 유지하기 지친다고 느낄 코드면 나쁜 해법이다.[](source:test)
 
 @answer scope="pstack/principle-laziness-protocol · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-laziness-protocol/SKILL.md · 1371B · 원칙 본문(frontmatter)" path=pstack/principle-laziness-protocol/SKILL.md lines=1:5
 @source rule title="pstack/principle-laziness-protocol/SKILL.md · 규칙" path=pstack/principle-laziness-protocol/SKILL.md lines=9:9
 @source p-delete title="pstack/principle-laziness-protocol/SKILL.md · 지우기 우선" path=pstack/principle-laziness-protocol/SKILL.md lines=11:11

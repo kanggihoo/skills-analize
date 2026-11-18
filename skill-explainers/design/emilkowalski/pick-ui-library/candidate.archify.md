@@ -8,7 +8,7 @@
 - 고치는 것: 손으로 만든 toast, `<div>` dropdown 같은 흔한 잘못 매칭을 목록의 라이브러리로 바꾸자고 한다.[](source:pk-mis)
 
 @answer scope="design/emilkowalski/pick-ui-library · 원본 텍스트 1개 4,790B · 커밋 4e3fc89 · 지시상 동작이며 실행해 보지 않음 · 목록의 링크와 라이브러리 현황은 확인하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source pk-fm title="design/emilkowalski/pick-ui-library/SKILL.md · 4790B · 지시 본문과 frontmatter" path=design/emilkowalski/pick-ui-library/SKILL.md lines=1:5
 @source pk-init title="SKILL.md · 첫 응답" path=design/emilkowalski/pick-ui-library/SKILL.md lines=9:15
 @source pk-lookup title="SKILL.md · lookup 스킬 설명" path=design/emilkowalski/pick-ui-library/SKILL.md lines=17:17

@@ -8,7 +8,7 @@
 - 루트 버전이 그대로인 동안에는 같은 폴더의 가이드를 고쳐 간다. 버전을 올린 뒤 이전 폴더는 얼린다.[](source:ug-maint)
 
 @answer scope="deepseek-harness/dsh-create-upgrade-guide · 원본 텍스트 파일 1개(+ 템플릿 1개 참조) · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source ug-fm title="deepseek-harness/dsh-create-upgrade-guide/SKILL.md · 3734B · frontmatter" path=deepseek-harness/dsh-create-upgrade-guide/SKILL.md lines=1:4
 @source ug-intro title="SKILL.md · 목적과 시점" path=deepseek-harness/dsh-create-upgrade-guide/SKILL.md lines=8:8
 @source ug-scope title="SKILL.md · Scope 대상 목록" path=deepseek-harness/dsh-create-upgrade-guide/SKILL.md lines=12:18

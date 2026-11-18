@@ -8,7 +8,7 @@
 - 이 페이지는 스킬 폴더의 텍스트 3개와 필수 참조 파일, 관련 코드 일부를 읽었다. 읽기만 했고 스킬의 지시는 하나도 실행하지 않았다.
 
 @answer scope="SKILL.md와 필수 참조 읽음 · 실행 없음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source purpose title="목적" path=codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md lines=8:8
 @source fm title="frontmatter" path=codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md lines=1:4
 @source ev-use title="증거 읽기와 scan context" path=codex-security/plugins/codex-security/skills/propose-security-hardening/SKILL.md lines=12:12

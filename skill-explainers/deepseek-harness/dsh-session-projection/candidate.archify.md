@@ -8,7 +8,7 @@
 - 읽기 경로를 바꾸기 전에, 에이전트는 공식 소비자(플러그인, CLI/GUI, SDK 두 개)를 모두 찾는다. 동기 호출자는 명시적으로 옮길 때까지 유지한다.[](source:sp-r9)
 
 @answer scope="deepseek-harness/dsh-session-projection · 원본 텍스트 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source sp-fm title="deepseek-harness/dsh-session-projection/SKILL.md · 5476B · frontmatter" path=deepseek-harness/dsh-session-projection/SKILL.md lines=1:4
 @source sp-sum title="SKILL.md · Summary" path=deepseek-harness/dsh-session-projection/SKILL.md lines=10:10
 @source sp-r1 title="SKILL.md · 규칙 1 상태를 프로젝션에 둔다" path=deepseek-harness/dsh-session-projection/SKILL.md lines=12:12

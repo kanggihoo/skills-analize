@@ -8,7 +8,7 @@
 - 스킬 사이의 순서를 강제하는 문장은 없다. 세 스킬 모두 호출을 제한하는 필드가 없어서, 각자 따로 켜질 수 있다. 이 부분은 판정이다.[](source:f-fm)[](source:a-fm)[](source:p-fm)
 
 @answer scope="deepseek-harness/cleanup 묶음 · 스킬 3개의 원본 `SKILL.md`와 관계 상대 줄 · 커밋 475505c · 관계는 relations.md의 rel-id 기준 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source f-fm title="deepseek-harness/dsh-find-simplifications/SKILL.md · 11425B · frontmatter" path=deepseek-harness/dsh-find-simplifications/SKILL.md lines=1:4
 @source f-scope title="dsh-find-simplifications/SKILL.md · 먼저 읽을 문서와 보관 노트" path=deepseek-harness/dsh-find-simplifications/SKILL.md lines=12:12
 @source f-prose title="dsh-find-simplifications/SKILL.md · 글 범위" path=deepseek-harness/dsh-find-simplifications/SKILL.md lines=57:57

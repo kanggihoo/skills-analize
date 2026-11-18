@@ -8,7 +8,7 @@
 - 단독 `retro`는 후보를 사용자에게 내놓고 끝난다. `chief-of-staff` 안에서는 에이전트가 직접 고르고 실행한다.[](source:retro-s4)[](source:cos-retro)
 
 @answer scope="mattpocock/env-improve 묶음 · 스킬 3개의 원본과 관계 대상 머리말 · 커밋 0f0d1b0 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0f0d1b0403587dece9a32f5ca561cffc7e823a74
 @source cos-fm title="mattpocock/chief-of-staff/SKILL.md · 4729B · frontmatter" path=mattpocock/chief-of-staff/SKILL.md lines=1:5
 @source cos-role title="mattpocock/chief-of-staff/SKILL.md · 두 갈래" path=mattpocock/chief-of-staff/SKILL.md lines=9:12
 @source cos-wiki title="mattpocock/chief-of-staff/SKILL.md · Wiki" path=mattpocock/chief-of-staff/SKILL.md lines=28:32

@@ -8,7 +8,7 @@
 - 마지막 답변에는 설계한 플레이북, 엄격함 수준과 이유, 기록 경로, 검증된 것, 남은 것을 담는다.[](source:handback)
 
 @answer scope="pstack/figure-it-out · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/figure-it-out/SKILL.md · 4059B · 본문(frontmatter)" path=pstack/figure-it-out/SKILL.md lines=1:5
 @source purpose title="pstack/figure-it-out/SKILL.md · 목적" path=pstack/figure-it-out/SKILL.md lines=9:9
 @source start title="pstack/figure-it-out/SKILL.md · Start" path=pstack/figure-it-out/SKILL.md lines=13:13

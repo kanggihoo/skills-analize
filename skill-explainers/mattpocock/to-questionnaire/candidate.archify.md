@@ -7,7 +7,7 @@
 - 결과는 현재 폴더의 `to-questionnaire-<slug>.md` 파일 하나다. 에이전트는 그 경로를 알린다.[](source:skill-steps)
 
 @answer scope="mattpocock/to-questionnaire · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0f0d1b0403587dece9a32f5ca561cffc7e823a74
 @source skill-fm title="mattpocock/to-questionnaire/SKILL.md · 2904B · frontmatter" path=mattpocock/to-questionnaire/SKILL.md lines=1:5
 @source skill-intro title="SKILL.md · 목적" path=mattpocock/to-questionnaire/SKILL.md lines=7:7
 @source skill-send title="SKILL.md · 보내는 일만 묻는다" path=mattpocock/to-questionnaire/SKILL.md lines=9:9

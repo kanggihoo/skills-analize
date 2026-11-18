@@ -8,7 +8,7 @@
 - 브리핑은 정해진 틀을 따른다. 틀은 네 부분이다. 요약 5줄 이하, 상태 태그가 붙은 thread(이어지는 작업 하나), 문제 5개 이하, 다음 할 일 하나다.[](source:contract)
 
 @answer scope="pstack/recall · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/recall/SKILL.md · 5212B · 본문(frontmatter)" path=pstack/recall/SKILL.md lines=1:5
 @source core title="pstack/recall/SKILL.md · 목표와 범위" path=pstack/recall/SKILL.md lines=9:11
 @source records title="pstack/recall/SKILL.md · 두 기록" path=pstack/recall/SKILL.md lines=13:13

@@ -8,7 +8,7 @@
 - 사람이 맡는 곳: 로그인·구독, 열린 것만 묻는 질문 한 번, stop 1(storyboard), stop 2(draft). 에이전트는 이 지점에서 사용자의 답을 기다린다.[](source:sk-start)[](source:rx-ask)[](source:rx-stop1)[](source:rx-stop2)
 
 @answer scope="스킬 2개 파일 · 외부 템플릿 미확인 · 명령 미실행"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=243a9028dc78fe13c6f64b1a5c199bc9939ccc06
 @source sk-front title="frontmatter" path=hyperframes/style-sampling/SKILL.md lines=1:4
 @source sk-plugin title="plugin 안에서 쓸 때" path=hyperframes/style-sampling/SKILL.md lines=6:6
 @source sk-beacon title="usage beacon" path=hyperframes/style-sampling/SKILL.md lines=8:8
