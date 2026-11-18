@@ -1,6 +1,8 @@
 
 # explainer 페이지는 원고(*.archify.md)에서 만든다: scripts/render-explainers.py, scripts/build-index.py
 skill-explainers/**/*.html
+# 색인은 입구라서 추적한다
+!skill-explainers/**/index.html
 skill-explainers/**/*.delivery.json
 skill-explainers/**/*.finalize.json
 skill-explainers/**/*.finalize-summary.json
