@@ -6,6 +6,15 @@
 
 [`EXPLAINER-PROMPT.md`](EXPLAINER-PROMPT.md)를 읽고 그 단계를 따른다. 스킬 하나만 요청받았을 때도 같다. 결과물은 `skill-explainers/` 아래에 archify explainer HTML로 만든다.
 
+## 페이지 만들기
+
+`skill-explainers/`의 HTML은 git에 넣지 않는다. 원본은 원고(`*.archify.md`)와 원장(`relations.md`)이다. 원고가 `@meta repo_revision`으로 commit을 고정하므로, 같은 원고에서는 같은 페이지가 나온다. clone한 뒤나 원고를 고친 뒤에 다시 만든다.
+
+```bash
+scripts/render-explainers.py [폴더나 원고 ...]   # 생략하면 전체. archify CLI 위치는 ARCHIFY_BIN으로 바꿀 수 있다
+scripts/build-index.py [컬렉션 ...]              # 색인. 생략하면 전체와 최상위 색인
+```
+
 ## 저장소 구조
 
 - **컬렉션**: 최상위 폴더(`agent-skills/`, `openspec/`, `mattpocock/`, `pstack/`, `design/` 등). 분석 단위도 최상위 폴더다. `design/`, `reporting-skills/`, `verification-skills/`는 안에 작성자 폴더가 있는 주제 폴더지만 통째로 컬렉션 하나로 분석한다. 컬렉션 안의 폴더 중 `SKILL.md`가 있는 폴더 하나가 스킬 하나다. 깊이는 컬렉션마다 다르다(`design/emilkowalski/...`, `verification-skills/addyosmani/...`). 그래서 폴더 깊이로 판단하지 말고 `SKILL.md`를 찾는다.
