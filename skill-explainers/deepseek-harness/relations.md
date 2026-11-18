@@ -41,14 +41,14 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r01 | dsh-code-review | dsh-prose-standard | 내부 위임 | 명시-이름 | 추가·변경된 모든 Markdown 단락, JSDoc, 주석, 프롬프트, description, 진단 메시지, 보이는 문자열을 이 스킬로 비판적으로 리뷰한다(의무형 "Use"). 자동 검사로는 이 성질이 확인되지 않는다고 적는다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:22,33 |
-| r02 | dsh-code-review | dsh-ci-test-reliability | 내부 위임 | 명시-이름 | 자원을 소유하거나 비동기이거나 플랫폼에 민감하거나 흔들리는 테스트일 때만 적용한다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:23,54 |
+| r01 | dsh-code-review | dsh-prose-standard | 호출 | 명시-이름 | 추가·변경된 모든 Markdown 단락, JSDoc, 주석, 프롬프트, description, 진단 메시지, 보이는 문자열을 이 스킬로 비판적으로 리뷰한다(의무형 "Use"). 자동 검사로는 이 성질이 확인되지 않는다고 적는다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:22,33 |
+| r02 | dsh-code-review | dsh-ci-test-reliability | 호출 | 명시-이름 | 자원을 소유하거나 비동기이거나 플랫폼에 민감하거나 흔들리는 테스트일 때만 적용한다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:23,54 |
 | r03 | dsh-code-review | dsh-client-ui-ux | 참고 | 명시-이름 | 읽을 자료 목록에 "제품 사용자에게 보이는 GUI 변경"용으로 올라 있다. 본문 점검 항목에서 따로 적용을 지시하지는 않는다 | - | - | 범위 내 | dsh-code-review:24 |
-| r04 | dsh-code-review | dsh-error-handling | 내부 위임 | 명시-이름 | 바뀐 실패 경로에 적용한다. 상태 소유자가 이후 작업의 전제 조건을 보장하지 않으면 catch-and-continue를 거부한다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:25,43 |
+| r04 | dsh-code-review | dsh-error-handling | 호출 | 명시-이름 | 바뀐 실패 경로에 적용한다. 상태 소유자가 이후 작업의 전제 조건을 보장하지 않으면 catch-and-continue를 거부한다 | 리뷰 지적 | - | 범위 내 | dsh-code-review:25,43 |
 | r05 | dsh-code-review | dsh-session-projection | 참고 | 명시-이름 | 읽을 자료 목록에 Projection 소유권·상태 크기·과거 읽기·이전(migration)용으로 올라 있다 | - | - | 범위 내 | dsh-code-review:26 |
-| r06 | dsh-code-review | cordis-styling-nitpicking | 내부 위임 | 명시-이름 | Cordis 플러그인 코드나 그 진입점에서 닿는 헬퍼를 리뷰할 때 "load and apply"한다. P0 규칙 세 가지를 확인한다 | P0 지적 | - | 범위 내 | dsh-code-review:36; cordis-styling-nitpicking:3 |
+| r06 | dsh-code-review | cordis-styling-nitpicking | 호출 | 명시-이름 | Cordis 플러그인 코드나 그 진입점에서 닿는 헬퍼를 리뷰할 때 "load and apply"한다. P0 규칙 세 가지를 확인한다 | P0 지적 | - | 범위 내 | dsh-code-review:36; cordis-styling-nitpicking:3 |
 | r07 | dsh-code-review | dsh-translate-docs | 참고 | 명시-역할 | 이중 언어 변경 리뷰에서 "확장 번역 스킬은 자동 리뷰 밖이며 사용자가 명시적으로 부를 때만 돈다"고 경계를 긋는다. 리뷰가 이 스킬을 부르지 않는다는 뜻이다 | - | - | 범위 내 | dsh-code-review:29; dsh-translate-docs:4,12 |
-| r08 | dsh-code-review | dsh-pr-description | 산출물 호환 | 추론 | 리뷰 지적을 처리한 "리뷰 라운드"가 끝나면 PR 설명을 갱신한다. 둘은 서로 이름을 부르지 않는다 | 처리된 리뷰 지적 → PR 설명 `review` 행 | GitHub PR | 범위 내 | dsh-code-review:3; dsh-pr-description:3,115,176 |
+| r08 | dsh-code-review | dsh-pr-description | 결과 전달 | 추론 | 리뷰 지적을 처리한 "리뷰 라운드"가 끝나면 PR 설명을 갱신한다. 둘은 서로 이름을 부르지 않는다 | 처리된 리뷰 지적 → PR 설명 `review` 행 | GitHub PR | 범위 내 | dsh-code-review:3; dsh-pr-description:3,115,176 |
 
 ### 문서·글 스킬 사이의 관계
 
@@ -56,67 +56,67 @@
 |---|---|---|---|---|---|---|---|---|---|
 | r09 | dsh-prose-standard | dsh-doc | 참고 | 명시-이름 | 책임 나눔: 이 스킬은 편집 판단과 필수 글 범위를 맡고, 배치·예산·이중 언어 쌍·문서 통과 조건은 `dsh-doc`을 쓰라고 한다 | - | - | 범위 내 | dsh-prose-standard:8 |
 | r10 | dsh-prose-standard | dsh-trim-cot-leakage | 참고 | 명시-이름 | 추론 흔적(reasoning-transcript leakage)을 찾고 고치는 일은 이 스킬을 쓰라고 한다 | - | - | 범위 내 | dsh-prose-standard:8 |
-| r11 | dsh-doc | dsh-prose-standard | 내부 위임 | 명시-이름 | 문장 단위 계약 범위와 편집 판단에 이 스킬을 쓴다. 문체 참고 문서도 "완전한 명제 규칙은 prose standard가 맡는다"고 적는다 | - | - | 범위 내 | dsh-doc:115; dsh-doc/references/style.md:31 |
-| r12 | dsh-doc | dsh-trim-cot-leakage | 내부 위임 | 명시-이름 | 구조 점검 뒤 군더더기 체크리스트를 훑을 때, 추론 흔적은 이 스킬로 찾는다 | - | - | 범위 내 | dsh-doc:93 |
+| r11 | dsh-doc | dsh-prose-standard | 호출 | 명시-이름 | 문장 단위 계약 범위와 편집 판단에 이 스킬을 쓴다. 문체 참고 문서도 "완전한 명제 규칙은 prose standard가 맡는다"고 적는다 | - | - | 범위 내 | dsh-doc:115; dsh-doc/references/style.md:31 |
+| r12 | dsh-doc | dsh-trim-cot-leakage | 호출 | 명시-이름 | 구조 점검 뒤 군더더기 체크리스트를 훑을 때, 추론 흔적은 이 스킬로 찾는다 | - | - | 범위 내 | dsh-doc:93 |
 | r13 | dsh-doc | dsh-create-upgrade-guide | 참고 | 명시-이름 | 문서 종류 `upgrade-guide`의 범위·배치·유지·길이 규칙은 `dsh-create-upgrade-guide`가 맡는다(owned by). `pnpm run verify-upgrade-guides`가 강제한다 | - | - | 범위 내 | dsh-doc:60; dsh-doc/templates/upgrade-guide.md:3 |
 | r14 | dsh-create-upgrade-guide | dsh-doc | 참고 | 명시-이름 | `dsh-doc/templates/upgrade-guide.md` 템플릿에서 시작한다 | 템플릿 파일 | - | 범위 내 | dsh-create-upgrade-guide:36 |
-| r15 | dsh-create-upgrade-guide | dsh-prose-standard | 내부 위임 | 명시-이름 | 가이드를 쓸 때 따른다("Follow") | - | - | 범위 내 | dsh-create-upgrade-guide:46 |
-| r16 | dsh-trim-cot-leakage | dsh-prose-standard | 내부 위임 | 명시-이름 | 범위와 제외 대상(`vendor/`, `.agents/notes/archived/`)은 이 스킬 기준이다. 모델·사용자에게 보이는 문자열은 이 스킬로 넘기고, 소유 동작 근거가 없으면 바꾸지 않고 보류를 보고한다 | - | - | 범위 내 | dsh-trim-cot-leakage:41,43 |
-| r17 | dsh-trim-cot-leakage | dsh-doc | 내부 위임 | 명시-이름 | 이중 언어 코드 울타리(fence)는 고친 블록을 양쪽에 바이트 그대로 복사하는 `dsh-doc` 규칙을 따른 뒤 쌍을 다시 기록한다 | - | - | 범위 내 | dsh-trim-cot-leakage:43 |
-| r18 | dsh-translate-docs | dsh-prose-standard | 내부 위임 | 명시-이름 | 양쪽 언어에 적용하되 원문 명제를 더하거나 빼지 않는다 | - | - | 범위 내 | dsh-translate-docs:46 |
+| r15 | dsh-create-upgrade-guide | dsh-prose-standard | 호출 | 명시-이름 | 가이드를 쓸 때 따른다("Follow") | - | - | 범위 내 | dsh-create-upgrade-guide:46 |
+| r16 | dsh-trim-cot-leakage | dsh-prose-standard | 호출 | 명시-이름 | 범위와 제외 대상(`vendor/`, `.agents/notes/archived/`)은 이 스킬 기준이다. 모델·사용자에게 보이는 문자열은 이 스킬로 넘기고, 소유 동작 근거가 없으면 바꾸지 않고 보류를 보고한다 | - | - | 범위 내 | dsh-trim-cot-leakage:41,43 |
+| r17 | dsh-trim-cot-leakage | dsh-doc | 호출 | 명시-이름 | 이중 언어 코드 울타리(fence)는 고친 블록을 양쪽에 바이트 그대로 복사하는 `dsh-doc` 규칙을 따른 뒤 쌍을 다시 기록한다 | - | - | 범위 내 | dsh-trim-cot-leakage:43 |
+| r18 | dsh-translate-docs | dsh-prose-standard | 호출 | 명시-이름 | 양쪽 언어에 적용하되 원문 명제를 더하거나 빼지 않는다 | - | - | 범위 내 | dsh-translate-docs:46 |
 | r19 | dsh-translate-docs | dsh-code-review | 참고 | 명시-이름 | 번역 리뷰 의견을 처리할 때 `dsh-code-review`의 "Reporting findings" 절을 따른다. 용어 의견은 용어표(`docs/i18n/terminology.md`)에 반영한다 | - | - | 범위 내 | dsh-translate-docs:74 |
 
 ### 출고(push·PR·병합) 단계의 관계
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r20 | dsh-ci-test-reliability | dsh-pre-push-checks | 넘김 | 명시-이름 | 테스트 설계가 탄탄해진 뒤, push 전에 나가는 검증 명령을 고르는 일은 `dsh-pre-push-checks`로 따로 한다. 재시도·건너뛴 테스트·대기 중인 CI를 통과라고 말하지 않는다 | 바뀐 테스트 | - | 범위 내 | dsh-ci-test-reliability:3,16,131 |
-| r21 | dsh-pre-push-checks | dsh-ci-test-reliability | 내부 위임 | 명시-이름 | 나가는 변경이 자원 소유·비동기 테스트, 픽스처, 헬퍼, CI 실행 경로를 바꾸면 먼저 이 스킬로 어떤 근거(복원, 음성 대조, 조용한 정리, 동시 프로세스)가 필요한지 정한다. 명령 선택은 여전히 pre-push가 한다 | 필요한 근거 종류 | - | 범위 내 | dsh-pre-push-checks:31 |
-| r22 | dsh-merging-stacked-prs | dsh-pre-push-checks | 넘김 | 추론 | `gh stack sync`가 다시 쓴 층을 push한 직후 바뀐 범위를 검사하고, 통과 전에는 병합하거나 준비됐다고 하지 않는다. pre-push의 description도 "gh stack sync가 다시 쓴 브랜치를 publish한 직후"를 호출 시점으로 든다. 서로 이름을 부르지는 않는다 | 다시 쓴 스택 층 | `gh stack`(GitHub 공식 스택) | 범위 내 | dsh-merging-stacked-prs:72,75; dsh-pre-push-checks:3,8,88 |
-| r23 | dsh-pr-description | record-browser-gif | 내부 위임 | 명시-이름 | 제품 사용자에게 보이는 GUI를 바꾸면 데모 GIF와 record-browser-gif가 요구하는 고지를 설명에 넣는다. GIF가 없으면 없는 이유를 적는다. GIF를 넣을 때는 이 스킬을 따르고 `--attach`를 쓴다 | GIF 첨부 | GitHub PR | 범위 내 | dsh-pr-description:63,202; record-browser-gif:12 |
-| r24 | dsh-pr-description | dsh-merging-stacked-prs | 공유 상태 | 추론 | 스택 안의 PR마다 자기 설명이 있고, 그 층이 base 대비 바꾼 것만 다룬다 | PR 설명 | GitHub PR | 범위 내 | dsh-pr-description:15; dsh-merging-stacked-prs:3 |
-| r25 | dsh-translate-docs | dsh-pre-push-checks | 넘김 | 명시-이름 | PR 전에 `pnpm run doc-sync`를 PR 단위로 한 번 돌린다. 번역 작업마다 돌리지 않는다 | - | - | 범위 내 | dsh-translate-docs:69 |
-| r26 | dsh-doc | dsh-pre-push-checks | 넘김 | 명시-이름 | 웹사이트 동기화 작업 뒤 push 전에 쓴다 | - | - | 범위 내 | dsh-doc/references/website-sync.md:87 |
-| r27 | dsh-find-simplifications | dsh-pre-push-checks | 넘김 | 명시-이름 | 문서만 바꾼 Agent Note 작업은 `doc-sync`, `lint`, `git diff --check`를, 스킬·주석 수정은 해당 검증기도 돌린다. 그 밖의 검사는 이 스킬로 고른다 | - | - | 범위 내 | dsh-find-simplifications:65 |
-| r28 | dsh-archive-agent-notes | dsh-pre-push-checks | 넘김 | 명시-이름 | 보관 검증기 테스트 등 정해진 검사를 돌린 뒤 추가 근거는 이 스킬로 고른다 | - | - | 범위 내 | dsh-archive-agent-notes:66 |
-| r29 | dsh-speed-up-perf | dsh-pre-push-checks | 넘김 | 명시-이름 | 적용하고, 실행한 근거만 보고한다. 로컬 시간 측정이 러너 안정성을 증명한다고 가정하지 않는다 | - | - | 범위 내 | dsh-speed-up-perf:90 |
+| r20 | dsh-ci-test-reliability | dsh-pre-push-checks | 다음 안내 | 명시-이름 | 테스트 설계가 탄탄해진 뒤, push 전에 나가는 검증 명령을 고르는 일은 `dsh-pre-push-checks`로 따로 한다. 재시도·건너뛴 테스트·대기 중인 CI를 통과라고 말하지 않는다 | 바뀐 테스트 | - | 범위 내 | dsh-ci-test-reliability:3,16,131 |
+| r21 | dsh-pre-push-checks | dsh-ci-test-reliability | 호출 | 명시-이름 | 나가는 변경이 자원 소유·비동기 테스트, 픽스처, 헬퍼, CI 실행 경로를 바꾸면 먼저 이 스킬로 어떤 근거(복원, 음성 대조, 조용한 정리, 동시 프로세스)가 필요한지 정한다. 명령 선택은 여전히 pre-push가 한다 | 필요한 근거 종류 | - | 범위 내 | dsh-pre-push-checks:31 |
+| r22 | dsh-merging-stacked-prs | dsh-pre-push-checks | 다음 안내 | 추론 | `gh stack sync`가 다시 쓴 층을 push한 직후 바뀐 범위를 검사하고, 통과 전에는 병합하거나 준비됐다고 하지 않는다. pre-push의 description도 "gh stack sync가 다시 쓴 브랜치를 publish한 직후"를 호출 시점으로 든다. 서로 이름을 부르지는 않는다 | 다시 쓴 스택 층 | `gh stack`(GitHub 공식 스택) | 범위 내 | dsh-merging-stacked-prs:72,75; dsh-pre-push-checks:3,8,88 |
+| r23 | dsh-pr-description | record-browser-gif | 호출 | 명시-이름 | 제품 사용자에게 보이는 GUI를 바꾸면 데모 GIF와 record-browser-gif가 요구하는 고지를 설명에 넣는다. GIF가 없으면 없는 이유를 적는다. GIF를 넣을 때는 이 스킬을 따르고 `--attach`를 쓴다 | GIF 첨부 | GitHub PR | 범위 내 | dsh-pr-description:63,202; record-browser-gif:12 |
+| r24 | dsh-pr-description | dsh-merging-stacked-prs | 같은 파일 | 추론 | 스택 안의 PR마다 자기 설명이 있고, 그 층이 base 대비 바꾼 것만 다룬다 | PR 설명 | GitHub PR | 범위 내 | dsh-pr-description:15; dsh-merging-stacked-prs:3 |
+| r25 | dsh-translate-docs | dsh-pre-push-checks | 다음 안내 | 명시-이름 | PR 전에 `pnpm run doc-sync`를 PR 단위로 한 번 돌린다. 번역 작업마다 돌리지 않는다 | - | - | 범위 내 | dsh-translate-docs:69 |
+| r26 | dsh-doc | dsh-pre-push-checks | 다음 안내 | 명시-이름 | 웹사이트 동기화 작업 뒤 push 전에 쓴다 | - | - | 범위 내 | dsh-doc/references/website-sync.md:87 |
+| r27 | dsh-find-simplifications | dsh-pre-push-checks | 다음 안내 | 명시-이름 | 문서만 바꾼 Agent Note 작업은 `doc-sync`, `lint`, `git diff --check`를, 스킬·주석 수정은 해당 검증기도 돌린다. 그 밖의 검사는 이 스킬로 고른다 | - | - | 범위 내 | dsh-find-simplifications:65 |
+| r28 | dsh-archive-agent-notes | dsh-pre-push-checks | 다음 안내 | 명시-이름 | 보관 검증기 테스트 등 정해진 검사를 돌린 뒤 추가 근거는 이 스킬로 고른다 | - | - | 범위 내 | dsh-archive-agent-notes:66 |
+| r29 | dsh-speed-up-perf | dsh-pre-push-checks | 다음 안내 | 명시-이름 | 적용하고, 실행한 근거만 보고한다. 로컬 시간 측정이 러너 안정성을 증명한다고 가정하지 않는다 | - | - | 범위 내 | dsh-speed-up-perf:90 |
 
 ### UI 스킬 사이의 관계
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
 | r30 | dsh-client-ui-ux | dsh-prose-standard | 참고 | 명시-이름 | UI 문구 품질 자체는 `dsh-prose-standard`를 따른다 | - | - | 범위 내 | dsh-client-ui-ux:8 |
-| r31 | dsh-client-ui-ux | dsh-error-handling | 내부 위임 | 명시-이름 | 실패 보고에 "Localized, actionable, visible reports" 절을 적용한 뒤, 메시지 수명에 따라 보일 자리를 고른다 | - | - | 범위 내 | dsh-client-ui-ux:34 |
+| r31 | dsh-client-ui-ux | dsh-error-handling | 호출 | 명시-이름 | 실패 보고에 "Localized, actionable, visible reports" 절을 적용한 뒤, 메시지 수명에 따라 보일 자리를 고른다 | - | - | 범위 내 | dsh-client-ui-ux:34 |
 | r32 | dsh-client-ui-ux | dsh-responsive-ui | 참고 | 명시-이름 | 반응형 레이아웃, 모바일·터치 판별, 말줄임, 제목 줄바꿈, 아이콘 전용 버튼, 폭 변화 중 포커스는 이 스킬을 쓴다 | - | - | 범위 내 | dsh-client-ui-ux:59 |
 | r33 | dsh-official-plugin-artwork | dsh-client-ui-ux | 참고 | 명시-이름 | 경계: 액션 아이콘은 `dsh-client-ui-ux`의 "Reuse before adding" 절 소관이다. description도 툴바·액션 아이콘은 대상이 아니라고 적는다 | - | - | 범위 내 | dsh-official-plugin-artwork:3,17 |
-| r34 | dsh-official-plugin-artwork | record-browser-gif | 넘김 | 명시-이름 | GUI PR이면 저장소 UI 테스트 정책과 record-browser-gif를 따른다. (같은 줄의 "새 그림은 병합 전에 디자이너 승인"은 이 관계가 아닌 별도 의무다) | GIF | - | 범위 내 | dsh-official-plugin-artwork:41 |
+| r34 | dsh-official-plugin-artwork | record-browser-gif | 다음 안내 | 명시-이름 | GUI PR이면 저장소 UI 테스트 정책과 record-browser-gif를 따른다. (같은 줄의 "새 그림은 병합 전에 디자이너 승인"은 이 관계가 아닌 별도 의무다) | GIF | - | 범위 내 | dsh-official-plugin-artwork:41 |
 | r35 | dsh-speed-up-perf | record-browser-gif | 참고 | 명시-역할 | 제품에 보이는 GUI 변경이면 "필요한 브라우저 근거/GIF"를 넣는다. 스킬 이름은 부르지 않는다 | GIF | - | 범위 내 | dsh-speed-up-perf:80; record-browser-gif:3 |
 
 ### 정리·성능·Agent Note 관계
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r36 | dsh-find-simplifications | dsh-archive-agent-notes | 내부 위임 | 명시-이름 | 새 Agent Note마다 이 스킬로 범위를 좁힌 대체 확인(supersession check)을 거친다(의무형 "requires"). 코드 조사가 저장소 전체 노트 감사를 뜻하지는 않는다 | 새 Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | dsh-find-simplifications:61; dsh-archive-agent-notes:14,16 |
-| r37 | dsh-find-simplifications | dsh-prose-standard | 내부 위임 | 명시-이름 | 글이 범위에 들 때 적용한다. 코드를 되풀이하는 설명은 지우되 동작·시점·소유·실패 의무는 남긴다 | - | - | 범위 내 | dsh-find-simplifications:57 |
-| r38 | cordis-styling-nitpicking | dsh-archive-agent-notes | 공유 상태 | 명시-역할 | 해결되지 않은 지적을 기록하라는 요청이 있을 때만 제안 Agent Note를 쓰고, 활성 노트 대체 확인을 한다. 스킬 이름도 부르지 않고 실행하라는 문장도 없다. 대체 확인 절차는 archive-agent-notes가 맡는 일이라 공유 상태로 둔다 | 제안 Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | cordis-styling-nitpicking:65; dsh-archive-agent-notes:14,16 |
-| r39 | dsh-speed-up-perf | dsh-ci-test-reliability | 내부 위임 | 명시-이름 | 프로세스, 시계, 브라우저 테스트, 비동기 정리에는 이 스킬을 쓴다 | - | - | 범위 내 | dsh-speed-up-perf:12 |
-| r40 | dsh-speed-up-perf | dsh-merging-stacked-prs | 산출물 호환 | 추론 | 작업이 스택 PR을 요구하면 편집 전에 층을 정하고 GitHub 공식 스택과 별도 워크트리를 쓴다. 그렇게 만든 스택은 `dsh-merging-stacked-prs`가 요구하는 공식 스택 조건에 맞는다. 이름은 부르지 않는다 | 공식 스택 PR | `gh stack`(GitHub 공식 스택) | 범위 내 | dsh-speed-up-perf:88; dsh-merging-stacked-prs:3 |
-| r41 | dsh-speed-up-perf | dsh-archive-agent-notes | 공유 상태 | 명시-역할 | Agent Note 규칙으로 근거를 남기고, 관련 노트의 대체 여부를 확인하되 저장소 전체 글 정리로 키우지 않는다 | Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | dsh-speed-up-perf:86; dsh-archive-agent-notes:14 |
+| r36 | dsh-find-simplifications | dsh-archive-agent-notes | 호출 | 명시-이름 | 새 Agent Note마다 이 스킬로 범위를 좁힌 대체 확인(supersession check)을 거친다(의무형 "requires"). 코드 조사가 저장소 전체 노트 감사를 뜻하지는 않는다 | 새 Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | dsh-find-simplifications:61; dsh-archive-agent-notes:14,16 |
+| r37 | dsh-find-simplifications | dsh-prose-standard | 호출 | 명시-이름 | 글이 범위에 들 때 적용한다. 코드를 되풀이하는 설명은 지우되 동작·시점·소유·실패 의무는 남긴다 | - | - | 범위 내 | dsh-find-simplifications:57 |
+| r38 | cordis-styling-nitpicking | dsh-archive-agent-notes | 같은 파일 | 명시-역할 | 해결되지 않은 지적을 기록하라는 요청이 있을 때만 제안 Agent Note를 쓰고, 활성 노트 대체 확인을 한다. 스킬 이름도 부르지 않고 실행하라는 문장도 없다. 대체 확인 절차는 archive-agent-notes가 맡는 일이라 공유 상태로 둔다 | 제안 Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | cordis-styling-nitpicking:65; dsh-archive-agent-notes:14,16 |
+| r39 | dsh-speed-up-perf | dsh-ci-test-reliability | 호출 | 명시-이름 | 프로세스, 시계, 브라우저 테스트, 비동기 정리에는 이 스킬을 쓴다 | - | - | 범위 내 | dsh-speed-up-perf:12 |
+| r40 | dsh-speed-up-perf | dsh-merging-stacked-prs | 결과 전달 | 추론 | 작업이 스택 PR을 요구하면 편집 전에 층을 정하고 GitHub 공식 스택과 별도 워크트리를 쓴다. 그렇게 만든 스택은 `dsh-merging-stacked-prs`가 요구하는 공식 스택 조건에 맞는다. 이름은 부르지 않는다 | 공식 스택 PR | `gh stack`(GitHub 공식 스택) | 범위 내 | dsh-speed-up-perf:88; dsh-merging-stacked-prs:3 |
+| r41 | dsh-speed-up-perf | dsh-archive-agent-notes | 같은 파일 | 명시-역할 | Agent Note 규칙으로 근거를 남기고, 관련 노트의 대체 여부를 확인하되 저장소 전체 글 정리로 키우지 않는다 | Agent Note | 대상 저장소 `.agents/notes/` | 범위 내 | dsh-speed-up-perf:86; dsh-archive-agent-notes:14 |
 
-### 공유 상태
-
-| rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
-|---|---|---|---|---|---|---|---|---|---|
-| r42 | dsh-archive-agent-notes | dsh-code-review, dsh-prose-standard, dsh-trim-cot-leakage, dsh-find-simplifications | 공유 상태 | 명시-역할 | Agent Note 폴더를 함께 다룬다. archive는 보관·삭제를 맡고(description에는 restoring이 있지만 본문에 복원 절차는 없고, 봉인된 묶음을 옮기거나 지우지 못하게 한다), code-review는 구현된 제안 노트를 같은 diff에서 현재형으로 옮기게 하며, prose-standard와 trim-cot-leakage는 `.agents/notes/archived/`를 고치지 않는다. find-simplifications는 보관 노트를 현재 권위가 아닌 과거 사례로 보고, 그 바깥 링크를 살피거나 확인하거나 고치지 않는다 | `.agents/notes/`, `.agents/notes/archived/` | 대상 저장소 | 범위 밖(폴더 자체) | dsh-archive-agent-notes:12; dsh-code-review:56; dsh-prose-standard:24; dsh-trim-cot-leakage:41; dsh-find-simplifications:12 |
-| r43 | dsh-doc | dsh-create-upgrade-guide, dsh-translate-docs, dsh-trim-cot-leakage | 공유 상태 | 명시-역할 | 이중 언어 쌍을 고칠 때마다 `pnpm run verify-translation-pairing --write`로 쌍 기록을 다시 남긴다 | 번역 쌍 기록(sidecar) | 대상 저장소 스크립트 | 범위 밖(스크립트 자체) | dsh-doc:47; dsh-create-upgrade-guide:46; dsh-translate-docs:34,67; dsh-trim-cot-leakage:43 |
-| r44 | dsh-doc | dsh-create-upgrade-guide | 공유 상태 | 명시-이름 | 둘 다 `docs/upgrade-guide/v<version>/<item>/guide.md`와 중국어 짝을 다룬다. dsh-doc은 문서 종류로 매핑하고, upgrade-guide가 내용 규칙을 갖는다 | `docs/upgrade-guide/` | 대상 저장소 | 범위 밖(폴더 자체) | dsh-doc:60; dsh-create-upgrade-guide:3 |
-| r45 | dsh-merging-stacked-prs | dsh-pre-push-checks, dsh-speed-up-perf | 공유 상태 | 명시-역할 | GitHub 공식 스택 객체와 `gh stack` 명령을 함께 쓴다. 스택 규칙·CI·순서·재지정·병합 상태는 GitHub가 갖는다 | 공식 스택 | `gh stack`(GitHub) | 범위 밖(CLI) | dsh-merging-stacked-prs:3,8; dsh-pre-push-checks:88; dsh-speed-up-perf:88 |
-
-### 같은 계열
+### 같은 파일
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r46 | dsh-doc | dsh-translate-docs | 같은 계열 | 명시-역할 | 둘 다 이중 언어 문서를 다룬다. 일상 번역은 `docs/AGENTS.md`의 한 번에 끝내는 규칙을 따르고, translate-docs는 사용자가 이름으로 부를 때만 도는 확장판이다. dsh-doc의 웹사이트 참고 문서는 "확장 번역 스킬을 자동으로 부르지 않는다"고 적는다 | - | - | 범위 내 | dsh-doc:3; dsh-doc/references/website-sync.md:19; dsh-translate-docs:3,12 |
+| r42 | dsh-archive-agent-notes | dsh-code-review, dsh-prose-standard, dsh-trim-cot-leakage, dsh-find-simplifications | 같은 파일 | 명시-역할 | Agent Note 폴더를 함께 다룬다. archive는 보관·삭제를 맡고(description에는 restoring이 있지만 본문에 복원 절차는 없고, 봉인된 묶음을 옮기거나 지우지 못하게 한다), code-review는 구현된 제안 노트를 같은 diff에서 현재형으로 옮기게 하며, prose-standard와 trim-cot-leakage는 `.agents/notes/archived/`를 고치지 않는다. find-simplifications는 보관 노트를 현재 권위가 아닌 과거 사례로 보고, 그 바깥 링크를 살피거나 확인하거나 고치지 않는다 | `.agents/notes/`, `.agents/notes/archived/` | 대상 저장소 | 범위 밖(폴더 자체) | dsh-archive-agent-notes:12; dsh-code-review:56; dsh-prose-standard:24; dsh-trim-cot-leakage:41; dsh-find-simplifications:12 |
+| r43 | dsh-doc | dsh-create-upgrade-guide, dsh-translate-docs, dsh-trim-cot-leakage | 같은 파일 | 명시-역할 | 이중 언어 쌍을 고칠 때마다 `pnpm run verify-translation-pairing --write`로 쌍 기록을 다시 남긴다 | 번역 쌍 기록(sidecar) | 대상 저장소 스크립트 | 범위 밖(스크립트 자체) | dsh-doc:47; dsh-create-upgrade-guide:46; dsh-translate-docs:34,67; dsh-trim-cot-leakage:43 |
+| r44 | dsh-doc | dsh-create-upgrade-guide | 같은 파일 | 명시-이름 | 둘 다 `docs/upgrade-guide/v<version>/<item>/guide.md`와 중국어 짝을 다룬다. dsh-doc은 문서 종류로 매핑하고, upgrade-guide가 내용 규칙을 갖는다 | `docs/upgrade-guide/` | 대상 저장소 | 범위 밖(폴더 자체) | dsh-doc:60; dsh-create-upgrade-guide:3 |
+| r45 | dsh-merging-stacked-prs | dsh-pre-push-checks, dsh-speed-up-perf | 같은 파일 | 명시-역할 | GitHub 공식 스택 객체와 `gh stack` 명령을 함께 쓴다. 스택 규칙·CI·순서·재지정·병합 상태는 GitHub가 갖는다 | 공식 스택 | `gh stack`(GitHub) | 범위 밖(CLI) | dsh-merging-stacked-prs:3,8; dsh-pre-push-checks:88; dsh-speed-up-perf:88 |
+
+### 대안
+
+| rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
+|---|---|---|---|---|---|---|---|---|---|
+| r46 | dsh-doc | dsh-translate-docs | 대안 | 명시-역할 | 둘 다 이중 언어 문서를 다룬다. 일상 번역은 `docs/AGENTS.md`의 한 번에 끝내는 규칙을 따르고, translate-docs는 사용자가 이름으로 부를 때만 도는 확장판이다. dsh-doc의 웹사이트 참고 문서는 "확장 번역 스킬을 자동으로 부르지 않는다"고 적는다 | - | - | 범위 내 | dsh-doc:3; dsh-doc/references/website-sync.md:19; dsh-translate-docs:3,12 |
 
 
 ### 조정자 확인 뒤 추가한 관계
@@ -125,7 +125,7 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r47 | dsh-doc | dsh-find-simplifications | 넘김 | 명시-이름 | 감사에서 글을 지우면 설명이 아니라 약속한 동작이 바뀔 때, 동작 변경을 먼저 제안하고 그 제안은 `dsh-find-simplifications`를 따른다 | 동작 변경 제안 | - | 범위 내 | dsh-doc:93 |
+| r47 | dsh-doc | dsh-find-simplifications | 다음 안내 | 명시-이름 | 감사에서 글을 지우면 설명이 아니라 약속한 동작이 바뀔 때, 동작 변경을 먼저 제안하고 그 제안은 `dsh-find-simplifications`를 따른다 | 동작 변경 제안 | - | 범위 내 | dsh-doc:93 |
 | r48 | dsh-session-projection | dsh-create-upgrade-guide | 참고 | 명시-역할 | 새 필수 서비스나 활성화 단계가 생기면 소비자 갱신과 업그레이드 가이드가 필요하다. 스킬 이름은 부르지 않는다 | 업그레이드 가이드 | - | 범위 내 | dsh-session-projection:30; dsh-create-upgrade-guide:3 |
 
 미확인 후보: 없음. 이름·슬래시 명령·경로·계열 접두어(`dsh-`)로 찾은 후보를 모두 원문으로 확인했다. `dsh-` 접두어는 저장소 이름 약어일 뿐 계열 표시가 아니라서 같은 계열 근거로 쓰지 않았다(판정). `dsh-cua-macos-signing`은 다른 스킬과 이어지는 곳이 없다.

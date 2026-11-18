@@ -26,15 +26,15 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r01 | chief-of-staff | retro | 내부 위임 | 명시-이름 | 서브에이전트 세션 약 5개 중 1개에 실행. 문제가 있던 세션부터 고른다. Skill 도구가 아니라 `../retro/SKILL.md` 파일을 읽고 따른다. retro의 마지막 단계(사용자에게 제시) 대신 chief-of-staff가 직접 고르고 실행한다. 원문은 두 스킬이 나란히 설치됐다고 전제한다. 원격에서는 chief-of-staff가 `skills/in-progress/`, retro가 `skills/engineering/`에 있어 원격 구조 그대로면 이 상대 경로가 풀리지 않을 수 있다. 이 저장소에서는 풀린다 | 세션 기록 → 개선 후보 | - | 범위 내 | chief-of-staff:51,53; retro:25 |
-| r02 | chief-of-staff | to-spec, to-tickets, implement-spec | 내부 위임 | 명시-이름 | 큰 작업이면 명세 → 티켓 → 이슈 트래커 게시 → 구현. 경로 `../to-spec/SKILL.md` 등이 가리키는 폴더가 이 저장소에 없다 | 명세, 티켓 | 이슈 트래커 | 불명 | chief-of-staff:54 |
-| r03 | retro | writing-for-agents | 내부 위임 | 명시-이름 | 1단계에서 Skill 도구로 불러 문체 기준을 얻는다(의무형). 4단계 참고 절에서도 스킬 작성은 이 기준을 따르라고 한다 | - | - | 범위 내 | retro:11,44; writing-for-agents:3 |
-| r04 | loop-me | grilling | 내부 위임 | 명시-이름 | `/grilling` 방식(한 번에 질문 한 묶음, 질문마다 추천 답)으로 진행 | - | - | 범위 밖 | loop-me:8 |
+| r01 | chief-of-staff | retro | 호출 | 명시-이름 | 서브에이전트 세션 약 5개 중 1개에 실행. 문제가 있던 세션부터 고른다. Skill 도구가 아니라 `../retro/SKILL.md` 파일을 읽고 따른다. retro의 마지막 단계(사용자에게 제시) 대신 chief-of-staff가 직접 고르고 실행한다. 원문은 두 스킬이 나란히 설치됐다고 전제한다. 원격에서는 chief-of-staff가 `skills/in-progress/`, retro가 `skills/engineering/`에 있어 원격 구조 그대로면 이 상대 경로가 풀리지 않을 수 있다. 이 저장소에서는 풀린다 | 세션 기록 → 개선 후보 | - | 범위 내 | chief-of-staff:51,53; retro:25 |
+| r02 | chief-of-staff | to-spec, to-tickets, implement-spec | 호출 | 명시-이름 | 큰 작업이면 명세 → 티켓 → 이슈 트래커 게시 → 구현. 경로 `../to-spec/SKILL.md` 등이 가리키는 폴더가 이 저장소에 없다 | 명세, 티켓 | 이슈 트래커 | 불명 | chief-of-staff:54 |
+| r03 | retro | writing-for-agents | 호출 | 명시-이름 | 1단계에서 Skill 도구로 불러 문체 기준을 얻는다(의무형). 4단계 참고 절에서도 스킬 작성은 이 기준을 따르라고 한다 | - | - | 범위 내 | retro:11,44; writing-for-agents:3 |
+| r04 | loop-me | grilling | 호출 | 명시-이름 | `/grilling` 방식(한 번에 질문 한 묶음, 질문마다 추천 답)으로 진행 | - | - | 범위 밖 | loop-me:8 |
 | r05 | wait-what | (저장소의) GLOSSARY.md, GLOSSARY-MAP.md | 참고 | 명시-이름 | 공용어(ubiquitous language)를 이 파일에서 가져온다. 어느 스킬이 만드는지는 원문에 명시 없음 | - | 대상 저장소 | 범위 밖 | wait-what:7 |
 | r06 | teach | wait-what | 미확인 | 미확인 | teach의 `GLOSSARY-FORMAT.md`도 `GLOSSARY.md`를 정의한다. 하지만 teach는 학습 작업 폴더의 용어집이고, wait-what은 코드 저장소의 공용어 파일이라 같은 파일이라는 근거가 없다 | `GLOSSARY.md` | - | 범위 내 | teach/GLOSSARY-FORMAT.md:3; wait-what:7 |
-| r07 | teach | loop-me | 같은 계열 | 추론 | 둘 다 "within this workspace" 상태형 스킬이고, 둘 다 현재 폴더의 `NOTES.md`에 기록한다. 같은 폴더에서 돌리면 `NOTES.md`를 함께 쓰게 된다(판정) | `NOTES.md` | 현재 작업 폴더 | 범위 내 | teach:3,20; loop-me:3,32 |
-| r08 | git-guardrails-claude-code | setup-pre-commit | 같은 계열 | 추론 | 둘 다 사람이 아닌 장치로 실수를 막는 설치 스킬이다. 막는 시점이 다르다(명령 실행 전 훅 / 커밋 전 훅) | - | - | 범위 내 | git-guardrails-claude-code:3; setup-pre-commit:3 |
-| r09 | retro | setup-pre-commit, git-guardrails-claude-code | 산출물 호환 | 추론 | retro는 "guardrail이 없는 저장소(pre-commit 훅도 CI도 없음)"를 개선 후보로 낸다. 이 후보를 실행하는 도구가 될 수 있다. retro는 두 스킬을 이름으로 부르지 않는다 | 개선 후보 | - | 범위 내 | retro:18; setup-pre-commit:3 |
+| r07 | teach | loop-me | 대안 | 추론 | 둘 다 "within this workspace" 상태형 스킬이고, 둘 다 현재 폴더의 `NOTES.md`에 기록한다. 같은 폴더에서 돌리면 `NOTES.md`를 함께 쓰게 된다(판정) | `NOTES.md` | 현재 작업 폴더 | 범위 내 | teach:3,20; loop-me:3,32 |
+| r08 | git-guardrails-claude-code | setup-pre-commit | 대안 | 추론 | 둘 다 사람이 아닌 장치로 실수를 막는 설치 스킬이다. 막는 시점이 다르다(명령 실행 전 훅 / 커밋 전 훅) | - | - | 범위 내 | git-guardrails-claude-code:3; setup-pre-commit:3 |
+| r09 | retro | setup-pre-commit, git-guardrails-claude-code | 결과 전달 | 추론 | retro는 "guardrail이 없는 저장소(pre-commit 훅도 CI도 없음)"를 개선 후보로 낸다. 이 후보를 실행하는 도구가 될 수 있다. retro는 두 스킬을 이름으로 부르지 않는다 | 개선 후보 | - | 범위 내 | retro:18; setup-pre-commit:3 |
 | r10 | chief-of-staff | writing-for-agents | 참고 | 명시-이름 | 위키 작성 예시 문장에 "retro가 1단계에서 writing-for-agents를 부른다"가 나온다. 실행 지시가 아닌 예시 | - | - | 범위 내 | chief-of-staff:45 |
 
 판정: `retro`와 `chief-of-staff`는 `disable-model-invocation: true`라 다른 스킬이 Skill 도구로 부를 수 없다. 그래서 chief-of-staff는 retro의 `SKILL.md`를 파일 경로로 읽는다(r01). 반대로 `writing-for-agents`는 이 필드가 없어서 retro가 Skill 도구로 부를 수 있다(r03). 이 차이는 `writing-for-agents/SKILL-MECHANICS.md:9-14`가 설명하는 규칙과 맞는다.

@@ -36,47 +36,47 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r01 | brag | brag-slim | 넘김 | 명시-이름 | 모델이 Claude Opus 5.5이고, 호출이 전체 워크플로(`--full`, "use the full brag")나 음성 해설(`--voice`)을 요구하지 않을 때 `slim.md`를 읽고 "이번 실행의 나머지"를 그쪽 지시로 따른다(의무형). 모델이 다르거나 알 수 없으면 이 검사를 건너뛴다. 넘기기 전에 사용자에게 한 줄로 알리고, "use the full brag"라고 말하면 되돌릴 수 있다고 안내한다 | 사용자 입력, 다른 옵션(`--no-music`, `--title` 등)은 평문 지시로 전달 | - | 범위 내 | brag:12; brag-slim:3 |
+| r01 | brag | brag-slim | 다음 안내 | 명시-이름 | 모델이 Claude Opus 5.5이고, 호출이 전체 워크플로(`--full`, "use the full brag")나 음성 해설(`--voice`)을 요구하지 않을 때 `slim.md`를 읽고 "이번 실행의 나머지"를 그쪽 지시로 따른다(의무형). 모델이 다르거나 알 수 없으면 이 검사를 건너뛴다. 넘기기 전에 사용자에게 한 줄로 알리고, "use the full brag"라고 말하면 되돌릴 수 있다고 안내한다 | 사용자 입력, 다른 옵션(`--no-music`, `--title` 등)은 평문 지시로 전달 | - | 범위 내 | brag:12; brag-slim:3 |
 | r02 | brag-slim | brag | 참고 | 명시-이름 | description에서 "`/brag`도 설치돼 있으면 해당 호출 문구는 `/brag`에 맡긴다. `/brag`가 Opus 5.5에서 여기로 넘긴다"고 밝힌다. 본문에서 `/brag`를 부르는 단계는 없다 | - | - | 범위 내 | brag-slim:3 |
 
 ### Barty-Bart 영상 스킬 사이
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r03 | sound-effects | motion-broll | 산출물 호환 | 명시-이름 | cue 목록을 만들 때 "구성 소스에서 가져올 수 있으면" 가져오는 곳으로 HyperFrames·Remotion 타임라인, GSAP 라벨과 함께 motion-broll의 `plan.json`을 든다. 권고형이며 필수 순서는 아니다. 적용 대상 설명에도 motion-broll이 들어 있다 | motion-broll `plan.json` → sound-effects `cues.json` | 파일 | 범위 내 | sound-effects:3,62; motion-broll:117-120 |
-| r04 | sound-effects | explainer-default, explainer-engaging, explainer-high-energy | 산출물 호환 | 미확인 | sound-effects의 적용 대상은 "Claude Code로 만든 모션그래픽 영상"이다. explainer 3종은 자체 `buildAudio`로 합성 음악·효과음을 넣는데, sound-effects는 "코드로 음악·효과음을 합성하지 말라"고 한다. 어느 SKILL.md도 서로를 부르지 않는다. 후속 사용 여부는 원문에서 확인되지 않아 `미확인`으로 남긴다 | - | - | 불명 | sound-effects:3,28; explainer-default:21,112-113 |
-| r05 | motion-broll | object-separation | 같은 계열 | 추론 | 두 스킬 모두 사용자가 가진 영상을 처리한다. motion-broll README는 "motion-broll, object-separation 또는 둘 다 설치"를 안내한다. 두 SKILL.md는 서로를 부르지 않는다. 파이프라인 연결은 `미확인` | - | - | 범위 내 | motion-broll/README.md:28; motion-broll:3; object-separation:3 |
-| r06 | explainer-default | explainer-engaging | 같은 계열 | 명시-이름 | 각 README가 서로를 "Sister skills"로 부르고 길이와 연출 차이를 표로 비교한다. 고르는 방식이며 순서는 없다 | - | - | 범위 내 | explainer-default/README.md:9,13-15; explainer-engaging/README.md:9 |
-| r07 | explainer-default | explainer-high-energy | 같은 계열 | 명시-이름 | r06과 같다 | - | - | 범위 내 | explainer-default/README.md:9,13-15; explainer-high-energy/README.md:9 |
-| r08 | explainer-engaging | explainer-high-energy | 같은 계열 | 명시-이름 | r06과 같다 | - | - | 범위 내 | explainer-engaging/README.md:9; explainer-high-energy/README.md:9 |
+| r03 | sound-effects | motion-broll | 결과 전달 | 명시-이름 | cue 목록을 만들 때 "구성 소스에서 가져올 수 있으면" 가져오는 곳으로 HyperFrames·Remotion 타임라인, GSAP 라벨과 함께 motion-broll의 `plan.json`을 든다. 권고형이며 필수 순서는 아니다. 적용 대상 설명에도 motion-broll이 들어 있다 | motion-broll `plan.json` → sound-effects `cues.json` | 파일 | 범위 내 | sound-effects:3,62; motion-broll:117-120 |
+| r04 | sound-effects | explainer-default, explainer-engaging, explainer-high-energy | 결과 전달 | 미확인 | sound-effects의 적용 대상은 "Claude Code로 만든 모션그래픽 영상"이다. explainer 3종은 자체 `buildAudio`로 합성 음악·효과음을 넣는데, sound-effects는 "코드로 음악·효과음을 합성하지 말라"고 한다. 어느 SKILL.md도 서로를 부르지 않는다. 후속 사용 여부는 원문에서 확인되지 않아 `미확인`으로 남긴다 | - | - | 불명 | sound-effects:3,28; explainer-default:21,112-113 |
+| r05 | motion-broll | object-separation | 대안 | 추론 | 두 스킬 모두 사용자가 가진 영상을 처리한다. motion-broll README는 "motion-broll, object-separation 또는 둘 다 설치"를 안내한다. 두 SKILL.md는 서로를 부르지 않는다. 파이프라인 연결은 `미확인` | - | - | 범위 내 | motion-broll/README.md:28; motion-broll:3; object-separation:3 |
+| r06 | explainer-default | explainer-engaging | 대안 | 명시-이름 | 각 README가 서로를 "Sister skills"로 부르고 길이와 연출 차이를 표로 비교한다. 고르는 방식이며 순서는 없다 | - | - | 범위 내 | explainer-default/README.md:9,13-15; explainer-engaging/README.md:9 |
+| r07 | explainer-default | explainer-high-energy | 대안 | 명시-이름 | r06과 같다 | - | - | 범위 내 | explainer-default/README.md:9,13-15; explainer-high-energy/README.md:9 |
+| r08 | explainer-engaging | explainer-high-energy | 대안 | 명시-이름 | r06과 같다 | - | - | 범위 내 | explainer-engaging/README.md:9; explainer-high-energy/README.md:9 |
 
 ### 컬렉션 밖 의존
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r09 | brag | hyperframes, hyperframes-cli, hyperframes-registry, media-use | 내부 위임 | 명시-이름 | 3단계에서 이 스킬들을 "Read"하라고 지시한다. 구성 구조·애니메이션 타이밍·렌더 워크플로는 Hyperframes가 맡고, brag는 제품 각도·스토리보드·톤·음악 선택을 맡는다. 단 Hyperframes의 `references/types/*`, `story.md`, `SPEC.md` 단계와 `usage`, `history`, `feedback`, REVIEW.md 단계는 건너뛴다(`check`가 brag의 통과 조건) | brag 계획·구성 지시문 | `npx hyperframes check` | 범위 밖 | brag:114,120-122 |
+| r09 | brag | hyperframes, hyperframes-cli, hyperframes-registry, media-use | 호출 | 명시-이름 | 3단계에서 이 스킬들을 "Read"하라고 지시한다. 구성 구조·애니메이션 타이밍·렌더 워크플로는 Hyperframes가 맡고, brag는 제품 각도·스토리보드·톤·음악 선택을 맡는다. 단 Hyperframes의 `references/types/*`, `story.md`, `SPEC.md` 단계와 `usage`, `history`, `feedback`, REVIEW.md 단계는 건너뛴다(`check`가 brag의 통과 조건) | brag 계획·구성 지시문 | `npx hyperframes check` | 범위 밖 | brag:114,120-122 |
 | r10 | bang-motion | Higgsfield MCP(`ae_*` bridge) | 참고 | 명시-이름 | After Effects가 열려 있고 `ae_*` MCP bridge가 연결돼 있으며 사용자가 AE에서 짓기를 요청한 세 조건이 모두 맞을 때 "bridge 명령으로 직접 짓는다"는 명령형이다. 안 맞으면 기본 경로는 브라우저 HTML이다. 종류는 `참고`로 두지만 강도는 조건부 의무에 가깝다. 참조 문서가 다루는 것은 카툰 무대 설명 영상뿐이다 | - | After Effects | 범위 밖 | bang-motion:3,514-518; bang-motion/references/ae-bridge-higgsfield.md:3-4 |
 | r15 | bang-motion | Higgsfield MCP(이미지·영상 생성) | 참고 | 명시-이름 | 사진·영상 소재를 MCP로 생성하는 경로를 "bila disetujui(동의되면)" 조건으로 소개한다. 카툰 이미지 생성 쪽의 동의 문구는 `bang-motion` 페이지 감사 패널에서 `원문에 명시 없음`으로 남겼다 | - | Higgsfield MCP | 범위 밖 | bang-motion/references/opener-konsep.md:342; bang-motion/references/explainer.md:267 |
 
-### 같은 계열
+### 대안
 
 작성자가 달라도 목적이 같은 스킬이다. 근거는 두 description이다.
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r11 | explainer-default | bang-motion | 같은 계열 | 추론 | 둘 다 설명·데모 영상을 HTML로 만들어 렌더링한다. 직접 연결은 없다. 스타일 선택 방식이 다르다 | - | - | 범위 내 | explainer-default:3; bang-motion:3 |
-| r12 | explainer-high-energy | bang-motion | 같은 계열 | 추론 | 둘 다 홍보 영상·티저·오프너를 코드로 만든다 | - | - | 범위 내 | explainer-high-energy:3; bang-motion:3 |
-| r13 | explainer-default | lemo-opuscar | 같은 계열 | 추론 | 둘 다 "영상·홍보·설명"을 코드로 만든다. lemo-opuscar는 이름 붙은 스타일을 고르는 방식이다 | - | - | 범위 내 | explainer-default:3; lemo-opuscar:3 |
-| r14 | brag | explainer-high-energy | 같은 계열 | 추론 | 둘 다 제품 홍보·출시 영상을 코드에서 만든다. brag는 프로젝트 코드를 읽어 소재를 얻고, explainer는 제품 설명을 질문으로 받는다 | - | - | 범위 내 | brag:3; explainer-high-energy:3 |
+| r11 | explainer-default | bang-motion | 대안 | 추론 | 둘 다 설명·데모 영상을 HTML로 만들어 렌더링한다. 직접 연결은 없다. 스타일 선택 방식이 다르다 | - | - | 범위 내 | explainer-default:3; bang-motion:3 |
+| r12 | explainer-high-energy | bang-motion | 대안 | 추론 | 둘 다 홍보 영상·티저·오프너를 코드로 만든다 | - | - | 범위 내 | explainer-high-energy:3; bang-motion:3 |
+| r13 | explainer-default | lemo-opuscar | 대안 | 추론 | 둘 다 "영상·홍보·설명"을 코드로 만든다. lemo-opuscar는 이름 붙은 스타일을 고르는 방식이다 | - | - | 범위 내 | explainer-default:3; lemo-opuscar:3 |
+| r14 | brag | explainer-high-energy | 대안 | 추론 | 둘 다 제품 홍보·출시 영상을 코드에서 만든다. brag는 프로젝트 코드를 읽어 소재를 얻고, explainer는 제품 설명을 질문으로 받는다 | - | - | 범위 내 | brag:3; explainer-high-energy:3 |
 
 ### cokacmotion과 script-to-motion
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r16 | script-to-motion | cokacmotion(aimotion) | 내부 위임 | 명시-이름 | 5단계에서 beat마다 효과의 기법을 "찾는다"(의무형). 자체 `cokacmotion.mjs`가 저장소를 `~/.cache/motion-video-cokacmotion`에 받아(`git clone --depth 1`, git이 없으면 tarball, 하루 한 번 갱신) 받은 `scripts/aimotion.mjs`를 `node`로 실행한다. aimotion의 `SKILL.md`를 부르라는 지시는 없고, 셰이더 함정 절 "영상에 옮길 때"만 참조하라고 한다(references/cokacmotion.md:123-125). 첫 다운로드(약 70MB) 전 사용자에게 한 줄로 알린다. 데모 파일은 프로젝트에 불러오지 않고 기술만 다시 짠다. 코드 블록이 데모와 실질적으로 같으면 `licenses/cokacmotion-LICENSE.txt`를 복사한다 | 기법 한 문장, 데모 id(storyboard References) | 로컬 캐시, `COKACMOTION_DIR` | 범위 내 | script-to-motion:476-481,840-849,905-907; references/cokacmotion.md:57-66,147-153; scripts/cokacmotion.mjs:85-95,179-183; aimotion:55-59 |
+| r16 | script-to-motion | cokacmotion(aimotion) | 호출 | 명시-이름 | 5단계에서 beat마다 효과의 기법을 "찾는다"(의무형). 자체 `cokacmotion.mjs`가 저장소를 `~/.cache/motion-video-cokacmotion`에 받아(`git clone --depth 1`, git이 없으면 tarball, 하루 한 번 갱신) 받은 `scripts/aimotion.mjs`를 `node`로 실행한다. aimotion의 `SKILL.md`를 부르라는 지시는 없고, 셰이더 함정 절 "영상에 옮길 때"만 참조하라고 한다(references/cokacmotion.md:123-125). 첫 다운로드(약 70MB) 전 사용자에게 한 줄로 알린다. 데모 파일은 프로젝트에 불러오지 않고 기술만 다시 짠다. 코드 블록이 데모와 실질적으로 같으면 `licenses/cokacmotion-LICENSE.txt`를 복사한다 | 기법 한 문장, 데모 id(storyboard References) | 로컬 캐시, `COKACMOTION_DIR` | 범위 내 | script-to-motion:476-481,840-849,905-907; references/cokacmotion.md:57-66,147-153; scripts/cokacmotion.mjs:85-95,179-183; aimotion:55-59 |
 | r17 | cokacmotion(aimotion) | (작업 중인 영상 스킬) | 참고 | 명시-역할 | "영상 스킬의 규칙이 먼저다"라고만 적는다. 어느 영상 스킬인지는 원문에 명시 없음 | - | - | 불명 | aimotion:60-62 |
-| r18 | script-to-motion | bang-motion | 같은 계열 | 추론 | 둘 다 HTML·CSS·GSAP로 브라우저에서 움직이는 설명·홍보 영상을 만든다. 직접 연결은 없다. 나레이션 TTS와 사용자 승인 녹음 흐름은 script-to-motion에만 있다 | - | - | 범위 내 | script-to-motion:3; bang-motion:3 |
-| r19 | script-to-motion | explainer-default | 같은 계열 | 추론 | 둘 다 코드에서 설명 영상을 만들어 MP4로 낸다(script-to-motion은 `render.py`를 사용자가 실행). 직접 연결은 없다 | - | - | 범위 내 | script-to-motion:3,19; explainer-default:3 |
+| r18 | script-to-motion | bang-motion | 대안 | 추론 | 둘 다 HTML·CSS·GSAP로 브라우저에서 움직이는 설명·홍보 영상을 만든다. 직접 연결은 없다. 나레이션 TTS와 사용자 승인 녹음 흐름은 script-to-motion에만 있다 | - | - | 범위 내 | script-to-motion:3; bang-motion:3 |
+| r19 | script-to-motion | explainer-default | 대안 | 추론 | 둘 다 코드에서 설명 영상을 만들어 MP4로 낸다(script-to-motion은 `render.py`를 사용자가 실행). 직접 연결은 없다 | - | - | 범위 내 | script-to-motion:3,19; explainer-default:3 |
 
 ## 묶음
 
