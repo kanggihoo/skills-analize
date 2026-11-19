@@ -31,7 +31,7 @@ def main(repo, name):
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         # ponytail: 에이전트를 claude-code로 고정. 다른 에이전트 폴더는 이 저장소에 필요 없음.
-        subprocess.run(["npx", "-y", "skills", "add", repo, "--skill", "*", "-a", "claude-code", "-y"], cwd=tmp, check=True)
+        subprocess.run([shutil.which("npx") or "npx", "-y", "skills", "add", repo, "--skill", "*", "-a", "claude-code", "-y"], cwd=tmp, check=True)
         skills = sorted(p for p in (tmp / ".claude" / "skills").iterdir() if (p / "SKILL.md").is_file())
         if not skills:
             print("[중단] 받은 스킬이 없음")
