@@ -8,7 +8,7 @@
 - 결과는 개요, 핵심 개념, 동작 방식, 파일 위치, 주의할 점 순서의 설명이다. 메인 에이전트는 이 설명을 크게 고쳐 쓰지 않는다.[](source:skill-present)
 
 @answer scope="pstack/how · 원본 텍스트 파일 3개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/how/SKILL.md · 3077B · 본문(frontmatter)" path=pstack/how/SKILL.md lines=1:5
 @source skill-body title="pstack/how/SKILL.md · 목적과 모델 규칙" path=pstack/how/SKILL.md lines=9:11
 @source skill-assess title="pstack/how/SKILL.md · Step 1" path=pstack/how/SKILL.md lines=13:20

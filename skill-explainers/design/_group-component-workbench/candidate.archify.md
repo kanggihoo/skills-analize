@@ -8,7 +8,7 @@
 - 셋 중 무엇을 쓸지는 "무엇을 알고 싶은가"로 가른다. 대안이 필요하면 `variant`, 최악의 데이터가 필요하면 `break`, 상태별로 다듬으려면 `state-machine`이다. 리뷰나 다른 스킬로 돌리는 경계는 각 스킬의 소개 문단이 적는다.[](source:va-11)[](source:br-11)[](source:sm-11)
 
 @answer scope="design/jakubkrehel 컴포넌트 작업 스킬 3개 · 커밋 0465878 · 지시상 동작 · 관계는 원장 rel-id 기준 · 스킬을 실행해 확인하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source va-fm title="design/jakubkrehel/variant/SKILL.md · frontmatter(호출 제한)" path=design/jakubkrehel/variant/SKILL.md lines=1:5
 @source va-9 title="variant/SKILL.md · 3개 버전을 선택기 뒤에" path=design/jakubkrehel/variant/SKILL.md lines=9:11
 @source va-11 title="variant/SKILL.md · 다른 스킬의 몫" path=design/jakubkrehel/variant/SKILL.md lines=11:11

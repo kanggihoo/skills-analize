@@ -7,7 +7,7 @@ garden-skills의 시각 결과물 스킬 다섯 개는 차례로 거치는 단�
 - `gpt-image-2`는 이미지를 직접 요청받을 때도 켜지고, `web-design-engineer`의 선택적 image-first 분기에서도 쓰인다.[](source:gi-fm)[](source:wd-img)
 
 @answer scope="design/garden-skills 다섯 스킬 · 커밋 4e3fc89 · 지시상 동작 · kb-retriever는 시각 결과물이 아니라 제외"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ba-fm title="design/garden-skills/beautiful-article/SKILL.md · frontmatter" path=design/garden-skills/beautiful-article/SKILL.md lines=1:4
 @source ba-flow title="beautiful-article/SKILL.md · Checkpoint 1·2·3" path=design/garden-skills/beautiful-article/SKILL.md lines=36:49
 @source ba-readme title="beautiful-article/README.md · 웹앱·랜딩은 web-design-engineer로(r34)" path=design/garden-skills/beautiful-article/README.md lines=421:421

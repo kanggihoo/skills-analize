@@ -1,20 +1,27 @@
-# 감사 계획 — 프로필, 비용 예산, 이전 실행 활용 {#planning-detail}
+# 감사 계획 — 프로필, 비용 예산, 이전 실행 활용 {#detail-planning}
 
-이 페이지는 개요의 `감사 설정` 노드 중 계획 규칙을 맡는다. 시작 입력은 사용자의 요청(profile, 범위, budget)과 이전 실행의 ledger·findings다. 끝 출력은 `run-metadata.json`의 `profile`, `scope_paths`, `budget`과 현재 실행의 시작 조건이다. 이후 개요의 `정찰`로 이어지고, budget이 최소 비용을 못 대면 agent 없이 `incomplete`로 끝난다. 이 규칙은 전체 감사 모드에만 적용된다.[](source:skm-plan-scope)
+[개요](page:security-audit.html)의 `감사 설정` 노드 가운데 계획 규칙(프로필, 비용 예산, 이전 실행 활용)을 자세히 본다. 시작 입력은 사용자의 profile·범위·budget 요청과 이전 실행의 ledger·findings이고 끝 출력은 `run-metadata.json`의 `profile`, `scope_paths`, `budget`이다. 이후 개요의 `정찰`로 간다.[](source:skm-plan-scope)
+
+- 이 규칙은 전체 감사 모드에만 적용된다.[](source:skm-plan-scope)
+- `quick`은 hunter wave와 final critic pass를 각각 정확히 한 번만 돈다.[](source:skm-profiles)
+- budget이 정찰과 예약의 최소 비용을 못 대면 agent를 하나도 띄우지 않는다.[](source:skm-budget-gate)
+- 소스가 바뀐 이전 `confirmed`는 hunter 제외 목록에 넣지 않고 다시 검증한다.[](source:skm-prior)
 
 @answer scope="cloudflare/security-audit · SKILL.md 88~134줄 · 지시상 동작"
-@meta locale=ko
-@source skm-plan-scope title="전체 감사 모드에만 적용" path=cloudflare/security-audit/SKILL.md lines=90:90
-@source skm-cov title="deterministic coverage plan" path=cloudflare/security-audit/SKILL.md lines=94:94
-@source skm-prior title="이전 실행 활용 여섯 규칙" path=cloudflare/security-audit/SKILL.md lines=96:105
-@source skm-profiles title="프로필과 범위" path=cloudflare/security-audit/SKILL.md lines=107:117
-@source skm-budget-def title="예산의 단위" path=cloudflare/security-audit/SKILL.md lines=119:121
-@source skm-budget-gate title="정찰 전 strict gate" path=cloudflare/security-audit/SKILL.md lines=123:123
-@source skm-budget-order title="예산 사용 순서" path=cloudflare/security-audit/SKILL.md lines=125:130
-@source skm-budget-est title="wave 1 전 추정과 critic reserve 소진" path=cloudflare/security-audit/SKILL.md lines=132:132
-@source skm-budget-over title="검증 예산 소진" path=cloudflare/security-audit/SKILL.md lines=134:134
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source skm-plan-scope title="전체 감사 모드에만 적용" path=cloudflare/security-audit/SKILL.ko.md lines=90:90
+@source skm-cov title="deterministic coverage plan" path=cloudflare/security-audit/SKILL.ko.md lines=94:94
+@source skm-prior title="이전 실행 활용 여섯 규칙" path=cloudflare/security-audit/SKILL.ko.md lines=96:105
+@source skm-profiles title="프로필과 범위" path=cloudflare/security-audit/SKILL.ko.md lines=107:117
+@source skm-budget-def title="예산의 단위" path=cloudflare/security-audit/SKILL.ko.md lines=119:121
+@source skm-budget-gate title="정찰 전 strict gate" path=cloudflare/security-audit/SKILL.ko.md lines=123:123
+@source skm-budget-order title="예산 사용 순서" path=cloudflare/security-audit/SKILL.ko.md lines=125:130
+@source skm-budget-est title="wave 1 전 추정과 critic reserve 소진" path=cloudflare/security-audit/SKILL.ko.md lines=132:132
+@source skm-budget-over title="검증 예산 소진" path=cloudflare/security-audit/SKILL.ko.md lines=134:134
 
-## 이전 실행의 기록을 어떻게 다시 쓰나 {#prior span=12}
+## 어떻게 동작하나 {#detail span=12}
+
+**이전 실행의 기록을 어떻게 다시 쓰나**
 
 원문의 전제는 "한 번의 pass로는 완전하지 않다"이다. 그래서 hunting 전에 deterministic coverage plan을 세우고, agent 결과가 나올 때마다 갱신한다. ledger는 parent만 갱신한다.[](source:skm-cov) 이전 실행이 있으면 호환되는 모든 `coverage-ledger.json`과 `findings.json`을 계획 전에 읽는다.[](source:skm-prior)
 
@@ -29,7 +36,7 @@
 
 이전 소스 ref만으로는 경로가 바뀌지 않았다는 증거가 되지 않는다. 현재 소스를 이전 record와 직접 비교해야 한다.[](source:skm-prior) 이전 ledger가 없으면 최종 coverage 설명에 없다고 쓰고, 한 번의 실행이 target을 소진했다고 암시하지 않는다.[](source:skm-prior)
 
-## 프로필과 범위는 무엇을 바꾸나 {#profiles span=12}
+**프로필과 범위는 무엇을 바꾸나**
 
 parent는 설정 단계에서 사용자의 요청에서 profile을 고르거나, target의 크기와 중요도를 보고 제안한다. `run-metadata.json`의 `profile`과 `scope_paths`에 기록하고 보고서에도 밝힌다. 기본값은 `standard`다.[](source:skm-profiles)
 
@@ -43,7 +50,7 @@ scoped run은 일부만 감사한다. 이름 붙인 경로, subsystem 하나, co
 
 profile은 범위와 중복 검증의 폭을 바꿀 뿐 증거 기준은 바꾸지 않는다. 후보 통과 조건, 소스·local 실행 경계, `needs_validation` 규율, schema 검증, `confirmed` record의 독립 검증은 어떤 profile에서도 줄이지 않는다.[](source:skm-profiles)
 
-## 비용 예산은 어떻게 쓰고, 부족하면 어떻게 멈추나 {#budget span=12}
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
 예산 단위는 agent 호출 수다. unit 하나는 대략 hunter 배정 하나이고, 살아남은 후보 하나는 profile에 따라 verifier 배정 하나나 둘이다. 사용자가 budget을 정하거나 parent가 큰 target에 제안하면 `run-metadata.json`의 `budget`에 모든 단계를 합친 agent 호출 최대 횟수로 기록한다.[](source:skm-budget-def)
 
@@ -69,11 +76,9 @@ profile은 범위와 중복 검증의 폭을 바꿀 뿐 증거 기준은 바꾸�
 
 wave 1 전에는 시드한 unit 수, 암시된 hunter 수, 필수 critic 호출, 검증 예약, 남은 budget이 계획을 덮는지를 담은 추정을 갱신한다. 덮지 못하면 얇은 증거로 조용히 진행하지 않고, 좁은 범위나 거친 profile을 제안한다.[](source:skm-budget-est)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.setup.html` | 모드 선택, 실행 안전, 설정값, 쓰기 격리 |
-| `security-audit.recon.html` | 정찰과 coverage ledger. 이전 실행의 `prior_status` 값이 쓰이는 곳 |
-| `security-audit.hunt.html` | hunter 지시문과 coverage critic. profile별 critic 한도 |
+- [개요](page:security-audit.html)
+- [감사 설정과 실행 안전](page:security-audit.setup.html)
+- [정찰과 coverage ledger](page:security-audit.recon.html)
+- [사냥](page:security-audit.hunt.html)

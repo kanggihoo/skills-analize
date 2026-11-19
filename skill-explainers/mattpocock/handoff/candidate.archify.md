@@ -8,7 +8,7 @@
 - API 키, 비밀번호, 개인 식별 정보는 지운다.[](source:skill-redact)
 
 @answer scope="mattpocock/handoff · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/handoff/SKILL.md · 940B · frontmatter" path=mattpocock/handoff/SKILL.md lines=1:6
 @source skill-body title="SKILL.md · 목적과 저장 위치" path=mattpocock/handoff/SKILL.md lines=8:8
 @source skill-skills title="SKILL.md · suggested skills 절" path=mattpocock/handoff/SKILL.md lines=10:10

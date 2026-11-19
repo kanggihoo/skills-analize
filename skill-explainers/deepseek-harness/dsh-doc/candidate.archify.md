@@ -8,7 +8,7 @@
 - 웹사이트에 동기화해도 인터넷에 게시되지 않는다. 사용자가 배포를 명시적으로 요청하고 호스팅 정책을 확인해 줄 때만, 에이전트가 배포 설정을 더한다.[](source:web-dep)
 
 @answer scope="deepseek-harness/dsh-doc · 원본 텍스트 파일 14개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source dm-fm title="deepseek-harness/dsh-doc/SKILL.md · 18418B · frontmatter" path=deepseek-harness/dsh-doc/SKILL.md lines=1:4
 @source dm-summary title="SKILL.md · Summary" path=deepseek-harness/dsh-doc/SKILL.md lines=10:10
 @source dm-flow title="SKILL.md · Workflow 도입" path=deepseek-harness/dsh-doc/SKILL.md lines=28:28

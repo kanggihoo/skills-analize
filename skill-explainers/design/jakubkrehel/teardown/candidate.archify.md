@@ -8,7 +8,7 @@
 - 실제로 켜면 하는 일: `tools/teardown/`에 코드를 복사하고, 패키지를 설치하고, `node` 스크립트와 headless Chrome을 쓴다. 이 분석은 어느 것도 실행하지 않았다.[](source:td-s3)[](source:vw-cfg)[](source:vw-test)
 
 @answer scope="design/jakubkrehel/teardown · 지시상 동작 · 코드 4개는 부분 읽음 · 실행 안 함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source td-fm title="design/jakubkrehel/teardown/SKILL.md · 10593B · 지시 본문과 frontmatter" path=design/jakubkrehel/teardown/SKILL.md lines=1:4
 @source td-scope title="SKILL.md · 만드는 것과 제조 도면이 아니라는 선" path=design/jakubkrehel/teardown/SKILL.md lines=8:10
 @source td-exact title="SKILL.md · 정확해야 하는 것과 시작 레시피" path=design/jakubkrehel/teardown/SKILL.md lines=12:12

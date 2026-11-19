@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 이미 있는 애니메이션을 고칠 때다. 그때는 `improve-animations`나 `review-animations`를 쓰라고 한다.[](source:fa-fm)
 
 @answer scope="design/emilkowalski/find-animation-opportunities · 원본 텍스트 1개 9,808B · 커밋 4e3fc89 · 지시상 동작이며 실행해 보지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source fa-fm title="design/emilkowalski/find-animation-opportunities/SKILL.md · 9808B · 지시 본문과 frontmatter" path=design/emilkowalski/find-animation-opportunities/SKILL.md lines=1:4
 @source fa-init title="SKILL.md · 첫 응답" path=design/emilkowalski/find-animation-opportunities/SKILL.md lines=8:14
 @source fa-scope title="SKILL.md · 하는 일과 하지 않는 일" path=design/emilkowalski/find-animation-opportunities/SKILL.md lines=16:16

@@ -7,7 +7,7 @@
 - 음성 해설은 `brag`의 `--voice`에만 있다. `brag-slim`은 음성 해설을 하지 않는다고 `brag`가 적는다.[](source:lv-dispatch)
 
 @answer scope="video/latent-spaces brag · brag-slim · 커밋 23e8047 · 지시상 동작 · 영상 결과는 확인하지 못함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source lv-brag-desc title="video/latent-spaces/brag/SKILL.md · 9440B · frontmatter" path=video/latent-spaces/brag/SKILL.md lines=1:4
 @source lv-dispatch title="brag/SKILL.md · 호출 분기(Model check)" path=video/latent-spaces/brag/SKILL.md lines=10:12
 @source lv-brag-opts title="brag/SKILL.md · 옵션 표" path=video/latent-spaces/brag/SKILL.md lines=40:54

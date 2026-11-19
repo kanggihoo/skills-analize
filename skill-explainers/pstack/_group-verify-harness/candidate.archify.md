@@ -8,7 +8,7 @@
 - `maintain-verification-skill`은 대상 검증 스킬이 없으면 멈추고 `create-verification-skill`을 가리킨다.[](source:mvs-locate)
 
 @answer scope="pstack/verify-harness 묶음 · 스킬 3개와 poteto-help SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source setup-fm title="pstack/setup-pstack/SKILL.md · 5548B · frontmatter" path=pstack/setup-pstack/SKILL.md lines=1:4
 @source setup-offer title="pstack/setup-pstack/SKILL.md · Step 7 검증 스킬 제안" path=pstack/setup-pstack/SKILL.md lines=72:74
 @source cvs-fm title="pstack/create-verification-skill/SKILL.md · 5879B · frontmatter" path=pstack/create-verification-skill/SKILL.md lines=1:5

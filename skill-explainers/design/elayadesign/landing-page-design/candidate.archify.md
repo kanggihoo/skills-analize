@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 이미 있는 사이트를 개선하는 일은 원문이 별도 스킬 `redesign-existing-projects`로 보낸다. 사용자가 명시한 지시와 충돌하면 사용자 지시가 이긴다.[](source:lp-scope)
 
 @answer scope="design/elayadesign/landing-page-design · SKILL.md 1개 22,115B · 커밋 4e3fc89 · 지시상 동작 · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source lp-fm title="design/elayadesign/landing-page-design/SKILL.md · 22115B · frontmatter" path=design/elayadesign/landing-page-design/SKILL.md lines=1:4
 @source lp-intro title="SKILL.md · 랜딩 페이지 정의와 두 부분 구성" path=design/elayadesign/landing-page-design/SKILL.md lines=6:12
 @source lp-scope title="SKILL.md · Scope 절과 companion skill" path=design/elayadesign/landing-page-design/SKILL.md lines=14:18

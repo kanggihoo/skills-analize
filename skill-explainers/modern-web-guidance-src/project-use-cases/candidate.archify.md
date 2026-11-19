@@ -1,173 +1,131 @@
-# project-use-cases는 web 기능 하나를 어떤 use case로 풀게 하나? {#project-use-cases-page}
+# project-use-cases — web 기능 하나를 use case 2~5개로 풀고 guide 틀 만들기 {#overview}
 
-`project-use-cases`는 web 기능 하나를 개발자가 하려는 일(use case) 2~5개로 풀고, guide ID와 `guide.md` frontmatter stub까지 만들어 Content ATL의 승인을 받게 한다. use case는 기능 설명이 아니라 동사로 시작하는 작업이고, description에는 해결책이나 기능 이름을 쓰지 않는 것이 기본이다.[](source:uc-task)[](source:uc-s1)
+`project-use-cases`는 에이전트가 web 기능 하나를 개발자가 하려는 일(use case) 2~5개로 풀고, 각각에 guide ID와 `guide.md` 틀을 만들어 Content ATL의 승인을 받게 하는 스킬이다. guide를 만드는 3단계 중 첫 단계다.[](source:uc-goal)[](source:uc-scope)
 
-- 한 기능에서 나오는 use case는 2~5개이고, 틈새 use case는 버린다(MANDATORY).[](source:uc-scope)
-- description은 동사로 시작하는 한 문장이고 최대 1024자다. guide ID는 2~4단어 명사구나 `-ing` 형태다.[](source:uc-s1)[](source:uc-s3)
-- 이 단계는 stub만 만든다. 본문은 승인 뒤 Stage 2에서 쓴다.[](source:uc-s4)[](source:uc-s6)
-- 커뮤니티 기여자는 Stage 1을 ATL과 먼저 맞추고, 온보딩된 Peer는 Stage 2로 바로 갈 수 있다.[](source:uc-stages)
+- 쓰는 때: `guides/` 아래 use case를 쓰거나 검토할 때다. description은 새 guide를 만드는 첫 단계라고 쓴다.[](source:uc-front)
+- 결과: `guides/<category>/<guide-id>/guide.md` 틀(frontmatter만 있음)과 승인 요청(PR이나 new-use-case 이슈)이 나온다. 본문은 승인 뒤 Stage 2에서 채운다.[](source:uc-step4)[](source:uc-step6)
+- 다른 스킬과의 관계: 승인되면 `project-guides`(Stage 2)로 간다(다음 안내). `project-features`가 앞 단계이고, 허브 guide 구조는 `project-discipline-guides`를 참고한다.[](source:uc-after)[](source:uc-gov)
+- 하지 않는 것: use case 설명에 해결 방법(API 이름)을 쓰지 않고, 틈새 use case는 넣지 않는다(MANDATORY).[](source:uc-what)[](source:uc-niche)
 
-@answer scope="로컬 원본 분석 · 외부 저장소 파일 미확인 · 실행 없음"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=a1d836f93ec897c67870ac042622e8aec36e5f6b
-@source uc-full title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md
-@source uc-front title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=1:4
-@source uc-stages title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=6:14
-@source uc-task title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=16:23
-@source uc-scope title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=24:31
-@source uc-overlap title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=36:43
-@source uc-steps title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=45:47
-@source uc-s1 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=49:55
-@source uc-s2 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=57:67
-@source uc-s3 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=69:76
-@source uc-s4 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=78:98
-@source uc-yaml title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=91:97
-@source uc-s5 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=100:102
-@source uc-s6 title="modern-web-guidance-src/project-use-cases/SKILL.md · 12896B · 원본" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=104:108
-@source demo title="modern-web-guidance-src/project-use-cases/examples/demo.html · 833B · 예시 demo" path=modern-web-guidance-src/project-use-cases/examples/demo.html
-@source pf-ref title="modern-web-guidance-src/project-features/SKILL.md · 16922B · 관계 확인용 일부" path=modern-web-guidance-src/project-features/SKILL.md lines=113:121
-@source pg-ref title="modern-web-guidance-src/project-guides/SKILL.md · 26181B · 관계 확인용 일부" path=modern-web-guidance-src/project-guides/SKILL.md lines=1:14
-@source pg-stub title="modern-web-guidance-src/project-guides/SKILL.md · 26181B · 관계 확인용 일부" path=modern-web-guidance-src/project-guides/SKILL.md lines=36:46
-@source pdg-ref title="modern-web-guidance-src/project-discipline-guides/SKILL.md · 5288B · 관계 확인용 일부" path=modern-web-guidance-src/project-discipline-guides/SKILL.md lines=1:8
-@source lock title="modern-web-guidance-src/skills-lock.json · 3621B · 설치 출처" path=modern-web-guidance-src/skills-lock.json
+@answer scope="modern-web-guidance-src/project-use-cases · 원본 파일 2개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source uc-front title="이름과 description" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=1:4
+@source uc-goal title="목표와 3단계" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=6:12
+@source uc-gov title="권한과 fast-track" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=14:14
+@source uc-task title="행동 중심 use case 정의" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=18:21
+@source uc-what title="WHAT not HOW" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=22:23
+@source uc-scope title="범위 2~5개" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=24:24
+@source uc-niche title="틈새 use case 제외" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=25:31
+@source uc-overlap title="겹침 줄이기" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=36:43
+@source uc-step1 title="1단계 설명 쓰기" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=47:55
+@source uc-step2 title="2단계 category 고르기" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=57:67
+@source uc-step3 title="3단계 guide ID" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=69:76
+@source uc-step4 title="4단계 guide.md 틀" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=78:98
+@source uc-step5 title="5단계 검증" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=100:102
+@source uc-step6 title="6단계 승인 요청" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=104:106
+@source uc-after title="승인 뒤 Stage 2" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=108:108
+@source uc-demo title="예시 demo.html" path=modern-web-guidance-src/project-use-cases/examples/demo.html lines=1:12
+@source pf-after title="project-features의 분류 뒤 안내" path=modern-web-guidance-src/project-features/SKILL.md lines=113:121
+@source pf-handle title="project-features의 sync와 checklist" path=modern-web-guidance-src/project-features/SKILL.md lines=99:111
+@source pg-front title="project-guides 이름과 소개" path=modern-web-guidance-src/project-guides/SKILL.md lines=1:12
+@source pg-stub title="project-guides의 guide.md 단계" path=modern-web-guidance-src/project-guides/SKILL.md lines=36:46
+@source pgv-ref title="project-guide-validation의 작성 기준 안내" path=modern-web-guidance-src/project-guide-validation/SKILL.md lines=34:34
+@source dg-front title="project-discipline-guides 이름과 description" path=modern-web-guidance-src/project-discipline-guides/SKILL.md lines=1:8
 
-## 어떤 use case를 남기고 어떤 것을 버리나? {#select}
+## 어떻게 동작하나 {#flow span=12}
 
-description은 모델이 호출 여부를 판단할 때 참고하는 설명이다. 특정 단어와 정확히 일치해야 켜진다는 뜻은 아니다. 원문은 guides 아래 use case를 쓸 때뿐 아니라 검토할 때도 쓰라고 한다. 호출 제한 필드는 원문에 명시 없음.[](source:uc-front)
+원문은 "REQUIRED" 6단계를 번호로 지시한다. 앞쪽의 판단 원칙(행동 중심, WHAT not HOW, 병합과 분리, 겹침 점검)은 1~3단계의 입력을 정하는 기준이다. 6단계 뒤에 승인이 나면 Stage 2로 간다. 사람 승인 지점이 하나 있고, 온보딩된 Peer는 Stage 1을 건너뛰고 Stage 2로 바로 갈 수 있다.[](source:uc-step1)[](source:uc-gov)
+
+@workflow id=flow-diagram title="project-use-cases 흐름"
+| lane decide | 정하기 |
+| lane stub | 틀 만들기 |
+| lane approve | 승인 |
+| desc | 설명 쓰기 | backend | decide | source:uc-step1 |
+| cat | category 고르기 | backend | decide | source:uc-step2 |
+| mint | guide ID 만들기 | backend | decide | source:uc-step3 |
+| stub | guide.md 틀 쓰기 | backend | stub | source:uc-step4 |
+| test | 틀 검증 | backend | stub | source:uc-step5 |
+| ask | 승인 요청 | external | approve | source:uc-step6 |
+| ok | 승인됐나? | backend | approve | source:uc-after |
+| desc > cat | |
+| cat > mint | |
+| mint > stub | |
+| stub > test | |
+| test > ask | 통과 |
+| ask > ok | 검토 |
+| ok > desc | 아니오, 고친다 | dashed |
+
+@steps id=flow-steps
+| s-desc | 설명 쓰기 | **입력** 기능과 개발자가 하려는 일 · **출력** 한 문장 `description`(최대 1024자). **처리** 에이전트가 동사로 시작하는 한 문장으로 "사용자가 무엇을 하려는가"에 답한다. 예: "Deprioritize background data fetches made with the Fetch API ..."[](source:uc-step1) **다음** guide ID(`name`)와 `description`의 범위가 같아야 한다. 범위가 다르면 안 된다. | flow-diagram | desc |
+| s-cat | category 고르기 | **입력** use case · **참조** `guides/` 아래 하위 폴더 목록 · **출력** category 하나. **처리** 에이전트가 하위 폴더를 나열해 가장 알맞은 것을 고르되, 구현 기술이 아니라 사용자 목표로 분류한다.[](source:uc-step2) **다음** 성능·접근성 같은 횡단 관심사는 category로 고르지 않고 `guide.md` 본문에서 다룬다. | flow-diagram | cat |
+| s-mint | guide ID 만들기 | **입력** use case와 category · **출력** `guides/<category>/<guide-id>/` 폴더 이름. **처리** 에이전트가 주제를 가리키는 2~4단어 명사구나 `-ing` 형태로 ID를 짓는다. 명령형 동사와 API 이름은 쓰지 않는다.[](source:uc-step3) | flow-diagram | mint |
+| s-stub | guide.md 틀 쓰기 | **입력** ID, 설명, web feature ID · **출력** `guide.md`(frontmatter만). **처리** 에이전트가 `name`, `description`, `web-feature-ids` 세 필드만 쓴 틀을 만든다. 본문은 peer review 뒤에 채운다.[](source:uc-step4) | flow-diagram | stub |
+| s-test | 틀 검증 | **입력** 만든 폴더와 frontmatter · **실행** `pnpm test` · **출력** 구조·metadata 검증 결과. **처리** 에이전트가 use case 폴더 구조와 frontmatter를 확인한다. → 내부 구현 미확인[](source:uc-step5) | flow-diagram | test |
+| s-ask | 승인 요청 | **입력** `guide.md` 틀 · **출력** PR 또는 new-use-case 이슈. **처리** 에이전트가 category의 Content ATL이 검토하도록 PR을 올리거나 new-use-case 이슈(`.github/ISSUE_TEMPLATE/new-use-case.yml` 형식)를 올린다.[](source:uc-step6) **다음** 사람 ATL이 승인한다. 승인 방식은 원문에 명시 없음. | flow-diagram | ask |
+| s-ok | 승인됐나? | **입력** ATL 검토 결과 · **출력** Stage 2 진입 또는 수정. **처리** 승인되면 `project-guides` skill로 `guide.md`, `demo.html`, `expectations.md`를 쓴다.[](source:uc-after) **다음** 아니오일 때 수정 절차는 원문에 명시 없음. 그림의 되돌림 간선은 판정이다. | flow-diagram | ok |
+
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
+
+@facts
+| 직접 켜는 방법 | 사용자 명령은 원문에 명시 없음. 모델이 description을 보고 켠다. 호출 제한 필드는 없다[](source:uc-front) |
+| 성격 | 6단계로 use case와 guide 틀을 만드는 절차형 스킬. Stage 1이다 |
+
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| `project-features` {#r01} | **이 스킬** | 다음 안내 | 이슈가 자격을 통과한 뒤 ATL이 use case를 찾는다. 이슈 comment·본문·label·status·닫기 전에는 사용자에게 확인한다.[](source:pf-after)[](source:uc-goal) |
+| **이 스킬** {#r03} | `project-guides` | 다음 안내 | use case를 Content ATL이 승인한 뒤 Stage 2로 간다. 온보딩된 Peer는 Stage 1을 건너뛰고 바로 Stage 2로 갈 수 있다.[](source:uc-gov)[](source:uc-after)[](source:pg-front) |
+| **이 스킬** {#r04} | `project-discipline-guides` | 참고 | "Granular Guide Decomposition" 규칙 끝에서 허브 guide와 하위 guide 구조는 이 스킬을 보라고 안내한다.[](source:uc-niche)[](source:dg-front) |
+| `project-guide-validation` {#r09} | **이 스킬** | 참고 | guide를 `project-use-cases`와 `project-guides`의 작성 기준에 대조하라고 한다.[](source:pgv-ref)[](source:uc-front) |
+| **이 스킬** {#r13} | `project-guides` | 같은 파일 | 같은 `guide.md`를 먼저 틀로 만들고(Stage 1) 나중에 본문으로 채운다(Stage 2). 선후는 R03이다.[](source:uc-step4)[](source:pg-stub) |
+| **이 스킬** {#r34} | sync(`src/ci/sync-use-cases.ts`)와 이슈 checklist | 같은 파일 | 범위 밖이다. 이슈 checklist는 sync가 다시 쓴다. 이 스킬 본문에는 sync 언급이 없고 `project-features` 본문에 근거가 있다.[](source:pf-handle) |
+
+@architecture id=relation-map title="project-use-cases와 이어지는 스킬"
+| pf | project-features | backend |
+| self | project-use-cases(이 스킬) | backend |
+| pg | project-guides | backend |
+| dg | project-discipline-guides | backend |
+| pgv | project-guide-validation | backend |
+| pf > self | 다음 안내 | emphasis |
+| self > pg | 다음 안내 | emphasis |
+| self > dg | 참고 | dashed |
+| pgv > self | 참고 | dashed |
 
 @code source=uc-front language=yaml
 
-use case는 개발자가 구현하려는 작업이고, 기능은 그 해법의 일부일 뿐이다. 에이전트는 개발자가 무엇을 만들지는 알지만 어떤 feature가 최선인지는 모른다고 가정하고, 원하는 결과를 중심으로 쓴다.[](source:uc-task)
+## 어떤 파일로 이루어지나 {#files span=12}
 
-@facts id=numbers
-| 한 기능에서 나오는 use case | 2~5개. 하위 feature마다 만들 필요는 없다(권고 범위, IMPORTANT)[](source:uc-scope) |
-| description 길이 | 최대 1024자, 한 문장(MUST)[](source:uc-s1) |
-| guide ID | 2~4단어 명사구나 `-ing` 형태[](source:uc-s3) |
-| 합치는 기준 | 두 guide가 99% 같으면 합친다. 제안한 use case끼리 구현이 90% 같으면 통합한다[](source:uc-scope) |
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | use case 판단 원칙과 6단계 절차를 담는다 | use case를 쓰거나 검토할 때 읽는다 | 설명 쓰기, category 고르기, guide ID 만들기, guide.md 틀 쓰기, 틀 검증, 승인 요청, 승인됐나? |
+| `examples/demo.html` | "Deprioritize Background Fetches" 데모 HTML이다. `SKILL.md`가 이 파일을 가리키는 문장은 없다 | 원문에 읽는 조건 명시 없음 | 원문에 명시 없음[](source:uc-demo) |
 
-| 무엇을 쓰나 | 규칙 |
-|---|---|
-| 작업으로 쓰기 | 모든 use case는 동사로 시작하는 작업이다. 예: "Scroll-driven animations support horizontal scrolling" 대신 "Synchronize an animation's progress with the horizontal scroll distance of a container"[](source:uc-task) |
-| 일반성과 구별 | description은 다양한 사용자 prompt와 맞도록 일반적으로 쓴다. RAG가 heading 단위로 내용을 나누므로 guide는 구체적인 heading을 쓰고, heading 안의 구현은 구체적이고 모호하지 않게 쓴다. 예: "Fade an image in/out..." 대신 "Smoothly hide/show a component..."[](source:uc-task) |
-| 해법을 쓰지 않기 | description에는 API 메서드, 속성, 대상 feature 이름을 기본적으로 쓰지 않는다. 검색에 정말 필요할 때만 예외다. `gd dev`가 `task.md`를 만들 때 feature와 API 이름을 지운다. "...by doing...", "...through the use of..." 같은 표현도 피한다[](source:uc-task) |
-| 틈새 버리기 | 실제 개발자 prompt와 맞을 가능성이 낮은 use case와 시각적 장난은 쓰지 않는다(MANDATORY)[](source:uc-scope) |
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-합치기, 쪼개기, 접기는 아래 기준을 따른다.[](source:uc-scope)
+| 조건 | 결과 | 출처 |
+| --- | --- | --- |
+| use case 수 | 기능당 2~5개를 목표로 한다. 모든 하위 기능에 use case가 필요한 것은 아니다(IMPORTANT) | [](source:uc-scope) |
+| 틈새 기능이나 시각 효과 | 넣지 않는다(MANDATORY). 실제 개발자 요청과 맞을 가능성이 낮으면 뺀다 | [](source:uc-niche) |
+| 두 use case의 guide가 99% 같다 | 하나로 합친다 | [](source:uc-niche) |
+| 복잡한 기능(passkey 등) | 한 guide에 넣지 않고 use case로 나눈다 | [](source:uc-niche) |
+| 한 줄 progressive enhancement나 저수준 utility | 1:1 micro-guide를 만들지 않는다. 더 넓은 guide나 discipline guide에 합친다 | [](source:uc-niche) |
+| 기존 guide와 실질적으로 같다 | 중복을 만들지 않는다. 기존 guide에 변형으로 넣는 방법을 생각한다 | [](source:uc-overlap) |
+| `description` | 최대 1024자, 한 문장, 명령형 동사로 시작한다(MUST) | [](source:uc-step1) |
+| 위치 | `guides/` 아래 단일 category다(MUST). 구현이 아니라 목표로 분류한다 | [](source:uc-step2) |
+| 승인 | category의 Content ATL이 검토한다. 사람 승인이고 자동 검증으로 대체되지 않는다(판정) | [](source:uc-step6) |
 
-| 상황 | 처리 |
-|---|---|
-| 두 use case의 guide가 99% 같음 | 더 일반적인 use case 하나로 합친다. 중복 guide는 context window를 낭비하고 서로 모순된다 |
-| passkeys처럼 여러 단계로 복잡한 feature | 하나의 일반 guide에 몰아넣지 말고 논리적인 use case로 쪼갠다 |
-| API 메서드, 속성, 옵션을 하나씩 | 각각을 use case로 세우지 않는다. 별개의 UX 목표나 개발자 문제가 아니면 더 넓은 목표의 guide로 접는다 |
-| 새 Promise 메서드나 객체 복제 같은 low-level utility | 여러 use case로 억지로 쪼개지 않는다. 'Fundamental Guide' 하나(예: "Deep cloning complex objects")나 상위 discipline guide를 고려한다 |
-| 한 줄 선언이나 progressive enhancement | 그 한 줄이 전부인 1:1 micro-guide를 만들지 않고 기존 discipline·topic guide에 접는다 |
-| discipline 수준 guidance | 한 덩어리로 쓰지 않고 하위 guide로 쪼갠다. hub가 `{{ GUIDE_REF("guide-slug") }}`로 하위 guide를 가리킨다. 구조는 `project-discipline-guides`를 본다 |
+## 더 자세히 읽으려면 {#more span=12}
 
-새 use case를 만들기 전에 겹침을 확인한다. 원문은 RAG에서 guide끼리 많이 겹치면 에이전트가 맞는 것을 고르기 어렵다고 쓴다.[](source:uc-overlap)
+공개된 상세:
 
-| 확인 | 하는 일 |
-|---|---|
-| 기존 guide 검토 | 새 use case를 만들기 전에 같은 discipline의 기존 guide를 본다 |
-| `web-feature-id` 검색 | 쓰려는 feature의 ID를 기존 guide와 열린 PR에서 검색해 어떻게 쓰이는지 본다 |
-| 합칠지 구별할지 | 실질적으로 비슷하면 중복을 만들지 않는다. 기존 guide에 변형이나 구체적 지시로 넣는 방식을 고려한다 |
-| 고유한 가치 | 새 guide마다 별개의 문제에 대한 별개의 해법이어야 한다 |
+- 아직 없음
 
-## 새 use case는 어떤 절차로 만드나? {#procedure}
+상세 후보(요청하면 만든다):
 
-다음 6단계는 REQUIRED다. 에이전트는 stub까지만 만들고, 승인은 ATL이 한다.[](source:uc-steps)
+- guide ID 짓기 규칙 4가지와 고친 예 — guide ID 만들기 · 개요에는 형식만 담았다. 예: `deprioritize-background-fetches`를 `background-fetch-priority`로 바꾼다.
+- category 고르기 기준 — category 고르기 · 개요에는 결론만 담았다. UI 계열 category 구분과 기술 영역 category 설명은 상세로 남긴다.
+- 좋은 use case를 판단하는 원칙 10가지 — 설명 쓰기 · 개요에는 결과를 바꾸는 규칙만 담았다.
 
-@workflow id=procedure-flow title="use case 만들기 6단계"
-| describe | description 쓰기 | backend |
-| category | category 고르기 | backend |
-| mint | guide ID 만들기 | backend |
-| stub | guide.md stub | backend |
-| test | pnpm test | backend |
-| approve | ATL 승인 | external |
-| next | Stage 2 | external |
-| describe > category | |
-| category > mint | |
-| mint > stub | |
-| stub > test | |
-| test > approve | PR이나 이슈 |
-| approve > next | 승인 후 | emphasis |
+@callout level=open-question title="확인하지 못한 것"
+| `GOVERNANCE.md`, `docs/ATLS.md`, `.github/ISSUE_TEMPLATE/new-use-case.yml`, `guides/` 폴더는 이 컬렉션에 없다. Peer의 권한 범위와 `pnpm test`의 동작은 확인하지 못했다. 명령은 지시상 동작이고 실행하지 않았다. `examples/demo.html`은 30줄 중 1~12줄만 확인했다. |
 
-@steps id=procedure-steps
-| t1 | description 쓰기 | 문제를 푸는 일을 한 문장으로 쓴다. 명령형 동사로 시작하고 "사용자가 무엇을 하려는가?"에 답한다. 최대 1024자. name과 description의 범위를 같게 맞춘다. 예: `fetch-priority`의 use case는 "Deprioritize background data fetches made with the Fetch API to prevent network contention with user-initiated requests."[](source:uc-s1) | procedure-flow | describe |
-| t2 | category 고르기 | `guides/` 아래 높은 수준의 category 하나를 고른다. 현재 하위 폴더 목록을 보고 가장 맞는 것을 쓴다.[](source:uc-s2) | procedure-flow | category |
-| t3 | guide ID 만들기 | `guides/<category>/<guide-id>/`를 만든다. 디렉터리 이름과 frontmatter `name`이 guide ID다.[](source:uc-s3) | procedure-flow | mint |
-| t4 | guide.md stub | 새 하위 디렉터리에 `guide.md`를 만든다. 지금은 use case 메타데이터만 넣는다. 본문은 peer review 뒤에 채운다.[](source:uc-s4) | procedure-flow | stub |
-| t5 | pnpm test | `pnpm test`로 디렉터리 구조와 frontmatter 메타데이터를 검증한다.[](source:uc-s5) | procedure-flow | test |
-| t6 | ATL 승인 | `guide.md` frontmatter stub을 담은 PR을 올리거나 new-use-case 이슈를 올려 category의 Content ATL에게 검토를 요청한다. 승인 뒤에 Stage 2로 간다.[](source:uc-s6) | procedure-flow | approve |
-
-stub의 frontmatter 필수 필드는 `name`, `description`, `web-feature-ids` 세 개다. 아래는 원문 예다.[](source:uc-s4)
-
-@code source=uc-yaml language=yaml
-
-@callout level=open-question title="승인에서 반려되면 어떻게 하나"
-| 원문은 ATL이 use case를 반려했을 때의 절차를 쓰지 않는다. ATL의 승인 기준과 응답 시간도 원문에 명시 없음. 승인을 받아야 Stage 2로 간다는 것만 명시되어 있다.[](source:uc-s6) |
-
-## category와 guide ID는 어떻게 짓나? {#naming}
-
-category는 사용자의 목표 이름이어야 하고 쓴 기술 이름이면 안 된다.[](source:uc-s2)
-
-| category 규칙 | 내용 |
-|---|---|
-| 목표로 분류 | 같은 목표를 다른 기술로 푸는 guide는 같은 category에 둔다. 예: anchor positioning과 view transitions로 만든 탭 밑줄. 점검 질문은 "use case는 이해하지만 코드를 쓸 줄 모르는 사람이 올바른 category에 올릴 수 있는가"다[](source:uc-s2) |
-| UI guide | `ui-components`는 완성된 흔한 UI 컴포넌트, `ui-behaviors`와 `ui-atoms`는 개별 동작 패턴이나 원자적 구성요소에 쓴다[](source:uc-s2) |
-| 기술 이름 category | `css`, `html`, `canvas`는 해당 기술의 종합 reference guide(예: `html/html/guide.md`)가 있어 유효하다. 그 기술이 진짜 주제이거나 형제 guide가 아직 부족할 때 쓴다[](source:uc-s2) |
-| 주된 목표로 분류 | 성능, 접근성, privacy, security, UX는 거의 모든 guide에 걸치는 관심사다. guide가 주로 하려는 일로 분류하고 부차적 관심사는 `guide.md` 본문에 쓴다. 예: 렌더링 비용이 있는 scroll-driven animation은 `motion`이나 `scroll`에 두고 성능 설명은 본문에 쓴다. `user-experience`는 UX 기둥 guide만 담고 개별 컴포넌트나 동작은 각자 category에 둔다[](source:uc-s2) |
-
-guide ID는 사용자에게 직접 보인다. 에이전트가 적용한 guide를 알릴 때, release note와 `README.md`, eval 채점 UI에 나온다. 그래서 `description`은 명령형 작업 문장으로, guide ID는 주제를 가리키는 간결한 명사구로 역할을 나눈다.[](source:uc-s3)
-
-| ID 규칙 | 나쁜 예 | 좋은 예 |
-|---|---|---|
-| 명령형 동사와 완전한 절을 쓰지 않는다. 동사(`optimize-`, `prevent-`, `defer-`, `avoid-`, `style-`, `create-`)와 관사(`-a-`, `-the-`)는 description에 둔다 | `deprioritize-background-fetches`, `prevent-page-scroll-under-modal-dialog`, `light-dismiss-a-dialog`, `form-fields-automatically-fit-contents` | `background-fetch-priority`, `modal-scroll-lock`, `dialog-light-dismiss`, `autosizing-form-fields`[](source:uc-s3) |
-| API가 아니라 사용자 패턴이나 도메인 개념을 쓴다. CSS 선택자, JS 메서드, 파일 형식, 명세 이름은 기술 자체가 reference hub의 주제일 때만 쓴다 | `style-parent-with-has`, `anchor-positioning-tab-underline`, `css-custom-highlights` | `invalid-field-container-styling`, `sliding-tab-indicator`, `highlight-text-ranges`[](source:uc-s3) |
-| 구체성을 맞춘다. 무엇을 다루는지 숨기는 한 단어, 가상의 업무 시나리오, 도메인 명사가 빠진 추상 표현을 피한다 | `drag`, `capture-location-agnostic-data` | `free-element-dragging`, `drag-to-reorder`, `timezone-agnostic-dates`[](source:uc-s3) |
-| 모든 guide에 붙는 품질 형용사(`resilient-`, `faster-`, `modern-`, `smart-`, `efficient-`, `proper-`)를 뺀다 | 원문에 명시 없음 | 원문에 명시 없음[](source:uc-s3) |
-
-## 다른 스킬과 어디에서 이어지나? {#position}
-
-이 스킬은 Stage 1이다. 원문이 번호를 붙인 세 단계는 use case 확인, guidance 작성, guidance 평가다.[](source:uc-stages)
-
-@workflow id=position-flow title="feature에서 Stage 2로"
-| before | project-features | external | source:pf-ref |
-| current | project-use-cases | backend | source:uc-stages |
-| after | project-guides | external | source:pg-ref |
-| hub | project-discipline-guides | external | source:pdg-ref |
-| before > current | 넘김 R01 | emphasis |
-| current > after | 넘김 R03 | emphasis |
-| current > hub | 참고 R04 | dashed |
-
-@steps id=position-steps
-| p1 | project-features | feature 이슈가 자격과 ID를 갖춘 뒤 ATL이 use case를 찾는다. | position-flow | before |
-| p2 | project-use-cases | 이 페이지의 스킬이다. stub을 만들고 ATL 승인을 받는다. | position-flow | current |
-| p3 | project-guides | 승인된 use case의 본문, `demo.html`, `expectations.md`를 쓴다. | position-flow | after |
-
-| 관계 | 받는 것·넘기는 것·조건 |
-|---|---|
-| R01 · 넘김 ← `project-features` | feature 이슈가 자격을 통과한 뒤(Step 1~4) ATL이 use case를 찾는다. 새 use-case 이슈를 올리거나, stub guide를 추가하거나, 기존 guide의 `web-feature-ids`에 feature ID를 더한다. 받는 것은 이슈의 web-feature ID다.[](source:pf-ref)[](source:uc-stages) |
-| R03 · 넘김 → `project-guides` | use case를 Content ATL이 승인한 뒤 Stage 2로 간다. 온보딩된 Peer는 Stage 1을 건너뛰고 바로 Stage 2로 갈 수 있다. 넘기는 것은 `name`, `description`, `web-feature-ids`를 담은 `guides/<category>/<guide-id>/guide.md` stub이다. 승인은 사람(ATL)이 하고, 이슈 닫기는 sync(`src/ci/sync-use-cases.ts`)가 한다. 지시상 동작이다.[](source:uc-stages)[](source:uc-s6)[](source:pg-ref)[](source:pf-ref) |
-| R04 · 참고 → `project-discipline-guides` | "Granular Guide Decomposition" 규칙 끝에서 hub guide와 하위 guide 구조는 이 스킬을 보라고 안내한다.[](source:uc-scope)[](source:pdg-ref) |
-| R13 · 공유 상태 ↔ `project-guides` | 같은 `guide.md`를 이 스킬이 stub으로 만들고(Stage 1) `project-guides`가 본문으로 채운다(Stage 2). 선후는 R03이 정한다.[](source:uc-s4)[](source:pg-stub) |
-| R35 · 참고 (범위 밖) | 작성 권한(Peer와 ATL)은 `GOVERNANCE.md`와 `docs/ATLS.md`에서 확인하라고 한다. 두 파일은 이 컬렉션에 없다.[](source:uc-stages)[](source:uc-s6) |
-
-전체 흐름은 색인 기준 `_group-guide-authoring-pipeline/guide-authoring-pipeline.html`에 있다.
-
-## 어디까지 읽고 확인했나? {#audit}
-
-| 조사 구분 | 확인 범위 |
-|---|---|
-| 스킬 원본 | `SKILL.md`(12,896B)와 `examples/demo.html`(833B), 텍스트 2개를 끝까지 읽었다.[](source:uc-full)[](source:demo) |
-| 관계 확인용 | `project-features`는 113~121줄, `project-guides`는 1~14줄과 36~46줄, `project-discipline-guides`는 1~8줄만 읽었다. `skills-lock.json`(3,621B)과 관계 원장도 확인했다[](source:pf-ref)[](source:pg-ref)[](source:pg-stub)[](source:pdg-ref)[](source:lock) |
-| 제외 | 번역본은 이 컬렉션에 없다. 바이너리도 없다 |
-| 부분 읽음 | 대상 스킬 폴더는 0개 |
-
-`examples/demo.html`은 `SKILL.md`가 지목하지 않는 파일이다. 제목이 "Deprioritize Background Fetches Demo"이고 버튼을 누르면 일반 `fetch`와 `priority: 'low'` 옵션을 준 `fetch`를 함께 보낸다.[](source:demo) 판정 · 6단계의 `fetch-priority` 예(`background-fetch-priority`)와 같은 주제의 Stage 2 산출물 예시로 보이지만, 연결은 원문에 명시 없음.[](source:uc-s1)[](source:uc-s6)
-
-원문의 Stage 번호, 수치(2~5개, 1024자, 2~4단어, 99%, 90%), MANDATORY·REQUIRED·MUST 표시, 6단계, stub 필드 3개, 승인 조건을 모두 대조했다. 원문의 `pnpm test`, PR, 이슈 작성 지시는 읽기만 했고 실행하지 않았다.
-
-@callout level=open-question title="확인하지 못한 부분과 원문 사이 차이"
-| `guides/` 디렉터리, `.github/ISSUE_TEMPLATE/new-use-case.yml`, `GOVERNANCE.md`, `docs/ATLS.md`, `guides/modern-web-guidance/SKILL.md`는 이 저장소에 없다. category 목록과 ATL 지정 규칙은 확인하지 못했다. `pnpm test`가 실제로 무엇을 검사하는지도 실행으로 확인하지 않았다. |
-| `project-guides`의 frontmatter 예시는 description을 `<do thing> <with feature>`(예: "Create dynamic color systems using modern color syntax")로 쓴다. 이 스킬은 description에 feature 이름을 기본적으로 쓰지 말라고 한다. 두 문서 중 어느 쪽이 우선하는지는 원문에 명시 없음. 충돌인지 예시 표기의 차이인지 판단하지 않았다.[](source:uc-task)[](source:pg-stub) |
-
-분석 중 원본은 수정하지 않았다. 새 분석 초안과 HTML만 썼다.
+읽은 원본: 텍스트 파일 2개. 제외: 없음.

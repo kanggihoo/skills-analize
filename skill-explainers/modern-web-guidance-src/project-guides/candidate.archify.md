@@ -1,183 +1,144 @@
-# project-guides는 언제 켜지고, 무엇을 강제하고, 무엇을 금지하나? {#project-guides-page}
+# project-guides — 에이전트가 읽을 `guide.md`와 `demo.html`, `expectations.md` 쓰기 {#overview}
 
-`project-guides`는 `guide.md`, `expectations.md`, `demo.html`을 쓰거나 리뷰할 때 켜는 작성 규칙이다. 핵심은 `guide.md`가 코딩 에이전트가 실제로 보는 유일한 파일이라는 전제다. 그래서 `guide.md`는 외부 링크나 다른 파일에 기대지 않고 혼자 완결돼야 한다.[](source:front)[](source:seen)[](source:self)
+`project-guides`는 에이전트가 use case 하나의 `guide.md`, `demo.html`, `expectations.md`를 쓰거나 검토할 때 따를 규칙을 정하고, 다 쓴 뒤 `project-guide-validation`으로 자체 검증하게 하는 스킬이다. guide를 만드는 3단계 중 둘째 단계다.[](source:pg-front)[](source:pg-stages)
 
-- 글쓰기 규칙은 `MANDATORY` 같은 강한 표지를 꼭 필요한 곳에만 쓰고, 모델이 이미 아는 내용은 빼라고 요구한다. 외부 링크와 `demo.html` 언급은 금지한다.[](source:tone)[](source:steps)
-- widely available이 아닌 기능을 쓰면 fallback 절과 `FEATURE_FALLBACKS` 또는 `BASELINE_STATUS` 매크로가 필수다. 브라우저 지원 현황을 본문에 직접 쓰는 것은 금지다.[](source:fallback)[](source:baseline)
-- `expectations.md`의 bullet 하나는 grader 테스트 하나가 된다. 그래서 bullet 하나에 검사 하나만 쓰고, 선택 사항은 필수 검사로 올리지 않는다.[](source:exp-rules)
-- 다 쓴 뒤에는 `project-guide-validation`으로 자체 검증하고 PR을 연다. 사람 SME 승인은 별도로 필요하다.[](source:selfval)[](source:gov)
+- 쓰는 때: `guide.md`, `expectations.md`, `demo.html`을 쓰거나 검토할 때다.[](source:pg-front)
+- 결과: 자체로 완결된 `guide.md`, 이를 시연하는 `demo.html`, grader 테스트와 1:1로 대응하는 `expectations.md`가 나온다. Stage 2는 이 세 파일에서 끝난다.[](source:pg-agent)[](source:pg-exp)
+- 다른 스킬과의 관계: 다 쓴 뒤 `project-guide-validation`으로 자체 검증하라고 안내하고(다음 안내), Stage 3 파일은 `gd dev`가 만든다고 `project-evals`로 이어 준다(다음 안내).[](source:pg-self)[](source:pg-agent)
+- 하지 않는 것: grader에 맞추려고 `guide.md`를 고치지 않는다. grader가 `guide.md`에 없는 것을 요구하면 grader를 고친다.[](source:pg-agent)
 
-@answer scope="로컬 원본 분석 · SKILL.md 168줄 전체 읽음 · 원본 저장소의 `GOVERNANCE.md`, `src/`, `guides/`는 이 컬렉션에 없어 확인하지 못함 · 대상 스킬의 명령은 실행하지 않음"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=a1d836f93ec897c67870ac042622e8aec36e5f6b
-@source full title="modern-web-guidance-src/project-guides/SKILL.md · 26181B · 스킬 본문" path=modern-web-guidance-src/project-guides/SKILL.md
-@source front title="modern-web-guidance-src/project-guides/SKILL.md · frontmatter" path=modern-web-guidance-src/project-guides/SKILL.md lines=1:4
-@source stages title="modern-web-guidance-src/project-guides/SKILL.md · 3단계 중 Stage 2" path=modern-web-guidance-src/project-guides/SKILL.md lines=6:12
-@source gov title="modern-web-guidance-src/project-guides/SKILL.md · 거버넌스 안내" path=modern-web-guidance-src/project-guides/SKILL.md lines=14:14
-@source seen title="modern-web-guidance-src/project-guides/SKILL.md · 에이전트가 보는 파일" path=modern-web-guidance-src/project-guides/SKILL.md lines=16:28
-@source impl2 title="modern-web-guidance-src/project-guides/SKILL.md · Stage 2의 끝과 grader" path=modern-web-guidance-src/project-guides/SKILL.md lines=30:30
-@source self title="modern-web-guidance-src/project-guides/SKILL.md · 자기완결 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=32:32
-@source fm title="modern-web-guidance-src/project-guides/SKILL.md · frontmatter 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=36:53
-@source tmp title="modern-web-guidance-src/project-guides/SKILL.md · tmp- 기능 ID" path=modern-web-guidance-src/project-guides/SKILL.md lines=49:49
-@source draft title="modern-web-guidance-src/project-guides/SKILL.md · draft 값" path=modern-web-guidance-src/project-guides/SKILL.md lines=50:53
-@source tone title="modern-web-guidance-src/project-guides/SKILL.md · 어조와 형식" path=modern-web-guidance-src/project-guides/SKILL.md lines=55:64
-@source snippets title="modern-web-guidance-src/project-guides/SKILL.md · 코드 snippet 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=66:72
-@source steps title="modern-web-guidance-src/project-guides/SKILL.md · 구현 단계 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=74:84
-@source fallback title="modern-web-guidance-src/project-guides/SKILL.md · fallback 절 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=86:100
-@source baseline title="modern-web-guidance-src/project-guides/SKILL.md · Baseline 매크로 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=102:109
-@source polyfill title="modern-web-guidance-src/project-guides/SKILL.md · polyfill 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=111:114
-@source macros title="modern-web-guidance-src/project-guides/SKILL.md · build-time 매크로 표" path=modern-web-guidance-src/project-guides/SKILL.md lines=116:129
-@source guideref title="modern-web-guidance-src/project-guides/SKILL.md · GUIDE_REF 사용 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=131:140
-@source features title="modern-web-guidance-src/project-guides/SKILL.md · features/ 재사용" path=modern-web-guidance-src/project-guides/SKILL.md lines=142:144
-@source exp-intro title="modern-web-guidance-src/project-guides/SKILL.md · expectations.md 개요" path=modern-web-guidance-src/project-guides/SKILL.md lines=148:150
-@source exp-rules title="modern-web-guidance-src/project-guides/SKILL.md · expectations.md 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=152:159
-@source demo title="modern-web-guidance-src/project-guides/SKILL.md · demo.html 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=161:164
-@source selfval title="modern-web-guidance-src/project-guides/SKILL.md · 자체 검증" path=modern-web-guidance-src/project-guides/SKILL.md lines=166:168
-@source uc-next title="modern-web-guidance-src/project-use-cases/SKILL.md · 승인 뒤 Stage 2로" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=104:108
-@source uc-gov title="modern-web-guidance-src/project-use-cases/SKILL.md · Peer fast-track" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=14:14
-@source ev-stage title="modern-web-guidance-src/project-evals/SKILL.md · Stage 3 개요" path=modern-web-guidance-src/project-evals/SKILL.md lines=6:12
-@source ev-exp title="modern-web-guidance-src/project-evals/SKILL.md · expectations.md 규칙은 project-guides에 있다" path=modern-web-guidance-src/project-evals/SKILL.md lines=52:54
-@source val-intro title="modern-web-guidance-src/project-guide-validation/SKILL.md · 자체 검증 권장" path=modern-web-guidance-src/project-guide-validation/SKILL.md lines=8:10
-@source feat-close title="modern-web-guidance-src/project-features/SKILL.md · use-case 이슈 종료 조건" path=modern-web-guidance-src/project-features/SKILL.md lines=118:118
-@source lock title="modern-web-guidance-src/skills-lock.json · 3621B · 설치 출처" path=modern-web-guidance-src/skills-lock.json
+@answer scope="modern-web-guidance-src/project-guides · 원본 파일 1개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source pg-front title="이름과 description" path=modern-web-guidance-src/project-guides/SKILL.md lines=1:4
+@source pg-stages title="3단계와 권한" path=modern-web-guidance-src/project-guides/SKILL.md lines=6:14
+@source pg-agent title="실제 에이전트가 보는 파일" path=modern-web-guidance-src/project-guides/SKILL.md lines=16:32
+@source pg-fm title="frontmatter 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=36:53
+@source pg-tone title="어조와 서식" path=modern-web-guidance-src/project-guides/SKILL.md lines=55:64
+@source pg-code title="코드 조각 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=66:72
+@source pg-impl title="구현 단계 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=74:84
+@source pg-fb title="fallback 전략" path=modern-web-guidance-src/project-guides/SKILL.md lines=86:100
+@source pg-base title="Baseline 상태 macro" path=modern-web-guidance-src/project-guides/SKILL.md lines=102:109
+@source pg-poly title="polyfill 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=111:114
+@source pg-macros title="build-time macro" path=modern-web-guidance-src/project-guides/SKILL.md lines=116:129
+@source pg-ref title="GUIDE_REF 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=131:140
+@source pg-feat title="features 폴더 재사용" path=modern-web-guidance-src/project-guides/SKILL.md lines=142:144
+@source pg-exp title="expectations.md 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=148:159
+@source pg-demo title="demo.html 규칙" path=modern-web-guidance-src/project-guides/SKILL.md lines=161:164
+@source pg-self title="자체 검증" path=modern-web-guidance-src/project-guides/SKILL.md lines=166:168
+@source pf-after title="project-features의 분류 뒤 안내" path=modern-web-guidance-src/project-features/SKILL.md lines=113:121
+@source uc-after title="project-use-cases의 승인 뒤 안내" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=104:108
+@source uc-step4 title="project-use-cases의 guide.md 틀" path=modern-web-guidance-src/project-use-cases/SKILL.md lines=78:98
+@source pe-hub title="project-evals의 단계와 연결" path=modern-web-guidance-src/project-evals/SKILL.md lines=6:12
+@source pe-exp title="project-evals의 expectations 안내" path=modern-web-guidance-src/project-evals/SKILL.md lines=52:58
+@source pgv-front title="project-guide-validation의 소개" path=modern-web-guidance-src/project-guide-validation/SKILL.md lines=1:10
+@source pgv-ref title="project-guide-validation의 작성 기준 안내" path=modern-web-guidance-src/project-guide-validation/SKILL.md lines=34:46
+@source dg-scope title="project-discipline-guides의 범위 경고" path=modern-web-guidance-src/project-discipline-guides/SKILL.md lines=3:8
 
-## 언제 켜지고 무엇을 보게 하나? {#activation}
+## 어떻게 동작하나 {#flow span=12}
 
-description은 모델이 호출 여부를 판단할 때 참고하는 설명이다. 특정 단어와 정확히 일치해야 켜진다는 뜻이 아니다. `disable-model-invocation` 필드는 원문에 명시 없음.[](source:front)
+원문은 세 파일의 규칙을 절로 나누어 적고, 순서를 정하지 않는다. Stage 2가 `guide.md`, `demo.html`, `expectations.md`에서 끝나고 `project-guide-validation`으로 자체 검증한다는 것만 순서로 적혀 있다. 그래서 세 파일 사이에는 간선을 그리지 않았다. 절별 규칙은 아래 표와 상세 후보로 나눴다.[](source:pg-agent)[](source:pg-self)
 
-@code source=front language=yaml
+@workflow id=flow-diagram title="project-guides 흐름"
+| lane write | 쓰기 |
+| lane check | 검증 |
+| guide | guide.md 쓰기 | backend | write | source:pg-fm |
+| exp | expectations.md 쓰기 | backend | write | source:pg-exp |
+| demo | demo.html 쓰기 | backend | write | source:pg-demo |
+| validate | 자체 검증 | backend | check | source:pg-self |
+| stage3 | Stage 3 평가 | external | check | source:pg-agent |
+| guide > validate | 다 쓴 뒤 |
+| exp > validate | 다 쓴 뒤 |
+| demo > validate | 다 쓴 뒤 |
+| validate > stage3 | PR 전 | emphasis |
 
-이 스킬은 3단계 중 Stage 2다. Stage 1은 use case를 정하고, Stage 3은 평가를 만든다.[](source:stages) 원문이 정한 Stage 2의 범위는 `guide.md`, `demo.html`, `expectations.md` 세 파일이다.[](source:impl2)
+@steps id=flow-steps
+| s-guide | guide.md 쓰기 | **입력** Stage 1의 `guide.md` 틀(`name`, `description`, `web-feature-ids`) · **출력** 본문이 채워진 `guide.md`. **처리** 에이전트가 `guide.md`를 에이전트가 보는 유일한 파일로 보고, 본문만으로 구현할 수 있게 자체 완결로 쓴다.[](source:pg-agent)[](source:pg-fm) **다음** 외부 링크와 `demo.html` 참조를 넣지 않는다. 비Baseline Widely Available 기능이 있으면 fallback 절과 `BASELINE_STATUS` 또는 `FEATURE_FALLBACKS` macro를 넣는다(MUST).[](source:pg-tone)[](source:pg-fb)[](source:pg-base) | flow-diagram | guide |
+| s-exp | expectations.md 쓰기 | **입력** 완성된 `guide.md` · **출력** 자연어 bullet 목록 `expectations.md`. **처리** 에이전트가 올바른 구현이면 참인 검사를 bullet 하나에 하나씩 쓴다. 각 bullet이 `grader.ts`의 필수 test 하나가 된다.[](source:pg-exp) **다음** SME가 소유한 파일이라, 기존 문구는 뜻이 바뀔 때만 고치고 이유를 적는다. | flow-diagram | exp |
+| s-demo | demo.html 쓰기 | **입력** `guide.md`와 `expectations.md` · **출력** 독립 실행 `demo.html`. **처리** 에이전트가 use case의 작동하는 참조 구현을 쓴다. 대상 기능이 Baseline Widely Available가 아니면 fallback도 보여 준다.[](source:pg-demo) **다음** 브라우저 console에 오류나 경고가 없어야 한다. | flow-diagram | demo |
+| s-validate | 자체 검증 | **입력** 세 파일 · **참조** `project-guide-validation` skill · **출력** 피드백 보고서. **처리** 에이전트가 PR을 열거나 Stage 3으로 가기 전에 DevTools MCP로 demo를 돌려 expectation 정렬과 접근성을 확인한다.[](source:pg-self) **다음** 사람 SME 검토를 대체하지 않는다. | flow-diagram | validate |
+| s-stage3 | Stage 3 평가 | **입력** 세 파일 · **출력** `task.md`, solution patch, `grader.ts`. **처리** `gd dev`가 Stage 3에서 이 파일들을 만든다. 사람은 손볼 수 있고 에이전트는 사람이 시킬 때만 손본다.[](source:pg-agent) → 내부: `gd dev` 구현 미확인 | flow-diagram | stage3 |
 
-| 파일 | 목적 | 실제 코딩 에이전트가 보나 |
-|---|---|---|
-| `guide.md` | use case 구현 안내 | {good:본다} 유일한 파일[](source:seen) |
-| `demo.html` | Stage 2 검증과 리뷰의 기준 구현 | 안 본다[](source:seen) |
-| `expectations.md` | 평가 task를 만드는 검증 기준 | 안 본다[](source:seen) |
-| `task.md`, `grader.ts`, `*-solution.patch`, `zero-passrate.patch` | Stage 3 평가 기반 시설 | 안 본다[](source:seen) |
+`guide.md` 규칙에서 결과를 가르는 것만 아래 표에 모았다.
 
-판정 · 위 표가 이 스킬 전체의 이유다. 에이전트는 `guide.md`를 RAG(vector search)로 받아 읽을 뿐이므로 다른 파일을 가리키는 문장은 쓸모가 없다.[](source:seen)
+| 규칙 | 판단 | 사례 | 출처 |
+| --- | --- | --- | --- |
+| 자체 완결 | `expectations.md`, patch, 외부 링크, `GUIDE_REF`에 기대지 않는다. 구현에 필요한 지식은 본문에 모두 넣거나 build 때 `INCLUDE`/`FEATURE`로 끌어온다 | 외부 링크 `[link text](url)`는 쓰지 않는다 | [](source:pg-agent)[](source:pg-tone) |
+| 구현 단계 | 모든 web 기능을 쓸 수 있다고 가정하고 가장 알맞은 기능을 고른다. 눈에 보이는 이점이 없고 fallback만 복잡해지면 옛 기능을 쓴다 | 새롭다는 이유만으로 권하지 않는다 | [](source:pg-impl) |
+| `MANDATORY` | 기능이 작동하는 데 꼭 필요한 단계에만 붙인다. 선택 단계는 optional로 표시한다 | scroll snap 추가는 optional이다 | [](source:pg-impl) |
+| fallback | 비Baseline Widely Available 기능을 쓰면 fallback을 넣는다(MUST). fallback 경험을 명시한다(MANDATORY) | 선호 순서는 custom code(50줄 미만), polyfill, 라이브러리, graceful degradation, progressive enhancement다 | [](source:pg-fb) |
+| browser 지원 문구 | 버전이나 지원표를 본문에 쓰지 않는다. macro로 표시한다 | `BASELINE_STATUS("feature-id")` | [](source:pg-base) |
+| polyfill | 지원이 없을 때만 조건부로 불러온다(MANDATORY). `polyfill.io`는 권하지 않는다 | CDN보다 build 통합을 선호한다 | [](source:pg-poly) |
+| `GUIDE_REF` | 현재 guide의 요구에 쓰지 않는다. 게시된 guide만 가리킨다. 허브, 형제 guide 구분, 인접 use case에만 쓴다 | `GUIDE_REF`를 stub이나 draft에 걸면 게시된 guide의 검증이 실패한다 | [](source:pg-ref) |
 
-@steps id=activation-steps
-| scope | Stage 2의 끝 | Stage 2는 세 파일에서 끝난다. `task.md`, patch, `grader.ts`는 Stage 3에서 `gd dev`가 만든다.[](source:impl2) |
-| human | 사람 수정 | 사람은 Stage 3 파일을 손볼 수 있다. 에이전트는 사람이 시킬 때만 손본다.[](source:impl2) |
-| grader | grader가 어긋날 때 | `guide.md`를 grader에 맞춰 고치지 않는다. grader가 `guide.md`에 없는 것을 요구하면 grader를 고친다.[](source:impl2) |
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
 
-원문은 작성 권한도 적는다. Peer는 Stage 2로 바로 갈 수 있고, 모든 guide는 Peer 또는 ATL이 쓰고 category Content ATL이 승인해야 병합한다. 상세는 `GOVERNANCE.md`, `docs/ATLS.md`를 보라고 하지만 이 컬렉션에는 없다.[](source:gov)
+@facts
+| 직접 켜는 방법 | 사용자 명령은 원문에 명시 없음. 모델이 description을 보고 켠다. 호출 제한 필드는 없다[](source:pg-front) |
+| 성격 | 세 파일의 작성 규칙을 정하는 절차형 스킬. Stage 2다 |
 
-## guide.md 본문은 어떤 규칙으로 쓰나? {#guide-rules}
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| `project-features` {#r02} | **이 스킬** | 참고 | use-case 이슈가 닫히는 때를 설명하며 `project-guides`를 보라고만 안내한다.[](source:pf-after)[](source:pg-front) |
+| `project-use-cases` {#r03} | **이 스킬** | 다음 안내 | use case를 Content ATL이 승인한 뒤 Stage 2로 간다. 온보딩된 Peer는 Stage 1을 건너뛰고 바로 올 수 있다.[](source:uc-after)[](source:pg-stages) |
+| **이 스킬** {#r05} | `project-guide-validation` | 다음 안내 | 세 파일을 다 쓴 뒤 PR을 열거나 Stage 3으로 가기 전에 invoke하라고 한다(명령형). 받는 쪽은 "strongly encouraged"라고 쓴다. 사람 SME 검토를 대체하지 않는다.[](source:pg-self)[](source:pgv-front) |
+| **이 스킬** {#r06} | `project-evals` | 다음 안내 | Stage 2는 세 파일에서 끝난다. `task.md`, golden patch, `grader.ts`는 Stage 3에서 `gd dev`가 만든다. grader가 맞지 않아도 `guide.md`를 고치지 않는다.[](source:pg-agent)[](source:pe-hub) |
+| `project-evals` {#r07} | **이 스킬** | 참고 | `expectations.md` 작성 규칙은 이 스킬의 "Writing expectations.md" 절에 있다고 안내한다.[](source:pe-exp)[](source:pg-exp) |
+| `project-guide-validation` {#r08} | **이 스킬** | 참고 | 정성 검토와 expectation 정렬의 기준 문서로 링크한다.[](source:pgv-ref)[](source:pg-front) |
+| **이 스킬** {#r13} | `project-use-cases` | 같은 파일 | 같은 `guide.md`를 먼저 틀(Stage 1)로 만들고 나중에 본문(Stage 2)으로 채운다. 선후는 R03이다.[](source:uc-step4)[](source:pg-fm) |
+| **이 스킬** {#r14} | `project-evals` | 같은 파일 | `expectations.md`는 SME가 소유한다. 이 스킬이 쓰고 `project-evals`가 `grader.ts`의 테스트와 1:1로 대응시켜 검토한다.[](source:pg-exp)[](source:pe-exp) |
+| `project-discipline-guides` {#r15} | **이 스킬** | 같은 파일 | 둘 다 discipline guide의 `guide.md`를 고친다(추론). 이 스킬은 discipline guide의 expectations 작성 조건을 따로 정한다.[](source:dg-scope)[](source:pg-exp) |
+| **이 스킬** {#r35} | `GOVERNANCE.md`, `docs/ATLS.md` | 참고 | 작성 권한(Peer와 ATL)과 병합 전 승인 조건을 확인하라고 한다. 범위 밖이다.[](source:pg-stages) |
 
-frontmatter는 `name`, `description`, `web-feature-ids`를 둔다. `web-feature-ids`에는 본문에서 쓰는 기능을 모두 올리고, ID가 없으면 사용자에게 알린다.[](source:fm) 아래 표는 본문 규칙을 강도별로 정리했다.
+@architecture id=relation-map title="project-guides와 이어지는 스킬"
+| pf | project-features | backend |
+| uc | project-use-cases | backend |
+| self | project-guides(이 스킬) | backend |
+| pgv | project-guide-validation | backend |
+| pe | project-evals | backend |
+| dg | project-discipline-guides | backend |
+| pf > self | 참고 | dashed |
+| uc > self | 다음 안내 | emphasis |
+| self > pgv | 다음 안내 | emphasis |
+| self > pe | 다음 안내 | emphasis |
+| pe > self | 참고 | dashed |
+| pgv > self | 참고 | dashed |
+| dg > self | 같은 파일 | dashed |
 
-| 영역 | 규칙 | 강도 |
-|---|---|---|
-| draft | `stub`, `wip`, `blocked` 중 하나이고, 생략하면 게시된다. `blocked`는 `draft-reason`에 결정 이슈나 PR 링크를 한 줄로 적는다.[](source:draft) | 값 제한 |
-| 강조 표지 | `MANDATORY:`, `DO`, `DO NOT`은 꼭 필요한 곳에만 쓴다. 단계마다 붙이지 않는다.[](source:tone) | 선택적 사용 |
-| 분량 | 모델이 이미 아는 문법과 Baseline Widely Available 기능의 교과서식 설명을 뺀다. 개요와 "이 방법이 권장되는 이유"는 짧게 넣는다.[](source:tone) | 지시 |
-| 유지보수 메모 | 업스트림 버그 링크나 리뷰 이력은 `{# ... #}` 주석에 쓴다. 별도 `reasoning.md`, `notes.md`는 만들지 않는다. 에이전트가 오해할 만한 패턴의 이유는 본문이나 코드 주석에 쓴다.[](source:tone) | 금지 + 지시 |
-| 외부 링크 | 본문에 `[link text](url)`를 쓰지 않고, 필수 구현 정보를 `GUIDE_REF`에 맡기지 않는다.[](source:tone) | DO NOT |
-| 표기 | 미국 영어를 쓴다. callout은 `> [!NOTE]` 같은 GitHub alert 문법이고, 굵은 글씨 라벨(`> **Note:**`)은 검증이 거부한다.[](source:tone) | 지시 |
-| snippet | 짧고 주석이 풍부하게 쓴다. 50줄 이상 boilerplate는 최소 snippet으로 줄인다. ES module만 쓰고 CommonJS는 피한다.[](source:snippets) | 지시 |
-| snippet 주석 | 값의 이유를 설명하고, `2rem`이나 `50ms` 같은 placeholder는 예시라고 표시한다.[](source:snippets) | MUST |
-| 새 기능 선택 | 구현 단계는 어떤 기능도 쓸 수 있다고 가정한다. 사용자에게 보이는 이점이 없으면 legacy 기능을 쓴다.[](source:steps) | DO NOT |
-| 이해관계 | 한 사용자 집단을 해치며 다른 집단을 돕는 방법은 이득이 분명히 클 때만 권한다. 어떤 집단도 use case에서 완전히 배제하지 않는다. 절충은 본문에 명시한다.[](source:steps) | DO NOT |
-| 네이티브 우선 | `<dialog>`, `[popover]`, `<details>` 같은 플랫폼 기능을 직접 재구현보다 우선한다.[](source:steps) | 선호 |
-| fallback 위치 | cross-browser fallback은 구현 절이 아니라 fallback 절에만 쓴다.[](source:steps) | DO NOT |
-| `MANDATORY` 남용 | 기능이 동작하는 데 정말 필요한 단계에만 붙인다. 선택 단계는 선택이라고 표시한다. 잘못 붙이면 불필요한 grader 필수 검사가 생긴다.[](source:steps) | 지시 |
-| 코드 유효성 | fallback 절을 포함한 모든 snippet은 실제 브라우저에서 throw 없이 돌아야 한다.[](source:steps) | 지시 |
-| 대안 나열 | 대안은 어떤 use case에 어느 쪽이 맞는지 같이 쓴다. 기준을 지어내지 않는다.[](source:steps) | 지시 |
+@code source=pg-front language=yaml
 
-`web-feature-ids`에 ID가 아직 upstream에 없으면 `tmp-<candidate-slug>`를 쓰고 `features/pending-web-features.json`에도 등록한다. 기능이 upstream에 올라오면 CI 검증이 실패해 정식 ID로 바꾸도록 알린다.[](source:tmp)
+## 어떤 파일로 이루어지나 {#files span=12}
 
-## fallback과 build-time 매크로는 어떻게 쓰나? {#fallback-macros}
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | `guide.md`, `expectations.md`, `demo.html`의 작성 규칙과 macro 표를 담은 유일한 파일이다 | 세 파일을 쓰거나 검토할 때 읽는다 | guide.md 쓰기, expectations.md 쓰기, demo.html 쓰기, 자체 검증, Stage 3 평가 |
 
-주 구현이 Baseline Widely Available 상태가 아닌 기능을 쓰면 fallback 권장을 반드시 넣는다. fallback은 "Baseline target이 X를 지원하지 않으면" 식으로 쓰고, fallback을 쓰는 경험(점진적 향상인지, 기능 감지 뒤 우아한 저하인지)을 명시해야 한다(MANDATORY).[](source:fallback)
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-| 순서 | fallback 방법 | 조건 |
-|---|---|---|
-| 1 | Custom Code | Widely Available 기능으로 다시 구현하고 50줄 미만이다.[](source:fallback) |
-| 2 | Polyfill | 견고하고 성능이 좋다.[](source:fallback) |
-| 3 | Abstraction | 잘 검증된 userland 라이브러리다.[](source:fallback) |
-| 4 | Graceful Degradation | 우아하게 저하되는 Baseline Newly Available 기능이다.[](source:fallback) |
-| 5 | Progressive Enhancement | 견고한 fallback이 없을 때만 이렇게 서술한다.[](source:fallback) |
+| 조건 | 결과 | 출처 |
+| --- | --- | --- |
+| `guide.md` | 에이전트가 보는 유일한 파일이므로 완전히 자체 완결이어야 한다 | [](source:pg-agent) |
+| grader가 `guide.md`에 없는 것을 요구한다 | `guide.md`를 고치지 않고 grader를 고친다(Never) | [](source:pg-agent) |
+| 모든 완성된 non-draft guide | 비어 있지 않은 `expectations.md`가 있어야 한다 | [](source:pg-exp) |
+| `expectations.md` bullet | 검사 하나, 선언형 문장이다. `MANDATORY` 같은 명령형 접두어를 쓰지 않는다. bullet 수 상한은 없다(5~10개는 범위가 넓다는 힌트일 뿐) | [](source:pg-exp) |
+| 코드 조각 | 브라우저에서 던지지 않고 돌아가야 한다. JavaScript 예시는 ES module만 쓴다 | [](source:pg-impl)[](source:pg-code) |
+| 구현 단계의 접근법 | 한 집단의 경험을 낮춰 다른 집단을 돕지 않는다. 이득이 손해보다 분명히 클 때만 하고, 하면 본문에 밝힌다. 어떤 집단도 use case에서 배제하지 않는다 | [](source:pg-impl) |
+| 병합 전 | Peer/ATL 작성과 category Content ATL 승인이 필요하다. 사람 승인이다 | [](source:pg-stages) |
+| 사용자 개입 | ID가 없으면 사용자에게 알린다(`web-feature-ids`). demo와 guide가 어긋나면 어느 쪽을 고칠지 사용자와 정하라는 것은 `project-guide-validation`의 지시다 | [](source:pg-fm) |
 
-fallback은 use case에 충실해야 한다. 핵심 목적을 달성하지 못하면 다른 fallback을 권한다. 핵심이 아닌 향상 기능에는 우아한 저하도 허용한다. 기능 감지는 `in` 연산자로 하고, 인스턴스가 있으면 그 인스턴스를, 없으면 Web IDL interface prototype을 검사한다.[](source:fallback)
+## 더 자세히 읽으려면 {#more span=12}
 
-| 상황 | 쓸 매크로·행동 | 강도 |
-|---|---|---|
-| widely available 상태가 아닌 기능마다 | `{{ FEATURE_FALLBACKS("feature-id") }}` 또는 `{{ BASELINE_STATUS("feature-id") }}`를 한 줄로 단독 배치한다.[](source:baseline) | MANDATORY |
-| 재사용 가능한 fallback이 `features/<id>.md`의 비어 있지 않은 `## Fallbacks`에 있을 때 | `FEATURE_FALLBACKS`를 쓴다. 파일이나 절이 없거나 비면 `MacroError`로 검증이 실패한다.[](source:baseline)[](source:macros) | 선호 |
-| fallback이 이 guide에만 해당하거나, BCD key가 필요하거나, 기능이 이미 Widely Available일 때 | `BASELINE_STATUS`를 직접 쓴다.[](source:baseline) | 지시 |
-| 12개월 안에 `baseline_high_date`가 된 기능이나 에이전트가 지원을 오판하기 쉬운 기능 | `BASELINE_STATUS`를 넣는다. `baseline_low_date`와 `baseline_high_date`를 혼동하지 않는다.[](source:baseline) | SHOULD |
-| 브라우저 버전·지원 시점 | 본문에 직접 쓰지 않고 매크로로 보인다. SMS 형식 같은 OS·UA 통합 설명은 허용한다.[](source:baseline) | 금지 |
-| 매크로 위치 | fallback 절 밖에서는 쓰지 않는다. 기능이 여러 개면 소절마다 따로 쓴다.[](source:baseline) | DO NOT |
-| polyfill 로딩 | 네이티브 지원이 없을 때만 조건부로 로드한다. 빌드 연동 로딩을 CDN보다 우선한다.[](source:polyfill) | MANDATORY |
-| polyfill 선택 | 성능 손실이 큰 것과 CSS를 가져와 파싱해야 하는 것은 권하지 않는다. polyfill.io는 권하지 않는다.[](source:polyfill) | DO NOT |
+공개된 상세:
 
-`GUIDE_REF`는 에이전트가 guide를 미리 한꺼번에 받고 교차 참조는 거의 따라가지 않기 때문에 규칙이 엄격하다.[](source:guideref)
+- 아직 없음
 
-- 현재 guide의 요구사항(핵심 규칙, 접근성, fallback)에는 쓰지 않는다. `guide.md`에 직접 넣거나 `INCLUDE`·`FEATURE`로 가져온다.[](source:guideref)
-- 게시된 guide만 가리킨다. 아직 없는 guide는 `{# PENDING_GUIDE_REF: ... #}` 주석에 문장째 둔다.[](source:guideref)
-- 별도 use case에만 쓴다. 허브 라우팅, 형제 guide 구분(Section 1과 첫 코드 앞), 인접 use case가 해당한다.[](source:guideref)
-- 같은 `web-feature-id`를 다루는 guide가 둘 이상이고 같은 조언을 반복하면 `features/<feature-id>.md`로 뽑고 매크로로 가져온다.[](source:features)
+상세 후보(요청하면 만든다):
 
-## expectations.md와 demo.html은 어떻게 쓰나? {#expectations-demo}
+- frontmatter 스키마와 `tmp-` 접두어 등록 — guide.md 쓰기 · 개요에는 요지만 담았다. `draft` 값 3가지(`stub`, `wip`, `blocked`)와 `features/pending-web-features.json` 필드는 상세로 남긴다.
+- fallback 전략과 Baseline macro — guide.md 쓰기 · 개요에는 선택 순서만 담았다. `FEATURE_FALLBACKS`와 `BASELINE_STATUS` 중 고르는 기준은 상세로 남긴다.
+- build-time macro 6개와 `GUIDE_REF` 규칙 — guide.md 쓰기 · 개요에는 결과를 바꾸는 규칙만 담았다.
+- `expectations.md` 작성 규칙 9가지 — expectations.md 쓰기 · 개요에는 핵심만 담았다.
 
-`expectations.md`는 non-stub, non-draft guide마다 비어 있지 않아야 한다. SME가 소유하므로 기존 문구를 보존하고, 의미가 바뀌어야 할 때만 bullet을 고치며 이유를 적는다.[](source:exp-intro)
+@callout level=open-question title="확인하지 못한 것"
+| `src/core/macro-parsing.ts`, `features/`, `guides/`, `src/harness/README.md`는 이 컬렉션에 없어 macro 동작과 `MacroError` 조건을 확인하지 못했다. `gd dev`와 `pnpm build`는 지시상 동작이고 실행하지 않았다. 세 파일의 작성 순서는 원문에 명시 없음. |
 
-| 규칙 | 내용 |
-|---|---|
-| 1:1 | bullet 하나가 grader `test()` 하나가 된다. 한 bullet에 검사 하나만 쓴다.[](source:exp-rules) |
-| 평서문 | 올바른 구현에서 참인 사실로 쓴다. `MANDATORY:`, `MUST`, `DO NOT` 같은 지시 접두어는 뺀다. 이는 `guide.md`의 관례다.[](source:exp-rules) |
-| 결정적 검증 | "grader가 어떻게 아는가?"에 답할 수 있어야 한다. DOM, CSSOM, JS AST, computed style, accessibility tree, 런타임 동작으로 확인한다. API 사실, 코드 주석, 사람 판단이 필요한 기준은 안 된다. 부정 검사는 대상 기능이 있다는 긍정 검사와 짝을 짓는다.[](source:exp-rules) |
-| `demo.html` 실행 | 모든 expectation을 demo가 실제로 보여 줘야 한다.[](source:exp-rules) |
-| 범위 | guide가 요구하는 관찰 가능한 결과를 모두 덮는다. 상한은 없다. 5~10개는 범위가 넓은지 보는 힌트일 뿐이다. 선택 분기, "Prefer" 권고, Widely Available 기능의 fallback은 넣지 않는다.[](source:exp-rules) |
-| 외부 링크 | 쓰지 않는다. grader 생성기가 해석하지 못한다.[](source:exp-rules) |
-| 과도한 제약 | 문법 하나를 강요하지 않고 허용되는 대안을 이름으로 적는다. "Prefer"를 필수로 올리거나, `A or B`를 `AND`로 쪼개거나, 예시 값(`0.4s`)을 검사하거나, `#id`·`.class` 같은 locator를 쓰지 않는다.[](source:exp-rules) |
-| 네이티브와 fallback 분리 | 핵심 expectation은 네이티브 지원을 가정한다. fallback 요구는 "When `<feature>` is unsupported, ..." 꼴의 별도 bullet로 쓴다. 그래야 `gd dev`가 `skipUnless({ unsupported: '<feature>' })`로 범위를 정한다.[](source:exp-rules) |
-
-`demo.html`은 use case의 깨끗한 참조 구현이다. 기능이 Widely Available 상태가 아니면 fallback 전략도 보여 준다. 가능하면 inline script와 style로 자기완결시키고, 브라우저 console에 error나 warning이 없어야 한다.[](source:demo)
-
-@callout level=warning title="에이전트는 guide.md만 읽는다"
-| `guide.md`는 `demo.html`, `expectations.md`, patch, 외부 링크를 에이전트가 읽는다고 가정하면 안 된다. 읽는 것은 `guide.md`뿐이다.[](source:seen)[](source:steps) |
-
-## 다른 스킬과 어디에서 이어지나? {#position}
-
-@workflow id=position-flow title="use case 승인에서 자체 검증과 평가로"
-| uc | project-use-cases | backend | source:uc-next |
-| current | project-guides | backend | source:stages |
-| val | project-guide-validation | backend | source:selfval |
-| ev | project-evals | backend | source:ev-stage |
-| uc > current | ATL 승인 | emphasis |
-| current > val | 자체 검증 | emphasis |
-| current > ev | Stage 3 | dashed |
-
-@steps id=position-steps
-| highlight | project-guides | 이 페이지의 스킬이다. 세 파일을 쓴 뒤 검증 스킬을 invoke하고, 그 뒤 Stage 3으로 간다.[](source:selfval) | position-flow | current |
-
-| 관계 | 받는 것·넘기는 것·조건 |
-|---|---|
-| R03 · 넘김(앞) | `project-use-cases`가 use case를 Content ATL이 승인한 뒤 Stage 2로 가라고 한다. 받는 것은 `guide.md` stub(`name`, `description`, `web-feature-ids`)이다. 온보딩된 Peer는 Stage 1을 건너뛰고 바로 이 스킬로 올 수 있다.[](source:uc-next)[](source:uc-gov) |
-| R05 · 넘김(뒤) | 세 파일을 다 쓴 뒤 PR을 열거나 Stage 3으로 가기 전에 `project-guide-validation`을 invoke하라고 한다(명령형). 받는 쪽은 "strongly encouraged"라고 쓰며, 사람 SME 검토를 대체하지 않는다고 못박는다.[](source:selfval)[](source:val-intro) |
-| R06 · 넘김(뒤) | Stage 3에서 `gd dev`가 `task.md`, patch, `grader.ts`를 만든다. 이 스킬은 grader를 맞추려고 `guide.md`를 고치지 않는다.[](source:impl2)[](source:ev-stage) |
-| R07 · 참고 | `project-evals`는 `expectations.md` 작성 규칙을 이 스킬의 해당 절에 맡기고 Stage 3에는 grader 규칙만 더한다.[](source:ev-exp) |
-| R14 · 공유 상태 | `expectations.md`는 이 스킬이 쓰고 `project-evals`가 grader 테스트와 1:1로 대응시켜 검토한다.[](source:exp-rules)[](source:ev-exp) |
-| R02, R08, R13, R15 · 참고·공유 상태 | `project-features`는 use-case 이슈가 닫히는 때를 설명하며 이 스킬을 안내만 한다. 검증 스킬은 이 스킬을 정성 검토 기준으로 쓴다. `guide.md`는 Stage 1 stub에서 Stage 2 본문으로 이어지고, discipline guide는 `project-discipline-guides`도 고친다. 상세는 묶음에 남겼다.[](source:feat-close)[](source:fm) |
-
-전체 흐름은 색인 기준 `_group-guide-authoring-pipeline/guide-authoring-pipeline.html`에 있다(묶음 페이지는 아직 만들지 않았다).
-
-## 어디까지 읽고 확인했나? {#audit}
-
-| 조사 구분 | 확인 범위 |
-|---|---|
-| 스킬 원본 | `modern-web-guidance-src/project-guides/SKILL.md` 1개, 26,181B, 168줄을 끝까지 읽었다.[](source:full) |
-| 관계 대조 | 인접 스킬 `project-use-cases`, `project-evals`, `project-features`, `project-guide-validation`에서 관계가 인용한 줄만 읽었다. 이 줄들은 원장 R02, R03, R05, R06, R07의 근거와 일치했다. |
-| 설치 출처 | `skills-lock.json`의 `project-guides` 항목은 `skillPath`가 `.agents/skills/project-guides/SKILL.md`다.[](source:lock) |
-| 제외 | 이 스킬 폴더에는 `SKILL.md` 외 파일이 없다. 번역본과 바이너리도 없다. |
-| 부분 읽음 | 0개. 인접 스킬 4개는 필요한 줄만 읽었고 전부 읽지 않았다. |
-
-원문의 활성화 설명, Stage 순서, 사람 승인(Content ATL, SME), 수치(50줄, 12개월, 5~10개 힌트), 금지와 `MANDATORY` 항목은 모두 대조했다.
-
-@callout level=open-question title="이 컬렉션에서 확인하지 못한 부분"
-| 본문이 가리키는 `GOVERNANCE.md`, `docs/ATLS.md`, `src/core/macro-parsing.ts`, `features/pending-web-features.json`, `guides/`는 이 컬렉션에 없다. 매크로 오류나 검증 실패가 실제로 그렇게 동작하는지는 확인하지 못했다. 스킬이 말하는 `gd dev`, `pnpm build`도 실행하지 않았다. |
-
-분석 중 원본은 수정하지 않았다. 원문의 명령과 도구 호출은 분석 자료로만 읽었다.
+읽은 원본: 텍스트 파일 1개. 제외: 없음.

@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 취향에 맞춰 문구를 바꾸는 일이다. 렌더링, 오류 마크업, 번역 문자열의 공간은 다른 스킬이 맡는다.[](source:intro)[](source:owners)
 
 @answer scope="design/jakubkrehel/better-writing · 원본 텍스트 3개 12,367B · 커밋 0465878 · 호출 제한 없음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source fm title="design/jakubkrehel/better-writing/SKILL.md · 9414B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-writing/SKILL.md lines=1:4
 @source intro title="SKILL.md · 하는 일과 브랜드 어조" path=design/jakubkrehel/better-writing/SKILL.md lines=8:10
 @source owners title="SKILL.md · 다른 스킬의 몫" path=design/jakubkrehel/better-writing/SKILL.md lines=12:12

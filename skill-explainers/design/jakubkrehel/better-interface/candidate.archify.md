@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: branch, pull request, commit 범위, 미커밋 변경 리뷰다. 변경 리뷰라고 밝히고 사용자에게 `interface-review` 실행을 부탁한다.[](source:bi-change)
 
 @answer scope="design/jakubkrehel/better-interface · 원본 텍스트 3개 11,008B · 커밋 0465878 · 관계 확인용으로 다른 스킬 일부 줄만 읽음 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source bi-fm title="design/jakubkrehel/better-interface/SKILL.md · 8779B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-interface/SKILL.md lines=1:4
 @source bi-own title="SKILL.md · 이 스킬이 맡는 것과 안 맡는 것" path=design/jakubkrehel/better-interface/SKILL.md lines=6:12
 @source bi-evid title="SKILL.md · 근거이지 취향이 아니다" path=design/jakubkrehel/better-interface/SKILL.md lines=14:18

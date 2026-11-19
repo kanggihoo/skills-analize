@@ -8,7 +8,7 @@
 - 에이전트는 단계 크기를 정하고 범위에 상한을 둔다. 단계당 파일 수를 제한하고 턴 예산을 정한다.[](source:p-cap)
 
 @answer scope="pstack/principle-guard-the-context-window · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-guard-the-context-window/SKILL.md · 939B · 원칙 본문(frontmatter)" path=pstack/principle-guard-the-context-window/SKILL.md lines=1:5
 @source rule title="pstack/principle-guard-the-context-window/SKILL.md · 규칙" path=pstack/principle-guard-the-context-window/SKILL.md lines=9:9
 @source why title="pstack/principle-guard-the-context-window/SKILL.md · 이유" path=pstack/principle-guard-the-context-window/SKILL.md lines=11:11

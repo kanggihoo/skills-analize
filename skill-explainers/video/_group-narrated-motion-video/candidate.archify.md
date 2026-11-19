@@ -7,7 +7,7 @@
 - 두 스킬 모두 데모의 장면을 옮기지 않는다는 같은 규칙을 적는다. 기술만 가져간다.[](source:nm-am-rule)[](source:nm-cokac-rule)
 
 @answer scope="video 묶음 · 커밋 f415191 · 지시상 동작 · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=f415191a236e0230db370553888ff9699eb4440d
 @source nm-st-board title="video/script-to-motion/SKILL.md · 5단계 기법 찾기" path=video/script-to-motion/SKILL.md lines=840:849
 @source nm-st-build title="script-to-motion/SKILL.md · 6단계 기법 옮기기" path=video/script-to-motion/SKILL.md lines=905:907
 @source nm-st-orig title="script-to-motion/SKILL.md · 원본 소재 규칙의 기법 항목" path=video/script-to-motion/SKILL.md lines=476:482

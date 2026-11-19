@@ -73,22 +73,22 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r01 | poteto-mode | how | 내부 위임 | 명시-이름 | 사소하지 않은 변경, 아키텍처 결정, "확실해?"일 때(의무형) | 조사 질문 → 설명 | - | 범위 내 | poteto-mode:19; how:3 |
-| r02 | poteto-mode | architect | 내부 위임 | 명시-이름 | 함수 경계를 넘는 코드일 때. 구현 전에 병렬 설계 탐색 | 설계 과제 → 확정 설계 | - | 범위 내 | poteto-mode:22; architect:3 |
-| r03 | poteto-mode | swarm | 내부 위임 | 명시-이름 | 병렬 분산(커버리지, 경주, 관문, 탐색 분할) | 작업 조각 → 보고서 1개 | - | 범위 내 | poteto-mode:23; swarm:3 |
-| r04 | poteto-mode | arena | 내부 위임 | 명시-이름 | 설계나 코드의 경합(기반 선택·접붙이기)일 때 | 같은 과제 → 합쳐진 결과 | - | 범위 내 | poteto-mode:23; arena:3 |
-| r05 | poteto-mode | interrogate | 내부 위임 | 명시-이름 | 설계에 이견이 있을 때 출시 전 | 변경 → 리뷰 결과 | - | 범위 내 | poteto-mode:24; interrogate:3 |
-| r06 | poteto-mode | unslop | 내부 위임 | 명시-이름 | 모든 산문. 답변도 산문으로 본다 | 글 → 다듬은 글 | - | 범위 내 | poteto-mode:26,107; unslop:3,18 |
-| r07 | poteto-mode | technical-writing | 내부 위임 | 명시-이름 | 문서, RFC, README, PR 설명, 커밋 메시지 | 글 → 기준에 맞춘 글 | - | 범위 내 | poteto-mode:27; technical-writing:3 |
-| r08 | poteto-mode | no-comments | 내부 위임 | 명시-이름 | 리뷰 전 | diff → 주석 정리된 diff | - | 범위 내 | poteto-mode:29; no-comments:3 |
-| r09 | poteto-mode | benchmark-checklist | 내부 위임 | 명시-이름 | 직접 잰 성능 수치를 보고하거나 그에 따라 행동하기 전 | 측정값 → 검증된 측정값 | - | 범위 내 | poteto-mode:31; benchmark-checklist:3 |
-| r10 | poteto-mode | show-me-your-work | 내부 위임 | 명시-이름 | 길거나 자율적이거나 여러 단계인 작업, 사용자가 자리를 비우는 작업. 위험이 크면 커밋, 아니면 로컬 | 결정 → TSV 기록 | - | 범위 내 | poteto-mode:36; show-me-your-work:3 |
-| r11 | poteto-mode | figure-it-out | 넘김 | 명시-이름 | 크고 여러 곳에 걸친 작업이나 자리 비운 뒤 검토할 작업이면, 좁은 플레이북이 맞아도 넘긴다. 맞는 플레이북이 없을 때도 넘긴다. 여러 날짜 프로그램은 Orchestrate 플레이북으로 간다 | 과제 → 맞춤 플레이북 | - | 범위 내 | poteto-mode:123; figure-it-out:3 |
+| r01 | poteto-mode | how | 호출 | 명시-이름 | 사소하지 않은 변경, 아키텍처 결정, "확실해?"일 때(의무형) | 조사 질문 → 설명 | - | 범위 내 | poteto-mode:19; how:3 |
+| r02 | poteto-mode | architect | 호출 | 명시-이름 | 함수 경계를 넘는 코드일 때. 구현 전에 병렬 설계 탐색 | 설계 과제 → 확정 설계 | - | 범위 내 | poteto-mode:22; architect:3 |
+| r03 | poteto-mode | swarm | 호출 | 명시-이름 | 병렬 분산(커버리지, 경주, 관문, 탐색 분할) | 작업 조각 → 보고서 1개 | - | 범위 내 | poteto-mode:23; swarm:3 |
+| r04 | poteto-mode | arena | 호출 | 명시-이름 | 설계나 코드의 경합(기반 선택·접붙이기)일 때 | 같은 과제 → 합쳐진 결과 | - | 범위 내 | poteto-mode:23; arena:3 |
+| r05 | poteto-mode | interrogate | 호출 | 명시-이름 | 설계에 이견이 있을 때 출시 전 | 변경 → 리뷰 결과 | - | 범위 내 | poteto-mode:24; interrogate:3 |
+| r06 | poteto-mode | unslop | 호출 | 명시-이름 | 모든 산문. 답변도 산문으로 본다 | 글 → 다듬은 글 | - | 범위 내 | poteto-mode:26,107; unslop:3,18 |
+| r07 | poteto-mode | technical-writing | 호출 | 명시-이름 | 문서, RFC, README, PR 설명, 커밋 메시지 | 글 → 기준에 맞춘 글 | - | 범위 내 | poteto-mode:27; technical-writing:3 |
+| r08 | poteto-mode | no-comments | 호출 | 명시-이름 | 리뷰 전 | diff → 주석 정리된 diff | - | 범위 내 | poteto-mode:29; no-comments:3 |
+| r09 | poteto-mode | benchmark-checklist | 호출 | 명시-이름 | 직접 잰 성능 수치를 보고하거나 그에 따라 행동하기 전 | 측정값 → 검증된 측정값 | - | 범위 내 | poteto-mode:31; benchmark-checklist:3 |
+| r10 | poteto-mode | show-me-your-work | 호출 | 명시-이름 | 길거나 자율적이거나 여러 단계인 작업, 사용자가 자리를 비우는 작업. 위험이 크면 커밋, 아니면 로컬 | 결정 → TSV 기록 | - | 범위 내 | poteto-mode:36; show-me-your-work:3 |
+| r11 | poteto-mode | figure-it-out | 다음 안내 | 명시-이름 | 크고 여러 곳에 걸친 작업이나 자리 비운 뒤 검토할 작업이면, 좁은 플레이북이 맞아도 넘긴다. 맞는 플레이북이 없을 때도 넘긴다. 여러 날짜 프로그램은 Orchestrate 플레이북으로 간다 | 과제 → 맞춤 플레이북 | - | 범위 내 | poteto-mode:123; figure-it-out:3 |
 | r12 | poteto-mode | principle-* (24개) | 참고 | 명시-이름 | 원칙을 적용하면 그 원칙의 `SKILL.md`를 끝까지 읽어야 한다. 답변에는 결정에 영향을 준 원칙과 바뀐 선택을 밝힌다. 이번 세션에 읽은 원칙만 인용한다(의무형). 원칙별 조건은 아래 표 | 원칙 이름 → 답변 속 인용 | - | 범위 내 | poteto-mode:15,40,42-79 |
 | r13 | poteto-mode | principle-model-the-domain | 참고 | 명시-이름 | 코드를 쓸 때는 먼저 데이터 모양을 정하고 구조를 이 원칙에 따라 고른다(의무형) | - | - | 범위 내 | poteto-mode:21; principle-model-the-domain:3 |
-| r14 | setup-pstack | poteto-mode | 공유 상태 | 명시-이름 | `poteto-mode`의 서브에이전트 모델 기본값을 `/setup-pstack` 규칙의 역할 줄이 덮어쓴다 | 역할별 모델 | `~/.cursor/rules/pstack-models.mdc` | 범위 내 | poteto-mode:95; setup-pstack:39 |
+| r14 | setup-pstack | poteto-mode | 같은 파일 | 명시-이름 | `poteto-mode`의 서브에이전트 모델 기본값을 `/setup-pstack` 규칙의 역할 줄이 덮어쓴다 | 역할별 모델 | `~/.cursor/rules/pstack-models.mdc` | 범위 내 | poteto-mode:95; setup-pstack:39 |
 | r15 | poteto-mode | reflect | 미확인 | 미확인 | `reflect`가 "라우팅되는 워크플로 스킬" 목록에 이름만 있다. 호출 조건이 없다 | - | - | 범위 내 | poteto-mode:93 |
-| r16 | poteto-mode | deslop, create-skill, control-cli, control-ui | 내부 위임 | 명시-이름 | 커밋 전(`deslop`), 에이전트용 글(`create-skill`), UI·CLI 출시(`control-*`) | - | - | 범위 밖 | poteto-mode:26,28,30 |
+| r16 | poteto-mode | deslop, create-skill, control-cli, control-ui | 호출 | 명시-이름 | 커밋 전(`deslop`), 에이전트용 글(`create-skill`), UI·CLI 출시(`control-*`) | - | - | 범위 밖 | poteto-mode:26,28,30 |
 
 플레이북(`poteto-mode/playbooks/*.md`)도 다른 스킬을 부른다. 단계마다 생기는 관계는 `poteto-mode` 페이지에서 플레이북별로 다룬다. 원장에는 플레이북별로 가리키는 스킬과 줄 번호만 기록한다(근거 방식: 명시-이름).
 
@@ -124,27 +124,27 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r20 | poteto-help | poteto-mode | 넘김 | 명시-이름 | 도움 질문이 아니라 일을 시키는 메시지면 `poteto-mode`를 읽고 그 아래에서 일한다. 도움 질문이면 일을 시작하지 않는다 | 사용자 요청 | - | 범위 내 | poteto-help:9,11; poteto-mode:3 |
+| r20 | poteto-help | poteto-mode | 다음 안내 | 명시-이름 | 도움 질문이 아니라 일을 시키는 메시지면 `poteto-mode`를 읽고 그 아래에서 일한다. 도움 질문이면 일을 시작하지 않는다 | 사용자 요청 | - | 범위 내 | poteto-help:9,11; poteto-mode:3 |
 | r21 | poteto-help | setup-pstack | 참고 | 명시-이름 | 설치 안내 2단계. 규칙 파일이 없으면 모든 역할이 기본 모델을 쓴다고 알린다 | - | `~/.cursor/rules/pstack-models.mdc` | 범위 내 | poteto-help:27,33; setup-pstack:8 |
 | r22 | poteto-help | 형제 스킬 25개 | 참고 | 명시-이름 | "상황 → 스킬" 표(27줄 중 자기 자신과 폴더 없는 `/tdd`를 빼면 25개). 원칙이 아닌 형제 스킬은 모두 있다. 추천 전에 그 스킬을 읽는다 | - | - | 범위 내 | poteto-help:56-86 |
 | r23 | poteto-help | tdd | 참고 | 명시-이름 | 표에 `[/tdd](../tdd/SKILL.md)`가 있으나 `pstack/tdd/` 폴더가 없다 | - | - | 불명 | poteto-help:70 |
 | r24 | poteto-help | create-verification-skill | 참고 | 명시-이름 | 프로젝트에 `verify-*` 스킬이 없고 질문이 "변경이 동작함을 증명"에 관한 것일 때만 언급 | - | - | 범위 내 | poteto-help:28; create-verification-skill:3 |
 | r25 | poteto-help | deslop, control-cli, control-ui, loop, create-skill | 참고 | 명시-이름 | "pstack에 없음"으로 안내 | - | - | 범위 밖 | poteto-help:99-103 |
 
-### 공유 상태: 역할별 모델 규칙
+### 같은 파일: 역할별 모델 규칙
 
 `setup-pstack`이 `~/.cursor/rules/pstack-models.mdc`를 쓴다(`setup-pstack:8,39`). 다른 스킬은 서브에이전트를 띄울 때 이 파일의 역할 줄을 읽는다. 파일이나 줄이 없으면 각 스킬의 기본 모델을 쓴다.
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r30 | setup-pstack | how | 공유 상태 | 명시-이름 | `how explorer`, `how explainer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:55-56; how:11 |
-| r31 | setup-pstack | why | 공유 상태 | 명시-이름 | `why investigators`, `why synthesizer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:57-58; why:13 |
-| r32 | setup-pstack | arena | 공유 상태 | 명시-이름 | `arena runners`, `arena cross-judge pool` 줄 | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:61-62; arena:28,41 |
-| r33 | setup-pstack | swarm | 공유 상태 | 명시-이름 | `swarm workers` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:63; swarm:25 |
-| r34 | setup-pstack | architect | 공유 상태 | 명시-이름 | `architect runners` 줄(`arena runners` 대신) | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:64; architect:33 |
-| r35 | setup-pstack | interrogate | 공유 상태 | 명시-이름 | `interrogate reviewers` 줄 | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:65; interrogate:36 |
-| r36 | setup-pstack | reflect | 공유 상태 | 명시-이름 | `reflect tooling`, `reflect judgment, divergent, synthesizer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:59-60; reflect:33 |
-| r37 | setup-pstack | create-verification-skill | 넘김 | 명시-이름 | 앱을 직접 돌릴 수단이 없으면 한 번만 제안. 사용자가 예라고 하면 실행, 아니면 넘어간다(선택 단계) | - | - | 범위 내 | setup-pstack:72-74; create-verification-skill:3 |
+| r30 | setup-pstack | how | 같은 파일 | 명시-이름 | `how explorer`, `how explainer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:55-56; how:11 |
+| r31 | setup-pstack | why | 같은 파일 | 명시-이름 | `why investigators`, `why synthesizer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:57-58; why:13 |
+| r32 | setup-pstack | arena | 같은 파일 | 명시-이름 | `arena runners`, `arena cross-judge pool` 줄 | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:61-62; arena:28,41 |
+| r33 | setup-pstack | swarm | 같은 파일 | 명시-이름 | `swarm workers` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:63; swarm:25 |
+| r34 | setup-pstack | architect | 같은 파일 | 명시-이름 | `architect runners` 줄(`arena runners` 대신) | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:64; architect:33 |
+| r35 | setup-pstack | interrogate | 같은 파일 | 명시-이름 | `interrogate reviewers` 줄 | 모델 목록 | `pstack-models.mdc` | 범위 내 | setup-pstack:65; interrogate:36 |
+| r36 | setup-pstack | reflect | 같은 파일 | 명시-이름 | `reflect tooling`, `reflect judgment, divergent, synthesizer` 줄 | 모델 이름 | `pstack-models.mdc` | 범위 내 | setup-pstack:59-60; reflect:33 |
+| r37 | setup-pstack | create-verification-skill | 다음 안내 | 명시-이름 | 앱을 직접 돌릴 수단이 없으면 한 번만 제안. 사용자가 예라고 하면 실행, 아니면 넘어간다(선택 단계) | - | - | 범위 내 | setup-pstack:72-74; create-verification-skill:3 |
 
 ### 코드 이해(how, why, teach, recall, blast-radius)
 
@@ -152,55 +152,55 @@
 |---|---|---|---|---|---|---|---|---|---|
 | r40 | how | why | 참고 | 명시-이름 | 동기를 묻는 질문은 `why`로 | - | - | 범위 내 | how:3; why:3 |
 | r41 | why | how | 참고 | 명시-이름 | `how`의 짝. `how`는 무엇을·어떻게, `why`는 왜 | - | - | 범위 내 | why:11; how:3 |
-| r42 | teach | how | 내부 위임 | 명시-이름 | 실제로 스킬을 실행한다. `why`와 병렬로 돌린다. 작은 변경이면 하나만 써도 된다 | 질문 → 동작 설명 | - | 범위 내 | teach:11,14; how:3 |
-| r43 | teach | why | 내부 위임 | 명시-이름 | 기본은 좁게 묻는다(전체 조사는 느림). `why`의 확신도 표현은 고치지 않고 유지한다 | 좁힌 질문 → 근거 있는 이유 | - | 범위 내 | teach:11,14; why:3 |
-| r44 | teach | unslop | 내부 위임 | 명시-이름 | 모든 응답 | 글 | - | 범위 내 | teach:19; unslop:3 |
-| r45 | recall | why | 내부 위임 | 명시-이름 | 주제가 기능·파일·하위 시스템·버그를 가리키면 기본으로 실행. `why` 전체가 아니라 조사 담당(source investigators)과 갈래별 플레이북만 빌린다. 질문은 "지금 무엇이 열려 있나"로 바꿔서 넘긴다. 종합 단계를 거치는지는 원문에 명시 없음 | why 조사 담당 → 공유 기록 조사 결과 | - | 범위 내 | recall:20; why:3 |
-| r46 | recall | poteto-mode(session-pickup 플레이북), automate-me | 넘김 | 명시-이름 | 먼저 분류한다. 특정 채팅 하나를 이어받는 일은 session-pickup, 습관을 스킬로 굳히는 일은 automate-me | 요청 | - | 범위 내 | recall:17; poteto-mode:143; automate-me:3 |
-| r47 | recall | unslop | 내부 위임 | 명시-이름 | 요약 작성 | 글 | - | 범위 내 | recall:33; unslop:3 |
+| r42 | teach | how | 호출 | 명시-이름 | 실제로 스킬을 실행한다. `why`와 병렬로 돌린다. 작은 변경이면 하나만 써도 된다 | 질문 → 동작 설명 | - | 범위 내 | teach:11,14; how:3 |
+| r43 | teach | why | 호출 | 명시-이름 | 기본은 좁게 묻는다(전체 조사는 느림). `why`의 확신도 표현은 고치지 않고 유지한다 | 좁힌 질문 → 근거 있는 이유 | - | 범위 내 | teach:11,14; why:3 |
+| r44 | teach | unslop | 호출 | 명시-이름 | 모든 응답 | 글 | - | 범위 내 | teach:19; unslop:3 |
+| r45 | recall | why | 호출 | 명시-이름 | 주제가 기능·파일·하위 시스템·버그를 가리키면 기본으로 실행. `why` 전체가 아니라 조사 담당(source investigators)과 갈래별 플레이북만 빌린다. 질문은 "지금 무엇이 열려 있나"로 바꿔서 넘긴다. 종합 단계를 거치는지는 원문에 명시 없음 | why 조사 담당 → 공유 기록 조사 결과 | - | 범위 내 | recall:20; why:3 |
+| r46 | recall | poteto-mode(session-pickup 플레이북), automate-me | 다음 안내 | 명시-이름 | 먼저 분류한다. 특정 채팅 하나를 이어받는 일은 session-pickup, 습관을 스킬로 굳히는 일은 automate-me | 요청 | - | 범위 내 | recall:17; poteto-mode:143; automate-me:3 |
+| r47 | recall | unslop | 호출 | 명시-이름 | 요약 작성 | 글 | - | 범위 내 | recall:33; unslop:3 |
 | r48 | blast-radius | how, why | 참고 | 명시-이름 | 짝 스킬. `how`=무엇을 하나, `why`=왜, blast-radius=다른 곳에서 무엇이 깨지나 | - | - | 범위 내 | blast-radius:11 |
-| r49 | blast-radius | why | 내부 위임 | 명시-역할 | `why` 2단계(코드 기준점 만들기)를 써서 PR과 커밋을 가져온다. 위험 판단도 `why`와 같은 규칙 | 변경 → PR·커밋 목록 | - | 범위 내 | blast-radius:33,36; why:25-56 |
-| r50 | blast-radius | arena | 내부 위임 | 명시-이름 | 크거나 넓은 변경일 때만 | 같은 질문 → 합친 답 | - | 범위 내 | blast-radius:38; arena:3 |
-| r51 | blast-radius | unslop | 내부 위임 | 명시-이름 | 보고서 작성 | 글 | - | 범위 내 | blast-radius:48; unslop:3 |
+| r49 | blast-radius | why | 호출 | 명시-역할 | `why` 2단계(코드 기준점 만들기)를 써서 PR과 커밋을 가져온다. 위험 판단도 `why`와 같은 규칙 | 변경 → PR·커밋 목록 | - | 범위 내 | blast-radius:33,36; why:25-56 |
+| r50 | blast-radius | arena | 호출 | 명시-이름 | 크거나 넓은 변경일 때만 | 같은 질문 → 합친 답 | - | 범위 내 | blast-radius:38; arena:3 |
+| r51 | blast-radius | unslop | 호출 | 명시-이름 | 보고서 작성 | 글 | - | 범위 내 | blast-radius:48; unslop:3 |
 
 ### 설계·병렬 시도·리뷰(architect, arena, swarm, interrogate, no-comments)
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r60 | architect | how | 내부 위임 | 명시-이름 | Phase A에서 새 코드가 닿는 모든 시스템에 실행. 구현이 어긋나면 다시 실행 | 하위 시스템 → 추적한 모델 | - | 범위 내 | architect:23,25,76; how:3 |
-| r61 | architect | why | 내부 위임 | 명시-이름 | 설계가 소유권이나 계층을 다시 정할 때만 | 기존 모양 → 제약 | - | 범위 내 | architect:25; why:3 |
-| r62 | architect | arena | 내부 위임 | 명시-이름 | Phase B. `references/runner-prompt.md`를 각 러너 프롬프트로 넘긴다. 러너 모델은 `architect runners` 줄. 구현이 어긋나면 Phase B로 돌아가 다시 실행 | 설계 과제 + 근거 자료 → 설계 후보와 접붙인 결과 | - | 범위 내 | architect:31,33,79; arena:3 |
-| r63 | architect | interrogate | 내부 위임 | 명시-이름 | 구현 전에 설계에 적대적 압박을 가하고 싶을 때(선택) | 설계 초안 → 리뷰 | - | 범위 내 | architect:49; interrogate:3 |
+| r60 | architect | how | 호출 | 명시-이름 | Phase A에서 새 코드가 닿는 모든 시스템에 실행. 구현이 어긋나면 다시 실행 | 하위 시스템 → 추적한 모델 | - | 범위 내 | architect:23,25,76; how:3 |
+| r61 | architect | why | 호출 | 명시-이름 | 설계가 소유권이나 계층을 다시 정할 때만 | 기존 모양 → 제약 | - | 범위 내 | architect:25; why:3 |
+| r62 | architect | arena | 호출 | 명시-이름 | Phase B. `references/runner-prompt.md`를 각 러너 프롬프트로 넘긴다. 러너 모델은 `architect runners` 줄. 구현이 어긋나면 Phase B로 돌아가 다시 실행 | 설계 과제 + 근거 자료 → 설계 후보와 접붙인 결과 | - | 범위 내 | architect:31,33,79; arena:3 |
+| r63 | architect | interrogate | 호출 | 명시-이름 | 구현 전에 설계에 적대적 압박을 가하고 싶을 때(선택) | 설계 초안 → 리뷰 | - | 범위 내 | architect:49; interrogate:3 |
 | r64 | architect | principle-foundational-thinking, principle-outcome-oriented-execution | 참고 | 명시-이름 | 골격 먼저 커밋, 계획된 중간 파손 허용의 근거 | - | - | 범위 내 | architect:49 |
 | r65 | arena | principle-separate-before-serializing-shared-state | 참고 | 명시-이름 | 후보마다 출력 위치를 따로 준다(worktree 또는 `/tmp/arena-<slug>/candidate-<n>/`) | - | - | 범위 내 | arena:29 |
-| r66 | no-comments | architect | 내부 위임 | 명시-이름 | 수정 중 하나라도 모양을 정해야 하면, 받아들인 지적 전체에 대해 한 번 실행하고 스케치에서 멈춘다. 구현은 no-comments 4단계가 한다 | 지적 목록 → 설계 스케치 | - | 범위 내 | no-comments:21; architect:3 |
+| r66 | no-comments | architect | 호출 | 명시-이름 | 수정 중 하나라도 모양을 정해야 하면, 받아들인 지적 전체에 대해 한 번 실행하고 스케치에서 멈춘다. 구현은 no-comments 4단계가 한다 | 지적 목록 → 설계 스케치 | - | 범위 내 | no-comments:21; architect:3 |
 | r67 | no-comments | principle-fix-root-causes, principle-redesign-from-first-principles | 참고 | 명시-이름 | 의도만 안내한다. 범위 밖 수정을 허락하지 않는다 | - | - | 범위 내 | no-comments:22 |
 | r68 | figure-it-out | poteto-mode | 참고 | 명시-이름 | 할 일 목록 첫 항목이 `poteto-mode`의 Principles 절 읽기(의무형) | - | - | 범위 내 | figure-it-out:13; poteto-mode:38-79 |
-| r69 | figure-it-out | architect | 내부 위임 | 명시-이름 | 되돌리기 어려운 설계 결정일 때. 모양이 이미 정해진 기계적 작업이면 건너뛴다. 정해진 설계에 arena를 또 돌리지 않는다 | 설계 결정 → 확정 설계 | - | 범위 내 | figure-it-out:30; architect:3 |
-| r70 | figure-it-out | show-me-your-work | 내부 위임 | 명시-이름 | 실행 기록을 남긴다. 보통 커밋해서 PR에서 읽게 한다 | 결정 → 기록 | - | 범위 내 | figure-it-out:47; show-me-your-work:3 |
+| r69 | figure-it-out | architect | 호출 | 명시-이름 | 되돌리기 어려운 설계 결정일 때. 모양이 이미 정해진 기계적 작업이면 건너뛴다. 정해진 설계에 arena를 또 돌리지 않는다 | 설계 결정 → 확정 설계 | - | 범위 내 | figure-it-out:30; architect:3 |
+| r70 | figure-it-out | show-me-your-work | 호출 | 명시-이름 | 실행 기록을 남긴다. 보통 커밋해서 PR에서 읽게 한다 | 결정 → 기록 | - | 범위 내 | figure-it-out:47; show-me-your-work:3 |
 | r71 | figure-it-out | principle-laziness-protocol | 참고 | 명시-이름 | 두 번째 arena는 과설계라는 근거 | - | - | 범위 내 | figure-it-out:30 |
 
 ### 검증 도구(create-verification-skill, maintain-verification-skill)
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r80 | create-verification-skill | maintain-verification-skill | 넘김 | 명시-이름 | 앱이 바뀔 때 기능 지도를 맞게 유지하려면 사용자에게 안내. 주기는 물을 때만 제안 | 생성된 검증 스킬 | - | 범위 내 | create-verification-skill:44; maintain-verification-skill:9 |
-| r81 | create-verification-skill | maintain-verification-skill | 공유 상태 | 명시-이름 | create가 쓰고 maintain이 찾아 고친다 | `.cursor/skills/verify-<app>/SKILL.md`, `features/*.md` | 대상 프로젝트 저장소 | 범위 내 | create-verification-skill:25,36; maintain-verification-skill:25,27 |
-| r82 | maintain-verification-skill | create-verification-skill | 넘김 | 명시-이름 | 대상 검증 스킬이 없으면 멈추고 create를 안내한다. 후보가 여럿이면 사용자에게 묻는다 | - | - | 범위 내 | maintain-verification-skill:25 |
+| r80 | create-verification-skill | maintain-verification-skill | 다음 안내 | 명시-이름 | 앱이 바뀔 때 기능 지도를 맞게 유지하려면 사용자에게 안내. 주기는 물을 때만 제안 | 생성된 검증 스킬 | - | 범위 내 | create-verification-skill:44; maintain-verification-skill:9 |
+| r81 | create-verification-skill | maintain-verification-skill | 같은 파일 | 명시-이름 | create가 쓰고 maintain이 찾아 고친다 | `.cursor/skills/verify-<app>/SKILL.md`, `features/*.md` | 대상 프로젝트 저장소 | 범위 내 | create-verification-skill:25,36; maintain-verification-skill:25,27 |
+| r82 | maintain-verification-skill | create-verification-skill | 다음 안내 | 명시-이름 | 대상 검증 스킬이 없으면 멈추고 create를 안내한다. 후보가 여럿이면 사용자에게 묻는다 | - | - | 범위 내 | maintain-verification-skill:25 |
 
 ### 글쓰기, 측정, 기타
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r90 | technical-writing | unslop | 내부 위임 | 명시-이름 | 이 스킬이 다루는 모든 문서에 적용. 새 금지 표현은 unslop 목록에 추가하자고 제안 | 글 | - | 범위 내 | technical-writing:19,93; unslop:3 |
-| r91 | show-me-your-work | unslop | 내부 위임 | 명시-이름 | 기록 문장에도 적용 | 글 | - | 범위 내 | show-me-your-work:36; unslop:3 |
-| r92 | automate-me | unslop, create-skill | 내부 위임 | 명시-이름 | 마이닝 → `create-skill` 작성 → unslop 순으로 엮는다. `create-skill`은 Cursor 내장 | 습관 근거 → `-mode` 스킬 초안 | - | unslop 범위 내, create-skill 범위 밖 | automate-me:11,67,77 |
+| r90 | technical-writing | unslop | 호출 | 명시-이름 | 이 스킬이 다루는 모든 문서에 적용. 새 금지 표현은 unslop 목록에 추가하자고 제안 | 글 | - | 범위 내 | technical-writing:19,93; unslop:3 |
+| r91 | show-me-your-work | unslop | 호출 | 명시-이름 | 기록 문장에도 적용 | 글 | - | 범위 내 | show-me-your-work:36; unslop:3 |
+| r92 | automate-me | unslop, create-skill | 호출 | 명시-이름 | 마이닝 → `create-skill` 작성 → unslop 순으로 엮는다. `create-skill`은 Cursor 내장 | 습관 근거 → `-mode` 스킬 초안 | - | unslop 범위 내, create-skill 범위 밖 | automate-me:11,67,77 |
 | r93 | automate-me | poteto-mode | 참고 | 명시-이름 | 모드 스킬의 세밀함을 보려고 읽는다. 내용은 베끼지 않는다 | - | - | 범위 내 | automate-me:63 |
 | r94 | benchmark-checklist | principle-explain-the-number | 참고 | 명시-이름 | 왜 필요한지는 그 원칙이 말한다 | - | - | 범위 내 | benchmark-checklist:9 |
-| r95 | principle-explain-the-number | benchmark-checklist | 넘김 | 명시-이름 | 성능 수치면 전체 절차를 그 스킬로 실행한다 | 측정값 | - | 범위 내 | principle-explain-the-number:19 |
+| r95 | principle-explain-the-number | benchmark-checklist | 다음 안내 | 명시-이름 | 성능 수치면 전체 절차를 그 스킬로 실행한다 | 측정값 | - | 범위 내 | principle-explain-the-number:19 |
 | r96 | principle-prove-it-works | show-me-your-work | 참고 | 명시-이름 | 크거나 복잡한 작업이라 나중에 감사할 기록이 필요할 때만 커밋 | - | - | 범위 내 | principle-prove-it-works:22 |
 | r97 | principle-type-system-discipline | typescript-best-practices | 참고 | 명시-이름 | 특정 언어 문법으로 구체화하는 스킬의 예 | - | - | 범위 내 | principle-type-system-discipline:11 |
-| r98 | reflect | create-skill | 내부 위임 | 명시-이름 | 10줄 넘는 기존 스킬 수정, description 조정, 새 스킬은 `create-skill`에 넘긴다. 한 줄짜리는 부모가 직접 | 승인된 항목 → 스킬 수정 | - | 범위 밖 | reflect:59-62 |
+| r98 | reflect | create-skill | 호출 | 명시-이름 | 10줄 넘는 기존 스킬 수정, description 조정, 새 스킬은 `create-skill`에 넘긴다. 한 줄짜리는 부모가 직접 | 승인된 항목 → 스킬 수정 | - | 범위 밖 | reflect:59-62 |
 
 ### 스킬 페이지 작성 중 추가한 관계
 
@@ -208,7 +208,7 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r110 | no-comments | how, why | 내부 위임 | 명시-이름 | 2단계에서 판정 근거가 얇은 심볼에만 실행 | 심볼 → 동작·이유 | - | 범위 내 | no-comments:20 |
+| r110 | no-comments | how, why | 호출 | 명시-이름 | 2단계에서 판정 근거가 얇은 심볼에만 실행 | 심볼 → 동작·이유 | - | 범위 내 | no-comments:20 |
 | r111 | architect | principle-exhaust-the-design-space, principle-fix-root-causes, principle-redesign-from-first-principles, principle-subtract-before-you-add, principle-separate-before-serializing-shared-state, principle-encode-lessons-in-structure, principle-boundary-discipline, principle-make-operations-idempotent, principle-laziness-protocol, principle-minimize-reader-load | 참고 | 명시-이름 | 본문과 러너 프롬프트·근거 템플릿에서 설계 판단 근거로 지목 | - | - | 범위 내 | architect:35,61,77,78; references/runner-prompt.md:12-18; references/rationale-template.md:15 |
 | r112 | arena | principle-laziness-protocol, principle-redesign-from-first-principles, principle-prove-it-works | 참고 | 명시-이름 | 접붙이기·검증 판단 근거 | - | - | 범위 내 | arena:49,57,65 |
 | r113 | figure-it-out | principle-prove-it-works, principle-never-block-on-the-human, principle-foundational-thinking, principle-separate-before-serializing-shared-state, principle-sequence-verifiable-units, principle-encode-lessons-in-structure | 참고 | 명시-이름 | 맞춤 플레이북 설계 단계별 근거 | - | - | 범위 내 | figure-it-out:19,23,27,31,39,51 |

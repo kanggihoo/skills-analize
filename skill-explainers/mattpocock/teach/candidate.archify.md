@@ -8,7 +8,7 @@
 - 목표는 순간의 유창함이 아니라 오래 남는 기억이다. 그래서 인출 연습, 간격 두기, 섞어 연습하기를 쓴다.[](source:skill-fluency)
 
 @answer scope="mattpocock/teach · 원본 텍스트 파일 6개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0f0d1b0403587dece9a32f5ca561cffc7e823a74
 @source skill-fm title="mattpocock/teach/SKILL.md · 9733B · frontmatter" path=mattpocock/teach/SKILL.md lines=1:6
 @source skill-intro title="SKILL.md · 상태를 갖는 요청" path=mattpocock/teach/SKILL.md lines=8:8
 @source skill-workspace title="SKILL.md · 작업 폴더 파일 목록" path=mattpocock/teach/SKILL.md lines=10:20

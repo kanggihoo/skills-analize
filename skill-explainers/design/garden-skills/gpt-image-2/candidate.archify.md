@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 편집 가능한 도표나 실제 데이터 차트가 필요할 때다. 기술 도표 템플릿은 PNG 비트맵만 만든다.[](source:sk-tech)[](source:tp-pub)
 
 @answer scope="design/garden-skills/gpt-image-2 · 원본 텍스트 102개 817,301B 중 10개 전부 읽음, 템플릿 16개 표본, 76개 구조만 확인 · 커밋 4e3fc89 · 스크립트는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source sk-fm title="design/garden-skills/gpt-image-2/SKILL.md · 26643B · frontmatter" path=design/garden-skills/gpt-image-2/SKILL.md lines=1:4
 @source sk-intro title="SKILL.md · 두 가지 작업과 모드 먼저" path=design/garden-skills/gpt-image-2/SKILL.md lines=6:18
 @source sk-check title="SKILL.md · check-mode.js 실행" path=design/garden-skills/gpt-image-2/SKILL.md lines=20:30

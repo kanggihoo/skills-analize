@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: easing·duration·애니메이션 여부를 정할 때(`animate`), 모션 전체를 리뷰할 때(`review-animations`), React Native 스레드 문제(`animate-expo`)다.[](source:pf-scope)
 
 @answer scope="design/emilkowalski/animation-performance · 원본 텍스트 1개 14,269B · 커밋 4e3fc89 · 지시상 동작 · 성능을 실제로 측정하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source pf-fm title="design/emilkowalski/animation-performance/SKILL.md · 14269B · frontmatter" path=design/emilkowalski/animation-performance/SKILL.md lines=1:4
 @source pf-init title="SKILL.md · 첫 응답" path=design/emilkowalski/animation-performance/SKILL.md lines=8:14
 @source pf-scope title="SKILL.md · 하는 일과 하지 않는 일" path=design/emilkowalski/animation-performance/SKILL.md lines=16:16

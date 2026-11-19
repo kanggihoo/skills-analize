@@ -1,18 +1,24 @@
-# 핵심 원칙과 심각도 기준 — 무엇을 finding이라 부르고 무엇을 버리나 {#principles-detail}
+# 핵심 원칙과 심각도 기준 — 무엇을 finding이라 부르고 무엇을 버리나 {#detail-principles}
 
-이 페이지는 `SKILL.md`의 `Core principles`와 `Anti-patterns`를 맡는다. 개요의 어느 한 노드에 묶이지 않고 사냥, 후보 검증, 최종 검증, 보고서 전체에 적용되는 판단 기준이다. 시작 입력은 hunter나 verifier가 본 후보 하나이고, 끝 출력은 그 후보를 `confirmed`, `needs_validation`, 기각 중 어디에 둘지에 대한 판단이다. 원칙형이라 순서를 만들지 않는다.
+[개요](page:security-audit.html)의 핵심 원칙과 anti-pattern 규칙 주제를 자세히 본다. 한 노드에 묶이지 않고 `사냥`, `후보 검증`, `최종 검증`, `보고서`에 두루 적용된다. 시작 입력은 hunter나 verifier가 본 후보 하나이고 끝 출력은 그 후보를 `confirmed`, `needs_validation`, 기각 중 어디에 둘지에 대한 판단이다.[](source:skm-pr-boundary)
+
+- 경계와 결과를 말할 수 없는 후보는 finding으로 올리지 않는다.[](source:skm-pr-boundary)
+- severity는 `confirmed`에만 붙고 증명된 impact를 넘을 수 없다.[](source:skm-pr-sev)
+- 소스 밖 사실이 결정적이면 있다고도 없다고도 가정하지 않고 `needs_validation`으로 남긴다.[](source:skm-pr-vis)
 
 @answer scope="cloudflare/security-audit · SKILL.md 136~192줄 · 지시상 동작"
-@meta locale=ko
-@source skm-pr-boundary title="경계와 결과 요구" path=cloudflare/security-audit/SKILL.md lines=138:140
-@source skm-pr-local title="제한된 local 증거" path=cloudflare/security-audit/SKILL.md lines=142:144
-@source skm-pr-vis title="소스 가시성" path=cloudflare/security-audit/SKILL.md lines=146:148
-@source skm-pr-sev title="심각도와 확실성 분리" path=cloudflare/security-audit/SKILL.md lines=150:152
-@source skm-pr-anchor title="심각도 기준점" path=cloudflare/security-audit/SKILL.md lines=154:162
-@source skm-pr-fix title="최소 수정 권고" path=cloudflare/security-audit/SKILL.md lines=164:166
-@source skm-anti title="안티패턴 열 개" path=cloudflare/security-audit/SKILL.md lines=181:192
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source skm-pr-boundary title="경계와 결과 요구" path=cloudflare/security-audit/SKILL.ko.md lines=138:140
+@source skm-pr-local title="제한된 local 증거" path=cloudflare/security-audit/SKILL.ko.md lines=142:144
+@source skm-pr-vis title="소스 가시성" path=cloudflare/security-audit/SKILL.ko.md lines=146:148
+@source skm-pr-sev title="심각도와 확실성 분리" path=cloudflare/security-audit/SKILL.ko.md lines=150:152
+@source skm-pr-anchor title="심각도 기준점" path=cloudflare/security-audit/SKILL.ko.md lines=154:162
+@source skm-pr-fix title="최소 수정 권고" path=cloudflare/security-audit/SKILL.ko.md lines=164:166
+@source skm-anti title="안티패턴 열 개" path=cloudflare/security-audit/SKILL.ko.md lines=181:192
 
-## 다섯 원칙은 판단을 어떻게 바꾸나 {#principles span=12}
+## 어떻게 동작하나 {#detail span=12}
+
+**다섯 원칙은 판단을 어떻게 바꾸나**
 
 아래 "적용 전후"는 원문에 없는 설명용 예시다. 값은 지어낸 것이고, 원칙의 효과를 보이려는 용도다.
 
@@ -24,7 +30,7 @@
 | 심각도와 확실성을 분리한다 | severity는 `confirmed`에만 붙는다. likelihood와 impact는 증명된 조건과 결과를 반영해야 하고, 전체 severity가 증명된 impact를 넘을 수 없다. `needs_validation`은 소스 근거가 있는 경계 가설이 막힌 것이지 확신이 낮은 `confirmed`가 아니며 severity가 없다[](source:skm-pr-sev) | 확실성이 낮다고 낮은 severity를 붙이지 않는다 | 전: 불확실한 후보에 `low`. 후: severity 칸을 비우고 blocker를 쓴다 |
 | 가장 작은 수정을 권한다 | `confirmed` finding마다 코드가 지켜야 할 invariant와, 마지막 신뢰된 결정 지점에서 그것을 강제하는 가장 좁은 소스 변경을 찾는다. 일반적인 hardening 조언보다 저장소 상대 변경과 regression test를 우선한다. 감사는 수정을 설명할 뿐 대상 소스를 고치지 않는다[](source:skm-pr-fix) | 보고서의 수정안이 "전반 강화"에서 "이 줄의 이 검사"로 바뀐다 | 전: "입력을 전반적으로 검증하라". 후: 소유자 검사를 마지막 결정 지점 한 곳에 추가하고 그 경우를 regression test로 둔다 |
 
-## 심각도는 어떤 기준점으로 맞추나 {#severity span=12}
+**심각도는 어떤 기준점으로 맞추나**
 
 전체 severity는 아래 기준점에 맞춘다.[](source:skm-pr-anchor)
 
@@ -38,7 +44,7 @@
 
 `high`와 `medium`을 가르는 질문은 하나다. 증명된 결과가 실제 결과가 있는 행동에 대해 명시된 통제를 완전히 무력화했는가, 아니면 약화했을 뿐인가. 구체적인 피해를 말할 수 없으면 severity는 느낌보다 낮다.[](source:skm-pr-anchor)
 
-## 어떤 보고를 anti-pattern으로 보나 {#anti-patterns span=12}
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
 원문은 열 가지를 anti-pattern으로 든다.[](source:skm-anti)
 
@@ -54,11 +60,9 @@
 | `needs_validation` record에 severity를 매긴다.[](source:skm-anti) |
 | 독립 검증 전에 보고서를 쓰거나 산문과 JSON이 서로 다르게 둔다.[](source:skm-anti) |
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.verify.html` | 후보를 `confirmed`·`needs_validation`·`rejected`로 가르는 규칙 |
-| `security-audit.records.html` | severity와 confidence가 `findings.json`에서 갖는 형식 |
-| `security-audit.rules.html` | 영역별 validation rules |
+- [개요](page:security-audit.html)
+- [후보 검증](page:security-audit.verify.html)
+- [findings.json과 검증기](page:security-audit.records.html)
+- [attack class와 도메인 지침](page:security-audit.rules.html)

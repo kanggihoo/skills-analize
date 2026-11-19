@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 바탕 상호작용이 깨져 있을 때다. 다듬기 지적은 깨진 상호작용보다 앞서지 않는다. 글자·접근성·배치·색은 다른 스킬 몫이다.[](source:intro)[](source:owners)
 
 @answer scope="design/jakubkrehel/better-ui · 원본 텍스트 8개 32,213B · 커밋 0465878 · 호출 제한 없음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source fm title="design/jakubkrehel/better-ui/SKILL.md · 11122B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-ui/SKILL.md lines=1:4
 @source intro title="SKILL.md · 적용 시점" path=design/jakubkrehel/better-ui/SKILL.md lines=8:8
 @source exact title="SKILL.md · 정확한 값과 눈대중 예외" path=design/jakubkrehel/better-ui/SKILL.md lines=12:12

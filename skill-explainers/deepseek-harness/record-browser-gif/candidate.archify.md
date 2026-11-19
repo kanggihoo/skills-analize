@@ -8,7 +8,7 @@
 - GIF 파일이 5 MiB 한도를 넘으면, 같은 실행의 연속·비중복 구간으로 나눠 올린다.[](source:rbg-size)
 
 @answer scope="deepseek-harness/record-browser-gif · 원본 텍스트 파일 3개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source rbg-fm title="deepseek-harness/record-browser-gif/SKILL.md · 15698B · frontmatter" path=deepseek-harness/record-browser-gif/SKILL.md lines=1:4
 @source rbg-intro title="SKILL.md · 목적과 보관 결정 링크" path=deepseek-harness/record-browser-gif/SKILL.md lines=8:10
 @source rbg-gui title="SKILL.md · Every GUI pull request includes a GIF" path=deepseek-harness/record-browser-gif/SKILL.md lines=12:16

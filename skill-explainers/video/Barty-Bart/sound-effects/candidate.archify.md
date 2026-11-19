@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 약관이 막는 사용처, 그리고 소리를 내 판단으로 "좋다"고 말하려는 때다.[](source:se-s0tab)[](source:se-intro)
 
 @answer scope="video/Barty-Bart/sound-effects · 원본 텍스트 8개 132,327B · 커밋 23e8047 · 약관 확인일은 원문이 적은 2026-10-13 · 소리는 분석하지 않음 · 코드는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source se-fm title="video/Barty-Bart/sound-effects/SKILL.md · 13793B · 지시 본문과 frontmatter" path=video/Barty-Bart/sound-effects/SKILL.md lines=1:4
 @source se-intro title="SKILL.md · 들을 수 없다는 전제와 크레딧" path=video/Barty-Bart/sound-effects/SKILL.md lines=6:10
 @source se-kit title="SKILL.md · 기본 kit" path=video/Barty-Bart/sound-effects/SKILL.md lines=12:25

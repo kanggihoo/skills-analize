@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 원문에 명시 없음. 같은 저자의 다른 스킬은 최악 데이터 검사와 모션 리뷰를 각자 맡는다고 선을 긋는다.[](source:bu-scope)
 
 @answer scope="design/emilkowalski/emil-design-eng · 원본 텍스트 1개 27,509B · 커밋 4e3fc89 · 번역본(SKILL.ko.stale.md) 제외 · 원칙형 스킬이라 지시상 동작만 서술 · 예시 코드는 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ede-fm title="design/emilkowalski/emil-design-eng/SKILL.md · 27509B · frontmatter" path=design/emilkowalski/emil-design-eng/SKILL.md lines=1:4
 @source ede-init title="SKILL.md · 첫 응답 규칙과 역할" path=design/emilkowalski/emil-design-eng/SKILL.md lines=8:16
 @source ede-phil title="SKILL.md · 핵심 철학 세 가지" path=design/emilkowalski/emil-design-eng/SKILL.md lines=18:36

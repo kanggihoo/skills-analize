@@ -8,7 +8,7 @@
 - 패턴이 이미 정해진 기계적 구현, 목표 상태가 분명한 버그 수정과 리팩터링에는 적용하지 않는다.[](source:not)
 
 @answer scope="pstack/principle-exhaust-the-design-space · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-exhaust-the-design-space/SKILL.md · 1152B · 원칙 본문(frontmatter)" path=pstack/principle-exhaust-the-design-space/SKILL.md lines=1:5
 @source intro title="pstack/principle-exhaust-the-design-space/SKILL.md · 도입" path=pstack/principle-exhaust-the-design-space/SKILL.md lines=9:9
 @source rule title="pstack/principle-exhaust-the-design-space/SKILL.md · 규칙" path=pstack/principle-exhaust-the-design-space/SKILL.md lines=11:11

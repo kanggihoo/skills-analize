@@ -8,7 +8,7 @@
 - `scripts/office/` 폴더가 스킬에 들어 있지만 `SKILL.md`가 쓰라고 하는 것은 `recalc.py`뿐이다. `office/` 안에서는 `recalc.py`가 import하는 `soffice.py`만 쓰인다.[](source:x-deps)[](source:r-imp)
 
 @answer scope="anthropics/xlsx · 원본 텍스트 13개 전부 읽음, XSD 39개와 LICENSE는 구조·표본만 · 커밋 b825733 · 실행하지 않음(지시상 동작)"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=b825733a707f8debae1a9b5d6e4e796c343b8ae1
 @source x-fm title="anthropics/xlsx/SKILL.md · 8584B · frontmatter" path=anthropics/xlsx/SKILL.md lines=1:5
 @source x-tbl title="SKILL.md · 작업별 방식 표" path=anthropics/xlsx/SKILL.md lines=9:16
 @source x-path title="SKILL.md · 스크립트 경로 기준" path=anthropics/xlsx/SKILL.md lines=18:18

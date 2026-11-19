@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 효과를 설계하거나 구현할 때다. description이 "이름 붙이기용이지 설계·구현용이 아니다"라고 범위를 긋는다.[](source:vb-fm)
 
 @answer scope="design/emilkowalski/animation-vocabulary · 원본 텍스트 1개 13,425B · 커밋 4e3fc89 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source vb-fm title="design/emilkowalski/animation-vocabulary/SKILL.md · 13425B · frontmatter" path=design/emilkowalski/animation-vocabulary/SKILL.md lines=1:4
 @source vb-init title="SKILL.md · 첫 응답" path=design/emilkowalski/animation-vocabulary/SKILL.md lines=8:14
 @source vb-purpose title="SKILL.md · 한 줄 목적" path=design/emilkowalski/animation-vocabulary/SKILL.md lines=16:16

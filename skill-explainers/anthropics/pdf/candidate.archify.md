@@ -8,7 +8,7 @@
 - 파일 이름 대소문자, 스크립트 이름, 좌표 설명에서 원문끼리 어긋난 곳이 있다. 스크립트는 실행하지 않고 읽기만 했다.[](source:ov)[](source:f-crit)[](source:f-a1)
 
 @answer scope="텍스트 12개 · 지시상 동작 · 스크립트 미실행"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=b825733a707f8debae1a9b5d6e4e796c343b8ae1
 @source fm title="anthropics/pdf/SKILL.md · 8058B · frontmatter" path=anthropics/pdf/SKILL.md lines=1:5
 @source ov title="anthropics/pdf/SKILL.md · 개요(REFERENCE.md, FORMS.md 안내)" path=anthropics/pdf/SKILL.md lines=9:11
 @source xl title="anthropics/pdf/SKILL.md · 표를 .xlsx로 저장하는 예" path=anthropics/pdf/SKILL.md lines=102:119

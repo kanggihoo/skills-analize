@@ -8,7 +8,7 @@
 - 쓰지 않는 때: Sonner와 상관없는 작업이다. 원문은 그 밖의 금지 상황을 적지 않는다(`원문에 명시 없음`).[](source:as-fm)
 
 @answer scope="design/emilkowalski/ask-sonner · 원본 텍스트 2개 11,778B · 커밋 4e3fc89 · 지시상 동작이며 Sonner 실제 버전과 대조하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source as-fm title="design/emilkowalski/ask-sonner/SKILL.md · 7233B · 지시 본문과 frontmatter" path=design/emilkowalski/ask-sonner/SKILL.md lines=1:4
 @source as-init title="SKILL.md · 첫 응답" path=design/emilkowalski/ask-sonner/SKILL.md lines=8:14
 @source as-guide title="SKILL.md · guide 스킬 설명" path=design/emilkowalski/ask-sonner/SKILL.md lines=16:16

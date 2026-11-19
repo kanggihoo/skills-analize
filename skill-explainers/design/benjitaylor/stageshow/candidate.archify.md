@@ -8,7 +8,7 @@
 - 켜면 실제로 하는 일: `npm install`, dev server 실행, `playwright-core`와 로컬 Chrome으로 촬영을 한다. 이 분석은 아무것도 설치하거나 실행하지 않았다.[](source:rm-prev)[](source:pk)
 
 @answer scope="design/benjitaylor/stageshow · 지시상 동작 · 읽은 텍스트 파일 일부 · 실행 안 함"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=2ce2ebf5a567a8faeb0f9e5eebf126d04a6469c0
 @source ss-fm title="design/benjitaylor/stageshow/SKILL.md · 19469B · frontmatter" path=design/benjitaylor/stageshow/SKILL.md lines=1:6
 @source ss-body title="SKILL.md · 이 스킬이 만드는 것" path=design/benjitaylor/stageshow/SKILL.md lines=8:10
 @source ss-idea title="SKILL.md · 한 가지 생각과 실패 다섯 가지" path=design/benjitaylor/stageshow/SKILL.md lines=12:26

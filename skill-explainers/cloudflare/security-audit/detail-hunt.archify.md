@@ -1,9 +1,13 @@
-# 사냥 — hunter에게 unit을 나눠 주고 coverage critic이 빈틈을 닫을 때까지 돈다 {#hunt-detail}
+# 사냥 — hunter에게 unit을 나눠 주고 coverage critic이 빈틈을 닫을 때까지 돈다 {#detail-hunt}
 
-이 페이지는 개요의 `사냥`과 `범위 점검?` 노드, 곧 Phase 2를 맡는다. 시작 입력은 `planned` 상태의 ledger unit과 `architecture.md`다. 끝 출력은 갱신된 ledger와 fingerprint가 붙은 후보다. critic이 수락할 작업이 없고 `planned` unit도 없으면 개요의 `후보 검증`으로 이어진다. quick 프로필은 정해진 한도에서, 예산이 모자라면 `deferred`로 일을 미루고 끝난다.[](source:hun-critic)
+[개요](page:security-audit.html)의 `사냥`과 `범위 점검?` 노드, 곧 Phase 2를 자세히 본다. 시작 입력은 `planned` 상태의 ledger unit과 `architecture.md`이고 끝 출력은 갱신된 ledger와 fingerprint가 붙은 후보다. critic이 수락할 작업이 없고 `planned` unit도 없으면 개요의 `후보 검증`으로 간다.[](source:hun-critic)
+
+- unit은 agent 수 한도 때문에 조용히 빠지지 않는다. 못 닿는 unit은 이유와 함께 `deferred`가 된다.[](source:hun-assign)
+- `quick`은 hunter wave 한 번과 final critic 한 번으로 끝난다. critic이 수락한 일은 `deferred`로 기록한다.[](source:hun-quick)
+- 조용한 wave 한도나 agent 한도를 complete coverage의 증거로 쓰지 않는다.[](source:hun-critic)
 
 @answer scope="cloudflare/security-audit · HUNTING.md 전체 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source hun-assign title="hunter 배정" path=cloudflare/security-audit/HUNTING.md lines=3:9
 @source hun-prompt title="hunter 지시문 아홉 부분" path=cloudflare/security-audit/HUNTING.md lines=11:25
 @source hun-m-read title="사냥 방법: 깊이 읽기와 invariant" path=cloudflare/security-audit/HUNTING.md lines=37:56
@@ -17,7 +21,7 @@
 @source hun-quick title="quick 프로필의 한도" path=cloudflare/security-audit/HUNTING.md lines=249:249
 @source hun-budget title="budget의 한도" path=cloudflare/security-audit/HUNTING.md lines=251:251
 
-## 한 wave는 어떤 순서로 돌고, 언제 끝나나 {#flow span=12}
+## 어떻게 동작하나 {#detail span=12}
 
 그림은 standard와 deep의 wave 한 번을 그렸다. 그림에서 생략한 것이 둘 있다.
 
@@ -47,7 +51,7 @@
 | h-critic | post-wave critic? | **입력** `architecture.md`·전체 ledger·후보 상태·이전 ledger 빈틈 요약 · **출력** critic JSON(`missing_units`, `reassign_ids`, `resolved_prior_leads`, `stop`). **처리** wave 직후 예약해 둔 호출로 새 `research` critic이 빈 coverage를 제안한다. 소스는 읽지만 쓰거나 target을 실행하지 않는다.[](source:hun-critic) **다음** 수락한 일이 있거나 `planned` unit이 남으면 새 wave로 돌아간다. | hunt-flow | critic |
 | h-clean | final-clean critic? | **입력** 같은 입력 · **출력** 같은 JSON. **처리** standard와 deep에서 post-wave critic이 수락할 일이 없고 `planned`도 없을 때, 따로 예약한 호출로 다른 critic을 한 번 더 쓴다. 이 critic도 수락할 일이 없을 때만 coverage를 완료로 본다.[](source:hun-critic) **다음** 일을 찾으면 큐에 넣고 wave, post-wave critic, final-clean 과정을 반복한다. 없으면 개요의 후보 검증으로 간다. | hunt-flow | clean |
 
-## hunter 지시문에는 무엇이 어떤 순서로 들어가나 {#prompt span=12}
+**hunter 지시문에는 무엇이 어떤 순서로 들어가나**
 
 모든 hunter 지시문은 아래 아홉 부분을 이 순서로 담는다.[](source:hun-prompt)
 
@@ -76,7 +80,7 @@
 - high나 critical 후보에서 재사용할 수 있는 root cause가 보이면, 배정된 coverage ID가 소유한 경로에서만 lexical·structural·logical variant를 찾는다. 다른 hunter의 unit은 조사하지 않고, 현재 unit이 없는 variant는 `uncovered`로 돌려 보낸다.[](source:hun-m-test)
 - 주장을 가르는 가장 좁은 local check를 쓴다. 기존 unit test, 최소 함수 harness, 더미 tenant 서비스 호출, 작은 malformed fixture, 결정적 race 일정, 로컬로 렌더한 policy를 먼저 고른다. 샌드박스 통제가 하나라도 없으면 실행하지 않고 정확한 blocker와 함께 `needs_validation`을 돌려준다.[](source:hun-m-local)
 
-## 후보가 되려면 무엇을 통과해야 하고 local 검증은 어디까지인가 {#gate span=12}
+**후보가 되려면 무엇을 통과해야 하고 local 검증은 어디까지인가**
 
 지시문 7번 부분의 후보 통과 조건은 일곱 가지다.[](source:hun-gate)
 
@@ -99,7 +103,7 @@ local 실행은 확인용이고 영향을 키우는 용도가 아니다. 허용�
 
 샌드박스는 빈 환경으로 시작하고 외부 네트워크와 host 쓰기 경로를 막으며, 비쌀 것 같은 check만이 아니라 모든 check에 낮은 자원·시간 상한을 건다. scratch 출력은 종료 뒤에도 target이 통제한 것으로 취급하고 `SKILL.md`의 no-follow·경로 제한·일반 파일·크기 제한 절차로만 승격한다. 샌드박스나 승격 기능이 빠졌다고 소스 근거가 있는 후보가 사라지지는 않는다. 정확한 blocker를 `needs_validation`에 적는다.[](source:hun-local)
 
-## hunter는 어떤 JSON을 돌려주나 {#result span=12}
+**hunter는 어떤 JSON을 돌려주나**
 
 hunter는 앞뒤 설명 없이 JSON 객체 하나를 돌려준다. 최상위 키는 `units`, `candidates`, `hardening`, `uncovered`다.[](source:hun-result)
 
@@ -122,7 +126,7 @@ hunter는 앞뒤 설명 없이 JSON 객체 하나를 돌려준다. 최상위 키
 
 `confirmed` 제안의 실행 설명은 이미 수행한 제한된 local check만 서술하고, `payloads`는 최소 test 입력·fixture·native 호출, `observed_result`는 실제 local 출력이다. 전체 severity는 관찰한 영향을 넘지 못한다. `needs_validation` 제안은 severity, execution, remediation, reason, `confirmed`용 `root_cause`를 넣지 않는다. `deployment`는 소유자가 관찰하는 확인이지 live target을 건드려 보라는 요청이 아니다.[](source:hun-result)
 
-## coverage critic은 무엇을 보고 어떻게 반복을 멈추나 {#critic span=12}
+**coverage critic은 무엇을 보고 어떻게 반복을 멈추나**
 
 post-wave critic은 `architecture.md`, assignment block 지도를 포함한 전체 ledger, 현재 후보 fingerprint와 상태, 이전 ledger 빈틈 요약을 받는다. 소스를 읽지만 쓰거나 target을 실행하지 않고, 정확히 아래 JSON을 돌려준다.[](source:hun-critic)
 
@@ -147,13 +151,9 @@ critic 결과를 받은 parent는 다음 순서로 처리한다.[](source:hun-cr
 - scoped run에서 critic이 범위 밖 빈틈을 알아채면 parent는 배정하지 않고 critic의 이유와 함께 `out_of_scope`로 기록한다.[](source:hun-quick)
 - 후보가 검증 예약보다 많으면 `SKILL.md`의 incomplete 규칙을 따라 hunting을 멈추고 fingerprint 순으로 검증한다. 검증하지 못한 후보는 finding으로 내놓지 않는다.[](source:hun-budget)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.recon.html` | 이 페이지가 소비하는 ledger와 상태 표 |
-| `security-audit.rules.html` | 지시문 4번 부분에 복사되는 attack class와 도메인 지침 |
-| `security-audit.setup.html` | 지시문에 붙는 승격 절차 |
-| `security-audit.planning.html` | profile별 critic 한도와 budget 예약 |
-| `security-audit.verify.html` | 후보를 받는 Phase 3 |
+- [개요](page:security-audit.html)
+- [정찰과 coverage ledger](page:security-audit.recon.html)
+- [attack class와 도메인 지침](page:security-audit.rules.html)
+- [후보 검증](page:security-audit.verify.html)

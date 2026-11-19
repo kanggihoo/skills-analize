@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 모션 자체를 만들 때(`animate`), 모션을 리뷰할 때(`review-animations`), React Native 앱일 때(`animate-expo`)다.[](source:mn-scope)
 
 @answer scope="design/emilkowalski/mobile-native · 원본 텍스트 1개 16,838B · 커밋 4e3fc89 · 관계 확인용으로 다른 스킬 frontmatter 3개 · 기기 동작은 원문 설명이며 이 분석에서 기기로 확인하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source mn-fm title="design/emilkowalski/mobile-native/SKILL.md · 16838B · 지시 본문과 frontmatter" path=design/emilkowalski/mobile-native/SKILL.md lines=1:4
 @source mn-init title="SKILL.md · 첫 응답 규칙" path=design/emilkowalski/mobile-native/SKILL.md lines=8:14
 @source mn-scope title="SKILL.md · 하는 일 한 가지와 다른 스킬의 몫" path=design/emilkowalski/mobile-native/SKILL.md lines=16:16

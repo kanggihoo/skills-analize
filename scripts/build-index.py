@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """skill-explainers/ 아래 relations.md를 읽어 컬렉션 색인과 최상위 색인을 만든다.
 
-사용법: scripts/build-index.py
+사용법: scripts/build-index.py [컬렉션 ...]
+컬렉션(예: cloudflare, design)을 주면 그 컬렉션 색인만 다시 쓰고 최상위 색인은 건드리지 않는다.
+상세 페이지 하나를 더한 뒤에는 이 방식으로 돌려, 다른 컬렉션의 진행 중 변경이 색인에 섞이지 않게 한다.
 끝에 색인 안의 상대 링크가 실제 파일을 가리키는지 확인하고, 깨진 링크가 있으면 종료 코드 1.
 """
 import html
@@ -131,7 +133,7 @@ def collection_index(ledger):
         cells += [esc(s.get(k, "")) for k in ("한 줄 요약", "묶음 내 역할", "소속 묶음", "원문 비교")]
         body.append("<tr>" + "".join(f"<td>{c}</td>" for c in cells) + "</tr>")
     body.append("</table></div>")
-    for kind in ("같은 계열", "참고"):
+    for kind in ("대안", "참고"):
         rows = [r for r in rels if r.get("종류") == kind]
         if not rows:
             continue
@@ -144,8 +146,18 @@ def collection_index(ledger):
     return col_dir, skills, groups
 
 
-def main():
-    cols = [collection_index(p) for p in sorted(ROOT.glob("**/relations.md"))]
+def main(only):
+    ledgers = sorted(ROOT.glob("**/relations.md"))
+    if only:
+        ledgers = [p for p in ledgers if p.parent.relative_to(ROOT).as_posix() in only]
+        missing = set(only) - {p.parent.relative_to(ROOT).as_posix() for p in ledgers}
+        if missing:
+            print(f"relations.md가 없는 컬렉션: {', '.join(sorted(missing))}")
+            return 1
+        for p in ledgers:
+            collection_index(p)
+        return check_links([ROOT / c / "index.html" for c in only], len(ledgers))
+    cols = [collection_index(p) for p in ledgers]
     body = ["<h1>스킬 분석 색인</h1>", '<p class="muted">컬렉션마다 묶음 페이지와 스킬 페이지로 들어가는 입구다. 용어 기준은 <code>GLOSSARY.md</code>.</p>',
             '<h2>컬렉션</h2><div class="cards">']
     same = []
@@ -161,15 +173,19 @@ def main():
         body.append("</table></div>")
     (ROOT / "index.html").write_text(page("스킬 분석 색인", "".join(body)))
 
+    return check_links(ROOT.glob("**/index.html"), len(cols) + 1)
+
+
+def check_links(indexes, written):
     broken = []
-    for idx in ROOT.glob("**/index.html"):
+    for idx in indexes:
         for href in re.findall(r'href="([^"#:]+)"', idx.read_text()):
             if not (idx.parent / href).exists():
                 broken.append(f"{idx.relative_to(ROOT)} -> {href}")
-    print(f"색인 {len(cols) + 1}개 작성. 깨진 링크 {len(broken)}개")
+    print(f"색인 {written}개 작성. 깨진 링크 {len(broken)}개")
     print("\n".join(broken))
     return 1 if broken else 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))

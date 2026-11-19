@@ -8,7 +8,7 @@
 - 기존 영상을 단순히 자르거나 변환하는 요청에는 쓰지 않는다고 `description`이 밝힌다.[](source:sk-fm)
 
 @answer scope="video/lemomo-ai/lemo-opuscar · 원본 텍스트 2개 · 커밋 23e8047 · 라이브러리 내용 미확인(부분 분석) · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source sk-fm title="video/lemomo-ai/lemo-opuscar/SKILL.md · 3452B · 스킬 본문과 frontmatter" path=video/lemomo-ai/lemo-opuscar/SKILL.md lines=1:4
 @source sk-intro title="SKILL.md · 스킬의 역할" path=video/lemomo-ai/lemo-opuscar/SKILL.md lines=8:8
 @source sk-s1 title="SKILL.md · 1단계 라이브러리 확보" path=video/lemomo-ai/lemo-opuscar/SKILL.md lines=10:10

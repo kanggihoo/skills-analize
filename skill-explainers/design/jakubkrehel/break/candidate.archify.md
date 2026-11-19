@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 코드를 기준에 맞춰 리뷰하는 일(`interface-review`, `better-interface`), 디자인 대안 탐색(`variant`), 상태를 하나씩 작업하는 일(`state-machine`)이다. 원문이 그 일을 각 스킬의 몫으로 가른다.[](source:bk-intro)
 
 @answer scope="design/jakubkrehel/break · 원본 텍스트 3개 10,689B · 커밋 0465878 · 관계 확인용으로 다른 스킬 frontmatter 4개 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source bk-fm title="design/jakubkrehel/break/SKILL.md · 6145B · 지시 본문과 frontmatter" path=design/jakubkrehel/break/SKILL.md lines=1:5
 @source bk-intro title="SKILL.md · 하는 일, 관찰만 한다는 선, 시간 예산" path=design/jakubkrehel/break/SKILL.md lines=9:15
 @source bk-s1 title="SKILL.md · 1단계 컴포넌트 하나로 범위 잡기" path=design/jakubkrehel/break/SKILL.md lines=17:21

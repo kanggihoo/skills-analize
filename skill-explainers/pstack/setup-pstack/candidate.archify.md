@@ -8,7 +8,7 @@
 - 끝으로, 프로젝트에 앱을 직접 돌릴 수단이 없으면 에이전트가 `/create-verification-skill`을 한 번만 제안한다.[](source:s7)
 
 @answer scope="pstack/setup-pstack · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/setup-pstack/SKILL.md · 5548B · 본문(frontmatter)" path=pstack/setup-pstack/SKILL.md lines=1:4
 @source purpose title="pstack/setup-pstack/SKILL.md · 목적" path=pstack/setup-pstack/SKILL.md lines=8:8
 @source s1 title="pstack/setup-pstack/SKILL.md · 1. 모델 확인" path=pstack/setup-pstack/SKILL.md lines=12:14

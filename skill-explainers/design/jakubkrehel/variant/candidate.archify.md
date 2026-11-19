@@ -8,7 +8,7 @@
 - 멈추는 때: 장단점 표를 건넨 직후다. 승격과 삭제는 사용자가 고른 뒤에 한다.[](source:vr-s5t)[](source:vr-s6a)
 
 @answer scope="design/jakubkrehel/variant · 텍스트 3개 14,042B · 커밋 0465878 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source vr-fm title="design/jakubkrehel/variant/SKILL.md · 6848B · 지시 본문과 frontmatter" path=design/jakubkrehel/variant/SKILL.md lines=1:5
 @source vr-what title="SKILL.md · 하는 일 한 가지" path=design/jakubkrehel/variant/SKILL.md lines=9:9
 @source vr-split title="SKILL.md · 다른 스킬의 몫" path=design/jakubkrehel/variant/SKILL.md lines=11:11

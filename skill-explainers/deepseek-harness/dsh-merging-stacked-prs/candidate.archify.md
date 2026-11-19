@@ -8,7 +8,7 @@
 - 병합 요청을 냈다고 끝이 아니다. 에이전트는 선택한 PR이 모두 `MERGED`가 될 때까지 기다리고, branch 삭제는 별도의 마지막 단계로 둔다.[](source:skill-verify)[](source:skill-delete)
 
 @answer scope="deepseek-harness/dsh-merging-stacked-prs · 원본 텍스트 파일 1개 · 커밋 475505c · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-merging-stacked-prs/SKILL.md · 7839B · frontmatter" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=1:4
 @source skill-intro title="SKILL.md · 목적과 우선 규칙" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=8:8
 @source skill-ver title="SKILL.md · 지원 확인과 중단" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=12:12

@@ -8,7 +8,7 @@
 - 번역을 마치면 짝을 `--write`로 다시 기록하고 범위를 좁혀 검증한다. 전체 문서 검사는 PR 단위로 한 번만 돌린다.[](source:td-update-step5)[](source:td-finish)
 
 @answer scope="deepseek-harness/dsh-translate-docs · 원본 텍스트 1개 · 커밋 475505c · 범위 밖 링크 미확인(부분 분석) · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source td-fm title="deepseek-harness/dsh-translate-docs/SKILL.md · 10604B · frontmatter" path=deepseek-harness/dsh-translate-docs/SKILL.md lines=1:6
 @source td-boundary title="SKILL.md · Invocation boundary" path=deepseek-harness/dsh-translate-docs/SKILL.md lines=10:12
 @source td-what title="SKILL.md · What this skill is" path=deepseek-harness/dsh-translate-docs/SKILL.md lines=14:16

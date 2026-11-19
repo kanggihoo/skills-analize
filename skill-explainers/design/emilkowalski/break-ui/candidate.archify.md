@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 컴포넌트를 다시 디자인하거나(`prototype`), 시각 취향을 비평하거나(`emil-design-eng`), 모션을 리뷰하는 일(`review-animations`)이다.[](source:bu-scope)
 
 @answer scope="design/emilkowalski/break-ui · 원본 텍스트 2개 22,648B · 커밋 4e3fc89 · 관계 확인용으로 다른 스킬 frontmatter 3개 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source bu-fm title="design/emilkowalski/break-ui/SKILL.md · 14380B · 지시 본문과 frontmatter" path=design/emilkowalski/break-ui/SKILL.md lines=1:4
 @source bu-init title="SKILL.md · 첫 응답 규칙" path=design/emilkowalski/break-ui/SKILL.md lines=8:14
 @source bu-scope title="SKILL.md · 하는 일 한 가지와 다른 스킬의 몫" path=design/emilkowalski/break-ui/SKILL.md lines=16:16

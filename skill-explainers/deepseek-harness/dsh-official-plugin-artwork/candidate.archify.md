@@ -8,7 +8,7 @@
 - 병합 전에 패키지 검사 명령을 돌리고 라이트·다크 테마에서 눈으로 비교한다. 구조 검사는 시각 리뷰를 대체하지 않는다.[](source:review-3)
 
 @answer scope="dsh-official-plugin-artwork · 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-official-plugin-artwork/SKILL.md · 6194B · frontmatter" path=deepseek-harness/dsh-official-plugin-artwork/SKILL.md lines=1:4
 @source intro title="SKILL.md · 시각 언어와 디자이너 승인" path=deepseek-harness/dsh-official-plugin-artwork/SKILL.md lines=8:8
 @source preview title="SKILL.md · Optional feature previews" path=deepseek-harness/dsh-official-plugin-artwork/SKILL.md lines=12:12

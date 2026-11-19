@@ -8,7 +8,7 @@
 - 코딩 규칙을 강제하는 쪽은 구현 에이전트가 아니라 리뷰 에이전트다. 리뷰 쪽이 컨텍스트 압박(context pressure)이 가장 작기 때문이다.[](source:retro-ir)
 
 @answer scope="mattpocock/retro · 원본 텍스트 파일 2개 · 커밋 0f0d1b0 · 실행하지 않음, 지시상 동작만"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source retro-fm title="mattpocock/retro/SKILL.md · 4369B · frontmatter" path=mattpocock/retro/SKILL.md lines=1:5
 @source retro-yaml title="mattpocock/retro/agents/openai.yaml · 146B · 호출 정책" path=mattpocock/retro/agents/openai.yaml lines=1:5
 @source retro-intro title="mattpocock/retro/SKILL.md · 도입" path=mattpocock/retro/SKILL.md lines=7:7

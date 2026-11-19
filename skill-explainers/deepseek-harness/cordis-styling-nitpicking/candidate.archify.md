@@ -7,7 +7,7 @@
 - 에이전트는 패턴 검색만 해 놓고 "전부 안전하다"고 말하지 않는다. 확인한 범위, 기각한 후보, 재현의 한계를 함께 적는다.[](source:cd-report)
 
 @answer scope="deepseek-harness/cordis-styling-nitpicking · 원본 텍스트 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source cd-fm title="deepseek-harness/cordis-styling-nitpicking/SKILL.md · 9200B · frontmatter" path=deepseek-harness/cordis-styling-nitpicking/SKILL.md lines=1:4
 @source cd-intro title="SKILL.md · 범위와 제외 대상" path=deepseek-harness/cordis-styling-nitpicking/SKILL.md lines=8:8
 @source cd-sot title="SKILL.md · Sources of truth" path=deepseek-harness/cordis-styling-nitpicking/SKILL.md lines=12:15

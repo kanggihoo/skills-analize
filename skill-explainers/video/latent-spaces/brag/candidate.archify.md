@@ -8,7 +8,7 @@
 - 영상에 쓰는 사실 주장은 프로젝트에 근거가 있어야 하고, 비밀·개인정보는 계획·영상·공유 문구에 옮기지 않는다.[](source:s3-ground)[](source:s1-skip)
 
 @answer scope="brag · 텍스트 17개 · 커밋 23e8047 · Hyperframes 스킬 미확인(부분 분석) · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source b-fm title="video/latent-spaces/brag/SKILL.md · 9440B · frontmatter" path=video/latent-spaces/brag/SKILL.md lines=1:4
 @source b-dispatch title="SKILL.md · 호출 분기와 --voice 해석" path=video/latent-spaces/brag/SKILL.md lines=10:17
 @source b-intro title="SKILL.md · 하는 일" path=video/latent-spaces/brag/SKILL.md lines=19:27

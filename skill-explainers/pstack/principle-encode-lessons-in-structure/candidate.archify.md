@@ -8,7 +8,7 @@
 - 에이전트는 사람의 교정, 테스트 실패, 예상 밖 결과를 모두 배울 신호로 본다. 신호를 기록하고, 맞는 층으로 보내고, 바로 적용하거나 구체적인 할 일로 만든다.[](source:loop)
 
 @answer scope="pstack/principle-encode-lessons-in-structure · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-encode-lessons-in-structure/SKILL.md · 2211B · 원칙 본문(frontmatter)" path=pstack/principle-encode-lessons-in-structure/SKILL.md lines=1:5
 @source rule title="pstack/principle-encode-lessons-in-structure/SKILL.md · 규칙" path=pstack/principle-encode-lessons-in-structure/SKILL.md lines=9:9
 @source why title="pstack/principle-encode-lessons-in-structure/SKILL.md · 이유" path=pstack/principle-encode-lessons-in-structure/SKILL.md lines=11:11

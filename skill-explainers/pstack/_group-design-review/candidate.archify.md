@@ -8,7 +8,7 @@
 - `poteto-mode`는 조건이 맞으면 다섯 스킬을 모두 부른다.[](source:pm-arch)[](source:pm-fan)[](source:pm-int)[](source:pm-nocomm)
 
 @answer scope="pstack/design-review 묶음 · 스킬 5개와 호출 대상의 SKILL.md · 커밋 5760176 · 관계는 relations.md의 rel-id 기준"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source arch-fm title="pstack/architect/SKILL.md · 5675B · frontmatter" path=pstack/architect/SKILL.md lines=1:5
 @source arch-ground title="pstack/architect/SKILL.md · Phase A 바탕 조사" path=pstack/architect/SKILL.md lines=23:27
 @source arch-sketch title="pstack/architect/SKILL.md · Phase B arena 실행" path=pstack/architect/SKILL.md lines=31:33

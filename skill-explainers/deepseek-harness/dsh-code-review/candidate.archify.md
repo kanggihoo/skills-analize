@@ -8,7 +8,7 @@
 - CI의 초록색 통과 조건이 이미 강제하는 문제는 에이전트가 지적하지 않는다.[](source:cr-report)
 
 @answer scope="deepseek-harness/dsh-code-review · 원본 텍스트 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source cr-fm title="deepseek-harness/dsh-code-review/SKILL.md · 11550B · frontmatter" path=deepseek-harness/dsh-code-review/SKILL.md lines=1:4
 @source cr-guide title="SKILL.md · 안내서 선언과 change-scope" path=deepseek-harness/dsh-code-review/SKILL.md lines=8:8
 @source cr-read title="SKILL.md · 요구 먼저 읽기" path=deepseek-harness/dsh-code-review/SKILL.md lines=10:10

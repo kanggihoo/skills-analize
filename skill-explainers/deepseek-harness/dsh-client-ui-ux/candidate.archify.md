@@ -8,7 +8,7 @@
 - UI나 상호작용을 눈에 띄게 바꾸는 PR은 디자이너나 제품 리뷰를 받아야 한다.[](source:esc)
 
 @answer scope="dsh-client-ui-ux · 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-client-ui-ux/SKILL.md · 9486B · frontmatter" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=1:4
 @source body-intro title="SKILL.md · 성격과 소유 문서" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=8:8
 @source arch title="SKILL.md · Architecture prerequisites" path=deepseek-harness/dsh-client-ui-ux/SKILL.md lines=10:15

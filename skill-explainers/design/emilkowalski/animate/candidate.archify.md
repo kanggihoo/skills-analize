@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 기존 모션 비평, 코드베이스 감사, 움직일 곳 찾기, React Native 작업이다. toast·drawer 같은 컴포넌트가 필요하면 멈추고 `pick-ui-library`로 넘기라고 하는데, 그 스킬은 모델이 스스로 켤 수 없다.[](source:an-scope)[](source:an-comp)[](source:pk-fm)
 
 @answer scope="design/emilkowalski/animate · 원본 텍스트 2개 19,867B · 커밋 4e3fc89 · 지시상 동작 · 레시피 코드는 읽기만 하고 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source an-fm title="design/emilkowalski/animate/SKILL.md · 11910B · frontmatter" path=design/emilkowalski/animate/SKILL.md lines=1:4
 @source an-init title="SKILL.md · 첫 응답" path=design/emilkowalski/animate/SKILL.md lines=8:14
 @source an-scope title="SKILL.md · 하는 일과 하지 않는 일" path=design/emilkowalski/animate/SKILL.md lines=16:16

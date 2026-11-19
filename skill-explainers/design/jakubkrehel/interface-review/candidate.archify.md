@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 화면·흐름·저장소 전체 리뷰는 `better-interface`의 몫이다. 정확성·테스트·보안·성능은 프로젝트의 일반 코드 리뷰 몫이라, 한 번 짚고 접는다.[](source:ir-own)[](source:ir-s2)
 
 @answer scope="design/jakubkrehel/interface-review · 원본 텍스트 4개 21,124B · 커밋 0465878 · 명시 호출 전용 · 관계 확인용으로 다른 스킬 일부 줄만 읽음 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source ir-fm title="design/jakubkrehel/interface-review/SKILL.md · 10128B · 지시 본문과 frontmatter" path=design/jakubkrehel/interface-review/SKILL.md lines=1:5
 @source ir-own title="SKILL.md · 변경 리뷰와 역할 분담" path=design/jakubkrehel/interface-review/SKILL.md lines=7:13
 @source ir-change title="SKILL.md · 변경을 보지 코드베이스를 보지 않는다" path=design/jakubkrehel/interface-review/SKILL.md lines=15:19

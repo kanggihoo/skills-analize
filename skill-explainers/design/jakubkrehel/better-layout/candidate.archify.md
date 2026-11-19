@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 원문은 거절 조건을 따로 적지 않는다(`원문에 명시 없음`). 대신 hit area·focus, radius·shadow·애니메이션, 줄 길이·말줄임 방식, 문구는 다른 스킬 몫이라고 못 박는다.[](source:ly-own)
 
 @answer scope="design/jakubkrehel/better-layout · 원본 텍스트 4개 18,301B · 커밋 0465878 · 호출 제한 없음 · 관계 확인용으로 다른 스킬 줄만 읽음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source ly-fm title="design/jakubkrehel/better-layout/SKILL.md · 8414B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-layout/SKILL.md lines=1:4
 @source ly-lead title="SKILL.md · 스킬이 하는 일" path=design/jakubkrehel/better-layout/SKILL.md lines=8:8
 @source ly-find title="SKILL.md · 수치의 적용 조건과 지적 기준" path=design/jakubkrehel/better-layout/SKILL.md lines=10:10

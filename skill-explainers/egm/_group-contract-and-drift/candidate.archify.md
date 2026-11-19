@@ -7,8 +7,8 @@
 - `egm-drift-report`는 어긋난 곳만 보고서에 쓰고, 어긋남이 없으면 `No drift detected`라고 쓴다.[](source:c-dr-filter)
 - 이 묶음의 조사 상태는 **부분 분석**이다. `egm-bootstrap`이 띄우는 하위 오케스트레이터의 정의 파일이 저장소에 없다.
 
-@answer scope="egm · bootstrap · drift-report · 커밋 d494974 · 지시상 동작 · 하위 오케스트레이터 정의는 확인하지 못함(부분 분석)"
-@meta locale=ko
+@answer scope="egm · bootstrap · drift-report · 커밋 3098961 · 지시상 동작 · 하위 오케스트레이터 정의는 확인하지 못함(부분 분석)"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source c-bs-off title="egm/egm-bootstrap/SKILL.md · 호출 제한" path=egm/egm-bootstrap/SKILL.md lines=4:4
 @source c-dr-off title="egm/egm-drift-report/SKILL.md · 호출 제한" path=egm/egm-drift-report/SKILL.md lines=4:4
 @source c-bs-over title="egm-bootstrap/SKILL.md · 개요와 Peanuts·Hay" path=egm/egm-bootstrap/SKILL.md lines=13:24
@@ -108,10 +108,10 @@
 
 | rel-id | 종류 | 그림에 있나 | 내용 |
 | --- | --- | --- | --- |
-| r20 | 넘김 | 있음 | bootstrap → drift-report |
-| r21 | 산출물 호환 | 표 | egm-draft의 설계 문서가 입력 조건에 맞는다. 근거 방식은 추론이다[](source:c-draft-save)[](source:c-dr-input) |
-| r16 | 내부 위임 | 생략 | 5개 초과일 때 `agents/bootstrap_orchestrator.md`의 하위 오케스트레이터를 파티션마다 띄운다. 정의 파일은 범위 밖이다[](source:c-bs-swarm) |
-| r17 | 내부 위임 | 생략 | `is_worker=true`면 `egm-bootstrap`이 워커 모드로 다시 돌고 JSON을 돌려준다[](source:c-bs-swarm) |
+| r20 | 다음 안내 | 있음 | bootstrap → drift-report |
+| r21 | 결과 전달 | 표 | egm-draft의 설계 문서가 입력 조건에 맞는다. 근거 방식은 추론이다[](source:c-draft-save)[](source:c-dr-input) |
+| r16 | 호출 | 생략 | 5개 초과일 때 `agents/bootstrap_orchestrator.md`의 하위 오케스트레이터를 파티션마다 띄운다. 정의 파일은 범위 밖이다[](source:c-bs-swarm) |
+| r17 | 호출 | 생략 | `is_worker=true`면 `egm-bootstrap`이 워커 모드로 다시 돌고 JSON을 돌려준다[](source:c-bs-swarm) |
 | r26 | 참고 | 생략 | `docs/codex.md`를 먼저 읽으라는 안내. 파일이 없어 `불명`이다 |
 
 @callout level=open-question title="확인하지 못한 것"

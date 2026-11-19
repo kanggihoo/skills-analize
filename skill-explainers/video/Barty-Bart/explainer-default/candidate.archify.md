@@ -8,7 +8,7 @@
 - 최종 렌더 전에 초안 MP4를 사용자에게 보내 수정 의견을 묻고, 최종 렌더는 오래 걸리니 시작 전에 알린다.[](source:d-draft)[](source:d-final)
 
 @answer scope="video/Barty-Bart/explainer-default · 원본 텍스트 2개 · 커밋 23e8047 · 렌더 결과 미확인 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source d-fm title="video/Barty-Bart/explainer-default/SKILL.md · 21739B · frontmatter" path=video/Barty-Bart/explainer-default/SKILL.md lines=1:4
 @source d-intro title="SKILL.md · 목적" path=video/Barty-Bart/explainer-default/SKILL.md lines=8:10
 @source d-ask title="SKILL.md · 질문은 한 메시지" path=video/Barty-Bart/explainer-default/SKILL.md lines=14:14

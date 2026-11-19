@@ -8,7 +8,7 @@
 - 도구는 가장 작은 스크립트로 만든다. 프레임워크를 만들지 않는다.[](source:balance)
 
 @answer scope="pstack/principle-build-the-lever · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-build-the-lever/SKILL.md · 2458B · 원칙 본문(frontmatter)" path=pstack/principle-build-the-lever/SKILL.md lines=1:5
 @source rule title="pstack/principle-build-the-lever/SKILL.md · 규칙" path=pstack/principle-build-the-lever/SKILL.md lines=8:8
 @source why title="pstack/principle-build-the-lever/SKILL.md · 이유" path=pstack/principle-build-the-lever/SKILL.md lines=10:10

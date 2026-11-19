@@ -8,7 +8,7 @@
 - `dsh-pre-push-checks`와 `dsh-pr-description`이 서로를 가리키는 문장은 원문에 명시 없음. 그래서 그림에 선을 긋지 않았다.
 
 @answer scope="deepseek-harness/ship 묶음 · 스킬 5개의 원본 SKILL.md · 커밋 475505c · 관계는 relations.md의 rel-id 기준 · 지시상 동작이며 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source stk-fm title="deepseek-harness/dsh-merging-stacked-prs/SKILL.md · 7839B · frontmatter" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=1:4
 @source stk-intro title="deepseek-harness/dsh-merging-stacked-prs/SKILL.md · 도입" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=8:8
 @source stk-sync title="deepseek-harness/dsh-merging-stacked-prs/SKILL.md · 네이티브 cascading rebase" path=deepseek-harness/dsh-merging-stacked-prs/SKILL.md lines=72:72

@@ -8,7 +8,7 @@
 - 첫 macOS 권한 허용은 사람이 직접 한다. 서명이 같다는 사실만으로 권한이 유지된다고 말하지 않고 실제 권한 상태를 확인해 보고한다.[](source:cs-choices)[](source:cs-verify)
 
 @answer scope="deepseek-harness/dsh-cua-macos-signing · 원본 텍스트 파일 4개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source cs-fm title="deepseek-harness/dsh-cua-macos-signing/SKILL.md · 8047B · frontmatter" path=deepseek-harness/dsh-cua-macos-signing/SKILL.md lines=1:4
 @source cs-recog title="SKILL.md · Recognize developer use and recommend signing" path=deepseek-harness/dsh-cua-macos-signing/SKILL.md lines=10:14
 @source cs-no title="SKILL.md · 권하지 않는 경우" path=deepseek-harness/dsh-cua-macos-signing/SKILL.md lines=16:16

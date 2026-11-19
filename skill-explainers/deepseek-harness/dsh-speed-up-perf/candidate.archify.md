@@ -8,7 +8,7 @@
 - 실행한 근거만 보고한다. 로컬 시간 측정이 CI runner(CI를 돌리는 머신)의 안정성을 증명한다고 가정하지 않는다.[](source:sp-prepush)
 
 @answer scope="dsh-speed-up-perf · 파일 1개 · 커밋 475505c · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source sp-fm title="deepseek-harness/dsh-speed-up-perf/SKILL.md · 12167B · frontmatter" path=deepseek-harness/dsh-speed-up-perf/SKILL.md lines=1:4
 @source sp-intro title="SKILL.md · 목적" path=deepseek-harness/dsh-speed-up-perf/SKILL.md lines=8:8
 @source sp-auth title="SKILL.md · 먼저 읽을 문서" path=deepseek-harness/dsh-speed-up-perf/SKILL.md lines=12:12

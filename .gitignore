@@ -1,0 +1,10 @@
+
+# explainer 페이지는 원고(*.archify.md)에서 만든다: scripts/render-explainers.py, scripts/build-index.py
+skill-explainers/**/*.html
+# 색인은 입구라서 추적한다
+!skill-explainers/**/index.html
+skill-explainers/**/*.delivery.json
+skill-explainers/**/*.finalize.json
+skill-explainers/**/*.finalize-summary.json
+# 원고가 없어 다시 만들 수 없는 페이지
+!skill-explainers/cloudflare/security-audit/security-audit-architecture-explainer.html

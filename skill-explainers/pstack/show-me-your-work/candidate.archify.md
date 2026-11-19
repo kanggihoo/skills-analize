@@ -8,7 +8,7 @@
 - 다른 스킬은 결정 기록이 필요하면, 이 스킬을 이름으로 부르고 칸 구성을 다시 적지 않는다.[](source:compose)
 
 @answer scope="pstack/show-me-your-work · 원본 텍스트 파일 3개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/show-me-your-work/SKILL.md · 6418B · 본문(frontmatter)" path=pstack/show-me-your-work/SKILL.md lines=1:5
 @source format title="pstack/show-me-your-work/SKILL.md · 형식과 칸" path=pstack/show-me-your-work/SKILL.md lines=9:22
 @source example title="pstack/show-me-your-work/SKILL.md · 예시 기록" path=pstack/show-me-your-work/SKILL.md lines=27:31

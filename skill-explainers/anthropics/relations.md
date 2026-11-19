@@ -23,15 +23,15 @@
 
 | rel-id | from | to | 종류 | 근거 방식 | 조건·강도·사용자 개입 | 전달물·상태 | 상태 관리 주체 | 해석 상태 | 출처 |
 |---|---|---|---|---|---|---|---|---|---|
-| r01 | docx | pptx | 공유 상태 | 추론 | 두 스킬이 `scripts/office/`(`validate.py`, `soffice.py`, `validators/`, `helpers/`, `schemas/`) 사본을 각자 갖고 있다. 폴더 전체가 `diff -rq`로 동일하다. 어느 SKILL.md도 상대를 부르지 않는다. 같은 파일의 사본이지 같은 경로를 읽고 쓰는 것은 아니다 | `scripts/office/` 도구 사본 | 파일 | 범위 내 | docx:40,57; pptx:26-27 |
-| r02 | docx | xlsx | 공유 상태 | 추론 | r01과 같다. xlsx `SKILL.md`는 `scripts/office/validate.py` 등을 실행하라고 지시하지 않는다(99줄 의존성 설명에서 `soffice.py`만 언급). 다만 `scripts/recalc.py`가 `office.soffice`를 import해 쓰고, `validate.py`는 xlsx 계열 파일을 받으면 검증 없이 "recalc.py를 쓰라"는 안내만 내고 종료 코드 0으로 끝난다 | `scripts/office/` 도구 사본 | 파일 | 범위 내 | docx:40,57; xlsx:99; xlsx/scripts/recalc.py:19; xlsx/scripts/office/validate.py:142-148 |
-| r03 | pptx | xlsx | 공유 상태 | 추론 | r02와 같다(xlsx 쪽 사실은 r02 참고) | `scripts/office/` 도구 사본 | 파일 | 범위 내 | pptx:26-27; xlsx:99; xlsx/scripts/recalc.py:19 |
-| r04 | docx | pdf | 같은 계열 | 명시-역할 | docx description이 "Do NOT use for PDFs, spreadsheets, Google Docs"라고 활성화 범위에서 PDF·스프레드시트를 뺀다. 경계 선언이며 호출 지시는 아니다. pdf 쪽에는 docx를 뺀다는 문장이 없다(한쪽만 선언) | - | - | 범위 내 | docx:3 |
-| r05 | docx | xlsx | 같은 계열 | 명시-역할 | docx description은 스프레드시트를, xlsx description은 "Word document"를 서로 활성화 범위에서 뺀다("Do NOT trigger when the primary deliverable is a Word document"). 경계 선언이다 | - | - | 범위 내 | docx:3; xlsx:3 |
-| r06 | docx | pptx | 산출물 호환 | 미확인 | docx와 pptx 모두 `soffice.py`로 PDF를 만들고 `pdftoppm`으로 이미지를 뽑아 눈으로 확인하는 같은 시각 점검 절차를 쓴다. 두 스킬이 서로의 산출물을 입력으로 쓴다는 문장은 없다 | - | - | 불명 | docx:37-45; pptx:226-232 |
+| r01 | docx | pptx | 같은 파일 | 추론 | 두 스킬이 `scripts/office/`(`validate.py`, `soffice.py`, `validators/`, `helpers/`, `schemas/`) 사본을 각자 갖고 있다. 폴더 전체가 `diff -rq`로 동일하다. 어느 SKILL.md도 상대를 부르지 않는다. 같은 파일의 사본이지 같은 경로를 읽고 쓰는 것은 아니다 | `scripts/office/` 도구 사본 | 파일 | 범위 내 | docx:40,57; pptx:26-27 |
+| r02 | docx | xlsx | 같은 파일 | 추론 | r01과 같다. xlsx `SKILL.md`는 `scripts/office/validate.py` 등을 실행하라고 지시하지 않는다(99줄 의존성 설명에서 `soffice.py`만 언급). 다만 `scripts/recalc.py`가 `office.soffice`를 import해 쓰고, `validate.py`는 xlsx 계열 파일을 받으면 검증 없이 "recalc.py를 쓰라"는 안내만 내고 종료 코드 0으로 끝난다 | `scripts/office/` 도구 사본 | 파일 | 범위 내 | docx:40,57; xlsx:99; xlsx/scripts/recalc.py:19; xlsx/scripts/office/validate.py:142-148 |
+| r03 | pptx | xlsx | 같은 파일 | 추론 | r02와 같다(xlsx 쪽 사실은 r02 참고) | `scripts/office/` 도구 사본 | 파일 | 범위 내 | pptx:26-27; xlsx:99; xlsx/scripts/recalc.py:19 |
+| r04 | docx | pdf | 대안 | 명시-역할 | docx description이 "Do NOT use for PDFs, spreadsheets, Google Docs"라고 활성화 범위에서 PDF·스프레드시트를 뺀다. 경계 선언이며 호출 지시는 아니다. pdf 쪽에는 docx를 뺀다는 문장이 없다(한쪽만 선언) | - | - | 범위 내 | docx:3 |
+| r05 | docx | xlsx | 대안 | 명시-역할 | docx description은 스프레드시트를, xlsx description은 "Word document"를 서로 활성화 범위에서 뺀다("Do NOT trigger when the primary deliverable is a Word document"). 경계 선언이다 | - | - | 범위 내 | docx:3; xlsx:3 |
+| r06 | docx | pptx | 결과 전달 | 미확인 | docx와 pptx 모두 `soffice.py`로 PDF를 만들고 `pdftoppm`으로 이미지를 뽑아 눈으로 확인하는 같은 시각 점검 절차를 쓴다. 두 스킬이 서로의 산출물을 입력으로 쓴다는 문장은 없다 | - | - | 불명 | docx:37-45; pptx:226-232 |
 | r07 | pdf | xlsx | 참고 | 미확인 | pdf 예제가 `pdfplumber`로 뽑은 표를 `to_excel("extracted_tables.xlsx")`로 저장한다. xlsx 스킬을 부르라는 문장은 없고 pandas 예제일 뿐이다 | 추출한 표 → .xlsx 파일 | 파일 | 불명 | pdf:118 |
 | r08 | pdf | pdf (같은 폴더 `reference.md`) | 참고 | 명시-이름 | "고급 기능은 REFERENCE.md를 보라" 안내가 네 곳에 있다. 실제 파일 이름은 소문자 `reference.md`다 | - | - | 범위 내 | pdf:11,311-314; pdf/reference.md:1 |
-| r09 | pdf | pdf (같은 폴더 `forms.md`) | 넘김 | 명시-이름 | "PDF 양식을 채워야 하면 FORMS.md 지시를 따르라"는 명령형이다. 실제 파일 이름은 소문자 `forms.md`다 | 양식 PDF·필드 정보 | 파일 | 범위 내 | pdf:307,313; pdf/forms.md:1 |
+| r09 | pdf | pdf (같은 폴더 `forms.md`) | 다음 안내 | 명시-이름 | "PDF 양식을 채워야 하면 FORMS.md 지시를 따르라"는 명령형이다. 실제 파일 이름은 소문자 `forms.md`다 | 양식 PDF·필드 정보 | 파일 | 범위 내 | pdf:307,313; pdf/forms.md:1 |
 
 ## 묶음
 

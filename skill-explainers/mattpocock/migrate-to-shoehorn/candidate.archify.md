@@ -7,7 +7,7 @@
 - 시작 전에 사용자에게 세 가지를 묻는다. 끝나면 타입 검사로 확인한다.[](source:skill-workflow)
 
 @answer scope="mattpocock/migrate-to-shoehorn · 원본 텍스트 파일 2개 · 커밋 0f0d1b0"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="mattpocock/migrate-to-shoehorn/SKILL.md · 2795B · frontmatter" path=mattpocock/migrate-to-shoehorn/SKILL.md lines=1:4
 @source skill-why title="SKILL.md · Why shoehorn" path=mattpocock/migrate-to-shoehorn/SKILL.md lines=8:18
 @source skill-install title="SKILL.md · Install" path=mattpocock/migrate-to-shoehorn/SKILL.md lines=20:24

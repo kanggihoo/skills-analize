@@ -8,7 +8,7 @@
 - 계획이 끝나면 정적 검증과 런타임 검증을 모두 통과해야 한다.[](source:skill-guard)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/principle-outcome-oriented-execution/SKILL.md · 1078B · frontmatter" path=pstack/principle-outcome-oriented-execution/SKILL.md lines=1:5
 @source skill-intro title="SKILL.md · 도입부" path=pstack/principle-outcome-oriented-execution/SKILL.md lines=9:9
 @source skill-why title="SKILL.md · Why" path=pstack/principle-outcome-oriented-execution/SKILL.md lines=11:11

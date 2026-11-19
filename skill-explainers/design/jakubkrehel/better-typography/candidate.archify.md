@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 원문은 거절 조건을 따로 적지 않는다(`원문에 명시 없음`). 대신 문구, heading 의미 구조, 공간 RTL layout, 대비 측정과 통과 판정은 다른 스킬 몫이라고 적는다.[](source:ty-own)
 
 @answer scope="design/jakubkrehel/better-typography · 원본 텍스트 8개 29,444B · 커밋 0465878 · 호출 제한 없음 · 관계 확인용으로 다른 스킬 줄만 읽음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source ty-fm title="design/jakubkrehel/better-typography/SKILL.md · 12244B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-typography/SKILL.md lines=1:4
 @source ty-lead title="SKILL.md · 스킬이 하는 일" path=design/jakubkrehel/better-typography/SKILL.md lines=8:8
 @source ty-own title="SKILL.md · 다른 스킬 몫" path=design/jakubkrehel/better-typography/SKILL.md lines=10:10

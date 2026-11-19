@@ -8,7 +8,7 @@
 - 꼭 필요한 도구가 없으면 설치하기 전에 사용자에게 묻는다.[](source:bs-build)
 
 @answer scope="brag-slim · 텍스트 1개 · 커밋 23e8047 · 지시상 동작 · 영상 결과 미확인"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=23e8047abc33a363aec7f43e75255b2a46281ff7
 @source bs-fm title="video/latent-spaces/brag-slim/SKILL.md · 9142B · frontmatter" path=video/latent-spaces/brag-slim/SKILL.md lines=1:4
 @source bs-intro title="SKILL.md · 역할과 기준" path=video/latent-spaces/brag-slim/SKILL.md lines=6:10
 @source bs-opts title="SKILL.md · 옵션과 출력 폴더" path=video/latent-spaces/brag-slim/SKILL.md lines=12:20

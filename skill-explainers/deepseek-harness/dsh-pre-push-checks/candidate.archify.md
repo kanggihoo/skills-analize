@@ -8,7 +8,7 @@
 - 히스토리를 다시 쓰는 push는 fetch해서 관측해 둔 OID를 지정한 `--force-with-lease`로만 한다. 날 `--force`는 허용하지 않는다.[](source:skill-lease)
 
 @answer scope="deepseek-harness/dsh-pre-push-checks · 원본 텍스트 파일 1개 · 커밋 475505c · 실행하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="deepseek-harness/dsh-pre-push-checks/SKILL.md · 11283B · frontmatter" path=deepseek-harness/dsh-pre-push-checks/SKILL.md lines=1:4
 @source skill-intro title="SKILL.md · 목적과 훅의 역할" path=deepseek-harness/dsh-pre-push-checks/SKILL.md lines=8:8
 @source skill-scope title="SKILL.md · 변경 범위 확인" path=deepseek-harness/dsh-pre-push-checks/SKILL.md lines=12:25

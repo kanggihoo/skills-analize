@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 관리 화면, 폼, 대시보드, 제품 프로토타입, 범용 웹앱이다. 앱을 원하면 에이전트는 멈추고 되묻는다.[](source:bound)
 
 @answer scope="design/garden-skills/beautiful-article · 원본 텍스트 57개 253,012B 전부 읽음(목록은 같은 폴더 files.md) · 커밋 4e3fc89 · 번역본 40개와 README.zh-CN.md 제외 · 스크립트는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source fm title="design/garden-skills/beautiful-article/SKILL.md · 31482B · frontmatter" path=design/garden-skills/beautiful-article/SKILL.md lines=1:4
 @source bg title="SKILL.md · 배경 원칙" path=design/garden-skills/beautiful-article/SKILL.md lines=8:10
 @source bound title="SKILL.md · 경계(이 스킬에 들어갈지 먼저 판단)" path=design/garden-skills/beautiful-article/SKILL.md lines=13:21

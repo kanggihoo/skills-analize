@@ -8,7 +8,7 @@
 - 실행해 보지 않은 검증 스킬은 초안이지 결과물이 아니다.[](source:skill-prove)
 
 @answer scope="pstack/create-verification-skill · 원본 텍스트 파일 4개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/create-verification-skill/SKILL.md · 5879B · frontmatter" path=pstack/create-verification-skill/SKILL.md lines=1:5
 @source skill-intro title="pstack/create-verification-skill/SKILL.md · 목적과 독자" path=pstack/create-verification-skill/SKILL.md lines=9:9
 @source skill-interview title="pstack/create-verification-skill/SKILL.md · 1단계 저장소 조사" path=pstack/create-verification-skill/SKILL.md lines=11:19

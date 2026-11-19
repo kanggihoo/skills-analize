@@ -8,7 +8,7 @@
 - 예외 모드: `execute <plan>`은 실행 서브에이전트를 격리된 worktree에서 띄워 계획을 구현하게 하고, 그 diff를 판정한다.[](source:ia-variants)
 
 @answer scope="design/emilkowalski/improve-animations · 원본 텍스트 3개 18,940B · 커밋 4e3fc89 · 지시상 동작이며 실행해 보지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source ia-fm title="design/emilkowalski/improve-animations/SKILL.md · 8208B · 지시 본문과 frontmatter" path=design/emilkowalski/improve-animations/SKILL.md lines=1:4
 @source ia-init title="SKILL.md · 첫 응답" path=design/emilkowalski/improve-animations/SKILL.md lines=8:14
 @source ia-adv title="SKILL.md · advisor 방식과 하는 일" path=design/emilkowalski/improve-animations/SKILL.md lines=16:18

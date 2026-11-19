@@ -8,7 +8,7 @@
 - 움직이는 부분이 셋 이상이면 그림 한 장에 다 넣지 않는다. 한 부분씩 더하는 그림 여러 장을 그린다.[](source:step5)
 
 @answer scope="pstack/teach · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/teach/SKILL.md · 5623B · 본문(frontmatter)" path=pstack/teach/SKILL.md lines=1:5
 @source core title="pstack/teach/SKILL.md · 목표, how·why 관계" path=pstack/teach/SKILL.md lines=9:11
 @source step1 title="pstack/teach/SKILL.md · 1단계 남길 것 정하기" path=pstack/teach/SKILL.md lines=13:13

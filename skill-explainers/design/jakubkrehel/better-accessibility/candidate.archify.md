@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 대비 측정과 색 수정, 글자 크기, target 사이 간격, 문구, 애니메이션 레시피는 다른 `better-*` 스킬 몫이다.[](source:ba-bound)
 
 @answer scope="design/jakubkrehel/better-accessibility · 원본 텍스트 8개 36,021B · 커밋 0465878 · 관계 확인용으로 다른 스킬 줄만 읽음 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source ba-fm title="design/jakubkrehel/better-accessibility/SKILL.md · 10949B · 지시 본문과 frontmatter" path=design/jakubkrehel/better-accessibility/SKILL.md lines=1:4
 @source ba-intro title="SKILL.md · 하는 일과 두 번 걷기" path=design/jakubkrehel/better-accessibility/SKILL.md lines=8:10
 @source ba-bound title="SKILL.md · 다른 스킬의 몫" path=design/jakubkrehel/better-accessibility/SKILL.md lines=12:12

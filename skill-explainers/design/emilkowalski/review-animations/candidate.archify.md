@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 모션이 아닌 일반 코드 리뷰다. 기능 작성이나 무관한 버그 수정도 하지 않는다. 일반 리뷰를 부탁받으면 거절하고 일반 리뷰 스킬을 가리킨다.[](source:rv-scope)
 
 @answer scope="design/emilkowalski/review-animations · 원본 텍스트 2개 18,455B · 커밋 4e3fc89 · 명시 호출 전용 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source rv-fm title="design/emilkowalski/review-animations/SKILL.md · 8491B · frontmatter" path=design/emilkowalski/review-animations/SKILL.md lines=1:5
 @source rv-init title="SKILL.md · 첫 응답" path=design/emilkowalski/review-animations/SKILL.md lines=9:15
 @source rv-scope title="SKILL.md · 하는 일과 하지 않는 일" path=design/emilkowalski/review-animations/SKILL.md lines=17:17

@@ -8,7 +8,7 @@
 - 쓰면 안 되는 때: 끝난 작업 리뷰(`interface-review`), 대안 탐색(`variant`), 컴포넌트 stress test(`break`)다. 도메인 규칙의 판단도 이 스킬의 몫이 아니다.[](source:bd-owner)
 
 @answer scope="원본 3개 8,735B · 커밋 0465878 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
 @source bd-skill title="design/jakubkrehel/build-design/SKILL.md · 6085B · 지시 본문" path=design/jakubkrehel/build-design/SKILL.md
 @source bd-oa title="design/jakubkrehel/build-design/agents/openai.yaml · 107B · 표시 이름" path=design/jakubkrehel/build-design/agents/openai.yaml lines=1:3
 @source fg-all title="design/jakubkrehel/build-design/figma.md · 2543B · Figma MCP 도구와 신뢰 순서" path=design/jakubkrehel/build-design/figma.md

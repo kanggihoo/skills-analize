@@ -8,7 +8,7 @@
 - 코드를 모르는 사람이 이미지·영상 생성부터 배포까지 맡기려면 `10k-websites`다.[](source:tk-intro)
 
 @answer scope="design 컬렉션 다섯 스킬 · 커밋 4e3fc89 · 지시상 동작 · 결과물 품질은 비교하지 않음"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
 @source lp-fm title="design/elayadesign/landing-page-design/SKILL.md · frontmatter" path=design/elayadesign/landing-page-design/SKILL.md lines=1:4
 @source lp-intro title="landing-page-design/SKILL.md · 한 제안·한 대상·한 행동" path=design/elayadesign/landing-page-design/SKILL.md lines=6:12
 @source lp-scope title="landing-page-design/SKILL.md · 적용 범위" path=design/elayadesign/landing-page-design/SKILL.md lines=14:18

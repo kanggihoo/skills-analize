@@ -8,7 +8,7 @@
 - 집계가 행위자마다 고르게 나오면 전제는 원인이 아니다. 이때는 원인을 다른 데서 찾고, 집계는 근거로 남긴다.[](source:stop)
 
 @answer scope="pstack/principle-attack-the-premise · SKILL.md 1개와 호출 측 줄 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source fm title="pstack/principle-attack-the-premise/SKILL.md · 1941B · 원칙 본문(frontmatter)" path=pstack/principle-attack-the-premise/SKILL.md lines=1:5
 @source rule title="pstack/principle-attack-the-premise/SKILL.md · 규칙과 이유" path=pstack/principle-attack-the-premise/SKILL.md lines=9:11
 @source p-write title="pstack/principle-attack-the-premise/SKILL.md · 전제 적기" path=pstack/principle-attack-the-premise/SKILL.md lines=14:14

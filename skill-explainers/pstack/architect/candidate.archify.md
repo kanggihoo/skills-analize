@@ -8,7 +8,7 @@
 - 구현하다가 같은 모양의 마찰이 반복해서 나오면, 스케치를 버리고 다시 설계한다.[](source:skill-e-tells)
 
 @answer scope="pstack/architect · 원본 텍스트 파일 4개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/architect/SKILL.md · 5675B · 본문(frontmatter)" path=pstack/architect/SKILL.md lines=1:5
 @source skill-intro title="pstack/architect/SKILL.md · 목적" path=pstack/architect/SKILL.md lines=9:9
 @source skill-start title="pstack/architect/SKILL.md · Start" path=pstack/architect/SKILL.md lines=11:19

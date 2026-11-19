@@ -1,174 +1,128 @@
-# grader-replay는 grader를 고친 뒤 과거 eval 결과로 무엇을 확인하나? {#grader-replay-page}
+# grader-replay — grader 변경 뒤 과거 nightly 결과에 다시 채점해 뒤집힌 곳을 분류 {#overview}
 
-`grader.ts`나 채점 helper를 고치면, 과거 nightly eval에 저장된 에이전트 풀이에 오늘의 grader를 다시 돌려 결과가 뒤집힌 곳을 하나씩 분류한다. golden 보정은 풀이 3개와 `zero-passrate.patch`만 보지만, 과거 실행에는 불완전한 풀이가 많아 깨진 가정과 false positive가 드러난다.[](source:intro)
+`grader-replay`는 에이전트가 `grader.ts`나 공용 helper를 고친 뒤, 과거 nightly 평가에 저장된 agent 해답에 오늘의 grader를 다시 돌려 결과가 바뀐 곳(`DIFF`, `PATCH_CONFLICT`, `ERROR`)을 원인별로 분류하게 하는 스킬이다.[](source:gr-front)[](source:gr-why)
 
-- 먼저 `gd dev <guide> --test-grader`로 보정하고, 그다음 `replay.ts`를 돌린다.[](source:calib)[](source:run)
-- 결과가 뒤집힌 곳은 합격·불합격 관문이 아니라 분류할 신호다. 어긋남은 예상된 일이다.[](source:intro)
-- 저장된 `grade.mjs`는 돌리지 않는다. 기준선 `*_results.json`을 덮어쓴다.[](source:nograde)
-- `replay.ts`는 `DIFF`만 나오면 exit 0이고 `ERROR`가 있어야 exit 1이다. 분류 기준은 스킬이 주고, 사람 승인 지점은 원문에 명시 없음.[](source:main)[](source:triage)
+- 쓰는 때: `grader.ts`, `test-fixture.ts`, `run-grader.ts`, grader가 쓰는 parser helper를 고칠 때다.[](source:gr-front)
+- 결과: 바뀐 결과마다 진짜 퇴행, 의도한 grader 수정, timeout, 이름 변경, base app 변화 중 하나로 분류한 판정이다. 자동 통과·실패 기준은 아니다.[](source:gr-why)[](source:gr-triage)
+- 다른 스킬과의 관계: `gd dev` 프롬프트 검증은 `dev-prompt-canary`로, eval job 조사는 `nightly-eval-investigation`으로 넘긴다(다음 안내). 작성 규칙은 `project-evals`를 참고한다(참고).[](source:gr-front)[](source:gr-rel)
+- 하지 않는 것: 검증 중에 `--test-grader` 없이 `gd dev`를 돌리지 않고, job 폴더 안의 `grade.mjs`를 실행하지 않는다.[](source:gr-calib)[](source:gr-why2)
 
-@answer scope="로컬 원본 분석 · SKILL.md 81줄과 scripts/replay.ts 618줄 전체 읽음 · gd, gcloud, node, pnpm 명령과 replay.ts는 실행하지 않음 · 원본 저장소의 src/ 파일과 eval 결과는 이 컬렉션에 없어 확인하지 못함"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=a1d836f93ec897c67870ac042622e8aec36e5f6b
-@source full title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 스킬 본문(81줄 전체)" path=modern-web-guidance-src/grader-replay/SKILL.md
-@source front title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · frontmatter" path=modern-web-guidance-src/grader-replay/SKILL.md lines=1:10
-@source intro title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 도입" path=modern-web-guidance-src/grader-replay/SKILL.md lines=12:16
-@source calib title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 1단계 보정" path=modern-web-guidance-src/grader-replay/SKILL.md lines=18:26
-@source pull title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · job 받기" path=modern-web-guidance-src/grader-replay/SKILL.md lines=28:38
-@source run title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · replay 실행 예" path=modern-web-guidance-src/grader-replay/SKILL.md lines=40:57
-@source nograde title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · grade.mjs 금지" path=modern-web-guidance-src/grader-replay/SKILL.md lines=59:59
-@source stack title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · Gen 2 stacking" path=modern-web-guidance-src/grader-replay/SKILL.md lines=61:61
-@source triage title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 3단계 분류" path=modern-web-guidance-src/grader-replay/SKILL.md lines=63:73
-@source after title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · 수정 뒤 재검증" path=modern-web-guidance-src/grader-replay/SKILL.md lines=75:75
-@source related title="modern-web-guidance-src/grader-replay/SKILL.md · 5300B · Related Skills" path=modern-web-guidance-src/grader-replay/SKILL.md lines=77:81
-@source rp-full title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · 스크립트 본문(618줄 전체)" path=modern-web-guidance-src/grader-replay/scripts/replay.ts
-@source usage title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · 사용법과 옵션" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=92:102
-@source args title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · 인자 해석" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=113:150
-@source zero title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · zero-passrate 찾기" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=161:173
-@source select title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · 대상 grader 고르기" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=175:256
-@source auto title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · 자동 범위(변경된 grader)" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=230:256
-@source suites title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · suite 찾기" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=258:346
-@source jobs title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · replay job 모으기" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=348:391
-@source specmap title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · spec 상태 비교" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=412:442
-@source runjob title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · job 하나 실행" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=466:527
-@source main title="modern-web-guidance-src/grader-replay/scripts/replay.ts · 19853B · main과 종료 코드" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=529:613
-@source pe-hub title="modern-web-guidance-src/project-evals/SKILL.md · 18630B · 참조 확인용 부분 읽음(136줄)" path=modern-web-guidance-src/project-evals/SKILL.md lines=136:136
-@source nei-desc title="modern-web-guidance-src/nightly-eval-investigation/SKILL.md · 16210B · 참조 확인용 부분 읽음(description)" path=modern-web-guidance-src/nightly-eval-investigation/SKILL.md lines=1:8
-@source nei-pull title="modern-web-guidance-src/nightly-eval-investigation/SKILL.md · 16210B · 참조 확인용 부분 읽음(결과 받기)" path=modern-web-guidance-src/nightly-eval-investigation/SKILL.md lines=84:92
-@source nei-ts title="modern-web-guidance-src/nightly-eval-investigation/scripts/investigate.ts · 20833B · 참조 확인용 부분 읽음(rsync)" path=modern-web-guidance-src/nightly-eval-investigation/scripts/investigate.ts lines=270:293
-@source dpc title="modern-web-guidance-src/dev-prompt-canary/SKILL.md · 5781B · 참조 확인용 부분 읽음(description)" path=modern-web-guidance-src/dev-prompt-canary/SKILL.md lines=1:8
-@source cs-pre title="modern-web-guidance-src/project-coding-standards/SKILL.md · 7793B · 참조 확인용 부분 읽음(preflight)" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=85:100
+@answer scope="modern-web-guidance-src/grader-replay · 원본 파일 2개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
+@source gr-front title="이름과 description" path=modern-web-guidance-src/grader-replay/SKILL.md lines=1:10
+@source gr-why title="replay를 쓰는 이유" path=modern-web-guidance-src/grader-replay/SKILL.md lines=12:16
+@source gr-calib title="1단계 calibration" path=modern-web-guidance-src/grader-replay/SKILL.md lines=18:26
+@source gr-pull title="2단계 job 확인과 내려받기" path=modern-web-guidance-src/grader-replay/SKILL.md lines=28:38
+@source gr-run title="replay 실행 옵션" path=modern-web-guidance-src/grader-replay/SKILL.md lines=40:57
+@source gr-why2 title="grade.mjs를 쓰지 않는 이유와 stacking" path=modern-web-guidance-src/grader-replay/SKILL.md lines=59:61
+@source gr-triage title="3단계 분류" path=modern-web-guidance-src/grader-replay/SKILL.md lines=63:75
+@source gr-rel title="관련 스킬" path=modern-web-guidance-src/grader-replay/SKILL.md lines=77:81
+@source gr-opts title="replay.ts의 옵션 도움말" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=96:102
+@source gr-scope title="replay.ts의 기본 범위 선택" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=228:253
+@source gr-combo title="replay.ts의 옵션 조합 검사" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=137:140
+@source gr-night title="replay.ts의 nightly job 선택" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=331:336
+@source gr-conf title="replay.ts의 PATCH_CONFLICT 처리" path=modern-web-guidance-src/grader-replay/scripts/replay.ts lines=515:520
+@source pe-hub title="project-evals의 연결 안내" path=modern-web-guidance-src/project-evals/SKILL.md lines=136:136
+@source ne-front title="nightly-eval-investigation 이름과 description" path=modern-web-guidance-src/nightly-eval-investigation/SKILL.md lines=1:8
+@source ne-sync title="nightly-eval-investigation의 내려받기" path=modern-web-guidance-src/nightly-eval-investigation/SKILL.md lines=84:91
+@source dpc-front title="dev-prompt-canary 이름과 description" path=modern-web-guidance-src/dev-prompt-canary/SKILL.md lines=1:8
+@source cs-gate title="project-coding-standards의 preflight" path=modern-web-guidance-src/project-coding-standards/SKILL.md lines=87:89
 
-## 언제 켜지고, 무엇을 반드시 지켜야 하나? {#activation}
+## 어떻게 동작하나 {#flow span=12}
 
-description은 모델이 호출 여부를 판단할 때 참고하는 설명이다. 특정 단어와 정확히 일치해야 켜진다는 뜻은 아니다. `disable-model-invocation` 필드는 원문에 명시 없음.[](source:front)
+원문은 1~3단계를 번호로 지시한다. 분류 뒤 grader를 고쳤으면 calibration과 replay를 다시 돌리고 `pnpm run preflight`로 끝낸다. 이 되돌림은 3단계 마지막 문장에 있어 그림에 간선으로 그렸다.[](source:gr-triage)
 
-@code source=front language=yaml
-
-| 조건 | 에이전트가 하는 일 |
-|---|---|
-| `grader.ts`, `test-fixture.ts`, `run-grader.ts`, grader가 쓰는 parser helper를 고쳤다 | 이 스킬을 쓴다.[](source:front) |
-| eval job을 표시하거나 조사하려는 경우 | 쓰지 않는다. `nightly-eval-investigation`을 쓴다.[](source:front)[](source:related) |
-| `gd dev` 프롬프트 생성을 검증하려는 경우 | 쓰지 않는다. `dev-prompt-canary`를 쓴다.[](source:front)[](source:related) |
-| 수정한 guide마다 | 검증 중 `gd dev <guide> --test-grader`를 먼저 돌린다.[](source:calib) |
-
-@callout level=warning title="하지 말 것 셋"
-| 검증 중 `gd dev`를 `--test-grader` 없이 돌리지 않는다. write mode가 수동으로 고친 `grader.ts`를 덮어쓸 수 있다.[](source:calib) |
-| job 폴더 안의 `grade.mjs`를 돌리지 않는다. 저장된 `grade.mjs`는 원래 실행자의 홈 디렉터리를 하드코딩하고, 옛 `runPlaywright` signature를 쓰며, 비교 기준인 `*_results.json`을 덮어쓴다.[](source:nograde) |
-| 요구가 guide에 없거나, 그 패턴을 막았던 유효한 풀이가 없으면 검사를 추측으로 느슨하게 만들지 않는다.[](source:triage) |
-
-범위가 다르면 `replay.ts` 옵션도 다르다. 원문은 `test-fixture.ts`, `run-grader.ts`, parser 의존성을 고칠 때 `--all`(모든 task 재생)이 필요하다고 쓴다.[](source:run)
-
-## 어떤 순서로 실행하나? {#run}
-
-@workflow id=replay-flow title="grader 변경 검증 순서"
-| calib | golden 보정 | backend |
-| fresh | job이 최신인가? | backend |
-| pull | nightly 받기 | external |
-| replay | replay 실행 | backend |
-| classify | diff 분류 | backend |
-| fix | grader를 고치나? | backend |
-| edit | grader 수정 | backend |
-| recheck | 재검증 | backend |
-| pre | preflight | security |
-| end | 종료 | external |
-| calib > fresh | |
-| fresh > replay | 최신 | emphasis |
-| fresh > pull | 없음 또는 낡음 | dashed |
+@workflow id=flow-diagram title="grader-replay 흐름"
+| lane calib | 1 calibration |
+| lane replay | 2 replay |
+| lane triage | 3 분류 |
+| calib | grader calibration | backend | calib | source:gr-calib |
+| stale | 로컬 job이 없거나 낡았나? | backend | replay | source:gr-pull |
+| pull | nightly 내려받기 | external | replay | source:gr-pull |
+| replay | replay 실행 | backend | replay | source:gr-run |
+| triage | 차이 분류 | backend | triage | source:gr-triage |
+| edit | grader 고쳤나? | backend | triage | source:gr-triage |
+| calib > stale | |
+| stale > pull | 예 |
+| stale > replay | 아니오 |
 | pull > replay | |
-| replay > classify | |
-| classify > fix | |
-| fix > edit | 예 | emphasis |
-| fix > end | 아니요 | dashed |
-| edit > recheck | |
-| recheck > pre | |
+| replay > triage | |
+| triage > edit | |
+| edit > calib | 예, 다시 |
 
-@steps id=replay-steps
-| calib-step | golden 보정 | 수정한 guide마다 `gd dev <guide> --test-grader`를 돌린다. 보정은 golden 풀이 3개와 `zero-passrate.patch`만 본다. `zero-passrate.patch`는 거의 모든 guide에서 비어 있다(손대지 않은 시작 app).[](source:intro)[](source:calib) | replay-flow | calib |
-| pull-step | nightly 받기 | 로컬 job이 없거나 현재 base app보다 낡았으면 `gcloud storage rsync`로 받는다. `.zip`과 `.png`는 제외한다.[](source:pull) | replay-flow | pull |
-| replay-step | replay 실행 | `replay.ts`가 `results/suites/`와 `~/guidance-evals/`에서 agent별 가장 최근 `nightly-*` job을 골라 다시 채점한다.[](source:pull)[](source:suites) | replay-flow | replay |
-| classify-step | diff 분류 | `DIFF`, `PATCH_CONFLICT`, `ERROR`마다 `agent.patch`(Gen 1은 `index.html`), 수정한 `grader.ts`, `expectations.md`를 보고 분류한다.[](source:triage) | replay-flow | classify |
-| edit-step | grader 수정 | 분류 결과가 실제 퇴행이면 grader를 고친다.[](source:triage) | replay-flow | edit |
-| recheck-step | 재검증 | 수정했다면 `gd dev <guide> --test-grader`와 `replay.ts`를 다시 돌린다.[](source:after) | replay-flow | recheck |
-| pre-step | preflight | 마지막으로 `pnpm run preflight`를 돈다.[](source:after) | replay-flow | pre |
+@steps id=flow-steps
+| s-calib | grader calibration | **입력** 고친 guide · **실행** `gd dev <guide> --test-grader` · **출력** golden patch 3개와 `zero-passrate.patch`에 대한 채점 결과. **처리** 에이전트가 고친 guide마다 잠긴 해답에 대한 calibration을 먼저 돌린다.[](source:gr-calib) **다음** 검증 중에는 `--test-grader` 없이 `gd dev`를 돌리지 않는다. write mode가 손으로 고친 `grader.ts`를 덮어쓸 수 있어서다(Never). | flow-diagram | calib |
+| s-stale | 로컬 job이 없거나 낡았나? | **입력** `results/suites/`와 `~/guidance-evals/`의 job 폴더 · **참조** `suite_config.json` · **출력** 쓸 job 여부. **처리** `scripts/replay.ts`가 agent마다 가장 최근 `nightly-*` job을 고르므로 에이전트는 그 job이 있는지, 현재 base app보다 뒤처지지 않았는지 본다.[](source:gr-pull)[](source:gr-night) | flow-diagram | stale |
+| s-pull | nightly 내려받기 | **입력** 최근 nightly의 suite id · **실행** `gcloud storage ls gs://guidance-evals/`, `gcloud storage rsync gs://guidance-evals/<suite_id> ~/guidance-evals/<suite_id> --recursive --exclude ".*\.zip$\|.*\.png$"` · **출력** 로컬 suite 폴더. **처리** 에이전트가 trace archive와 screenshot은 빼고 최근 nightly를 받는다.[](source:gr-pull) | flow-diagram | pull |
+| s-replay | replay 실행 | **입력** 로컬 nightly job과 고친 grader · **참조** `scripts/replay.ts` · **실행** `node .agents/skills/grader-replay/scripts/replay.ts [--guides <목록>] [--all --concurrency 6] [--suites <목록> --limit <n> --json]` · **출력** run마다 `MATCH`, `DIFF`, `PATCH_CONFLICT`, `ERROR` 상태. **처리** script가 저장된 `agent.patch`에 오늘의 grader를 다시 채점해 저장된 결과와 비교한다. → 내부: `replay.ts`(코드 확인)[](source:gr-run)[](source:gr-opts) **다음** 옵션이 없으면 `origin/main` 대비 바뀐 grader로 범위를 정한다. `test-fixture.ts`, `run-grader.ts`, parser 의존성을 고쳤다면 `--all`이 필요하다.[](source:gr-scope) | flow-diagram | replay |
+| s-triage | 차이 분류 | **입력** `DIFF`, `PATCH_CONFLICT`, `ERROR` 결과 · **참조** 저장된 `agent.patch`(Gen 1은 `index.html`), 고친 `grader.ts`, `expectations.md` · **출력** 차이마다 분류. **처리** 에이전트가 다섯 분류(진짜 퇴행, 의도한 grader 수정, timeout, 이름·구조 변화, base app 변화)로 가른다.[](source:gr-triage) **다음** 진짜 퇴행은 고쳐야 한다. `PATCH_CONFLICT`는 grader 버그가 아니므로 더 새 nightly로 다시 돌린다. **상세** 아직 없음 | flow-diagram | triage |
+| s-edit | grader 고쳤나? | **입력** 분류 결과 · **출력** 고친 `grader.ts`나 종료. **처리** 분류 뒤 `grader.ts`를 고쳤으면 `gd dev <guide> --test-grader`와 `scripts/replay.ts`를 다시 돌리고 `pnpm run preflight`로 끝낸다.[](source:gr-triage) | flow-diagram | edit |
 
-원문에 명시 없음: grader를 고치지 않을 때의 종료 조건, 사람 승인 지점. 그림의 "종료" 노드는 이 분석이 둔 표기다.
+replay는 오늘의 grader를 어제의 저장 출력에 적용하므로 전후 불일치는 예상된 일이다. 불일치는 분류할 신호이지 자동 통과·실패 기준이 아니다.[](source:gr-why)
 
-`replay.ts`의 동작은 아래와 같다. 옵션 목록은 `--help`와 같다.[](source:usage)[](source:args)
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
 
-| 옵션 | 동작 |
-|---|---|
-| 옵션 없음 | `origin/main...HEAD`, staged, unstaged, untracked 변경에서 `grader.ts`를 찾아 그것만 재생한다. 하나도 없으면 오류로 멈춘다.[](source:auto) |
-| `--guides <목록>`과 위치 인자 | guide slug, task key, guide 경로, grader 경로로 대상을 고른다. 하나라도 맞는 것이 없으면 오류로 멈춘다.[](source:select)[](source:args) |
-| `--all` | `getTaskMap()`의 모든 task를 재생한다. `--guides`와 함께 쓰면 오류다.[](source:usage)[](source:args) |
-| `--suites <목록>` | job 폴더를 직접 지정한다. 지정하면 최신 nightly 필터를 거치지 않는다.[](source:suites) |
-| `--limit <n>` | 만들어진 job 목록의 앞쪽 n개만 실행한다. 순서는 suite, run 번호, task, `guided`/`unguided` 순이다.[](source:jobs) |
-| `--concurrency <n>` | Playwright worker 수다. 기본값은 4다.[](source:usage)[](source:args) |
-| `--json` | 사람이 읽는 출력 대신 JSON만 낸다.[](source:usage) |
+@facts
+| 직접 켜는 방법 | 사용자 명령은 원문에 명시 없음. 모델이 description을 보고 켠다. 호출 제한 필드는 없다. description은 두 경우에 쓰지 말라고 한다[](source:gr-front) |
+| 성격 | calibration, 재채점, 분류를 순서대로 하는 절차형 검증 스킬 |
 
-@facts id=replay-facts
-| 자동 범위 예외 | `grader.ts` 변경이 없는데 `src/grading/` 아래 파일이 바뀌었으면 `--all` 또는 `--guides`를 쓰라는 오류로 멈춘다[](source:auto) |
-| suite 고르기 | 이름이 `nightly-`로 시작하는 폴더 중 agent별로 가장 최근 것을 고른다. `nightly-` 폴더가 하나도 없으면 모든 suite를 후보로 삼는다[](source:suites) |
-| agent 이름 | `suite_config.json`의 `agent`가 우선이고, 없으면 폴더 이름에서 찾는다[](source:suites) |
-| job 조건 | 각 run 폴더에서 `guided`와 `unguided` 둘 다, `<slug>_results.json`이 있을 때만. `agent.patch`가 있으면 patch 모드, 없고 `index.html`이 있으면 single-file 모드[](source:jobs) |
-| zero-passrate | 후보 3곳(task 폴더, base app 폴더, guide 루트) 순서로 찾고, 비어 있지 않은 파일만 쓴다. patch 모드에서만 적용한다[](source:zero)[](source:runjob) |
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| `project-evals` {#r17} | **이 스킬** | 다음 안내 | 기존 grader나 공용 grading helper를 고칠 때 쓰라고 한다. "그때만"이라는 제한 표현은 없다.[](source:pe-hub)[](source:gr-front) |
+| **이 스킬** {#r20} | `project-evals` | 참고 | Related Skills에서 `expectations.md`, `task.md`, `grader.ts` 작성·검토 규칙의 출처로 안내한다.[](source:gr-rel) |
+| **이 스킬** {#r21} | `dev-prompt-canary` | 다음 안내 | `gd dev` 프롬프트 생성을 검증하려는 경우는 이 스킬을 쓰지 말고 `dev-prompt-canary`를 쓰라고 한다.[](source:gr-front)[](source:gr-rel) |
+| **이 스킬** {#r22} | `nightly-eval-investigation` | 다음 안내 | eval job을 표시하거나 조사하려는 경우는 이 스킬을 쓰지 말고 `nightly-eval-investigation`을 쓰라고 한다.[](source:gr-front)[](source:gr-rel) |
+| `nightly-eval-investigation` {#r24} | **이 스킬** | 같은 파일 | 같은 nightly 결과 폴더(`results/suites/nightly-*/`)를 쓴다. 선후 관계는 없다. nightly 쪽은 `results/suites/<폴더>`에 받고, replay는 두 곳에서 가장 최근 `nightly-*` job을 고른다.[](source:ne-sync)[](source:gr-pull) |
+| **이 스킬** {#r26} | `project-coding-standards` | 대안 | 둘 다 마지막 검증으로 `pnpm run preflight`를 요구하고 `gd dev <guide> --test-grader`를 쓴다. 연결을 지시한 문장은 없다.[](source:gr-calib)[](source:gr-triage)[](source:cs-gate) |
+| **이 스킬** {#r38} | GCS 버킷 `gs://guidance-evals/` | 참고 | nightly 결과를 `gcloud storage ls`와 `rsync`로 받는다. 로컬 job이 없거나 낡았을 때만 받는다. 범위 밖이다.[](source:gr-pull) |
 
-Gen 2 target에서는 eval이 에이전트를 부르기 전에 `zero-passrate.patch`를 적용하므로 `agent.patch`는 `base-apps/<app> + zero-passrate.patch` 위의 diff다. `runPlaywright`가 두 patch를 임시 workspace에 겹쳐 적용하고, 어느 쪽이든 적용이 실패하면 `PatchApplyError`(보고서 표기 `PATCH_CONFLICT`)를 던진다. task별 `baselineTarget`(`widely`, `newly`, `limited`)도 함께 넘긴다.[](source:stack)
+@architecture id=relation-map title="grader-replay와 이어지는 스킬"
+| pe | project-evals | backend |
+| self | grader-replay(이 스킬) | backend |
+| dpc | dev-prompt-canary | backend |
+| ne | nightly-eval-investigation | backend |
+| cs | project-coding-standards | backend |
+| pe > self | 다음 안내 |
+| self > pe | 참고 |
+| self > dpc | 다음 안내 |
+| self > ne | 다음 안내 |
+| ne > self | 같은 파일 | dashed |
+| self > cs | 대안 | dashed |
 
-## 결과가 뒤집히면 어떻게 분류하나? {#triage}
+@code source=gr-front language=yaml
 
-스크립트는 spec 제목마다 저장 결과와 현재 결과의 상태(`pass`, `fail`, `timedOut`, `skipped`)를 비교하고, 한쪽에만 있는 제목은 `<missing>`으로 표시한다. 상태가 하나라도 다르면 `DIFF`, 모두 같으면 `MATCH`다. `PatchApplyError`는 `PATCH_CONFLICT`, 그 밖의 오류는 `ERROR`다.[](source:specmap)[](source:runjob)
+## 어떤 파일로 이루어지나 {#files span=12}
 
-| 분류 | 신호 | 조치 |
-|---|---|---|
-| 실제 퇴행 | 저장 결과가 `pass -> fail`인데 그 결과물이 `guide.md`와 `expectations.md`를 정당하게 만족한다. 또는 refactor 뒤 검사가 유효한 문법을 더 못 잡는다 | 고쳐야 한다[](source:triage) |
-| 의도한 수정 · `pass -> fail` | 무관한 CSS·마크업에서 통과하던 검사를 조였다 | `agent.patch`에서 저장 풀이가 요구를 빠뜨렸는지 확인한다[](source:triage) |
-| 의도한 수정 · `fail -> pass` | 지나치게 엄격한 검사를 고쳤다 | `agent.patch`가 `guide.md`와 `expectations.md`를 지키는지 확인한다. 추측으로 완화하지 않는다[](source:triage) |
-| timeout 흔들림 | `pass -> timedOut` 또는 `timedOut -> pass` | worker 경쟁으로 본다. 낮은 `--concurrency`로 다시 돌린다[](source:triage) |
-| 제목·구조 변화 | 제목이 `saved -> <missing>`과 `<missing> -> now`로 나온다 | `main`에서 이름이 바뀌거나 합쳐진 것이다. `git log -p -n 3 -- <grader>`와 pass/fail 합계를 비교한다[](source:triage) |
-| base app 변경 | `agent.patch`가 현재 `src/harness/base-apps/`나 `zero-passrate.patch`에 적용되지 않는다(`PATCH_CONFLICT`) | grader 버그가 아니다. 더 새로운 nightly job으로 다시 돌린다[](source:triage) |
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | 3단계 절차, replay 옵션, 분류 기준, 관련 스킬을 담는다 | 스킬이 켜질 때 읽는다 | grader calibration, 로컬 job이 없거나 낡았나?, nightly 내려받기, replay 실행, 차이 분류, grader 고쳤나? |
+| `scripts/replay.ts` | 저장된 해답에 grader를 다시 돌려 결과를 비교하는 script다 | 2단계에서 에이전트가 `node`로 실행한다 | replay 실행 |
 
-`ERROR`에 해당하는 별도 분류는 원문에 명시 없음. 위 6개 중 어느 것에도 안 맞으면 어떻게 하는지도 원문에 명시 없음.
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-판정 · 자동 범위에는 빈틈이 있다. 원문은 공용 helper를 고치면 `--all`이 필요하다고 하지만, 스크립트는 `grader.ts` 변경이 하나도 없을 때만 `src/grading/` 변경을 보고 멈춘다. `grader.ts`도 함께 고쳤다면 옵션 없이 돌렸을 때 그 grader들만 재생하고 조용히 넘어간다. 공용 helper를 고쳤다면 직접 `--all`을 붙여야 한다.[](source:run)[](source:auto)
+| 조건 | 결과 | 출처 |
+| --- | --- | --- |
+| 검증 중 `gd dev` 실행 | `--test-grader`를 반드시 붙인다. 없으면 write mode가 손으로 고친 `grader.ts`를 덮어쓸 수 있다(Never) | [](source:gr-calib) |
+| job 폴더 안의 `grade.mjs` | 실행하지 않는다. 원래 runner의 home 경로가 박혀 있고, 옛 `runPlaywright` 시그니처를 쓰며, 비교할 저장 `*_results.json`을 덮어쓴다 | [](source:gr-why2) |
+| 저장된 `pass -> fail`이 `guide.md`와 `expectations.md`를 만족한다 | 진짜 퇴행이다. 고쳐야 한다 | [](source:gr-triage) |
+| guide가 허용하지 않는 패턴이거나 그것 때문에 실패한 valid 해답이 없다 | check를 추측으로 느슨하게 하지 않는다 | [](source:gr-triage) |
+| `timedOut`이 낀 변화 | grader 변경이 아니라 worker 경합이다. 더 낮은 `--concurrency`로 다시 돌린다 | [](source:gr-triage) |
+| `PATCH_CONFLICT` | grader 버그가 아니다. 더 새 nightly를 받아 다시 돌린다. `zero-passrate.patch`와 `agent.patch` 중 하나라도 적용에 실패하면 `PatchApplyError`로 난다 | [](source:gr-triage)[](source:gr-why2) |
+| `--all`과 `--guides`를 함께 쓴다 | script가 오류로 막는다. `grader.ts` 변경이 없고 `--guides`나 `--all`도 없으면 오류로 끝난다 | [](source:gr-combo)[](source:gr-scope) |
+| 사용자 승인 | 원문에 명시 없음 | [](source:gr-why) |
 
-## 흐름 속 위치는 어디인가? {#position}
+## 더 자세히 읽으려면 {#more span=12}
 
-@workflow id=position-flow title="project-evals에서 이 스킬로, 다른 두 스킬로"
-| before | project-evals | backend | source:pe-hub |
-| current | grader-replay | backend | source:full |
-| canary | dev-prompt-canary | external | source:dpc |
-| nightly | nightly-eval-investigation | external | source:nei-desc |
-| before > current | R17 넘김 | emphasis |
-| current > canary | R21 넘김 | dashed |
-| current > nightly | R22 넘김 | dashed |
+공개된 상세:
 
-@steps id=position-steps
-| highlight | grader-replay | 이 페이지의 스킬이다. grader를 고쳤을 때만 오고, 프롬프트 검증과 eval 조사는 다른 스킬로 보낸다.[](source:front)[](source:related) | position-flow | current |
+- 아직 없음
 
-| 관계 | 받는 것·넘기는 것·조건 |
-|---|---|
-| R17 · 넘김(`project-evals` → 이 스킬) | `project-evals`가 기존 grader나 공용 grading helper를 고칠 때 이 스킬로 저장된 nightly 풀이를 재생하라고 안내한다. 전달물은 없다.[](source:pe-hub) |
-| R21 · 넘김(이 스킬 → `dev-prompt-canary`) | `gd dev` 프롬프트 생성 검증이면 이 스킬을 쓰지 말라는 부정 조건이다. 의무 순서가 아니라 선택 경계다.[](source:front)[](source:related)[](source:dpc) |
-| R22 · 넘김(이 스킬 → `nightly-eval-investigation`) | eval job을 표시하거나 조사하려면 이 스킬을 쓰지 말라는 부정 조건이다.[](source:front)[](source:related)[](source:nei-desc) |
-| R20 · 참고(이 스킬 → `project-evals`) | Related Skills가 `expectations.md`, `task.md`, `grader.ts` 작성 규칙의 출처로 `project-evals`를 안내한다.[](source:related) |
-| R24 · 공유 상태(`nightly-eval-investigation`과) | 같은 nightly 결과 폴더를 쓴다. nightly 쪽은 `results/suites/<폴더>`로 받고, 이 스킬은 `results/suites/`와 `~/guidance-evals/`에서 읽는다. 선후 관계는 없다.[](source:suites)[](source:nei-pull)[](source:nei-ts) |
-| R26 · 같은 계열(`project-coding-standards`와) | 둘 다 마지막 검증으로 `pnpm run preflight`를 요구한다. 연결을 지시한 문장은 없다. 판정으로 둔 연결이다.[](source:after)[](source:cs-pre) |
-| R38 · 참고(GCS 버킷 `gs://guidance-evals/`, 범위 밖) | 로컬 job이 없거나 낡았을 때만 `gcloud storage ls`와 `rsync`로 받는다. 버킷은 이 컬렉션 밖이다.[](source:pull) |
+상세 후보(요청하면 만든다):
 
-전체 흐름은 색인 기준 `_group-eval-quality-loop/eval-quality-loop.html`에 있다.
+- 분류 다섯 가지의 판정 기준 — 차이 분류 · 개요에는 이름과 핵심 조건만 담았다. 각 분류의 확인 방법은 상세로 남긴다.
+- `replay.ts` 옵션과 범위 선택 — replay 실행 · 개요에는 옵션 이름과 기본 범위만 담았다.
 
-## 어디까지 읽고 확인했나? {#audit}
+@callout level=open-question title="확인하지 못한 것"
+| `gd dev`, `gcloud`, `runPlaywright`, `src/harness/base-apps/`와 `suite_config.json`은 이 컬렉션에 없어 동작을 확인하지 못했다. `scripts/replay.ts`는 618줄 중 옵션, 범위 선택, nightly 선택, 충돌 처리 부분만 대조했다. 명령은 모두 지시상 동작이고 실행하지 않았다. |
 
-| 조사 구분 | 확인 범위 |
-|---|---|
-| 스킬 원본 | `modern-web-guidance-src/grader-replay/SKILL.md` 81줄, 5,300B와 `scripts/replay.ts` 618줄, 19,853B, 텍스트 2개를 끝까지 읽었다.[](source:full)[](source:rp-full) |
-| 참조 확인용 부분 읽음 | `project-evals/SKILL.md`의 1~8, 28~48, 66~82, 118~140줄, `nightly-eval-investigation/SKILL.md`의 1~8, 28~31, 84~92줄, `investigate.ts` 268~294줄, `dev-prompt-canary/SKILL.md` description, `project-coding-standards/SKILL.md` 85~100줄. 관계 원장 R17, R20~R22, R24, R26을 대조하려고 읽었다.[](source:pe-hub)[](source:nei-pull)[](source:cs-pre) |
-| 제외 | 이 폴더에는 번역본과 바이너리가 없다. |
-| 부분 읽음 | 위 참조 확인용 5개 파일. 스킬 자체의 파일은 모두 전부 읽었다. |
-
-활성화 대상 파일 4개, 부정 조건 2개, 보정 3개 + zero-passrate, `replay.ts` 옵션 6개(`--guides`, `--all`, `--suites`, `--limit`, `--concurrency`, `--json`)와 기본 concurrency 4, 상태 4종(`MATCH`, `DIFF`, `PATCH_CONFLICT`, `ERROR`), 분류 6개, 금지 3개, 종료 코드 조건을 모두 원문과 대조했다. SKILL.md의 예시 `--concurrency 6`, `--limit 12`는 예시이고 권고 값인지는 원문에 명시 없음.[](source:run)
-
-@callout level=open-question title="확인하지 못한 부분"
-| 이 컬렉션에는 원본 저장소의 `src/core/guide-validation.ts`, `src/grading/run-grader.ts`, `src/harness/config.ts`와 eval 결과가 없다. `getTaskMap`, `runPlaywright`의 동작(저장 결과를 정말 건드리지 않는지 포함)과 Gen 1/Gen 2 구분은 SKILL.md와 `replay.ts` 서술만 옮겼다. `replay.ts`가 저장 결과 파일을 읽기만 하고 새 결과를 임시 폴더에 두는 점(`testResultsDir`)은 확인했다.[](source:runjob)[](source:main) 어떤 스크립트도 실행하지 않았다. |
-
-분석 중 원본은 수정하지 않았다. 관계 원장은 이미 확정된 것을 그대로 썼다.
+읽은 원본: 텍스트 파일 2개. 제외: 없음. `replay.ts`는 필요한 부분만 읽었다.

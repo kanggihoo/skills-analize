@@ -8,7 +8,7 @@
 - 병목(limiter)을 대지 못하거나, 한쪽이 튜닝되지 않았거나, 4번·7번을 확인하지 못하면, 에이전트는 판정을 "결론 없음"으로 쓴다.[](source:skill-report)
 
 @answer scope="pstack/benchmark-checklist · 원본 텍스트 파일 1개 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/benchmark-checklist/SKILL.md · 5409B · frontmatter" path=pstack/benchmark-checklist/SKILL.md lines=1:5
 @source skill-intro title="pstack/benchmark-checklist/SKILL.md · 쓰는 때" path=pstack/benchmark-checklist/SKILL.md lines=9:9
 @source skill-ballpark title="pstack/benchmark-checklist/SKILL.md · 대략치 예외" path=pstack/benchmark-checklist/SKILL.md lines=11:11

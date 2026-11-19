@@ -8,7 +8,7 @@
 - `refactoring` 플레이북은 이 원칙을 성공 기준으로 쓴다. 독자 부담이 줄지 않은 변경은 되돌린다.[](source:pb-refactoring)
 
 @answer scope="SKILL.md 1개와 참조 위치 · 커밋 5760176"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=475505cab7ed9a4e4537ddf7485934e25a85106d
 @source skill-fm title="pstack/principle-minimize-reader-load/SKILL.md · 2095B · frontmatter" path=pstack/principle-minimize-reader-load/SKILL.md lines=1:5
 @source skill-axes title="SKILL.md · 두 축" path=pstack/principle-minimize-reader-load/SKILL.md lines=9:11
 @source skill-why title="SKILL.md · Why" path=pstack/principle-minimize-reader-load/SKILL.md lines=13:13

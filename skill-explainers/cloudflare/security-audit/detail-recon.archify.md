@@ -1,9 +1,13 @@
-# 정찰과 coverage ledger — 소스를 지도로 만들고 검토 범위를 unit으로 쪼갠다 {#recon-detail}
+# 정찰과 coverage ledger — 소스를 지도로 만들고 검토 범위를 unit으로 쪼갠다 {#detail-recon}
 
-이 페이지는 개요의 `정찰` 노드, 곧 Phase 1을 맡는다. 시작 입력은 `run-metadata.json`과 target 소스, 이전 실행 기록이다. 끝 출력은 `architecture.md`와 `coverage-ledger.json`이고, ledger의 unit은 모두 `planned`로 시작한다. 이후 개요의 `사냥`으로 이어진다. budget gate에서 막히면 agent 없이 `incomplete`로 끝난다.[](source:rec-p1)
+[개요](page:security-audit.html)의 `정찰` 노드, 곧 Phase 1을 자세히 본다. 시작 입력은 `run-metadata.json`, target 소스, 이전 실행 기록이고 끝 출력은 `architecture.md`와 `coverage-ledger.json`이다. ledger의 unit은 모두 `planned`로 시작한다. 이후 개요의 `사냥`으로 간다.[](source:rec-p1)
+
+- budget gate에서 막히면 정찰 agent를 띄우지 않고 metadata에 incomplete를 기록한다.[](source:rec-p1)
+- 정찰 agent 네 개는 파일을 쓰지 않고 구조화된 사실만 parent에게 돌려준다.[](source:rec-p1)
+- ledger가 coverage 주장이다. architecture 요약이나 agent 수는 coverage 근거가 아니다.[](source:rec-run)
 
 @answer scope="cloudflare/security-audit · RECONNAISSANCE.md 전체, validate-coverage-ledger.cjs 일부 · 지시상 동작"
-@meta locale=ko
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source rec-p1 title="정찰 시작 조건" path=cloudflare/security-audit/RECONNAISSANCE.md lines=3:7
 @source rec-a1a title="정찰 agent 1a" path=cloudflare/security-audit/RECONNAISSANCE.md lines=9:20
 @source rec-a1b title="정찰 agent 1b" path=cloudflare/security-audit/RECONNAISSANCE.md lines=22:33
@@ -21,7 +25,7 @@
 @source vl-id title="coverage_id 계산 코드" path=cloudflare/security-audit/validate-coverage-ledger.cjs lines=354:375
 @source vl-run title="ledger 검증기 실행 진입점" path=cloudflare/security-audit/validate-coverage-ledger.cjs lines=808:853
 
-## 정찰은 어떤 순서로 무엇을 만드나 {#flow span=12}
+## 어떻게 동작하나 {#detail span=12}
 
 Phase 1은 parent가 `run-metadata.json`을 초기화하고 strict budget gate를 적용한 뒤, agent scratch 루트와 공유 ledger를 만드는 데서 시작한다. 정찰은 target과 로컬에 있는 build·설정 상태만 읽는다. 배포된 endpoint, 외부 identity provider, registry, broker, cloud API, 공유 서비스에는 접속하지 않는다.[](source:rec-p1)
 
@@ -51,7 +55,7 @@ Phase 1은 parent가 `run-metadata.json`을 초기화하고 strict budget gate�
 | r-arch | architecture.md | **입력** agent 네 개의 사실·이전 실행 요약 · **참조** `ATTACK-CLASSES.md` · **출력** `<output-dir>/architecture.md`(약 1,000단어 상한)와 선택한 companion 요약. **처리** parent가 제품·주체·trust boundary·시작 경로를 종합하고, 정찰이 찾은 boundary에 맞는 companion 파일만 고른다.[](source:rec-arch) | recon-flow | arch |
 | r-ledger | ledger 시드 | **입력** surface·trust boundary·subsystem·attack class 조합 · **참조** `RECONNAISSANCE.md` · **실행** `node <skill-dir>/validate-coverage-ledger.cjs <output-dir>/coverage-ledger.json` · **출력** `coverage_id`로 정렬한 `coverage-ledger.json`(모든 unit `planned`). **처리** parent가 조합마다 unit 하나를 만들고 `coverage_id`를 계산해 기록한 뒤 검증기를 돌린다.[](source:rec-ledger)[](source:rec-run) → 내부: 검증기는 이 ledger 파일 하나만 읽고 `coverage_id`를 canonical ref에서 다시 계산해 비교한다(코드 확인).[](source:vl-run)[](source:vl-id) **다음** 오류가 있으면 배정이나 coverage 주장 전에 모두 고친다. | recon-flow | ledger |
 
-## 정찰 agent 네 개는 각각 무엇을 읽고 돌려주나 {#agents span=12}
+**정찰 agent 네 개는 각각 무엇을 읽고 돌려주나**
 
 네 agent는 모두 `research` agent이고 병렬로 돈다.[](source:rec-p1)
 
@@ -64,7 +68,7 @@ Phase 1은 parent가 `run-metadata.json`을 초기화하고 strict budget gate�
 
 1d의 마지막 두 항목이 막히면 결과가 달라진다. 빈 허용 목록 환경, 외부 네트워크 차단, 읽기 전용 mount, scratch 전용 쓰기, 자원 상한 중 하나라도 로컬 플랫폼이 강제하지 못하면 target 코드 실행이 막힌다. no-follow 경로 제한 승격 같은 통제가 빠지면 scratch 파일을 증거로 쓸 수 없다.[](source:rec-a1d)
 
-## architecture.md에는 무엇이 들어가고 companion은 어떻게 고르나 {#architecture span=12}
+**architecture.md에는 무엇이 들어가고 companion은 어떻게 고르나**
 
 parent가 `<output-dir>/architecture.md`를 쓴다. 상한은 약 1,000단어다. 담을 항목은 여덟 가지다.[](source:rec-arch)
 
@@ -82,7 +86,7 @@ assignment별 일반 block, 선택한 companion block, 이유가 붙은 제외 b
 
 companion 선택 기준은 언어나 의존성 이름이 보인다는 사실이 아니다. 정찰이 해당 파일의 `When to use this file` 절에 적힌 trust-sensitive boundary를 실제로 찾았을 때 고른다. 다른 agent가 관련 class를 볼 것이라는 이유로 보이는 boundary를 제외하지도 않는다.[](source:rec-arch) 도메인 파일별 조건은 `security-audit.rules.html`에 있다.
 
-## coverage ledger는 어떻게 구성되고 어떤 상태를 거치나 {#ledger span=12}
+**coverage ledger는 어떻게 구성되고 어떤 상태를 거치나**
 
 parent가 `<output-dir>/coverage-ledger.json`을 최상위 JSON 배열로 쓴다. 진입면, trust boundary, subsystem, 해당하는 일반·companion attack class의 의미 있는 조합마다 unit 하나를 만든다. 세분화 정도는 profile이 정한다.[](source:rec-ledger)
 
@@ -123,12 +127,9 @@ ledger가 coverage 주장이다. architecture 요약, agent 수, "auth reviewed"
 
 검증기는 시드 직후, parent가 갱신할 때마다, Phase 6 전에 돌린다. 5 MiB를 넘는 입력, 중첩 64단계, unit 10,000개, 중첩 컬렉션 항목 1,000개, 순회하는 값 500,000개를 거부하고 보고하는 오류는 100개로 제한한다. 현실적인 unit이면 5 MiB 한도가 대략 2,000~5,000 unit에서 먼저 걸린다.[](source:rec-run) 코드의 한도값도 같다(`inputBytes` 5 MiB, `units` 10000, `collectionItems` 1000, `objectFields` 1000, `nestingDepth` 64, `preflightValues` 500000, `validationErrors` 100).[](source:vl-limits)
 
-## 다른 페이지 {#other-pages span=12}
+## 다른 페이지 {#pages span=12}
 
-| 파일 | 내용 |
-| --- | --- |
-| `security-audit.html` | 개요 |
-| `security-audit.planning.html` | 이전 실행 활용 규칙, budget gate의 상세 |
-| `security-audit.hunt.html` | ledger를 소비하는 Phase 2 |
-| `security-audit.rules.html` | companion 파일별 선택 조건 |
-| `security-audit.records.html` | ledger 검증기와 findings 검증기 |
+- [개요](page:security-audit.html)
+- [감사 계획](page:security-audit.planning.html)
+- [사냥](page:security-audit.hunt.html)
+- [attack class와 도메인 지침](page:security-audit.rules.html)

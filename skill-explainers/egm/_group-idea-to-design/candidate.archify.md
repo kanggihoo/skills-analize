@@ -7,8 +7,8 @@
 - 각 단계 끝에는 사람이 결정하는 지점이 있다. 결정 없이 다음 단계로 넘어가는 경로는 원문에 명시 없음.[](source:i-bs-gate)[](source:i-dr-gate)[](source:i-rv-preset)
 - 리뷰 단계의 내부 규칙과 수치는 `egm/_group-review-and-fix/review-and-fix.html`과 `egm/egm-review/egm-review.html`에 있다.
 
-@answer scope="egm · brainstorm · draft · review · 커밋 d494974 · 지시상 동작 · 서브에이전트 정의와 기준 문서는 확인하지 못함(부분 분석)"
-@meta locale=ko
+@answer scope="egm · brainstorm · draft · review · 커밋 3098961 · 지시상 동작 · 서브에이전트 정의와 기준 문서는 확인하지 못함(부분 분석)"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=3098961a8768980c88b0f52a476209e63154c4d1
 @source i-bs-off title="egm/egm-brainstorm/SKILL.md · 호출 제한" path=egm/egm-brainstorm/SKILL.md lines=4:4
 @source i-dr-off title="egm/egm-draft/SKILL.md · 호출 제한" path=egm/egm-draft/SKILL.md lines=4:4
 @source i-rv-off title="egm/egm-review/SKILL.md · 호출 제한" path=egm/egm-review/SKILL.md lines=4:4
@@ -107,15 +107,15 @@ draft는 저장하기 전에 6단계에서 brief와 초안을 다시 대조한�
 
 | rel-id | 종류 | 그림에 있나 | 내용 |
 | --- | --- | --- | --- |
-| r01 | 넘김 | 있음 | 선택지에서 `egm-draft`로 |
-| r02 | 넘김 | 있음 | RFC 게시 뒤 `egm-draft`로. 시작은 사용자가 한다[](source:i-bs-opt0) |
-| r03 | 산출물 호환 | 표 | `Alternatives Weighed` 절 |
-| r04 | 넘김 | 생략 | brief도 `discussion_summary.md`도 없을 때 draft가 `egm-brainstorm` 시작을 제안할 수 있다. 제안형이다[](source:i-dr-intake) |
-| r05 | 넘김 | 있음 | draft 끝에서 `egm-review` 시작을 권한다 |
+| r01 | 다음 안내 | 있음 | 선택지에서 `egm-draft`로 |
+| r02 | 다음 안내 | 있음 | RFC 게시 뒤 `egm-draft`로. 시작은 사용자가 한다[](source:i-bs-opt0) |
+| r03 | 결과 전달 | 표 | `Alternatives Weighed` 절 |
+| r04 | 다음 안내 | 생략 | brief도 `discussion_summary.md`도 없을 때 draft가 `egm-brainstorm` 시작을 제안할 수 있다. 제안형이다[](source:i-dr-intake) |
+| r05 | 다음 안내 | 있음 | draft 끝에서 `egm-review` 시작을 권한다 |
 | r06 | 참고 | 생략 | draft는 Zoom Out 기준 채점을 스스로 하지 않는다. `egm-review` Stage 5가 새 컨텍스트에서 한다[](source:i-dr-recon)[](source:i-rv-stage5) |
-| r07 | 공유 상태 | 표 | `docs/designs/`와 `SITEMAP.md` |
-| r15 | 내부 위임 | 생략 | brainstorm이 `egm-synthesizer`를 띄워 리뷰어 6명을 돌린다. 정의 파일은 범위 밖이다[](source:i-bs-synth) |
-| r22, r23 | 같은 계열 | 표 | 공통 규칙 표 |
+| r07 | 같은 파일 | 표 | `docs/designs/`와 `SITEMAP.md` |
+| r15 | 호출 | 생략 | brainstorm이 `egm-synthesizer`를 띄워 리뷰어 6명을 돌린다. 정의 파일은 범위 밖이다[](source:i-bs-synth) |
+| r22, r23 | 대안 | 표 | 공통 규칙 표 |
 | r24 | 참고 | 생략 | draft는 `resources/execution_instructions.md`를 읽고 적용하라고 의무로 적는다. 파일이 없어 `불명`이다[](source:i-dr-res) |
 
 @callout level=open-question title="확인하지 못한 것"
