@@ -1,112 +1,119 @@
 # $impeccable hooks
 
-현재 프로젝트의 **디자인 검출기 hook**을 관리합니다.
+현재 프로젝트의 **design detector hook**을 관리한다.
 
-이 hook은 디자인과 관련 있는 파일 (`.tsx`, `.jsx`, `.html`, `.vue`, `.svelte`, `.astro`, `.css`, `.scss`, `.sass`, `.less`, `.ts`, `.js`)을 직접 편집할 때 impeccable 디자인 검출기를 실행합니다. Claude Code, Codex, Cursor, GitHub Copilot은 도구 사용 후 hook을 사용해 짧은 시스템 알림을 에이전트 문맥에 넣습니다. 발견 사항에는 수정 안내가 표시되고, 남은 문제에는 다시 알림이 가며, UI 성격의 파일이 깨끗하면 조용한 모드가 아닐 때 짧게 확인해 줍니다 (`hook.quiet` 설정). 일반 `.ts`와 `.js` 파일도 검사하지만 검출기에 발견 사항이 없으면 조용히 넘어갑니다. Grok Build는 같은 PostToolUse 검사를 실행해 수정된 파일을 표시하고 Stop 시점에 `additionalContext`로 발견 사항을 알립니다. Grok은 해당 stdout을 버리므로 파일을 편집할 때마다 알림을 기대하지 않습니다.
+이 hook은 설계와 관련된 파일(`.tsx`, `.jsx`, `.html`, `.vue`, `.svelte`, `.astro`, `.css`, `.scss`, `.sass`, `.less`, `.ts`, `.js`)을 직접 편집할 때 impeccable design detector를 실행한다. Claude Code, Codex, Cursor, GitHub Copilot은 post-tool-use hook을 쓰며, 편집 뒤 짧은 system reminder를 에이전트 컨텍스트에 넣는다. 발견 사항에는 수정 안내 프롬프트가 붙고, 아직 해결되지 않은 문제에는 다시 알림이 가며, 이상이 없는 UI 파일에는 짧은 확인(ack)이 붙는다. 단, quiet 모드(config의 `hook.quiet`)가 켜져 있으면 확인은 생략한다. 일반 `.ts`와 `.js` 파일도 검사하지만, detector가 무언가를 찾지 않으면 조용히 넘어간다. Grok Build는 PostToolUse 검사로 변경된 파일을 표시한 뒤, 발견 사항을 Stop의 `additionalContext`로 보여 준다. Grok에서는 편집마다 알림이 오지 않는다. Grok이 그 stdout을 버리기 때문이다. Hermes Agent에서는 편집별 발견 사항이 `write_file` 또는 `patch` 도구 결과 안의 `impeccable` 필드로 들어온다.
 
-검출기 규칙은 두 단계로 실행됩니다. 편집 후 hook은 즉시 수정할 가치가 있는 기계적이고 명확한 문제만 먼저 보여줍니다. 예를 들어 이미지 손상, 콘텐츠 넘침, 대비 및 가독성 실패, 그라데이션 텍스트, 발광 그림자, 디자인 시스템 이탈 등입니다. 나머지 (문구 리듬, 팔레트와 타이포그래피 취향, 레이아웃 리듬)는 Stop hook 이벤트에서 전체 규칙 세트를 실행하는 심층 검사까지 미룹니다. 이 검사는 세션에서 수정한 모든 UI 파일을 훑고 편집 후 검사에서 이미 보고한 항목을 중복 제거해 남은 내용을 한 번에 알려줍니다. 더 보고할 내용이 없는 세션은 조용히 끝납니다. 매 편집마다 전체 규칙 세트를 적용하려면 `.impeccable/config.json`에서 `hook.perEditRules`를 `"all"`로 설정합니다. Stop 심층 검사는 네이티브 `Stop` hook 이벤트를 전달하는 Claude Code, Codex, Grok Build에 연결되어 있습니다. Cursor에는 적용되지 않습니다 (`stop` hook은 후속 사용자 메시지에만 답할 수 있음). GitHub Copilot의 stop 유형 이벤트는 모델에 문맥을 다시 전달하지 않으므로 두 환경은 매 편집마다 전체 검출기를 실행합니다. Grok은 `end_turn` 뒤에 `reason: "shutdown"`인 관찰 전용 Stop도 발생시키므로 이는 건너뛰고 `end_turn`에서만 검사합니다.
+detector 규칙은 두 단계로 실행된다. 편집별 hook은 즉시 단계(immediate tier)의 규칙만 보여 준다. 이는 편집을 끊고 알릴 만한, 기계적으로 명확하고 모호하지 않은 문제다. 예를 들어 깨진 이미지, 넘치는 콘텐츠, 대비와 가독성 실패, 그라디언트 텍스트, glow 그림자, 디자인 시스템 drift가 여기에 든다. 나머지(카피 리듬, 색과 타이포그래피 취향, 레이아웃 리듬)는 `Stop` hook 이벤트의 deep pass로 미룬다. 이 단계는 세션에서 건드린 모든 UI 파일에 전체 규칙 세트를 실행하고, 편집별 pass가 이미 보고한 내용과 중복되지 않게 걸러서 남은 발견 사항을 한 번만 보여 준다. 보고할 것이 없는 세션은 조용히 끝난다. `.impeccable/config.json`에서 `hook.perEditRules`를 `"all"`로 설정하면 편집마다 전체 규칙 세트를 다시 쓴다. Stop deep pass는 네이티브 `Stop` hook 이벤트를 보내는 Claude Code, Codex, Grok Build와, 플러그인이 `pre_verify`에서 이벤트를 보내는 Hermes Agent에 연결되어 있다. Cursor에는 deep pass가 없다. Cursor의 `stop` hook은 후속 사용자 메시지로만 응답할 수 있기 때문이다. GitHub Copilot의 stop 계열 이벤트는 모델에 컨텍스트를 되돌려 주지 않으므로, Copilot에서는 편집마다 전체 detector를 쓴다. Grok은 `end_turn` 뒤에 `reason: "shutdown"`인 관찰 전용 Stop도 보내는데, 이 경우는 건너뛰고 `end_turn`에서만 검사한다.
 
-모든 hook 검사는 기계적 검사입니다. 스캐너가 잡지 못하는 세심한 판단은 UI를 수정하기 전에 Skill에서 불러오는 [craft-floor.md](craft-floor.md)에 있으므로 hook 연결 여부와 관계없이 적용됩니다. 자동 hook이 없는 세션은 `impeccable context`가 마지막에 검출기를 한 번 실행하라고 `MANUAL_DETECTOR_REQUIRED` 지시를 제공합니다.
+모든 hook은 기계적 검사 단계다. 어떤 스캐너도 잡지 못하는 관행은 [craft-floor.md](craft-floor.md)에 있다. skill은 UI를 편집하기 전에 이 파일을 읽으므로, hook이 연결되어 있는지와 관계없이 그 관행이 적용된다. 자동 hook이 없는 세션은 `impeccable context`에서 `MANUAL_DETECTOR_REQUIRED` 지시를 한 번 받고, 작업이 끝날 때 detector를 한 번 실행하라는 요청을 받는다.
 
-이 명령은 `.impeccable/config.json` (통합 Impeccable 설정)을 편집해 **프로젝트 단위로** hook을 켜고 끕니다. 런타임 설정은 `hook` 아래, 공통 검출기 제외 항목은 `detector` 아래에 있습니다. CLI가 기록하는 설치 동의 결정 (`hook.consent`)을 비롯한 개발자별 재정의는 Git에서 제외되는 `.impeccable/config.local.json`에 둡니다. `hook.enabled: false`로 hook을 끄고, `hook.quiet: true`로 깨끗함 / 보류 상태 확인 메시지를 숨기며, `hook.auditLog`에 NDJSON 로그 파일 경로를 지정할 수 있습니다. 기존 환경 변수 `IMPECCABLE_HOOK_DISABLED`, `IMPECCABLE_HOOK_QUIET`, `IMPECCABLE_HOOK_LOG`도 계속 지원하며 설정되면 config 값을 덮어씁니다.
+이 명령은 `.impeccable/config.json`을 편집해 hook을 프로젝트 단위로 켜고 끈다. 이 파일은 통합 Impeccable config다. hook 런타임 설정은 `hook` 키 아래에 있고, 공유 detector ignore는 `detector` 아래에 있다. 개발자별 재정의는 git에서 제외된 `.impeccable/config.local.json`에 있다. 여기에는 CLI가 기록하는 설치 동의 결정(`hook.consent`)도 포함된다. `hook.enabled: false`는 hook을 끄고, `hook.quiet: true`는 깨끗함과 대기 상태의 확인을 숨기며, `hook.auditLog`에 파일 경로를 지정하면 NDJSON 로그를 남긴다. 레거시 환경 변수 `IMPECCABLE_HOOK_DISABLED`, `IMPECCABLE_HOOK_QUIET`, `IMPECCABLE_HOOK_LOG`는 여전히 동작한다. 설정되어 있으면 이 config 값보다 우선한다.
 
-프로젝트가 Blade, Twig, ERB, Handlebars 파일을 사용하는 경우 서버 템플릿 확장은 **`detector.extensions` 아래에 선언**해야 합니다. 기본 확장자 목록에 없으므로 설정하지 않으면 hook이 건너뜁니다. 확장자마다 한 항목을 둡니다: `{ "ext": ".blade.php", "engine": "html" }`. `engine`은 분석기 (`html`은 마크업 템플릿, `text`는 JS / TS / CSS 계열 파일)를 선택하며 기본값은 `html`입니다. 파일명 끝과 비교하므로 `.blade.php`, `.html.erb` 같은 복합 확장자도 지원합니다. config는 확장자만 추가하며 기본 목록은 항상 적용됩니다.
+Blade, Twig, ERB, Handlebars 파일을 쓰는 프로젝트에서는 서버 측 템플릿 확장자를 **`detector.extensions`** 아래에 선언한다. 이 확장자는 내장 확장자 목록 밖에 있어서, 선언하지 않으면 hook이 건너뛴다. 확장자마다 항목 하나를 두며, 형식은 `{ "ext": ".blade.php", "engine": "html" }`이다. `engine`은 분석기를 고른다. 마크업 템플릿은 `html`, JS/TS/CSS 계열 파일은 `text`이며, 기본값은 `html`이다. 파일명 끝과 대조하므로 `.blade.php`, `.html.erb` 같은 이중 확장자도 동작한다. config는 확장자를 추가만 하며, 내장 목록은 항상 적용된다.
 
-수동 `.agents/skills/impeccable/scripts/impeccable detect` 검사도 기본적으로 같은 프로젝트 필터 설정을 사용합니다: `detector.ignoreRules`, `detector.ignoreFiles`, `detector.ignoreValues`, `detector.designSystem.enabled`. `hook.enabled`는 자동 hook 실행만 제어하며 수동 CLI 검사에는 영향을 주지 않습니다. 프로젝트 설정과 문맥을 무시하고 원시 검출기만 실행하려면 `.agents/skills/impeccable/scripts/impeccable detect --no-config ...`를 사용합니다. 같은 검출기 제외 항목을 CLI로 직접 CRUD 하려면 `.agents/skills/impeccable/scripts/impeccable ignores ...`를 사용합니다.
+수동 `.agents/skills/impeccable/scripts/impeccable detect` 검사도 기본으로 같은 프로젝트 필터 config를 쓴다. 즉 `detector.ignoreRules`, `detector.ignoreFiles`, `detector.ignoreValues`, `detector.designSystem.enabled`를 따른다. `hook.enabled`는 자동 hook 실행만 제어하며, 수동 CLI 검사에는 영향을 주지 않는다. 프로젝트 config와 context를 무시하는 원시 detector 실행이 필요하면 `.agents/skills/impeccable/scripts/impeccable detect --no-config ...`를 쓴다. 같은 detector ignore를 CLI에서 직접 추가, 조회, 수정, 삭제하려면 `.agents/skills/impeccable/scripts/impeccable ignores ...`를 쓴다.
 
-지원 하네스: Claude Code (프로젝트 범위 설치는 `.claude/settings.local.json`, 사용자 범위는 `~/.claude/settings.json`; 프로젝트 hook을 공용 `.claude/settings.json`으로 옮겨도 해당 위치에서 인식), Codex (프로젝트의 `.codex/hooks.json`), Cursor (프로젝트의 `.cursor/hooks.json`), Grok Build (프로젝트의 `.grok/hooks/impeccable.json`; `/hooks-trust` 또는 `--trust` 필요), GitHub Copilot (Copilot CLI와 클라우드 에이전트가 읽는 프로젝트의 팀 공유 커밋 파일 `.github/hooks/impeccable.json`). Copilot CLI는 저장소 기본 브랜치에 `.github/hooks/impeccable.json`이 커밋된 뒤 프로젝트 hook을 실행합니다.
+지원되는 harness는 다음과 같다. Claude Code는 프로젝트 범위 설치라면 `.claude/settings.local.json`을, 사용자 범위 설치라면 `$CLAUDE_CONFIG_DIR/settings.json`을 쓴다(기본값은 `~/.claude/settings.json`). hook을 공유 `.claude/settings.json`으로 옮겼다면 그 위치도 그대로 인정된다. Codex는 프로젝트의 `.codex/hooks.json`을 쓴다. Cursor는 프로젝트의 `.cursor/hooks.json`을 쓴다. Grok Build는 프로젝트의 `.grok/hooks/impeccable.json`을 쓰며, `/hooks-trust` 또는 `--trust`가 필요하다. GitHub Copilot은 프로젝트의 `.github/hooks/impeccable.json`을 쓴다. 이 파일은 팀이 공유하는 커밋된 파일이며, Copilot CLI와 cloud agent가 모두 읽는다. Hermes Agent는 `~/.hermes/plugins/`의 `impeccable-design-hook` 플러그인을 쓴다. 사용자가 `hermes plugins enable impeccable-design-hook`으로 한 번 활성화해야 한다. 프로젝트 설치의 launcher는 Hermes가 신뢰하는 프로젝트에서만 실행되며, 그 신뢰는 `hermes skills trust`로 설정한다. Copilot CLI의 경우, 저장소 수준 hook은 `.github/hooks/impeccable.json`이 저장소의 기본 브랜치에 커밋된 뒤에 실행된다.
 
-**Cursor**에서는 hook이 `Write` 도구의 `postToolUse`에서 실행됩니다 (에이전트의 각 파일 쓰기). 알림은 `additional_context`로 반환되며 Cursor가 도구 결과 뒤에 추가합니다. 이전에 설정된 프로젝트는 쓰기 전에 잘못된 내용을 차단하던 `preToolUse` 게이트 (`hook-before-edit`)를 사용했을 수 있습니다. `hooks on`, `impeccable update`, `impeccable doctor --fix` 중 하나가 항목을 `postToolUse`로 옮기기 전까지 기존 게이트도 작동합니다.
+**Cursor**에서는 hook이 `Write` 도구의 `postToolUse`에서 실행된다. 에이전트의 모든 파일 편집이 여기 해당한다. 그리고 reminder를 `additional_context`로 돌려주며, Cursor는 이를 도구 결과 뒤에 덧붙인다. 이 기능이 도입되기 전에 설정된 프로젝트는 `preToolUse` 게이트(`hook-before-edit`)를 실행했다. 이 게이트는 잘못된 쓰기가 반영되기 전에 막았다. `hooks on`, `impeccable update`, `impeccable doctor --fix` 중 하나가 항목을 `postToolUse`로 옮기기 전까지 이 게이트는 여전히 동작한다.
 
-Gemini는 기존 설정과 병합해 `.gemini/settings.json`에 세션 및 완료 hook을 설치합니다 (주석은 허용됩니다. 주석이 있는 파일을 다시 쓰기 전 `settings.json.bak`으로 백업하고, 유효한 JSON이 아니면 그대로 둡니다). 편집 후 검출기 hook은 설치하지 않습니다. `BeforeTool` hook은 `build-phase`를 실행하는 셸 명령만 다시 씁니다. macOS와 Linux에서만 지원되며, Gemini가 PowerShell로 hook을 실행하는 Windows에서는 세션 id가 셸에 전달되지 않아 빌드 컴파일이 세션과 연결되지 않고 완료 알림도 조용히 넘어갑니다.
+Gemini는 세션 hook과 완료 hook을 `.gemini/settings.json`에 설치하며, 이미 있는 설정과 병합한다. 주석은 허용된다. 주석이 있는 파일은 다시 쓰기 전에 `settings.json.bak`으로 백업한다. JSON이 유효하지 않은 파일은 건드리지 않는다. Gemini는 편집별 detector hook을 설치하지 않는다. `BeforeTool` hook은 `build-phase`를 실행하는 셸 명령만 다시 쓰며, 그것도 macOS와 Linux에서만 동작한다. Windows에서는 Gemini가 PowerShell로 hook을 실행하며, 이때 셸에 session id가 전달되지 않는다. 따라서 comp 빌드가 세션과 연결되지 않고, 완료 reminder는 조용히 남는다.
 
-## 라우팅
+Claude Code 프로젝트 skill이 없으면 `hooks on`은 `CLAUDE_CONFIG_DIR`(기본값 `~/.claude`) 안의 `skills/impeccable/scripts/impeccable`을 찾는다. 그리고 설치된 launcher의 절대 경로를 써서, 그 계정의 `settings.json`에 hook을 기록한다. 상대 계정 디렉터리는 호출자의 작업 디렉터리를 기준으로 해석한다. 명시적 계정 디렉터리는 배타적이다. 다른 계정의 기본 skill과 설정은 대신 쓰지 않는다. status와 context는 같은 계정 설정을 읽는다. 어떤 design harness도 연결할 수 없다면 `hooks on`은 그 사실을 말한다. 건너뛴 잘못된 설정이나 찾지 못한 skill 경로를 보고하고, 다음 단계를 안내한다.
 
-첫 번째 인자는 동작입니다. 기본값은 `status`입니다.
+status는 각 manifest에서 현재 이벤트 항목과 matcher를 확인하며, 지원되는 경우 Stop pass도 포함한다. Claude Code는 프로젝트 설정 파일(또는 사용자 설정 파일) 중 하나에 현재 항목이 있을 때 연결된 것으로 본다. 레거시 명령, 부분 manifest, 파일 없음은 연결되지 않은 것으로 보고한다. config에서 켜져 있는데 design harness가 연결되어 있지 않다면, status는 그 사실을 말하고 복구 명령으로 `impeccable hooks on`을 알려 준다. 설치되어 활성화된 Hermes design-hook 플러그인도 연결된 것으로 본다. `on`은 플러그인 설정을 바꾸지 않고 그 상태를 확인만 한다. 연결 작업은 manifest 항목을 확인할 뿐이다. harness의 신뢰 요구와 세션 재로드는 여전히 필요하다.
 
-| 동작 | 기능 |
+프로젝트의 `config.local.json`에서 `hook.consent`가 `"accepted"`이고 hook이 켜져 있으면, `impeccable context`는 설치된 harness skill의 누락되거나 오래된 항목을 복구하고, 복구 내용을 한 줄로 보고한다. 공유 config의 동의는 이 쓰기를 허가하지 않는다. 자동 복구는 관련 없는 설정과 hook을 보존하며, 형식이 잘못된 manifest는 건드리지 않는다. 개인 동의가 없으면 context는 manifest를 쓰지 않는다. 대신 `MANUAL_DETECTOR_REQUIRED`를 유지하고, 누락되었거나 오래된 harness 연결을 이름으로 알려 준다. 명시적으로 꺼진 hook은 계속 꺼진 상태로 남는다.
+
+## Routing
+
+첫 번째 인자가 동작이다. 기본값은 `status`다.
+
+| Action | What it does |
 |---|---|
-| `status` | 현재 상태, 공용 / 로컬 설정 경로, 제외된 규칙 / 파일 / 값, 환경 변수 재정의 여부를 출력합니다. |
-| `on` | `.impeccable/config.json`에서 `enabled: true`로 설정하고 로컬 hook 동의를 허용으로 기록하며 Skill이 설치된 경우 provider hook manifest를 설치 / 복구합니다. |
-| `off` | `.impeccable/config.json`에서 `enabled: false`로 설정합니다. |
-| `ignore-rule <id>` | `<id>`를 `detector.ignoreRules`에 추가합니다. `overused-font`는 `--all-values`가 필요합니다. 프로젝트 전체에서 해당 규칙을 억제합니다. |
-| `ignore-file <glob>` | `<glob>`을 `detector.ignoreFiles`에 추가합니다. 일치하는 파일의 **모든 규칙**을 억제합니다. |
-| `ignore-value <id> <value> [--shared] [--reason "..."]` | 규칙 / 값 제외를 공용 `.impeccable/config.json`에 추가합니다. |
-| `ignore-value <id> <value> --local [--reason "..."]` | 비공개 규칙 / 값 제외를 `.impeccable/config.local.json`에 추가합니다. |
-| `ignore-value <id> "*" --file <glob> [--file <glob>...]` | 지정한 파일에서만 규칙 하나를 끄고 다른 곳에서는 계속 적용합니다. `--file`을 반복하거나 `--file=<glob>` / `--files=<glob>`을 사용할 수 있습니다. `--file` 없이 단독 `"*"`를 쓰면 거부됩니다. 프로젝트 전체를 대상으로 하려면 정말 의도한 경우 `ignore-rule <id>`를 사용합니다. |
-| `reset` | 프로젝트 config, 중복 제거 캐시, Cursor 보류 큐를 삭제하고 `on`이 설치한 모든 provider manifest에서 hook 항목을 제거합니다. 커밋된 Copilot 파일도 포함됩니다 (단, `on`이 쓰지 않는 팀 공유 `settings.json`은 건드리지 않음). |
+| `status` | 현재 상태, 공유 및 로컬 config 경로, 무시 중인 규칙/파일/값, 환경 변수 override, 그리고 각 harness의 실제 manifest 연결 상태를 출력한다. |
+| `on` | `.impeccable/config.json`에서 `enabled: true`로 설정하고, 로컬 hook 동의를 accepted로 기록하며, skill이 설치되어 있으면 provider hook manifest를 설치하거나 복구한다. |
+| `off` | `.impeccable/config.json`에서 `enabled: false`로 설정한다. |
+| `ignore-rule <id>` | `<id>`를 `detector.ignoreRules`에 추가한다. `overused-font`는 `--all-values`가 필요하다. 프로젝트 전체에서 규칙을 억제한다. |
+| `ignore-file <glob>` | `<glob>`을 `detector.ignoreFiles`에 추가한다. 일치하는 파일에 대해 **모든** 규칙을 억제한다. |
+| `ignore-value <id> <value> [--shared] [--reason "..."]` | 규칙/값 억제를 공유 `.impeccable/config.json`에 추가한다. |
+| `ignore-value <id> <value> --local [--reason "..."]` | 개인 규칙/값 억제를 `.impeccable/config.local.json`에 추가한다. |
+| `ignore-value <id> "*" --file <glob> [--file <glob>...]` | 일치하는 파일에서만 한 규칙을 끈다. 다른 곳에서는 그 규칙이 계속 활성화된다. `--file`을 반복하거나 `--file=<glob>` / `--files=<glob>`을 쓴다. `--file` 없이 단독 `"*"`를 쓰면 거부된다. 프로젝트 전체에 적용하려면 `ignore-rule <id>`를 쓴다. |
+| `reset` | 프로젝트 config, 중복 제거 캐시, Cursor 대기열을 삭제한다. `on`이 설치한 모든 provider manifest에서 hook 항목을 제거한다. `on`이 쓰지 않는 팀 공유 `settings.json`은 건드리지 않는다. 커밋된 Copilot 파일도 포함한다. |
 
-## 흐름
+## Flow
 
-1. 사용자 인자에서 동작을 확인합니다. 동작을 지정하지 않았으면 `status`를 기본으로 사용합니다.
-2. 관리 스크립트를 실행하고 출력을 수정 없이 전달합니다.
+1. 사용자의 인자에서 동작을 정한다. 동작이 주어지지 않았다면 `status`로 본다.
+2. 관리 스크립트를 호출하고, 사용자에게 출력을 그대로 전달한다.
 
    ```bash
    .agents/skills/impeccable/scripts/impeccable hooks <action> [args...]
    ```
 
-3. `<action>`이 `off`면 한 줄로 다음을 덧붙입니다: “완료했습니다. `$impeccable hooks on`을 실행할 때까지 이 프로젝트의 새 편집에서는 디자인 hook이 작동하지 않습니다.”
-4. `<action>`이 `on`이면 다음을 덧붙입니다: “완료했습니다. 다음에 UI 파일을 Edit / Write하면 디자인 hook이 실행됩니다.”
-5. `<action>`이 `ignore-value`, `ignore-file`, `ignore-rule`이면 스크립트 출력을 그대로 표시합니다. 기본 범위는 공용 `.impeccable/config.json`이며 비공개 예외를 사용자가 명시적으로 요청했을 때만 `--local`을 추가합니다.
-6. `<action>`이 `status`면 스크립트 출력만 표시합니다. 사용자가 후속 질문을 하지 않는 한 부연하지 않습니다.
+3. `<action>`이 `off`라면 다음 한 줄을 덧붙인다. "Done. `$impeccable hooks on`을 실행하기 전까지 이 프로젝트에서는 새 편집이 design hook을 실행하지 않는다."
+4. `<action>`이 `on`이라면, 명령이 설치하거나 복구한 내용을 보고한다. 설치된 skill 폴더가 없거나 설정을 건너뛰었다면 그 결과를 보고하고, hook이 실행될 것이라고 주장하지 않는다. 그렇지 않다면, harness가 업데이트된 설정을 불러와야 하며(그리고 필요한 신뢰 요구를 충족해야 하며) 그 뒤에야 hook이 실행된다고 알린다. Hermes Agent에서는 `on`이 플러그인을 설치하거나 활성화할 수 없다. `impeccable context`가 `MANUAL_DETECTOR_REQUIRED`를 보고했다면, 사용자에게 `npx impeccable install`을 실행한 뒤 `hermes plugins enable impeccable-design-hook`을 실행하라고 말한다.
+5. `<action>`이 `ignore-value`, `ignore-file`, `ignore-rule` 중 하나라면, 스크립트 출력을 그대로 출력한다. 기본 범위는 공유 `.impeccable/config.json`이다. 사용자가 개인 예외를 명시적으로 요청한 경우에만 `--local`을 덧붙인다.
+6. `<action>`이 `status`라면, 스크립트 출력을 그대로 출력한다. 사용자가 후속 질문을 하지 않았다면 해설을 덧붙이지 않는다.
 
-## 발견 사항 분류
+## Triage findings
 
-hook 자체는 제외 설정을 쓰지 않습니다. 예외는 모두 `impeccable hooks`를 통해 추가합니다. 각 발견 사항을 다음 세 가지 중 하나로 분류합니다.
+hook 자체는 ignore 설정을 쓰지 않는다. 모든 예외는 `impeccable hooks`를 거친다. 각 발견 사항은 다음 세 가지 결과 중 하나로 분류한다.
 
-- **실제 디자인 문제**: 수정합니다. 수정 대신 제외 항목을 추가하거나 차단된 쓰기를 통과시키기 위해 ignore를 만들지 않습니다.
-- **확신할 수 있는 거짓 양성 또는 허용된 예외**: 가장 좁은 범위의 ignore를 직접 저장하고 답변에서 밝힙니다. 명명할 수 있는 근거가 있어야 합니다: 의도적인 데모나 fixture, 나쁜 디자인을 보여주는 문서, 문자 그대로의 동작 또는 도메인에 맞는 움직임 (튀는 공), 사용자가 이미 확인한 선택 등. 근거를 `--reason`에 `"<결정 주체: 근거>"` 형식으로 남깁니다. 사용자가 실제로 확인했을 때만 “사용자 확인”이라고 씁니다.
-- **확신할 수 없음**: 발견 사항을 유지하고 한 줄로 사용자에게 묻습니다. 나중에 편집 때마다 hook이 다시 실행되는 것보다 한 줄 질문이 낫습니다.
+- **실제 디자인 문제:** 고친다. 수정을 건너뛰거나 차단된 쓰기를 밀어 넣으려고 ignore를 추가하지 않는다.
+- **확실한 오탐이나 승인된 예외:** 가장 좁은 ignore를 직접 저장하고, 답변에서 그 사실을 밝힌다. 기준은 당신이 이름을 댈 수 있는 증거다. 의도된 데모나 픽스처, 나쁜 디자인을 문서화하는 경우, 문자 그대로의 모션(튀는 공)이나 도메인에 맞는 모션, 또는 사용자가 이미 확인한 선택이 여기에 든다. 그 증거를 `--reason`에 `"<누가 결정했는지: 증거>"` 형식으로 넣는다. "user confirmed"는 사용자가 실제로 확인했을 때만 쓴다.
+- **확신이 없음:** 발견 사항을 그대로 두고, 이유를 한 줄로 밝힌다. 정말로 결정할 수 없을 때만 사용자에게 묻는다.
 
-자체 판단으로 처리할 수 있는 범위는 `ignore-value`까지입니다. `ignore-file`과 `ignore-rule`은 너무 많은 검사를 억제하므로 임의로 추가하지 말고 먼저 사용자에게 묻습니다.
+직접 처리할 수 있는 범위는 `ignore-value`까지다. `ignore-file`과 `ignore-rule`은 너무 많은 것을 숨기므로, 자신의 판단만으로 추가하지 않는다. 먼저 사용자에게 묻는다.
 
-가장 좁은 예외를 우선 사용합니다.
+가능한 한 가장 좁은 예외를 쓴다.
 
-- 발견 메시지에 `ignore-value <rule> <value>` 쌍이 있으면 그 값을 `--reason`과 함께 `impeccable hooks ignore-value`로 전달합니다. 기본값은 공용 `.impeccable/config.json`에 저장됩니다.
-- `overused-font`, `bounce-easing` 같은 특정 값 발견에는 해당 값을 대상으로 `ignore-value`를 사용합니다. 특정 글꼴 하나에 `ignore-rule overused-font`를 쓰지 않습니다.
-- `side-tab`처럼 값별 명령이 없다면 그 규칙 하나를 해당 파일에 한정합니다: `ignore-value <id> "*" --file <path>`. 먼저 `.agents/skills/impeccable/scripts/impeccable detect <path>`를 실행해 실제로 어떤 규칙이 발생하는지 확인합니다.
-- `ignore-file <path>`는 fixture, 생성 산출물, 의도적인 엉성한 디자인 시연 등 파일 전체가 디자인 검토 범위 밖일 때만 사용합니다. 미래에 추가될 규칙까지 포함해 해당 파일의 모든 규칙을 영구적으로 억제합니다. 한 규칙만 시끄러운 실제 UI라면 위의 파일 한정 값 제외를 사용합니다.
-- `ignore-rule <id>`는 사용자가 프로젝트 전체에서 규칙 하나를 억제하라고 요청한 경우에만 사용합니다. 일반적으로 과다 사용된 글꼴을 제외하려면 사용자가 전체적으로 무시해 달라고 요청했을 때만 `ignore-rule overused-font --all-values`를 사용합니다.
-- 기본적으로 config ignore (위의 명령)를 사용합니다. 제외 항목을 한곳에서 검토할 수 있습니다. 한 파일만 저장소 밖으로 옮겨야 하는 경우 (생성 / 내보낸 단독 문서, 이메일로 보내는 HTML 파일)에만 인라인 주석을 사용합니다. 지원 표기는 `impeccable-disable <rule>` (파일 전체), `impeccable-disable-line` / `impeccable-disable-next-line` (한 줄)이며, 어떤 주석 문법에서도 쓸 수 있고 `:` 또는 `--` 뒤에 이유를 덧붙일 수 있습니다. 검출기는 기본적으로 이를 인식하며 `--no-inline-ignores` 또는 `--no-config`로 우회할 수 있습니다.
+- 발견 사항 줄에 `ignore-value <rule> <value>` 쌍이 보이면, 그것을 `--reason`과 함께 `impeccable hooks ignore-value`에 넘긴다. 기본적으로 공유 `.impeccable/config.json`에 기록된다.
+- `overused-font`나 `bounce-easing`처럼 값에 특화된 발견 사항에는, 그 특정 값에 대해 `ignore-value`를 쓴다. 특정 폰트 하나 때문에 `ignore-rule overused-font`를 쓰지 않는다.
+- `side-tab`처럼 값 단위 명령이 없는 발견 사항은 그 규칙 하나만 파일 단위로 범위를 좁힌다. `ignore-value <id> "*" --file <path>`를 쓴다. 먼저 `.agents/skills/impeccable/scripts/impeccable detect <path>`를 실행해서, 그 파일에서 실제로 무엇이 발생하는지 확인한다.
+- `ignore-file <path>`는 파일 전체가 디자인 검토 범위 밖일 때만 쓴다. 예를 들어 픽스처, 생성된 산출물, 의도적인 슬롭 데모가 여기에 든다. 이 명령은 아직 작성되지 않은 규칙까지 포함해 그 파일의 모든 규칙을 영구히 숨긴다. 실제 UI 화면에서 시끄러운 규칙 하나가 문제라면, 앞에서 말한 파일 범위의 값 ignore를 쓴다.
+- `ignore-rule <id>`는 사용자가 그 규칙 전체를 프로젝트 전체에서 억제하라고 요청했을 때만 쓴다. 폰트 전반에 대한 넓은 overused-font 억제는 사용자가 폰트 과다 사용을 전반적으로 무시하라고 요청했을 때만 `ignore-rule overused-font --all-values`를 쓴다.
+- 기본적으로는 config ignore(위의 명령들)를 우선한다. 한곳에서 검토할 수 있도록 억제를 모아 두기 위해서다. 인라인 주석은 면제가 파일 하나와 함께 저장소 밖으로 나갈 때만 쓴다. 예를 들어 생성되거나 내보낸 독립형 문서, 이메일로 보내는 HTML 파일이 여기에 든다. 지원되는 표식은 `impeccable-disable <rule>`(파일 전체), `impeccable-disable-line` / `impeccable-disable-next-line`(한 줄)이며, 어떤 주석 문법에서든 쓸 수 있다. `:` 또는 `--` 뒤에 선택적으로 이유를 붙인다. detector는 기본으로 이 표식을 인정한다. `--no-inline-ignores` 또는 `--no-config`를 쓰면 우회한다.
 
-값별 예외:
+값 단위 예외의 예시는 다음과 같다.
 
 ```bash
 .agents/skills/impeccable/scripts/impeccable hooks ignore-value overused-font Inter --shared --reason "User confirmed Inter is intentional"
 ```
 
-근거를 명시하는 자체 판단 예외:
+근거를 명시한 자체 처리 예외의 예시는 다음과 같다.
 
 ```bash
 .agents/skills/impeccable/scripts/impeccable hooks ignore-value bounce-easing bounce-ball --shared --reason "Agent: literal ball-bounce animation, bounce easing is the subject"
 ```
 
-글꼴 규칙 전체 예외:
+폰트 규칙 전체에 대한 예외의 예시는 다음과 같다.
 
 ```bash
 .agents/skills/impeccable/scripts/impeccable hooks ignore-rule overused-font --all-values --reason "User asked to ignore overused fonts generally"
 ```
 
-나머지 규칙은 검토할 파일에 한 규칙만 제외:
+한 파일에서 한 규칙만 끄는 예외의 예시는 다음과 같다. 그 파일은 다른 모든 것에 대해서는 여전히 검토할 가치가 있는 경우다.
 
 ```bash
 .agents/skills/impeccable/scripts/impeccable hooks ignore-value design-system-font-size "*" --file "src/overlay/widget.js" --reason "Injected widget builds its own type scale; DESIGN.md's ramp describes the site"
 ```
 
-파일 전체가 검토 범위 밖인 경우:
+파일 전체 예외의 예시는 다음과 같다. 그 파일이 범위 밖인 경우다.
 
 ```bash
 .agents/skills/impeccable/scripts/impeccable hooks ignore-file "src/legacy/Card.tsx"
 ```
 
-## 제약
+## Constraints
 
-- 이 명령에서 `.impeccable/config.json`이나 `.impeccable/config.local.json`을 직접 수정하지 않습니다. 쓰기 검증과 파일 구조 일관성을 위해 항상 `impeccable hooks`를 거칩니다. 예외는 관리 동작이 없는 `detector.extensions`입니다. 사용자가 템플릿 스택을 다루도록 요청하면 `.impeccable/config.json`의 해당 필드 하나만 직접 편집하고 나머지는 그대로 둡니다.
-- 이 흐름에서 `impeccable hook`과 `impeccable hook-before-edit` 뒤의 실행기나 바이너리를 수정하지 않습니다. 이는 Skill 배관 코드입니다.
-- hook은 편집을 차단하지 않으며 편집 후 알림을 제공합니다. (기존 `preToolUse` 게이트를 쓰는 Cursor 프로젝트는 manifest를 옮길 때까지 쓰기를 차단할 수 있습니다.) hook을 끄면 알림이 중단됩니다.
-- hook은 Impeccable Skill에 포함되어 있습니다. 프로젝트 설치 경로는 `.claude/settings.local.json`, `.codex/hooks.json`, `.cursor/hooks.json`, `.github/hooks/impeccable.json`, `.gemini/settings.json`입니다. 사용자 범위 Claude 설치는 `~/.claude/settings.json`을 사용합니다. Codex에서는 처음에 사용자가 `/hooks`로 hook을 승인해야 합니다. Cursor에서는 Settings -> Hooks에서 hook이 활성화됐는지 확인합니다. GitHub Copilot CLI는 `.github/hooks/impeccable.json`이 저장소 기본 브랜치에 커밋되면 읽으며 클라우드 에이전트는 저장소에서 직접 읽습니다.
+- 이 명령에서 `.impeccable/config.json`이나 `.impeccable/config.local.json`을 손으로 편집하지 않는다. 항상 `impeccable hooks`를 거쳐서, 쓰기가 검증되고 파일 형태가 일관되게 유지되도록 한다. 예외가 하나 있다. `detector.extensions`에는 관리 동작이 없으므로, 사용자가 템플릿 스택을 포함시키라고 요청하면 `.impeccable/config.json`에서 그 필드 하나만 직접 편집하고, 파일의 나머지는 건드리지 않는다.
+- 이 흐름에서 `impeccable hook`과 `impeccable hook-before-edit`가 실행하는 launcher나 binary를 편집하지 않는다. 그것들은 skill의 배관 코드다.
+- 사용자가 hook을 얼마나 신뢰할 수 있는지 물으면, hook이 샌드박스 없이 에이전트의 환경과 네트워크 접근 권한으로 엔진을 실행한다고 말한다. Copilot cloud agent에서도 마찬가지이며, `.github/hooks/impeccable.json`이 커밋된 뒤에는 같다고 말한다. launcher는 내려받은 엔진을 처음 실행하기 전에 `.agents/skills/impeccable/scripts/engine-checksums.txt`와 대조한다고 함께 알린다. **절대로** 샌드박스라고 말하지 않는다.
+- hook은 편집을 막지 않는다. 편집 뒤의 reminder만 낸다. (예전 `preToolUse` 게이트를 쓰는 Cursor 프로젝트는 manifest가 옮겨지기 전까지 잘못된 쓰기를 막을 수 있다.) 비활성화하면 reminder가 멈춘다.
+- hook은 Impeccable skill과 함께 번들된다. 프로젝트 설치는 `.claude/settings.local.json`, `.codex/hooks.json`, `.cursor/hooks.json`, `.github/hooks/impeccable.json`, `.gemini/settings.json`을 쓴다. 사용자 범위의 Claude 설치는 활성 계정의 `$CLAUDE_CONFIG_DIR/settings.json`(기본값 `~/.claude/settings.json`)을 쓴다. Codex에서는 사용자가 처음 한 번 `/hooks`로 hook을 승인해야 한다. Cursor에서는 Settings -> Hooks에서 hook이 켜져 있는지 확인한다. GitHub Copilot에서는 CLI가 `.github/hooks/impeccable.json`을 저장소의 기본 브랜치에 커밋한 뒤 불러오며, cloud agent는 저장소에서 직접 읽는다.
 
-## 실패 상황
+## Failure modes
 
-- `.impeccable/config.json` 또는 `.impeccable/config.local.json`을 읽을 수 없거나 형식이 잘못된 경우 hook은 해당 파일을 무시하고 남은 유효 설정 / 기본값을 사용합니다. `impeccable hooks status`에서 잘못된 파일이 무시되었음을 확인할 수 있습니다.
-- 사용자가 전역적으로 “hook을 꺼 달라”고 요청하면 `$impeccable hooks off`를 우선 안내합니다 (현재 프로젝트에서 지속 적용되며 config에 `hook.enabled: false`를 기록). 기존 환경 변수 `IMPECCABLE_HOOK_DISABLED=1`도 셸을 따르는 일회성 재정의로 사용할 수 있습니다.
+- `.impeccable/config.json`이나 `.impeccable/config.local.json`을 읽을 수 없거나 형식이 잘못되었다면, hook은 그 파일을 무시하고 나머지 유효한 config나 기본값을 쓴다. `impeccable hooks status`는 형식이 잘못된 파일을 무시됨으로 표시한다.
+- 사용자가 hook을 전역적으로 "disable"하라고 요청하면, 먼저 `$impeccable hooks off`를 안내한다. 이는 이 프로젝트에 지속 적용되며, config에 `hook.enabled: false`를 기록한다. 레거시 환경 변수 `IMPECCABLE_HOOK_DISABLED=1`도 셸을 따르는 일회성 override로 동작한다.

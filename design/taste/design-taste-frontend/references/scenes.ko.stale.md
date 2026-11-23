@@ -1,126 +1,77 @@
-# 스크롤 장면
+# 큰 장면(Big scenes)
 
-페이지에서 가장 인상적인 순간입니다. 페이지가 섹션을 세로로 이어 붙인 형태를 벗어나 하나의 장면이 되는 스크롤 구간입니다. 카메라가 사진의 바다를 가로질러 날아가거나, 사진이 작은 창에서 화면 전체로 커지거나, 스크롤에 따라 단어가 휘거나, 사진들이 궤도를 그리며 격자에 자리 잡습니다. 수상작 사이트에서 방문자가 기억하는 장면이며, 정돈된 섹션만 쌓아 만든 페이지에는 없는 요소입니다.
+테크 페이지에서 화면 전체가 스크롤에 따라 장면으로 바뀌는 한 구간이다. 각 장면은 `assets/scenes/<id>/` 폴더 하나다(`scene.js`, `scene.css`, `meta.json`, `demo.html`). `index.json`이 장면 목록을 담고, `lib.js`는 장면들이 공유하는 고정 무대(held stage)이며, `scenes.js`는 장면을 로드하고, `print.js`는 두 오브젝트 장면을 위해 오브젝트 렌더를 마운트한다.
 
-장면 라이브러리는 최근 Awwwards Sites of the Day를 분해해 만들었습니다(2026년 10월: 43개 사이트를 스크롤하며 프레임 단위로 기록하고, 장면 261개를 설명해 30개 유형으로 분류). 처음부터 자체 코드로 다시 구현하고 데스크톱과 휴대폰 너비, 움직임 줄이기 설정에서 프레임별로 테스트했으며 원본 장면과 비교해 검토했습니다. 사이트가 소유한 자료는 포함되지 않습니다. `library/scenes.json`이 배포되기 전까지 draw는 장면을 선택해 주지 않습니다. 장면이 필요한 페이지는 아래 규칙을 적용해 8절 방식으로 무대 위에 직접 구현합니다.
+## 누가 장면을 받는가
 
-## 목차
+- **테크 페이지에만:** software(앱, AI, 개발자 도구, 핀테크), tech(기술 제품, 하드웨어, 네트워크), gaming. 장소, 서비스, 평범한 제품(site-kind other: 카페, 게스트하우스, 상점, 스튜디오)은 장면을 받지 않으며 사진을 받는다. `index.json`의 `types`는 정확히 `software`, `tech`, `gaming`이다.
+- **페이지당 최대 하나.** 브리프가 장면의 `needs`를 갖춘 경우에만 쓴다(자체 사진, 자체 화면, 자체 문구. 게임의 키 아트와 엔진 내 캡처는 그 게임의 사진이다). 필요가 충족되지 않으면 장면도 없다. 고객의 그림을 대신하는 장면은 절대 쓰지 않는다. 아트 파일이 없는 게임은 `product` 무대와 세계관 섹션에서 제품 렌더 헬퍼(히어로 오브젝트나 자기 오브젝트들로 된 장면)로 키 아트를 렌더하며, 그 자리에 효과를 두지 않는다(`sections.md`, Gaming).
+- **무작위로 딜한다.** `fits`에 해당 섹션이 있고, `types`에 페이지 타입이 있고, `needs`를 브리프가 충족하는 장면 중에서, `weight`로 가중해 고른다. 단 `.taste-skill/scenes-history.json`의 최근 세 개는 제외한다(명령은 `effects-usage.md`에 있다). 계획에 장면과 그 섹션을 적는다. 큰 장면은 페이지의 효과 하나다. 셰이더 바탕도 없고, 옆에 WebGL 부품도 두지 않는다.
+- **히어로는 정지 상태에서 한 화면을 차지한다.** 그래서 장면은 `restH`가 1일 때만 히어로로 딜된다. `restH`가 2인 장면(현재 히어로 장면 세 개 모두)은 히어로 아래에만 간다. 제목이 h2인 두 화면짜리 섹션(`--h: 2`)이 된다. 그 경우 히어로는 평소처럼 딜된다.
+- **두 오브젝트 장면**(`fixed-hero-object`, `object-through-giant-type`)은 고객 자신의 업종에 속한 오브젝트를 WebGL로 렌더한다(카드 게임 엔진이라면 카드 덱, 엣지 네트워크라면 지구본). 다른 업종의 오브젝트는 절대 쓰지 않으며, 카페에 컵을 두지 않는다.
+- **나머지 페이지는 차분하게 둔다.** 페이지가 스크롤되었다고 움직이는 카드, 행, 타일은 없다. 장면 옆에서 페이지는 섹션 모먼트를 한두 개 더 쓸 수 있다(하우스 오버라이드: 큰 장면 하나와 스크롤 모먼트 한두 개). `moments.md`의 말대로 딜한다(짧은 페이지는 하나, 여덟 섹션 이상이면 둘). 장면의 섹션이나 그 옆 섹션에는 절대 두지 않는다. 장면의 `avoidMoments`나 그 쌍둥이(twin)에 해당하는 모먼트도 절대 두지 않는다(`effects-usage.md`, Big scene).
 
-1. 장면의 정의
-2. 페이지에 장면 넣기
-3. 장면 채우기
-4. 페이지에 맞추기
-5. 휴대폰, 움직임 줄이기, 스크립트 없음
-6. 확인
-7. 장면 규칙
-8. 라이브러리에 맞는 장면이 없을 때
-9. 카탈로그
+| id | fits | types | needs | WebGL | restH | phone |
+| --- | --- | --- | --- | --- | --- | --- |
+| `descend-through-weather` | 히어로(아래에만) | tech, gaming | 고객 세계의 높은 곳과 낮은 곳을 담은 사진 두 장 | - | 2 | 정지 |
+| `shaped-window-over-fixed-world` | 히어로(아래에만) | tech, gaming | 고객 세계를 담은 넓은 사진 한 장 | - | 2 | 정지 |
+| `fixed-hero-object` | 히어로(아래에만) | tech, gaming | 오브젝트 렌더 또는 누끼, 1-4개 챕터 | 1 | 2 | 정지 |
+| `powers-of-ten-pullback` | product | software, tech | 제품의 UI를 실제 크기로 | - | 1 | 정지 |
+| `product-assembles-into-its-action` | product | software, tech | HTML로 된 화면, 4-6단계 | - | 1 | 정지 |
+| `parts-lock-into-the-whole` | product | software, tech | 패널을 따라 잘라 낸 화면 | - | 1 | 정지 |
+| `fly-into-the-shape` | between, product | software, tech, gaming | 마크를 하나의 path로, 어두운 사진 한 장 | - | 1 | 정지 |
+| `letter-physics` | statement | software, tech, gaming | 주장과 그에 대한 답 | - | 1 | 라이트 |
+| `object-through-giant-type` | statement | software, tech, gaming | 짧은 3-5행 인용문, 오브젝트 | 1 | 1 | 정지 |
+| `dot-becomes-the-full-stop` | statement | software, tech, gaming | 4-6단어짜리 주장 하나 | - | 1 | 라이트 |
+| `letter-bar-floods-the-ground` | between, statement | software, tech, gaming | 두 문장, 그 뒤에 반전 섹션 | - | 1 | 정지 |
 
-## 1. 장면의 정의
+`powers-of-ten-pullback`은 절대 히어로가 되지 않는다. 첫 화면에는 제목도 액션도 없기 때문이다.
+각 장면의 `scene.js` 맨 위 주석에 마크업과 옵션이 있다. `meta.json`에는 `look`, `needs`, `never`, `avoidWith`가 있다.
 
-페이지가 스크롤되어 지나가는 동안 무대가 고정되어 있는 세로 섹션입니다. 무대는 `position: sticky`로 고정합니다. 섹션 높이는 (고정 시간 + 1) 화면이며, 무대는 그중 `hold` 화면만큼 고정됩니다. GSAP 타임라인은 스크롤에 따라 0에서 1까지 scrub됩니다. 휠 입력을 가로채지 않으므로 스크롤바가 실제 위치를 그대로 보여 주고 키보드와 트랙패드도 평소처럼 작동하며 장면은 끝납니다.
+## 페이지에 장면 넣기
 
-다음은 장면이 아닙니다. 위로 페이드되는 요소, 약한 패럴랙스, 고정 푸터, 마퀴. 이런 것은 차분한 모션 레이어에 해당합니다(`references/motion.md`). 장면은 화면 전체를 바꿉니다.
-
-방향성 시트에서 서로 다른 계열의 장면 두세 개를 선택합니다(시트 9절). 각 장면은 설명하려는 논지를 뒷받침하는 섹션에 둡니다. 6단계에서 해당 섹션과 함께 만듭니다. 장면은 구성이지 마지막에 더하는 장식이 아닙니다.
-
-## 2. 페이지에 장면 넣기
-
-공유 무대 파일과 선택한 장면 파일을 프로젝트에 복사합니다(`assets/scenes/stage.css`, `stage.js`, `<id>.css`, `<id>.js`). 각 장면 파일의 헤더 주석에는 필요한 마크업과 옵션이 적혀 있습니다. `assets/scenes/demo/<id>.html`은 그대로 실행할 수 있는 완성된 예제이므로 함께 읽습니다.
+장면 폴더와 공유 파일(`scenes.js`, `lib.js`, `scenes.css`, 오브젝트 장면이라면 `print.js`)을 `assets/scenes`로 복사한다. 장면의 헤더 주석을 보고 고객 자신의 문구와 사진으로 마크업을 쓴다. `<head>`에는 스크립트를 일찍 표시하는 한 줄과 두 스타일시트를 넣는다. 그래야 완성된 구도가 스크립트 없이도 스타일이 적용되며, 장면이 마운트될 때 아무것도 튀지 않는다. `<body>` 끝에는 런타임을 한 번 넣는다:
 
 ```html
 <head>
-  <script>document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="scenes/stage.css">
-  <link rel="stylesheet" href="scenes/<id>.css">
+  …
+  <script>document.documentElement.classList.add('sc-js');setTimeout(()=>document.documentElement.classList.add('sc-safe'),2500)</script>
+  <link rel="stylesheet" href="assets/scenes/scenes.css">
+  <link rel="stylesheet" href="assets/scenes/<id>/scene.css">
 </head>
-<body>
-  …
-  <section class="scene" data-scene="<id>" data-options='{"hold": 3}' aria-label="…">
-    <div class="scene-stage">
-      <!-- the markup from the scene file's header, filled with this page's content -->
-    </div>
-  </section>
-  …
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
-  <script src="scenes/stage.js"></script>
-  <script src="scenes/<id>.js"></script>
-  <script>Stage.smooth(); Stage.init();</script>
-</body>
+…
+<section class="sc" data-big-scene="<id>" data-big-scene-opts='{"hold": 1}' style="--h: <the scene's restH>" aria-labelledby="…">
+  <div class="sc__stage">…</div>
+</section>
+…
+<script type="module" src="assets/scenes/scenes.js"></script>
 ```
 
+섹션은 `main`의 직계 자식이다. `<html data-scenes-ready>`는 마운트되었음을 뜻한다. `data-scenes-over`가 있으면 결함이다. 장면은 페이지의 토큰, 글꼴, 라디우스, 버튼을 그대로 따른다.
 
-- 장면 파일에서 필요하다고 할 때만 SplitText(`gsap@3.15.0/dist/SplitText.min.js`)를 불러옵니다.
-- `Stage.smooth()`는 관성 계수를 적용한 휠 스크롤(Lenis, lerp 0.12)을 추가합니다. 터치와 움직임 줄이기 설정에서는 비활성화됩니다. 차분한 페이지라면 제외해도 되며, 장면은 어느 경우든 동작합니다.
-- `Stage.init()`은 페이지의 모든 `[data-scene]`을 시작합니다. 장면이 두 개라면 두 파일 모두 불러와야 합니다.
-- 버전은 고정되어 있습니다. `@latest`나 버전이 고정되지 않은 주요 버전으로 바꾸지 않습니다.
+### 높이 (규칙 3)
 
-## 3. 장면 채우기
+장면의 섹션도 다른 모든 섹션과 같이 페이지 리듬 안에 있다. 정확히 한두 화면이며, 문구는 내비 아래에 있다. 라이브 상태에서는 (hold + 1) 화면이다. `lib.js`와 모든 장면은 `hold`를 기본 1로 두므로, 라이브 섹션은 두 화면이다(1440x900에서 1800px). 정지 상태(휴대폰, 감소된 모션, 스크립트 없음)에서는 `scenes.css`가 섹션의 `--h`와 패딩을 최소 높이로 유지한다. 그러니 `--h`를 장면의 `restH`(위 표)로 설정하고, 이를 위한 페이지 CSS는 쓰지 않는다. 고정 높이는 구도를 자르고 다음 섹션 위로 넘치게 하기 때문이다. `data-screen="free"`로 장면을 검사에서 숨기지 않는다. 390 촬영본을 본다. 정지 구도가 화면의 절반도 채우지 못하면 빈 것으로 읽힌다(규칙 2).
 
-장면의 완성도는 넣는 콘텐츠에 달려 있습니다. 장면 파일 헤더와 시트의 “Content” 행에 필요한 이미지와 문구 수가 적혀 있으며, 다음 규칙은 모든 장면에 적용됩니다.
+## 규칙
 
-- **같은 계열의 이미지.** 조명, 색 보정, 주제의 종류를 맞춥니다. 일관성 없는 스톡 이미지가 섞이면 타이밍 오류보다 빨리 하나의 공간이라는 착각이 무너집니다. 주제의 실제 이미지(`assets.mjs`), 프로젝트 자체 이미지, 시트에서 선택한 이미지 순서로 사용합니다(`references/imagery.md`). 가장 크게 표시되는 크기에 맞춰 준비하고 `width`와 `height`를 설정합니다.
-- **한 호흡에 읽을 수 있는 문장.** 고정된 문장은 4–12단어, 캡션은 본문 글꼴과 문장형 대소문자로 1–4단어가 적당합니다. 화면에는 한 번에 문장 하나만 둡니다.
-- **장면은 주제를 말해야 합니다.** 스튜디오의 작업, 실제 운송 경로, 집의 네 방, 제품 상태 변화 등을 보여 줍니다. 서로 관계없는 사진으로 채운 장면은 기믹처럼 보입니다.
-- **실제 콘텐츠만 사용합니다.** 주제 이미지 여덟 장이 필요한데 세 장밖에 없다면 대체 이미지로 채우지 말고 `--redraw scenes`를 실행합니다.
+- **데모는 자리표시자다:** 배포되는 장면의 모든 그림, 문구, 오브젝트는 고객의 것이다. 사진의 크레딧은 푸터 줄에 적으며, 프레임 밖으로 잘린 것에는 "adapted"를 붙인다.
+- **장면 없이도 읽힌다:** 장면의 문구는 마크업 안의 실제 텍스트이며 읽는 순서대로 있다. 완성된 구도는 장면이 말하는 모든 것을 담는다.
+- **기본 스크롤만 쓴다:** 무대는 `hold` 화면 동안 고정된다. 휠을 가로채는 것은 없다.
+- **휴대폰에는 정지 또는 가벼운 버전만 준다. 전체 장면은 주지 않는다:** 768px 미만에서 모든 장면은 완성된 구도를 보여 준다. 다만 라이트로 표시된 두 타이포그래피 장면은 예외다(깊이가 없고, 겹치는 것이 없다).
+- **감소된 모션, 스크립트 없음, 모듈 실패:** 완성된 구도를 보여 주며, 이것이 hold의 끝 상태이기도 하다. 오브젝트 장면은 그 경우 오브젝트의 정지 이미지를 보여 주며, WebGL을 마운트하지 않는다.
+- **WebGL:** 장면당 컨텍스트는 최대 하나이며, 페이지의 공유 예산(`lib.glBudget`, `window.__tpGl`, 페이지당 네 개)에서 가져온다. 섹션이 라이브이고 뷰포트에서 한 화면 이내에 있을 때만 마운트되며, 벗어나면 파괴된다. WebGL이나 셰이더가 실패하면 그 아래에 정지 이미지를 둔다. 이름으로 GLSL ES 예약어를 쓰지 않는다.
+- **움직이는 것이 읽히는 문구를 가로지르지 않는다.** 문장은 매번 정지 상태에서 통째로 읽혀야 한다. 사진 위의 텍스트는 페이지 바탕의 단색 띠 위에 있거나, 사진의 차분하고 어두운 부분에서 4.5:1(디스플레이 텍스트는 3:1)을 맞춘다. 사진 위에 스크림이나 그라데이션은 절대 쓰지 않는다(`system.md`).
+- **비용:** transform, opacity, clip-path는 크기가 고정된 레이어에만 쓴다. 너비, 높이, 매 프레임 다시 그려지는 SVG 클립은 절대 쓰지 않는다.
+- **캡션 없음:** 장면을 설명하는 캡션을 장면의 아래나 옆에 두지 않는다. 스크롤에 따라 날아다니는 카드 장식, 칩, 라벨도 없다.
 
-## 4. 페이지에 맞추기
-
-- 장면 파일은 페이지 토큰을 읽습니다: `--ground`, `--ink`, `--muted`, `--accent`, `--font-display`, `--font-text`(fallback 포함). 시트의 값을 `:root`에 설정하면 장면이 페이지의 색상과 글꼴을 따릅니다. 예제 페이지를 기준으로 실제 페이지를 바꾸지 말고 실제 페이지와 비교합니다.
-- 장면의 디스플레이 글꼴은 지정된 글꼴과 두 줄 제목 규칙을 따릅니다. 문장은 일반 statement 크기로 유지합니다.
-- 장면 두 개 사이에는 텍스트 섹션, 목록, 일반 사진 등 차분한 섹션을 하나 둡니다. 장면을 연속해서 배치하면 긴 놀이기구처럼 이어져 두 번째 장면의 인상이 약해집니다.
-- 첫 화면에 장면을 배치한다면 진행도 0에서도 읽을 수 있어야 합니다. 제목, 문장, 행동 버튼이 첫 프레임에 보여야 하며(모션 규칙 1), 방문자가 스크롤하기 전에는 장면이 움직이지 않습니다.
-- 섹션에 제목을 둡니다. 장면 안에 보이는 제목이 없더라도 섹션에는 제목이 있어야 합니다(섹션의 `aria-label`과 완성된 구성의 실제 제목 사용).
-
-## 5. 휴대폰, 움직임 줄이기, 스크립트 없음
-
-- **휴대폰.** 각 장면 파일에는 휴대폰용 계획이 있습니다. 숫자만 바꾸는 같은 장면, 단순화한 버전, 또는 휴대폰에서 완성 구성을 보여 주는 `phone: 'rest'`가 있습니다. 터치 스크롤은 절대 부드럽게 보간하지 않습니다. 데스크톱만큼 휴대폰용 시트도 꼼꼼히 확인합니다.
-- **움직임 줄이기 및 스크립트 없음.** 섹션은 일반적인 방식으로 완성 구성을 보여 줍니다. 콘텐츠는 그대로 유지하면서 움직임 없이 읽을 수 있도록 배치합니다. 스크립트를 기다리며 콘텐츠를 숨기지 않습니다. 검사기의 `reduced-hidden` 검사와 `scenes.mjs`의 움직임 줄이기 스크린이 이를 확인합니다.
-- **CDN 로드 실패 시**에도 완성 구성을 보여 줍니다(무대가 `.is-rest`를 추가). 데스크톱에서 정지 상태인 장면은 검사기가(`scene-not-live`) 실패 처리하므로 스크립트가 고장 나도 통과할 수는 없습니다.
-
-## 6. 확인
+## 검사
 
 ```bash
-node <skill>/scripts/scenes.mjs <page>        # every scene at 0, 10 … 100%, desktop and phone, and reduced motion
-node <skill>/scripts/inspect.mjs <page>       # the gate; with scenes on the sheet it also films the scroll
+node <skill>/assets/scenes/_demo/shoot.mjs shoot --out <dir> --profile <your own Chrome profile dir> [--only <id>] [--page <url>] [--reduced] [--port 5836]
+node <skill>/assets/scenes/_demo/shoot.mjs index [--out <file|dir>]   # from the project folder: its own index.json
 ```
 
+`index`는 `assets/scenes`가 있는 프로젝트 폴더에서 실행하면 프로젝트 자체의 `assets/scenes/index.json`을 쓴다(또는 `--out <file|dir>`를 준다). 설치된 스킬 안에서 실행하면 거부하며 아무것도 쓰지 않는다. `--in-skill`은 스킬 자체의 인덱스를 일부러 다시 쓰는데, 이는 페이지의 작업이 아니다. 페이지는 장면의 `meta.json`이 바뀐 뒤에만 이것이 필요하므로, 보통의 페이지에서는 건너뛴다.
 
-`scenes.mjs`는 각 장면과 너비별로 연락처 시트를 `.taste-skill/scenes/`에 만듭니다. 모든 시트를 확인합니다. 각 프레임에서 다음을 묻습니다. 볼 대상이 하나로 분명한가? 화면의 문장을 읽을 수 있는가? 튀거나 비어 있거나 잘리거나 텍스트 위를 가로지르는 요소가 있는가? 충분히 대담한가? `desktop-film-NN.jpg`는 페이지 전체의 스크롤을 화면 높이의 3분의 1 간격으로 보여 줍니다. 장면과 중간의 차분한 섹션이 리듬을 만들고 그 사이가 비어 있지 않은지 확인합니다.
-
-## 7. 장면 규칙
-
-1. **페이지마다 서로 다른 계열에서 두세 개를 사용하고 사이에 차분한 섹션을 둡니다.** 네 개가 넘으면 검사기가 경고(`many-scenes`)하고, 장면이 페이지의 60% 이상을 차지해도 경고(`scene-heavy`)합니다.
-2. **장면 하나는 한 화면에서 네 화면 길이 사이로 유지합니다.** 이야기의 한 박자당 대략 한 화면을 사용합니다. 새로 보여 줄 것이 없는 구간은 늘리지 말고 잘라냅니다.
-3. **네이티브 스크롤만 사용합니다.** 휠 입력 가로채기, 페이지 스크롤 잠금, 클릭해야만 재생되는 장면을 금지합니다. 스크롤 보간은 `Stage.smooth()`로만 처리합니다.
-4. **정지 상태에서도 읽을 수 있어야 합니다.** 화면의 문장은 완전히 보여야 하고, 읽는 동안 다른 요소가 텍스트 위를 지나가면 안 됩니다. 사진 위 텍스트는 단색 스크림이나 차분한 영역에 배치합니다.
-5. **장면 안에서는 장면의 수치를 적용합니다**(모션 규칙 7). 사진이 작은 창에서 화면 전체로 커지거나, 글자가 무대를 가로지르거나, 카메라가 사진 사이를 날아갈 수 있습니다. 장면 밖에서는 `references/motion.md`의 차분한 한계를 따릅니다.
-6. **transform, opacity, clip-path만 사용합니다.** 매 프레임 레이아웃을 다시 계산하는 속성을 쓰지 않습니다. 사진은 움직이기 전에 디코딩합니다.
-7. **장면 안에서도 하우스 규칙을 지킵니다.** 고정폭 캡션 금지, 01/07 카운터 금지(개수가 필요하면 “3 of 7”처럼 표시), 그라데이션 금지(단색 스크림 사용), 그림자와 빛 번짐 금지, 가는 선 장식 금지, 장식용 파티클 금지, 보라색 금지.
-8. **완성 구성도 설계합니다.** 움직임 줄이기, 스크립트 로드 실패, 일부 휴대폰에서 보이는 화면도 나중의 대안이 아니라 완성된 디자인입니다.
-
-## 8. 라이브러리에 맞는 장면이 없을 때
-
-먼저 다시 그리기 요청을 합니다(`--redraw scenes`). 브리프에 라이브러리가 제공하지 않는 장면이 꼭 필요하다면 같은 무대에서 구현해 보호 장치를 상속합니다.
-
-```js
-Scenes['my-scene'] = (root, opts = {}) => Stage.scene(root, {
-  hold: opts.hold ?? 2,          // screens the stage is held for
-  scrub: opts.scrub ?? true,     // true when Lenis runs; 0.4-0.8 without it reads as weight
-  phone: 'same',                 // or 'rest', or { hold, build } for a phone plan
-  build(tl, { q, phone }) {      // positions are fractions of the scene, 0-1
-    tl.fromTo(q('.picture'), { clipPath: 'inset(30% 30% 30% 30%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.6 }, 0)
-      .to(q('.title'), { yPercent: -40, autoAlpha: 0, duration: 0.25 }, 0.7);
-  },
-});
-```
-
-
-그리고 장면의 CSS에 정지 상태의 완성 구성을 먼저 작성한 다음 `.scene.is-live` 상태의 움직임을 추가합니다. 다른 장면과 마찬가지로 `scenes.mjs`로 확인합니다.
-
-## 9. 카탈로그
-
-(`library/scenes.json`에서 생성하며 draw가 여기서 장면을 선택합니다. `node <skill>/scripts/draw.mjs --list
-scenes`로 목록을 출력합니다.)
+CPU에서 WebGL을 켠 헤드리스 Chrome 하나를 쓰며, 자기 PID로 종료한다. 1440과 390에서 시작, 중간, 끝을 촬영하고, 장면마다 컨택트 시트를 만든다. 모든 시트를 읽는다. `--reduced`는 한 번 촬영한다.
