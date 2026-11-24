@@ -1,341 +1,163 @@
-# interface-review 스킬은 에이전트를 어떻게 바꾸나 {#interface-review-skill}
+# interface-review — 변경분의 영향 화면과 제거 신호를 추려 인터페이스 리뷰를 통합한다 {#overview}
 
-`interface-review`를 쓰면 에이전트는 화면 대신 **변경**을 리뷰한다. 범위를 `$BASE`로 못 박고, 바뀐 파일이 닿는 화면을 최대 5곳까지 넓혀 보고, 지워진 줄을 읽고, 모든 지적에 `Introduced`, `Regression`, `Pre-existing` 중 하나를 붙인다. 지적을 합치고 심각도와 판정을 정하는 일은 `better-interface`에 넘긴다.[](source:ir-own)[](source:ir-s3)[](source:ir-s4)[](source:ir-s5)[](source:ir-s7)
+`interface-review`는 브랜치·PR·미커밋 변경분 하나를 받아, 변경 파일이 닿는 화면과 삭제된 접근성·스타일 단서를 추린 뒤 도메인 스킬과 `better-interface`에 넘겨 변경 범위 기준의 인터페이스 리뷰 보고서를 만들게 하는 스킬이다.[](source:sk-intro)
 
-- 켜지는 때: **사용자가 명시적으로 부를 때만**이다. `disable-model-invocation: true`이고 `agents/openai.yaml`도 `allow_implicit_invocation: false`다. 호출 인자 전체가 대상이다(`/interface-review pr 482`).[](source:ir-fm)[](source:oy-all)[](source:ir-s1)
-- 강제하는 것: 변경이 없으면 `HEAD~1..HEAD`로 스스로 때우지 않고 묻는다. 작업 트리는 읽기 전용이고 `git fetch`만 쓴다.[](source:ir-s2)[](source:ir-mut)
-- 대표 수치: 영향 화면은 합계 최대 5곳, `Pre-existing` 보고는 최대 3개다.[](source:ir-s3)[](source:ir-out-pre)
-- 쓰면 안 되는 때: 화면·흐름·저장소 전체 리뷰는 `better-interface`의 몫이다. 정확성·테스트·보안·성능은 프로젝트의 일반 코드 리뷰 몫이라, 한 번 짚고 접는다.[](source:ir-own)[](source:ir-s2)
+- 사용자가 `/interface-review`와 대상(`working`, `staged`, `branch`, `pr <n>`, `<ref>`, 범위)을 주거나 인자 없이 실행할 때 켜지며, 변경이 없으면 임의로 `HEAD~1..HEAD`를 고르지 않고 선택지를 묻고 기다린다.[](source:fm)[](source:sk-step1)[](source:sk-step2)
+- 결과로 남는 것은 범위 블록, 커버리지 표, 원인 기준으로 `Introduced`·`Regression`·`Pre-existing`(최대 3개) 상태가 붙은 지적(`finding`) 목록, 검증·판정 결과다.[](source:sk-step5)[](source:sk-format)
+- 다른 스킬과의 관계: `better-interface`·`afk`·`build-design`에서 변경분 리뷰 경로로 안내되며(다음 안내·대안), 제거 신호 확인은 다섯 `better-*` 도메인 스킬을 호출하고 통합·판정은 `better-interface`를 호출해 맡긴다.[](source:bi-handoff)[](source:sk-step4)[](source:sk-step7)
+- 하지 않는 것: 작업 트리나 checkout을 바꾸지 않고(`gh pr checkout`·`git checkout`·`git switch`·`git stash` 금지), 기능 정확성·보안·성능 리뷰와 범위 과다(scope creep) 지적은 하지 않으며, `better-interface`가 없을 때 심각도·상한·판정 기준을 지어내지 않는다.[](source:sk-intro)[](source:sk-step6)[](source:sk-step7)[](source:sk-ro)
 
-@answer scope="design/jakubkrehel/interface-review · 원본 텍스트 4개 21,124B · 커밋 0465878 · 명시 호출 전용 · 관계 확인용으로 다른 스킬 일부 줄만 읽음 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
-@source ir-fm title="design/jakubkrehel/interface-review/SKILL.md · 10128B · 지시 본문과 frontmatter" path=design/jakubkrehel/interface-review/SKILL.md lines=1:5
-@source ir-own title="SKILL.md · 변경 리뷰와 역할 분담" path=design/jakubkrehel/interface-review/SKILL.md lines=7:13
-@source ir-change title="SKILL.md · 변경을 보지 코드베이스를 보지 않는다" path=design/jakubkrehel/interface-review/SKILL.md lines=15:19
-@source ir-s1 title="SKILL.md · 1 변경 범위를 먼저 정한다" path=design/jakubkrehel/interface-review/SKILL.md lines=21:33
-@source ir-s2 title="SKILL.md · 2 변경이 없으면 만들지 않고 묻는다" path=design/jakubkrehel/interface-review/SKILL.md lines=35:46
-@source ir-s3 title="SKILL.md · 3 diff는 화면이 아니다" path=design/jakubkrehel/interface-review/SKILL.md lines=48:54
-@source ir-s4 title="SKILL.md · 4 제거된 줄을 읽는다" path=design/jakubkrehel/interface-review/SKILL.md lines=56:60
-@source ir-s5 title="SKILL.md · 5 지적마다 status를 붙인다" path=design/jakubkrehel/interface-review/SKILL.md lines=62:78
-@source ir-s6 title="SKILL.md · 6 변경을 의도와 대조한다" path=design/jakubkrehel/interface-review/SKILL.md lines=80:91
-@source ir-s7 title="SKILL.md · 7 better-interface에 넘긴다" path=design/jakubkrehel/interface-review/SKILL.md lines=93:97
-@source ir-mut title="SKILL.md · 작업 트리를 바꾸지 않는다" path=design/jakubkrehel/interface-review/SKILL.md lines=99:103
-@source ir-mist title="SKILL.md · 끝내기 전 점검 표 9행" path=design/jakubkrehel/interface-review/SKILL.md lines=105:117
-@source ir-out-scope title="SKILL.md · 출력 범위 블록" path=design/jakubkrehel/interface-review/SKILL.md lines=119:133
-@source ir-out-find title="SKILL.md · 출력 지적 표" path=design/jakubkrehel/interface-review/SKILL.md lines=135:141
-@source ir-out-pre title="SKILL.md · 출력 Pre-existing 절" path=design/jakubkrehel/interface-review/SKILL.md lines=143:149
-@source sr-def title="design/jakubkrehel/interface-review/scope-resolution.md · 7611B · 범위 해석 규칙 · 기본 branch" path=design/jakubkrehel/interface-review/scope-resolution.md lines=5:7
-@source sr-targets title="scope-resolution.md · 대상과 점 두 개·세 개" path=design/jakubkrehel/interface-review/scope-resolution.md lines=9:17
-@source sr-pr title="scope-resolution.md · pull request" path=design/jakubkrehel/interface-review/scope-resolution.md lines=19:31
-@source sr-awk title="scope-resolution.md · 까다로운 저장소 상태 3가지" path=design/jakubkrehel/interface-review/scope-resolution.md lines=33:41
-@source sr-nothing title="scope-resolution.md · 리뷰할 것이 없을 때 모을 사실" path=design/jakubkrehel/interface-review/scope-resolution.md lines=43:47
-@source sr-ren title="scope-resolution.md · rename" path=design/jakubkrehel/interface-review/scope-resolution.md lines=49:53
-@source sr-excl title="scope-resolution.md · 제외 경로 표와 예외 2개" path=design/jakubkrehel/interface-review/scope-resolution.md lines=55:68
-@source sr-excl-trap title="scope-resolution.md · 제외 경로가 조용히 모자라는 함정 2개" path=design/jakubkrehel/interface-review/scope-resolution.md lines=70:76
-@source sr-cons title="scope-resolution.md · 소비자로 넓히는 순서" path=design/jakubkrehel/interface-review/scope-resolution.md lines=78:92
-@source rs-tab title="design/jakubkrehel/interface-review/removed-signals.md · 3228B · 제거 신호 표 · 신호와 담당 스킬" path=design/jakubkrehel/interface-review/removed-signals.md lines=3:17
-@source rs-eq title="removed-signals.md · 신호를 지우는 대체물 7개" path=design/jakubkrehel/interface-review/removed-signals.md lines=19:29
-@source rs-search title="removed-signals.md · 제거된 쪽만 검색하는 법" path=design/jakubkrehel/interface-review/removed-signals.md lines=31:43
-@source oy-all title="design/jakubkrehel/interface-review/agents/openai.yaml · 157B · UI 표시 이름과 암묵 호출 정책" path=design/jakubkrehel/interface-review/agents/openai.yaml lines=1:5
-@source bi-change title="design/jakubkrehel/better-interface/SKILL.md · r66·r67 확인용 변경 요청 처리" path=design/jakubkrehel/better-interface/SKILL.md lines=28:32
-@source rf-chg title="design/jakubkrehel/better-interface/review-format.md · r67 확인용 변경 리뷰일 때" path=design/jakubkrehel/better-interface/review-format.md lines=44:46
-@source bi-verify title="design/jakubkrehel/better-interface/SKILL.md · 검증 절(이 스킬이 대신하는 쪽)" path=design/jakubkrehel/better-interface/SKILL.md lines=59:61
-@source var-scope title="design/jakubkrehel/variant/SKILL.md · r104 확인용" path=design/jakubkrehel/variant/SKILL.md lines=11:11
-@source brk-scope title="design/jakubkrehel/break/SKILL.md · r112 확인용" path=design/jakubkrehel/break/SKILL.md lines=11:11
-@source sm-scope title="design/jakubkrehel/state-machine/SKILL.md · r124 확인용" path=design/jakubkrehel/state-machine/SKILL.md lines=11:11
-@source afk-scope title="design/jakubkrehel/afk/SKILL.md · r126 확인용" path=design/jakubkrehel/afk/SKILL.md lines=11:11
-@source exp-scope title="design/jakubkrehel/explain-interface/SKILL.md · r129 확인용" path=design/jakubkrehel/explain-interface/SKILL.md lines=11:11
-@source bd-scope title="design/jakubkrehel/build-design/SKILL.md · r141 확인용" path=design/jakubkrehel/build-design/SKILL.md lines=12:12
+@answer scope="design/jakubkrehel/interface-review · 원본 파일 4개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=caba31d31edb29a8f8573e8766a333a2e4ac93e6
+@source fm title="frontmatter: name·description·호출 제한" path=design/jakubkrehel/interface-review/SKILL.md lines=1:5
+@source sk-intro title="목적, 소유 범위, 일반 코드 리뷰 경계" path=design/jakubkrehel/interface-review/SKILL.md lines=7:20
+@source sk-step1 title="1단계: 변경 범위 확정과 제외" path=design/jakubkrehel/interface-review/SKILL.md lines=21:34
+@source sk-step2 title="2단계: 변경 없음 시 선택지 제시 후 대기" path=design/jakubkrehel/interface-review/SKILL.md lines=35:47
+@source sk-step3 title="3단계: 영향 화면(blast radius) 확장" path=design/jakubkrehel/interface-review/SKILL.md lines=48:55
+@source sk-step4 title="4단계: 제거 신호 탐색과 회귀 확인" path=design/jakubkrehel/interface-review/SKILL.md lines=56:61
+@source sk-step5 title="5단계: Introduced·Regression·Pre-existing 분류" path=design/jakubkrehel/interface-review/SKILL.md lines=62:79
+@source sk-step6 title="6단계: 의도 대비 미완성 변경 점검" path=design/jakubkrehel/interface-review/SKILL.md lines=80:92
+@source sk-step7 title="7단계: better-interface에 리뷰 전달" path=design/jakubkrehel/interface-review/SKILL.md lines=93:98
+@source sk-ro title="작업 트리 불변과 조건부 렌더 검증" path=design/jakubkrehel/interface-review/SKILL.md lines=99:104
+@source sk-checks title="마무리 전 실수 점검 9항목" path=design/jakubkrehel/interface-review/SKILL.md lines=105:118
+@source sk-format title="범위 블록·커버리지·지적 출력 형식" path=design/jakubkrehel/interface-review/SKILL.md lines=119:149
+@source sr-targets title="기본 브랜치 판별, 타깃·PR ref 해석" path=design/jakubkrehel/interface-review/scope-resolution.md lines=5:37
+@source sr-awkward title="특수 저장소 상태(rebase·shallow·detached HEAD)" path=design/jakubkrehel/interface-review/scope-resolution.md lines=38:47
+@source sr-empty title="변경 없음 상태 정보 수집" path=design/jakubkrehel/interface-review/scope-resolution.md lines=48:53
+@source sr-rename title="이름 변경 40% 임계값 처리" path=design/jakubkrehel/interface-review/scope-resolution.md lines=54:59
+@source sr-exclude title="제외 경로 표와 폰트·이미지 예외" path=design/jakubkrehel/interface-review/scope-resolution.md lines=60:82
+@source sr-expand title="소비자 검색과 정렬 3규칙" path=design/jakubkrehel/interface-review/scope-resolution.md lines=83:97
+@source rs-table title="제거 신호 11종과 소유 도메인 스킬" path=design/jakubkrehel/interface-review/removed-signals.md lines=1:18
+@source rs-equiv title="등가 대체 7가지" path=design/jakubkrehel/interface-review/removed-signals.md lines=19:30
+@source rs-grep title="제거 줄 grep 명령과 hunk 문맥 확인" path=design/jakubkrehel/interface-review/removed-signals.md lines=31:43
+@source oai title="UI 메타데이터와 암묵 호출 차단" path=design/jakubkrehel/interface-review/agents/openai.yaml lines=1:5
+@source bi-handoff title="better-interface가 변경 리뷰를 보내고 통합" path=design/jakubkrehel/better-interface/SKILL.md lines=28:33
+@source afk-rel title="afk의 diff 리뷰 역할 경계" path=design/jakubkrehel/afk/SKILL.md lines=11:11
+@source bd-rel title="build-design의 완료 후 리뷰 경계" path=design/jakubkrehel/build-design/SKILL.md lines=12:12
 
-## 언제 켜지고, 무엇을 맡지 않나 {#trigger}
+## 어떻게 동작하나 {#flow span=12}
 
-@code source=ir-fm language=yaml
+절차형이다. 원문 1~7단계를 범위 확인, diff·영향 분석, 통합·보고 3개 국면으로 그렸다.[](source:sk-step1)[](source:sk-step7)
 
-`disable-model-invocation: true`가 있으므로 모델은 대화를 보고 이 스킬을 스스로 켜지 못한다. 같은 폴더의 `agents/openai.yaml`도 같은 뜻이다.[](source:oy-all)
+그림이 생략한 분기가 둘 있다. 첫째, 저장소가 rebase·merge·cherry-pick 중이거나 base를 해석할 수 없으면 1단계에서 즉시 멈춘다.[](source:sr-awkward) 둘째, 7단계에서 `better-interface`를 쓸 수 없으면 통합을 멈추고 범위 블록과 대상 파일만 보고한다.[](source:sk-step7)
 
-@code source=oy-all language=yaml
+@workflow id=flow-diagram title="interface-review 흐름"
+| lane scope | 범위 확인 |
+| lane analyze | diff·영향 분석 |
+| lane report | 통합·보고 |
+| resolve | 범위·제외 확정 | backend | scope | source:sk-step1 |
+| has-diff | 변경분 있음? | backend | scope | source:sk-step2 |
+| ask | 선택지 제시·대기 | external | scope | source:sk-step2 |
+| expand | 영향 화면 확장 | backend | analyze | source:sk-step3 |
+| removed | 제거 신호 탐색 | backend | analyze | source:sk-step4 |
+| classify | finding 분류 | backend | analyze | source:sk-step5 |
+| intent | 의도 대비 점검 | backend | analyze | source:sk-step6 |
+| handoff | better-interface 위임 | backend | report | source:sk-step7 |
+| output | 상태별 보고 출력 | frontend | report | source:sk-format |
+| resolve > has-diff | | |
+| has-diff > ask | 아니오 | |
+| has-diff > expand | 예 | emphasis |
+| expand > removed | | |
+| removed > classify | | |
+| classify > intent | | |
+| intent > handoff | | |
+| handoff > output | | emphasis |
 
-사용자는 인자로 대상을 준다. 인자 전체가 대상이어서 `/interface-review pr 482`는 pull request 482를 리뷰한다. 받는 대상은 `working`, `staged`, `branch`, `pr <n>`, 이름만 쓴 `<ref>`, `<a>..<b>`나 `<a>...<b>` 범위다. 그 밖의 입력은 모두 `<ref>`로 본다.[](source:ir-s1)[](source:sr-targets)
+@steps id=flow-steps
+| s-resolve | 범위·제외 확정 | **입력** 타깃 인수(또는 현재 브랜치·작업 트리) · **참조** `scope-resolution.md` · **실행** `git diff --name-only "$BASE" <head-ref> -- . ':(exclude)...'` · **출력** `$BASE`, head ref, 제외 후 파일 목록. **처리** 타깃 규칙에 따라 비교 범위를 잡고 lockfile·스냅샷·생성물·바이너리를 제외한 뒤 전체 diff를 먼저 읽는다. 이동·편집된 파일은 `--find-renames=40%`로 이름 변경으로 묶어 실제 편집 줄만 본다.[](source:sk-step1)[](source:sr-targets)[](source:sr-rename)[](source:sr-exclude) **다음** rebase·merge·cherry-pick 진행 중이거나 base를 풀 수 없으면 리뷰를 시작하지 않고 멈춘다. 폰트 추가·교체와 이미지 추가는 예외로 범위에 남긴다.[](source:sr-awkward)[](source:sr-exclude) | flow-diagram | resolve |
+| s-has-diff | 변경분 있음? | **입력** 제외 후 변경 파일과 commit 수 · **출력** 진행 또는 선택 대기 갈래. **처리** merge base 이후 commit이나 미커밋 변경분이 1건 이상 남았는지 확인한다.[](source:sk-step1)[](source:sk-step2) **다음** 제외 목록 적용 뒤 남은 파일이 0개여도 변경 없음으로 처리한다.[](source:sk-step1) | flow-diagram | has-diff |
+| s-ask | 선택지 제시·대기 | **입력** 현재 브랜치, 앞선 commit 수, 직전 commit SHA·제목, `gh pr status` 결과 · **참조** `scope-resolution.md` · **출력** 4가지 선택지 안내. **처리** `HEAD~1..HEAD`를 임의로 리뷰하지 않고 사실만 모은 뒤 열린 PR·직전 commit·지정 타깃·전체 저장소 감사(`better-interface`) 중 고르도록 묻고 멈춘다.[](source:sk-step2)[](source:sr-empty) **다음** 사용자가 전체 저장소 감사를 고르면 범위 블록·상태·기존 항목 없이 `better-interface`로 넘긴다.[](source:sk-step2) | flow-diagram | ask |
+| s-expand | 영향 화면 확장 | **입력** 변경된 파일·토큰 목록 · **참조** `scope-resolution.md` · **실행** `git grep <pattern> <head-ref>` · **출력** 최대 5개 영향 화면(`surfaces expanded`)과 미확장 수. **처리** 기본 1홉(직접 importer·호출자), 디자인 토큰·테마·공유 프리미티브만 2홉까지 라우트 진입점·importer 수·근접도 순으로 최대 5개 소비자를 찾는다.[](source:sk-step3)[](source:sr-expand) | flow-diagram | expand |
+| s-removed | 제거 신호 탐색 | **입력** diff의 `-` 쪽 줄 · **참조** `removed-signals.md` · **실행** `git diff -U0 "$BASE" <head-ref> -- . <exclusions> \| grep -E '^-'` · **출력** 등가 대체가 없는 `Regression` 확인 목록. **처리** 11종 제거 신호와 문자열·색상 교체를 찾고 등가 대체 7가지에 해당하면 거른 뒤, 남은 항목만 소유 도메인 스킬에 보내 회귀 여부를 확정한다.[](source:sk-step4)[](source:rs-table)[](source:rs-equiv)[](source:rs-grep) | flow-diagram | removed |
+| s-classify | finding 분류 | **입력** 변경분과 소비자에서 나온 지적 후보 · **실행** `git blame -L <line>,<line> "$BASE"..<head-ref> -- path/to/file` · **출력** `Introduced`·`Regression`·`Pre-existing` 상태. **처리** 위치가 아니라 원인을 기준으로, 바뀐 토큰의 미수정 소비자에서 난 문제도 변경이 유발했으면 `Introduced`나 `Regression`으로 분류한다.[](source:sk-step5) | flow-diagram | classify |
+| s-intent | 의도 대비 점검 | **입력** PR 제목·본문, 연결 이슈, commit 메시지 · **출력** 누락된 상태·번역·브레이크포인트·형제 컨트롤 목록. **처리** 변경이 내세운 목적에 맞춰 hover·focus·active·disabled·loading·selected·좁은 폭·번역 카탈로그·형제 화면 누락을 찾는다.[](source:sk-step6) **다음** 범위 과다(scope creep)는 인터페이스 문제가 아니므로 보고하지 않는다.[](source:sk-step6) | flow-diagram | intent |
+| s-handoff | better-interface 위임 | **입력** 범위 블록과 영향 화면 목록 · **출력** 7개 도메인 스킬 통합 리뷰 결과. **처리** `better-interface`에 범위 블록과 영향 화면을 넘겨 도메인 리뷰·심각도·지적 상한·판정을 수행하게 하고, 돌아온 지적에 상태를 붙인다.[](source:sk-step7)[](source:bi-handoff) **다음** `better-interface`를 쓸 수 없으면 범위 블록과 대상 파일만 적고 누락 스킬을 밝힌 채 멈춘다. 렌더 검증은 값싼 미리보기가 있거나 사용자가 요청할 때만 켠다.[](source:sk-step7)[](source:sk-ro) | flow-diagram | handoff |
+| s-output | 상태별 보고 출력 | **입력** 통합된 지적과 검증 결과 · **출력** 범위 블록, 커버리지 표, 상태별 지적 표, 검증·판정. **처리** 범위 블록을 맨 앞에 두고 `Introduced`·`Regression` 지적(없으면 없음 문구)과 최대 3개의 `Pre-existing` 지적을 구분해 출력한다.[](source:sk-format) | flow-diagram | output |
 
-이 스킬은 변경에서 생긴 인터페이스 문제만 다룬다. 작성자가 묻는 것은 "내가 더 나쁘게 만들었나?"이고, 변경이 닿기만 한 오래된 문제는 거의 말하지 않는다. 오래된 문제를 3개 말하는 것은 배려이고 30개는 아무도 부탁하지 않은 다른 리뷰다.[](source:ir-change)
-
-| 하려는 일 | 이 스킬 대신 | 원문이 말하는 처리 |
-| --- | --- | --- |
-| 화면·흐름·저장소 전체를 리뷰한다 | `better-interface` {caution:범위 밖} | 변경이 없을 때 사용자가 고르면, 이 스킬의 범위 블록·status·pre-existing 절 없이 저장소 범위 리뷰로 넘긴다[](source:ir-s2) |
-| 정확성, 테스트, 보안, 성능을 본다 | 프로젝트의 일반 코드 리뷰 {caution:범위 밖} | 그런 걱정은 한 번 이름만 대고 그 리뷰를 가리킨 뒤 접는다. 일반 리뷰 스킬의 이름은 `원문에 명시 없음`[](source:ir-own) |
-| 도메인 규칙으로 판단한다 | `better-*` 도메인 스킬 | 이 스킬은 범위·분류·변경 보고서만 가진다[](source:ir-own) |
-| 변경이 너무 많다고 지적한다 | 해당 없음 | 범위가 크다는 것은 프로세스 문제여서 보고하지 않는다[](source:ir-s6) |
-
-## 범위는 어떻게 정해지나 {#scope}
-
-대상을 주지 않으면 아래 순서로 정하고, 처음 맞는 곳에서 멈춘다.[](source:ir-s1)
-
-@workflow id=scope-flow title="리뷰 범위 결정"
-| inv | 대상을 줬나? | backend |
-| tgt | 대상 해석 | backend |
-| ahead | HEAD가 base보다 앞서나? | backend |
-| rng | branch 범위 + 미커밋 | backend |
-| dirty | 작업 트리가 변경됐나? | backend |
-| wt | 미커밋 변경 | backend |
-| none | 변경 없음 | external |
-| ask | 경로를 제시하고 대기 | external |
-| inv > tgt | 예 |
-| inv > ahead | 아니오 |
-| ahead > rng | 예 | emphasis |
-| ahead > dirty | 아니오 |
-| dirty > wt | 예 | emphasis |
-| dirty > none | 아니오 |
-| none > ask | |
-
-@steps id=scope-steps
-| ss-inv | 대상을 줬나? | 인자 전체가 대상이다. 대상이 있으면 아래 "대상별 풀이" 표대로 푼다.[](source:ir-s1) | scope-flow | inv |
-| ss-ahead | HEAD가 base보다 앞서나? | `HEAD`가 `git merge-base origin/<default-branch> HEAD`보다 앞서면, 그 범위에 미커밋 변경을 **더해** 본다. commit 수와 미커밋 파일 수를 따로 적는다.[](source:ir-s1) | scope-flow | ahead |
-| ss-dirty | 작업 트리가 변경됐나? | 앞서지 않았지만 작업 트리가 더러우면 미커밋 변경을 본다.[](source:ir-s1) | scope-flow | dirty |
-| ss-ask | 경로를 제시하고 대기 | 둘 다 아니면 리뷰할 변경이 없다. 아래 네 경로를 제시하고 사용자 답을 기다린다.[](source:ir-s2) | scope-flow | ask |
-
-범위 블록에는 해석한 범위의 base commit을 `$BASE`로 적고, 이 스킬과 참조 문서의 모든 명령이 그것을 쓴다. 잠금 파일, 스냅숏, 생성물, vendored 코드, 바이너리는 제외하고 무엇을 제외했는지 적는다. 제외하고 남은 것이 없으면 변경이 없는 것으로 본다.[](source:ir-s1)
-
-| 대상별 풀이 | 규칙 |
-| --- | --- |
-| branch | merge base 기준으로 점 세 개(`...`) diff를 쓴다. 점 두 개는 base에 올라온 upstream commit까지 변경으로 센다[](source:sr-targets) |
-| 사용자가 쓴 `<a>..<b>` | 끝점끼리 비교한다. 점을 마음대로 세 개로 바꾸면 `release`와 merge base 사이가 빠진다[](source:sr-targets) |
-| 사용자가 쓴 `<a>...<b>` | `merge-base(<a>, <b>)`와 `<b>`를 비교한다. 해석한 범위를 범위 블록에 적는다[](source:sr-targets) |
-| 미커밋 변경 포함 | `git diff HEAD`는 추적 파일만 보여 주므로 `git ls-files --others --exclude-standard`를 짝지어야 한다. 아니면 새 컴포넌트가 조용히 빠진다[](source:sr-targets) |
-| `pr <n>` | head를 `refs/remotes/pr/<n>`로 가져와 제자리에서 읽는다. base는 default branch로 가정하지 않고 `gh pr view <n> --json baseRefName,baseRefOid`로 읽는다. 파일은 `git show refs/remotes/pr/<n>:path`로 읽고 작업 트리 사본은 열지 않는다[](source:sr-pr) |
-| `working`, `staged` | 이 둘이 정확히 무엇을 가리키는지는 `원문에 명시 없음`이다. 받는 대상 목록에만 나온다[](source:sr-targets) |
-
-pull request 줄 번호는 작업 트리와 다를 수 있으므로 head ref에 대해 인용하고, 그 ref와 SHA를 범위 블록에 선언한다. `gh pr view`의 `title`과 `body`는 6단계의 의도로 쓰고, body가 비었으면 commit 제목을 더한다.[](source:sr-pr)
-
-default branch는 `refs/remotes/origin/HEAD`, 그다음 `gh repo view --json defaultBranchRef` 순으로 찾는다. ref가 없으면 `git remote set-head origin --auto`로 묻는다. remote가 아예 없으면 로컬 `main`이나 `master`를 쓰되 어느 쪽을 가정했는지 밝힌다.[](source:sr-def)
-
-| 저장소 상태 | 원문의 처리 |
-| --- | --- |
-| Detached HEAD | default branch와의 merge base를 쓰고, 범위 블록에 branch 대신 SHA를 적는다[](source:sr-awk) |
-| Shallow clone(CI 기본) | `merge-base`가 아무것도 돌려주지 않는다. `--deepen=50`으로 가져와 다시 시도하고, 그다음 `--deepen=200`, 그래도 안 되면 범위를 해석 불가로 보고한다. `.git`에만 쓰므로 허용되고 Verification에 적는다[](source:sr-awk) |
-| rebase·merge 도중 | 조용히 틀리는 경우다. `git rev-parse --git-path`로 `rebase-merge`, `rebase-apply`, `MERGE_HEAD`, `CHERRY_PICK_HEAD`를 확인한다. `.git/` 경로는 linked worktree에서 디렉터리가 아니므로 직접 검사하지 않는다. 작업 도중이라고 말하고 멈춘다[](source:sr-awk) |
-| 그 밖의 실패(관련 없는 history, commit 없는 저장소, 옮겨진 submodule 포인터) | `merge-base`에서 소리 내어 실패한다. base를 해석할 수 없다고 말하고 멈춘다. 이름을 댈 수 없는 범위는 리뷰하지 않는다[](source:sr-awk) |
-
-rename은 삭제와 추가가 아니라 이동으로 본다. 옮기면서 고친 파일은 `--find-renames=40%`로 유사도 문턱을 낮추고, 살아남은 코드는 바뀌지 않은 것으로 보며 실제 수정만 범위에 든다.[](source:sr-ren)
-
-제외 경로는 기계가 쓴 파일이라 인터페이스 규칙이 없다. 범위 블록에 제외한 것을 적는다.[](source:sr-excl)
-
-| 분류 | 패턴 |
-| --- | --- |
-| 잠금 파일 | `package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`, `bun.lock`, `bun.lockb`, `Cargo.lock`, `composer.lock`, `Gemfile.lock`, `poetry.lock`, `uv.lock` |
-| 스냅숏·fixture | `__snapshots__/`, `*.snap`, `*.approved.*`, `test-results/`, `playwright-report/` |
-| 생성 출력 | `dist/`, `build/`, `out/`, `.next/`, `.turbo/`, `.svelte-kit/`, `coverage/`, `storybook-static/`, `*.min.js`, `*.min.css`, `*.map` |
-| 생성 소스 | `*.gen.ts`, `*.generated.*`, 빌드가 내보낸 `*.d.ts`, GraphQL·Prisma client 출력 |
-| vendored 코드 | `vendor/`, `third_party/`, `node_modules/` |
-| 바이너리·미디어 | `*.png`, `*.jpg`, `*.webp`, `*.avif`, `*.woff2`, `*.mp4`, `*.pdf` |
-
-예외는 두 가지로, 이때는 파일 바이트가 아니라 참조하는 코드를 리뷰한다. 추가·교체한 **폰트 파일**은 `better-typography` 변경이다. 컴포넌트에 추가한 **이미지**는 outline과 `alt` 텍스트를 거쳐 `better-ui`와 `better-accessibility` 변경이다.[](source:sr-excl)
-
-제외 패턴이 조용히 모자라는 곳이 두 군데 있다. `*.lock`은 `package-lock.json`과 `pnpm-lock.yaml`을 못 잡으므로 표의 모든 접미사를 써야 한다. `glob` 마법 없이는 `**/dist/**`가 루트의 `dist/`를 놓친다. 제외 pathspec을 넣고 뺀 diff를 둘 다 돌려, 파일 수가 이름 댄 파일 수만큼 줄었는지 확인한다.[](source:sr-excl-trap)
-
-변경이 없으면 먼저 사실을 모은다. 현재 branch, base보다 앞선 개수, 마지막 commit의 SHA와 제목, `gh pr status`가 보여 주는 열린 pull request다.[](source:sr-nothing) `gh pr status`는 열린 PR이 없어도 성공하고 `currentBranch`를 빼므로 빈 결과는 답이다. `gh`가 없거나 인증이 없거나 GitHub remote가 없으면 실패하므로, 실패는 "PR 없음"으로 보고 말한 뒤 남은 경로를 제시한다.[](source:sr-nothing)
-
-@list id=ask-routes ordered=true
-| 현재 branch의 열린 pull request. 있으면 맨 앞에 둔다. commit이 이미 병합된 branch는 변경 없음이 되지만 그 PR은 사용자가 뜻한 것이다 |
-| 마지막 commit `HEAD~1..HEAD`. 짧은 SHA와 제목을 적어 사용자가 무엇을 받는지 보게 한다 |
-| 사용자가 이름 댄 대상. `pr <n>`, branch, ref, 범위 |
-| 저장소 전체 인터페이스 감사. 변경 리뷰가 아니므로 `better-interface`에 저장소 범위 리뷰로 넘긴다 |
-
-제외 때문에 범위가 비었다면 그 파일 이름을 제안에 적는다. 아무것도 리뷰하지 않은 것을 `Approve`로 보고하지 않는다. 제안한 뒤에는 기다린다.[](source:ir-s2)
-
-## 어떤 순서로 리뷰하고 status를 붙이나 {#procedure}
-
-@workflow id=review-flow title="interface-review 7단계"
-| tgt | 1 범위 정하기 | backend |
-| chg | 변경이 있는가? | backend |
-| ask | 2 묻고 대기 | external |
-| exp | 3 영향 화면 확장 | backend |
-| rem | 4 제거된 줄 읽기 | backend |
-| cls | 5 status 붙이기 | backend |
-| intent | 6 의도와 대조 | backend |
-| hand | 7 better-interface에 넘김 | backend |
-| tgt > chg | |
-| chg > ask | 없음 |
-| chg > exp | 있음 | emphasis |
-| exp > rem | |
-| rem > cls | |
-| cls > intent | |
-| intent > hand | |
-
-@steps id=review-steps
-| rv-tgt | 1 범위 정하기 | 앞 절의 범위 결정 그림대로 대상과 `$BASE`를 정하고, 제외 경로를 뺀다.[](source:ir-s1) | review-flow | tgt |
-| rv-ask | 2 묻고 대기 | 변경이 없으면 최근 commit으로 대신하지 않는다. 마지막 commit은 merge나 남의 작업일 때가 많다. 사실을 모아 네 경로를 제시하고 기다린다.[](source:ir-s2) | review-flow | ask |
-| rv-exp | 3 영향 화면 확장 | 바뀐 파일은 증거일 뿐이고, 그것이 렌더되는 화면이 리뷰 대상이다. 기본은 직접 import하는 쪽·호출하는 쪽 한 단계다. design token, 테마 값, 공유 primitive만 두 단계까지 간다. 합계 최대 5곳이고, 확장하지 않은 개수를 밝힌다.[](source:ir-s3) | review-flow | exp |
-| rv-rem | 4 제거된 줄 읽기 | 회귀는 변경 후 상태에서 보이지 않는다. 모든 hunk의 `-` 쪽을 아래 제거 신호 표에 맞춰 읽는다.[](source:ir-s4) | review-flow | rem |
-| rv-cls | 5 status 붙이기 | 지적마다 `Introduced`, `Regression`, `Pre-existing` 중 하나를 붙인다. 위치가 아니라 원인으로 정한다.[](source:ir-s5) | review-flow | cls |
-| rv-intent | 6 의도와 대조 | pull request 제목·본문, 연결된 issue, commit 메시지를 읽고 인터페이스가 주장한 것을 주는지 본다. 빠진 상태를 찾는다.[](source:ir-s6) | review-flow | intent |
-| rv-hand | 7 better-interface에 넘김 | 범위 블록, 영향받은 화면, 모든 지적의 status를 넘기고 아래 형식으로 보고한다.[](source:ir-s7) | review-flow | hand |
-
-diff는 전체를 읽은 뒤에 의견을 만든다. 훑어본 diff는 다음 hunk가 이미 고친 코드에 대한 지적을 낳는다.[](source:ir-change)
-
-영향 화면은 규칙으로 정한 순서로 5곳을 고른다. 근거는 "재현할 수 있는 순서"다.[](source:sr-cons)
-
-| 순서 | 기준 |
-| --- | --- |
-| 1 | route·layout 진입점. `app/**/page.*`, `app/**/layout.*`, `pages/**`, `routes/**`, `src/views/**`, `*.astro` 페이지 |
-| 2 | importer 수. 20개 파일이 가져오는 컴포넌트가 2개가 가져오는 것보다 변경을 더 많이 나른다 |
-| 3 | 동점이면 같은 package나 기능 디렉터리를 먼저 본다 |
-
-소비자를 찾을 때는 프로젝트 자체 resolver가 있으면 그것을, 없으면 import 경로를 쓴다. `git grep`은 기본으로 작업 트리를 찾으므로 리뷰할 ref를 패턴 뒤에 줘야 한다. 변경된 token이나 테마 값은 파일이 아니라 token 이름으로 찾고, `--color-*`처럼 대시로 시작하는 패턴은 `-e`를 붙인다. 순서가 어느 지점부터 임의였다면 그렇다고 말한다.[](source:sr-cons)
-
-@callout level=note title="제거된 줄은 단서이지 지적이 아니다"
-- 신호가 맞는다고 곧 회귀는 아니다. 변경 안에 대체물이 없을 때만 회귀이고, 그 판단은 담당 도메인 스킬이 한다.[](source:ir-s4)
-- 맞지 않는 제거마다 담당 스킬로 보내고, 그 스킬이 확인한 것만 `Regression`으로 보고한다.[](source:ir-s4)
-
-| 제거된 줄(`-` 쪽) | 담당 | 확인할 것 |
-| --- | --- | --- |
-| `aria-label`, `aria-labelledby`, `aria-describedby`, `aria-live`, `role=` | `better-accessibility` | 컨트롤·영역이 접근 가능한 이름·설명·안내를 잃었다 |
-| `alt=`, `<label`, `for=`, `htmlFor`, `scope=` | `better-accessibility` | 이미지·필드·표 셀이 프로그램상 연결을 잃었다 |
-| `<button>`, `<a>`, `<nav>`, `<main>`, `<ul>`이 `div`나 `span`으로 바뀜 | `better-accessibility` | 스타일링과 맞바꿔 키보드·보조 기술 동작이 사라졌다 |
-| `:focus-visible`, `:focus`, `outline`, `tabindex` | `better-accessibility` | focus 표시를 잃었거나 tab 순서에서 빠졌다 |
-| `prefers-reduced-motion` | `better-accessibility` | 모션이 시스템 설정을 무시한다 |
-| `prefers-contrast` | `better-colors` | 색이 대비 설정을 무시한다 |
-| 논리 속성이 `left`/`right`로 바뀜 | `better-layout` | 방향을 따르는 레이아웃이 사라졌다 |
-| `lang=`, `dir=` | `better-typography` | 언어 정보나 텍스트 방향이 사라졌다 |
-| `text-wrap`, `line-clamp`, `overflow-wrap`, `tabular-nums`, `font-feature-settings` | `better-typography` | 글자 렌더링·줄바꿈·숫자 정렬이 조용히 바뀌었다 |
-| 색 token이 리터럴로, 또는 더 옅은 token으로 바뀜 | `better-colors` | 렌더된 대비 쌍이 깨졌을 수 있으니 측정한다 |
-| 사용자에게 보이는 문자열이 삭제되거나 줄어듦 | `better-writing` | 라벨·에러·빈 상태가 담던 정보를 잃었다 |
-
-위 표는 신호 11행이다.[](source:rs-tab) 신호를 지우는 대체물이 변경 안에 있으면 라우팅 전에 제거를 버린다.[](source:rs-eq)
-
-@list id=equivalents
-| `aria-label`이 보이는 글자를 가리키는 `aria-labelledby`로 바뀜 |
-| 요소가 네이티브 동등물이 되어 명시한 `role`이 빠짐. 예: `div`가 `<button>`이 되면서 `role="button"`이 빠짐 |
-| `outline`이 같은 `:focus-visible` 선택자의 `box-shadow` ring으로 바뀜 |
-| 이제 기본으로 focus되는 요소에서 `tabindex="0"`이 빠짐 |
-| 색 리터럴이 같은 값의 token으로 바뀜 |
-| 물리 속성이 논리 속성으로 바뀜. 회귀가 아니라 고침이다 |
-| 문자열이 삭제가 아니라 번역 카탈로그로 옮겨짐 |
-
-제거된 쪽만 검색할 때는 추가가 가리지 않게 삭제된 줄로 한정한다. 제외 pathspec을 `--` 뒤에 넘기고, 패턴은 `aria-`, `role=`, `alt=`, `focus`, `outline`, `tabindex`, `prefers-`, `lang=`, `dir=`, `text-wrap` 등이다. 미커밋 작업이 포함된 대상은 `<head-ref>`를 빼서 작업 트리와 비교한다.
-
-제거된 문자열과 바뀐 색 token은 패턴이 없으므로 hunk를 직접 읽는다. `-U0`은 맥락을 숨기므로 판단 전에 둘러싼 hunk를 읽는다.[](source:rs-search)
-
-| status | 뜻 | 예 |
-| --- | --- | --- |
-| `Introduced` | 변경이 만들었다 | 새로 더한 컴포넌트의 빠진 이름[](source:ir-s5) |
-| `Regression` | 변경이 원래 맞던 것을 약하게 했다 | `aria-label` 삭제[](source:ir-s5) |
-| `Pre-existing` | 변경 전에 있었고 더 나빠지지 않았다 | 변경 근처의 오래된 문제[](source:ir-s5) |
-
-status는 위치가 아니라 원인으로 정한다. 바뀐 줄이 만든 지적은 어디서 드러나든 `Introduced`나 `Regression`이고, 바뀐 token의 건드리지 않은 소비자도 그렇다. 변경이 만들지도 악화하지도 않은 지적은 hunk에서 세 줄 떨어져 있어도 `Pre-existing`이다.[](source:ir-s5)
-
-줄이 변경보다 앞서는지는 리뷰한 범위에 `git blame -L`을 쓴다. `^` 접두사는 base 이후 바뀌지 않은 줄이다. 미커밋 작업은 범위를 빼고, `Not Committed Yet`이거나 `$BASE..HEAD` 안 commit에 blame된 줄은 변경의 것이다.[](source:ir-s5)
-
-6단계에서 찾는 "불완전한 변경"은 표면 리뷰가 놓치는 것이다. 존재하는 상태만 보기 때문이다. 아래 네 가지 빠진 것을 찾는다.[](source:ir-s6)
-
-@list id=incomplete
-| 새 variant·size·테마가 hover, focus, active, disabled, loading, selected 중 일부 상태에만 적용됨 |
-| 프로젝트가 관리하는 번역 카탈로그에 항목이 없는 새 문자열 |
-| empty, loading, error, disabled, 좁은 너비 상태가 없는 새 컴포넌트 |
-| 비슷한 컨트롤이 있는 다른 화면에는 없이 한 화면에만 더한 컨트롤 |
-
-7단계에서 `better-interface`가 없으면, 해석한 범위와 파일 목록을 보고하고 없는 스킬을 이름 댄 뒤 멈춘다. 심각도 척도, cap, 판정을 지어내지 않는다.[](source:ir-s7)
-
-## 어떤 보고서로 끝나고, 무엇을 하지 않나 {#output}
-
-보고서는 범위 블록으로 연다. 필드는 일곱 개다.[](source:ir-out-scope)
-
-| 필드 | 값(원문의 보기) |
-| --- | --- |
-| Target | `branch`, `working`, `staged`, `pr 482` 또는 입력한 범위 |
-| Base ref | `origin/main` at `a1b2c3d` |
-| Head ref | `refs/remotes/pr/482` at `e4f5g6h` |
-| Commits | 7 committed, 2 files uncommitted |
-| Files in scope | 제외 후 12 |
-| Excluded | 제외한 파일과 디렉터리 이름 |
-| Surfaces expanded | `CheckoutPage`, `SettingsPanel`. 확장하지 않은 `Button` 소비자 3개 |
-
-위 값은 원문의 보기일 뿐 정해진 값이 아니다. `better-interface`의 coverage 표가 그다음에 온다. 변경 범위에 증거가 없는 도메인은 `Not reviewed: no evidence in the change scope`이며, 이것은 빈틈이 아니라 coverage 진술이다.[](source:ir-out-scope)
-
-지적 표는 `better-interface` 형식에 `Status` 열을 더한다. 열은 `Severity`, `Domain`, `Status`, `Location`, `Before`, `After`, `Why`다. `Introduced`나 `Regression` 지적이 없으면 표를 빼고 "No actionable interface findings in this change."라고 쓴다.[](source:ir-out-find)
-
-`Pre-existing`은 따로, **최대 3개**, 심각도 높은 순으로 쓰고 "이 변경의 책임이 아니다"라고 분명히 한다. 없으면 절을 뺀다. 열은 `Severity`, `Domain`, `Location`, `Issue`다. Verification과 판정은 `better-interface` 형식을 따른다.[](source:ir-out-pre)
-
-그쪽은 이 리뷰를 받으면 `Introduced`와 `Regression`만 cap과 판정에 센다. 그래서 `Pre-existing`만 있는 변경은 `Approve`다.[](source:bi-change)
-
-@callout level=warning title="작업 트리를 바꾸는 명령은 쓰지 않는다"
-- 변경 리뷰는 checkout까지 포함해 읽기 전용이다. `git fetch`는 `.git`에만 쓰므로 허용된다.[](source:ir-mut)
-- `gh pr checkout`, `git checkout`, `git switch`, `git stash`는 작성자가 열어 둔 파일을 덮어쓰므로 **절대** 쓰지 않는다. PR ref는 fetch해서 제자리에서 읽는다.[](source:ir-mut)
-
-렌더 검증은 이 스킬에서 선택이다. `better-interface`의 "검증할 수 있는 것은 검증한다" 대신 이 규칙이 적용된다.[](source:ir-mut)[](source:bi-verify)
-
-프로젝트가 값싼 preview를 노출하거나 사용자가 렌더 리뷰를 요청한 경우가 아니면, 시각·런타임 주장은 **Not verified**로 표시한다. `working`과 `branch`는 checkout이 곧 head이므로 제자리에서 렌더한다. 다른 대상은 `git worktree add /tmp/review-<n> refs/remotes/pr/<n>` 같은 격리 worktree에서 렌더하고, 끝나면 지운다.[](source:ir-mut)
-
-끝내기 전에 아래 실수를 점검한다.[](source:ir-mist)
-
-| 실수 | 고침 |
-| --- | --- |
-| 범위 블록이 미커밋 파일만 세는데 `HEAD`가 merge base보다 앞선다 | branch 범위에 미커밋 변경을 더해 두 개수를 모두 적는다 |
-| 사용자가 고르지 않은 `HEAD~1..HEAD`로 보고한다 | 사실을 말하고 "묻고 대기" 경로를 제시한다 |
-| 바뀐 공유 컴포넌트의 소비자가 `Surfaces expanded`에 없다 | 소비자로 넓히고 건너뛴 것을 적는다 |
-| 지워진 `aria-label`, `outline`, `prefers-reduced-motion`에 지적도 메모도 없다 | 제거 신호 표로 담당 스킬에 보낸다 |
-| 지워진 속성이 diff 다른 곳에서 다시 나오는데 `Regression`이다 | 대체물 7개를 먼저 확인한다 |
-| 바뀐 token의 건드리지 않은 소비자 지적이 `Pre-existing`이다 | 변경이 만들었으므로 `Introduced`나 `Regression`이다 |
-| 어떤 hunk에도 없는 줄이 원인 변경 없이 `Introduced`다 | 리뷰한 범위에 blame을 돌린다 |
-| 명령 기록에 `gh pr checkout`이나 `git switch`가 있다 | ref를 fetch하고 `git show`로 읽는다 |
-| 인용한 줄이 `git show <head-ref>:path`와 맞지 않는다 | 범위 블록에 적은 head ref에 대해 인용한다 |
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
 
 @facts
-| 영향 화면 | 두 단계 합계 최대 5곳. 기본 한 단계, token·테마·공유 primitive만 두 단계(의무)[](source:ir-s3) |
-| `Pre-existing` 보고 | 최대 3개, 높은 순(의무)[](source:ir-out-pre) |
-| shallow clone | `--deepen=50` 다음 `--deepen=200`, 그다음 해석 불가[](source:sr-awk) |
-| rename 유사도 | 옮기며 고친 파일에 `--find-renames=40%`(권고: "낮춘다")[](source:sr-ren) |
-| 제거 신호 표 | 11행. 대체물 7개[](source:rs-tab)[](source:rs-eq) |
-| 끝내기 전 점검 | 9행[](source:ir-mist) |
+| 직접 켜는 방법 | 사용자 호출형(`/interface-review [타깃]`). `disable-model-invocation: true`와 `allow_implicit_invocation: false`가 모두 설정되어 모델이 스스로 켜지 못한다.[](source:fm)[](source:oai) |
+| 성격 | 절차형. diff 범위 확정·소비자 확장·제거 신호 추출·원인 분류를 직접 맡고, 도메인 판단과 최종 통합은 `better-*`와 `better-interface`에 넘긴다. |
 
-## 흐름 속 위치 {#position}
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| `better-interface` {#rel-r53} | **이 스킬** | 다음 안내 | 의무: 브랜치·PR·미커밋 변경분 리뷰 요청이면 사용자에게 `interface-review` 실행을 요청한다(`disable-model-invocation: true`, 사용자 호출 필요).[](source:bi-handoff) |
+| `afk` {#rel-r77} | **이 스킬** | 대안 | 역할 경계: diff 리뷰는 `interface-review`를 사용한다(수동 호출 필요).[](source:afk-rel) |
+| `build-design` {#rel-r85} | **이 스킬** | 대안 | 역할 경계: 구현 완료 후 리뷰는 `interface-review`를 사용한다(수동 호출 필요).[](source:bd-rel) |
+| **이 스킬** {#rel-r54} | `better-interface` | 호출 | 의무: 7단계에서 범위 블록과 영향 화면을 `better-interface`에 넘겨 통합·판정한다. 미가용 시 중단한다(사용자 개입 없음).[](source:sk-step7) |
+| **이 스킬** {#rel-r55} | `better-interface` | 다음 안내 | 제안: 리뷰할 변경이 없고 사용자가 전체 저장소 감사를 택하면 `better-interface`로 이관한다(사용자 선택 필요).[](source:sk-step2) |
+| **이 스킬** {#rel-r56} | `better-accessibility` | 호출 | 제거 신호(포커스·ARIA·대체 텍스트·모션 선호 등) 및 이미지 추가 시 확인을 위임한다(사용자 개입 없음).[](source:rs-table)[](source:sr-exclude) |
+| **이 스킬** {#rel-r57} | `better-colors` | 호출 | 제거 신호(`prefers-contrast`, 색상 토큰 리터럴 교체 등) 발생 시 확인을 위임한다(사용자 개입 없음).[](source:rs-table) |
+| **이 스킬** {#rel-r58} | `better-layout` | 호출 | 제거 신호(논리 속성의 물리 속성 교체 등) 발생 시 확인을 위임한다(사용자 개입 없음).[](source:rs-table) |
+| **이 스킬** {#rel-r59} | `better-typography` | 호출 | 제거 신호(`lang`·`dir`·줄바꿈·숫자 정렬 등) 및 폰트 파일 변경 시 확인을 위임한다(사용자 개입 없음).[](source:rs-table)[](source:sr-exclude) |
+| **이 스킬** {#rel-r60} | `better-writing` | 호출 | 제거 신호(사용자 문구 삭제·축약) 발생 시 확인을 위임한다(사용자 개입 없음).[](source:rs-table) |
+| **이 스킬** {#rel-r61} | `better-ui` | 참고 | 이미지가 추가될 때 윤곽·표면 규칙을 `better-ui`에서 함께 확인한다(사용자 개입 없음).[](source:sr-exclude) |
 
-@workflow id=review-position title="interface-review 앞뒤"
-| u-user | 사용자 명시 호출 | external |
-| u-ir | interface-review | backend |
-| u-bi | better-interface | backend |
-| u-dom | 도메인 스킬 5개 | backend |
-| u-out | 순위 보고서와 판정 | external |
-| u-user > u-ir | | emphasis |
-| u-ir > u-bi | 범위·status | |
-| u-ir > u-dom | 제거된 줄 | dashed |
-| u-bi > u-out | | |
+@architecture id=relation-map title="interface-review와 이어지는 스킬"
+| bi | better-interface | backend |
+| afk | afk | backend |
+| bd | build-design | backend |
+| self | interface-review(이 스킬) | backend |
+| ba | better-accessibility | backend |
+| bc | better-colors | backend |
+| bl | better-layout | backend |
+| bt | better-typography | backend |
+| bw | better-writing | backend |
+| bu | better-ui | backend |
+| bi > self | 다음 안내 |
+| afk > self | 대안 |
+| bd > self | 대안 |
+| self > bi | 호출 |
+| self > bi | 다음 안내 |
+| self > ba | 호출 |
+| self > bc | 호출 |
+| self > bl | 호출 |
+| self > bt | 호출 |
+| self > bw | 호출 |
+| self > bu | 참고 |
 
-| 상대 | 받는 것 | 넘기는 것 | 조건 | rel-id |
-| --- | --- | --- | --- | --- |
-| 사용자(앞) | 대상을 담은 인자 | - | 명시 호출만 받으므로 실제 시작점은 사람이다[](source:ir-fm)[](source:oy-all) | - |
-| `better-interface`(앞, 요청하는 쪽) | 변경 범위 요청 | - | 의무형. `better-interface`는 변경 요청을 받으면 직접 해석하지 않고 사용자에게 이 스킬 실행을 부탁한다. 이 스킬은 사용자 호출 전용이라 그쪽에서 시작할 수 없다[](source:bi-change)[](source:ir-fm) | r66 |
-| `better-interface`(뒤) | - | 범위 블록, 영향받은 화면, 모든 지적의 status | 의무형. 심각도·통합·coverage·cap·판정은 그쪽 소유다. 그쪽이 없으면 해석한 범위와 파일 목록만 보고하고 멈춘다. 그쪽은 이 리뷰의 `Introduced`와 `Regression`만 cap과 판정에 센다[](source:ir-own)[](source:ir-s7)[](source:bi-change)[](source:rf-chg) | r67 |
-| `better-interface`(뒤, 선택지) | - | 저장소 범위 리뷰 | 제안. 변경이 없을 때 사용자에게 보여 주는 선택지 하나다. 사용자가 고를 때만, 이 스킬의 범위 블록·status·pre-existing 절 없이 넘긴다[](source:ir-s2) | r68 |
-| `better-accessibility`(뒤) | 일치한 제거 줄 | 제거된 줄 | 조건부. 제거 신호가 표와 맞을 때만 보낸다. 신호는 단서일 뿐이고 대체물이 변경 안에 없을 때만 회귀다. 담당 스킬이 확인한 것만 `Regression`이다[](source:ir-s4)[](source:rs-tab) | r69 |
-| `better-colors`(뒤) | 일치한 제거 줄 | 제거된 줄 | r69와 같은 조건. 신호는 `prefers-contrast`와 색 token 교체[](source:rs-tab) | r70 |
-| `better-layout`(뒤) | 일치한 제거 줄 | 제거된 줄 | r69와 같은 조건. 신호는 논리 속성이 `left`/`right`로 바뀐 것[](source:rs-tab) | r71 |
-| `better-typography`(뒤) | 일치한 제거 줄 | 제거된 줄 | r69와 같은 조건. 신호는 `lang=`·`dir=`와 `text-wrap` 계열[](source:rs-tab) | r72 |
-| `better-writing`(뒤) | 일치한 제거 줄 | 제거된 줄 | r69와 같은 조건. 신호는 삭제·축약된 사용자 문자열[](source:rs-tab) | r73 |
-| `better-ui` | - | - | 참고. 제거 신호 표에는 담당 행이 없다. 제외 경로의 예외로 컴포넌트에 추가된 이미지가 `better-ui`와 `better-accessibility` 변경이 된다[](source:sr-excl) | r74 |
-| `variant` | - | - | 역할 구분. 기존 UI 리뷰는 이 스킬 몫이다. `variant`는 후보를 만들 뿐 순위를 매기지 않는다[](source:var-scope) | r104 |
-| `break` | - | - | 역할 구분. 코드를 기준에 맞춰 리뷰하는 일은 이 스킬 몫이다. `break`는 눈에 띄게 깨진 것만 관찰한다[](source:brk-scope) | r112 |
-| `state-machine` | - | - | 역할 구분. 끝난 작업 리뷰는 이 스킬 몫이다[](source:sm-scope) | r124 |
-| `afk` | - | - | 역할 구분. diff 리뷰는 이 스킬 몫이다. `afk`가 이 스킬을 실행한다는 지시는 없다[](source:afk-scope) | r126 |
-| `explain-interface` | - | - | 역할 구분. 기준에 맞춘 리뷰는 이 스킬 몫이다. `explain-interface`는 평가하지 않고 설명한다[](source:exp-scope) | r129 |
-| `build-design` | - | - | 역할 구분. 끝난 작업 리뷰는 이 스킬 몫이다[](source:bd-scope) | r141 |
+@code source=fm language=yaml
 
-판정: 여러 스킬이 이 스킬을 가리키지만 모두 역할 구분이다. 이 스킬이 명시 호출만 받으므로, 다른 스킬이 "리뷰는 `interface-review`"라고 해도 에이전트가 이 스킬을 자동으로 이어 실행하지는 못한다.[](source:ir-fm)
+## 어떤 파일로 이루어지나 {#files span=12}
 
-그림은 사용자 → 이 스킬 → `better-interface` → 보고서(r67)와 조건부 점선(r69~r73)만 그렸다. r66은 사용자에게 부탁하는 경로라, r68은 사용자가 고를 때만이라, r74와 r104·r112·r124·r126·r129·r141은 참고나 역할 구분이라 표에만 남겼다.
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | 7단계 절차, 읽기 전용·렌더 규칙, 실수 점검 9항목, 출력 형식 본문 | 스킬이 켜지면 항상 읽는다 | 범위·제외 확정, 변경분 있음?, 선택지 제시·대기, 영향 화면 확장, 제거 신호 탐색, finding 분류, 의도 대비 점검, better-interface 위임, 상태별 보고 출력 |
+| `scope-resolution.md` | 기본 브랜치 판별, 타깃별 범위 해석, PR ref 페치, 제외 경로, 소비자 정렬 규칙 | 1~3단계에서 git 범위·PR·예외 상태·소비자를 해석할 때 읽는다 | 범위·제외 확정, 선택지 제시·대기, 영향 화면 확장 |
+| `removed-signals.md` | `-` 쪽 제거 신호 11종 소유 매핑, 등가 대체 7종, `-U0` grep 명령 | 4단계에서 삭제된 줄의 회귀 후보를 찾을 때 읽는다 | 제거 신호 탐색 |
+| `agents/openai.yaml` | 표시 이름(`Interface Review`), 짧은 설명, 암묵적 호출 차단 정책 | 호스트 UI 설정용. 동작 지시 없음 | 원문에 명시 없음 |
 
-전체 흐름은 `design/_group-interface-audit/interface-audit.html`에 있다. 관계 근거는 `design/relations.md`의 rel-id로 확인한다.
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-## 이 분석의 범위와 한계 {#audit}
+| 조건 | 결과 | 출처 |
+| --- | --- | --- |
+| `disable-model-invocation: true` | 모델 자동 호출 금지. 사용자가 `/interface-review`로 직접 켜야 한다 | [](source:fm) |
+| 작업 트리 파일 변경·checkout 전환(`gh pr checkout`·`git checkout`·`git switch`·`git stash`) | 금지. `git fetch`와 `git show <head-ref>:path`로 제자리에서 읽고, 렌더 시 별도 `worktree`만 썼다 지운다 | [](source:sk-ro)[](source:sr-targets) |
+| 일반 코드 정확성·테스트·보안·성능 문제나 범위 과다(scope creep) | 기능 문제는 일반 코드 리뷰로 1회 안내 후 버리고, 범위 과다 지적은 보고 금지 | [](source:sk-intro)[](source:sk-step6) |
+| 변경분이 없거나 제외 경로 적용 후 0개일 때 | `HEAD~1..HEAD` 임의 리뷰와 `Approve` 보고 금지. 4가지 선택지를 제시하고 대기 | [](source:sk-step2) |
+| rebase·merge·cherry-pick 중이거나 base를 풀 수 없을 때(무관한 이력, commit 없음, 얕은 복제 등) | 얕은 복제(`shallow clone`)는 `--deepen=50` → `--deepen=200` 시도 후 실패 시, 나머지는 즉시 중단 | [](source:sr-awkward) |
+| 소비자 확장 범위 | 1홉(직접 importer) 기본, 토큰·테마·공유 프리미티브만 2홉. 합계 최대 5개까지 확장하고 미확장 수를 명시 | [](source:sk-step3) |
+| 제거 신호가 등가 대체 7가지에 해당할 때 | `Regression`으로 보고하지 않고 신호를 해제한다 | [](source:sk-step4)[](source:rs-equiv) |
+| `better-interface`를 쓸 수 없을 때 | 심각도·지적 상한·판정 결과를 지어내지 않고 범위 블록과 대상 파일만 적은 뒤 중단 | [](source:sk-step7) |
+| `Pre-existing` 지적 출력 | 최대 3개까지만 심각도 높은 순으로 적고 나머지 개수를 밝히며, 없으면 절을 생략한다 | [](source:sk-intro)[](source:sk-format) |
+| 인용 줄 번호·렌더 주장 기준 | 모든 줄 인용은 head ref(`git show <head-ref>:path`) 기준. 렌더 검증을 안 돌렸으면 `Not verified` 표시 | [](source:sk-ro)[](source:sk-checks)[](source:sr-targets) |
 
-- 읽은 텍스트 파일은 4개, 합계 21,124B다. `SKILL.md` 10,128B, `scope-resolution.md` 7,611B, `removed-signals.md` 3,228B, `agents/openai.yaml` 157B를 모두 읽었다. 구조·표본만 본 파일은 0개다.
-- 관계 확인용으로 다른 스킬 9곳의 해당 줄만 읽었다. `better-interface` 28~32줄·44줄·59~61줄과 `review-format.md` 44~46줄, `variant` 11줄, `break` 11줄, `state-machine` 11줄, `afk` 11줄, `explain-interface` 11줄, `build-design` 12줄이다.
-- 제외한 파일: 번역본과 바이너리는 이 폴더에 없다(`find`로 확인, 파일 4개).
-- 원문 대조 범위: 활성화 제한 2개(`disable-model-invocation: true`, `allow_implicit_invocation: false`), 7단계와 금지 절, 대상 6종, 제외 경로 6분류와 예외 2개, 까다로운 상태 3가지, 제거 신호 11행과 대체물 7개, status 3개, 빠진 상태 4개, 출력 범위 블록 7필드, 수치(5곳, 3개, 50·200, 40%), 끝내기 전 점검 9행을 모두 대조했다. 관계 행 r66~r74, r104, r112, r124, r126, r129, r141은 원장과 원문을 다시 대조했다.
-- 분석 중 바뀐 파일: 없음. `design/` 아래 작업 트리는 commit `0465878` 그대로다.
-- 사람 검토: 미실시.
+## 더 자세히 읽으려면 {#more span=12}
+
+공개된 상세:
+
+- 아직 없음
+
+상세 후보(요청하면 만든다):
+
+- git 타깃별 범위·PR·예외 상태 해석 — 범위·제외 확정 · `working`·`staged`·`branch`·`<a>..<b>`·`<a>...<b>`·`pr <n>`·shallow clone 세부 규칙
+- 제외 경로 pathspec 함정과 소비자 정렬 — 범위·제외 확정, 영향 화면 확장 · `*.lock` vs `package-lock.json`, root `dist/` 누락 방지, 3단계 정렬 규칙
+- 제거 신호 11종과 등가 대체 7종 — 제거 신호 탐색 · `-U0` grep 패턴과 도메인 스킬별 회귀 판별 기준
 
 @callout level=open-question title="확인하지 못한 것"
-- `working`과 `staged`가 정확히 어떤 diff를 뜻하는지는 `원문에 명시 없음`이다.
-- 일반 코드 리뷰로 가리킬 스킬의 이름은 원문에 없다.
-- 렌더 검증 규칙이 `better-interface`의 검증 절을 대신한다는 문장(`SKILL.md` 103줄)은 원장에 관계 행이 없다.[](source:ir-mut)[](source:bi-verify)
-- 이 스킬을 실제로 불러 리뷰를 받아 보지 않았다. 출력 형식과 명령 금지를 지키는지는 확인하지 않았다.
+| `better-interface`가 7개 도메인 스킬을 순차 호출할 때 `interface-review`가 넘긴 최대 5개 영향 화면을 도메인별로 어떻게 배분해 점검하는지는 `interface-review` 원문에 명시 없음.[](source:sk-step7) |
+| 렌더 검증 발동 조건인 "값싼 미리보기(cheap preview)"의 구체적 시간·비용 기준은 원문에 명시 없음.[](source:sk-ro) |
+| 제거된 사용자 문구와 색상 토큰 교체는 `-U0` grep 패턴으로 잡히지 않아 사람이 `hunk`를 읽으라고만 적혀 있으며, 자동 검출 규칙은 원문에 명시 없음.[](source:rs-grep) |
+
+읽은 원본: 텍스트 파일 4개(관계 확인용으로 `better-interface`, `afk`, `build-design` 일부 줄 추가 확인). 제외: 없음.

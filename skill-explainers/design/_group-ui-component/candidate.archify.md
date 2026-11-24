@@ -1,98 +1,56 @@
-# ui-component 묶음은 어떻게 이어지나 {#ui-component-group}
+# 묶음: ui-component — UI 라이브러리 선택·프로토타입 비교·극한 데이터 테스트를 수행한다 {#overview}
 
-이 묶음의 다섯 스킬은 UI 조각 하나를 다룰 때 각자 다른 질문에 답한다. 실제로 다음 스킬을 부르라고 적힌 곳은 `animate`가 `pick-ui-library`를 부르는 한 곳뿐이다(r02). 나머지는 "그건 다른 스킬의 몫"이라고 경계만 긋는다.[](source:an-81)[](source:pr-17)
+이 묶음은 UI 컴포넌트 제작과 품질 검증에 쓰는 7개 스킬을 모았다. 라이브러리 고르기(`pick-ui-library`), 토스트(`ask-sonner`), 모바일 웹 보정(`mobile-native`), 모조 제품 데모(`stageshow`), 다중 프로토타입(`prototype`), 최악 데이터 테스트(`break-ui`), 웹 모션 구현(`animate`)으로 구성된다.
 
-- `animate`는 작업에 애니메이션이 아니라 toast, drawer 같은 컴포넌트가 필요하면 멈추고 `pick-ui-library`를 호출하라고 한다. 그런데 `pick-ui-library`는 `disable-model-invocation: true`라서 모델이 스스로 켤 수 없다.[](source:an-81)[](source:pk-fm)
-- `pick-ui-library`가 toast에 Sonner를 추천하고, `ask-sonner`가 그 Sonner의 사용법을 답한다. 두 스킬은 서로 이름을 부르지 않으므로 이 연결은 판정이다(r22).[](source:pk-34)[](source:so-fm)
-- `prototype`(여러 버전 만들기)과 `break-ui`(최악 데이터로 깨 보기)는 다른 스킬로 넘기지 않는다. 서로를 역할 구분으로만 가리킨다(r16, r21).[](source:br-16)[](source:pr-17)
+- `animate`가 작업 중 토스트·drawer 같은 컴포넌트 자체가 필요하면 멈추고 `pick-ui-library`를 `호출`하며, `mobile-native`는 `animate` 모션 토큰이 있으면 재사용(`참고`)한다.[](source:anim-pick)[](source:mob-tok)
+- `prototype`과 `break-ui`, `mobile-native`는 서로 `대안`으로 역할을 구분하고, `stageshow`와 `ask-sonner`는 독립 선택지다.[](source:sstage)[](source:ssonner)
 
-@answer scope="design/emilkowalski 다섯 스킬 · 커밋 4e3fc89 · 지시상 동작 · 스킬 간 순서는 원장 rel-id 기준"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
-@source an-fm title="design/emilkowalski/animate/SKILL.md · frontmatter" path=design/emilkowalski/animate/SKILL.md lines=1:4
-@source an-81 title="animate/SKILL.md · 컴포넌트가 필요하면 pick-ui-library 호출" path=design/emilkowalski/animate/SKILL.md lines=81:81
-@source pk-fm title="design/emilkowalski/pick-ui-library/SKILL.md · frontmatter(호출 제한)" path=design/emilkowalski/pick-ui-library/SKILL.md lines=1:5
-@source pk-how title="pick-ui-library/SKILL.md · 작업 파악과 package.json 확인" path=design/emilkowalski/pick-ui-library/SKILL.md lines=21:22
-@source pk-34 title="pick-ui-library/SKILL.md · toast는 Sonner" path=design/emilkowalski/pick-ui-library/SKILL.md lines=34:34
-@source pk-80 title="pick-ui-library/SKILL.md · 손으로 만든 toast → Sonner" path=design/emilkowalski/pick-ui-library/SKILL.md lines=80:80
-@source so-fm title="design/emilkowalski/ask-sonner/SKILL.md · frontmatter" path=design/emilkowalski/ask-sonner/SKILL.md lines=1:4
-@source so-16 title="ask-sonner/SKILL.md · 안내 스킬 소개" path=design/emilkowalski/ask-sonner/SKILL.md lines=16:16
-@source so-22 title="ask-sonner/SKILL.md · Toaster는 한 번만" path=design/emilkowalski/ask-sonner/SKILL.md lines=22:22
-@source pr-fm title="design/emilkowalski/prototype/SKILL.md · frontmatter(호출 제한)" path=design/emilkowalski/prototype/SKILL.md lines=1:5
-@source pr-17 title="prototype/SKILL.md · 역할 구분" path=design/emilkowalski/prototype/SKILL.md lines=17:17
-@source pr-31 title="prototype/SKILL.md · 고른 뒤 정리" path=design/emilkowalski/prototype/SKILL.md lines=31:31
-@source pr-52 title="prototype/SKILL.md · 버전 수" path=design/emilkowalski/prototype/SKILL.md lines=52:52
-@source br-fm title="design/emilkowalski/break-ui/SKILL.md · frontmatter" path=design/emilkowalski/break-ui/SKILL.md lines=1:4
-@source br-16 title="break-ui/SKILL.md · 역할 구분" path=design/emilkowalski/break-ui/SKILL.md lines=16:16
-@source br-34 title="break-ui/SKILL.md · toggle은 개발용" path=design/emilkowalski/break-ui/SKILL.md lines=34:34
-@source br-74 title="break-ui/SKILL.md · Demo data / Worst case toggle" path=design/emilkowalski/break-ui/SKILL.md lines=74:74
-@source br-131 title="break-ui/SKILL.md · 보고하고 멈춤" path=design/emilkowalski/break-ui/SKILL.md lines=131:131
+@answer scope="design/_group-ui-component · 7개 스킬 · 관계 원장 기준"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=caba31d31edb29a8f8573e8766a333a2e4ac93e6
+@source spick title="pick-ui-library 소개" path=design/emilkowalski/pick-ui-library/SKILL.md lines=1:20
+@source sproto title="prototype 소개" path=design/emilkowalski/prototype/SKILL.md lines=1:20
+@source sbrk title="break-ui 소개" path=design/emilkowalski/break-ui/SKILL.md lines=1:20
+@source ssonner title="ask-sonner 소개" path=design/emilkowalski/ask-sonner/SKILL.md lines=1:20
+@source smob title="mobile-native 소개" path=design/emilkowalski/mobile-native/SKILL.md lines=1:20
+@source mob-tok title="mobile-native의 animate 토큰 재사용" path=design/emilkowalski/mobile-native/SKILL.md lines=144:144
+@source anim-pick title="animate의 pick-ui-library 호출" path=design/emilkowalski/animate/SKILL.md lines=81:81
+@source sstage title="stageshow 소개" path=design/benjitaylor/stageshow/SKILL.md lines=1:20
 
-## 무엇이 필요할 때 어느 스킬로 가나 {#route span=12}
+## 스킬 사이의 선택과 흐름 {#flow span=12}
 
-@workflow id=ui-route title="UI 조각 작업에서 다섯 스킬의 자리"
-| ask | UI 조각 작업 | external |
-| need | 무엇이 필요한가? | backend |
+그림에는 직접 연결(`호출`, `참고`, `대안`)이 있는 5개 스킬만 배치했고, 독립 선택지인 `ask-sonner`와 `stageshow`는 아래 단계 설명과 표에 남겼다.
+
+@architecture id=group-map title="ui-component 연결 구조"
 | anim | animate | backend |
 | pick | pick-ui-library | backend |
-| sonner | ask-sonner | backend |
-| proto | prototype | backend |
+| mob | mobile-native | backend |
 | brk | break-ui | backend |
-| ask > need | |
-| need > anim | 모션 |
-| need > pick | 라이브러리 |
-| need > proto | 여러 방향 |
-| need > brk | 깨 보기 |
-| anim > pick | 컴포넌트 필요 | emphasis |
-| pick > sonner | toast | dashed |
+| proto | prototype | backend |
+| anim > pick | 호출 | |
+| mob > anim | 참고 · 대안 | |
+| brk > proto | 대안 | dashed |
+| proto > pick | 대안 | dashed |
 
-@steps id=route-steps
-| need | 무엇이 필요한가? | 판정: 이 갈림길은 각 스킬의 description을 모아 그린 것이다. 스킬들이 이런 분기 규칙을 함께 정해 두지는 않았다. | ui-route | need |
-| anim | animate | 애니메이션을 직접 구현한다. 작업이 toast·drawer·command menu·dropdown 같은 컴포넌트면 멈추고 `pick-ui-library`를 호출하라고 한다(r02). | ui-route | anim |
-| pick | pick-ui-library | 사용자가 말한 라이브러리 이름이 아니라 작업을 보고, `package.json`부터 확인한 뒤 정해진 목록에서 고른다. 명시 호출만 된다. | ui-route | pick |
-| sonner | ask-sonner | Sonner의 설치, `toast()` 호출, 스타일, 흔한 고장을 답한다. `pick-ui-library`와의 연결은 추론이다(r22). | ui-route | sonner |
-| proto | prototype | 서로 다른 방향의 버전 3개(최대 5개)를 화면 선택기 뒤에 두고, 사용자가 고르면 나머지를 지운다. 명시 호출만 된다. | ui-route | proto |
-| brk | break-ui | 값마다 최악의 데이터를 만들어 `Demo data / Worst case` toggle 뒤에 두고, 깨진 곳과 고칠 방법을 보고한 뒤 멈춘다. | ui-route | brk |
+@steps id=group-steps
+| s-anim | animate | 이 단계에서 하는 일: 웹 애니메이션을 구현하되 컴포넌트 자체가 필요하면 `pick-ui-library`를 먼저 읽는다.[](source:anim-pick) | group-map | anim |
+| s-pick | pick-ui-library | 이 단계에서 하는 일: UI 작업 유형에 맞는 라이브러리를 큐레이션 목록에서 골라 설치까지 돕는다.[](source:spick) | group-map | pick |
+| s-mob | mobile-native | 이 단계에서 하는 일: 모바일 웹 앱의 CSS·메타태그를 고쳐 네이티브 앱 같은 사용감을 만든다.[](source:smob) | group-map | mob |
+| s-brk | break-ui | 이 단계에서 하는 일: 최악의 데이터를 UI에 주입하고 토글로 깨지는 지점과 수정안을 보고한다.[](source:sbrk) | group-map | brk |
+| s-proto | prototype | 이 단계에서 하는 일: 방향이 다른 3~5개 UI 프로토타입을 플로팅 피커로 비교한 뒤 고른 안을 통합한다.[](source:sproto) | group-map | proto |
 
-근거: r02는 `animate` 81줄,[](source:an-81) `pick-ui-library`의 작업 방식은 21~22줄,[](source:pk-how) Sonner 추천은 34·80줄,[](source:pk-34)[](source:pk-80) `prototype`의 버전 수와 정리는 52·31줄,[](source:pr-52)[](source:pr-31) `break-ui`의 toggle과 멈춤은 74·131줄이다.[](source:br-74)[](source:br-131)
+## 주고받는 것과 관계 표 {#relations span=12}
 
-## 유일한 넘김은 왜 막힐 수 있나 {#conflict}
-
-@callout level=warning title="r02: 의무형 넘김과 명시 호출 제한이 부딪친다"
-`animate`는 컴포넌트가 필요하면 "멈추고 `pick-ui-library`를 호출하라"고 적는다.[](source:an-81) `pick-ui-library`의 frontmatter는 `disable-model-invocation: true`이고, description은 "명시적으로 부를 때만 실행된다"고 한다.[](source:pk-fm)
-두 원문 사이에 우선순위는 적혀 있지 않다. 판정: 에이전트가 이 지점에서 할 수 있는 일은 사용자에게 `/pick-ui-library`를 부르라고 알리거나, 목록 없이 판단하는 것이다. 어느 쪽인지는 원문으로 정해지지 않는다.
-
-| 스킬 | 모델이 스스로 켤 수 있나 | 근거 |
-| --- | --- | --- |
-| `animate` | 있다 | 호출 제한 필드 없음[](source:an-fm) |
-| `pick-ui-library` | {bad:없다} | `disable-model-invocation: true`[](source:pk-fm) |
-| `ask-sonner` | 있다 | 호출 제한 필드 없음[](source:so-fm) |
-| `prototype` | {bad:없다} | `disable-model-invocation: true`[](source:pr-fm) |
-| `break-ui` | 있다 | 호출 제한 필드 없음[](source:br-fm) |
-
-## 무엇을 주고받고, 어떤 파일을 함께 건드리나 {#handoff}
-
-| rel-id | from → to | 종류 | 조건·강도 | 주고받는 것 |
-| --- | --- | --- | --- | --- |
-| r02 | `animate` → `pick-ui-library` | 넘김 | 컴포넌트가 필요하면 호출하라(의무형). 대상은 명시 호출만 | 작업 설명 |
-| r22 | `pick-ui-library` → `ask-sonner` | 산출물 호환(추론) | toast·알림이면 Sonner를 추천한다. 서로 이름은 부르지 않는다 | 라이브러리 선택(Sonner) |
-| r16 | `break-ui` → `prototype` | 참고 | 컴포넌트 재설계는 `prototype`의 몫이라는 역할 구분 | - |
-| r21 | `prototype` → `pick-ui-library` | 참고 | 의존성 고르기는 `pick-ui-library`의 몫이라는 역할 구분 | - |
-
-| 파일·상태 | 쓰는 스킬 | 읽는 스킬 |
-| --- | --- | --- |
-| 프로젝트 `package.json` | 원문에 명시 없음(`pick-ui-library`는 쓰는 단계를 적지 않는다) | `pick-ui-library`가 먼저 확인한다[](source:pk-how) |
-| `<Toaster />` 마운트 위치(Next.js는 `layout.tsx`) | `ask-sonner`가 한 번만 두라고 안내한다[](source:so-22) | - |
-| 비교용 화면(선택기, 개발용 toggle) | `prototype`(고른 뒤 지운다), `break-ui`(운영에는 내보내지 않는다)[](source:pr-31)[](source:br-34) | 사용자가 보고 고른다 |
-
-각 스킬 안의 규칙과 수치는 스킬 페이지에 있다. 예: `design/emilkowalski/prototype/prototype.html`, `design/emilkowalski/break-ui/break-ui.html`.
-
-## 그림에서 뺀 관계 {#omitted}
-
-| rel-id | 종류 | 그림 | 내용 |
+| 누가 | 누구를 | 관계 | 조건과 주고받는 것 |
 | --- | --- | --- | --- |
-| r17, r18 | 참고 | 생략 | `break-ui`가 시각 비평은 `emil-design-eng`, 모션은 `review-animations`로 보낸다. 둘 다 이 묶음 밖이다 |
-| r19, r20 | 참고 | 생략 | `prototype`이 기존 UI 리뷰·수정 계획을 `review-animations`, `improve-animations`의 몫으로 둔다 |
-| r16, r21 | 참고 | 생략(표에 있음) | 역할 구분이며 넘김 지시가 아니다 |
+| `animate` {#r-13} | `pick-ui-library` | 호출 | 의무: 애니메이션이 아니라 UI 컴포넌트 자체가 필요하면 멈추고 `../pick-ui-library/SKILL.md`를 읽는다.[](source:anim-pick) |
+| `mobile-native` {#r-36} | `animate` | 참고 | 코드베이스가 `animate` 토큰을 쓰면 새 커브를 만들지 않고 재사용한다(모션 토큰).[](source:mob-tok) |
+| `mobile-native` {#r-37} | `animate` | 대안 | 역할 경계: 모션 설계 자체는 `animate`를 쓴다.[](source:smob) |
+| `break-ui` {#r-27} | `prototype` | 대안 | 역할 경계: 컴포넌트 재설계는 `prototype`을 쓴다.[](source:sbrk) |
+| `prototype` {#r-42} | `pick-ui-library` | 대안 | 역할 경계: 의존성 선택은 `pick-ui-library`를 쓴다.[](source:sproto) |
+| `ask-sonner`, `stageshow` {#r-ind} | 묶음 내 독립 | 안내 · 선택지 | Sonner 가이드(`ask-sonner`)와 가짜 제품 UI 데모 제작(`stageshow`)으로 직접 연결 없음(그림에서 생략).[](source:ssonner)[](source:sstage) |
 
-@callout level=open-question title="확인하지 못한 것"
-다섯 스킬을 실제로 실행하지 않았다. r02 충돌에서 에이전트가 실제로 어떻게 움직이는지, `pick-ui-library`가 추천한 Sonner를 설치한 뒤 `ask-sonner`가 켜지는지는 지시상 동작으로만 적었다.
+## 공유 상태 {#shared-state span=12}
+
+| 파일·폴더 | 쓰는 스킬 | 읽는 스킬 |
+| --- | --- | --- |
+| 없음(프로젝트 기존 모션 토큰은 `animate` 규약 시 `mobile-native`가 재사용) | - | - |

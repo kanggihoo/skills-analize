@@ -1,169 +1,122 @@
-# kb-retriever 스킬은 에이전트를 어떻게 바꾸나 {#kb-retriever-skill}
+# kb-retriever — 계층 색인과 파일별 전처리로 로컬 지식 폴더를 단계적 검색해 답한다 {#overview}
 
-`kb-retriever`를 쓰면 에이전트는 로컬 지식 폴더에서 답을 찾을 때 파일을 통째로 읽지 않는다. 폴더마다 있는 색인 파일 `data_structure.md`를 따라 관련 있는 곳만 내려가고, `grep`으로 위치를 찾은 뒤 그 주변만 읽는다. PDF나 Excel을 만나면 스킬 안의 처리법 문서부터 읽고, 파일을 텍스트로 바꾼 다음에 검색한다.[](source:kb-fm)[](source:kb-learn)
+에이전트는 로컬 지식 폴더의 계층 색인을 따라 관련 파일만 고른 뒤, 형식별 전처리와 단계적 검색으로 근거를 찾아 답한다.[](source:fm)[](source:flow12)[](source:flow56)
 
-- 켜지는 때: 지식 폴더에서 질문에 답하거나 자료를 찾아 달라는 요청이다. 호출 제한 필드는 없다.[](source:kb-fm)
-- 강제하는 것: PDF·Excel 처리 전에 `references/`의 문서를 읽는다. 검색은 최대 5회다. 이 스킬로 답할 때는 웹 검색을 쓰지 않는다.[](source:kb-learn)[](source:kb-iter)[](source:kb-note)
-- 사람의 몫: 기본 폴더 `knowledge/`가 없으면 에이전트가 다른 폴더를 추측하지 않고 사용자에게 경로를 묻는다.[](source:kb-locate)
-- 끝나는 때: 답할 근거를 찾았거나, 5회를 채웠는데 못 찾았을 때다. 못 찾으면 없다고 말하고 가장 가까운 정보와 불확실성을 함께 준다.[](source:kb-iter)
+- 사용자가 로컬 지식 폴더에서 자료 검색이나 질의응답을 청하면 켜지며, 문서 형식(Markdown·텍스트, PDF, Excel)에 따라 처리 경로가 갈린다.[](source:fm)[](source:flow34)
+- 결과로 출처(파일명과 대략의 장·행·쪽·시트 위치)가 달린 답변을 남기며, 정보가 부족하면 확인된 범위와 불확실성을 밝혀 재질문한다.[](source:flow56)[](source:reply)
+- 조사 범위에서 확인된 연결 없음
+- 파일 전체를 한꺼번에 읽거나, PDF·Excel 안내 문서를 읽기 전에 파일을 먼저 열거나, 지식 폴더 밖의 웹 검색을 쓰지 않는다.[](source:learn)[](source:search)[](source:tools)
 
-@answer scope="design/garden-skills/kb-retriever · 원본 텍스트 7개 36,875B · 커밋 4e3fc89 · SKILL.md는 중국어 원본 · 지시상 동작 · 실행하지 않음"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
-@source kb-fm title="design/garden-skills/kb-retriever/SKILL.md · 13984B · frontmatter(중국어 원본)" path=design/garden-skills/kb-retriever/SKILL.md lines=1:4
-@source kb-root title="SKILL.md · 지식 폴더 구조와 기본 경로" path=design/garden-skills/kb-retriever/SKILL.md lines=8:21
-@source kb-locate title="SKILL.md · knowledge 루트 찾기" path=design/garden-skills/kb-retriever/SKILL.md lines=23:32
-@source kb-learn title="SKILL.md · 먼저 배우고 처리한다(강제 점검표와 금지)" path=design/garden-skills/kb-retriever/SKILL.md lines=34:46
-@source kb-s1 title="SKILL.md · 1 요구 이해와 루트 결정" path=design/garden-skills/kb-retriever/SKILL.md lines=50:58
-@source kb-s2 title="SKILL.md · 2 색인 단계별 탐색" path=design/garden-skills/kb-retriever/SKILL.md lines=60:77
-@source kb-s3 title="SKILL.md · 3 처리법 읽기" path=design/garden-skills/kb-retriever/SKILL.md lines=79:87
-@source kb-s4 title="SKILL.md · 4 형식별 처리와 검색" path=design/garden-skills/kb-retriever/SKILL.md lines=89:95
-@source kb-s5 title="SKILL.md · 5 반복 검색" path=design/garden-skills/kb-retriever/SKILL.md lines=97:98
-@source kb-s6 title="SKILL.md · 6 답과 출처" path=design/garden-skills/kb-retriever/SKILL.md lines=100:107
-@source kb-kw title="SKILL.md · 키워드 고르기" path=design/garden-skills/kb-retriever/SKILL.md lines=111:114
-@source kb-grep title="SKILL.md · grep 원칙" path=design/garden-skills/kb-retriever/SKILL.md lines=116:120
-@source kb-iter title="SKILL.md · 반복 검색(최대 5회)과 종료 조건" path=design/garden-skills/kb-retriever/SKILL.md lines=122:139
-@source kb-note title="SKILL.md · 주의 사항(Glob 금지, 웹 검색 금지)" path=design/garden-skills/kb-retriever/SKILL.md lines=141:144
-@source kb-md title="SKILL.md · Markdown·텍스트 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=148:162
-@source kb-pdf title="SKILL.md · PDF 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=164:185
-@source kb-xls title="SKILL.md · Excel 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=187:211
-@source kb-tools title="SKILL.md · 도구 사용 원칙" path=design/garden-skills/kb-retriever/SKILL.md lines=213:231
-@source kb-style title="SKILL.md · 답하는 방식과 오류 처리" path=design/garden-skills/kb-retriever/SKILL.md lines=233:247
-@source rd-what title="design/garden-skills/kb-retriever/README.md · 7249B · 하는 일" path=design/garden-skills/kb-retriever/README.md lines=9:16
-@source rd-tree title="README.md · 스킬 구조" path=design/garden-skills/kb-retriever/README.md lines=30:42
-@source rd-setup title="README.md · 지식 폴더 준비" path=design/garden-skills/kb-retriever/README.md lines=46:71
-@source rd-tmpl title="README.md · data_structure.md 틀" path=design/garden-skills/kb-retriever/README.md lines=73:90
-@source rd-table title="README.md · 형식별 도구 표" path=design/garden-skills/kb-retriever/README.md lines=124:130
-@source rd-faq title="README.md · FAQ" path=design/garden-skills/kb-retriever/README.md lines=166:178
-@source rd-tools title="README.md · 필요한 도구와 스크립트 용도" path=design/garden-skills/kb-retriever/README.md lines=182:191
-@source mf-all title="design/garden-skills/kb-retriever/manifest.json · 546B · 버전과 호환 도구" path=design/garden-skills/kb-retriever/manifest.json lines=1:15
-@source pr-head title="design/garden-skills/kb-retriever/references/pdf_reading.md · 9486B · 머리말" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=1:5
-@source pr-table title="pdf_reading.md · 빠른 결정표" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=7:15
-@source pr-prio title="pdf_reading.md · 텍스트 추출 우선순위" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=17:23
-@source pr-quick title="pdf_reading.md · pdftotext는 파일로 출력" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=25:46
-@source pr-ocr title="pdf_reading.md · 스캔 PDF OCR" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=258:276
-@source pr-perf title="pdf_reading.md · 성능 최적화" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=336:342
-@source pr-ref title="pdf_reading.md · 빠른 참조표" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=344:353
-@source er-all title="design/garden-skills/kb-retriever/references/excel_reading.md · 1742B · pandas 읽기" path=design/garden-skills/kb-retriever/references/excel_reading.md lines=1:21
-@source er-big title="excel_reading.md · 큰 파일" path=design/garden-skills/kb-retriever/references/excel_reading.md lines=61:72
-@source ea-head title="design/garden-skills/kb-retriever/references/excel_analysis.md · 2745B · 빠른 참조" path=design/garden-skills/kb-retriever/references/excel_analysis.md lines=1:15
-@source ea-group title="excel_analysis.md · 분석 예시" path=design/garden-skills/kb-retriever/references/excel_analysis.md lines=17:34
-@source sc-all title="design/garden-skills/kb-retriever/scripts/convert_pdf_to_images.py · 1123B · PDF 페이지를 PNG로" path=design/garden-skills/kb-retriever/scripts/convert_pdf_to_images.py lines=1:35
+@answer scope="design/garden-skills/kb-retriever · 원본 파일 8개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=caba31d31edb29a8f8573e8766a333a2e4ac93e6
+@source fm title="frontmatter: name·description" path=design/garden-skills/kb-retriever/SKILL.md lines=1:4
+@source root title="지식 폴더 구조와 루트 경로 확인 규칙" path=design/garden-skills/kb-retriever/SKILL.md lines=8:33
+@source learn title="선학습 체크리스트와 금지 행위" path=design/garden-skills/kb-retriever/SKILL.md lines=34:47
+@source flow12 title="1~2단계: 요청 파악과 계층 색인 탐색" path=design/garden-skills/kb-retriever/SKILL.md lines=50:78
+@source flow34 title="3~4단계: 안내 선독과 파일별 처리" path=design/garden-skills/kb-retriever/SKILL.md lines=79:96
+@source flow56 title="5~6단계: 반복 검색과 답변·출처 정리" path=design/garden-skills/kb-retriever/SKILL.md lines=97:108
+@source search title="키워드·grep 원칙과 5회 반복 검색 제한" path=design/garden-skills/kb-retriever/SKILL.md lines=111:145
+@source mdstrat title="Markdown·텍스트 파일 검색 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=148:162
+@source pdfstrat title="PDF 파일 전처리와 검색 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=164:185
+@source xlsstrat title="Excel 파일 구조 파악과 필터 검색 전략" path=design/garden-skills/kb-retriever/SKILL.md lines=187:211
+@source tools title="도구 조합 원칙과 대용량 파일 읽기 제한" path=design/garden-skills/kb-retriever/SKILL.md lines=213:231
+@source reply title="답변 언어와 정보 부족 시 안내 규칙" path=design/garden-skills/kb-retriever/SKILL.md lines=233:247
+@source ref-pdf title="PDF 추출 우선순위와 파일 저장 규칙" path=design/garden-skills/kb-retriever/references/pdf_reading.md lines=1:47
+@source ref-xls-read title="Excel 부분 읽기(nrows·usecols) 안내" path=design/garden-skills/kb-retriever/references/excel_reading.md lines=1:21
+@source ref-xls-ana title="pandas 데이터 필터·집계 안내" path=design/garden-skills/kb-retriever/references/excel_analysis.md lines=1:16
+@source script-pdfimg title="스캔 PDF 페이지 이미지 변환 스크립트" path=design/garden-skills/kb-retriever/scripts/convert_pdf_to_images.py lines=10:35
+@source readme-tmpl title="data_structure.md 권장 형식" path=design/garden-skills/kb-retriever/README.md lines=73:91
+@source readme-script title="도구 요구사항과 스캔 PDF 폴백 안내" path=design/garden-skills/kb-retriever/README.md lines=182:192
 
-## 언제 켜지고, 사람은 어디서 개입하나 {#trigger}
+## 어떻게 동작하나 {#flow span=12}
 
-@code source=kb-fm language=yaml
+에이전트는 요청을 받은 뒤 루트 폴더 확인, 계층 색인 탐색, 형식별 선학습, 추출 및 단계적 검색(최대 5회 반복), 출처 기반 답변 순으로 진행한다.[](source:flow12)[](source:flow34)[](source:search)
 
-`description`은 중국어 원문이다. 로컬 지식 폴더를 대상으로 한 검색·질의응답 도우미라고 밝히고, 사용자 질문이 "지식 폴더에서 답하기, 정보 검색, 자료 찾기"에 해당하면 쓰라고 한다.[](source:kb-fm) 호출 제한 필드가 없어서 모델이 이 설명을 참고해 켤 수 있다. 판정: `description`은 판단용 설명이지, 특정 단어가 있으면 켜지는 목록이 아니다.
+@workflow id=flow-diagram title="kb-retriever 흐름"
+| lane prepare | 경로와 색인 탐색 |
+| lane prestudy | 형식별 선학습 |
+| lane retrieve | 추출과 반복 검색 |
+| lane answer | 근거 정리와 답변 |
+| req | 요청과 루트 확인 | external | prepare | source:flow12 |
+| rootok | 루트 폴더 존재? | backend | prepare | source:root |
+| askroot | 경로 확인 후 중단 | security | prepare | source:root |
+| nav | 색인 트리 내려가기 | backend | prepare | source:flow12 |
+| needdoc | PDF·Excel 있나? | backend | prestudy | source:learn |
+| study | 처리 안내 먼저 읽기 | backend | prestudy | source:flow34 |
+| search | 추출과 단계적 검색 | backend | retrieve | source:search |
+| enough | 근거 충분한가? | backend | retrieve | source:search |
+| reply | 출처 붙여 답변 | backend | answer | source:flow56 |
+| insufficient | 부족 알림·범위 좁히기 | security | answer | source:search |
+| req > rootok | |
+| rootok > askroot | 없음 | dashed |
+| rootok > nav | 확인됨 | emphasis |
+| nav > needdoc | 후보 확정 |
+| needdoc > study | PDF·Excel | emphasis |
+| needdoc > search | 텍스트만 |
+| study > search | 안내 숙지 |
+| search > enough | |
+| enough > reply | 충분함 | emphasis |
+| enough > search | 부족(5회 미만) | dashed |
+| enough > insufficient | 5회 도달 | dashed |
 
-이 스킬은 지식 폴더를 들고 오지 않는다. 사용자가 자기 자료를 준비해야 한다.[](source:rd-setup)
+@steps id=flow-steps
+| s-req | 요청과 루트 확인 | **입력** 사용자 질문 · **출력** 핵심 키워드·범위·후보 루트 경로. **처리** 질문에서 주제·기간·출력 형식을 뽑고, 지정 경로가 없으면 기본 경로 `knowledge/`를 점검 대상으로 잡는다.[](source:flow12) | flow-diagram | req |
+| s-rootok | 루트 폴더 존재? | **입력** 대상 루트 경로 · **실행** `test -d knowledge` 또는 `ls -d knowledge` · **출력** 폴더 존재 여부. **처리** shell 명령으로 지식 폴더가 실제 있는지 확인하며 `Glob "knowledge" in .` 호출은 금지한다.[](source:root) | flow-diagram | rootok |
+| s-askroot | 경로 확인 후 중단 | **입력** 존재 확인 실패 · **출력** 경로 지정 요청 메시지. **처리** 기본 `knowledge/` 폴더를 찾지 못하면 다른 폴더를 추측하지 않고 사용자에게 실제 경로를 물어보고 멈춘다.[](source:root)[](source:flow12) | flow-diagram | askroot |
+| s-nav | 색인 트리 내려가기 | **입력** 확인된 지식 폴더 루트 · **참조** 각 디렉터리의 `data_structure.md` · **출력** 우선순위가 매겨진 후보 파일 목록. **처리** `data_structure.md` 앞부분(예: `limit=300`)을 읽어 관련 하위 폴더로만 재귀 탐색하고 일반 문서보다 주제·시점 일치 파일을 앞세운다.[](source:flow12) | flow-diagram | nav |
+| s-needdoc | PDF·Excel 있나? | **입력** 후보 파일 목록 · **출력** 형식별 분기 판정. **처리** 후보 목록에 PDF나 Excel 파일이 들어 있는지 확인해 선학습 단계 진입 여부를 가른다.[](source:learn)[](source:flow34) | flow-diagram | needdoc |
+| s-study | 처리 안내 먼저 읽기 | **입력** PDF 또는 Excel 후보 목록 · **참조** `references/pdf_reading.md`, `references/excel_reading.md`, `references/excel_analysis.md` · **출력** 추출·필터 도구 계획. **처리** 처리 전 해당 참조 문서를 먼저 읽어 올바른 도구와 플래그를 익히며, 읽지 않고 원문을 여는 것은 금지한다.[](source:learn)[](source:flow34) | flow-diagram | study |
+| s-search | 추출과 단계적 검색 | **입력** 후보 파일과 검색 키워드 3~8개 · **실행** `pdftotext input.pdf output.txt`, `pandas`, `Grep`, 부분 `Read` · **출력** 파일명·위치·문맥 조각 모음. **처리** PDF는 파일로 추출하고 Excel은 `nrows`로 구조를 본 뒤 필터링하며, 모든 형식에서 `Grep` 뒤 매칭 앞뒤 구간(예: 200~500줄)만 읽는다.[](source:search)[](source:mdstrat)[](source:pdfstrat)[](source:xlsstrat)[](source:tools) **다음** 다중 라운드 검색 횟수를 1 증가시킨다.[](source:search) | flow-diagram | search |
+| s-enough | 근거 충분한가? | **입력** 수집된 문맥 조각과 시도 횟수 · **출력** 답변 가능 판정 또는 재검색 결정. **처리** 답변을 뒷받침할 근거가 모였으면 종료하고, 부족하면서 시도 횟수가 5회 미만이면 동의어·확장어로 키워드를 고쳐 다시 검색한다.[](source:search) | flow-diagram | enough |
+| s-reply | 출처 붙여 답변 | **입력** 충분한 문맥 조각 · **출력** 결론·근거·출처 위치 목록. **처리** 질문과 같은 언어로 결론을 먼저 적고 사용한 파일명과 장·행·쪽·시트 위치를 붙이며, 추정이나 미완성 부분이 있으면 명시한다.[](source:flow56)[](source:reply) | flow-diagram | reply |
+| s-insufficient | 부족 알림·범위 좁히기 | **입력** 5회 시도 후 남은 문맥 · **출력** 누락 안내·가장 가까운 단서·좁히기 제안. **처리** 5회 반복에도 충분한 근거를 못 찾으면 사실 지어내기를 피하고 찾은 범위의 불확실성과 함께 더 좁은 폴더·키워드·기간 제공을 요청한다.[](source:search)[](source:reply) | flow-diagram | insufficient |
 
-| 지점 | 에이전트가 하는 일 | 사람의 몫 |
-| --- | --- | --- |
-| 루트 경로 | 사용자가 경로를 말했으면 그대로 쓴다. 원문 예: "我的知识库在 /data/kb", "用 ./docs 这个目录作为知识库"[](source:kb-root) | {good:경로를 말한다} |
-| 기본 경로가 없을 때 | `test -d knowledge`로 확인하고, 없으면 다른 폴더를 추측하지 않는다. 기본 루트를 못 찾았다고 알리고 실제 경로를 묻는다[](source:kb-locate) | {caution:경로를 알려 준다} |
-| 색인 준비 | 각 폴더의 `data_structure.md`를 읽어 길을 정한다. README가 Purpose, Files, Coverage 절로 된 틀을 준다[](source:kb-root)[](source:rd-tmpl) | {caution:색인을 써 둔다} |
-| 정보가 부족할 때 | 못 찾았다고 말하고, 가장 가까운 정보와 불확실성을 준다. 더 구체적인 파일, 키워드, 기간을 달라고 한다[](source:kb-iter)[](source:kb-style) | 범위를 좁혀 준다 |
-
-**쓰면 안 되는 때.** 원문이 이 스킬 사용 자체를 막는 작업은 `원문에 명시 없음`이다. 이 스킬을 쓰는 동안 금지하는 행동은 분명하다.
-
-| 금지 | 원문의 이유 |
-| --- | --- |
-| 웹 검색 등 다른 도구로 지식을 가져온다 {bad:금지} | 이 스킬로 지식 폴더를 조회할 때의 규칙이다[](source:kb-note) |
-| `Glob "knowledge" in .`처럼 Glob으로 폴더가 있는지 판단한다 {bad:금지} | Glob은 파일 경로만 돌려줘서, 빈 결과로는 "폴더 없음"과 "폴더가 비어 있음"을 가르지 못한다. 폴더 확인은 `test -d`(차선 `ls -d`)로 한다[](source:kb-locate)[](source:kb-note) |
-| `pdf_reading.md`를 읽지 않고 PDF를 처리한다 {bad:금지} | 강제 점검표[](source:kb-learn) |
-| `excel_reading.md`를 읽지 않고 Excel을 처리한다 {bad:금지} | 강제 점검표. Excel은 `excel_analysis.md`도 먼저 읽는다[](source:kb-learn)[](source:kb-s3) |
-| 변환 단계를 건너뛰고 원본 PDF·Excel에서 바로 검색한다 {bad:금지} | 강제 점검표[](source:kb-learn) |
-| 큰 파일을 처음부터 끝까지 읽는다 {bad:금지} | 색인, 목차, 키워드로 범위를 먼저 좁힌다[](source:kb-tools) |
-| 사실을 지어낸다 {bad:금지} | 정보가 없거나 불확실하면 그렇다고 말한다[](source:kb-style) |
-
-판정: 이 스킬은 `design` 컬렉션에 있지만 디자인 작업과 관련이 없다. 관계 원장에도 다른 스킬과 연결이 없는 독립 스킬로 올라 있다.
-
-## 어떤 순서로 찾고 언제 멈추나 {#procedure}
-
-@workflow id=kb-flow title="지식 폴더 검색 흐름"
-| lane find | 찾을 곳 정하기 |
-| lane read | 읽고 검색하기 |
-| lane answer | 답하기 |
-| kf-need | 1 요구 이해 | external | find |
-| kf-root | 루트 폴더 있나? | backend | find |
-| kf-ask | 경로 묻기 | external | find |
-| kf-index | 2 색인 따라 내려가기 | backend | find |
-| kf-learn | 3 처리법 읽기(PDF·Excel) | backend | read |
-| kf-search | 4 변환과 검색 | backend | read |
-| kf-enough | 답할 근거 충분? | backend | read |
-| kf-answer | 6 답과 출처 | backend | answer |
-| kf-short | 부족하다고 알림 | backend | answer |
-| kf-need > kf-root | |
-| kf-root > kf-ask | 아니오 |
-| kf-root > kf-index | 예 |
-| kf-index > kf-learn | 대상 목록 | emphasis |
-| kf-learn > kf-search | |
-| kf-search > kf-enough | |
-| kf-enough > kf-search | 아니오, 5회 미만 |
-| kf-enough > kf-answer | 예 | emphasis |
-| kf-enough > kf-short | 5회 도달 |
-
-@steps id=kb-steps
-| kf-need | 1 요구 이해 | 질문에서 주제·분야 키워드(예: "销售报表", "接口文档"), 시간·범위 조건(예: "2023 年 Q1"), 원하는 결과 종류(설명, 요약, 특정 값)를 뽑는다.[](source:kb-s1) | kb-flow | kf-need |
-| kf-root | 루트 폴더 있나? | 사용자가 준 경로가 먼저다. 없으면 현재 프로젝트의 `knowledge/`를 `test -d`로 확인한다. 폴더가 확인된 뒤에만 Glob을 쓴다. 예: `pattern="**/data_structure.md"`, `path="knowledge"`.[](source:kb-locate) | kb-flow | kf-root |
-| kf-ask | 경로 묻기 | 기본 루트가 없거나 구조가 이상하면 추측하지 않고 사용자에게 묻는다.[](source:kb-s1)[](source:kb-locate) | kb-flow | kf-ask |
-| kf-index | 2 색인 따라 내려가기 | 현재 폴더의 `data_structure.md`를 앞부분부터 읽는다(예: limit=300, 필요하면 나눠 읽기). 질문과 가장 관련 있는 하위 폴더·파일을 골라 그 폴더로 들어가 같은 일을 되풀이한다. 모든 갈래를 한꺼번에 파지 않는다. 고른 파일이 검색 대상 목록이 된다.[](source:kb-s2) | kb-flow | kf-index |
-| kf-learn | 3 처리법 읽기(PDF·Excel) | 대상 목록에 PDF나 Excel이 있을 때만 강제되는 단계다. Markdown·텍스트만 있으면 건너뛴다. PDF면 `references/pdf_reading.md`, Excel이면 `excel_reading.md`와 `excel_analysis.md`를 읽는다. 원문은 이 폴더가 지식 폴더가 아닌 스킬 폴더 안에 있다고 거듭 짚는다.[](source:kb-s3) | kb-flow | kf-learn |
-| kf-search | 4 변환과 검색 | 배운 방법으로 파일을 추출·변환한 뒤, 가장 관련 있는 파일부터 국소적으로 검색한다. 한 파일에서 만족스러운 정보가 없으면 다음 후보로 넘어간다.[](source:kb-s4) | kb-flow | kf-search |
-| kf-enough | 답할 근거 충분? | 매 회차 키워드를 갱신하고, 덜 본 파일이나 부분을 골라 검색하고, 찾은 조각으로 답할 수 있는지 판단한다. 시도 횟수를 세고 최대 5회에서 멈춘다.[](source:kb-iter) | kb-flow | kf-enough |
-| kf-answer | 6 답과 출처 | 결론을 먼저 말하고 근거를 짧게 붙인다. 쓴 파일 이름과 대략의 위치를 적는다. 원문 예: "design/api_gateway.md 第 100 行附近", "reports/2023_Q1_sales.xlsx Summary 工作表". 질문한 언어로 답한다.[](source:kb-s6)[](source:kb-style) | kb-flow | kf-answer |
-| kf-short | 부족하다고 알림 | 지식 폴더에 없을 수 있다고 분명히 말하고, 가장 가까운 정보를 불확실성과 함께 준다. 범위를 좁힐 방법(파일 이름, 키워드, 기간)을 제안한다.[](source:kb-iter) | kb-flow | kf-short |
-
-추론으로 답했거나 정보가 불완전하면 에이전트는 가정과 불확실성을 표시한다.[](source:kb-s6) 색인에서 우선순위를 정할 때는 용도 설명이 주제와 잘 맞는 폴더·파일을 먼저 보고, 시간·버전 조건을 그다음으로 본다. README나 전체 설계 같은 일반 설명 문서는 뒤로 미룬다.[](source:kb-s2)
-
-## 파일 형식마다 무엇을 쓰고, 수치는 무엇인가 {#formats}
-
-| 형식 | 에이전트가 하는 일 | 원문 규칙 |
-| --- | --- | --- |
-| Markdown·텍스트(`.md`, `.txt`, `.log`) | 색인과 파일 이름으로 후보를 고르고, 요약·설계 개요 같은 목차형 문서를 먼저 본다. `grep`에 확장자를 지정하고, 맞은 줄 앞뒤 수십 줄만 offset과 limit으로 읽는다[](source:kb-md) | 목차뿐인 문서는 링크나 소제목을 따라 더 들어간다[](source:kb-md) |
-| PDF | `data_structure.md` 설명으로 가장 관련 있는 1~3개를 고른다. 사용자가 지목한 PDF가 있으면 그것이 먼저다. `pdftotext input.pdf output.txt`로 파일에 추출하고 그 텍스트를 `grep`한다. 표는 pdfplumber로 뽑는다[](source:kb-pdf) | 추출 결과를 stdout으로 내보내지 않는다. 토큰을 많이 먹기 때문이다. 위치는 "파일 이름 + 페이지 + 조각"으로 남긴다[](source:kb-pdf)[](source:pr-quick) |
-| Excel | 색인과 시트 이름으로 표를 고른다. "报表", "统计", "日志", "配置", "映射"이 든 통합 문서·시트를 먼저 본다. pandas로 `nrows`를 걸어 앞 10~50행만 읽고 열 이름과 타입을 파악한다[](source:kb-xls) | 질문과 맞는 열로 거르고 집계한다(예: `df[df['column'] == value]`). 기간 조건이 있으면 시간 필터를 넣는다. 표 전체를 한 번에 읽지 않는다[](source:kb-xls) |
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
 
 @facts
-| 키워드 수 | 질문에서 3~8개. 영어 약어, 동의어, 상위·하위어를 포함한다(예: "uv", "pv", "GMV")[](source:kb-kw) |
-| 검색 횟수 | 최대 5회(의무). 회차마다 횟수를 센다[](source:kb-iter) |
-| Read 범위 | 합리적인 limit, 예로 200~500줄과 알맞은 offset을 늘 지정한다[](source:kb-tools) |
-| 색인 읽기 | 예시 limit=300. 필요하면 나눠 읽는다[](source:kb-s2) |
-| PDF 후보 | 가장 관련 있는 1~3개[](source:kb-pdf) |
-| Excel 미리보기 | `nrows`로 앞 10~50행[](source:kb-xls) |
-| `grep` 범위 | include와 path를 최대한 좁혀 지정하고, 폴더 전체를 검색하지 않는다[](source:kb-grep) |
+| 직접 켜는 방법 | 사용자가 로컬 지식 폴더에서 정보 검색, 자료 조회, 질의응답을 요청하면 모델이 `description`을 보고 켠다. 호출 제한 필드는 없다.[](source:fm) |
+| 성격 | 계층형 `data_structure.md` 탐색과 PDF·Excel 선학습·부분 추출로 token 낭비 없이 로컬 자료를 검색하는 절차 지침이다.[](source:fm)[](source:learn) |
 
-**`pdf_reading.md`가 정한 도구 순서.** 이 문서는 PDF를 다루기 전에 "끝까지" 읽으라고 머리말에 적는다.[](source:pr-head) 텍스트 추출 우선순위는 pdftotext 명령, pdfplumber(레이아웃·표), pypdf(가벼운 추출), OCR(스캔 PDF 전용) 순이다.[](source:pr-prio)
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| 없음 {#none} | - | - | 조사 범위에서 확인된 연결 없음 |
 
-| 상황 | 권장 도구 | 예시 |
+@code source=fm language=yaml
+
+## 어떤 파일로 이루어지나 {#files span=12}
+
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
+| --- | --- | --- | --- |
+| `SKILL.md` | 전체 6단계 흐름, 선학습 금지, 형식별 검색 전략, 5회 반복 규칙을 담는다 | 스킬이 켜지면 읽는다 | 모든 단계 |
+| `references/pdf_reading.md` | `pdftotext`·`pdfplumber`·`pypdf`·OCR 우선순위와 추출 명령을 안내한다 | 후보에 PDF가 있으면 처리 전 반드시 읽는다[](source:flow34)[](source:pdfstrat) | 처리 안내 먼저 읽기 · 추출과 단계적 검색 |
+| `references/excel_reading.md` | `pandas`의 `nrows`·`usecols`·`dtype` 부분 읽기 방법을 안내한다 | 후보에 Excel이 있으면 처리 전 반드시 읽는다[](source:flow34)[](source:xlsstrat)[](source:ref-xls-read) | 처리 안내 먼저 읽기 · 추출과 단계적 검색 |
+| `references/excel_analysis.md` | `pandas` 조건 필터·`groupby`·정렬·피벗·정제 방법을 안내한다 | 후보에 Excel이 있으면 처리 전 반드시 읽는다[](source:flow34)[](source:xlsstrat)[](source:ref-xls-ana) | 처리 안내 먼저 읽기 · 추출과 단계적 검색 |
+| `scripts/convert_pdf_to_images.py` | PDF 각 쪽을 `dpi=200`, `max_dim=1000` 제한 PNG(`page_N.png`)로 저장한다 | `README.md`에서만 스캔 PDF 폴백으로 안내하며 `SKILL.md`에는 직접 호출 지시가 없다[](source:readme-script)[](source:script-pdfimg) | 흐름 밖: 스캔 PDF 폴백 |
+| `README.md` / `README.zh-CN.md` | 사용자용 설치·`data_structure.md` 템플릿·도구 의존성을 설명한다 | 사람 안내용 문서이며 에이전트 실행 지시에는 없다[](source:readme-tmpl) | 흐름 밖: 사용자 문서 |
+| `manifest.json` | 스킬 이름, 버전(`1.0.1`), 호환 클라이언트 목록을 기록한다 | 메타데이터 파일로 에이전트 실행 흐름에서는 읽지 않는다 | 흐름 밖: 패키지 메타데이터 |
+
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
+
+| 조건 | 결과 | 출처 |
 | --- | --- | --- |
-| 일반 텍스트 추출 | pdftotext | `pdftotext input.pdf output.txt`[](source:pr-table) |
-| 레이아웃 유지 | `pdftotext -layout` | `pdftotext -layout input.pdf output.txt`[](source:pr-table) |
-| 표 추출 | pdfplumber | `page.extract_tables()`[](source:pr-table) |
-| 메타데이터 | pypdf | `reader.metadata`[](source:pr-table) |
-| 스캔 PDF | OCR(pytesseract) | 이미지로 바꾼 뒤 OCR[](source:pr-table)[](source:pr-ocr) |
-| 큰 PDF | 페이지 범위 추출 | `pdftotext -f 1 -l 5 input.pdf output.txt`[](source:pr-quick)[](source:rd-faq) |
+| 루트 폴더 `knowledge/` 확인 | `test -d knowledge` 또는 `ls -d knowledge`를 쓰며, `Glob "knowledge" in .` 호출을 금지한다 | [](source:root)[](source:search) |
+| 기본 `knowledge/` 없음·미지정 | 다른 경로를 추측하지 않고 사용자에게 실제 지식 폴더 경로를 묻고 멈춘다 | [](source:root)[](source:flow12) |
+| PDF·Excel 파일 처리 전 | 해당 참조 문서(`pdf_reading.md`, `excel_reading.md`, `excel_analysis.md`)를 읽기 전 처리와 직접 검색을 금지한다 | [](source:learn)[](source:flow34) |
+| `pdftotext` 실행 방식 | 반드시 파일(`output.txt`)로 저장해 검색하며 `stdout` 직접 출력(`-`)은 token 낭비로 금지한다 | [](source:pdfstrat)[](source:ref-pdf) |
+| PDF·Excel 초기 탐색 범위 | PDF는 관련 파일 1~3개만 고르고, Excel은 `nrows`로 앞 10~50행만 먼저 읽어 구조를 파악한다 | [](source:pdfstrat)[](source:xlsstrat) |
+| 본문 파일 읽기 방식 | 전체 파일을 처음부터 끝까지 읽지 않고 `Grep` 매칭 주변(`limit` 200~500줄 등)만 부분 읽기한다 | [](source:tools) |
+| 외부 정보 도구 사용 | 이 스킬로 지식 폴더를 조회하는 동안 웹 검색 같은 외부 지식 도구를 쓰지 않는다 | [](source:search) |
+| 반복 검색 횟수 상한 | 키워드 보완 재검색을 최대 5회로 제한하고, 넘기면 찾은 한도와 불확실성을 알려주고 범위 축소를 요청한다 | [](source:search)[](source:reply) |
 
-**Excel 문서.** `excel_reading.md`는 `sheet_name`, `nrows`, `usecols`로 필요한 부분만 읽는 법과 `dtype`, 엔진 선택을 다룬다. 큰 파일은 앞 몇 행으로 구조부터 본다.[](source:er-all)[](source:er-big) `excel_analysis.md`는 조건 필터, `groupby` 집계, 정렬, 파생 열, `describe`의 예를 든다.[](source:ea-head)
+## 더 자세히 읽으려면 {#more span=12}
 
-**스크립트.** `scripts/convert_pdf_to_images.py`는 PDF 각 페이지를 dpi 200으로 이미지로 바꾸고, 가로·세로가 1000px를 넘으면 줄여 `page_N.png`로 저장한다. 인자는 입력 PDF와 출력 폴더 두 개다.[](source:sc-all)
+공개된 상세:
 
-`SKILL.md`는 이 스크립트를 부르지 않는다. README만 텍스트 추출이 쓸모없는 스캔 PDF용 대안으로 소개한다.[](source:rd-tools) 이 분석에서는 실행하지 않았다.
+- 아직 없음
 
-## 이 분석의 범위와 한계 {#audit}
+상세 후보(요청하면 만든다):
 
-- 읽은 텍스트 파일은 7개, 합계 36,875B다. `SKILL.md` 13,984B, `README.md` 7,249B, `manifest.json` 546B, `references/pdf_reading.md` 9,486B, `references/excel_reading.md` 1,742B, `references/excel_analysis.md` 2,745B, `scripts/convert_pdf_to_images.py` 1,123B다. 구조·표본만 본 파일은 없다.
-- 제외한 파일 6개: 번역본 `SKILL.ko.md`, `README.ko.md`, `references/*.ko.md` 3개, 그리고 `README.zh-CN.md`다. `README.zh-CN.md`는 같은 폴더에 영어 `README.md`가 있어 브리프 규칙대로 번역본으로 보고 열지 않았다. `SKILL.md`가 중국어 원본이므로 이 판단이 틀렸을 수 있다. 이 스킬의 지시 내용은 `SKILL.md`와 `references/`가 근거라 결론에는 영향이 없다고 본다.
-- 바이너리: 스킬 폴더에 없다. README가 가리키는 표지 이미지 `../../dist/imgs/covers/kb-retriever.webp`는 이 저장소에 없다.
-- `manifest.json`은 version 1.0.1, 분류 "Retrieval / Local Knowledge Base", 호환 도구로 claude-code, claude-ai, cursor, codex-cli, gemini-cli, opencode를 적는다.[](source:mf-all)
-- 관계: `design/relations.md`에서 독립 스킬이고 다른 스킬과 연결이 없다. 원문에도 형제 스킬 이름이 나오지 않는다.
-- 원문 대조 범위: 활성화 제한 1개(호출 제한 필드 없음), 사람 개입 4곳, 금지 7행, 종료 조건 2개(근거 확보, 5회 도달), 수치 7행(3~8, 5회, 200~500줄, limit=300, 1~3개, 10~50행, 그리고 스크립트의 dpi 200·1000px)을 모두 대조했다.
-- 분석 중 바뀐 파일: 없다.
+- PDF 추출 우선순위와 OCR·암호화 처리 — `처리 안내 먼저 읽기` · `pdftotext`·`pdfplumber`·`pypdf`·`pypdfium2`·`pytesseract` 선택표와 좌표 추출, 암호 해제 예시가 개요 밖에 있다.
+- `pandas` Excel 필터·집계 패턴 — `추출과 단계적 검색` · `groupby`, `pivot_table`, `merge`, 결측치·형변환 코드 패턴이 개요에 요약만 있다.
 
-@callout level=open-question title="원문끼리 부딪치거나 확인하지 못한 곳"
-- 루트 기본값이 두 군데에서 다르다. 지식 폴더 절과 루트 찾기 절은 기본을 `knowledge/`로 두는데, 2단계는 사용자가 지정하지 않으면 "当前目录"(현재 폴더)에서 시작한다고 적는다. 우선순위는 원문에 없다.[](source:kb-root)[](source:kb-s2)
-- 지식 폴더 절은 PDF·Excel을 "对应 Skill"(해당 스킬)로 구조화하라고 하고, 반복 검색 절도 "专用 Skill 调用"을 든다. 어느 스킬인지 이름이 없어 `불명`이다. 나머지 절은 같은 일을 `references/` 문서로 처리하게 한다.[](source:kb-root)[](source:kb-iter)
-- `pdf_reading.md`의 빠른 참조표는 텍스트 추출 최적 도구를 pdfplumber로, 명령행 예를 출력 파일 없는 `pdftotext -layout input.pdf`로 적는다. 같은 문서의 우선순위(pdftotext 먼저)와 "파일로만 출력" 규칙과 어긋난다.[](source:pr-ref)[](source:pr-prio)[](source:pr-quick)
-- `excel_analysis.md`의 예시는 `pd.read_excel("sales.xlsx")`로 표 전체를 읽는다. `SKILL.md`의 "표 전체를 한 번에 읽지 않는다"와 다르다. 예시는 분석 문법을 보여 주는 용도로 읽힌다(판정).[](source:ea-group)[](source:kb-xls)
-- 5단계는 반복 검색 규칙을 "上文"(위에서 본) 공통 원칙이라 부르지만, 그 절은 실제로 아래에 있다. 내용 차이는 없다.[](source:kb-s5)
-- 이 스킬이 실제로 토큰을 얼마나 줄이는지, 5회 안에 답을 찾는 비율이 어떤지는 실행하지 않아 확인하지 못했다.
+읽은 원본: 텍스트 파일 8개(`SKILL.md`, `manifest.json`, `README.md`, `README.zh-CN.md`, `references/` 3개, `scripts/` 1개). 제외: `*.ko.md` 번역본 5개.

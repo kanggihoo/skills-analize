@@ -1,372 +1,166 @@
-# beautiful-article 스킬은 에이전트를 어떻게 바꾸나 {#beautiful-article-skill}
+# beautiful-article — 원자료를 8단계 공정과 3중 확인으로 오프라인 웹 아티클로 만든다 {#overview}
 
-`beautiful-article`를 쓰면 에이전트는 자료를 받자마자 HTML을 쓰지 않는다. 먼저 자료를 `source/source.md`로 옮기고 `plan/plan.md`를 쓴 뒤, 결정 다섯 가지를 사람에게 하나씩 묻고 답이 올 때까지 멈춘다. 그다음 표지와 첫 화면만 만들어 다시 확인받고, 섹션을 한 파일씩 만들어 리뷰를 거친 뒤 오프라인으로 열리는 `article/article.html` 한 파일을 넘긴다.[](source:flow)[](source:p8)
+에이전트는 사용자가 준 원자료(웹 주소·문서·메모)를 정제된 텍스트로 바꾼 뒤, 기획·첫 화면·종심의 세 확인 지점을 거쳐 오프라인으로 열리는 단일 HTML 아티클로 만든다.[](source:fm)[](source:overview)[](source:p8)
 
-- 켜지는 때: URL·PDF·DOCX·Markdown·텍스트·스크린샷 같은 자료를 공유용 웹 기사로 만들어 달라는 요청이다. 호출 제한 필드는 없다.[](source:fm)
-- 강제하는 것: 결정은 항목마다 따로 묻고 에이전트가 대신 정하지 않는다. 기본값은 `longform` 유형, 정보 100% 보존이다.[](source:law5)[](source:defs)
-- 멈추는 곳: `description`은 "双确认"(두 번 확인)이라고 적지만, 본문은 Checkpoint 1·2·3 세 곳에서 멈춘다.[](source:fm)[](source:flow)
-- 쓰면 안 되는 때: 관리 화면, 폼, 대시보드, 제품 프로토타입, 범용 웹앱이다. 앱을 원하면 에이전트는 멈추고 되묻는다.[](source:bound)
+- URL·PDF·DOCX·Markdown·텍스트·스크린샷으로 읽기용 장문 아티클·브리핑·튜토리얼·리뷰를 만들 때 켜지며, 글 유형 10종 중 하나로 갈린다.[](source:fm)[](source:p0)[](source:types)
+- 결과로 작업 폴더(`source/`, `plan/plan.md`, `article/sections/*.tsx`, `review/`)와 단일 파일 `article/article.html`(선택 시 `article.pdf`)이 남는다.[](source:overview)[](source:p8)
+- `web-design-engineer`와 상호 대안 관계로 웹 앱은 그쪽으로 보내고, 컴포넌트 세부 API가 필요할 때는 `reacticle-authoring`을 참고한다.[](source:readme-route)[](source:wde-excl)[](source:comp-ref)
+- 백엔드·폼·드래그 작업대·dashboard·제품 프로토타입·일반 웹 앱은 만들지 않으며, 확인 지점에서 사용자 대신 결정을 건너뛰지 않는다.[](source:bound)[](source:qa-proto)
 
-@answer scope="design/garden-skills/beautiful-article · 원본 텍스트 57개 253,012B 전부 읽음(목록은 같은 폴더 files.md) · 커밋 4e3fc89 · 번역본 40개와 README.zh-CN.md 제외 · 스크립트는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=4e3fc895a4a5c4dd6c1e09e21a14bb2d1255ba9d
-@source fm title="design/garden-skills/beautiful-article/SKILL.md · 31482B · frontmatter" path=design/garden-skills/beautiful-article/SKILL.md lines=1:4
-@source bg title="SKILL.md · 배경 원칙" path=design/garden-skills/beautiful-article/SKILL.md lines=8:10
-@source bound title="SKILL.md · 경계(이 스킬에 들어갈지 먼저 판단)" path=design/garden-skills/beautiful-article/SKILL.md lines=13:21
-@source flow title="SKILL.md · 워크플로 개요" path=design/garden-skills/beautiful-article/SKILL.md lines=25:50
-@source ws title="SKILL.md · 작업 폴더 구조" path=design/garden-skills/beautiful-article/SKILL.md lines=52:62
-@source qc title="SKILL.md · 품질 점검 프로토콜 표" path=design/garden-skills/beautiful-article/SKILL.md lines=66:79
-@source law14 title="SKILL.md · 철칙 1~4" path=design/garden-skills/beautiful-article/SKILL.md lines=80:90
-@source law5 title="SKILL.md · 철칙 5 결정 수집" path=design/garden-skills/beautiful-article/SKILL.md lines=91:99
-@source read title="SKILL.md · 단계별 파일 읽기 안내" path=design/garden-skills/beautiful-article/SKILL.md lines=105:117
-@source p0 title="SKILL.md · Phase 0 Intake" path=design/garden-skills/beautiful-article/SKILL.md lines=121:138
-@source p1 title="SKILL.md · Phase 1 Source → Markdown" path=design/garden-skills/beautiful-article/SKILL.md lines=142:160
-@source p2 title="SKILL.md · Phase 2 Editorial Planning" path=design/garden-skills/beautiful-article/SKILL.md lines=164:182
-@source cp1law title="SKILL.md · Phase 3 Checkpoint 1 수집 방식" path=design/garden-skills/beautiful-article/SKILL.md lines=186:200
-@source cp1tab title="SKILL.md · Checkpoint 1 필수 결정 5개" path=design/garden-skills/beautiful-article/SKILL.md lines=202:210
-@source cp1def title="SKILL.md · TOC·기본값·비표준 보존 비율" path=design/garden-skills/beautiful-article/SKILL.md lines=212:230
-@source cp1tpl title="SKILL.md · Checkpoint 1 시작 메시지와 진행 조건" path=design/garden-skills/beautiful-article/SKILL.md lines=232:253
-@source p4 title="SKILL.md · Phase 4 First Spread" path=design/garden-skills/beautiful-article/SKILL.md lines=257:281
-@source cp2 title="SKILL.md · Checkpoint 2" path=design/garden-skills/beautiful-article/SKILL.md lines=285:306
-@source p5 title="SKILL.md · Phase 5 Full Article Build" path=design/garden-skills/beautiful-article/SKILL.md lines=310:336
-@source p6 title="SKILL.md · Phase 6 Final Review" path=design/garden-skills/beautiful-article/SKILL.md lines=340:351
-@source p7 title="SKILL.md · Phase 7 Repair" path=design/garden-skills/beautiful-article/SKILL.md lines=355:359
-@source cp3 title="SKILL.md · Checkpoint 3" path=design/garden-skills/beautiful-article/SKILL.md lines=363:371
-@source p8 title="SKILL.md · Phase 8 Delivery" path=design/garden-skills/beautiful-article/SKILL.md lines=375:388
-@source defs title="SKILL.md · 기본 전략(colophon·표지·PDF 포함)" path=design/garden-skills/beautiful-article/SKILL.md lines=392:422
-@source success title="SKILL.md · 성공 기준" path=design/garden-skills/beautiful-article/SKILL.md lines=426:435
-@source rd-layer title="design/garden-skills/beautiful-article/README.md · 24181B · reacticle과의 관계" path=design/garden-skills/beautiful-article/README.md lines=13:27
-@source rd-core title="README.md · 핵심 아이디어" path=design/garden-skills/beautiful-article/README.md lines=239:248
-@source rd-flow title="README.md · 워크플로(세 개의 ★ Checkpoint)" path=design/garden-skills/beautiful-article/README.md lines=252:276
-@source rd-faq title="README.md · FAQ(쓰지 말아야 할 때)" path=design/garden-skills/beautiful-article/README.md lines=418:433
-@source rd-tools title="README.md · 도구 요구 사항" path=design/garden-skills/beautiful-article/README.md lines=437:444
-@source mf title="design/garden-skills/beautiful-article/manifest.json · 733B · 영어 description" path=design/garden-skills/beautiful-article/manifest.json lines=1:15
-@source harness title="references/harness.md · 2123B · 상태 파일이 장기 기억" path=design/garden-skills/beautiful-article/references/harness.md lines=14:30
-@source s2m-tab title="references/source-to-markdown.md · 6401B · 입력별 처리" path=design/garden-skills/beautiful-article/references/source-to-markdown.md lines=26:35
-@source s2m-script title="source-to-markdown.md · 추출 스크립트 선택" path=design/garden-skills/beautiful-article/references/source-to-markdown.md lines=37:90
-@source s2m-check title="source-to-markdown.md · 5개 자체 점검과 Source Reviewer 승격" path=design/garden-skills/beautiful-article/references/source-to-markdown.md lines=92:117
-@source rep title="references/repair-policy.md · 1236B · 최소 단위 수리" path=design/garden-skills/beautiful-article/references/repair-policy.md lines=1:35
-@source html title="references/html-output.md · 1988B · 명령과 테마 전환" path=design/garden-skills/beautiful-article/references/html-output.md lines=6:20
-@source lay title="references/layout.md · 2003B · 폭 모드와 TOC" path=design/garden-skills/beautiful-article/references/layout.md lines=6:26
-@source tsel title="references/theme-selection.md · 2301B · 선택 절차" path=design/garden-skills/beautiful-article/references/theme-selection.md lines=8:20
-@source tnew title="theme-selection.md · 신규 테마 조건" path=design/garden-skills/beautiful-article/references/theme-selection.md lines=39:48
-@source at title="references/article-types.md · 3767B · 유형과 보존 비율" path=design/garden-skills/beautiful-article/references/article-types.md lines=5:27
-@source dens title="references/information-density.md · 3238B · 밀도 단계" path=design/garden-skills/beautiful-article/references/information-density.md lines=12:32
-@source dens-ask title="information-density.md · Plan Checkpoint 필수 질문" path=design/garden-skills/beautiful-article/references/information-density.md lines=45:50
-@source plan-tpl title="references/plan-template.md · 5851B · plan.md Brief" path=design/garden-skills/beautiful-article/references/plan-template.md lines=19:43
-@source asset title="references/asset-policy.md · 3833B · 이미지 모드와 Raw" path=design/garden-skills/beautiful-article/references/asset-policy.md lines=6:43
-@source cv-size title="references/cover.md · 11868B · 3:4 크기" path=design/garden-skills/beautiful-article/references/cover.md lines=22:46
-@source cv-hard title="cover.md · 하드 제약 5개" path=design/garden-skills/beautiful-article/references/cover.md lines=54:73
-@source cv-tpl title="cover.md · 구도 템플릿 A~E" path=design/garden-skills/beautiful-article/references/cover.md lines=106:117
-@source cv-check title="cover.md · 필수 자체 점검 5개" path=design/garden-skills/beautiful-article/references/cover.md lines=155:167
-@source cv-off title="cover.md · 표지를 끄는 경우" path=design/garden-skills/beautiful-article/references/cover.md lines=185:195
-@source sb-num title="references/section-build.md · 5405B · 장 번호는 메인 에이전트가" path=design/garden-skills/beautiful-article/references/section-build.md lines=38:51
-@source sb-mode title="section-build.md · 개발 모드 A/B" path=design/garden-skills/beautiful-article/references/section-build.md lines=53:71
-@source comp title="references/component-policy.md · 5543B · 핵심 규칙" path=design/garden-skills/beautiful-article/references/component-policy.md lines=3:31
-@source raw title="references/raw-policy.md · 4485B · 허용과 금지" path=design/garden-skills/beautiful-article/references/raw-policy.md lines=20:40
-@source raw-check title="raw-policy.md · Raw 자체 점검" path=design/garden-skills/beautiful-article/references/raw-policy.md lines=81:86
-@source rc-plan title="references/review-checklist.md · 7312B · Plan 자체 점검 5개" path=design/garden-skills/beautiful-article/references/review-checklist.md lines=21:36
-@source rc-final title="review-checklist.md · 최종 리뷰 세 관점" path=design/garden-skills/beautiful-article/references/review-checklist.md lines=95:133
-@source scaf title="references/scaffold.md · 3602B · scaffold가 하는 일" path=design/garden-skills/beautiful-article/references/scaffold.md lines=20:35
-@source pdf-req title="references/pdf-output.md · 10041B · 전제와 대체 경로" path=design/garden-skills/beautiful-article/references/pdf-output.md lines=25:44
-@source pdf-flags title="pdf-output.md · Chrome 플래그" path=design/garden-skills/beautiful-article/references/pdf-output.md lines=118:125
-@source pdf-not title="pdf-output.md · 하지 않는 일" path=design/garden-skills/beautiful-article/references/pdf-output.md lines=203:208
-@source pdf-ie title="pdf-output.md · interactive-explainer와 PDF" path=design/garden-skills/beautiful-article/references/pdf-output.md lines=129:136
-@source idx title="theme-profiles/index.json · 5912B · 테마 등록부 11개" path=design/garden-skills/beautiful-article/theme-profiles/index.json lines=1:112
-@source sh-guard title="scripts/scaffold.sh · 7516B · 대상 폴더와 npm 확인" path=design/garden-skills/beautiful-article/scripts/scaffold.sh lines=71:79
-@source sh-npm title="scaffold.sh · reacticle 최신판 설치와 typecheck" path=design/garden-skills/beautiful-article/scripts/scaffold.sh lines=132:146
-@source sh-theme title="scaffold.sh · 테마 전환 안내 문구" path=design/garden-skills/beautiful-article/scripts/scaffold.sh lines=165:165
-@source pdf-sh title="scripts/html-to-pdf.sh · 6377B · 브라우저 없을 때 대체 경로" path=design/garden-skills/beautiful-article/scripts/html-to-pdf.sh lines=106:117
-@source tpl-font title="assets/scaffold-template/index.html · 755B · Google Fonts 링크" path=design/garden-skills/beautiful-article/assets/scaffold-template/index.html lines=7:13
-@source tpl-main title="assets/scaffold-template/article/main.tsx · 1173B · 테마 주석" path=design/garden-skills/beautiful-article/assets/scaffold-template/article/main.tsx lines=10:12
-@source tpl-colo title="assets/scaffold-template/article/Article.tsx · 2811B · colophon" path=design/garden-skills/beautiful-article/assets/scaffold-template/article/Article.tsx lines=26:66
-@source tpl-pkg title="assets/scaffold-template/package.json · 783B · 스크립트와 의존성" path=design/garden-skills/beautiful-article/assets/scaffold-template/package.json lines=6:16
-@source brief-t title="references/article-types/briefing.md · 2177B · 수치" path=design/garden-skills/beautiful-article/references/article-types/briefing.md lines=5:17
-@source ie-t title="references/article-types/interactive-explainer.md · 5042B · 보존 비율과 자체 점검" path=design/garden-skills/beautiful-article/references/article-types/interactive-explainer.md lines=12:59
-@source lf-t title="references/article-types/longform.md · 2325B · TOC 조건" path=design/garden-skills/beautiful-article/references/article-types/longform.md lines=6:9
-@source css-head title="scripts/pdf-print-overrides.css · 6457B · 머리 주석(네 묶음)" path=design/garden-skills/beautiful-article/scripts/pdf-print-overrides.css lines=8:18
-@source wde title="design/garden-skills/web-design-engineer/SKILL.md · r32 확인용" path=design/garden-skills/web-design-engineer/SKILL.md lines=14:18
+@answer scope="design/garden-skills/beautiful-article · 원본 파일 58개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=caba31d31edb29a8f8573e8766a333a2e4ac93e6
+@source fm title="frontmatter: name·description" path=design/garden-skills/beautiful-article/SKILL.md lines=1:4
+@source bound title="적용 경계와 금지 대상" path=design/garden-skills/beautiful-article/SKILL.md lines=13:21
+@source overview title="8단계 공정과 작업 폴더 구조" path=design/garden-skills/beautiful-article/SKILL.md lines=25:62
+@source qa-proto title="단계별 질적 검증 프로토콜과 철칙" path=design/garden-skills/beautiful-article/SKILL.md lines=66:101
+@source p0 title="Phase 0 요청 판별과 목표 언어 기록" path=design/garden-skills/beautiful-article/SKILL.md lines=121:138
+@source p1 title="Phase 1 원자료 추출·자체점검·번역" path=design/garden-skills/beautiful-article/SKILL.md lines=142:160
+@source p2 title="Phase 2 plan.md 작성과 인라인 점검" path=design/garden-skills/beautiful-article/SKILL.md lines=164:182
+@source p3 title="Phase 3 Checkpoint 1 5개 항목 독립 확인" path=design/garden-skills/beautiful-article/SKILL.md lines=186:253
+@source p4 title="Phase 4 첫 화면·표지·골격 생성" path=design/garden-skills/beautiful-article/SKILL.md lines=257:281
+@source cp2 title="Checkpoint 2 수락과 개발 모드 선택" path=design/garden-skills/beautiful-article/SKILL.md lines=285:306
+@source p5 title="Phase 5 절별 분리 구현과 리뷰" path=design/garden-skills/beautiful-article/SKILL.md lines=310:336
+@source p6 title="Phase 6 3관점 최종 리뷰" path=design/garden-skills/beautiful-article/SKILL.md lines=340:351
+@source p7 title="Phase 7 최소 조각 수정" path=design/garden-skills/beautiful-article/SKILL.md lines=355:359
+@source cp3 title="Checkpoint 3 전달 형식 확인" path=design/garden-skills/beautiful-article/SKILL.md lines=363:371
+@source p8 title="Phase 8 HTML·PDF 산출과 전달" path=design/garden-skills/beautiful-article/SKILL.md lines=375:388
+@source defaults title="기본 정책, 표지·colophon·PDF 규칙" path=design/garden-skills/beautiful-article/SKILL.md lines=392:422
+@source types title="글 유형 10종과 표준 정보 보존 비율" path=design/garden-skills/beautiful-article/references/article-types.md lines=16:28
+@source density-ref title="Checkpoint 1 문항 수 표기(4개)" path=design/garden-skills/beautiful-article/references/information-density.md lines=45:50
+@source asset-ref title="배경 이미지 모드와 Raw 직교 규칙" path=design/garden-skills/beautiful-article/references/asset-policy.md lines=6:29
+@source cover-ref title="표지 5대 강제 제약(오프라인 포함)" path=design/garden-skills/beautiful-article/references/cover.md lines=54:74
+@source comp-ref title="reacticle-authoring 온디맨드 참조" path=design/garden-skills/beautiful-article/references/component-policy.md lines=57:59
+@source raw-ref title="Raw 자유층 허용·금지 규칙" path=design/garden-skills/beautiful-article/references/raw-policy.md lines=20:41
+@source src-ref title="MarkItDown과 fallback 추출 스크립트 규칙" path=design/garden-skills/beautiful-article/references/source-to-markdown.md lines=37:91
+@source sec-ref title="절별 파일 분리와 병렬 서브에이전트 규칙" path=design/garden-skills/beautiful-article/references/section-build.md lines=38:90
+@source html-ref title="단일 HTML 빌드 명령" path=design/garden-skills/beautiful-article/references/html-output.md lines=6:20
+@source pdf-ref title="HTML → PDF 인쇄 규칙과 헤드리스 조건" path=design/garden-skills/beautiful-article/references/pdf-output.md lines=1:45
+@source themes-json title="등록된 11개 런타임 테마 목록" path=design/garden-skills/beautiful-article/theme-profiles/index.json lines=1:112
+@source theme-sel title="런타임 테마 목록(tufte·press 표기)" path=design/garden-skills/beautiful-article/references/theme-selection.md lines=8:19
+@source tmpl-html title="골격 index.html의 Google Fonts 링크" path=design/garden-skills/beautiful-article/assets/scaffold-template/index.html lines=7:14
+@source readme-route title="웹 앱·대시보드 경계와 대안 스킬 안내" path=design/garden-skills/beautiful-article/README.md lines=420:421
+@source wde-excl title="web-design-engineer의 장문 아티클 제외 조항" path=design/garden-skills/web-design-engineer/SKILL.md lines=18:18
 
-## 언제 켜지고, 언제 쓰면 안 되나 {#trigger}
+## 어떻게 동작하나 {#flow span=12}
+
+에이전트는 요청 판별부터 최종 HTML·PDF 전달까지 8개 단계와 3개의 사람 확인 지점(`Checkpoint 1`·`2`·`3`)을 순서대로 밟는다.[](source:overview) 그림은 주 흐름을 보이며, 각 단계의 세부 리뷰 체크리스트와 10종 글 유형별 규칙은 상세 후보로 남겼다.
+
+@workflow id=flow-diagram title="beautiful-article 흐름"
+| lane intake | 원자료 정제와 기획 |
+| lane build | 첫 화면과 절별 구현 |
+| lane deliver | 종심·수정·전달 |
+| p0 | 글 요청 판별? | external | intake | source:p0 |
+| stop | 안내 후 중단 | security | intake | source:p0 |
+| p1 | 원자료 변환·번역 | backend | intake | source:p1 |
+| p2 | 기획서 작성·점검 | backend | intake | source:p2 |
+| cp1 | Checkpoint 1 | security | intake | source:p3 |
+| p4 | 첫 화면·골격 | backend | build | source:p4 |
+| cp2 | Checkpoint 2 | security | build | source:cp2 |
+| p5 | 절별 구현·리뷰 | backend | build | source:p5 |
+| p6 | 3관점 최종 리뷰 | backend | deliver | source:p6 |
+| p7 | 최소 단위 수정 | backend | deliver | source:p7 |
+| cp3 | Checkpoint 3 | security | deliver | source:cp3 |
+| p8 | HTML·PDF 산출 | backend | deliver | source:p8 |
+| p0 > stop | 앱·무소재 | dashed |
+| p0 > p1 | 글 요청 | emphasis |
+| p1 > p2 | |
+| p2 > cp1 | |
+| cp1 > p4 | 5개 항목 확정 | emphasis |
+| p4 > cp2 | 리뷰·수정 완료 |
+| cp2 > cp1 | 테마·판형 변경 | dashed |
+| cp2 > p4 | 부분 수정 | dashed |
+| cp2 > p5 | 수락·모드 확정 | emphasis |
+| p5 > p6 | |
+| p6 > p7 | fail 발견 |
+| p6 > cp3 | 전부 통과 | emphasis |
+| p7 > cp3 | 수정 완료 |
+| cp3 > p7 | 추가 수정 요청 | dashed |
+| cp3 > p8 | 전달 승인 | emphasis |
+
+@steps id=flow-steps
+| s-p0 | 글 요청 판별? | **입력** 사용자 요청과 첨부 자료 · **참조** `references/harness.md` · **출력** 진행 여부와 목표 언어. **처리** 요청이 글인지 웹 앱인지 가르고, 목표 언어를 기록한다.[](source:p0) **다음** 소재 없이 주제만 주면 소재를 먼저 요구하고, 앱·dashboard 요청이면 중단한다.[](source:p0) | flow-diagram | p0 |
+| s-stop | 안내 후 중단 | **입력** 앱 요청 또는 소재 부재 판정 · **출력** 경계 안내 또는 소재 요청. **처리** 아티클이 아닌 요청이나 소재 없는 요청에는 작업을 시작하지 않고 멈춰서 사용자에게 알린다.[](source:bound)[](source:p0) | flow-diagram | stop |
+| s-p1 | 원자료 변환·번역 | **입력** URL·PDF·DOCX·텍스트·이미지 · **참조** `references/source-to-markdown.md` · **실행** `python3.10 <skill>/scripts/source-to-markdown-markitdown.py <input> -o source/source.md` 또는 `python3 <skill>/scripts/source-to-markdown.py <input> -o source/source.md` · **출력** `source/source.md`, `source/extraction-notes.md`, 필요 시 번역본 `source/source.<lang>.md`. **처리** 원문을 추출해 5항목 인라인 자가 점검을 마치고, 목표 언어가 다르면 번역본을 만든다.[](source:p1)[](source:src-ref) **다음** 저신뢰·복잡 원본이면 `Source Reviewer` 서브에이전트로 `review/source-review.md`를 추가 작성한다.[](source:qa-proto)[](source:p1) | flow-diagram | p1 |
+| s-p2 | 기획서 작성·점검 | **입력** 정제된 `source.md`(또는 번역본) · **참조** `references/plan-template.md`, `references/article-types.md`, `references/information-density.md`, `references/theme-selection.md`, `references/layout.md`, `references/asset-policy.md`, `references/cover.md` · **출력** 4개 절(`Brief`, `Outline`, `Theme`, `Assets`)을 담은 `plan/plan.md`. **처리** 글 유형·표준 정보 보존 비율·테마·구성을 짜고 메인 에이전트가 5개 항목을 인라인 점검한다.[](source:p2) **다음** 이 단계에서는 서브에이전트 생성과 `review/plan-review.md` 작성을 금지한다.[](source:qa-proto)[](source:p2) | flow-diagram | p2 |
+| s-cp1 | Checkpoint 1 | **입력** 점검된 `plan/plan.md` · **출력** 사용자가 개별 확정한 5개 결정(글 유형·테마·판형 너비·배경 이미지 모드·표지 사용 여부). **처리** 5개 항목을 추천 사유와 함께 각각 독립 질문으로 제시해 모두 답을 받을 때까지 멈춘다.[](source:p3) **다음** 사용자가 표준 정보 보존 비율을 덮어쓰면 `plan.md`에 별도 표기한다.[](source:p3) | flow-diagram | cp1 |
+| s-p4 | 첫 화면·골격 | **입력** 확정된 기획과 테마 · **참조** `references/scaffold.md`, `references/cover.md`, `references/component-policy.md`, `references/raw-policy.md` · **실행** `bash <skill>/scripts/scaffold.sh ./my-article --theme=<id>` (`--no-cover` 선택) 및 `npm run dev` · **출력** Vite 프로젝트, `Cover.tsx`, `Article.tsx`, `sections/01-*.tsx`, `review/first-spread-review.md`. **처리** 골격 생성 후 표지·첫 화면·첫 절을 구현하고 `First Spread Reviewer` 서브에이전트 리뷰와 수정을 끝낸다.[](source:p4) | flow-diagram | p4 |
+| s-cp2 | Checkpoint 2 | **입력** 첫 화면 미리보기와 수정된 리뷰 결과 · **출력** 수용 여부와 이후 개발 모드(A 순차 / B 병렬). **처리** 수용 판정과 개발 모드를 두 개의 독립 질문으로 확인하며 하나로 묶어 묻지 않는다.[](source:cp2) **다음** 테마·판형이 어긋나면 `Checkpoint 1`로 되돌아가고, 부분 수정이면 `첫 화면·골격`을 고친다.[](source:cp2) | flow-diagram | cp2 |
+| s-p5 | 절별 구현·리뷰 | **입력** `plan/plan.md`와 확정된 개발 모드 · **참조** `references/section-build.md`, `references/component-policy.md`, `references/raw-policy.md`, `theme-profiles/<id>.md` · **실행** 병렬 라운드마다 `npm run typecheck`, `npm run build` · **출력** 절별 파일 `article/sections/NN-*.tsx`, 대형 시각 블록 `article/raw-blocks/NN-*.tsx`, 조립된 `Article.tsx`. **처리** 한 절을 한 파일에 쓰며 절마다 `Section Reviewer` 서브에이전트가 메시지로 `pass`/`fail`을 돌려주면 즉시 고친다.[](source:p5)[](source:sec-ref) **다음** `review/section-NN-review.md` 파일은 만들지 않는다.[](source:qa-proto)[](source:p5) | flow-diagram | p5 |
+| s-p6 | 3관점 최종 리뷰 | **입력** 조립된 전체 아티클 · **참조** `references/review-checklist.md` · **출력** `review/final-review.md`. **처리** Editorial·Visual·Technical 세 관점 서브에이전트가 문체·테마 토큰·빌드·장절 번호 일관성을 감사해 기록한다.[](source:p6) **다음** 서브에이전트 도구가 없으면 메인 에이전트가 대신 점검하고 파일 첫머리에 대체 사실을 적는다.[](source:qa-proto) | flow-diagram | p6 |
+| s-p7 | 최소 단위 수정 | **입력** `review/final-review.md`의 실패 항목 또는 사용자 수정 요청 · **참조** `references/repair-policy.md` · **출력** 수정된 해당 절·블록·설정 파일과 `review/repair-log.md`. **처리** 문제가 난 최소 단위만 고치며, 실제 수정이 있을 때만 `repair-log.md`를 남긴다.[](source:p7) | flow-diagram | p7 |
+| s-cp3 | Checkpoint 3 | **입력** 검증을 마친 아티클과 미리보기 · **출력** 전달 결정 1건(HTML만 / HTML+PDF / 부분 수정 / 보류). **처리** 내보내기 방식을 사용자에게 직접 묻고 답변 전에는 산출 명령을 실행하지 않는다.[](source:cp3) | flow-diagram | cp3 |
+| s-p8 | HTML·PDF 산출 | **입력** 확정된 전달 방식 · **참조** `references/html-output.md`, `references/pdf-output.md` · **실행** `npm run html`, 선택 시 `bash <skill>/scripts/html-to-pdf.sh` · **출력** 단일 파일 `article/article.html`, 선택 시 `article/article.pdf`, 짧은 편집 요약. **처리** CSS와 JS를 한 HTML 파일로 묶고, 사용자가 선택했을 때만 헤드리스 브라우저로 PDF를 인쇄해 전달한다.[](source:p8) | flow-diagram | p8 |
+
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
+
+@facts
+| 직접 켜는 방법 | 사용자가 URL·PDF·DOCX·메모 등을 주며 웹 아티클·장문·브리핑·튜토리얼·시각 아티클로 만들어 달라고 요청하면 모델이 `description`을 보고 켠다. 호출 제한 필드는 없다.[](source:fm) |
+| 성격 | 단순 HTML 생성기가 아니라 자료 추출·기획·3단계 확인·절별 분리 빌드·3관점 종심을 관리하는 편집 하네스다.[](source:overview)[](source:qa-proto) |
+
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| **이 스킬** {#rel-r05} | web-design-engineer | 대안 | 웹 앱·dashboard·폼·프로토타입·랜딩 페이지 요청은 `web-design-engineer` 소관이며, 모호하면 멈추고 사용자에게 묻는다.[](source:readme-route) |
+| **이 스킬** {#rel-r06} | reacticle-authoring | 참고 | `reacticle` 컴포넌트의 상세 속성과 사용법이 필요할 때만 해당 참조 파일(`structure`, `insight`, `structured`, `decision`, `technical`)을 온디맨드로 읽는다.[](source:comp-ref) |
+| web-design-engineer {#rel-r11} | **이 스킬** | 대안 | `web-design-engineer`는 원자료→장문 HTML 아티클 변환을 적용 제외 대상으로 두고 전용 스킬이 있으면 이쪽으로 라우팅한다.[](source:wde-excl) |
+
+@architecture id=relation-map title="beautiful-article과 이어지는 스킬"
+| self | beautiful-article(이 스킬) | backend |
+| wde | web-design-engineer | backend |
+| reacticle | reacticle-authoring | external |
+| self > wde | 대안 |
+| wde > self | 대안 |
+| self > reacticle | 참고 |
 
 @code source=fm language=yaml
 
-이 스킬에는 호출 제한 필드가 없다. 그래서 모델이 `description`을 참고해 스스로 켤 수 있다.[](source:fm) 판정: `description`은 판단용 설명일 뿐이고, 특정 단어가 들어 있다고 켜지는 목록이 아니다.
+## 어떤 파일로 이루어지나 {#files span=12}
 
-`description`이 요약한 흐름을 풀면 이렇다.[](source:fm)
-
-| 원문 표기 | 뜻 | 본문의 해당 단계 |
-| --- | --- | --- |
-| source | 자료를 Markdown으로 옮긴다 | Phase 1[](source:p1) |
-| 规划 | 편집 기획을 `plan/plan.md` 한 파일로 쓴다 | Phase 2[](source:p2) |
-| 双确认 | 사람이 두 번 확인한다 | Checkpoint 1(기획), Checkpoint 2(첫 화면)[](source:flow) |
-| 生成 | 기사 전체를 만든다 | Phase 5[](source:p5) |
-| 终审 | 세 관점으로 최종 리뷰한다 | Phase 6[](source:p6) |
-| 修复 | 가장 작은 단위로 고친다 | Phase 7[](source:p7) |
-| 100% 信息保留 | 기본값은 원문 정보를 100% 남기는 장문이다 | 기본 전략, `longform`[](source:defs) |
-
-판정: "双确认"는 Checkpoint 1과 2에 해당한다. 본문은 그 뒤 Checkpoint 3(납품 확인)에서도 "반드시 멈춰서 묻는다"고 적어서, 실제로 사람이 개입하는 지점은 세 곳이다. 영어 `manifest.json`도 "double-confirmation"이라고 쓰고, README는 "three hard checkpoints"라고 쓴다.[](source:flow)[](source:cp3)[](source:mf)[](source:rd-flow)
-
-에이전트는 Phase 0에서 먼저 이 스킬에 들어갈지 판단한다.[](source:p0)
-
-| 사용자가 준 것 | 에이전트가 하는 일 |
-| --- | --- |
-| 자료 하나 이상(URL, PDF, DOCX, MD, 텍스트, 스크린샷) | Phase 1로 간다[](source:p0) |
-| "X 글 만들어 줘"만 있고 자료가 없다 | 자료나 개요부터 되묻는다. 내용을 지어내지 않는다 {caution:되묻기}[](source:p0) |
-| 분명히 앱·도구·대시보드를 원한다 | 멈추고 확인한다. 이 스킬에 들어가지 않는다 {bad:진입 안 함}[](source:p0) |
-
-에이전트는 같은 단계에서 사용자가 원하는 최종 언어도 기록한다. 사용자가 언어를 정하지 않으면 원문 언어를 따르고 번역하지 않는다.[](source:p0)
-
-**쓰면 안 되는 경우**
-
-- 최종 결과물이 기사가 아니라 웹 애플리케이션일 때다. 원문이 직접 막는 목록은 관리 화면, 폼, 드래그 작업대, 완전한 대시보드, 제품 프로토타입, 범용 웹앱이다.[](source:bound)
-- README는 웹앱, 대시보드, 폼, 프로토타입, 일반 랜딩 페이지는 `web-design-engineer`로 가라고 한다. 애매하면 스킬이 멈추고 묻는다고 적는다.[](source:rd-faq)
-- 기사 안에도 Raw 자유층(HTML·CSS·JS·React로 쓰는 인터랙션, 레이아웃, 모션, 작은 도구, SVG·canvas 도해)을 넣을 수 있다. 다만 읽기, 설명, 논증, 리듬, 미감에 봉사해야 한다.[](source:bound)
-
-README는 실행 환경이 셸 명령, 작업 폴더 파일 읽기·쓰기를 할 수 있다고 가정한다. 서브에이전트와 Python `MarkItDown`은 있으면 쓰는 선택 사항이다.[](source:rd-tools) 판정: scaffold가 `npm install`과 `reacticle@latest` 설치를 하므로 네트워크와 npm이 없으면 Phase 4부터 진행하기 어렵다. 근거는 scaffold의 npm 확인과 설치 줄이다.[](source:sh-guard)[](source:sh-npm)
-
-## 어떤 순서로 진행하고, 누가 점검하나 {#procedure}
-
-@workflow id=article-flow title="자료에서 기사 납품까지"
-| lane prep | 준비 |
-| lane check1 | 기획 확인 |
-| lane spread | 첫 화면 |
-| lane build | 생성과 리뷰 |
-| lane ship | 납품 |
-| p0 | Phase 0 Intake | external | prep |
-| p1 | 자료→Markdown | backend | prep |
-| p2 | 편집 기획 | backend | prep |
-| cp1 | Checkpoint 1 | external | check1 |
-| p4 | First Spread | backend | spread |
-| cp2 | 첫 화면 통과? | external | spread |
-| p5 | 전체 생성 | backend | build |
-| p6 | 최종 리뷰 | backend | build |
-| p7 | 최소 단위 수리 | backend | build |
-| cp3 | Checkpoint 3 | external | ship |
-| p8 | Delivery | backend | ship |
-| p0 > p1 | 자료 있음 |
-| p1 > p2 | |
-| p2 > cp1 | 자체 점검 후 |
-| cp1 > p4 | 5개 답 수집 | emphasis |
-| p4 > cp2 | 리뷰 후 |
-| cp2 > p5 | 통과 | emphasis |
-| cp2 > cp1 | 테마·판형 부적합 | dashed |
-| p5 > p6 | |
-| p6 > p7 | fail 항목 |
-| p7 > cp3 | |
-| cp3 > p8 | 납품 결정 | emphasis |
-
-@steps id=article-steps
-| p0 | Phase 0 Intake | 이 스킬에 들어갈지, 처음 기사 유형과 최종 언어를 정한다. 자료가 없으면 되묻고, 앱 요청이면 멈춘다. 처음에 읽을 파일은 `references/harness.md`다.[](source:p0)[](source:read) | article-flow | p0 |
-| p1 | 자료→Markdown | 어떤 입력이든 `source/source.md`로 통일하고 불확실한 점은 `source/extraction-notes.md`에 적는다. 사용자가 원문과 다른 언어를 지정했을 때만 `source/source.<lang>.md` 번역본을 만들고, 이후 단계는 그 번역본을 사실 기반으로 쓴다.[](source:p1) | article-flow | p1 |
-| p2 | 편집 기획 | HTML은 쓰지 않는다. `plan/plan.md` 한 파일에 Brief, Outline, Theme, Assets 네 단락을 쓴다. 쓴 뒤 메인 에이전트가 자리에서 5개 항목으로 점검하고 고친다.[](source:p2)[](source:rc-plan) | article-flow | p2 |
-| cp1 | Checkpoint 1 | 결정 5개를 하나씩 묻고 모두 답을 받을 때까지 다음 일을 하지 않는다. 자세한 항목은 다음 패널에 있다.[](source:cp1tpl) | article-flow | cp1 |
-| p4 | First Spread | 여기서 scaffold로 작업 폴더를 만든다. 표지(켰다면), 첫 화면, 첫 Section, 대표 시각 블록 하나를 만든다. 첫 Section은 반드시 `article/sections/01-*.tsx` 독립 파일이다. 끝나면 First Spread Reviewer 서브에이전트가 `review/first-spread-review.md`를 쓰고, 에이전트는 fail 항목을 고친다.[](source:p4) | article-flow | p4 |
-| cp2 | 첫 화면 통과? | 수용 결론과 개발 모드 A/B를 따로 묻는다. "테마나 판형이 맞지 않음"을 고르면 Checkpoint 1로 돌아간다.[](source:cp2) | article-flow | cp2 |
-| p5 | 전체 생성 | Checkpoint 2에서 고른 모드로 섹션을 한 파일씩 만든다. 섹션마다 Section Reviewer 서브에이전트가 `pass`·`fail` 결론과 고칠 점을 메시지로 돌려준다.[](source:p5) | article-flow | p5 |
-| p6 | 최종 리뷰 | Editorial, Visual, Technical 세 관점으로 검토해 `review/final-review.md`를 쓴다.[](source:p6) | article-flow | p6 |
-| p7 | 최소 단위 수리 | 문제가 난 Section, Raw 블록, 파일과 줄 단위로만 고친다. 고친 것이 있을 때만 `review/repair-log.md`를 쓴다.[](source:p7)[](source:rep) | article-flow | p7 |
-| cp3 | Checkpoint 3 | 납품 결정 하나를 묻는다. 결정이 하나뿐이어도 반드시 멈춰서 묻고, HTML 내보내기를 기본으로 진행하지 않는다.[](source:cp3) | article-flow | cp3 |
-| p8 | Delivery | `article/article.html`과 짧은 편집 설명을 넘긴다. PDF는 사용자가 골랐을 때만 만든다.[](source:p8) | article-flow | p8 |
-
-Checkpoint 2에서 "부분 수정"을, Checkpoint 3에서 "부분 수리"를 고른 뒤 어느 단계로 돌아가는지는 `원문에 명시 없음`이라 그림에 그리지 않았다.[](source:cp2)[](source:cp3)
-
-원문은 서브에이전트를 어디서 쓰고 어디서 쓰지 않을지를 표로 못 박는다. 이유로 "잘못 띄운 서브에이전트와 잘못 쓴 파일이 첫째 성능 문제"라고 든다.[](source:qc)
-
-| 지점 | 점검 방식 | 남기는 것 |
-| --- | --- | --- |
-| Phase 1(기본) | 메인 에이전트가 자리에서 5개 점검 | 파일 없음[](source:qc) |
-| Phase 1(복잡하거나 확신이 낮은 자료만) | Source Reviewer 서브에이전트가 `original.*`와 대조 | `review/source-review.md`[](source:s2m-check) |
-| Phase 2, Checkpoint 1 전 | 메인 에이전트 자체 점검. {bad:서브에이전트 금지} | 파일 없음. `review/plan-review.md` 금지[](source:p2) |
-| Phase 4, Checkpoint 2 전 | First Spread Reviewer 서브에이전트 | `review/first-spread-review.md`[](source:qc) |
-| Phase 5, 섹션마다 | Section Reviewer 서브에이전트 | 메시지로 pass/fail만. `review/section-NN-review.md` 금지[](source:law14) |
-| Phase 6, Checkpoint 3 전 | Editorial·Visual·Technical 서브에이전트 | `review/final-review.md`[](source:qc) |
-
-- 서브에이전트를 쓸 수 없는 환경이면 메인 에이전트가 대신 점검하고, 파일 맨 앞에 "无 SubAgent 环境，主 Agent 兜底"라고 적는다.[](source:law14)
-- 점검 결과를 받으면 fail 항목을 먼저 고친 다음 "끝냈다, 점검 결론, 고친 것"을 보고한다. 고치지 않고 결과만 전하면 원문은 위반으로 본다.[](source:law14)
-- 에이전트는 결정을 대화 기억에 맡기지 않는다. 확인된 결정이 헷갈리면 `plan/plan.md`, `review/` 같은 상태 파일을 다시 읽는다.[](source:harness)
-
-## 세 번의 사람 확인 지점(Checkpoint)에서 무엇을 묻나 {#checkpoints}
-
-세 Checkpoint 모두 같은 수집 규칙을 따른다. 에이전트는 추천할 수 있지만 "이미 X로 정했으니 아니면 말해 달라"고 하면 안 된다.[](source:law5)
-
-- `AskQuestion` 도구가 있으면 결정마다 질문을 하나씩 넣는다. 한 번 호출에 여러 질문을 넣어도 된다.[](source:cp1law)
-- 도구가 없으면 질문에 번호를 붙여 문단마다 하나씩 쓰고, 추천안·이유·대안을 적는다. "我等你逐项答复后再继续"(항목마다 답을 받은 뒤 계속하겠다)라고 쓰고 다음 작업을 하지 않는다.[](source:cp1law)
-- 여러 결정을 "전부 추천대로 할까요?" 같은 예/아니오 하나로 묶지 않는다.[](source:law5)
-
-**Checkpoint 1: 기획 확인, 결정 5개**[](source:cp1tab)
-
-| # | 결정 | 선택지 | 원문 메모 |
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
 | --- | --- | --- | --- |
-| 1 | 글 유형(보존 비율 포함) | 아래 유형 표의 10개 | AI가 하나를 추천하고 이유를 한 줄 쓴다. 비율은 유형 안에 묶여 따로 묻지 않는다 |
-| 2 | 테마 | `tufte`, `press`, 그 밖의 등록 테마(`theme-profiles/index.json`) | AI가 하나를 추천한다 |
-| 3 | 판형 폭 | `narrow`, `regular`, `wide`, `full` | 기본 `regular` |
-| 4 | 이미지 모드 | `none`, `user-assets`, `placeholders`, `ai-generated` | 필수 선택. "기본으로 통과"를 허용하지 않는다 {caution:필수} |
-| 5 | 표지 | 켬(기본), 끔 | 켜면 구도 아이디어와 템플릿 A~E를 한 줄 제시. `briefing`·`dialogue`는 끄기를 추천할 수 있다 |
+| `SKILL.md` | 8단계 공정, 질적 검증 철칙, 확인 지점 질문 틀, 기본 정책을 담는다 | 스킬이 켜지면 읽는다 | 모든 단계 |
+| `references/harness.md` | 6요소 하네스 설계와 장기 기억 파일 목록을 설명한다 | Phase 0에서 읽는다 | 글 요청 판별? |
+| `references/source-to-markdown.md`, `scripts/source-to-markdown*.py` | 입력 형식별 추출 규칙, MarkItDown 및 fallback 스크립트, 5항목 점검을 제공한다 | Phase 1 원자료 변환 때 읽고 실행한다[](source:src-ref) | 원자료 변환·번역 |
+| `references/plan-template.md`, `article-types.md`, `article-types/*.md`(10종) | 단일 `plan.md` 4단 구조와 글 유형 10종별 비율·구조·자체 점검을 제공한다 | Phase 2 기획 시 읽으며 유형 확정 뒤 해당 유형 파일만 연다 | 기획서 작성·점검 |
+| `references/information-density.md`, `theme-selection.md`, `layout.md`, `asset-policy.md`, `cover.md` | 정보 보존 비율, 테마 분리, 열 너비·TOC, 이미지 모드, 3:4 표지 규약을 정한다 | Phase 2 기획 및 Phase 4 표지 구현 시 읽는다 | 기획서 작성·점검 · 첫 화면·골격 |
+| `theme-profiles/index.json`, `theme-profiles/*.md`(11종) | `tufte`·`press` 등 11개 런타임 테마의 문체·색·`Raw`·금지 규칙을 담는다 | Phase 2 추천과 Phase 5 절 구현 전마다 읽는다 | 기획서 작성·점검 · 절별 구현·리뷰 |
+| `scripts/scaffold.sh`, `references/scaffold.md`, `assets/scaffold-template/` | Vite·React·TS 작업 폴더를 만들고 `reacticle` 최신판을 설치한다 | Phase 4 첫 화면 시작 때 한 번 실행한다[](source:p4) | 첫 화면·골격 |
+| `references/section-build.md`, `component-policy.md`, `raw-policy.md` | 1절 1파일 철칙, 병렬 프롬프트, `reacticle` 핵심·특례 컴포넌트, `--ra-*` 토큰 `Raw` 규칙을 정한다 | Phase 4·5에서 매 절 작성 전에 다시 읽는다[](source:raw-ref) | 첫 화면·골격 · 절별 구현·리뷰 |
+| `references/review-checklist.md`, `repair-policy.md` | Plan·First Spread·Section·Final 3관점 감사 목록과 최소 조각 수정표를 제공한다 | Phase 2·4·5·6·7 각 검증·수정 시점에 읽는다 | 기획서 작성·점검 · 첫 화면·골격 · 절별 구현·리뷰 · 3관점 최종 리뷰 · 최소 단위 수정 |
+| `references/html-output.md`, `pdf-output.md`, `scripts/html-to-pdf.sh`, `scripts/pdf-print-overrides.css` | 단일 HTML 빌드와 선택적 헤드리스 Chromium PDF 인쇄·CSS 주입을 수행한다 | Phase 8 전달 시 읽고, PDF는 사용자가 선택했을 때만 실행한다[](source:p8) | HTML·PDF 산출 |
+| `README.md`, `README.zh-CN.md`, `manifest.json` | 사람용 안내서와 패키지 메타데이터를 담는다 | 에이전트 실행 지시에서는 읽지 않는다 | 흐름 밖: 사용자 문서·메타 |
 
-- 다섯 개 답이 모두 와야 Phase 4로 간다. 사용자가 비표준 보존 비율을 자유 문장으로 주면, `plan/plan.md`에 적은 것을 확인한 뒤 Phase 4로 간다.[](source:cp1tpl)
-- TOC는 따로 묻지 않는다. 시작 메시지에서 "TOC 켬, 끄려면 알려 달라"고 한 줄로 알린다.[](source:cp1def)
-- 따로 묻지 않는 기본값도 시작 메시지에 밝혀 번복할 기회를 준다. 최종 언어는 원문을 따르고, 편집 삭제·재구성·어조 변경은 허용하며, 첫 화면 시안을 먼저 만든다.[](source:cp1def)
-- 사용자가 테마를 "네가 정해"라고 하면 첫 추천을 고르되, 다른 후보와 나란히 "기본 · AI 추천"으로 표시해 번복할 여지를 남긴다.[](source:cp1def)
-- 사용자가 "longform인데 60%만"처럼 비율을 바꾸면 `plan/plan.md` Brief에 유형, 표준 비율, 사용자 지정 비율을 함께 적는다. 비표준 조합이라는 것도 알린다.[](source:cp1def)
-- 이미지 모드는 외부 `Image` 사용만 정한다. Raw는 어느 모드에서도 그대로 쓴다. `ai-generated`를 고르면 에이전트는 이미지 프롬프트를 먼저 만들고 사용자가 확인한 뒤에 이미지를 만든다.[](source:asset)
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-**Checkpoint 2: 첫 화면 확인, 결정 2개**[](source:cp2)
-
-| 질문 | 선택지 |
-| --- | --- |
-| 수용 결론 | 통과 · 전체 생성으로 / 부분 수정 · 고칠 곳은 따로 말함 / 테마나 판형이 맞지 않음 · Checkpoint 1로 |
-| 개발 모드 | A · 메인 에이전트 혼자 차례로(기본, 가장 안정적이고 문체가 고름) / B · 여러 에이전트 병렬(가장 빠르고 문체가 조금 다름) |
-
-원문은 "통과 + A 괜찮나요?"로 묶지 말라고 한다. 사용자가 통과시키면서 B를 원할 수도 있기 때문이다.[](source:cp2)
-
-**Checkpoint 3: 납품 확인, 결정 1개**[](source:cp3)
-
-| 질문 | 선택지 |
-| --- | --- |
-| 납품 결정 | 통과 · HTML 내보내기 / 통과 · HTML과 PDF 함께 / 아직 부분 수리 있음 · 고칠 곳을 적음 / 잠깐 멈춤 · 더 보겠음 |
-
-**글 유형과 보존 비율.** SKILL.md는 유형마다 표준 비율 하나를 적고, `references/article-types.md`는 범위를 적는다.[](source:cp1tab)[](source:at)
-
-| 유형 | 쓰는 곳 | SKILL.md 표준 | article-types.md 범위 |
-| --- | --- | --- | --- |
-| `longform` | 완전한 장문, 보관 | ~100% | 100% |
-| `full-report` | 연구 보고서, 공식 분석 | ~80% | 80% |
-| `tutorial` | 단계별 따라 하기 | ~90% | 80-100% |
-| `explainer` | 개념·시스템 설명 | ~80% | 80% |
-| `dialogue` | 대담, 인터뷰, 팟캐스트 | ~80% | 80% |
-| `review` | PR, 설계안, 사고 리뷰 | ~70% | 60-80% |
-| `essay` | 의견, 평론, 서사 | ~70% | 60-80% |
-| `interactive-explainer` | 직접 조작하며 배우기 | 원문 발췌 ~25% + AI 재구성 75% | ~25%(원문 발췌 비중) |
-| `briefing` | 바쁜 사람용 결정 요약 | ~50% | 40-60% |
-| `visual-essay` | 그림 위주, 전파용 | ~40% | 20-60% |
-
-`interactive-explainer`의 25%는 원문을 75% 지운다는 뜻이 아니다. 완성본에서 원문 문장·문단이 차지하는 비중이 25% 정도이고, 나머지는 AI가 새로 쓴 안내와 인터랙션이다. 자체 점검에서는 40%를 넘으면 너무 높고 10% 미만이면 너무 낮다고 본다.[](source:ie-t)
-
-**테마.** `theme-profiles/index.json`에는 11개가 등록돼 있고, 각각 `runtimeTheme`이 있다. 테마 프로필은 CSS가 아니라 AI가 쓰기 전에 읽는 지침이다.[](source:idx)[](source:tsel)
-
-| id | 분위기(요약) | 원문 `bestFor` |
+| 조건 | 결과 | 출처 |
 | --- | --- | --- |
-| `tufte` | 증거·데이터, 장식 최소 | longform, full-report, explainer, review, tutorial |
-| `press` | 출판·서사, 따뜻한 편집 | essay, briefing, visual-essay, longform, explainer |
-| `shannon` | 어두운 바탕의 공학 증거 | postmortem, system-design, benchmark, explainer, review, tutorial |
-| `vignelli` | 스위스 그리드, 차가운 중성 문서 | docs, spec, changelog, reference, explainer, tutorial |
-| `knuth` | 학술 프리프린트, 수식·번호 우선 | paper, preprint, research, literature-review, explainer, full-report |
-| `freddie` | 따뜻한 노랑, 친근함 | explainer, tutorial, product-intro, changelog, faq |
-| `andy` | 차분하고 부드러움 | explainer, tutorial, wellness, onboarding, lifestyle |
-| `bodoni` | 흑백 고대비 신문 | longform, essay, manifesto, feature, review |
-| `bayer` | 바우하우스 삼원색 기하 | explainer, tutorial, manifesto, product-intro, brand |
-| `fuller` | 청사진, 공학 도면 | spec, system-design, rfc, reference, explainer |
-| `sottsass` | 멤피스 80년대 원색 대비 | explainer, tutorial, culture, launch, design-writing |
+| 사용자가 웹 앱·폼·dashboard·프로토타입 요청 또는 소재 없이 주제만 제시 | 작업을 시작하지 않고 멈춰서 경계를 설명하거나 소재를 먼저 요청한다 | [](source:bound)[](source:p0) |
+| Phase 2 `plan/plan.md` 작성 뒤(`Checkpoint 1` 전) | 금지: 서브에이전트 생성과 `review/plan-review.md` 작성을 금지하며 메인 에이전트 인라인 5항목 점검만 한다 | [](source:qa-proto)[](source:p2) |
+| `Checkpoint 1`·`2`·`3` 결정 수집 | 강제: 추천은 가능하나 묵시적 기본값 적용이나 한 번에 묶어 묻는 질문을 금지하며, 항목마다 독립 응답을 기다린다 | [](source:qa-proto)[](source:p3)[](source:cp2)[](source:cp3) |
+| `Checkpoint 1` 문항 수 문서 불일치 | `information-density.md`는 4개 문항으로 적고 `SKILL.md`는 표지 포함 5개 문항을 필수로 요구한다(원문 간 불일치) | [](source:p3)[](source:density-ref) |
+| Phase 5 `Section Reviewer` 실행 | 강제: `review/section-NN-review.md` 파일 작성을 금지하고 메시지로만 `pass`/`fail`을 받아 즉시 수정한다 | [](source:qa-proto)[](source:p5) |
+| Phase 4·5 절 구성 및 번호 매김 | 강제: 1절 1파일(`article/sections/NN-*.tsx`)을 지키며 `Article.tsx`는 조립과 전체 장절 번호 교정만 맡는다 | [](source:p5)[](source:sec-ref) |
+| 이미지 모드와 `Raw` 자유층 관계 | `Raw`는 항상 기본 활성이고 이미지 모드(`none` 포함)는 외부 `Image` 사용 여부만 정한다. `ai-generated`는 사용자 명시 선택 없이 자동 생성하지 않는다 | [](source:defaults)[](source:asset-ref) |
+| 표지(`Cover.tsx`)와 `colophon` | 강제: 3:4 비율·PDF 첫 쪽 단독 배치·`--ra-*` 토큰·원격 이미지 금지, 그리고 `Article.tsx` 끝의 `colophon` 삭제·이동을 금지한다 | [](source:defaults)[](source:cover-ref) |
+| 오프라인 규약과 템플릿 코드 불일치 | `cover.md`는 동적 Google Fonts 로딩을 금지하나 `assets/scaffold-template/index.html`에는 Google Fonts 링크가 들어 있다(원문 충돌) | [](source:cover-ref)[](source:tmpl-html) |
+| 등록 테마 목록 표기 차이 | `theme-selection.md`와 `html-output.md`는 `tufte`·`press`만 적었으나 `theme-profiles/index.json`에는 11개 테마가 등록돼 있다 | [](source:theme-sel)[](source:html-ref)[](source:themes-json) |
+| Phase 7 수정 및 `repair-log.md` | 금지: 한 곳 피드백에 전체 재작성, 확정 구조 변경, 필수 보존 내용 삭제를 금지하며, 실제 수정이 있을 때만 로그를 쓴다 | [](source:p7) |
+| Phase 8 PDF 내보내기 | `article/article.html`이 주 산출물이며, `html-to-pdf.sh`는 `Checkpoint 3`에서 사용자가 PDF 포함을 고른 경우에만 실행한다 | [](source:defaults)[](source:pdf-ref) |
 
-에이전트는 기술·증거 자료면 `tufte`, 서사·평론 자료면 `press`를 우선 추천한다.[](source:defs) 새 테마는 컴포넌트 라이브러리의 runtime 등록, Skill profile, `index.json` 연결이 모두 있어야 정식 생성에 쓴다.[](source:tnew)
+## 더 자세히 읽으려면 {#more span=12}
 
-## 무엇을 강제하고 금지하나, 수치는 무엇인가 {#rules}
+공개된 상세:
 
-| 규칙 | 에이전트가 하는 일 | 근거 |
-| --- | --- | --- |
-| 기사 우선 | 결과물은 앱이 아니라 기사여야 한다. Raw와 이미지는 읽기를 돕는다 | 경계, 성공 기준[](source:bound)[](source:success) |
-| 결정 대리 금지 | Checkpoint마다 결정을 하나씩 묻고 답을 기다린다 {bad:대신 정하기 금지} | 철칙 5[](source:law5) |
-| 한 Section 한 파일 | 섹션마다 `article/sections/NN-*.tsx` 파일을 만든다. 여러 섹션을 한 컴포넌트에 쓰지 않는다. `Article.tsx`는 메인 에이전트가 가진 조립 파일이다 {bad:한 파일에 몰기 금지} | Phase 5[](source:p5) |
-| 장 번호 | 전체 번호는 메인 에이전트가 정한다. 병렬 서브에이전트는 "너는 `<NN>`장"을 받아 쓰고, 08장 아래 소절은 8.1, 8.2만 쓴다 | `section-build.md`[](source:sb-num) |
-| 컴포넌트 규약 | 맨 `div`, `className`, 인라인 `style`, CSS를 직접 쓰지 않고 `reacticle` 의미 컴포넌트를 쓴다. 필수 값이 없으면 지어내지 말고 비워 `⚠ 未指定` 표시가 보이게 둔다. 코드는 `CodeBlock`만 쓴다 | `component-policy.md`[](source:comp) |
-| Raw 토큰 | Raw 안은 자유롭지만 색·글꼴·간격은 `--ra-*` 토큰에서 가져온다 {bad:임의 스타일 금지} | Phase 5, `raw-policy.md`[](source:p5)[](source:raw) |
-| Raw 금지 목록 | 복잡한 폼, 드래그 작업대, 완전한 대시보드, 제품 프로토타입, 글과 무관한 애니메이션, 테마와 따로 노는 색, 고정 위젯 재사용 | `raw-policy.md`[](source:raw) |
-| colophon | scaffold가 넣은 "Made with beautiful-article · `<테마>` theme" 줄을 지우거나 옮기지 않는다. 테마를 바꾸면 `main.tsx`와 이 줄을 함께 고친다 | 기본 전략, 템플릿[](source:defs)[](source:tpl-colo) |
-| 표지 | 3:4 외곽을 건드리지 않는다. 그림과 글자가 모두 있어야 하고, `--ra-*` 토큰만 쓰고, 원격 이미지를 쓰지 않고, Hero 내용을 반복하지 않는다 | 기본 전략, `cover.md`[](source:defs)[](source:cv-hard) |
-| AI 이미지 | 이미지를 먼저 만들지 않는다. `ai-generated`는 사용자가 명시적으로 골라야 한다 | 기본 전략, `asset-policy.md`[](source:defs)[](source:asset) |
-| 수리 범위 | 지적 하나에 전체를 다시 쓰지 않는다. 시각 문제로 확정된 구조를 바꾸지 않는다. 압축하려고 반드시 남길 내용을 지우지 않는다 | Phase 7[](source:p7)[](source:rep) |
-| PDF | 사용자가 Checkpoint 3에서 고를 때만 만든다. 기본으로 체크하지 않는다 | 기본 전략, `pdf-output.md`[](source:defs)[](source:pdf-not) |
+- 아직 없음
 
-Raw를 하나 넣을 때마다 에이전트는 네 가지를 묻는다. 지우면 이해가 나빠지는가, 어느 단락을 돕는가, `--ra-*` 토큰을 쓰는가, 기사를 앱처럼 만드는가.[](source:raw-check)
+상세 후보(요청하면 만든다):
 
-최종 리뷰의 핵심 기준도 원문에 적혀 있다. 여전히 기사인가, 보존 비율이 Plan과 맞는가, 반드시 남길 정보가 남았는가, 테마가 통일됐는가, Raw에 임의 스타일이 없는가, AI 티 나는 표현이 없는가, 데스크톱과 모바일에서 읽히는가, HTML이 빌드되고 열리는가.[](source:p6) Visual Reviewer는 장식용 시각, 보라·분홍 그라데이션, 둥근 색 카드, 가짜 일러스트, 이모지 장식을 AI 티로 본다.[](source:rc-final)
-
-수치는 성격을 나눠서 읽는다.
-
-| 값 | 성격 | 적용 조건 |
-| --- | --- | --- |
-| 결정 5개 / 2개 / 1개 | 의무 | Checkpoint 1 / 2 / 3에서 각각 따로 묻는다[](source:cp1tab)[](source:cp2)[](source:cp3) |
-| 자체 점검 5개 | 의무 | Phase 1 자료 점검, Phase 2 Plan 점검, 표지 점검이 각각 5개다[](source:s2m-check)[](source:rc-plan)[](source:cv-check) |
-| plan 200-400줄, 기사 5-15절 | 설명 | 서브에이전트를 쓰지 않는 이유와 섹션별 리뷰 파일을 쓰지 않는 이유로 든 값이다[](source:qc) |
-| 폭 `narrow` ~34rem, `regular` ~46rem, `wide` ~58rem, `full` ~78rem | 기본값과 권고 | 기본은 `regular`. 표·코드가 많으면 최소 `wide`. `reacticle` 0.2.0 이상 필요[](source:lay) |
-| TOC 최대 3단계, 1000px 미만에서 한 단 | 동작 | TOC를 켜면 왼쪽 목차와 본문 두 단이 된다[](source:lay) |
-| 표지 3:4, 최대 폭 `min(100%, 48rem, calc((100vh - 8rem) * 3 / 4))` | 의무 | 1024px보다 높은 화면에서 768×1024. PDF에서 A4는 위아래 약 4%, Letter는 약 3% 여백이 남는다[](source:cv-size) |
-| 표지 템플릿 A~E 중 하나 | 권고 | 기사 하나에 템플릿 하나, 섞지 않는다[](source:cv-tpl) |
-| `briefing` 3-5분, 문단 3문장 이하, Raw 0-2개, 핵심 사실 3-5개 | 유형별 권고 | `briefing.md`[](source:brief-t) |
-| `longform` TOC 조건: 10절 초과 또는 예상 15분 초과 | 유형별 권고 | SKILL.md는 TOC를 기본으로 켠다[](source:lf-t)[](source:defs) |
-| MarkItDown은 Python 3.10 이상 | 전제 | PDF·DOCX·복잡한 HTML이나 80-100% 보존이면 먼저 시도한다. `markitdown[all]`을 기본으로 설치하지 않는다[](source:s2m-script) |
-| PDF `--virtual-time-budget=5000` | 스크립트 기본값 | 페이지 JS에 5초를 준다. Raw가 덜 그려지면 10000 이상으로 올리라고 한다[](source:pdf-flags) |
-
-성공 기준에는 정성 기준도 있다. 40% 보존이면 줄인 요약이 아니라 편집된 기사처럼, 100% 보존이면 원문 옮기기가 아니라 다듬은 장문처럼 읽혀야 한다.[](source:success)
-
-## 무엇을 만들고 무엇을 남기나 {#outputs}
-
-에이전트는 Phase 4에서 `scripts/scaffold.sh`를 한 번 실행해 작업 폴더를 만든다. 원문 예시는 `bash <path>/scripts/scaffold.sh ./my-article --theme=<id>`이고, 표지를 끄면 `--no-cover`를 붙인다.[](source:p4)
-
-@tree id=workspace-layout title="scaffold가 만드는 작업 폴더"
-| ws | workspace/ | - | source:ws |
-| src | source/ | ws | source:p1 |
-| srcmd | source.md, extraction-notes.md | src | source:p1 |
-| plan | plan/plan.md | ws | source:p2 |
-| art | article/ | ws | source:ws |
-| cover | Cover.tsx (표지, 기본) | art | source:p4 |
-| assm | Article.tsx (조립 파일) | art | source:p5 |
-| secs | sections/NN-*.tsx | art | source:p5 |
-| raws | raw-blocks/NN-*.tsx | art | source:p5 |
-| outhtml | article.html (납품물) | art | source:p8 |
-| rev | review/ | ws | source:ws |
-| fsr | first-spread-review.md | rev | source:p4 |
-| fin | final-review.md | rev | source:p6 |
-| optrev | source-review.md, repair-log.md (조건부) | rev | source:ws |
-| tool | package.json, vite.config.ts 등 | ws | source:ws |
-
-- scaffold는 Vite + React + TypeScript 템플릿을 복사하고, `npm install` 뒤 `npm install reacticle@latest`로 최신판을 받는다. 대상 폴더가 비어 있지 않으면 중단한다.[](source:sh-guard)[](source:sh-npm)[](source:scaf)
-- `npm run html`은 타입 검사와 빌드를 한 뒤 `dist/index.html`을 `article/article.html`로 복사한다. CSS와 JS는 `vite-plugin-singlefile`이 인라인한다.[](source:html)[](source:tpl-pkg)
-- 납품물은 `article/article.html`과 짧은 편집 설명이다. 설명에는 글 유형, 보존 비율, 테마, 이미지 전략, 주요 편집 판단을 적는다.[](source:p8)
-- PDF를 고르면 `scripts/html-to-pdf.sh`가 설치된 Chromium 계열 브라우저를 찾아 창 없이(headless) 인쇄한다. 브라우저가 없으면 인쇄용 CSS를 넣은 HTML 경로를 알려 주고, 사용자가 직접 `Cmd+P`로 저장하게 한다.[](source:pdf-req)[](source:pdf-sh)
-- PDF에서는 Raw 인터랙션이 초기 상태로만 그려진다.[](source:pdf-ie)
-
-## 흐름 속 위치 {#position}
-
-@workflow id=ba-position title="beautiful-article 앞뒤"
-| pos-req | 자료와 기사 요청 | external |
-| pos-wde | web-design-engineer | backend |
-| pos-ba | beautiful-article | backend |
-| pos-req > pos-ba | 자료+기사 | emphasis |
-| pos-wde > pos-ba | 기사 변환 (r32) | dashed |
-| pos-ba > pos-wde | 앱·대시보드 (r34) | dashed |
-
-| 상대 | 받는 것 | 넘기는 것 | 조건 | rel-id |
-| --- | --- | --- | --- | --- |
-| `web-design-engineer`(앞) | 자료를 장문 HTML 기사로 바꾸는 요청 | - | `web-design-engineer`는 이 작업을 적용 대상에서 빼고 "있으면 전용 스킬로 넘기라"고 한다. 이름은 적지 않았다(명시-역할). 같은 컬렉션에서 그 역할에 맞는 스킬은 `beautiful-article` 하나다[](source:wde)[](source:fm) | r32 |
-| `web-design-engineer`(옆) | - | 웹앱·대시보드·폼·프로토타입·일반 랜딩 페이지 요청 | README FAQ가 이름을 들어 넘긴다. 애매하면 멈추고 묻는다. `SKILL.md`는 "기사만 만든다"는 경계와 "앱이면 멈추고 확인한다"만 적고 이름은 부르지 않는다[](source:rd-faq)[](source:bound) | r34 |
-| (뒤) | - | `article/article.html`, 선택 시 `article/article.pdf`, 편집 설명 | 받는 쪽은 사람이다. 원장에 이 스킬 뒤에 오는 스킬은 없다[](source:p8) | - |
-
-두 관계 모두 사용자 요청을 넘기는 넘김이고, 공유 파일은 없다. 이미지 모드 `ai-generated`도 `gpt-image-2`를 이름으로 부르지 않으며, 원장에 둘 사이 관계는 없다.[](source:asset)
-
-전체 흐름은 `design/_group-garden-visual/garden-visual.html`에 있다. 관계 근거는 `design/relations.md`의 rel-id로 확인한다.
-
-## 이 분석의 범위와 한계 {#audit}
-
-- 읽은 원본 텍스트 파일은 57개, 합계 253,012B다. 모두 끝까지 읽었고 구조·표본만 본 파일은 없다. 파일별 바이트와 역할은 같은 폴더의 `files.md`에 있다.
-- 제외한 파일: 번역본 40개(`*.ko.md`)와 `README.zh-CN.md`(23,731B). 영어 `README.md`가 같은 폴더에 있어 중국어 README를 번역본으로 보고 열지 않았다. 바이너리 파일은 이 폴더에 없다.
-- 스크립트(`scaffold.sh`, `html-to-pdf.sh`, 추출 스크립트 둘)는 읽기만 했다. 실행하지 않았으므로 실제 빌드, PDF 결과, 설치되는 `reacticle` 판은 확인하지 않았다.
-- 원문 대조 범위: 활성화 제한 1개(호출 제한 필드 없음), 진입 판단 3행, 사람 확인 지점 3곳의 결정 8개와 선택지, 품질 점검 표 6행, 금지·강제 12행, 수치 11행, 종료 조건(Checkpoint 3 결정 뒤 Phase 8 납품)을 모두 대조했다. 관계 행 r32, r34는 원장과 원문을 다시 대조했고 같다.
-- 분석 중 바뀐 파일: 없음. `design/` 아래 작업 트리는 commit `4e3fc89` 그대로다.
-
-원문끼리 어긋나는 곳이다. 우선순위가 적혀 있지 않아 정리하지 않고 그대로 둔다.
-
-| 항목 | 한쪽 | 다른 쪽 |
-| --- | --- | --- |
-| 사람 확인 횟수 | `description`의 "双确认", `manifest.json`의 "double-confirmation"[](source:fm)[](source:mf) | 본문과 README는 ★ Checkpoint 세 개[](source:flow)[](source:rd-flow) |
-| 쓸 수 있는 runtime 테마 | `html-output.md`, `theme-selection.md`, `scaffold.sh` 안내 문구, `main.tsx` 주석은 `tufte`·`press`만 든다[](source:html)[](source:tsel)[](source:sh-theme)[](source:tpl-main) | `index.json`은 11개 모두에 `runtimeTheme`을 적고, README도 11개라고 한다[](source:idx)[](source:rd-core) |
-| 표지 템플릿 이름 | `cover.md`: A 위 글자 아래 그림, B 큰 글자가 그림 덮기, C 위아래 분할, D 전면 콜라주, E 미니멀 틀[](source:cv-tpl) | `plan-template.md`: A 왼쪽 글자 오른쪽 그림, B 큰 글자가 그림 덮기, C 위 글자 아래 그림, D 기하 콜라주, E 미니멀 틀[](source:plan-tpl) |
-| Plan Checkpoint 필수 질문 수 | `information-density.md`는 "4개 필수 질문 중 하나"[](source:dens-ask) | SKILL.md는 5개[](source:cp1tab) |
-| 최종 리뷰 서브에이전트 | 철칙 2: First Spread와 Final은 반드시 서브에이전트[](source:law14) | Phase 6: 리뷰어 셋을 "추천"하고, Teams가 없으면 적어도 독립 서브에이전트 하나[](source:p6) |
-| PDF 결정 시점 | SKILL.md: Checkpoint 3에서 고른다[](source:cp3) | `pdf-output.md`: `interactive-explainer`는 "Plan 단계에서" PDF를 켜지 않을 수 있다[](source:pdf-ie) |
+- 글 유형 10종과 정보 보존 비율 체계 — `기획서 작성·점검` · `longform`~`interactive-explainer` 10종의 권장 비율, 컴포넌트 경계, 예외 재구성(`~25%`) 규칙을 개요에서 생략했다.
+- `reacticle` 컴포넌트·`Raw`·표지 규약 — `첫 화면·골격`과 `절별 구현·리뷰` · 핵심·특례 컴포넌트 목록, `--ra-*` 토큰 규칙, 표지 구도 5종(A~E)이 개요 밖에 있다.
+- 단계별 리뷰 체크리스트와 서브에이전트 프롬프트 — `3관점 최종 리뷰` · Plan·First Spread·Section·Final 3관점 상세 감사 항목과 프롬프트 템플릿을 생략했다.
+- `scripts/` 추출·PDF 인쇄 동작 — `원자료 변환·번역`과 `HTML·PDF 산출` · MarkItDown·fallback 분기, `pdf-print-overrides.css` 3단 인쇄 규칙, 브라우저 미탐지 시 수동 인쇄 폴백을 담지 않았다.
 
 @callout level=open-question title="확인하지 못한 것"
-- 오프라인 보장: scaffold 템플릿 `index.html`은 Google Fonts를 `<link>`로 불러온다. `vite-plugin-singlefile`이 이 외부 링크까지 넣어 주는지는 빌드해 보지 않아 모른다. 판정: 오프라인에서는 글꼴이 대체 글꼴로 바뀔 가능성이 있다. `cover.md`는 표지에서 Google Fonts 동적 로드를 금지한다.[](source:tpl-font)[](source:cv-hard)
-- `section-build.md`는 조립 뒤 번호를 `outline.md` 순서와 대조하라고 한다. 지금 구조에는 `outline.md`가 없고 Outline은 `plan/plan.md` 안에 있다. 같은 것을 가리키는지 원문에 명시 없음이다.[](source:sb-num)[](source:p2)
-- `pdf-print-overrides.css` 머리 주석은 네 묶음(0, A, B, C)이라 하고 `pdf-output.md`는 세 묶음(A, B, C)으로 설명한다. 내용 차이는 0번 묶음(종이색 유지)뿐인 것으로 읽었다.[](source:css-head)
-- 이 스킬이 실제로 사람 확인을 지키는지, 서브에이전트 비용 규칙이 성능을 바꾸는지는 실행해 보지 않아 판단하지 않았다.
+| `theme-profiles/` 11개 `.md` 중 `tufte.md`·`press.md`와 `index.json`만 읽었고 나머지 9개 프로필 본문은 읽지 않았다. |
+| 외부 npm 패키지 `reacticle`의 실제 런타임 컴포넌트 코드와 `reacticle-authoring` 스킬 파일은 저장소 밖 대상이라 확인하지 못했다. |
+
+읽은 원본: 텍스트 파일 58개 중 48개 읽기(`SKILL.md`, `manifest.json`, `README.md`, `references/` 27개, `scripts/` 5개, `assets/scaffold-template/` 10개, `theme-profiles/index.json`·`tufte.md`·`press.md`). 표본 확인: `theme-profiles/*.md` 9개. 제외: `README.zh-CN.md` 1개(`README.md`의 중국어판), `*.ko.md` 번역본 40개.

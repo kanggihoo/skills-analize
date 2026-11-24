@@ -1,198 +1,130 @@
-# break 스킬은 에이전트를 어떻게 바꾸나 {#break-skill}
+# break — 컴포넌트 하나를 최악 시나리오로 임시 페이지에 그려 깨짐을 찾는다 {#overview}
 
-`break`를 쓰면 에이전트는 컴포넌트 하나를 골라, 그 컴포넌트에 실제로 닿을 수 있는 모든 시나리오로 임시 페이지에 나란히 그린다. 그 페이지가 결과물이다. 에이전트는 페이지를 한 번만 보고, 눈에 띄게 깨진 것만 표로 보고한 뒤 멈춘다.[](source:bk-intro)[](source:bk-s4)[](source:bk-s5)
+`break`는 에이전트가 컴포넌트 하나를 선택해 실제 도달 가능한 최악 시나리오들을 임시 페이지 한 곳에 한꺼번에 렌더링하고, 눈으로 보이는 깨짐만 관찰해 보고하게 하는 스킬이다.[](source:bk-intro)
 
-- 켜지는 때: 사용자가 직접 `break`를 부를 때만이다. `disable-model-invocation: true`가 걸려 있다.[](source:bk-fm)[](source:bk-yaml)
-- 강제하는 것: 한 번에 컴포넌트 하나만 다룬다. 프로젝트의 진짜 컴포넌트를 건드리지 않고 import하고, harness가 더하는 것은 라벨, 컨테이너 폭, fixture props뿐이다. 눈으로 본 것만 보고하고 판정은 하지 않는다.[](source:bk-s1)[](source:bk-s3)[](source:bk-s5)
-- 끝나는 때: 보고서를 내면 끝이다. 실행 전체가 "분 단위"이고 두 번째 패스를 정당화하는 일은 없다고 한다. 고치는 일은 사용자가 요청할 때만 한다. 페이지는 사용자가 다 봤다고 말할 때만 지운다.[](source:bk-intro)[](source:bk-s5)[](source:bk-s6)
-- 쓰면 안 되는 때: 코드를 기준에 맞춰 리뷰하는 일(`interface-review`, `better-interface`), 디자인 대안 탐색(`variant`), 상태를 하나씩 작업하는 일(`state-machine`)이다. 원문이 그 일을 각 스킬의 몫으로 가른다.[](source:bk-intro)
+- 사용자가 컴포넌트를 지정해 스트레스 테스트를 직접 호출할 때만 켜지며, 요청이 여러 컴포넌트에 걸치면 후보를 나열해 하나를 고르게 한다.[](source:bk-fm)[](source:bk-oa)[](source:bk-s1)
+- 결과는 시나리오별로 1열에 렌더링한 앱 내부 임시 페이지(브라우저 확인 시 깨짐 메모 포함)와 시나리오·관찰·소유 스킬 표다.[](source:bk-intro)[](source:bk-s3)[](source:bk-s5)
+- 깨짐 보고 시 고칠 도메인 스킬(`better-typography` 등)에 결과를 귀속한다. `afk`·`state-machine`·`better-interface`·`interface-review`·`variant`·`break-ui`와는 대안 관계다.
+- 예측 지적, 자체 판정, 무단 수정, 가짜 스타일·뷰포트 리사이즈는 모두 금지한다.[](source:bk-s3)[](source:bk-s4)[](source:bk-s5)
 
-@answer scope="design/jakubkrehel/break · 원본 텍스트 3개 10,689B · 커밋 0465878 · 관계 확인용으로 다른 스킬 frontmatter 4개 · 지시는 읽기만 하고 실행하지 않음 · 지시상 동작"
-@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize repo_revision=0465878505c00d01aa0ebccdb2f01d617816039a
-@source bk-fm title="design/jakubkrehel/break/SKILL.md · 6145B · 지시 본문과 frontmatter" path=design/jakubkrehel/break/SKILL.md lines=1:5
-@source bk-intro title="SKILL.md · 하는 일, 관찰만 한다는 선, 시간 예산" path=design/jakubkrehel/break/SKILL.md lines=9:15
-@source bk-s1 title="SKILL.md · 1단계 컴포넌트 하나로 범위 잡기" path=design/jakubkrehel/break/SKILL.md lines=17:21
-@source bk-s2 title="SKILL.md · 2단계 컴포넌트에서 시나리오 추론" path=design/jakubkrehel/break/SKILL.md lines=23:29
-@source bk-s3 title="SKILL.md · 3단계 harness 페이지 만들기" path=design/jakubkrehel/break/SKILL.md lines=31:41
-@source bk-s4 title="SKILL.md · 4단계 한 번만 보기" path=design/jakubkrehel/break/SKILL.md lines=43:49
-@source bk-s5 title="SKILL.md · 5단계 깨진 것을 보고하고 멈춤" path=design/jakubkrehel/break/SKILL.md lines=51:64
-@source bk-s5t title="SKILL.md · 5단계 보고 표 예" path=design/jakubkrehel/break/SKILL.md lines=53:58
-@source bk-s6 title="SKILL.md · 6단계 페이지를 남기고 요청 시 삭제" path=design/jakubkrehel/break/SKILL.md lines=66:68
-@source bk-check title="SKILL.md · 끝내기 전 점검 표" path=design/jakubkrehel/break/SKILL.md lines=70:85
-@source bk-yaml title="design/jakubkrehel/break/agents/openai.yaml · 166B · 표시 이름과 암시 호출 정책" path=design/jakubkrehel/break/agents/openai.yaml lines=1:6
-@source sc-intro title="design/jakubkrehel/break/scenarios.md · 4378B · 시나리오 축 목록" path=design/jakubkrehel/break/scenarios.md lines=1:5
-@source sc-len title="scenarios.md · Content length 축" path=design/jakubkrehel/break/scenarios.md lines=7:19
-@source sc-shape title="scenarios.md · Content shape 축" path=design/jakubkrehel/break/scenarios.md lines=21:33
-@source sc-qty title="scenarios.md · Quantity 축" path=design/jakubkrehel/break/scenarios.md lines=35:46
-@source sc-con title="scenarios.md · Container 축" path=design/jakubkrehel/break/scenarios.md lines=48:58
-@source sc-state title="scenarios.md · State 축" path=design/jakubkrehel/break/scenarios.md lines=60:72
-@source sc-env title="scenarios.md · Environment 축" path=design/jakubkrehel/break/scenarios.md lines=74:78
-@source vr-fm title="design/jakubkrehel/variant/SKILL.md · 확인용 frontmatter" path=design/jakubkrehel/variant/SKILL.md lines=1:5
-@source sm-fm title="design/jakubkrehel/state-machine/SKILL.md · 확인용 frontmatter" path=design/jakubkrehel/state-machine/SKILL.md lines=1:5
-@source ir-fm title="design/jakubkrehel/interface-review/SKILL.md · 확인용 frontmatter" path=design/jakubkrehel/interface-review/SKILL.md lines=1:5
-@source bi-fm title="design/jakubkrehel/better-interface/SKILL.md · 확인용 frontmatter" path=design/jakubkrehel/better-interface/SKILL.md lines=1:4
+@answer scope="design/jakubkrehel/break · 원본 파일 3개 · 지시상 동작"
+@meta locale=ko repo_url=https://github.com/kanggihoo/skills-analize.git repo_revision=caba31d31edb29a8f8573e8766a333a2e4ac93e6
+@source bk-fm title="frontmatter: 이름, description, 모델 호출 차단" path=design/jakubkrehel/break/SKILL.md lines=1:5
+@source bk-oa title="agents/openai.yaml: 암묵 호출 차단 정책" path=design/jakubkrehel/break/agents/openai.yaml lines=1:5
+@source bk-intro title="목표, 역할 경계, 단일 패스 원칙" path=design/jakubkrehel/break/SKILL.md lines=7:15
+@source bk-s1 title="1단계: 단일 컴포넌트 범위 지정" path=design/jakubkrehel/break/SKILL.md lines=17:21
+@source bk-s2 title="2단계: 컴포넌트 기준 시나리오 추론" path=design/jakubkrehel/break/SKILL.md lines=23:29
+@source bk-s3 title="3단계: 임시 harness 페이지 구현" path=design/jakubkrehel/break/SKILL.md lines=31:41
+@source bk-s4 title="4단계: 한 번 관찰과 브라우저 분기" path=design/jakubkrehel/break/SKILL.md lines=43:49
+@source bk-s5 title="5단계: 깨짐 표 보고 후 정지" path=design/jakubkrehel/break/SKILL.md lines=51:64
+@source bk-s6 title="6단계: 페이지 유지와 요청 시 삭제" path=design/jakubkrehel/break/SKILL.md lines=66:68
+@source bk-fin title="마감 전 3가지 오류 점검표" path=design/jakubkrehel/break/SKILL.md lines=70:76
+@source bk-scen title="시나리오 6축, 단서와 owner 스킬 매핑" path=design/jakubkrehel/break/scenarios.md lines=1:78
+@source bui-fm title="break-ui의 description" path=design/emilkowalski/break-ui/SKILL.md lines=1:4
+@source afk-own title="afk의 역할 경계 안내" path=design/jakubkrehel/afk/SKILL.md lines=11:11
+@source sm-own title="state-machine의 역할 경계 안내" path=design/jakubkrehel/state-machine/SKILL.md lines=11:11
+@source var-own title="variant의 역할 경계 안내" path=design/jakubkrehel/variant/SKILL.md lines=11:11
+@source bi-fm title="better-interface의 description" path=design/jakubkrehel/better-interface/SKILL.md lines=1:4
+@source bt-fm title="better-typography의 description" path=design/jakubkrehel/better-typography/SKILL.md lines=1:4
 
-## 언제 켜지고, 언제 다른 스킬로 가야 하나 {#trigger}
+## 어떻게 동작하나 {#flow span=12}
+
+절차형이다. 컴포넌트 하나를 정해 시나리오를 추론하고 임시 페이지에 그린 뒤, 브라우저가 있으면 한 번 훑어보고 표로 보고하며, 브라우저가 없으면 관찰 없이 URL과 시나리오 목록만 넘긴다.[](source:bk-intro)[](source:bk-s4)
+
+@workflow id=flow-diagram title="break 흐름"
+| lane prep | 범위·시나리오 준비 |
+| lane build | harness 페이지 구성 |
+| lane check | 관찰·보고·정리 |
+| scope | 컴포넌트 확정 | backend | prep | source:bk-s1 |
+| infer | 시나리오 추론 | backend | prep | source:bk-s2 |
+| harness | harness 작성 | backend | build | source:bk-s3 |
+| browser | 브라우저 있나? | backend | check | source:bk-s4 |
+| look | 한 번 관찰·표시 | backend | check | source:bk-s4 |
+| report | 표 보고·정지 | backend | check | source:bk-s5 |
+| urlonly | URL만 전달 | external | check | source:bk-s4 |
+| cleanup | 유지·요청 시 삭제 | backend | check | source:bk-s6 |
+| scope > infer | |
+| infer > harness | |
+| harness > browser | |
+| browser > look | 예 |
+| browser > urlonly | 아니오 |
+| look > report | |
+| report > cleanup | 완료 후 |
+| urlonly > cleanup | 확인 후 |
+
+@steps id=flow-steps
+| s-scope | 컴포넌트 확정 | **입력** 사용자 요청과 대상 후보 · **출력** 컴포넌트 요약 한 문장. **처리** 에이전트가 컴포넌트 하나를 정해 입력·출력·위치를 한 문장으로 요약한다.[](source:bk-s1) **다음** 요청이 여러 컴포넌트에 걸치면 후보를 나열하고 사용자 선택까지 멈춘다.[](source:bk-s1) | flow-diagram | scope |
+| s-infer | 시나리오 추론 | **입력** 컴포넌트의 props·슬롯·상태·데이터 · **참조** `scenarios.md` · **출력** 채택 시나리오·제외 축 목록. **처리** 6개 축의 단서(cue)를 대조해 도달 가능한 시나리오만 고른다.[](source:bk-s2)[](source:bk-scen) **다음** 구현 전 채택·제외 이유를 각 한 줄로 먼저 적는다.[](source:bk-s2) | flow-diagram | infer |
+| s-harness | harness 작성 | **입력** 시나리오 목록과 실제 컴포넌트 · **출력** 앱 내부 임시 라우트와 fixture(`harness 페이지`). **처리** 원본 컴포넌트를 그대로 두고 시나리오마다 라벨을 달아 1열로 그린다.[](source:bk-s3) **다음** Next.js 등 서버 경계가 있으면 `"use client"` 페이지로 써서 fixture 데이터 유실을 막는다.[](source:bk-s3) | flow-diagram | harness |
+| s-browser | 브라우저 있나? | **입력** 실행 중인 harness 페이지 URL · **출력** 관찰 진행 또는 건너뜀 결정. **처리** 이미 열려 있는 브라우저 도구가 있는지 확인하고, 새 브라우저 실행 없이 분기한다.[](source:bk-s4) | flow-diagram | browser |
+| s-look | 한 번 관찰·표시 | **입력** 브라우저로 연 harness 페이지 · **출력** 깨짐 메모가 달린 harness 페이지. **처리** 페이지를 한 번 훑어 눈에 보인 깨짐만 한 번의 편집으로 라벨 아래에 적는다.[](source:bk-s4) **다음** 뷰포트 크기를 바꾸지 않고 고정 너비 컨테이너로 본다.[](source:bk-fin) | flow-diagram | look |
+| s-report | 표 보고·정지 | **입력** 관찰된 깨짐 메모 · **출력** 시나리오·관찰·`owner` 표(또는 `"Everything survived"`). **처리** 깨진 시나리오 순 표에 담당 `owner` 스킬을 적어 보고하고 멈춘다.[](source:bk-s5) **다음** 무단 수정을 금지하며, 수정 요청 시에만 `owner` 규칙대로 고친 뒤 실패 시나리오를 재렌더링한다.[](source:bk-s5) | flow-diagram | report |
+| s-urlonly | URL만 전달 | **입력** 임시 페이지 URL과 시나리오 목록 · **출력** URL·시나리오·수동 확인 안내. **처리** 브라우저가 없으면 관찰을 건너뛰고 깨짐 표나 메모 없이 URL과 시나리오만 넘긴다.[](source:bk-s4)[](source:bk-scen) | flow-diagram | urlonly |
+| s-cleanup | 유지·요청 시 삭제 | **입력** 사용자의 완료 요청 · **출력** 임시 라우트·fixture 파일 삭제와 깨끗한 diff. **처리** 페이지를 유지하다가 사용자가 끝났다고 말하면 라우트와 fixture 파일을 지우고 잔여물을 검색한다.[](source:bk-s6) | flow-diagram | cleanup |
+
+## 누가 켜고 어느 스킬과 이어지나 {#relations span=12}
+
+@facts
+| 직접 켜는 방법 | 사용자 명령(`/break`)으로만 켠다. `disable-model-invocation: true`와 `agents/openai.yaml`의 `allow_implicit_invocation: false`가 모델 자동 호출을 막는다.[](source:bk-fm)[](source:bk-oa) |
+| 성격 | 컴포넌트 하나를 최악 시나리오 1열 임시 페이지에 격리 렌더링해 깨짐만 관찰·귀속하는 절차형 스킬. |
+
+| 누가 | 누구를 | 관계 | 언제 |
+| --- | --- | --- | --- |
+| `break-ui` {#rel-r44} | **이 스킬** | 대안 | 목적(최악 시나리오·데이터로 UI 스트레스 테스트)은 같으나 작성자와 구현 방식(대조 토글 vs 임시 1열 `harness 페이지`)이 다르며 직접 연결은 없다.[](source:bui-fm)[](source:bk-fm) |
+| `afk` {#rel-r79} | **이 스킬** | 대안 | 역할 경계: 부재 중 자율 개선은 `afk`, 컴포넌트 스트레스 테스트는 이 스킬(`disable-model-invocation: true`, 수동 호출 필요)을 쓴다.[](source:afk-own) |
+| `state-machine` {#rel-r90} | **이 스킬** | 대안 | 역할 경계: 컴포넌트의 제품 상태별 전환·작업은 `state-machine`, 최악 시나리오를 한 페이지에 쌓아 한 번에 보는 테스트는 이 스킬을 쓴다(사용자 선택).[](source:sm-own) |
+| **이 스킬** {#rel-r80} | `better-interface` | 대안 | 역할 경계: 기준 대비 코드 리뷰는 `better-interface`와 `interface-review`를 쓴다(직접 호출 없이 사용자 선택).[](source:bk-intro)[](source:bi-fm) |
+| **이 스킬** {#rel-r81} | `variant` | 대안 | 역할 경계: 디자인 대안 3종 탐색은 `variant`를 쓴다(사용자 선택).[](source:bk-intro)[](source:var-own) |
+| **이 스킬** {#rel-r82} | `state-machine` | 대안 | 역할 경계: 제품 상태별 확인 워크벤치는 `state-machine`을 쓴다(사용자 선택).[](source:bk-intro)[](source:sm-own) |
+| **이 스킬** {#rel-r83} | `better-typography` | 결과 전달 | 깨짐 보고 표의 `Owner` 열에 고칠 도메인 스킬(`better-typography` 등)을 적어 결과를 넘기며, 사용자가 수정을 요청할 때만 해당 도메인 스킬 규칙을 적용한다(수정 요청 필요).[](source:bk-s5)[](source:bk-scen)[](source:bt-fm) |
+
+@architecture id=relation-map title="break와 이어지는 스킬"
+| bui | break-ui | backend |
+| afk | afk | backend |
+| sm | state-machine | backend |
+| self | break(이 스킬) | backend |
+| bi | better-interface | backend |
+| var | variant | backend |
+| bt | better-typography | backend |
+| bui > self | 대안 | dashed |
+| afk > self | 대안 | dashed |
+| sm > self | 대안 | dashed |
+| self > bi | 대안 | dashed |
+| self > var | 대안 | dashed |
+| self > sm | 대안 | dashed |
+| self > bt | 결과 전달 | |
 
 @code source=bk-fm language=yaml
 
-- `SKILL.md`: `disable-model-invocation: true`가 있다. 모델은 이 스킬을 스스로 고를 수 없고 사용자가 직접 불러야 한다.[](source:bk-fm)
-- `agents/openai.yaml`: `allow_implicit_invocation: false`가 있다. 같은 제한이 한 번 더 적혀 있다.[](source:bk-yaml)
+## 어떤 파일로 이루어지나 {#files span=12}
 
-판정: 직접 호출만 받으므로 시작점은 항상 사람이다. 시작한 뒤에도 요청에 컴포넌트가 여럿이면 후보를 나열하고 어느 것을 시험할지 물으라고 한다. 근거는 위 두 제한과 1단계다.[](source:bk-s1)
-
-원문은 이 스킬을 "관찰하는 스킬"이라고 규정한다. 발견은 페이지에서 눈에 띄게 깨진 것이고, 고칠 도메인 스킬의 어휘로 이름만 붙인다.[](source:bk-intro) 아래 일은 다른 스킬의 몫이라고 이름을 들어 가른다.
-
-| 하려는 일 | `break` 대신 | 그 스킬의 호출 조건 |
-| --- | --- | --- |
-| 코드를 기준에 맞춰 리뷰한다 | `interface-review`, `better-interface` {caution:범위 밖} | `interface-review`는 `disable-model-invocation: true`. `better-interface`는 호출 제한 필드 없음[](source:ir-fm)[](source:bi-fm) |
-| 디자인 대안을 탐색한다 | `variant` {caution:범위 밖} | `disable-model-invocation: true`[](source:vr-fm) |
-| 컴포넌트의 상태를 하나씩 작업한다 | `state-machine` {caution:범위 밖} | `disable-model-invocation: true`[](source:sm-fm) |
-
-`variant`와의 차이는 격리 여부다. `variant`는 실제 페이지를 고집하지만 `break`는 일부러 컴포넌트를 격리한다. 맥락 속 모양이 아니라 최악 내용에서 스스로를 지키는지를 보기 때문이다.[](source:bk-intro) 같은 이유로 `state-machine`은 상태를 하나씩 작업하고, `break`는 적대적 시나리오를 한 페이지에 쌓는다.[](source:bk-intro)
-
-## 어떤 순서로 만들고, 어디서 멈추나 {#workflow}
-
-전체가 "build, look once, report"이고 시간은 분 단위다. 계측, 브라우저 디버깅, 두 번째 패스를 정당화하는 일은 이 흐름에 없다고 원문이 적는다.[](source:bk-intro)
-
-@workflow id=break-flow title="break 6단계"
-| lane plan | 계획 |
-| lane page | 페이지 |
-| lane report | 보고 |
-| bk-scope | 1 컴포넌트 하나 | backend | plan |
-| bk-infer | 2 시나리오 추론 | backend | plan |
-| bk-build | 3 harness 페이지 | backend | page |
-| bk-browser | 브라우저가 손 닿는 곳에 있나? | external | page |
-| bk-look | 4 한 번 보기 | backend | page |
-| bk-url | URL과 시나리오 목록만 | backend | report |
-| bk-report | 5 표로 보고하고 멈춤 | backend | report |
-| bk-keep | 6 페이지를 남김 | backend | report |
-| bk-scope > bk-infer | |
-| bk-infer > bk-build | 한 줄씩 적은 뒤 |
-| bk-build > bk-browser | |
-| bk-browser > bk-look | 있음 |
-| bk-browser > bk-url | 없음 | dashed |
-| bk-look > bk-report | 페이지에 표시 | emphasis |
-| bk-report > bk-keep | |
-| bk-url > bk-keep | |
-
-@steps id=break-steps
-| bk-scope | 1 컴포넌트 하나 | 한 번에 컴포넌트 하나만 다룬다. "설정 페이지"는 컴포넌트가 아니고 "프로필 폼의 text input"은 컴포넌트다. 여러 개가 걸리면 후보를 나열하고 어느 것을 시험할지 묻는다. 그다음 그 컴포넌트가 무엇을 받고, 무엇을 그리고, 어디에 놓일지를 한 문장으로 다시 말한다.[](source:bk-s1) | break-flow | bk-scope |
-| bk-infer | 2 시나리오 추론 | 변하는 것만 시험한다. props, slot, 상태, 그리는 데이터를 먼저 읽고, `scenarios.md`의 축마다 단서(cue)가 맞는지 대조해 맞는 축만 남긴다. 남긴 시나리오를 한 줄씩 먼저 적고, 버린 축과 이유도 한 줄로 말해서 잘못된 추론을 싸게 잡게 한다.[](source:bk-s2) | break-flow | bk-infer |
-| bk-build | 3 harness 페이지 | 시나리오마다 컴포넌트를 한 번씩 한 열에 그리고, 인스턴스 위에 짧은 텍스트 라벨을 단다. 앱 안의 임시 route에 프로젝트의 진짜 컴포넌트를 손대지 않고 import한다. 서버·클라이언트 컴포넌트를 나누는 framework에서는 페이지를 client 코드(Next의 `"use client"`)로 쓴다. 경계를 넘다가 fixture 데이터가 사라지는 일을 막기 위해서다.[](source:bk-s3) | break-flow | bk-build |
-| bk-browser | 브라우저가 손 닿는 곳에 있나? | 이미 열려 있는 브라우저가 있으면 거기서 본다. 없으면 없다고 말하고 URL을 사용자에게 넘긴다. 브라우저를 띄우거나, 창을 다루거나, 디버깅하는 일은 예산 밖이다.[](source:bk-s4) | break-flow | bk-browser |
-| bk-look | 4 한 번 보기 | 페이지를 한 번 로드하고 위에서 아래로 훑으며 눈에 띄게 깨진 것을 적는다. "텍스트가 필드의 오른쪽 가장자리를 넘는다"처럼 쓰고, "간격이 빡빡하다"는 쓰지 않는다. 예측한 실패는 발견이 아니다. 본 깨짐은 해당 시나리오 라벨 아래에 한 줄 메모로 한 번의 edit에 표시해서, 페이지만 보고도 보고서처럼 읽히게 한다.[](source:bk-s4) | break-flow | bk-look |
-| bk-url | URL과 시나리오 목록만 | 본 적이 없으므로 보고는 URL과 시나리오 목록뿐이다. 발견 표도 페이지 메모도 없다.[](source:bk-s4) | break-flow | bk-url |
-| bk-report | 5 표로 보고하고 멈춤 | 발견을 표로 보고하고 깨진 시나리오를 먼저 적는다. 열은 Scenario, Observed, Owner다. 도메인 규칙은 소유하지 않고 판정도 내리지 않는다. "전부 버텼다"도 완전하고 쓸모 있는 보고다. 페이지에 오른 시나리오와 실행 중인 곳을 말하고 끝낸다.[](source:bk-s5) | break-flow | bk-report |
-| bk-keep | 6 페이지를 남김 | 페이지는 보고서의 절반이므로 보고 뒤에도 실행 중으로 둔다. 사용자가 다 봤다고 말하면 그때 페이지와 fixture를 지우고, route 이름과 fixture 이름을 검색해 diff에 harness가 남지 않았는지 확인한다.[](source:bk-s6) | break-flow | bk-keep |
-
-멈추는 지점은 5단계 보고 뒤 한 곳이다. 고치라는 요청이 오면 그때 owner 스킬의 규칙으로 고치고, 실패했던 시나리오만 다시 그려 확인한다.[](source:bk-s5)
-
-사람이 개입하는 곳은 세 군데다.
-
-- 1단계: 요청에 컴포넌트가 여럿이면 사용자가 하나를 고른다.[](source:bk-s1)
-- 4단계: 브라우저가 없으면 사용자가 URL을 열어 직접 확인한다.[](source:bk-s4)
-- 6단계: 사용자가 다 봤다고 말해야 페이지를 지운다.[](source:bk-s6)
-
-## 어떤 시나리오를 그리나 {#scenarios}
-
-시나리오는 모든 컴포넌트에 같은 것을 던지지 않고 컴포넌트에서 추론한다.[](source:bk-s2)
-
-- text input은 content length와 state를 얻고 item quantity는 얻지 못한다.[](source:bk-s2)
-- 고정 라벨이 붙은 static icon button은 container와 environment만 얻고 긴 텍스트는 얻지 못한다.[](source:bk-s2)
-- 축이 남으면 `scenarios.md`의 시나리오를 그대로 쓰고, 컴포넌트의 props가 더 나쁘게 만드는 값(예: 실제 데이터셋에서 가장 긴 옵션)은 fixture로 더한다.[](source:sc-intro)
-
-| 축 | 남기는 단서(cue) | 시나리오 | 깨짐의 owner |
+| 파일 | 역할 | 읽기·실행 조건 | 쓰는 단계 |
 | --- | --- | --- | --- |
-| Content length | 컴포넌트가 직접 쓰지 않은 텍스트를 그린다(사용자 입력, CMS, API, 번역). 코드베이스가 정한 고정 라벨은 해당 없음[](source:sc-len) | 빈 문자열, 한 단어, 일반 내용, 여러 문장, 줄바꿈 기회 없는 긴 문자열(긴 URL, `Donaudampfschiffahrtsgesellschaft`) | `better-typography`(줄바꿈·말줄임), `better-layout`(컨테이너에 공간이 없을 때), `better-writing`(원문 카피가 문제일 때) |
-| Content shape | 팀이 쓰지 않는 언어·사용자에게서 텍스트가 올 수 있다[](source:sc-shape) | emoji(단독, 섞임), RTL, 혼합 방향, 발음 부호와 키 큰 문자, 열을 맞추는 숫자 | `better-typography`, 공간 반전은 `better-layout` |
-| Quantity | 컴포넌트가 항목을 반복한다(목록, 표, grid, tag 줄, avatar 묶음). 단일 컴포넌트는 해당 없음[](source:sc-qty) | 0개, 1개, 현실적인 개수, 현실적인 개수의 10배 | 0개는 `better-writing`(빈 상태)과 `better-layout`(영역), 나머지는 `better-layout` |
-| Container | 항상 해당한다. 컴포넌트는 컨테이너 폭을 고르지 못한다[](source:sc-con) | 320px 컨테이너, flex·grid 형제에 눌린 폭, 아주 넓은 컨테이너 | `better-layout` |
-| State | 컴포넌트가 그 상태를 가진다. props로 들어오는 상태만 그린다. static 컴포넌트는 해당 없음[](source:sc-state) | loading, error, disabled | `better-accessibility`, 순수 시각 상태 다듬기는 `better-ui` |
-| Environment | 프로젝트가 그 모드를 지원한다[](source:sc-env) | 페이지에는 그리지 않는다. OS 다크 모드, 브라우저 확대, reduced motion을 보고서에 이름만 적어 사용자가 보면서 켜게 한다 | 다크 모드는 `better-colors`, 확대와 모션은 `better-accessibility` |
+| `SKILL.md` | 6단계 실행 절차, harness 페이지 제약, 보고 표 형식, 3개 오류 점검표를 담은 본문 | 사용자가 `/break`로 스킬을 켤 때 읽는다 | 컴포넌트 확정; 시나리오 추론; harness 작성; 브라우저 있나?; 한 번 관찰·표시; 표 보고·정지; URL만 전달; 유지·요청 시 삭제 |
+| `scenarios.md` | 6개 시나리오 축(내용 길이·모양·수량·컨테이너·상태·환경), 단서(cue), `owner` 스킬 매핑표 | 2단계에서 컴포넌트에 맞는 시나리오를 고를 때 읽는다 | 시나리오 추론; URL만 전달; 표 보고·정지 |
+| `agents/openai.yaml` | 호스트 UI 표시 정보와 `allow_implicit_invocation: false` 호출 정책 | 호스트가 호출 정책과 UI 표시 정보를 읽을 때 사용한다 | 원문에 명시 없음 |
 
-각 축이 잡는 것은 원문의 `What it catches` 칸에 적혀 있다. 대표 예만 옮긴다.[](source:sc-len)[](source:sc-shape)[](source:sc-qty)[](source:sc-con)[](source:sc-state)
+## 무엇을 지키고 언제 멈추나 {#limits span=12}
 
-| 시나리오 | 잡는 것 |
-| --- | --- |
-| 빈 문자열 | 무너진 상자, 띄울 내용이 없는 floating label, placeholder만 있는 input |
-| 줄바꿈 기회 없는 긴 문자열 | wrap 없는 overflow |
-| 발음 부호와 키 큰 문자 | 좁은 line box에서 잘린 ascender·descender |
-| 숫자(열 맞춤) | 표와 타이머에서 흔들리는 비례폭 숫자 |
-| 10배 개수 | 없는 scroll·pagination, 성능 붕괴, sticky 요소가 풀림 |
-| 320px 컨테이너 | clipping, 가로 scroll, 상자를 벗어난 컨트롤 |
-| loading | 내용이 도착할 때 layout shift, 접근 가능한 이름 없는 spinner |
-
-State 축에서 focus와 hover는 에이전트가 harness에서 흉내 내지 않는다. 사용자가 페이지를 보면서 직접 해 보도록 보고서에서 tab으로 인스턴스를 돌아보라고 권한다.[](source:sc-state) Environment 축을 페이지에서 흉내 내는 것(예: class 아래에 다크 token을 다시 선언)은 다른 컴포넌트를 관찰하는 일이라고 원문이 못 박는다.[](source:sc-env)
-
-## 무엇을 강제하고 금지하나 {#rules}
-
-harness가 더해도 되는 것은 "라벨, 컨테이너 폭, fixture props"뿐이다. 이 선이 `break`의 핵심 규칙이다.[](source:bk-s3) 아래 표는 3단계와 점검 표를 합친 것이다.
-
-| 규칙 | 에이전트가 하는 일 | 하지 않는 일 |
+| 조건 | 결과 | 출처 |
 | --- | --- | --- |
-| 진짜 컴포넌트 | 프로젝트에서 import한 그대로 쓴다[](source:bk-s3)[](source:bk-check) | {bad:비슷하게 다시 만든 컴포넌트} |
-| 페이지가 더하는 것 | 라벨, 컨테이너 폭, fixture props만 더한다. 앱의 layout, 글꼴, 전역 스타일, provider를 그대로 물려받는다[](source:bk-s3) | {bad:harness 자체의 글꼴·스타일, 흉내 낸 theme, token 교체, probe} |
-| 데이터 방향 | 시나리오를 props와 fixture 데이터로 넣는다[](source:bk-s3) | production 상태 import, live 데이터 연결, production이 harness를 import하는 일 |
-| 폭 | 폭은 페이지 안의 고정 컨테이너로 두어 한 번 로드로 모두 본다[](source:bk-check)[](source:sc-con) | 시나리오마다 viewport를 바꾸기 |
-| 관찰 | 눈에 띄게 본 것만 적는다. "텍스트가 필드의 오른쪽 가장자리를 넘는다"[](source:bk-s4) | {bad:예측한 실패를 발견으로 보고}, 취향 표현으로 쓴 발견 |
-| 보고 | 깨진 것마다 owner(고칠 도메인 스킬)를 적는다. 판정은 내리지 않는다[](source:bk-s5)[](source:bk-check) | owner 없는 깨짐 |
-| 깨끗한 결과 | "전부 버텼다"와 시나리오 목록이 보고의 전부다[](source:bk-s5) | 제안으로 채우기 |
-| 수정 | 요청이 올 때만 owner 스킬의 규칙으로 고치고 실패한 시나리오를 다시 그린다[](source:bk-s5) | {bad:묻지 않은 수정} |
-| 페이지 | 사용자가 말하기 전에는 지우지 않는다[](source:bk-s6) | 보고와 같은 턴에 삭제 |
+| 요청이 여러 컴포넌트에 걸침(예: 페이지 전체) | 후보 목록을 나열해 사용자에게 하나를 고르게 한 뒤 멈춘다 | [](source:bk-s1) |
+| 단서(cue)가 맞지 않는 시나리오 축 | 제외하고 이유를 구현 전 계획에 한 줄로 적는다 | [](source:bk-s2) [](source:bk-scen) |
+| harness 페이지의 스타일·데이터·상태 격리 | 자체 폰트·스타일·테마 시뮬레이션·프로브·운영 상태 임포트를 금지한다. 프로덕션 코드도 harness 페이지를 임포트하지 않는다 | [](source:bk-s3) |
+| 포커스·hover·다크 모드·브라우저 확대·모션 줄이기 | 페이지에 모의 구현하지 않고, 사용자가 직접 토글·Tab 이동해 보도록 보고서에 안내만 남긴다 | [](source:bk-scen) |
+| 브라우저가 없음 | 새 브라우저를 띄우거나 디버깅하지 않고, 깨짐 표·메모 없이 URL과 시나리오 목록만 전달한다 | [](source:bk-s4) |
+| 예측된 깨짐(직접 관찰하지 않은 실패) | 지적으로 보고 금지. 눈에 보인 깨짐만 보고한다 | [](source:bk-s4) |
+| 도메인 규칙·통과/차단 판정·무단 수정 | 자체 규칙이나 판정을 내리지 않고, 요청 없이 수정하지 않는다 | [](source:bk-s5) |
+| 임시 페이지 삭제 | 사용자가 끝났다고 말할 때만 삭제하며, 삭제 후 라우트·fixture 잔여물을 검색해 확인한다 | [](source:bk-s6) |
 
-아래는 원문이 보고 표의 모양으로 든 예 두 행이다. 이 컴포넌트를 실제로 본 결과가 아니라 형식 예시다.[](source:bk-s5t)
+## 더 자세히 읽으려면 {#more span=12}
 
-| Scenario | Observed | Owner |
-| --- | --- | --- |
-| 줄바꿈 기회 없는 60자 문자열 | 카드를 넘친다. wrap도 말줄임도 없다 | `better-typography` |
-| 항목 0개 | 메시지 없이 빈 영역 | `better-writing` |
+공개된 상세:
 
-점검 표 12줄은 대부분 위 규칙을 되풀이한다. 위 표에 없는 처방은 둘이다. 첫째, 시나리오에 내용이 안 들어온 것은 컴포넌트가 아니라 harness 문제이므로, 페이지를 client 코드로 만들고 한 번만 다시 로드한다. 둘째, 깨짐이 표에는 있는데 페이지에 표시가 없으면 라벨 아래에 메모를 단다.[](source:bk-check)
+- 아직 없음
 
-## 흐름 속 위치 {#position}
+상세 후보(요청하면 만든다):
 
-`break`는 묶음 `component-workbench`에 속한다. 같은 묶음의 `variant`, `state-machine`과 순서로 이어지지 않는다. 원장의 관계는 모두 역할을 가르는 참고다.
+- 6개 시나리오 축과 단서(cue)·`owner` 스킬 매핑표 — 시나리오 추론 · 20개 세부 시나리오가 잡는 깨짐과 담당 도메인 스킬 귀속 규칙을 담았다.
 
-- 들어오는 관계: `variant`(r106), `state-machine`(r122), 묶음 밖의 `build-design`(r143).
-- 셋 다 "스트레스 테스트는 `break`의 몫"이라는 구분이다.
-
-@workflow id=break-position title="break 앞뒤"
-| pos-user | 사용자가 컴포넌트 지정 | external |
-| pos-break | break | backend |
-| pos-page | 임시 페이지와 보고 표 | external |
-| pos-owner | owner 스킬 | backend |
-| pos-user > pos-break | 직접 호출 | emphasis |
-| pos-break > pos-page | 한 번 본 뒤 | emphasis |
-| pos-page > pos-owner | 고치라는 요청이 있을 때 | dashed |
-
-| 상대 | 받는 것 | 넘기는 것 | 조건 | rel-id |
-| --- | --- | --- | --- | --- |
-| 사용자(앞) | 시험할 컴포넌트 하나 | - | 직접 호출만 받는다. 컴포넌트가 여럿이면 되묻는다[](source:bk-fm)[](source:bk-s1) | - |
-| `interface-review` | - | - | 참고. 코드를 기준에 맞춰 리뷰하는 일은 그쪽 몫이다[](source:bk-intro)[](source:ir-fm) | r112 |
-| `better-interface` | - | - | 참고. 기준에 맞춘 리뷰는 그쪽 몫이다[](source:bk-intro) | r113 |
-| `variant` | - | - | 참고. 대안 탐색은 그쪽 몫이다. `variant`는 실제 페이지를, `break`는 격리를 고집한다[](source:bk-intro) | r114 |
-| `state-machine` | - | - | 참고. 상태를 하나씩 작업하는 일은 그쪽 몫이다. `break`는 시나리오를 한 페이지에 쌓는다[](source:bk-intro) | r115 |
-| `better-typography` 외 5개 | - | 깨짐 이름(owner) | 참고. 깨짐을 고칠 도메인 스킬의 어휘로 이름을 붙일 뿐 호출 지시는 아니다. 단 고치라는 요청이 오면 그 owner 스킬의 규칙을 따른다[](source:bk-intro)[](source:bk-s5)[](source:sc-len) | r116~r121 |
-| (뒤) | - | 임시 페이지, 보고 표, 시나리오 목록 | 받는 쪽은 사용자다[](source:bk-s5)[](source:bk-s6) | - |
-
-그림에는 점선 하나만 그렸다. 고치라는 요청이 왔을 때 owner 스킬로 간다는 줄(5단계)이다. 나머지 r112~r115는 역할 구분이라 표에만 둔다.
-
-같은 계열(r149)인 `break-ui`(`design/emilkowalski/break-ui`)는 목적이 같지만 서로 부르지 않는다. 원장은 이 관계를 추론으로 적었다. `break-ui`의 내용은 이 페이지에서 읽지 않았다.
-
-묶음 전체는 `design/_group-component-workbench/component-workbench.html`에 있다. 관계 근거는 `design/relations.md`의 rel-id로 확인한다.
-
-## 이 분석의 범위와 한계 {#audit}
-
-- 읽은 텍스트 파일은 3개(`SKILL.md`, `scenarios.md`, `agents/openai.yaml`), 합계 10,689B다. 세 파일을 끝까지 읽었다.
-- 관계 확인용으로 `variant`, `state-machine`, `interface-review`, `better-interface`의 `SKILL.md` frontmatter(각 4~5줄)만 읽었다. 위 개수에는 넣지 않았다.
-- 구조·표본만 확인한 파일: 없음. 바이너리: 없음. 제외한 파일: 없음. 번역본은 없다.
-- 다른 컬렉션에 이름이 같은 스킬은 없다. 같은 계열로 `break-ui`가 있고(원장 r149) 내용은 다르다.
-- 원문 대조 범위: 활성화 제한 2곳, 단계 6개, 보고 표 열 3개, 시나리오 축 6개와 단서 6개와 시나리오 20개(Environment 3개는 페이지에 그리지 않음), 점검 표 12행, "분 단위"와 "한 번 로드"와 "한 번 보기" 같은 예산 문구를 대조했다. 관계 행 r112~r121은 원장과 원문이 같다. r116~r121은 원장이 "호출 지시는 아니다"라고 적었는데, 5단계의 "고치라는 요청에는 owner 스킬의 규칙을 따른다"는 조건부 문장이 있어 이 페이지가 그 조건을 더했다.
-- 분석 중 바뀐 파일: 없음. `design/` 작업 트리는 commit `0465878` 그대로다.
-
-@callout level=open-question title="확인하지 못한 것"
-- 이 스킬이 실제로 에이전트의 동작을 바꾸는지는 실행해 보지 않아 확인하지 않았다. 페이지의 모든 동작은 지시상 동작이다.
-- 브라우저가 "손 닿는 곳"에 있다는 기준이 무엇인지(이미 열린 탭, 사용 가능한 도구 등)는 `원문에 명시 없음`이다.[](source:bk-s4)
-- 사용자가 고치기를 요청했을 때 어떤 owner 스킬을 어떻게 실행하는지(skill 호출인지 규칙만 읽는지)는 `원문에 명시 없음`이다. owner 스킬이 설치되어 있지 않을 때의 동작도 같다.[](source:bk-s5)
-- 임시 route를 만들 framework가 없는 프로젝트(정적 HTML 등)에서 harness를 어떻게 만드는지는 `원문에 명시 없음`이다.[](source:bk-s3)
+읽은 원본: 텍스트 파일 3개. 제외: 없음.
